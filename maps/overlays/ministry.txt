@@ -1,0 +1,63 @@
+"map_data"
+{
+	"insurgent_planters"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "659,470 616,470 616,434 567,434 567,556 618,556 618,530 659,531"
+	}
+	"security_planters"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "411,470 455,470 455,434 496,434 496,556 448,556 448,530 410,530"
+	}
+	"insurgent_plants"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "572,320 595,347"
+	}
+	"security_plants"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "478,317 499,347"
+	}
+	"insurgent_upper"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "574,349 692,369"
+	}
+	"security_upper"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "381,348 504,368"
+	}
+	"insurgent_stairs"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "575,284 595,311"
+	}
+	"security_stairs"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "478,284 497,329"
+	}
+	"balcony"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "442,370 627,398"
+	}
+	"Front Entrance"
+	{
+		"pos_type" "area"
+		"pos_shape" "poly"
+		"pos_points" "450,556 615,648"
+	}
+}

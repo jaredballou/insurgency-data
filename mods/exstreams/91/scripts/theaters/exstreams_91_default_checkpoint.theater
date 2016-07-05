@@ -1,0 +1,115 @@
+"#base" "exstreams_91_default_coop_shared.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"squads"
+			{
+				
+				"Command"	// small arms
+				{
+					"#Squad_Fireteam_Leader_Recon"					"template_recon_security"
+				}
+				
+				"Team 1"
+				{
+					"#Squad_Fireteam_Leader_Recon"				"template_recon_2_security"
+					"#Squad_Fireteam_Specialist"					"template_specialist_security"
+					"#Squad_Fireteam_Rifleman"					"template_rifleman_security"
+					"#Squad_Fireteam_Breacher"					"template_breacher_security"
+					"#Squad_Fireteam_Demolitions"					"template_demolitions_security"	
+				}
+				"Team 2"
+				{
+					"#Squad_Fireteam_Leader_Recon"				"template_recon_3_security"
+					"#Squad_Fireteam_Specialist"					"template_specialist_2_security"
+					"#Squad_Fireteam_Rifleman"					"template_rifleman_2_security"
+					"#Squad_Fireteam_Breacher"					"template_breacher_2_security"
+					"#Squad_Fireteam_Support"						"template_support_security"
+				}
+				"Team 3"
+				{
+					"#Squad_Fireteam_Support"						"template_support_2_security"
+					"#Squad_Fireteam_Support"						"template_support_3_security"
+					"#Squad_Fireteam_Sniper"						"template_sniper_security"
+					"#Squad_Fireteam_Sniper"						"template_sniper_2_security"
+					"#Squad_Fireteam_Designated_Marksman"		"template_designated_marksman_security"				
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"squads"
+			{				
+				"#Cell_Alpha"	// assault team #1
+				{
+					// role name								preset
+					"#Squad_Cell_Fighter"						"template_coop_fighter" 		// Incendiary	
+					"#Squad_Cell_Fighter"						"template_coop_fighter" 		// Incendiary
+					"#Squad_Cell_Knifer"						"template_coop_knifer"				
+					"#Squad_Cell_MachineGunner"				"template_coop_machinegunner" 	// Frag
+					"#Squad_Cell_MachineGunner"				"template_coop_machinegunner" 	// Frag					
+					"#Squad_Cell_Sapper"						"template_coop_sapper" 		// RPG
+					"#Squad_Cell_SharpShooter"				"template_coop_sharpshooter" 	// None
+				         "#Squad_Cell_pistol"						"template_coop_pistol" // pistol
+				}
+				
+				"#Cell_Bravo"	// assault team #2
+				{
+					// role name								preset
+					"#Squad_Cell_Leader_Specialist"			"template_coop_specialist_2" // smokes
+					"#Squad_Cell_Fighter"						"template_coop_fighter_2" // incendiary
+					"#Squad_Cell_Fighter"						"template_coop_fighter_2" // incendiary
+					"#Squad_Cell_MachineGunner"				"template_coop_machinegunner_2" // RPG
+				         "#Squad_Cell_pistol"						"template_coop_pistol_2" // pistol
+					"#Squad_Cell_Fighter"						"template_coop_fighter_2" // incendiary
+					"#Squad_Cell_Sapper"						"template_coop_sapper_2" // RPG
+					"#Squad_Cell_Fighter"						"template_coop_fighter_2" // incendiary
+				}
+				
+				"#Cell_Charlie"	// assault team #3
+				{
+					// role name								preset
+					"#Squad_Cell_Leader_Specialist"			"template_coop_specialist_3" // smokes
+					"#Squad_Cell_Fighter"						"template_coop_fighter_3" // incendiary
+					"#Squad_Cell_Knifer"						"template_coop_knifer_3" // incendiary
+					"#Squad_Cell_MachineGunner"				"template_coop_machinegunner_3" // RPG
+					"#Squad_Cell_Specialist"					"template_coop_specialist_3"  // smokes
+					"#Squad_Cell_Fighter"						"template_coop_fighter_3" // incendiary
+					"#Squad_Cell_Sapper"						"template_coop_sapper_3" // RPG
+					"#Squad_Cell_MachineGunner"				"template_coop_machinegunner_3" // RPG
+				}
+				
+				"#Cell_Delta"	// assault team #4
+				{
+					// role name								preset
+					"#Squad_Cell_Leader_Specialist"			"template_coop_specialist_4" // smokes
+					"#Squad_Cell_Fighter"						"template_coop_fighter_4" // incendiary
+					"#Squad_Cell_Knifer"						"template_coop_knifer_4"
+					"#Squad_Cell_MachineGunner"				"template_coop_machinegunner_4" // RPG
+					"#Squad_Cell_Specialist"					"template_coop_specialist_4"  // smokes
+					"#Squad_Cell_Fighter"						"template_coop_fighter_4" // incendiary
+					"#Squad_Cell_Fighter"						"template_coop_fighter_4" // incendiary
+					"#Squad_Cell_SharpShooter"				"template_coop_sharpshooter_4" // frag
+				}	
+
+				"#Cell_Foxtrot"          // assault team #5
+				{
+					// role name								preset
+					"#Squad_Cell_Leader_Specialist"				"template_coop_specialist_5" // smokes
+					"#Squad_Cell_Fighter"						       "template_coop_fighter_5" // incendiary
+				         "#Squad_Cell_pistol"						      "template_coop_pistol_5" // pistol
+					"#Squad_Cell_MachineGunner"				      "template_coop_machinegunner_5" // RPG
+					"#Squad_Cell_Knifer"						        "template_coop_knifer_5"
+					"#Squad_Cell_Sapper"						       "template_coop_sapper_5" // RPG
+					"#Squad_Cell_Fighter"						       "template_coop_fighter_5" // incendiary
+				         "#Squad_Cell_Bomber"						"template_coop_bomber" // Bomber	
+				}					
+			}
+		}
+	}
+}

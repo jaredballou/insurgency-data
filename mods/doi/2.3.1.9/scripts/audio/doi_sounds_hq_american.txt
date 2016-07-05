@@ -1,0 +1,124 @@
+//==========================
+// 	AMERICAN HQ - ARTILLERY
+//==========================
+
+"HQ_America.Artillery_Begin"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\America\Artillery\artillerybegin1.ogg"
+		"wave"			"hq\America\Artillery\artillerybegin2.ogg"
+		"wave"			"hq\America\Artillery\artillerybegin3.ogg"
+		"wave"			"hq\America\Artillery\artillerybegin4.ogg"
+		"wave"			"hq\America\Artillery\artillerybegin5.ogg"
+		"wave"			"hq\America\Artillery\artillerybegin6.ogg"
+	}
+}
+
+"HQ_America.Artillery_End"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\America\Artillery\artilleryend1.ogg"
+		"wave"			"hq\America\Artillery\artilleryend2.ogg"
+		"wave"			"hq\America\Artillery\artilleryend3.ogg"
+		"wave"			"hq\America\Artillery\artilleryend4.ogg"
+		"wave"			"hq\America\Artillery\artilleryend5.ogg"	
+	}
+}
+
+"HQ_America.Artillery_Busy"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\America\Artillery\artillerybusy1.ogg"
+		"wave"			"hq\America\Artillery\artillerybusy2.ogg"
+		"wave"			"hq\America\Artillery\artillerybusy3.ogg"
+		"wave"			"hq\America\Artillery\artillerybusy4.ogg"
+		"wave"			"hq\America\Artillery\artillerybusy5.ogg"
+		"wave"			"hq\America\Artillery\artillerybusy6.ogg"		
+	}
+}
+
+"HQ_America.Artillery_Reloading"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\America\Artillery\artilleryloading1.ogg"
+		"wave"			"hq\America\Artillery\artilleryloading2.ogg"
+		"wave"			"hq\America\Artillery\artilleryloading3.ogg"
+		"wave"			"hq\America\Artillery\artilleryloading4.ogg"
+		"wave"			"hq\America\Artillery\artilleryloading5.ogg"		
+	}
+}
+
+"HQ_America.Artillery_NotValidTarget"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\America\Artillery\artillerynotvalidtarget1.ogg"
+		"wave"			"hq\America\Artillery\artillerynotvalidtarget2.ogg"
+		"wave"			"hq\America\Artillery\artillerynotvalidtarget3.ogg"
+		"wave"			"hq\America\Artillery\artillerynotvalidtarget4.ogg"
+		"wave"			"hq\America\Artillery\artillerynotvalidtarget5.ogg"		
+	}
+}
+
+"HQ_America.Artillery_Ready"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\America\Artillery\artilleryready1.ogg"
+		"wave"			"hq\America\Artillery\artilleryready2.ogg"
+		"wave"			"hq\America\Artillery\artilleryready3.ogg"
+		"wave"			"hq\America\Artillery\artilleryready4.ogg"
+		"wave"			"hq\America\Artillery\artilleryready5.ogg"		
+	}
+}
+
+"HQ_America.Artillery_RequestNotCompleted"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\America\Artillery\artillerydoesnotcopy1.ogg"
+		"wave"			"hq\America\Artillery\artillerydoesnotcopy2.ogg"
+		"wave"			"hq\America\Artillery\artillerydoesnotcopy3.ogg"
+		"wave"			"hq\America\Artillery\artillerydoesnotcopy4.ogg"
+		"wave"			"hq\America\Artillery\artillerydoesnotcopy5.ogg"		
+	}
+}

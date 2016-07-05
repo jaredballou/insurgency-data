@@ -1,0 +1,9 @@
+"abandoned"
+{
+	material	overviews/abandoned
+	pos_x		-4320
+	pos_y		4277
+	scale		8.5
+	rotate		0
+	zoom		1
+}

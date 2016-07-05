@@ -1,0 +1,10 @@
+"sinjar_night"
+{
+	material	overviews/sinjar_night     	// texture file
+	pos_x		-7351			// X coordinate
+	pos_y		 8007			// Y coordinate
+	scale		13.5 			// scale used when taking the screenshot
+	rotate		0			// map was rotated by 90 degrees in image editor
+	zoom		1			// optimal zoom factor if map is shown in full size
+	grid_divisions 12       //number grid rows and columns
+}

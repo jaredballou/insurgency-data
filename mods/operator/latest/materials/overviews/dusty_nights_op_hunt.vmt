@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$basetexture" "overviews/dusty_nights_op_hunt"
+	$translucent 1
+	$vertexalpha 1
+	$no_fullbright 1
+	$ignorez 1
+}
+

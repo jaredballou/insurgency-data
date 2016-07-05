@@ -1,0 +1,257 @@
+"World.Generic.LandingCraft"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"90,105"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"	")soundscape\emitters\loop\landing_craft_engine.wav"
+}
+
+"World.Generic.TruckEngine"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"	")soundscape\emitters\loop\truck_engine_loop.wav"
+}
+
+"World.Generic.ShermanIdle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"	")soundscape\emitters\loop\sherman_tank_idle.wav"
+}
+
+"World.Generic.BarbedWireStress"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"90,100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{	
+		"wave"	")dynamic\barbedwire_stress_01.ogg"
+		"wave"	")dynamic\barbedwire_stress_02.ogg"
+		"wave"	")dynamic\barbedwire_stress_03.ogg"		
+	}
+}
+
+"World.Generic.BunkerDoorAlarm"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")dynamic\bunker_door_alarm.wav"
+}
+
+"World.Generic.BunkerDoorLever"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")dynamic\bunker_door_lever.wav"
+}
+
+"World.Generic.BunkerDoorStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")dynamic\bunker_door_start.wav"
+}
+
+"World.Generic.BunkerDoorMoving"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")dynamic\bunker_door_moving.wav"
+}
+
+"World.Generic.BunkerDoorStop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")dynamic\bunker_door_stop.wav"
+}
+
+"World.Generic.OfficerWhistle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"rndwave"
+	{	
+		"wave"	")soundscape\emitters\Oneshot\officers_whistle_long_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\officers_whistle_long_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\officers_whistle_long_03.ogg"			
+	}
+}
+
+"World.Generic.OfficerWhistleRoundStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"97,103"
+	"soundlevel"  	"SNDLVL_80dB"
+	"rndwave"
+	{	
+		"wave"	")dynamic\officer_whistle_roundstart_01.ogg"	
+		"wave"	")dynamic\officer_whistle_roundstart_02.ogg"
+		"wave"	")dynamic\officer_whistle_roundstart_03.ogg"
+		"wave"	")dynamic\officer_whistle_roundstart_04.ogg"		
+	}
+}
+
+"World.Generic.OilLamp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")soundscape\emitters\loop\oil_lamp.wav"
+}
+
+"World.Generic.WW2DistantFirefight"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_140dB"
+	"wave"	")soundscape\emitters\loop\ww2_distant_firefight_loop.wav"	
+}
+
+"World.Generic.LCVP_DoorOpen"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")dynamic\lcvp_door_open.wav"
+}
+
+"World.Generic.LCVP_DoorHit_Land"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")dynamic\lvcp_door_hit_land.wav"
+}
+
+"World.Generic.LCVP_DoorHit_WaterLayer"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")dynamic\lvcp_door_hit_water_layer.wav"
+}
+
+"World.Generic.DistantArtilleryFire"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"97,103"
+	"soundlevel"  	"SNDLVL_130dB"
+	"rndwave"
+	{	
+		"wave"	")dynamic\distant_artillery_fire_01.wav"	
+		"wave"	")dynamic\distant_artillery_fire_02.wav"	
+		"wave"	")dynamic\distant_artillery_fire_03.wav"	
+		"wave"	")dynamic\distant_artillery_fire_04.wav"			
+	}
+}
+
+"World.Generic.DistantArtilleryFireRockets"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"97,103"
+	"soundlevel"  	"SNDLVL_130dB"
+	"rndwave"
+	{	
+		"wave"	")dynamic\distant_artillery_fire_rockets_01.wav"	
+		"wave"	")dynamic\distant_artillery_fire_rockets_02.wav"	
+		"wave"	")dynamic\distant_artillery_fire_rockets_03.wav"	
+		"wave"	")dynamic\distant_artillery_fire_rockets_04.wav"			
+	}
+}
+
+
+"World.Generic.Lightning"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"97,103"
+	"soundlevel"  	"SNDLVL_150dB"
+	"rndwave"
+	{	
+		"wave"	")dynamic\lightning_04.ogg"	
+		"wave"	")dynamic\lightning_05.ogg"	
+		"wave"	")dynamic\lightning_06.ogg"	
+		"wave"	")dynamic\lightning_07.ogg"	
+		"wave"	")dynamic\lightning_08.ogg"	
+		"wave"	")dynamic\lightning_09.ogg"	
+		"wave"	")dynamic\lightning_10.ogg"			
+	}
+}
+
+"World.Generic.Thunder"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"97,103"
+	"soundlevel"  	"SNDLVL_150dB"
+	"rndwave"
+	{	
+		"wave"	")dynamic\thunder_01.ogg"	
+		"wave"	")dynamic\thunder_02.ogg"	
+		"wave"	")dynamic\thunder_03.ogg"	
+		"wave"	")dynamic\thunder_04.ogg"	
+		"wave"	")dynamic\thunder_05.ogg"	
+		"wave"	")dynamic\thunder_06.ogg"	
+		"wave"	")dynamic\thunder_07.ogg"	
+		"wave"	")dynamic\thunder_08.ogg"	
+		"wave"	")dynamic\thunder_09.ogg"	
+		"wave"	")dynamic\thunder_10.ogg"			
+	}
+}
+
+"World.Generic.RainRunoff"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"pitch"			"80"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"	")soundscape\emitters\loop\rain_runoff.wav"
+}
+
+"World.Generic.RainRunoffAlt"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"pitch"			"80"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"	")soundscape\emitters\loop\rain_runoff_alt.wav"
+}
+
+"World.Generic.SmallFire"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"90,100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")soundscape\emitters\loop\small_fire_loop.wav"
+
+}

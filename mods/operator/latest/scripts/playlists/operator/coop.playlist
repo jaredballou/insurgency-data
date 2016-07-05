@@ -1,0 +1,117 @@
+// Official Operator COOP Playlist
+"playlist"
+{
+	"name"						"#Playlist_Operator_COOP"
+	"description"				"#Playlist_Operator_COOP_Desc"
+	
+	"allowed_maps"
+	{
+		"hotel" 				"hunt"
+		"jail_break_op_a01" 	"hunt"
+		"clean_sweep_op_a01"	"hunt"
+		"the_raid_op_coop"		"checkpoint"
+	}
+	
+	// recommended settings but can be changed
+	"cvars"
+	{
+		"mp_timer_postround"		"15"	// timer for the post-round (after the round starts)
+		"mp_timer_postgame"			"10"	// timer for the post-game (at the end of a game / map rotation)
+		"mp_voice_use_3d_voip"		"1"	// disabling this will turn off the 3d voip system and allow all players to hear one another
+		
+	}
+	
+	"forced_cvars"
+	{
+		"mp_timer_pregame"					"10"	// timer for the pre-game (before the game starts, usually after map change or on mp_restartgame 1)
+		"mp_timer_preround"					"30"	// timer for the pre-round (before the round starts, usually after a previous round ends or on mp_restartround 1)
+		"mp_theater_override"				"operator_coop"
+		"mapcyclefile"						"operator_coop_mapcycle.txt"
+		"mp_friendlyfire"					"1"	// friendly fire
+		"mp_friendlyfire_damage"			"1"
+		"mp_spectator_allow_chase"			"0"
+		"sv_hud_targetindicator"			"0"	// show friendly player names when looking at them
+		"mp_tkpunish"						"1"	// How to punish team killing ( 0 = none, 1 = warning, 2 = kill )
+		"sv_hud_deathmessages"				"0"	// death messages
+		"sv_hud_deathmessages_spectator"	"1"
+		"ins_bot_quota"						"0"	// if set higher than 0, the server will add this many bots to each team
+		"mp_teams_auto_join"				"0"	// when enabled, players are automatically assigned to a team on join
+		"mp_teams_unbalance_limit"			"1"	// the amount of player difference between each team the server considers to be imbalanced
+		"mp_autoteambalance"				"1"	// should the server auto balance the teams if they are imbalanced?
+		"mp_minteamplayers"					"1"	// min players on each team to start the match
+		"sv_deadtalk"						"0"	// enabling this will allow the dead and living to chat text each other
+		"sv_deadtalk_team"					"1"	// is deadchat limited to just your team?
+		"sv_deadvoice"						"1"	// enabling this will allow the dead and living to VOIP each other
+		"sv_nwi_banlist"					"1"	// global ban list
+		"mp_supply_token_base"				"60"	// force to 10 starting supply, too many are changing this
+		"host_timescale"					"1.0"
+		"mp_supply_rate_losing_team_high"	"0"
+		"mp_supply_rate_losing_team_low"	"0"
+		"mp_supply_rate_winning_team_high"	"0"
+		"mp_supply_rate_winning_team_low"	"0"
+		"sv_hud_scoreboard_show_score_dead"	"0"
+		"mp_player_spotting"				"1"	// client replicated
+		"sv_hq_messages_allowed"			"1"
+		"mp_winlimit"						"3"
+		"mp_winlimit_coop"					"2"
+		"mp_maxgames"						"1"
+		"mp_maxrounds"						"5"
+		"ins_bot_difficulty" "3"
+		"bot_attack_burst_maxtime"           "0.4"
+		"bot_attack_burst_mintime"           "0.1"
+		"bot_attack_retarget_maxtime"           "0.3"
+		"bot_attack_retarget_mintime"           "0.1"
+		"ins_bot_attack_pistol_fire_rate"           "4"
+		"bot_attackdelay_base"           "0.5"
+		"bot_attackdelay_frac_difficulty_impossible"           "0.5"
+		"bot_attackdelay_frac_desiredrange"           "1"
+		"bot_attackdelay_frac_hipfirerange"           "0.5"
+		"bot_attackdelay_frac_maxrange"           "2.0" 
+		"bot_attackdelay_frac_outofrange"           "5.0"
+		"bot_attackdelay_frac_outsidefov"           "10.0"
+		"bot_attackdelay_frac_survival_end"           "0.5"
+		"bot_attackdelay_frac_survival_start"           "1.5"
+		"bot_damage"           "1.0"
+		"bot_recoil_multiplier"           "0.5"
+		"bot_targeting_noise_x_base"           "16"
+		"bot_targeting_noise_x_frac_desiredrange"           "1.0"
+		"bot_targeting_noise_x_frac_hipfirerange"           "3.0"
+		"bot_targeting_noise_x_frac_maxrange"           "0.5"
+		"bot_targeting_noise_y_base"           "16"
+		"bot_targeting_noise_y_frac_desiredrange"           "1.0"
+		"bot_targeting_noise_y_frac_hipfirerange"           "2.0"
+		"bot_targeting_noise_y_frac_maxrange"           "0.5"
+		"bot_targeting_noise_z_base"           "16"
+		"bot_targeting_noise_z_frac_desiredrange"           "1.0"
+		"bot_targeting_noise_z_frac_hipfirerange"           "2.0"
+		"bot_targeting_noise_z_frac_maxrange"           "0.5" 
+	}
+	
+	"filters"
+	{
+		// Minimum player count filter, removing this key will remove this filter.
+		"players"
+		{
+			16// Default min/max values are 0 to require_maxplayers_max-1
+		}
+		
+		"tags"
+		{
+			"nofriendlyfire"
+			{
+				"invert"				"1"
+				"default"				"2"
+			}
+			
+			"fullscoreboard"
+			{
+				"default"				"2"
+			}
+			
+			"deathmsgs"
+			{
+				"default"				"2"
+			}
+		}
+	}
+}

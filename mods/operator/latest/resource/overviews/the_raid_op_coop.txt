@@ -1,0 +1,9 @@
+"the_raid_op_coop"
+{
+	material	overviews/the_raid_op_coop       	// texture file
+	pos_x		"5457"			// X coordinate
+	pos_y		"-10369"			// Y coordinate
+	scale		"4.4" 			// scale used when taking the screenshot
+	rotate		"0"			// map was rotated by 90 degrees in image editor
+	zoom		1			// optimal zoom factor if map is shown in full size
+}

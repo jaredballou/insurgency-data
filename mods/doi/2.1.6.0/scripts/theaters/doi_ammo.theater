@@ -1,0 +1,170 @@
+"theater"
+{
+	"ammo"
+	{		
+		// ========================================
+		// Grenades
+		// ========================================
+		
+		"grenade_mk2"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_stielhandgranate"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_smoke"
+		{
+			"carry"					"3"
+		}
+		
+		// ========================================
+		// ROCKETS
+		// ========================================
+		
+		"rocket_bazooka"
+		{
+			"carry"					"1"
+		}
+		
+		"rocket_panzerfaust"
+		{
+			"carry"					"1"
+		}
+		
+		// ========================================
+		// M1 Garand (7.62×63mm)
+		// ========================================
+		
+		"762x63_clip"
+		{
+			"import"		"762x38mm_clip"
+			"carry"			"12"
+			"magsize"		"8"
+		}
+		
+		// ========================================
+		// M1 Carbine (.30 carbine)
+		// ========================================
+		
+		"30_m1carbine"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"80"
+				"12000"					"40"
+			}
+			"PenetrationPower"
+			{
+				"10"					"400"
+				"12000"					"200"
+			}
+		}
+		
+		"30_m1carbine_mag"
+		{
+			"import"				"30_m1carbine"
+			"carry"					"12"
+			"magsize"				"15"
+		}
+		
+		// ========================================
+		// G-43 (7.92×57mm)
+		// ========================================
+		
+		"792x57_clip"
+		{
+			"import"		"762x38mm_clip"
+			"carry"			"12"
+			"magsize"		"10"
+		}
+		
+		// ========================================
+		// MP 40
+		// ========================================
+		
+		"9x19mm_mp40"
+		{
+			"import"				"9x19mm_smg"
+
+			"Damage"
+			{
+				"10"					"46"
+				"12000"					"24"
+			}
+		}
+		
+		// Thompson
+		
+		"45acp_thompson"
+		{
+			"import"				"45acp"
+			"magsize"				"20"
+		}
+		
+		// ========================================
+		// .30-06 Springfield
+		// ========================================
+		
+		"30-06"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"85"
+				"8000"					"40"
+			}
+			"PenetrationPower"
+			{
+				"10"					"500"
+				"8000"					"200"
+			}
+		}
+		
+		"30-06_belt"
+		{
+			"import"					"30-06"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"5"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"15"
+		}
+		
+		// ========================================
+		// MG-34 and MG-42
+		// ========================================
+		
+		"792x57"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"75"
+				"8000"					"35"
+			}
+			"PenetrationPower"
+			{
+				"10"					"500"
+				"8000"					"200"
+			}
+		}
+		
+		"792x57_belt"
+		{
+			"import"					"792x57"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20"
+		}
+	}
+}

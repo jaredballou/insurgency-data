@@ -1,0 +1,121 @@
+{
+	"gametypes": {
+		"push": {
+			"attackingteam": "security",
+			"controlpoint": {
+				"A": {
+					"pos_name": "A",
+					"pos_team": 3
+				},
+				"B": {
+					"pos_name": "B",
+					"pos_team": 3
+				},
+				"C": {
+					"pos_name": "C",
+					"pos_team": 3
+				},
+				"D": {
+					"pos_classname": "obj_destructible",
+					"pos_name": "D",
+					"pos_team": 3,
+					"pos_type": "obj_destructible",
+					"pos_x": 372,
+					"pos_y": 69
+				}
+			},
+			"spawnzones": {
+				"disablespawns": "1",
+				"spawnzone_1": [
+				],
+				"spawnzone_2": [
+				],
+				"spawnzone_3": [
+				]
+			}
+		},
+		"strike": {
+			"attackingteam": "security",
+			"controlpoint": {
+				"A": {
+					"pos_classname": "obj_destructible",
+					"pos_name": "A",
+					"pos_team": 3,
+					"pos_type": "obj_destructible",
+					"pos_x": 725,
+					"pos_y": 486
+				},
+				"B": {
+					"pos_classname": "obj_destructible",
+					"pos_name": "B",
+					"pos_team": 3,
+					"pos_type": "obj_destructible",
+					"pos_x": 550,
+					"pos_y": 327
+				},
+				"C": {
+					"pos_classname": "obj_destructible",
+					"pos_name": "C",
+					"pos_team": 3,
+					"pos_type": "obj_destructible",
+					"pos_x": 483,
+					"pos_y": 121
+				}
+			},
+			"spawnzones": {
+				"disablespawns": "1",
+				"spawnzone_1": [
+				],
+				"spawnzone_3": [
+				]
+			}
+		}
+	},
+	"invasion": {
+		"attackingteam": "security",
+		"controlpoint": [
+			"pushpoint_01",
+			"pushpoint_02",
+			"pushpoint_03",
+			"radiopoint_final"
+		],
+		"entities": {
+			"obj_destructible": {
+				"angles": "0 90 0",
+				"controlpoint": "radiopoint_final",
+				"origin": "-2382 9400 679",
+				"targetname": "radio_final",
+				"teamnumber": "3"
+			},
+			"point_controlpoint": {
+				"angles": "0 0 0",
+				"origin": "-2382 9400 751",
+				"targetname": "radiopoint_final"
+			}
+		},
+		"spawnzones": {
+			"disablespawns": "1",
+			"0": "spawnzone_1",
+			"1": "spawnzone_2",
+			"2": "spawnzone_3"
+		}
+	},
+	"navfile": "doi_dog_red",
+	"nightlighting": "0",
+	"overview": {
+		"grid_dark": 1,
+		"grid_divisions": 10,
+		"material": "overviews\/doi_dog_red",
+		"pos_x": -7030,
+		"pos_y": 10257,
+		"rotate": 0,
+		"scale": 12.5,
+		"zoom": 1
+	},
+	"source_files": {
+		"CPSetup": "410aeb4c792b41105ae991fee031abdc",
+		"Overview": "4fe8c7bc200e94336f7dbe75b484eb76",
+		"VMF Source": "6c4e5882dac7eb6d042c9f3ce675168e"
+	},
+	"theaterfile": "doi"
+}

@@ -1,0 +1,491 @@
+"theater"
+{
+	"ammo"
+	{
+		// don't use this
+		"default"	// set for AKM values as baseline
+		{
+			"flags"					"AMMO_USE_MAGAZINES"
+			"carry"					"12"
+			"magsize"				"30"
+			"tracer_type"				"none"
+			
+			"SuppressionIncrement"			"60"
+			"PhysicsImpulse"
+			{
+				"50"					"800"
+				"2000"					"200"
+			}
+			"PenetrationDamage"
+			{
+				"0"					"1"
+				"100"					"0.5"
+				"200"					"0.1"
+			}
+			"Damage"
+			{
+				"10"					"100"
+				"8000"					"60"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"1.00"
+				"HITGROUP_STOMACH"			"1.00"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"1.00"
+				"HITGROUP_RIGHTLEG"			"1.00"
+			}
+		}
+		
+		"no_carry"	// dummy ammo type for weapons that have no backup ammo (at4)
+		{
+			"carry"					"0"
+		}
+		
+		// ========================================
+		// GRENADES
+		// ========================================
+		"grenade_m67"
+		{
+			"carry"					"3"
+		}
+		"grenade_f1"
+		{
+			"carry"					"3"
+		}
+		"grenade_m18"
+		{
+			"carry"					"3"
+		}
+		"grenade_molotov"
+		{
+			"carry"					"3"
+		}
+		"grenade_flares"
+		{
+			"carry"					"2"
+		}
+		
+		// ========================================
+		// Bullets
+		// ========================================
+		"9x19"	// FMJ 115gr 381m/s  570J
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"20"
+			"brass_model"				"models/weapons/shells/9x19.mdl"
+			"Damage"
+			{
+				"1"						"60"
+				"100"					"60"
+				"5000"					"32"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"0.60"
+				"HITGROUP_STOMACH"			"0.60"
+				"HITGROUP_LEFTARM"			"1.30"
+				"HITGROUP_RIGHTARM"			"1.30"
+				"HITGROUP_LEFTLEG"			"1.30"
+				"HITGROUP_RIGHTLEG"			"1.30"
+			}
+		}
+
+		"38special" // 158gr 290m/s 420J
+		{
+			"import"				"9x19"
+			"flags_clear"			"AMMO_USE_MAGAZINES"
+			"SuppressionIncrement"	"15"
+			"magsize"				"6"
+			"carry"					"48"
+
+			"Damage"
+			{
+				"1"						"70"
+				"100"					"70"
+				"5000"					"24"
+			}
+			"PenetrationPower"
+			{
+				"10"					"125"
+				"8000"					"75"
+			}
+		}
+		
+		"45acp"	// FMJ (US Army Ball) 230gr 250m/s  477J
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"30"
+			"brass_model"				"models/weapons/shells/45apc.mdl"
+			"magsize"					"25"
+			"Damage"
+			{
+				"10"					"76"
+				"8000"					"32"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"0.60"
+				"HITGROUP_STOMACH"			"0.60"
+				"HITGROUP_LEFTARM"			"1.50"
+				"HITGROUP_RIGHTARM"			"1.50"
+				"HITGROUP_LEFTLEG"			"1.50"
+				"HITGROUP_RIGHTLEG"			"1.50"
+			}
+		}
+		
+		"45acp_pistol"	// FMJ (US Army Ball) 230gr 250m/s  477J
+		{
+			"import"				"45acp"
+			"magsize"				"7"
+			"Damage"
+			{
+				"1"						"76"
+				"100"					"76"
+				"5000"					"32"
+			}
+		}
+		
+		"545x39"	// FMJ (US Army Ball) 230gr 250m/s  477J
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"30"
+			"brass_model"				"models/weapons/shells/545x39.mdl"
+			"Damage"
+			{
+				"10"					"82"
+				"8000"					"50"
+			}
+			"PenetrationPower"
+			{
+				"10"					"150"
+				"8000"					"90"
+			}
+		}
+		
+		"556x45"	// (currently assuming 855 not 855a) rough approx: 62gr 940m/s 1,767J
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"50"
+			"brass_model"				"models/weapons/shells/556x45.mdl"
+			"Damage"
+			{
+				"10"					"110"	// bullets fragment at under 60m dealing more damage. (truly more like 150m but compromise for gameplay)
+				"2700"					"80"
+				"12000"					"46"
+			}
+			"PenetrationPower"	// Maybe offer or imply Mk318 rounds which are like combined HP and AP at high cost?
+			{
+				"10"					"600"	// NATO Ball (M855) can penetrate up to 3 mm (about 1/8 in) of steel at 600 meters
+				"12000"					"175"
+			}
+		}
+		
+		"556x45_car"	// 20                                                      " vs 14" barrel: 866m/s vs 922m/s
+		{
+			"import"				"556x45"
+			"Damage"
+			{
+				"10"					"110"	// bullets fragment at under 20m dealing more damage. (truly more like 50m but compromise for gameplay)
+				"450"					"80"
+				"10000"					"46"
+			}
+		}
+		
+		"762x39"	// 122gr  730.3m/s 2,108J
+		{
+			"import"				"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"100"
+				"12000"					"80"
+			}
+			"PenetrationPower"
+			{
+				"10"					"750"
+				"12000"					"350"
+			}
+		}
+		
+		"762x33"	// 110gr 606.5m/s  1,311 J
+		{
+			"import"				"762x39"
+			"brass_model"				"models/weapons/shells/762x33.mdl"
+			"PenetrationPower"
+			{
+				"10"					"600"
+				"12000"					"175"
+			}
+		}
+		
+		"762x51"	// 147gr 833 m/s 3,304J
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"90"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"Damage"
+			{
+				"10"					"160"
+				"20000"					"100"
+			}
+			"PenetrationPower"
+			{
+				"10"					"1100"
+				"20000"					"600"
+			}
+		}
+		
+		"762x54"	// 181gr 786m/s  3,614J
+		{
+			"import"				"762x51"
+			"brass_model"			"models/weapons/shells/762x54.mdl"
+		}
+		
+		"00buck"
+		{
+			"import"				"default"
+			"bulletcount"				"12"
+			"damageType"				"DMG_BUCKSHOT"
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"brass_sound"				"BOUNCE_SHOTSHELL"
+			"Damage"
+			{
+				"800"					"27" // 324 total possible
+				"2000"					"14" // 162 (rounded up)
+				"7000"					"4" // 54 (rounded down)
+			}
+			"PenetrationPower"
+			{
+				"1000"					"100"
+				"8000"					"10"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"0.60"
+				"HITGROUP_STOMACH"			"0.60"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"1.00"
+				"HITGROUP_RIGHTLEG"			"1.00"
+			}
+		}
+		
+		"slug"
+		{
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"Damage"
+			{
+				"800"					"288"
+				"4500"					"144"
+				"9000"					"40"
+			}
+			"PenetrationPower"
+			{
+				"100"					"650"
+				"8000"					"10"
+			}
+		}
+		
+		// ========================================
+		// makarov
+		// ========================================
+		"9x18mm"
+		{
+			"import"				"9x19"
+			"carry"					"10"
+			"magsize"				"8"
+		}
+		
+		// ========================================
+		// MAGAZINES (shouldn't this be on the weapon? Or a diff theater file?)
+		// ========================================
+		
+		// ========================================
+		// m9
+		// ========================================
+		"9x19mm"
+		{
+			"import"				"9x19"
+			"carry"					"10"
+			"magsize"				"15"
+		}
+		
+		// ========================================
+		// AKM
+		// ========================================
+		"762x38_box"
+		{
+			"import"				"762x39"
+		}
+		
+		// ========================================
+		// FAL
+		// ========================================
+		"762x51_box_20rnd"
+		{
+			"import"				"762x51"
+			"magsize"				"20"
+		}
+		
+		// ========================================
+		// galil
+		// ========================================
+		"556_35box"
+		{
+			"import"				"556x45_car"
+			"magsize"				"35"
+		}
+		// ========================================
+		// mp5k, mp40
+		// ========================================
+		"9x19mm_smg"
+		{
+			"import"				"9x19"
+			"carry"					"12"
+			"magsize"				"30"
+
+			"Damage"
+			{
+				"10"					"60"
+				"16000"					"32"
+			}
+		}
+		
+		// ========================================
+		// ump45
+		// ========================================
+		"45acp_ump"
+		{
+			"import"				"45acp"
+			"carry"					"12"
+			"magsize"				"25"
+		}
+		
+		// ========================================
+		// m14
+		// ========================================
+		"762x51_mag"
+		{
+			"import"				"762x51"
+			"magsize"				"20"
+		}
+		
+		// ========================================
+		// mini14
+		// ========================================
+		"556_box"
+		{
+			"import"				"556x45"
+			"carry"					"12"
+			"magsize"				"20"
+		}
+		
+		// ========================================
+		// m1a1
+		// ========================================
+		"30_carbine"
+		{
+			"import"				"762x33"
+			"carry"					"12"
+			"magsize"				"15"
+		}
+		
+		// ========================================
+		// sks
+		// ========================================
+		"762x38mm_clip"
+		{
+			"import"				"762x39"
+			"carry"					"12"
+			"magsize"				"20"
+		}
+		
+		// ========================================
+		// m249
+		// ========================================
+		"556_m27"
+		{
+			"import"				"556x45"
+			"carry"					"6"
+			"magsize"				"200"
+			"tracer_frequency"			"4"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"9"
+		}
+		
+		// ========================================
+		// RPK
+		// ========================================
+		"762x38_drum"
+		{
+			"import"				"762x39"
+			"carry"					"6"
+			"magsize"				"75"
+			"tracer_frequency"			"3"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"7"
+		}
+		
+		// ========================================
+		// NOT MAGAZINES
+		// ========================================
+		
+		// ========================================
+		// m40a1
+		// ========================================
+		"762x51mm"
+		{
+			"import"				"762x51"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+		// ========================================
+		// mosin
+		// ========================================
+		"762x54mm"
+		{
+			"import"				"762x54"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+		// ========================================
+		// shotguns
+		// ========================================
+		"buckshot"
+		{
+			"import"				"00buck"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"slugs"
+		{
+			"import"				"slug"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+	}
+}

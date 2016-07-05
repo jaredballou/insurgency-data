@@ -1,0 +1,1227 @@
+"#base" "doi.theater"
+
+"theater"
+{
+	"player_settings"
+	{
+		"scoring"
+		{
+			"kill"						"10"
+			"kill_offensive"			"20"
+			"kill_defensive"			"20"
+			"kill_headshot_bonus"		"10"
+			"kill_savior"				"10"
+			"kill_bonus_domination"		"10"
+			"kill_bonus_revenge"		"10"
+			"assist"					"10"
+
+			"obj_captured"				"50" // points given when capture zone changes ownership
+			"obj_neutralized"			"20" // not actually used by any built-in modes
+			"obj_reset"					"20" // points given when defenders reset the progress to 0% (if progress got to at least 50%)
+			"obj_capture_tick"			"10" // attacking points given every 10%
+			"obj_reset_tick"			"10" // defending points given every 10%
+			"cache_destroyed"			"100"
+			"intel_captured"			"100"
+			"vip_killed"				"100"
+			"safehouse_secured"			"100"
+			"wave_complete"				"100"
+		}
+		// Weight is in lb
+		"weight"
+		{
+			"min_weight"			"60"
+			"max_weight"			"320"
+		}
+		"speed"
+		{
+			"frac_side_move"		"1.50" // ### 0.60
+			"frac_back_move"		"1.00" // ### 0.65
+			"frac_side_step"		"1.5"  // ### 0.6
+			"speed_prone"			"60"   // ### 54
+			"speed_crouch_walk"		"51"   // ### 46
+			"speed_crouch_run"		"119"  // ### 108
+			"speed_walk"			"88"   // ### 80
+			"speed_run"				"190"  // ### 170
+			"speed_sprint"			"260"  // ### 288
+			"AccelerationByWeight"
+			{
+				"60"				"4.20"
+				"320"				"4.19"
+			}
+			
+			"DecelerationByWeight"
+			{
+				"60"				"300.0" // these are much higher than acceleration values because it's loss in velocity per second
+				"320"				"340.0"
+			}
+			
+			"FrictionByWeight"
+			{
+				"60"				"4.20"
+				"320"				"4.35"
+			}
+		}
+		"turning"
+		{
+			"frac_turn_sprint"			"0.85"
+			"frac_turn_lean"			"0.95"
+			"frac_turn_crawl"			"0.5"
+			"frac_turn_prone_limit"		"0.0"
+			"prone_yaw_limit_amount"	"80"
+			"prone_yaw_limit_approach"	"20"
+		}
+		"stamina"
+		{
+			"StaminaMaxByWeight"
+			{
+				"60"				"120"
+				"320"				"100"
+			}
+			"stamina_regain"		"5"
+			"stamina_sprint_take"	"1"
+			"stamina_jump_take"		"3"
+			"stamina_dmg_take"		"0.25"
+			
+			"land_viewpunch_minvel"		"500" // ### 150
+			"land_viewpunch_basepitch" 	"0.75"
+			"land_viewpunch_jumppitch" 	"0.05"
+			"land_viewpunch_landpitch" 	"0.01"
+			"land_viewpunch_maxangle"	"50.0"
+			"land_viewpunch_freeaim"	"1.0"
+			"land_viewpunch_viewkick"	"1.0"
+		}
+		"focus"
+		{
+			"FocusTimeStamina"
+			{
+				"0"					"2.0"
+				"100"				"3.0"
+			}
+
+			"FocusCooldownStamina"
+			{
+				"0"					"2.5"
+				"100"				"1.5"
+			}
+
+			"FocusEffectivenessStamina"
+			{
+				"0"					"0.3"
+				"50"				"0.5"
+				"75"				"1.0"
+			}
+		}
+		"slide"
+		{
+			"min_sprint_time"		"1.2"
+			"post_sprint_grace"		"0.08"
+			
+			"DistanceByWeight"
+			{
+				"60"				"0.6"
+				"320"				"0.5"
+			}
+			
+			"SpeedByWeight"
+			{
+				"60"				"240"
+				"320"				"200"
+			}
+		}
+		"lean"
+		{
+			"lean_left_offset_stance"				"14 11 8"
+			"lean_right_offset_stance"				"27 25 8"
+			"lean_left_moving_offset_stance"		"8 5 4"
+			"lean_right_moving_offset_stance"		"12 8 6"
+			"lean_roll_offset_stance"				"10"
+			"lean_down_offset_stance"				"11"
+			"lean_down_offset_stance_crouch"		"2"
+			
+			"LeanSpeedByWeight"
+			{
+				"0"				"3.8"
+			}
+			"LeanViewModelSpeedByWeight"
+			{
+				"60"				"7"
+				"320"				"5"
+			}
+		}
+		"suppression"
+		{
+			"suppression_resistance"	"1.00" // ### 0.15
+			"suppression_recovery_rate"	"1000" // ### 25
+		}
+		"damage"
+		{
+			"damage_decay_rate"					"20"
+			"explosion_deafen_radius_factor"	"0.2"
+			"default_penetration_power"			"10"
+			"max_penetration_distance"			"100" // ### 300
+			
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"					"3"
+				"HITGROUP_CHEST"				"1.00"//"0.50"
+				"HITGROUP_STOMACH"				"0.80"//"0.40"
+				"HITGROUP_LEFTARM"				"0.40"//"0.20"
+				"HITGROUP_RIGHTARM"				"0.40"//"0.20"
+				"HITGROUP_LEFTLEG"				"0.50"//"0.25"
+				"HITGROUP_RIGHTLEG"				"0.50"//"0.25"
+			}
+			"VelocityHitgroups"
+			{
+				"HITGROUP_CHEST"    			"0.70"
+				"HITGROUP_STOMACH"    			"0.70"
+				"HITGROUP_LEFTARM"				"1.10"
+				"HITGROUP_RIGHTARM"				"1.10"
+				"HITGROUP_LEFTLEG"    			"0.30"
+				"HITGROUP_RIGHTLEG"   	 		"0.30"
+			}
+			"BulletPenetrationPower"
+			{
+				"CHAR_TEX_CONCRETE"				"100"
+				"CHAR_TEX_BRICK"				"100"
+				"CHAR_TEX_PLASTER"				"75"
+				"CHAR_TEX_DIRT"					"50"
+				"CHAR_TEX_FLESH"				"10"
+				"CHAR_TEX_GRASS"				"75"
+				"CHAR_TEX_PLASTIC"				"20"
+				"CHAR_TEX_METAL"				"120"
+				"CHAR_TEX_SAND"					"120"
+				"CHAR_TEX_FOLIAGE"				"60"
+				"CHAR_TEX_COMPUTER"				"40"
+				"CHAR_TEX_ASPHALT"				"36"
+				"CHAR_TEX_SLOSH"				"24"
+				"CHAR_TEX_TILE"					"26"
+				"CHAR_TEX_CARDBOARD"			"5"
+				"CHAR_TEX_VENT"					"16"
+				"CHAR_TEX_WOOD"					"60"
+				"CHAR_TEX_GLASS"				"3"
+				"CHAR_TEX_ROCK"					"120"
+				"CHAR_TEX_RUBBER"				"16"
+				"CHAR_TEX_SHEETROCK"			"15"
+				"CHAR_TEX_CARPET"				"30"		
+			}
+		}
+		"health"
+		{
+		}
+	}
+
+	"ammo"
+	{
+		"30_m1carbine"
+		{
+			"Damage"
+			{
+				"10"					"80"
+				"12000"					"40"
+			}
+			"PenetrationPower"
+			{
+				"10"					"400"
+				"12000"					"200"
+			}
+		}
+		
+		"9x19mm_mp40"
+		{
+			"Damage"
+			{
+				"10"					"46"
+				"12000"					"24"
+			}
+		}
+		
+		"30-06"
+		{
+			"Damage"
+			{
+				"10"					"85"
+				"8000"					"40"
+			}
+			"PenetrationPower"
+			{
+				"10"					"500"
+				"8000"					"200"
+			}
+		}
+		
+		"792x57"
+		{
+			"Damage"
+			{
+				"10"					"75"
+				"8000"					"35"
+			}
+			"PenetrationPower"
+			{
+				"10"					"500"
+				"8000"					"200"
+			}
+		}
+	}
+	
+	"weapons"
+	{
+		// ========================================
+		// PISTOLS
+		// ========================================
+		
+		"weapon_m1911"
+		{
+			"rounds_per_minute"				"260"//600
+			"barrel_length"					"8"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.4 0.4"//"-1.0 1.25"
+				"recoil_vertical_range"				"0.1 1.25"//"3.65 3.75"
+				"recoil_aim_punch"					"0 0" //"0.7 0.75"
+				"recoil_rest_rate"					"0"   //"9"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.35 -1.35"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				"recoil_shot_reset_time" 			"0"   //"0.75"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_punch_additive_factor" 		"0"   //"0.9"	// How much of the view punch from the previous shot(s) get added to any additional shot fired (default 1.0)
+				"recoil_additional_rest_per_shot"	"0"   //"5"
+				"recoil_freeaim_frac"				"0.8"
+				"recoil_ironsight_frac"				"0.9"
+			}
+			
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.5 0.5 0.5"
+				"FireModes"					"semi"
+				"bulletcount"				"1"
+				"maxrange"					"6000"
+			}
+		}
+		
+		"weapon_ppk"
+		{
+			"rounds_per_minute"				"280"//600
+			"barrel_length"					"8"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.4 0.4"//"-1.0 1.25"
+				"recoil_vertical_range"				"0.1 1.25"//"3.65 3.75"
+				"recoil_aim_punch"					"0 0" //"0.7 0.75"
+				"recoil_rest_rate"					"0"   //"9"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.35 -1.35"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				"recoil_shot_reset_time" 			"0"   //"0.75"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_punch_additive_factor" 		"0"   //"0.9"	// How much of the view punch from the previous shot(s) get added to any additional shot fired (default 1.0)
+				"recoil_additional_rest_per_shot"	"0"   //"5"
+				"recoil_freeaim_frac"				"0.8"
+				"recoil_ironsight_frac"				"0.9"
+			}
+			
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.5 0.5 0.5"
+				"FireModes"					"semi"
+				"bulletcount"				"1"
+				"maxrange"					"6000"
+			}
+		}
+		
+		"weapon_luger"
+		{
+			"rounds_per_minute"				"280"//600
+			"barrel_length"					"8"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.4 0.4"//"-1.0 1.25"
+				"recoil_vertical_range"				"0.1 1.25"//"3.65 3.75"
+				"recoil_aim_punch"					"0 0" //"0.7 0.75"
+				"recoil_rest_rate"					"0"   //"9"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.35 -1.35"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				"recoil_shot_reset_time" 			"0"   //"0.75"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_punch_additive_factor" 		"0"   //"0.9"	// How much of the view punch from the previous shot(s) get added to any additional shot fired (default 1.0)
+				"recoil_additional_rest_per_shot"	"0"   //"5"
+				"recoil_freeaim_frac"				"0.8"
+				"recoil_ironsight_frac"				"0.9"
+			}
+			
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.5 0.5 0.5"
+				"FireModes"					"semi"
+				"bulletcount"				"1"
+				"maxrange"					"6000"
+			}
+		}
+		
+		"weapon_p38"
+		{
+			"rounds_per_minute"				"280"//600
+			"barrel_length"					"8"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.4 0.4"//"-1.0 1.25"
+				"recoil_vertical_range"				"0.1 1.25"//"3.65 3.75"
+				"recoil_aim_punch"					"0 0" //"0.7 0.75"
+				"recoil_rest_rate"					"0"   //"9"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.35 -1.35"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				"recoil_shot_reset_time" 			"0"   //"0.75"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_punch_additive_factor" 		"0"   //"0.9"	// How much of the view punch from the previous shot(s) get added to any additional shot fired (default 1.0)
+				"recoil_additional_rest_per_shot"	"0"   //"5"
+				"recoil_freeaim_frac"				"0.8"
+				"recoil_ironsight_frac"				"0.9"
+			}
+			
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.5 0.5 0.5"
+				"FireModes"					"semi"
+				"bulletcount"				"1"
+				"maxrange"					"6000"
+			}
+		}
+		
+		// ========================================
+		// BOLT-ACTION WEAPONS
+		// ========================================
+			
+		"weapon_springfield"
+		{
+			"barrel_length"					"19"
+			
+			"recoil"
+			{				
+				"recoil_lateral_range"				"-0.2 0.2"//"-0.35 0.65"
+				"recoil_vertical_range"				"-0.1 0.7"//"3.15 3.45"
+				"recoil_aim_punch"					"0 0" //"0.5 0.8"
+				"recoil_rest_rate"					"0"   //"7"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.8 -1.8"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"6"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.92"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.16 0.16 0.16"
+				"FireModes"					"bolt"
+				"bulletcount"				"1"
+				"maxrange"					"12000"
+			}
+		}
+		
+		"weapon_k98"
+		{
+			"barrel_length"					"19"
+			
+			"recoil"
+			{				
+				"recoil_lateral_range"				"-0.2 0.2"//"-0.35 0.65"
+				"recoil_vertical_range"				"-0.1 0.7"//"3.15 3.45"
+				"recoil_aim_punch"					"0 0" //"0.5 0.8"
+				"recoil_rest_rate"					"0"   //"7"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.8 -1.8"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"6"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.92"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.16 0.16 0.16"
+				"FireModes"					"bolt"
+				"bulletcount"				"1"
+				"maxrange"					"12000"
+			}
+		}
+		
+		"weapon_k98_sniper"
+		{
+			"barrel_length"					"19"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"		"-2.2 3.4"
+				"recoil_vertical_range"		"5.5 6.4"
+				"recoil_aim_punch"			"0 0" //"0.8 0.95"
+				"recoil_rest_rate"			"0"   //"12" 
+				"recoil_rest_delay"			"3600"//"0.05"
+				"recoil_roll_range"			"0 0" //"-5 -5"
+				"recoil_roll_rest_rate"		"0"   //"70"
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.08 0.08 0.08"
+				"FireModes"					"bolt"
+				"bulletcount"				"1"
+				"maxrange"					"40000"
+				"singleReload"				"1"
+			}
+		}
+		
+		// ========================================
+		// SEMI-AUTO WEAPONS
+		// ========================================
+		
+		"weapon_m1garand"
+		{
+			"barrel_length"					"11"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.2 0.2"//"-0.4 0.7"
+				"recoil_vertical_range"				"-0.1 0.7"//"2.325 2.625"
+				"recoil_aim_punch"					"0 0" //"0.5 0.6"
+				"recoil_rest_rate"					"0"   //"5"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.5 -1.5"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"6"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.85"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.19 0.19 0.19"
+				"FireModes"					"semi"
+				"bulletcount"				"1"
+				"maxrange"					"10000"
+			}
+		}
+		
+		"weapon_m1carbine"
+		{
+			"barrel_length"					"10"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.2 0.2"//"-0.4 0.7"
+				"recoil_vertical_range"				"-0.1 0.7"//"2.325 2.625"
+				"recoil_aim_punch"					"0 0" //"0.5 0.6"
+				"recoil_rest_rate"					"0"   //"5"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.5 -1.5"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"6"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.85"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.19 0.19 0.19"
+				"FireModes"					"semi"
+				"bulletcount"				"1"
+				"maxrange"					"10000"
+			}
+		}
+		
+		"weapon_g43"
+		{
+			"barrel_length"					"11"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.2 0.2"//"-0.4 0.7"
+				"recoil_vertical_range"				"-0.1 0.7"//"2.325 2.625"
+				"recoil_aim_punch"					"0 0" //"0.5 0.6"
+				"recoil_rest_rate"					"0"   //"5"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.5 -1.5"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"6"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.85"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.19 0.19 0.19"
+				"FireModes"					"semi"
+				"bulletcount"				"1"
+				"maxrange"					"10000"
+			}
+		}
+		
+		"weapon_g43_sniper"
+		{
+			"barrel_length"					"11"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"		"-2.2 3.4"
+				"recoil_vertical_range"		"5.5 6.4"
+				"recoil_aim_punch"			"0 0" //"0.8 0.95"
+				"recoil_rest_rate"			"0"   //"12" 
+				"recoil_rest_delay"			"3600"//"0.05"
+				"recoil_roll_range"			"0 0" //"-5 -5"
+				"recoil_roll_rest_rate"		"0"   //"70"
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.08 0.08 0.08"
+				"FireModes"					"semi"
+				"bulletcount"				"1"
+				"maxrange"					"40000"
+				"singleReload"				"1"
+			}
+		}
+		
+		// ========================================
+		// SUB-MACHINE GUNS
+		// ========================================
+		
+		"weapon_thompson"
+		{
+			"barrel_length"					"8"
+			
+			"recoil"
+			{				
+				"recoil_lateral_range"				"-0.3 0.3"//"-0.70 1.05"
+				"recoil_vertical_range"				"-0.1 0.6"//"1.6 2.2"//"1.875 2.475"
+				"recoil_aim_punch"					"0 0" //"0.4 0.6"
+				"recoil_rest_rate"					"0"   //"6"
+				"recoil_rest_delay"					"3600"//"0.14"
+				"recoil_roll_range"					"0 0" //"-1.45 -1.45"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				"recoil_freeaim_frac"				"0.4"
+				
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.82"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.40 0.40 0.40"
+				"FireModes"					"semi, full"
+				"bulletcount"				"1"
+				"maxrange"					"8000"
+			}
+		}
+		
+		"weapon_mp40"
+		{
+			"barrel_length"					"8"
+			
+			"recoil"
+			{				
+				"recoil_lateral_range"				"-0.3 0.3"//"-0.70 1.05"
+				"recoil_vertical_range"				"-0.1 0.6"//"1.6 2.2"//"1.875 2.475"
+				"recoil_aim_punch"					"0 0" //"0.4 0.6"
+				"recoil_rest_rate"					"0"   //"6"
+				"recoil_rest_delay"					"3600"//"0.14"
+				"recoil_roll_range"					"0 0" //"-1.45 -1.45"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				"recoil_freeaim_frac"				"0.4"
+				
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.82"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.40 0.40 0.40"
+				"FireModes"					"full"
+				"bulletcount"				"1"
+				"maxrange"					"8000"
+			}
+		}
+
+		"weapon_sten"
+		{
+			"barrel_length"					"8"
+			
+			"recoil"
+			{				
+				"recoil_lateral_range"				"-0.3 0.3"//"-0.70 1.05"
+				"recoil_vertical_range"				"-0.1 0.6"//"1.6 2.2"//"1.875 2.475"
+				"recoil_aim_punch"					"0 0" //"0.4 0.6"
+				"recoil_rest_rate"					"0"   //"6"
+				"recoil_rest_delay"					"3600"//"0.14"
+				"recoil_roll_range"					"0 0" //"-1.45 -1.45"
+				"recoil_roll_rest_rate"				"0"   //"150"
+				"recoil_freeaim_frac"				"0.4"
+				
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.82"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.40 0.40 0.40"
+				"FireModes"					"full"
+				"bulletcount"				"1"
+				"maxrange"					"8000"
+			}
+		}
+		
+		// ========================================
+		// ASSAULT RIFLES
+		// ========================================
+		"weapon_stg44"
+		{
+			"barrel_length"					"11"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.3 0.3"//"-0.8 1.05"
+				"recoil_vertical_range"				"-0.1 0.5"//"2.55 2.85"
+				"recoil_aim_punch"					"0 0" //"0.4 0.7"
+				"recoil_rest_rate"					"0"   //"5"
+				"recoil_rest_delay"					"3600"//"0.12"
+				"recoil_roll_range"					"0 0" //"-1.5 -1.5"
+				"recoil_roll_rest_rate"				"0"   //"150"		
+				"recoil_freeaim_frac"				"0.3"
+				
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"8"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.85"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.22 0.22 0.22"
+				"FireModes"					"semi, full"
+				"bulletcount"				"1"
+				"maxrange"					"10000"
+			}
+		}
+		
+		// ========================================
+		// LIGHT MACHINE GUNS
+		// ========================================
+		
+		"weapon_bar"
+		{
+			"barrel_length"					"14"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.4 0.4" //"-1.2 2.1"
+				"recoil_vertical_range"				"-0.15 0.8"//"1.65 3.3"
+				"recoil_aim_punch"					"0 0" //"0.5 0.65"
+				"recoil_rest_rate"					"0"   //"20"
+				"recoil_rest_delay"					"3600"//".09"
+				"recoil_roll_range"					"0 0" //"-2 -2" // Vibration strength 
+				"recoil_roll_rest_rate"				"0"   //"200"	// Vibration Speed
+
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.6"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.92"	// How much of the view punch from the previous shot(s) get added to any additional shot fired. 1 = all, 0 = none, 0.5 = half (default = 1.0)
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.24 0.24 0.24"
+				"FireModes"					"semi, full"
+				"bulletcount"				"1"
+				"maxrange"					"8000"
+			}
+		}
+		
+		// ========================================
+		// HEAVY MACHINE GUNS
+		// ========================================
+		
+		"weapon_m1919"
+		{
+			"barrel_length"					"12"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.4 0.4" //"-1.2 2.1"
+				"recoil_vertical_range"				"-0.15 0.8"//"1.65 3.3"
+				"recoil_aim_punch"					"0 0" //"0.5 0.65"
+				"recoil_rest_rate"					"0"   //"20"
+				"recoil_rest_delay"					"3600"//".09"
+				"recoil_roll_range"					"0 0" //"-2 -2" // Vibration strength 
+				"recoil_roll_rest_rate"				"0"   //"200"	// Vibration Speed
+
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.6"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.92"	// How much of the view punch from the previous shot(s) get added to any additional shot fired. 1 = all, 0 = none, 0.5 = half (default = 1.0)
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.24 0.24 0.24"
+				"FireModes"					"full"
+				"bulletcount"				"1"
+				"maxrange"					"8000"
+			}
+		}
+		
+		"weapon_mg42"
+		{
+			"barrel_length"					"13"
+			
+			"recoil"
+			{
+				"recoil_lateral_range"				"-0.4 0.4" //"-1.2 2.1"
+				"recoil_vertical_range"				"-0.15 0.8"//"1.65 3.3"
+				"recoil_aim_punch"					"0 0" //"0.5 0.65"
+				"recoil_rest_rate"					"0"   //"20"
+				"recoil_rest_delay"					"3600"//".09"
+				"recoil_roll_range"					"0 0" //"-2 -2" // Vibration strength 
+				"recoil_roll_rest_rate"				"0"   //"200"	// Vibration Speed
+
+				"recoil_additional_rest_per_shot" 	"0"//"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time" 			"0"//"0.6"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots" 			"0"//"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor" 		"0"//"0.92"	// How much of the view punch from the previous shot(s) get added to any additional shot fired. 1 = all, 0 = none, 0.5 = half (default = 1.0)
+			}
+			"ballistics"
+			{
+				"spread"					"0 0 0"//"0.24 0.24 0.24"
+				"FireModes"					"full"
+				"bulletcount"				"1"
+				"maxrange"					"8000"
+			}
+		}
+	}
+
+	"teams"
+	{
+		"security"
+		{
+			"squads"
+			{
+				"#squad_american_rifle"
+				{
+					"#class_american_officer"		"template_american_officer"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_support"		"template_american_support"
+					"#class_american_sniper"		"template_american_sniper"
+				}
+				
+				"#squad_american_assault"
+				{
+					"#class_american_officer"		"template_american_officer"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_demolitions"	"template_american_demolitions"
+					"#class_american_demolitions"	"template_american_demolitions"
+				}
+				
+				"#squad_american_support"
+				{
+					"#class_american_officer"		"template_american_officer"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_support"		"template_american_support"
+					"#class_american_sniper"		"template_american_sniper"
+				}
+			}
+
+			"?push_security_attack"
+			{
+				"squads"
+				{
+					"#squad_american_rifle"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_support"		"template_american_support"
+						"#class_american_sniper"		"template_american_sniper"
+					}
+					
+					"#squad_american_assault"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_demolitions"	"template_american_demolitions"
+						"#class_american_demolitions"	"template_american_demolitions"
+					}
+					
+					"#squad_american_support"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_support"		"template_american_support"
+						"#class_american_sniper"		"template_american_sniper"
+					}
+				}
+			}
+			
+			"?push_security_defend"
+			{
+				"squads"
+				{
+					"#squad_american_rifle"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_support"		"template_american_support"
+						"#class_american_sniper"		"template_american_sniper"
+					}
+					
+					"#squad_american_assault"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_demolitions"	"template_american_demolitions"
+						"#class_american_demolitions"	"template_american_demolitions"
+					}
+					
+					"#squad_american_support"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_support"		"template_american_support"
+						"#class_american_sniper"		"template_american_sniper"
+					}
+				}
+			}
+
+			"?strike_security_attack"
+			{
+				"squads"
+				{
+					"#squad_american_rifle"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_support"		"template_american_support"
+						"#class_american_sniper"		"template_american_sniper"
+					}
+					
+					"#squad_american_assault"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_demolitions"	"template_american_demolitions"
+						"#class_american_demolitions"	"template_american_demolitions"
+					}
+					
+					"#squad_american_support"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_support"		"template_american_support"
+						"#class_american_sniper"		"template_american_sniper"
+					}
+				}
+			}
+			
+			"?strike_security_defend"
+			{
+				"squads"
+				{
+					"#squad_american_rifle"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_support"		"template_american_support"
+						"#class_american_sniper"		"template_american_sniper"
+					}
+					
+					"#squad_american_assault"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_demolitions"	"template_american_demolitions"
+						"#class_american_demolitions"	"template_american_demolitions"
+					}
+					
+					"#squad_american_support"
+					{
+						"#class_american_officer"		"template_american_officer"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_assault"		"template_american_assault"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_rifleman"		"template_american_rifleman"
+						"#class_american_support"		"template_american_support"
+						"#class_american_sniper"		"template_american_sniper"
+					}
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"squads"
+			{
+				"#squad_german_rifle"
+				{
+					"#class_german_officer"			"template_german_officer"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_machinegunner"	"template_german_machinegunner"
+					"#class_german_sniper"			"template_german_sniper"
+				}
+				
+				"#squad_german_assault"
+				{
+					"#class_german_officer"			"template_german_officer"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_demolitions"		"template_german_demolitions"
+					"#class_german_demolitions"		"template_german_demolitions"
+				}
+				
+				"#squad_german_support"
+				{
+					"#class_german_officer"			"template_german_officer"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_machinegunner"	"template_german_machinegunner"
+					"#class_german_sniper"			"template_german_sniper"
+				}
+			}
+
+			"?push_insurgents_attack"
+			{
+				"squads"
+				{
+					"#squad_german_rifle"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_machinegunner"	"template_german_machinegunner"
+						"#class_german_sniper"			"template_german_sniper"
+					}
+					
+					"#squad_german_assault"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_demolitions"		"template_german_demolitions"
+						"#class_german_demolitions"		"template_german_demolitions"
+					}
+					
+					"#squad_german_support"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_machinegunner"	"template_german_machinegunner"
+						"#class_german_sniper"			"template_german_sniper"
+					}
+				}
+			}
+			
+			"?push_insurgents_defend"
+			{
+				"squads"
+				{
+					"#squad_german_rifle"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_machinegunner"	"template_german_machinegunner"
+						"#class_german_sniper"			"template_german_sniper"
+					}
+					
+					"#squad_german_assault"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_demolitions"		"template_german_demolitions"
+						"#class_german_demolitions"		"template_german_demolitions"
+					}
+					
+					"#squad_german_support"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_machinegunner"	"template_german_machinegunner"
+						"#class_german_sniper"			"template_german_sniper"
+					}
+				}
+			}
+
+			"?strike_insurgents_attack"
+			{
+				"squads"
+				{
+					"#squad_german_rifle"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_machinegunner"	"template_german_machinegunner"
+						"#class_german_sniper"			"template_german_sniper"
+					}
+					
+					"#squad_german_assault"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_demolitions"		"template_german_demolitions"
+						"#class_german_demolitions"		"template_german_demolitions"
+					}
+					
+					"#squad_german_support"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_machinegunner"	"template_german_machinegunner"
+						"#class_german_sniper"			"template_german_sniper"
+					}
+				}
+			}
+			
+			"?strike_insurgents_defend"
+			{
+				"squads"
+				{
+					"#squad_german_rifle"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_machinegunner"	"template_german_machinegunner"
+						"#class_german_sniper"			"template_german_sniper"
+					}
+					
+					"#squad_german_assault"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_demolitions"		"template_german_demolitions"
+						"#class_german_demolitions"		"template_german_demolitions"
+					}
+					
+					"#squad_german_support"
+					{
+						"#class_german_officer"			"template_german_officer"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_assault"			"template_german_assault"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_rifleman"		"template_german_rifleman"
+						"#class_german_machinegunner"	"template_german_machinegunner"
+						"#class_german_sniper"			"template_german_sniper"
+					}
+				}
+			}
+		}
+	}
+}

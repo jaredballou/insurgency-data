@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "overviews/jail_break_op"
+	"$translucent" 1
+	$vertexalpha 1
+	$no_fullbright 1
+	$ignorez 1
+}

@@ -1,0 +1,651 @@
+"#base" "srnx_base_player.theater"
+"#base" "srnx_gear.theater"
+"#base" "srnx_weapon.theater"
+"#base" "srnx_weapon_upgrades.theater"
+
+"theater"
+{
+	"core"
+	{
+		"precache"
+		{
+			"localize"	"resource/gnalvlsrealism_english.txt"
+		}
+		"precache"
+		{
+			// default theater specific sounds
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			"sounds"			"scripts/ins_sounds_cues.txt"
+			"sounds"			"scripts/ins_sounds_voice.txt"
+			"sounds"			"scripts/ins_sounds_radial_security.txt"				
+			"sounds"			"scripts/ins_sounds_radial_insurgent.txt"				
+			"sounds"			"scripts/ins_sounds_responses_security.txt"
+			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
+			"sounds"			"scripts/ins_sounds_hq.txt"
+			
+			// coop specific
+			"sounds"			"scripts/ins_sounds_voice_coop.txt"
+		}
+	}
+
+
+	"player_templates"
+	{
+		//security class templates
+		//USMC Templates:
+		
+		"Gnalvl_squadleader_usmc"
+		{	
+			"team"			"security"			
+			"print_name"	"#Squad_Gnalvl_SquadLeader"	
+
+
+			"models"
+			{
+				"player"				"models/characters/security_specialist.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				"attachments"
+				{
+					"headgear"
+					{
+						"model"                 "models/characters/us_cap_specialist.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+				//"helmet"				"models/characters/us_helmet_head.mdl"
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_l1a1"
+				"weapon"			"weapon_knife"
+				"weapon"			"weapon_m67"
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_l1a1"
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_galil"
+				"weapon"			"weapon_m249"
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_mk3"
+				//pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}
+		"Gnalvl_teamleader_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"#Squad_Gnalvl_TeamLeader"
+
+			"models"
+			{
+				"player"				"models/characters/security_specialist.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				//"helmet"				"models/characters/us_helmet_head.mdl"
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_cap_light.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_l1a1"
+				"weapon"			"weapon_knife"
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_l1a1"
+				"weapon"			"weapon_mk18"
+				"weapon"			"weapon_saiga12"
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_galil"
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_mk3"
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_anm14"
+				//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}
+		"Gnalvl_pointman_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"Rifleman (point)"
+
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_cap_light.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_saiga12"
+				"weapon"			"weapon_knife"
+				"weapon"			"weapon_mk3"
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_saiga12"
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_galil"
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mk18"
+
+
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_mk3"
+				//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}
+		"Gnalvl_grenadier_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"#Squad_Gnalvl_Grenadier"
+
+
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_cap_light.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_m16a4"
+				"weapon"			"weapon_knife"
+
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_m16a4"
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mk18"
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_at4"
+				"weapon"			"weapon_rpg7"
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_mk3"
+				"weapon_upgrade"		"underbarrel_m203_mk3"
+				"weapon_upgrade"		"underbarrel_m203_incendiary"
+				"weapon_upgrade"		"underbarrel_m203_he"
+				"weapon_upgrade"		"underbarrel_gp25_he"
+				"weapon_upgrade"		"underbarrel_gp25_incendiary"
+				"weapon_upgrade"		"underbarrel_gp25_mk3"//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}
+		"Gnalvl_engineer_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"#Squad_Gnalvl_Engineer"
+
+			"models"
+			{
+				"player"				"models/characters/civilian_vip_security.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_cap_vip.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+				//"helmet"				"models/characters/us_helmet_head.mdl"
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_knife"
+				"weapon"			"weapon_mk18"
+				"weapon"			"weapon_c4_clicker"
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_vz58"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_mk18"
+				"weapon"			"weapon_m4a1"
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_c4_clicker"
+				"weapon"			"weapon_molotov"
+				//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}	
+		"gnalvl_medic_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"#Squad_Gnalvl_Medic"
+
+			"models"
+			{
+				"player"			"models/characters/security_heavy.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_sec_m.mdl"	
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_cap_light.mdl"
+						"fallback_for_slot"					"head"
+					}
+				}
+			}
+
+			"buy_order" 
+			{
+				
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_defib"
+				"weapon"			"weapon_m67"
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_saiga12"
+				"weapon"			"weapon_m16a4"
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_mk18"
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_mk3"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_anm14"
+				//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}
+		"Gnalvl_support_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"#Squad_Gnalvl_MGGunner"
+
+			"models"
+			{
+				"player"			"models/characters/security_rifleman.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_sec_m.mdl"	
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_cap_light.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_m249"
+				"weapon"			"weapon_knife"
+				"weapon"			"weapon_m67"
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_rpk"
+				"weapon"			"weapon_m249"
+				"weapon"			"weapon_galil"
+				//upgrades
+				"weapon_upgrade"	"magazine_drum_75rd"
+
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_mk3"
+				"weapon"			"weapon_m84"
+				//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+
+			}
+		}
+		"Gnalvl_teamleader_recon_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"#Squad_Gnalvl_TeamLeader_Recon"
+
+			"models"
+			{
+				"player"				"models/characters/security_rifleman.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				//"helmet"				"models/characters/us_helmet_head.mdl"
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_cap_specialist.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_knife"
+				"weapon"			"weapon_l1a1"
+				"weapon"			"weapon_m67"
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_l1a1"
+				"weapon"			"weapon_sks"
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_mosin"
+				"weapon"			"weapon_vz58"
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_anm14"
+				//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}
+		"gnalvl_recon_medic_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"#Squad_Gnalvl_ReconMedic"
+
+			"models"
+			{
+				"player"			"models/characters/security_heavy.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_sec_l.mdl"	
+				// "attachments"
+				// {
+				// 	"helmet"
+				// 	{
+				// 		"model"			"models/characters/ins_helmet_head.mdl"
+				// 	}
+				// }
+			}
+
+			"buy_order" 
+			{
+				"weapon"			"weapon_fal"
+				"weapon"			"weapon_defib"
+			}
+			"allowed_items"
+			{
+				
+				"weapon"			"weapon_model10"
+				//Primaries
+				"weapon"			"weapon_fal"
+				"weapon"			"weapon_m16a4"
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_sks"
+				"weapon"			"weapon_akm"
+				//Upgrades
+				"weapon_upgrade"	"magazine_extended_rifle_30rd"
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_mk3"
+				"weapon"			"weapon_anm14"
+				//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}
+		"Gnalvl_marksman_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"#Squad_Gnalvl_Marksman"
+
+			"models"
+			{
+				"player"				"models/characters/security_standard.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				//"helmet"				"models/characters/us_helmet_head.mdl"
+			}
+
+			"buy_order" 
+			{
+				
+				"weapon"			"weapon_m40a1"
+				"weapon"			"weapon_knife"
+				"weapon"			"weapon_m67"
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_sks"
+				"weapon"			"weapon_m14"
+				"weapon"			"weapon_fal"
+				"weapon"			"weapon_m40a1"
+				"weapon"			"weapon_akm"
+				//Upgrades
+				"weapon_upgrade"	"magazine_extended_rifle_30rd"
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_mk3"
+				//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}
+		"Gnalvl_spotter_usmc"
+		{	
+			"team"			"security"
+			"print_name"	"#Squad_Gnalvl_Marksman"
+
+			"models"
+			{
+				"player"				"models/characters/security_standard.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				//"helmet"				"models/characters/ins_helmet.mdl"
+			}
+
+			"buy_order" 
+			{
+				
+				"weapon"			"weapon_m40a1"
+				"weapon"			"weapon_knife"
+				"weapon"			"weapon_m67"
+			}
+			"allowed_items"
+			{
+				//Primaries
+				"weapon"			"weapon_sks"
+				"weapon"			"weapon_m14"
+				"weapon"			"weapon_fal"
+				"weapon"			"weapon_m40a1"
+				"weapon"			"weapon_galil"
+				//Upgrades
+				"weapon_upgrade"	"magazine_extended_rifle_30rd"
+				//Secondaries
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_sterling"
+				//Explosives
+				"weapon"			"weapon_m67"
+				"weapon"			"weapon_m84"
+				//Pistols
+				"weapon"			"weapon_model10"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_m93r"
+				"weapon"			"weapon_m45"
+			}
+		}
+		
+	}
+}
+
+
+
+

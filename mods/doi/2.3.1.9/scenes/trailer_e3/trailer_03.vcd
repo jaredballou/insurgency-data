@@ -1,0 +1,49 @@
+// Choreo version 1
+actor "player_2_1_3"
+{
+  channel "Sequence"
+  {
+    event sequence "trailer_03"
+    {
+      time -5.066667 15.799999
+      param "trailer_03"
+      event_ramp
+      {
+        11.2200 0.0000
+        13.7000 1.0000
+        20.8667 1.0000
+      }
+      fixedlength
+    }
+    event sequence "trailer_03"
+    {
+      time 0.033333 20.900000
+      param "trailer_03"
+      event_ramp
+      {
+        0.0000 1.0000
+        6.9167 1.0000
+        9.6417 0.0072
+      }
+      fixedlength
+    }
+  }
+  channel "Flexes"
+  {
+  }
+  channel "Voice"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "36"
+  "RampTool" "8"
+  "SceneRampTool" "100"
+  "ExpressionTool" "34"
+  "GestureTool" "100"
+}
+fps 30
+snap on
+ignorePhonemes off

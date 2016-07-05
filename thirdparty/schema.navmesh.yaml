@@ -1,0 +1,154 @@
+---
+iNavMagicNumber: 
+  _type: UnsignedInteger
+iNavVersion: 
+  _type: UnsignedInteger
+iNavSubVersion: 
+  _type: UnsignedInteger
+iNavSaveBspSize: 
+  _type: UnsignedInteger
+iNavMeshAnalyzed: 
+  _type: UnsignedChar
+iPlaceCount: 
+  _type: UnsignedShort
+Places: 
+  _type: Compound
+  count: @iPlaceCount
+  _fields: 
+    iPlaceStringSize:
+      _type: UnsignedShort
+    sPlaceName: 
+      _type: Text
+      size: @iPlaceStringSize
+iNavUnnamedAreas:
+  _type: UnsignedChar
+iAreaCount:
+  _type: UnsignedInteger
+Areas:
+  _type: Compound
+  count: @iAreaCount
+  _fields: 
+    iAreaID:
+      _type: UnsignedInteger
+    iAreaFlags:
+      _type: UnsignedInteger
+    pos1:
+      _type: Vector
+    pos2:
+      _type: Vector
+    vecflNECornerZ:
+      _type: Float
+    vecflSWCornerZ:
+      _type: Float
+    Connections:
+      _type: Compound
+      count: 4
+      _fields:
+        iConnectionCount:
+          _type: UnsignedInteger
+        DirConnections:
+          _type: Compound
+          count: @iConnectionCount
+          _fields:
+            iConnectingAreaID:
+              _type: UnsignedInteger
+    iHidingSpotCount:
+      _type: UnsignedChar
+    HidingSpots:
+      _type: Compound
+      count: @iHidingSpotCount
+      _fields:
+        iHidingSpotID:
+          _type: UnsignedInteger
+        vecflHidingSpot:
+          _type: Vector
+        iHidingSpotFlags:
+          _type: UnsignedChar
+    iEncounterPathCount:
+      _type: UnsignedInteger
+    EncounterPaths:
+      _type: Compound
+      count: @iEncounterPathCount
+      _fields:
+        iEncounterFromID:
+          _type: UnsignedInteger
+        iEncounterFromDirection:
+          _type: UnsignedChar
+        iEncounterToID:
+          _type: UnsignedInteger
+        iEncounterToDirection:
+          _type: UnsignedChar
+        iEncounterSpotCount:
+          _type: UnsignedChar
+        EncounterSpots:
+          _type: Compound
+          count: @iEncounterSpotCount
+          _fields:
+            iEncounterSpotOrderID:
+              _type: UnsignedInteger
+            iEncounterSpotT:
+              _type: UnsignedChar
+    iPlaceID:
+      _type: UnsignedShort
+    Ladders:
+      _type: Compound
+      count: 2
+      _fields:
+        iLadderConnectionCount:
+          _type: UnsignedInteger
+        LadderConnections:
+          _type: Compound
+          count: @iLadderConnectionCount
+          _fields:
+            iLadderConnectionID:
+              _type: UnsignedInteger
+    vecflEarliestOccupyTimeFirstTeam:
+      _type: Float
+    vecflEarliestOccupyTimeSecondTeam:
+      _type: Float
+    vecflNavCornerLightIntensityNW:
+      _type: Float
+    vecflNavCornerLightIntensityNE:
+      _type: Float
+    vecflNavCornerLightIntensitySE:
+      _type: Float
+    vecflNavCornerLightIntensitySW:
+      _type: Float
+    iVisibleAreaCount:
+      _type: UnsignedInteger
+    iVisibleAreaID:
+      _type: UnsignedInteger
+    iVisibleAreaAttributes:
+      _type: UnsignedChar
+    iInheritVisibilityFrom:
+      _type: UnsignedInteger
+    unk01:
+      _type: UnsignedInteger
+iLadderCount:
+  _type: UnsignedInteger
+Ladders:
+  _type: Compound
+  count: @iLadderCount
+  _fields:
+    iLadderID:
+      _type: UnsignedInteger
+    vecflLadderWidth:
+      _type: UnsignedInteger
+    vecflLadderTop:
+      _type: Vector
+    vecflLadderBottom:
+      _type: Vector
+    vecflLadderLength:
+      _type: UnsignedInteger
+    iLadderDirection:
+      _type: UnsignedInteger
+    iLadderTopForwardAreaID:
+      _type: UnsignedInteger
+    iLadderTopLeftAreaID:
+      _type: UnsignedInteger
+    iLadderTopRightAreaID:
+      _type: UnsignedInteger
+    iLadderTopBehindAreaID:
+      _type: UnsignedInteger
+    iLadderBottomAreaID:
+      _type: UnsignedInteger

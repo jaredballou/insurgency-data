@@ -1,0 +1,1538 @@
+
+//exterior
+"exterior"
+{
+
+	// *** dsp settings *** //
+	
+	// set dsp to automatic calculation and full mix
+	// DSP 134 is new preset, Urban preset
+	// DSP 138 new open streets preset
+	"dsp"	"41"
+	"dsp_spatial"  "41"
+	"dsp_volume" "0.0"
+	
+	"soundmixer" "default_mix"
+	
+	"fadetime" "1.0"
+	
+
+	// *** looping sounds *** //
+
+	
+	//	city background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\city_ambience_01.wav"
+	}
+	
+	//Single Flies Close
+	"playrandom"
+	{
+		"time"		"6,10"
+		"volume"	"0.1, 0.6"
+		"pitch"		"90,100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\flies_single_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_09.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_10.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_11.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_12.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_13.ogg"				
+		}
+	} 
+	
+     // Bird Song
+	"playrandom"
+	{
+		"time"		"1,8"
+		"volume"	"0.05,0.15"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_10.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_11.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_12.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_13.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_14.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_15.ogg"			
+		}
+	} 
+	
+	//school random
+	"playrandom"
+	{
+		"time"		"3,7"
+		"volume"	"0.05,0.1"
+		"pitch"		"97,103"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\school_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\school_02.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\school_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\school_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\school_05.ogg"
+		"wave"	")soundscape\emitters\Oneshot\school_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\school_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\school_08.ogg"
+		}
+	} 
+
+	
+	//flybys
+	"playrandom"
+	{
+		"time"		"20,50"
+		"volume"	"0.5,0.8" //0.9,1.0
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\helicopter_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\helicopter_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\flyby_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\flyby_02.ogg"
+		}
+	} 
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.9,1.0"
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_04.ogg"
+		}
+	} 
+	
+	//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"3,5"
+		"volume"	"0.1, 0.3"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_07.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_08.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_09.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_10.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_11.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_06.ogg"
+		}
+	}
+	
+		//Distant Dogs
+	"playrandom"
+	{
+		"time"		"6,10"
+		"volume"	"0.3,0.75"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_10.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_11.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_12.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_13.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_14.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_15.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_16.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_17.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_18.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_19.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_20.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_21.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_22.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_23.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_24.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_25.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_26.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_27.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_28.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_29.ogg"			
+		}
+	}
+}	
+
+
+//1st Floor
+"1st_floor"
+{
+
+	// *** dsp settings *** //
+	
+	// set dsp to automatic calculation and full mix
+	// DSP 134 is new preset, Urban preset
+	// DSP 138 new open streets preset
+	"dsp"	"41"
+	"dsp_spatial"  "150"
+	"dsp_volume" "4.0"
+	
+	"fadetime" "1.0"
+
+	"soundmixer"	"district_int_school"
+	
+
+	// *** looping sounds *** //
+	
+	//	Town background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"80"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"	
+	}
+	
+	
+	//	city background	ambience loop indoors
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\city_indoors_ambience_01.wav"
+	}
+	
+	//	mid rumble
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"120"
+		"wave"	")soundscape\ambience\rumble_mid_ambience.wav"
+	}
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.7,0.8"
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		}
+	}
+	
+	//Building near collapse
+	"playrandom"
+	{
+		"time"		"7,18"
+		"volume"	"0.85"
+		"pitch"		"90,100"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_08.ogg"	
+		}
+	} 
+	
+		//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"3,5"
+		"volume"	"0.05, 0.2"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_07.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_08.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_09.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_10.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_11.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_06.ogg"
+		}
+	}
+
+	// *** positional sounds *** //
+	
+	// telephone 1
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.6"
+		"pitch"		"100"
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\telephone_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\baby_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\telephone_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\baby_01.ogg"	
+		}
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"0"
+	}
+
+	// dog 1
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.6"
+		"pitch"		"100"
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_01.ogg"	
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_01.ogg"
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_01.ogg"
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_03.ogg"	
+		}
+		"soundlevel"  	"SNDLVL_110dB"
+		"position"	"1"
+	}
+
+	// radio 1
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\arabic_radio_yaom_tajtho_room_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"2"
+	}
+
+	// fridge hum 4
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\refrigerator_loop_01.wav"
+		"soundlevel"  	"SNDLVL_90dB"
+		"position"	"3"
+	}
+	
+	// fluorescent_light_loop 1
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"4"
+	}
+
+	
+	// fluorescent_light_loop 2
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"5"
+	}
+	
+	// fluorescent_light_loop 3
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"6"
+	}
+	
+	// fluorescent_light_loop 4
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"7"
+	}
+}
+
+//2nd Floor
+"2nd_floor"
+{
+
+	// *** dsp settings *** //
+	
+	// set dsp to automatic calculation and full mix
+	// DSP 134 is new preset, Urban preset
+	// DSP 138 new open streets preset
+	"dsp"	"41"
+	"dsp_spatial"  "150"
+	"dsp_volume" "4.0"
+	
+	"fadetime" "1.0"
+
+	"soundmixer"	"district_int_school"
+	
+
+	// *** looping sounds *** //
+	
+	//	Town background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"80"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"	
+	}
+	
+	
+	//	city background	ambience loop indoors
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\city_indoors_ambience_01.wav"
+	}
+	
+	//	mid rumble
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"120"
+		"wave"	")soundscape\ambience\rumble_mid_ambience.wav"
+	}
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.7,0.8"
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		}
+	}
+	
+	//Building near collapse
+	"playrandom"
+	{
+		"time"		"7,18"
+		"volume"	"0.85"
+		"pitch"		"90,100"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_08.ogg"	
+		}
+	} 
+
+	//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"3,5"
+		"volume"	"0.05, 0.2"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_07.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_08.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_09.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_10.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_11.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_06.ogg"
+		}
+	}
+	
+	
+	// *** positional sounds *** //
+	
+	// telephone 2
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.6"
+		"pitch"		"100"
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\telephone_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\baby_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\telephone_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\baby_01.ogg"	
+		}
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"0"
+	}
+
+	// dog 2
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\afghan_radio.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"1"
+	}
+
+	// radio 2
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.6"
+		"pitch"		"100"
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_01.ogg"	
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_01.ogg"
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_01.ogg"
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_03.ogg"	
+		}
+		"soundlevel"  	"SNDLVL_110dB"
+		"position"	"2"
+	}
+
+	// fridge hum 8
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\refrigerator_loop_01.wav"
+		"soundlevel"  	"SNDLVL_90dB"
+		"position"	"3"
+	}
+	
+	// fluorescent_light_loop 5
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"4"
+	}
+
+	
+	// fluorescent_light_loop 6
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"5"
+	}
+	
+	// fluorescent_light_loop 7
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"6"
+	}
+	
+	// fluorescent_light_loop 8
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"7"
+	}
+}
+
+//3rd Floor
+"3rd_floor"
+{
+
+	// *** dsp settings *** //
+	
+	// set dsp to automatic calculation and full mix
+	// DSP 134 is new preset, Urban preset
+	// DSP 138 new open streets preset
+	"dsp"	"41"
+	"dsp_spatial"  "150"
+	"dsp_volume" "4.0"
+	
+	"fadetime" "1.0"
+
+	"soundmixer"	"district_int_school"
+	
+
+	// *** looping sounds *** //
+	
+	//	Town background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"80"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"	
+	}
+	
+	
+	//	city background	ambience loop indoors
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\city_indoors_ambience_01.wav"
+	}
+	
+	//	mid rumble
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"120"
+		"wave"	")soundscape\ambience\rumble_mid_ambience.wav"
+	}
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.7,0.8"
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		}
+	}
+	
+	//Building near collapse
+	"playrandom"
+	{
+		"time"		"7,18"
+		"volume"	"0.85"
+		"pitch"		"90,100"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_08.ogg"	
+		}
+	} 
+	
+	//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"3,5"
+		"volume"	"0.05, 0.2"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_07.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_08.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_09.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_10.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_11.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_06.ogg"
+		}
+	}
+	
+	// *** positional sounds *** //
+	
+	// telephone 3
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.6"
+		"pitch"		"100"
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\telephone_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\baby_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\telephone_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\baby_01.ogg"	
+		}
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"0"
+	}
+
+	// dog 3
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.6"
+		"pitch"		"100"
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_01.ogg"	
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_01.ogg"
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_01.ogg"
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_03.ogg"	
+		}
+		"soundlevel"  	"SNDLVL_110dB"
+		"position"	"1"
+	}
+
+	// radio 3
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\arabic_radio_02.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"2"
+	}
+
+	// fridge hum 12
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\refrigerator_loop_01.wav"
+		"soundlevel"  	"SNDLVL_90dB"
+		"position"	"3"
+	}
+	
+	// fluorescent_light_loop 9
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"4"
+	}
+
+	
+	// fluorescent_light_loop 10
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"5"
+	}
+	
+	// fluorescent_light_loop 11
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"6"
+	}
+	
+
+	// pipes hissing	
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"105"
+		"wave"	"soundscape\emitters\loop\pipes_loose_loop_01.wav"
+		"soundlevel"  	"SNDLVL_90dB"
+		"position"	"7"
+	}
+}
+
+//4th Floor
+"4th_floor"
+{
+
+	// *** dsp settings *** //
+	
+	// set dsp to automatic calculation and full mix
+	// DSP 134 is new preset, Urban preset
+	// DSP 138 new open streets preset
+	"dsp"	"41"
+	"dsp_spatial"  "150"
+	"dsp_volume" "4.0"
+	
+	"fadetime" "1.0"
+
+	"soundmixer"	"district_int_school"
+	
+
+	// *** looping sounds *** //
+	
+	//	Town background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"80"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"	
+	}
+	
+	
+	//	city background	ambience loop indoors
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\city_indoors_ambience_01.wav"
+	}
+	
+	//	mid rumble
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"120"
+		"wave"	")soundscape\ambience\rumble_mid_ambience.wav"
+	}
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.7,0.8"
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		}
+	}
+	
+	//Building near collapse
+	"playrandom"
+	{
+		"time"		"7,18"
+		"volume"	"0.85"
+		"pitch"		"90,100"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\building_near_collapse_08.ogg"	
+		}
+	} 
+	
+	//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"3,5"
+		"volume"	"0.05, 0.2"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_07.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_08.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_09.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_10.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_11.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_06.ogg"
+		}
+	}
+
+	// *** positional sounds *** //
+	
+	// telephone 4
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.6"
+		"pitch"		"100"
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\telephone_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\baby_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\telephone_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\baby_01.ogg"	
+		}
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"0"
+	}
+
+	// dog 4
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.6"
+		"pitch"		"100"
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_01.ogg"	
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_01.ogg"
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_c_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_01.ogg"
+		"wave"	"sound\common\null.wav"	
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dog_bark_d_03.ogg"	
+		}
+		"soundlevel"  	"SNDLVL_110dB"
+		"position"	"1"
+	}
+
+	// radio 4
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\arabic_radio_03.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"2"
+	}
+
+	//fridge hum 16
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\refrigerator_loop_01.wav"
+		"soundlevel"  	"SNDLVL_90dB"
+		"position"	"3"
+	}
+	
+	//fluorescent_light_loop 12
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"4"
+	}
+
+	
+	//fluorescent_light_loop 13
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"5"
+	}
+	
+	//fluorescent_light_loop 14
+	"playlooping"
+	{
+		"volume"	"0.09"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"6"
+	}
+	
+	//Lift Cables
+	"playrandom"
+	{
+		"time"		"10,13"
+		"volume"	"0.5,1.0"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_95dB"
+		"position"	"7"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\oneshot\lift_cables_01.ogg"	
+		"wave"	")soundscape\emitters\oneshot\lift_cables_02.ogg"	
+		"wave"	")soundscape\emitters\oneshot\lift_cables_03.ogg"	
+		"wave"	")soundscape\emitters\oneshot\lift_cables_04.ogg"			
+		}
+	}
+}
+
+//roof
+"roof"
+{
+
+	// *** dsp settings *** //
+	
+	// set dsp to automatic calculation and full mix
+	// DSP 134 is new preset, Urban preset
+	// DSP 138 new open streets preset
+	"dsp"	"41"
+	"dsp_spatial"  "41"
+	"dsp_volume" "0.0"
+	
+	"fadetime" "1.0"
+
+	// *** looping sounds *** //
+
+
+	// *** dsp settings *** //
+	
+	// set dsp to automatic calculation and full mix
+	// DSP 134 is new preset, Urban preset
+	// DSP 138 new open streets preset
+	"dsp"	"41"
+	"dsp_spatial"  "41"
+	"dsp_volume" "0.0"
+	
+	"fadetime" "1.0"
+
+	// *** looping sounds *** //
+	
+	//	Town background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\town_ambience_01.wav"	
+	}
+	
+	//	city background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\city_ambience_01.wav"
+	}
+	
+	//	city traffic background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.95"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\traffic_ambience_01.wav"
+	}
+
+	//	Wind
+	"playlooping"
+	{
+		"volume"	"0.06"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_ambience_01.wav"
+	}
+	
+		//Single Flies Close
+	"playrandom"
+	{
+		"time"		"6,10"
+		"volume"	"0.1, 0.6"
+		"pitch"		"90,100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\flies_single_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_09.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_10.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_11.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_12.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_13.ogg"				
+		}
+	} 
+	
+	     // Bird Song
+	"playrandom"
+	{
+		"time"		"1,6"
+		"volume"	"0.05,0.1"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_10.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_11.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_12.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_13.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_14.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_chorus_15.ogg"			
+		}
+	} 
+	
+		//Distant Dogs
+	"playrandom"
+	{
+		"time"		"6,10"
+		"volume"	"0.2,0.6"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_10.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_11.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_12.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_13.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_14.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_15.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_16.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_17.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_18.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_19.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_20.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_21.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_22.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_23.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_24.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_25.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_26.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_27.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_28.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\distant_dogs_29.ogg"			
+		}
+	}
+
+
+	//windgust and windgust sand
+	"playrandom"
+	{
+		"time"		"6,20"
+		"volume"	"0.2, 0.3"
+		"pitch"		"75,90"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\windgust_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\windgust_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\windgust_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\windgust_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_03.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_05.ogg"				
+		}
+	}
+
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+		"volume"	"0.9, 1.0"
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_explosion_single_04.ogg"
+		}
+	} 
+	
+		//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"3,5"
+		"volume"	"0.1, 0.3"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_b_07.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_06.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_07.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_08.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_09.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_10.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_mgun_misc_11.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_01.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_02.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_03.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_04.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_05.ogg"
+		"wave"	"soundscape\emitters\Oneshot\dist_gun_set_bf_06.ogg"
+		}
+	}
+
+	// *** positional sounds *** //
+	
+	// large vent out 1
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_95dB"
+		"position"	"0"
+		"wave"	"soundscape\emitters\loop\large_vent_out.wav"
+	}
+
+	// large vent out 2
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_95dB"
+		"position"	"1"
+		"wave"	"soundscape\emitters\loop\large_vent_out.wav"
+	}
+
+	// large vent out 3
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_95dB"
+		"position"	"2"
+		"wave"	"soundscape\emitters\loop\large_vent_out.wav"
+	}
+
+	// large vent out 4
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_95dB"
+		"position"	"3"
+		"wave"	"soundscape\emitters\loop\large_vent_out.wav"
+	}
+
+	// large vent out 5
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_95dB"
+		"position"	"4"
+		"wave"	"soundscape\emitters\loop\large_vent_out.wav"
+	}
+
+	//tarpaulin
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.2,0.4"
+		"pitch"		"90,110"
+		"position"	"5"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tarpaulin_flap_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tarpaulin_flap_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tarpaulin_flap_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tarpaulin_flap_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tarpaulin_flap_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tarpaulin_flap_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tarpaulin_flap_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tarpaulin_flap_09.ogg"	
+	    }
+	}
+
+	// Electrical Hum 
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"80"
+		"soundlevel"  	"SNDLVL_90dB"
+		"position"	"6"
+		"wave"	"soundscape\emitters\loop\generator_hum_loop_02.wav"
+	}
+
+	// pipes hissing 2	
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"105"
+		"wave"	"soundscape\emitters\loop\pipes_loose_loop_01.wav"
+		"soundlevel"  	"SNDLVL_90dB"
+		"position"	"7"
+	}
+}
+
+

@@ -1,0 +1,14 @@
+---
+name: SOCOM
+desc: SOCOM
+author: Unknown
+steamid: 
+url: 
+email: 
+# List of workshop files that should be used to extract game files
+workshop:
+  files:
+  collections:
+# List of maps that are affiliated with this mod
+maps:
+

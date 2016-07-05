@@ -1,0 +1,108 @@
+// Choreo version 1
+actor "player_2_1_5"
+{
+  channel "Flexes"
+  {
+    event flexanimation "Flexes"
+    {
+      time 0.233333 6.433333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "wrinkler" 
+        {
+          0.1119 0.2200
+          0.8952 0.7200
+          4.9285 0.2000
+        }
+        "stretcher" combo 
+        {
+        }
+        {
+        }
+        "raiser" combo 
+        {
+          0.3667 0.3700
+          1.8000 0.2700
+          4.8452 0.2500
+        }
+        {
+        }
+        "part" combo 
+        {
+          1.0952 0.5600
+          4.2785 0.1900
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.7333 0.4700
+          2.4452 0.2400
+        }
+        {
+        }
+        "lid_raiser" 
+        {
+          3.1952 0.3400
+        }
+        "lid_droop" 
+        {
+          2.5452 0.3000
+        }
+        "inner_raiser" combo 
+        {
+          0.5667 0.1200
+          1.8000 0.6100
+        }
+        {
+        }
+        "dilator" 
+        {
+          1.0452 0.6500
+        }
+        "corner_depressor" combo 
+        {
+          1.2667 0.1900
+        }
+        {
+        }
+        "chin_raiser" combo 
+        {
+          2.9952 0.2600
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          2.4119 0.1900
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Voice"
+  {
+    event speak "Voice_Trailer.Line_03"
+    {
+      time 0.800000 2.560227
+      param "Voice_Trailer.Line_03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "12"
+  "GestureTool" "100"
+}
+fps 30
+snap on
+ignorePhonemes off

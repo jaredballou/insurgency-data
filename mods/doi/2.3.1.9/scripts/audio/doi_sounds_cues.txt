@@ -1,0 +1,627 @@
+//Allies Won Round
+"Music.WonRound_Security"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"*cues/doi_allies_victory.ogg"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"priority_override" "true"	
+				"start_point" "0.0"
+				"track_name" "main"
+				"priority" "1"	
+			}
+		}
+		"prestart_stack"
+		{
+			"sync_track_syncpoints"
+			{
+				"operator" "track_queue"
+				"syncpoint_list" "none"
+			}
+		}
+		"start_stack"
+		{
+			"stop_music"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_this_entry" "false"
+				"match_entry" "Music"	
+			}
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_substring" "true"
+				"match_entry" "Music.TenSecCount"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"ins_update_music_stereo"
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"block_entries"
+			{
+				"input_active" "1.0"	
+				"match_entry" "Music.DeathCam"
+			}
+
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+
+	}
+}
+
+//Allies Lost Round
+"Music.LostRound_Security"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"*cues/doi_allies_defeat.ogg"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"priority_override" "true"	
+				"start_point" "0.0"
+				"track_name" "main"
+				"priority" "1"	
+			}
+		}
+		"prestart_stack"
+		{
+			"sync_track_syncpoints"
+			{
+				"operator" "track_queue"
+				"syncpoint_list" "none"
+			}
+		}
+
+		"start_stack"
+		{
+			"stop_music"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_this_entry" "false"
+				"match_entry" "Music"	
+			}
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_substring" "true"
+				"match_entry" "Music.TenSecCount"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+
+		}
+		"update_stack"
+		{
+			"import_stack"	"ins_update_music_stereo"
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"block_entries"
+			{
+				"input_active" "1.0"	
+				"match_entry" "Music.DeathCam"
+			}
+
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+	}
+}
+
+//Axis Won Round
+"Music.WonRound_Insurgents"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"*cues/doi_axis_victory.ogg"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"priority_override" "true"	
+				"start_point" "0.0"
+				"track_name" "main"
+				"priority" "1"	
+			}
+		}
+		"prestart_stack"
+		{
+			"sync_track_syncpoints"
+			{
+				"operator" "track_queue"
+				"syncpoint_list" "none"
+			}
+		}
+		"start_stack"
+		{
+			"stop_music"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_this_entry" "false"
+				"match_entry" "Music"	
+			}
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_substring" "true"
+				"match_entry" "Music.TenSecCount"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"ins_update_music_stereo"
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"block_entries"
+			{
+				"input_active" "1.0"	
+				"match_entry" "Music.DeathCam"
+			}
+
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+
+	}
+}
+
+//Axis Lost Round
+"Music.LostRound_Insurgents"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"*cues/doi_axis_defeat.ogg"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"priority_override" "true"	
+				"start_point" "0.0"
+				"track_name" "main"
+				"priority" "1"	
+			}
+		}
+		"prestart_stack"
+		{
+			"sync_track_syncpoints"
+			{
+				"operator" "track_queue"
+				"syncpoint_list" "none"
+			}
+		}
+
+		"start_stack"
+		{
+			"stop_music"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_this_entry" "false"
+				"match_entry" "Music"	
+			}
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_substring" "true"
+				"match_entry" "Music.TenSecCount"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+
+		}
+		"update_stack"
+		{
+			"import_stack"	"ins_update_music_stereo"
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"block_entries"
+			{
+				"input_active" "1.0"	
+				"match_entry" "Music.DeathCam"
+			}
+
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+	}
+}
+
+//Allies Won Game
+"Music.WonGame_Security"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"*cues/doi_allies_victory.ogg"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"priority_override" "true"	
+				"start_point" "0.0"
+				"track_name" "main"
+				"priority" "1"	
+			}
+		}
+		"prestart_stack"
+		{
+			"sync_track_syncpoints"
+			{
+				"operator" "track_queue"
+				"syncpoint_list" "none"
+			}
+		}
+		"start_stack"
+		{
+			"stop_music"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_this_entry" "false"
+				"match_entry" "Music"	
+			}
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_substring" "true"
+				"match_entry" "Music.TenSecCount"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"ins_update_music_stereo"
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"block_entries"
+			{
+				"input_active" "1.0"	
+				"match_entry" "Music.DeathCam"
+			}
+
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+
+	}
+}
+
+//Allies Lost Game
+"Music.LostGame_Security"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"*cues/doi_allies_defeat.ogg"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"priority_override" "true"	
+				"start_point" "0.0"
+				"track_name" "main"
+				"priority" "1"	
+			}
+		}
+		"prestart_stack"
+		{
+			"sync_track_syncpoints"
+			{
+				"operator" "track_queue"
+				"syncpoint_list" "none"
+			}
+		}
+
+		"start_stack"
+		{
+			"stop_music"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_this_entry" "false"
+				"match_entry" "Music"	
+			}
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_substring" "true"
+				"match_entry" "Music.TenSecCount"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+
+		}
+		"update_stack"
+		{
+			"import_stack"	"ins_update_music_stereo"
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"block_entries"
+			{
+				"input_active" "1.0"	
+				"match_entry" "Music.DeathCam"
+			}
+
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+	}
+}
+
+//Axis Won Game
+"Music.WonGame_Insurgents"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"*cues/doi_axis_victory.ogg"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"priority_override" "true"	
+				"start_point" "0.0"
+				"track_name" "main"
+				"priority" "1"	
+			}
+		}
+		"prestart_stack"
+		{
+			"sync_track_syncpoints"
+			{
+				"operator" "track_queue"
+				"syncpoint_list" "none"
+			}
+		}
+		"start_stack"
+		{
+			"stop_music"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_this_entry" "false"
+				"match_entry" "Music"	
+			}
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_substring" "true"
+				"match_entry" "Music.TenSecCount"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"ins_update_music_stereo"
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"block_entries"
+			{
+				"input_active" "1.0"	
+				"match_entry" "Music.DeathCam"
+			}
+
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+
+	}
+}
+
+//Axis Lost Game
+"Music.LostGame_Insurgents"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"*cues/doi_axis_defeat.ogg"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"priority_override" "true"	
+				"start_point" "0.0"
+				"track_name" "main"
+				"priority" "1"	
+			}
+		}
+		"prestart_stack"
+		{
+			"sync_track_syncpoints"
+			{
+				"operator" "track_queue"
+				"syncpoint_list" "none"
+			}
+		}
+
+		"start_stack"
+		{
+			"stop_music"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_this_entry" "false"
+				"match_entry" "Music"	
+			}
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_substring" "true"
+				"match_entry" "Music.TenSecCount"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+
+		}
+		"update_stack"
+		{
+			"import_stack"	"ins_update_music_stereo"
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"block_entries"
+			{
+				"input_active" "1.0"	
+				"match_entry" "Music.DeathCam"
+			}
+
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+	}
+}

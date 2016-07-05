@@ -1,0 +1,483 @@
+//ir_buhriz
+"ir.buhriz_night_exterior"
+{
+
+	// *** dsp settings *** //
+	
+	"dsp"        "41"
+	"dsp_spatial" "41"
+	"dsp_volume" "0"
+
+	"soundmixer"	"default_mix"
+	
+
+	// *** looping sounds *** //
+	
+	//	Small Town Ambience
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\smalltown_ambience_02.wav"
+	}
+	
+	
+		//Windgust Sand
+	"playrandom"
+	{
+		"time"		"2,20"
+		"volume"	"0.6,1.0"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_03.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_05.ogg"		
+		}
+	}
+	
+	//	Insect Ambience
+	"playlooping"
+	{
+		"volume"	"0.12"
+	    "pitch"	    "95"
+		"wave"	"soundscape\ambience\insects_night_ambience_city.wav"
+	}
+	
+	//	Insects
+	"playlooping"
+	{
+		"volume"	"0.5" //0.6
+		"pitch"		"110"
+		"wave"	"soundscape\ambience\insects_night_quiet.wav"
+	}
+	
+
+	
+		// Owl Close
+	"playrandom"
+	{
+		"time"		"6,16"
+		"volume"	"0.06,0.1"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\owl_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_06.ogg"			
+		
+		}
+	} 
+	
+	// Owl Hoot Distant
+	"playrandom"
+	{
+		"time"		"12,26"
+		"volume"	"0.08,0.2"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\owl_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_distant_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_distant_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_distant_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_distant_06.ogg"				
+		}
+	} 
+	
+	// Owl Screech Distant
+	"playrandom"
+	{
+		"time"		"6,13"
+		"volume"	"0.2,0.6"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\owl_screech_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_screech_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_screech_distant_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\owl_screech_distant_04.ogg"			
+		}
+	} 
+	
+
+
+	
+		//Single Flies Close
+	"playrandom"
+	{
+		"time"		"6,10"
+		"volume"	"0.1, 0.6"
+		"pitch"		"90,100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\flies_single_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_09.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_10.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_11.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_12.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_13.ogg"				
+		}
+	} 
+	
+
+	
+	//Distant AirRaid Sirena
+	"playrandom"
+	{
+		"time"		"40,90"
+		"volume"	"0.4" //"0.7, 1.0"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\air_siren_distant.ogg"		
+		}
+	}
+	
+	//Helicopter
+	"playrandom"
+	{
+		"time"		"30,90"
+		"volume"	"0.2, 0.25" //"0.7, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\helicopter_03.ogg"		
+		}
+	}
+	
+	
+
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.4, 0.6" //"0.8, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  "SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_11.ogg"	
+		}
+	} 
+	
+	//Dist Tank shots
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.2, 0.4"//"0.4, 0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_04.ogg"		
+		}
+	} 
+
+	
+	// positional //
+
+	// humvee 
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_90dB"
+		"position"	"0"
+		"wave"	"soundscape\emitters\loop\humvee_loop.wav"
+	}
+
+	// airconditioner 
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"115"
+		"soundlevel"  	"SNDLVL_95dB"
+		"position"	"1"
+		"wave"	"soundscape\emitters\loop\airconditioner_out.wav"
+	}
+    
+	//Leaf rustles 4
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"0.7,0.9"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_NORM"
+		"position"	"2"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_01.ogg"	
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_02.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_03.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_04.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_05.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_06.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_07.ogg"			
+		}
+	} 
+	
+	// Wooden Dock
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"80"
+		"soundlevel"  	"SNDLVL_95dB"
+		"position"	"3"
+		"wave"	"soundscape\emitters\loop\dock_creaking.wav"
+	}
+
+	// River 01 -4
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"80"
+		"soundlevel"  	"SNDLVL_110dB"
+		"position"	"4"
+		"wave"	")soundscape\ambience\stream_ambience_03.wav"
+	}
+	
+	// River 02 -5
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"90"
+		"soundlevel"  	"SNDLVL_110dB"
+		"position"	"5"
+		"wave"	")soundscape\ambience\stream_ambience_03.wav"
+	}
+	
+	// River 03 -6
+		"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_110dB"
+		"position"	"6"
+		"wave"	")soundscape\ambience\stream_ambience_03.wav"
+	}
+	
+	// River Inlet -7
+		"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"60"
+		"soundlevel"  	"SNDLVL_110dB"
+		"position"	"7"
+		"wave"	")soundscape\ambience\stream_ambience_03.wav"
+	}
+}
+
+
+//ir_buhriz interior
+"ir.buhriz_night_interior"
+{
+
+	// *** dsp settings *** //
+	
+	"dsp"        "41"
+	"dsp_spatial" "157"
+	"dsp_volume" "4"
+	"fadetime" "0.7"
+	"soundmixer"	"buhriz_int_small"
+	
+
+	// *** looping sounds *** //
+	
+	//	Small Town Ambience
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\smalltown_ambience_indoor_02.wav"
+	}
+	
+	//	Insect & Bird
+	"playlooping"
+	{
+		"volume"	"0.3"
+	    "pitch"	    "95"
+		"wave"	"soundscape\ambience\insects_night_ambience_city_indoor.wav"
+	}
+	
+    //	Insects
+	"playlooping"
+	{
+		"volume"	"0.2" //0.6
+		"pitch"		"110"
+		"wave"	"soundscape\ambience\insects_night_quiet.wav"
+	}
+	
+     // Wind Howl
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.2,0.4"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_04.ogg"			
+		
+		}
+	} 
+	
+	//Helicopter
+	"playrandom"
+	{
+		"time"		"30,90"
+		"volume"	"0.1, 0.2" //"0.7, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\helicopter_03.ogg"		
+		}
+	}
+	
+	//Trash
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.1,0.4"
+		"pitch"		"90,100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\trash_move_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\trash_move_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\trash_move_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\trash_move_04.ogg"	
+		}
+	} 
+	
+	//Dist Explosion Inside
+	"playrandom"
+	{
+		"time"		"8,14"
+		"volume"	"0.2,0.4"
+		"pitch"		"90,100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\explosion_inside_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_inside_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_inside_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_inside_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_inside_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_inside_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_inside_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_inside_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_inside_09.ogg"		
+		}
+	} 
+	
+	//Dist Tank shots
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.1, 0.2"//"0.4, 0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_04.ogg"		
+		}
+	} 
+	
+	//positional
+	
+		// airconditioner 
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_90dB"
+		"position"	"0"
+		"wave"	"soundscape\emitters\loop\airconditioner_inside_01.wav"
+	}
+	
+    // fluorescent_light_loop
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\fluorescent_light_loop.wav"
+		"soundlevel"  	"SNDLVL_70dB"
+		"position"	"1"
+	}
+	
+	 // Music Loop
+	"playlooping"
+	{
+		"volume"	"0.08"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\Loop\arabic_radio_02.wav"
+		"soundlevel"  	"SNDLVL_75dB"
+		"position"	"2"
+	}
+
+
+}

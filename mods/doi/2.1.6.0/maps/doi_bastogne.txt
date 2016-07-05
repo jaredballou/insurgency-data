@@ -1,0 +1,153 @@
+"cpsetup.txt"
+{
+
+	"navfile"   		"doi_bastogne"
+	"nightlighting"		"0"
+	"theaterfile"		"doi"
+		
+
+	"push"
+	{
+		"AttackingTeam"		"insurgents"
+		"controlpoint"		"push_cap_a"
+		"controlpoint"		"push_cap_b"
+		"controlpoint"		"push_cap_c"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_push_a"
+			"1"  "spawnzone_push_b"
+			"2"  "spawnzone_push_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"2537 -6440 180"
+				"angles"		"0 90 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"2537 -6440 230"
+				"angles"		"0 90 0"
+				"targetname"	"radiopoint_final"
+			}		
+		}
+	}
+	
+	"invasion"
+	{
+		"AttackingTeam"		"insurgents"
+		"controlpoint"		"push_cap_a"
+		"controlpoint"		"push_cap_b"
+		"controlpoint"		"push_cap_c"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_push_a"
+			"1"  "spawnzone_push_b"
+			"2"  "spawnzone_push_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"2537 -6440 180"
+				"angles"		"0 90 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"2537 -6440 230"
+				"angles"		"0 90 0"
+				"targetname"	"radiopoint_final"
+			}		
+		}
+	}
+	
+	"skirmish"
+	{	
+		"controlpoint"		"radiopoint_a"
+	    "controlpoint"		"skirmish_cap_c"
+		"controlpoint"		"push_cap_b"
+		"controlpoint"		"skirmish_cap_a" 
+		"controlpoint"		"radiopoint_e"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+		
+		"entities"
+		{	
+			// Radio A
+			"obj_destructible"
+			{
+				"origin"		"2692 -2404 156"
+				"angles"		"0 0 0"
+				"targetname"	"radio_a"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_a"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"2692 -2404 186"
+				"angles"		"0 0 0"
+				"targetname"	"radiopoint_a"
+			}	
+			
+			// Radio E
+			"obj_destructible"
+			{
+				"origin"		"-1957 2331 106"
+				"angles"		"0.000000 180 0.000000"
+				"targetname"	"radio_e"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_e"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-1957 2331 150"
+				"angles"		"0.000000 180 0.000000"
+				"targetname"	"radiopoint_e"
+			}
+		}
+	}
+	"firefight"	
+	{
+	    "controlpoint"		"skirmish_cap_c"
+		"controlpoint"		"push_cap_b"
+		"controlpoint"		"skirmish_cap_a" 
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+	}
+	
+	"occupy"
+	{
+		"controlpoint"		"push_cap_b"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+	}
+}

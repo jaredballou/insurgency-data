@@ -1,0 +1,15 @@
+---
+name: Very Not Fun
+desc: Mod focused on teamplay and stripping down the game into base elements.
+author: Jared Ballou
+steamid: jballou
+url: http://jballou.com/insurgency
+email: insurgency@jballou.com
+
+# List of workshop files that should be used to extract game files
+workshop:
+  files:
+  collections:
+
+# List of maps that are affiliated with this mod
+maps:

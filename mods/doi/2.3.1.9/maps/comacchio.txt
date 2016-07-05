@@ -1,0 +1,282 @@
+"cpsetup.txt"
+{
+
+	"navfile"   		"comacchio"
+	"nightlighting"		"0"
+		
+	"offensive"
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"AttackingTeam"		"TEAM_TWO"
+		"controlpoint"		"offensive_cap_a"
+		"controlpoint"		"bridge_overwatch_american_cap"
+		"controlpoint"		"church_cap"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_offensive_a"
+			"1"  "spawnzone_offensive_b"
+			"2"  "spawnzone_offensive_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"4086 1242 -72"
+				"angles"		"0 180 0"
+				"targetname"		"radio_final"
+				"teamnumber"		"2"
+				"ControlPoint"		"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"4086 1242 -58"
+				"angles"		"0 180 0"
+				"targetname"		"radiopoint_final"
+			}		
+		}
+	}
+	
+	"liberation"	
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"controlpoint"		"allied_rear_defense_cap" 
+		"controlpoint"		"occupy_cap"
+	   	"controlpoint"		"ger_blownout_building_point"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+	}
+	
+	"frontline"	
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"controlpoint" 		"radiopoint_allied_final"
+		"controlpoint"		"allied_rear_defense_cap"
+		"controlpoint"		"occupy_cap"
+		"controlpoint"		"offensive_cap_a"
+		"controlpoint" 		"radiopoint_axis_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_battle_allied_advance"
+			"1"  "spawnzone_battle_start"
+			"2"  "spawnzone_battle_axis_advance"
+		}
+		
+		"entities"
+		{
+			// Allied radio
+			"obj_destructible"
+			{
+				"origin"			"3088 24.0 -109.0"
+				"angles"			"0.000000 -0.704482 0.000000"
+				"targetname"		"radio_allied_final"
+				"teamnumber"		"2"
+				"ControlPoint"		"radiopoint_allied_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"3088 24.0 -60"
+				"angles"			"0.000000 -0.704482 0.000000"
+				"targetname"		"radiopoint_allied_final"
+			}
+			
+			// Axis radio
+			"obj_destructible"
+			{
+				"origin"			"-994.017090 -2425.208496 -156.230850"
+				"angles"			"0.000000 0.631170 0.000000"
+				"targetname"		"radio_axis_final"
+				"teamnumber"		"3"
+				"ControlPoint"		"radiopoint_axis_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"-994.017090 -2425.208496 -84.230850"
+				"angles"			"0.000000 0.631170 0.000000"
+				"targetname"		"radiopoint_axis_final"
+			}
+		}
+	}
+	
+	"entrenchment"
+	{
+		"TeamOne"           "americans"
+        "TeamTwo"          	"axis"
+		
+		"AttackingTeam"		"TEAM_TWO"
+		
+		"controlpoint"		"bridge_overwatch_american_cap"
+		"controlpoint"		"rubble_building_cap"
+		"controlpoint"		"allied_rear_defense_cap"
+		"controlpoint"		"church_cap" 
+		"controlpoint"		"entrenchment_cap1" 
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_axis"						"-2224.443604 -131.780426 -111.968750"
+				"location_allies"					"1510.000366 840.136414 -156.438538"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				"location_axis"						"-2224.443604 -131.780426 -111.968750"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				"location_axis"						"-1433.330566 1220.772583 -117.789314"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				"location_axis"						"-1059.532593 518.945679 -128.203033"
+				"location_allies"					"2612.936279 259.508179 -97.042419"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				"location_axis"						"632.875854 694.280823 80.031250"
+				"location_allies"					"3242.543213 -729.070984 -122.077652"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_allies"					"4015.023193 1419.235474 -111.968750"
+			}
+			
+			"fallback_spawns"
+			{
+				"location_axis"						"-2224.443604 -131.780426 -111.968750"
+				"location_allies"					"4015.023193 1419.235474 -111.968750"
+			}
+		}
+	}
+	
+	"stronghold"
+	{
+		"TeamOne"           "americans"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_TWO"
+		
+		"controlpoint"		"bridge_overwatch_american_cap"
+		"controlpoint"		"rubble_building_cap"
+		"controlpoint"		"allied_rear_defense_cap"
+		"controlpoint"		"church_cap" 
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_axis"						"-2498.399658 -2306.226563 -87.326813"
+				"location_allies"					"1144.541260 -370.751678 32.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				"location_axis"						"-665.975586 916.848938 -215.968750"
+				"location_allies"					"2612.936279 259.508179 -97.042419"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				"location_axis"						"490.166046 -722.373962 -255.968750"
+				"location_allies"					"2612.936279 259.508179 -97.042419"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				"location_axis"						"1078.666016 9.461792 -143.968750"
+				"location_allies"					"3242.543213 -729.070984 -122.077652"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				"location_allies"					"4015.023193 1419.235474 -111.968750"
+			}
+			
+			"fallback_spawns"
+			{
+				"location_axis"						"-2498.399658 -2306.226563 -87.326813"
+				"location_allies"					"4015.023193 1419.235474 -111.968750"
+			}
+		}
+	}
+	
+	"patrol"
+	{
+		"TeamOne"           "americans"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"church_cap" 
+		"controlpoint"		"offensive_cap_a"
+	   	"controlpoint"		"ger_blownout_building_point"
+	   	"controlpoint"		"radio_building_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"patrol_spawns"
+			{
+				"location_allies"		"3235.787598 -724.048035 -122.112259"
+				"location_allies_02"	"2691.268799 1250.549805 -149.924255"
+				"location_allies_03"	"2678.226563 -1104.615601 -143.968750"
+				"location_allies_04"	"2568.937012 -245.465057 -143.968750"
+
+				"location_axis"			"-1046.045654 106.803299 -151.968750"
+				"location_axis_02"		"-1443.099121 5.856335 32.031250"
+				"location_axis_03"		"-2816.085449 -383.724487 -151.968750"
+				"location_axis_04"		"-1136.779541 -484.510773 -143.968750"
+			}
+			
+			"fallback_spawns"
+			{
+				"location_allies"		"3235.787598 -724.048035 -122.112259"
+				"location_axis"			"-1046.045654 106.803299 -151.968750"
+			}
+		}
+	}
+}

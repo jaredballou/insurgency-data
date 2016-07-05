@@ -1,0 +1,124 @@
+//
+//  Radial commands
+// 
+//
+
+// Request Artillery  	TODO - Team criteria once german vo is in
+Response American_Radial_RequestArtillery_Lead_UnSupp {
+	speak "Radial_America.SquadLead_UnSupp_RequestArtillery" noscene
+}
+
+Response American_Radial_RequestArtillery_Lead_Supp {
+	speak "Radial_America.SquadLead_Supp_RequestArtillery" noscene
+}
+
+Rule American_Radial_RequestArtillery_Lead_UnSupp {
+	criteria		ConceptRadialRequestArtillery IsSquadLeader // TODO - Team criteria once german vo is in
+	ApplyContext 	"SuppressPainSound:1:3" // Suppress pain sounds for a second
+	response		American_Radial_RequestArtillery_Lead_UnSupp
+}	
+
+Rule American_Radial_RequestArtillery_Lead_Supp {
+	criteria		ConceptRadialRequestArtillery IsSquadLeader SuppressedRecent 
+	ApplyContext 	"SuppressPainSound:1:3" // Suppress pain sounds for a second
+	response		American_Radial_RequestArtillery_Lead_Supp
+}	
+
+// Request Radio
+Response American_Radial_RequestRadio_UnSupp {
+	speak "Radial_America.SquadLead_UnSupp_RequestRadio" noscene
+}
+
+Response American_Radial_RequestRadio_Supp {
+	speak "Radial_America.SquadLead_Supp_RequestRadio" noscene
+}
+
+Rule American_Radial_RequestRadio_UnSupp {
+	criteria		ConceptRadialRequestRadio IsSquadLeader // TODO - Team criteria once german vo is in
+	response		American_Radial_RequestRadio_UnSupp
+}	
+
+Rule American_Radial_RequestRadio_Supp {
+	criteria		ConceptRadialRequestRadio IsSquadLeader SuppressedRecent // TODO - Team criteria once german vo is in
+	response		American_Radial_RequestRadio_Supp
+}	
+
+//
+// General Responses
+//
+
+Response American_Reload_Lead{
+	speak 			"Voice_Response_America.Lead_Reloading" noscene delay "5" respeakdelay "30"
+}
+Rule American_Reload_Lead{
+	criteria		ConceptReloading IsSquadLeader IsAmerican NotRecentlySaidRadial
+	response 		American_Reload_Lead
+}
+
+Response American_Suppressed_Lead{
+	speak			"Voice_Response_America.Lead_UnderSuppression" noscene delay "5" respeakdelay "7"
+}
+Rule American_Suppressed_Lead{
+	criteria		ConceptBeingSuppressed IsSquadLeader IsAmerican NotRecentlySaidRadial
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Suppressed_Lead
+}
+
+Response American_Reload_Sub{
+	speak 			"Voice_Response_America.Sub_Reloading" noscene delay "5" respeakdelay "30"
+}
+Rule American_Reload_Sub{
+	criteria		ConceptReloading IsAmerican NotRecentlySaidRadial
+	response 		American_Reload_Sub
+}
+
+Response American_Suppressed_Sub{
+	speak			"Voice_Response_America.Sub_UnderSuppression" noscene delay "5" respeakdelay "7"
+}
+Rule American_Suppressed_Sub{
+	criteria		ConceptBeingSuppressed IsAmerican NotRecentlySaidRadial
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Suppressed_Sub
+}
+
+//
+// Alert / Engaging
+//
+
+Response American_Alert_Lead{
+	PermitRepeats
+	speak 			"Bot.America_SquadLead.Alert" noscene respeakdelay "60"
+}
+Rule American_Alert_Lead{
+	criteria		ConceptAlert IsSquadLeader IsAmerican HasNearbyTeammates
+	response 		American_Alert_Lead
+}
+
+Response American_Engaging_Lead{
+	PermitRepeats
+	speak			"Bot.America_SquadLead.Engaging" noscene respeakdelay "15" odds 50
+}
+Rule American_Engaging_Lead{
+	criteria		ConceptEngaging IsSquadLeader IsAmerican HasNearbyTeammates
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Engaging_Lead
+}
+
+Response American_Alert_Sub{
+	PermitRepeats
+	speak 			"Bot.America_Subordinate.Alert" noscene respeakdelay "60" odds 10
+}
+Rule American_Alert_Sub{
+	criteria		ConceptAlert IsAmerican HasNearbyTeammates IsNotSquadLeader
+	response 		American_Alert_Sub
+}
+
+Response American_Engaging_Sub{
+	PermitRepeats
+	speak			"Bot.America_Subordinate.Engaging" noscene respeakdelay "60" odds 10
+}
+Rule American_Engaging_Sub{
+	criteria		ConceptEngaging IsAmerican HasNearbyTeammates IsNotSquadLeader
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Engaging_Sub
+}

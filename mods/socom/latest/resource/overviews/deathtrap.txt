@@ -1,0 +1,9 @@
+"deathtrap"
+{
+	material	overviews/deathtrap
+	pos_x		-4115
+	pos_y		4229
+	scale		8.5
+	rotate		0
+	zoom		1
+}

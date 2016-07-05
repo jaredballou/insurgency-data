@@ -1,0 +1,9 @@
+"map_data"
+{
+	"Cover_B"
+	{
+		"pos_type"	"point"
+		"pos_x"		"670"
+		"pos_y"		"548"
+	}
+}

@@ -1,0 +1,5 @@
+Pakrat v0.95 - by Rof (rof@mellish.org.uk)
+Listing pak files from /home/insserver/serverfiles/insurgency/maps/revolt_night.bsp
+Pak file at offset 44388340, length 22267274 bytes
+Pak lump entries: 3848
+ZipLFH signature incorrect

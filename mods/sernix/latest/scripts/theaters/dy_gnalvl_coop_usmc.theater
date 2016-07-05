@@ -1,0 +1,1373 @@
+
+"#base" "srnx_base.theater"
+
+"theater"
+{
+	"core"
+	{
+		
+		"precache"
+		{
+			// default theater specific sounds
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			"sounds"			"scripts/ins_sounds_cues.txt"
+			"sounds"			"scripts/ins_sounds_voice.txt"
+			"sounds"			"scripts/ins_sounds_radial_security.txt"				
+			"sounds"			"scripts/ins_sounds_radial_insurgent.txt"				
+			"sounds"			"scripts/ins_sounds_responses_security.txt"
+			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
+			"sounds"			"scripts/ins_sounds_hq.txt"
+			
+			// coop specific
+			"sounds"			"scripts/ins_sounds_voice_coop.txt"
+		}
+	}
+	"teams"
+	{
+		"security"
+		{
+			"name"		"#Team_USMC"
+
+			"squads"
+			{
+				
+				"Assault Team [Alpha]"
+				{
+					"#Squad_Gnalvl_SquadLeader"			"Gnalvl_squadleader_usmc"
+					"#Squad_Gnalvl_Riflepoint"			"gnalvl_pointman_usmc"
+					"#Squad_Gnalvl_RiflemanAT_Gren"		"Gnalvl_grenadier_usmc"			
+					"#Squad_Gnalvl_Engineer"			"Gnalvl_engineer_usmc"
+					"#Squad_Gnalvl_Medic"				"gnalvl_medic_usmc"
+					"#Squad_Gnalvl_Auto"				"gnalvl_support_usmc"
+					"#Squad_Gnalvl_Auto"				"gnalvl_support_usmc"
+				}
+				"Support Team [Bravo]"
+				{
+					"#Squad_Gnalvl_TeamLeader"			"gnalvl_teamleader_usmc"
+					"#Squad_Gnalvl_RiflemanAT_Gren"		"Gnalvl_grenadier_usmc"
+					"#Squad_Gnalvl_Engineer"			"Gnalvl_engineer_usmc"
+					"#Squad_Gnalvl_Medic"				"gnalvl_medic_usmc"
+					"#Squad_Gnalvl_Medic"				"gnalvl_medic_usmc"
+					"#Squad_Gnalvl_Auto"				"gnalvl_support_usmc"
+				}
+				"Recon Team [Charlie]"
+				{
+					"#Squad_Gnalvl_TeamLeader_Recon"	"Gnalvl_teamleader_recon_usmc"
+					"#Squad_Gnalvl_ReconMedic"			"gnalvl_recon_medic_usmc"
+					"#Squad_Gnalvl_SDM"					"gnalvl_marksman_usmc"
+					"#Squad_Gnalvl_SDM"					"gnalvl_marksman_usmc"
+					"#Squad_Gnalvl_Spotter"				"Gnalvl_spotter_usmc"
+				}
+			}
+		}
+		"insurgents"
+		{
+			"name"		"#team_insurgents"
+			"squads"
+			{
+				"#Cell_Alpha"	// assault team #1
+				{
+					// role name								preset
+					"#Squad_Cell_Leader_Specialist"				"template_cell_leader_insurgent" 			//weapon_akm (hp)/ model10 (ap) / molotov
+					"#Squad_Cell_Fighter"						"template_fighter_insurgent"				//weapon_vz58(ap), mp40(hp), rpg7
+					"#Squad_Cell_MachineGunner"					"template_machinegunner_galil_insurgent" 	//weapon_galil (ap), weapon_sterling (hp), f1
+					"#Squad_Cell_Specialist"					"template_specialist_insurgent" 			//ak74 silence(ap), toz(ammo_slugs), molotov
+					"#Squad_Cell_Bomber"						"template_bomber_insurgent"					//f1
+					"#Squad_Cell_Sapper"						"template_sapper_sterling_insurgent" 		//weapon_sterling (ap), ins_silencer, molotov
+					"#Squad_Cell_Striker"						"template_striker_insurgent"				//weapon_l1a1 (ap), weapon_sterling (ap), rpg7
+					"#Squad_Cell_SharpShooter"					"template_sharpshooter_insurgent" 			//weapon_mosin (ap), mp40 (ap), m18
+				}
+				
+				"#Cell_Bravo"	// assault team #2
+				{
+					//role name									preset
+					"#Squad_Cell_Leader_Specialist"				"template_cell_team_leader_insurgent" 		// fal (ap),toz(comm) / weapon_molotov
+					"#Squad_Cell_Fighter"						"template_fighter_militant_insurgent" 		// weapon_saiga12 (comm) / weapon_aks74u (ap) - m18
+					"#Squad_Cell_MachineGunner"					"template_cia_machinegunner_insurgent" 		//weapon_m249 (ap) // mp5 (ap), f1
+					"#Squad_Cell_Specialist"					"template_specialist_militant_insurgent" 	// mp40 (ap), f1
+					"#Squad_Cell_Sapper"						"template_sapper_insurgent" 				//weapon_m16a4 (ap), weapon_aks74u (ap) ins_silencer, molotov
+					"#Squad_Cell_Sapper"						"template_sapper_cia_insurgent" 			//m4a1 (hp)/ m590 (tac) / anm14
+					"#Squad_Cell_Scout"							"template_scout_militant_insurgent" 		//mini14 (ap), m18
+					"#Squad_Cell_Scout"							"template_scout_insurgent" 					//weapon_m1a1 (ap), weapon_m45(hp), m18
+				}
+				
+				"#Cell_Charlie"	// assault team #3
+				{
+					// role name							preset
+					"#Squad_Cell_Leader_Specialist"				"template_cell_team_leader_insurgent" 			// fal (ap),toz(comm) / weapon_molotov
+					"#Squad_Cell_Fighter"						"template_fighter_insurgent"				//weapon_vz58(ap), mp40(hp), rpg7
+					"#Squad_Cell_MachineGunner"					"template_machinegunner_insurgent" 			//weapon_rpk (ap), weapon_aks74u (hp), f1
+					"#Squad_Cell_Specialist"					"template_specialist_cia_insurgent" 		//m4a1 silence(ap), mp5(hp) silence, anm14
+					"#Squad_Cell_Bomber"						"template_bomber_insurgent"					//f1
+					"#Squad_Cell_Striker"						"template_striker_insurgent"				//weapon_l1a1 (ap), weapon_sterling (ap), rpg7
+					"#Squad_Cell_Militant"						"template_militant_insurgent"				//weapon_saiga12 (tac), toz(comm), f1
+					"#Squad_Cell_SharpShooter"					"template_sharpshooter_militant_insurgent" 	// weapon_sks(ap), aks7u(ap), m18
+				}
+				
+				"#Cell_Delta"	// assault team #4
+				{
+					// role name								preset
+					"#Squad_Cell_Leader_Specialist"				"template_cell_team_leader_insurgent"
+					"#Squad_Cell_Fighter"						"template_fighter_insurgent"
+					"#Squad_Cell_MachineGunner"					"template_machinegunner_insurgent"
+					"#Squad_Cell_Specialist"					"template_specialist_insurgent"
+					"#Squad_Cell_Bomber"						"template_specialist_cia_insurgent"
+					"#Squad_Cell_Militant"						"template_militant_insurgent"
+					"#Squad_Cell_Scout"							"template_scout_insurgent"
+					"#Squad_Cell_SharpShooter"					"template_sharpshooter_insurgent"
+				}	
+				
+			}
+		}
+	}
+	
+	"player_templates"
+	{
+		//TEST
+		"template_fighter_insurgent_test" //possibly issue
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Fighter"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_fighter.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m249"
+				"weapon_upgrade"	"ammo_ap_m249"
+				//Secondary
+				"weapon"			"weapon_mp5"
+				"weapon_upgrade"	"ammo_ap_mp5"
+				//Explosive
+				"weapon"			"weapon_f1"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m249"
+				"weapon_upgrade"	"ammo_ap_m249"
+				//Secondary
+				"weapon"			"weapon_mp5"
+				"weapon_upgrade"	"ammo_ap_mp5"
+				//Explosive
+				"weapon"			"weapon_f1"
+			}
+		}
+		// insurgent class templates
+		"template_fighter_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Fighter"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_fighter.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+				"attachments"
+				{
+					"headgear"
+					{
+						"model"                 "models/characters/headgear/hg_ins_helm.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}
+
+			"buy_order" 
+			{
+				//Carrier|Armor
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"gear"				"srnx_BOT_ins_helmet_dgreen"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_vz58"
+				"weapon_upgrade"	"ammo_ap_akm"
+				//Secondary
+				"weapon"			"weapon_mp40"
+				"weapon_ugprade"	"ammo_hp_mp40"
+				//Explosive
+				"weapon"			"weapon_rpg7"
+				
+				//"weapon_upgrade"	"ins_lasersight"
+			}
+			"allowed_weapons"
+			{
+				//Carrier|Armor
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"gear"				"srnx_BOT_ins_helmet_dgreen"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_vz58"
+				"weapon_upgrade"	"ammo_ap_akm"
+				//Secondary
+				"weapon"			"weapon_mp40"
+				"weapon_ugprade"	"ammo_hp_mp40"
+				//Explosive
+				"weapon"			"weapon_rpg7"
+				
+				//"weapon_upgrade"	"ins_lasersight"
+			}
+		}
+		"template_fighter_militant_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Fighter"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_machinegunner.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+				"attachments"
+				{
+					"headgear"
+					{
+						"model"                 "models/characters/headgear/w_hg_ins_helm_c.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_nij_3a"
+				"gear"				"srnx_BOT_ins_helmet_lgreen"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_saiga12"
+				"weapon_upgrade"	"commbuck"
+				//Secondary
+				"weapon"			"weapon_aks74u"
+				"weapon_upgrade"	"ammo_ap_aks74u"
+				//Explosive
+				"weapon"			"m18"
+				
+				//"weapon_upgrade"	"ins_lasersight"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_nij_3a"
+				"gear"				"srnx_BOT_ins_helmet_lgreen"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_saiga12"
+				"weapon_upgrade"	"commbuck"
+				//Secondary
+				"weapon"			"weapon_aks74u"
+				"weapon_upgrade"	"ammo_ap_aks74u"
+				//Explosive
+				"weapon"			"m18"
+				
+				//"weapon_upgrade"	"ins_lasersight"
+			}
+		}
+		"template_cell_leader_insurgent" // Continue here
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Specialist"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"	
+			}
+			
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_sapi"
+				"weapon"			"weapon_knife"
+				//Primaries
+				"weapon"			"weapon_akm"
+				"weapon_upgrade"	"ammo_hp_akm"
+				//Secondaries
+				"weapon"			"weapon_model10"
+				"weapon_upgrade"	"magazine_speedloader"
+				"weapon_upgrade"	"ammo_ap_model10"
+				//Explosives
+				"weapon"			"weapon_molotov"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_sapi"
+				"weapon"			"weapon_knife"
+				//Primaries
+				"weapon"			"weapon_akm"
+				"weapon_upgrade"	"ammo_hp_akm"
+				//Secondaries
+				"weapon"			"weapon_model10"
+				"weapon_upgrade"	"magazine_speedloader"
+				"weapon_upgrade"	"ammo_ap_model10"
+				//Explosives
+				"weapon"			"weapon_molotov"
+			}
+		}
+		"template_cell_team_leader_insurgent" // Lets place helmet prot in other protect
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Specialist"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+			"attachments"
+			{
+				"headgear"
+				{
+					"model"                 "models/characters/headgear/hg_ins_helm_b.mdl"
+					"fallback_for_slot"		"head"
+				}
+			}
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_esapi"
+				"gear"				"srnx_BOT_ins_helmet_tan"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_fal"
+				"weapon_upgrade"	"magazine_extended_rifle_30rd"
+				"weapon_upgrade"	"ammo_ap_fal"
+				//Secondary
+				"weapon"			"weapon_toz"
+				"weapon_upgrade"	"commbuck"
+				//Explosive
+				"weapon"			"weapon_molotov"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_esapi"
+				"gear"				"srnx_BOT_ins_helmet_tan"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_fal"
+				"weapon_upgrade"	"ammo_ap_fal"
+				"weapon_upgrade"	"magazine_extended_rifle_30rd"
+				//Secondary
+				"weapon"			"weapon_toz"
+				"weapon_upgrade"	"commbuck"
+				//Explosive
+				"weapon"			"weapon_molotov"
+			}
+		}
+		"template_specialist_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Specialist"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+			
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primaries
+				"weapon"			"weapon_ak74"
+				"weapon_upgrade"		"ins_silencer"
+				"weapon_upgrade"		"ammo_ap_ak74"
+				//Secondaries
+				"weapon"			"weapon_toz"
+				"weapon_upgrade"		"ammo_slugs"
+				//Explosive
+				"weapon"			"weapon_molotov"
+				
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primaries
+				"weapon"			"weapon_ak74"
+				"weapon_upgrade"		"ins_silencer"
+				"weapon_upgrade"		"ammo_ap_ak74"
+				//Secondaries
+				"weapon"			"weapon_toz"
+				"weapon_upgrade"		"ammo_slugs"
+				//Explosive
+				"weapon"			"weapon_molotov"
+			}
+		}
+		"template_specialist_cia_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Specialist"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_sapper.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+			
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_4"
+				"gear"				"srnx_BOT_sapi"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"		"ammo_ap_m4"
+				"weapon_upgrade"		"sec_silencer"
+				//Secondary
+				"weapon"			"weapon_mp5"
+				"weapon_upgrade"		"ammo_hp_mp5"
+				"weapon_upgrade"	"sec_silencer"
+				//Explosive
+				"weapon"			"weapon_anm14"
+				
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_4"
+				"gear"				"srnx_BOT_sapi"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"		"ammo_ap_m4"
+				"weapon_upgrade"		"sec_silencer"
+				//Secondary
+				"weapon"			"weapon_mp5"
+				"weapon_upgrade"		"ammo_hp_mp5"
+				"weapon_upgrade"	"sec_silencer"
+				//Explosive
+				"weapon"			"weapon_anm14"
+			}
+		}
+		
+		"template_specialist_militant_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Specialist"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+			
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_2"
+				"gear"				"srnx_BOT_ar500"
+				"weapon"			"weapon_knife"
+				//Primary
+				//Secondary
+				"weapon"			"weapon_mp40"
+				"weapon_upgrade"	"ammo_ap_mp40"
+				//Explosive
+				"weapon"			"weapon_f1"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_2"
+				"gear"				"srnx_BOT_ar500"
+				"weapon"			"weapon_knife"
+				//Primary
+				//Secondary
+				"weapon"			"weapon_mp40"
+				"weapon_upgrade"	"ammo_ap_mp40"
+				//Explosive
+				"weapon"			"weapon_f1"
+			}
+		}
+		"template_scout_militant_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Scout"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_light.mdl"
+				"viewmodel_hands" 	"models/weapons/v_hands_ins_l.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_2"
+				"gear"				"srnx_BOT_nij_2"
+				"weapon"			"weapon_knife"
+				//Primary
+				//Secondary
+				"weapon"			"weapon_mini14"
+				"weapon_upgrade"	"ammo_ap_mini14"
+				//Explosive
+				"weapon"			"weapon_m18"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_2"
+				"gear"				"srnx_BOT_nij_2"
+				"weapon"			"weapon_knife"
+				//Primary
+				//Secondary
+				"weapon"			"weapon_mini14"
+				"weapon_upgrade"	"ammo_ap_mini14"
+				//Explosive
+				"weapon"			"weapon_m18"
+			}
+		}
+		"template_scout_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Scout"
+
+			"models"
+			{
+				"player"			"models/characters/civilian_vip_insurgent.mdl"
+				"viewmodel_hands" 	"models/weapons/v_hands_ins_l.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_nij_2"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m1a1"
+				"weapon_upgrade"	"ammo_ap_m1a1"
+				//Secondary
+				"weapon"			"weapon_m45"
+				"weapon_upgrade"	"magazine_extended_pistol"
+				"weapon_upgrade"	"ammo_hp_m45"
+				"weapon"			"weapon_m18"
+
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_nij_2"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m1a1"
+				"weapon_upgrade"	"ammo_ap_m1a1"
+				//Secondary
+				"weapon"			"weapon_m45"
+				"weapon_upgrade"	"magazine_extended_pistol"
+				"weapon_upgrade"	"ammo_hp_m45"
+				"weapon"			"weapon_m18"
+			}
+		}
+		
+		"template_sharpshooter_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Sharpshooter"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_light.mdl"
+				"viewmodel_hands" 	"models/weapons/v_hands_ins_l.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_nij_2"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_mosin"
+				"weapon_upgrade"	"ammo_ap_mosin"
+				//Secondary
+				"weapon"			"weapon_mp40"
+				"weapon_upgrade"	"ammo_ap_mp40"
+				//Explosive
+				"weapon"			"weapon_m18"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_nij_2"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_mosin"
+				"weapon_upgrade"	"ammo_ap_sks"
+				//Secondary
+				"weapon"			"weapon_mp40"
+				"weapon_upgrade"	"ammo_ap_mp40"
+				//Explosive
+				"weapon"			"weapon_m18"
+			}
+		}
+		"template_sharpshooter_militant_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Sharpshooter"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_light.mdl"
+				"viewmodel_hands" 	"models/weapons/v_hands_ins_l.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_nij_2"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_sks"
+				"weapon_upgrade"	"ammo_ap_sks"
+				//Secondary
+				"weapon"			"weapon_aks74u"
+				"weapon_upgrade"	"ammo_ap_aks74u"
+				//Explosive
+				"weapon"			"weapon_m18"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_nij_2"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_sks"
+				"weapon_upgrade"	"ammo_ap_sks"
+				//Secondary
+				"weapon"			"weapon_aks74u"
+				"weapon_upgrade"	"ammo_ap_aks74u"
+				//Explosive
+				"weapon"			"weapon_m18"
+			}
+		}
+		"template_sapper_cia_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Sapper"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands" 	"models/weapons/v_hands_ins_m.mdl"
+			}
+
+			"buy_order" 
+			{
+				//GEAR
+				"gear"				"ins_BOT_carrier_4"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"ammo_hp_m4"
+				//Secondary
+				"weapon"			"weapon_m590"
+				"weapon_upgrade"	"tacbuck"
+				//Explosive
+				"weapon"			"weapon_anm14"
+			}
+			"allowed_weapons"
+			{
+				//GEAR
+				"gear"				"ins_BOT_carrier_4"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"ammo_hp_m4"
+				//Secondary
+				"weapon"			"weapon_m590"
+				"weapon_upgrade"	"tacbuck"
+				//Explosive
+				"weapon"			"weapon_anm14"
+			}
+		}
+		
+		"template_sapper_sterling_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Sapper"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_sapper.mdl"
+				"viewmodel_hands" 	"models/weapons/v_hands_ins_l.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_sapi"
+				"weapon"			"weapon_knife"
+
+				//Secondary
+				"weapon"			"weapon_sterling"
+				"weapon_upgrade"	"ammo_hp_mp40"
+				//Explosive
+				"weapon"			"weapon_molotov"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_sapi"
+				"weapon"			"weapon_knife"
+
+				//Secondary
+				"weapon"			"weapon_sterling"
+				"weapon_upgrade"	"ammo_hp_mp40"
+				//Explosive
+				"weapon"			"weapon_molotov"
+			}
+		}
+		"template_sapper_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Sapper"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_sapper.mdl"
+				"viewmodel_hands" 	"models/weapons/v_hands_ins_l.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_sapi"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m16a4"
+				"weapon_upgrade"	"ammo_ap_m16a4"
+				//Secondary
+				"weapon"			"weapon_aks74u"
+				"weapon_upgrade"	"ins_silencer"
+				"weapon_upgrade"	"ammo_ap_aks74u"
+				//Explosive
+				"weapon"			"weapon_molotov"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_sapi"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m16a4"
+				"weapon_upgrade"	"ammo_ap_m16a4"
+				//Secondary
+				"weapon"			"weapon_aks74u"
+				"weapon_upgrade"	"ins_silencer"
+				"weapon_upgrade"	"ammo_ap_aks74u"
+				//Explosive
+				"weapon"			"weapon_molotov"
+			}
+		}
+		
+		"template_machinegunner_galil_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_MachineGunner"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_fighter.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_galil"
+				"weapon_upgrade"	"magazine_drum_75rd"
+				"weapon_upgrade"	"ammo_ap_galil"
+				//Secondary
+				"weapon"			"weapon_sterling"
+				"weapon_upgrade"	"ammo_hp_mp40"
+				//Explosive
+				"weapon"			"weapon_f1"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_galil"
+				"weapon_upgrade"	"magazine_drum_75rd"
+				"weapon_upgrade"	"ammo_ap_galil"
+				//Secondary
+				"weapon"			"weapon_sterling"
+				"weapon_upgrade"	"ammo_hp_mp40"
+				//Explosive
+				"weapon"			"weapon_f1"
+			}
+		}
+		"template_machinegunner_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_MachineGunner"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_fighter.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_rpk"
+				"weapon_upgrade"	"ammo_ap_rpk"
+				//Secondary
+				"weapon"			"weapon_aks74u"
+				"weapon_upgrade"	"ammo_hp_aks74u"
+				//Explosive
+				"weapon"			"weapon_f1"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_rpk"
+				"weapon_upgrade"	"ammo_ap_rpk"
+				//Secondary
+				"weapon"			"weapon_aks74u"
+				"weapon_upgrade"	"ammo_hp_aks74u"
+				//Explosive
+				"weapon"			"weapon_f1"
+			}
+		}
+		"template_cia_machinegunner_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_MachineGunner"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_fighter.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m249"
+				"weapon_upgrade"	"ammo_ap_m249"
+				//Secondary
+				"weapon"			"weapon_mp5"
+				"weapon_upgrade"	"ammo_ap_mp5"
+				//Explosive
+				"weapon"			"weapon_molotov"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_1"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_m249"
+				"weapon_upgrade"	"ammo_ap_m249"
+				//Secondary
+				"weapon"			"weapon_mp5"
+				"weapon_upgrade"	"ammo_ap_mp5"
+				//Explosive
+				"weapon"			"weapon_molotov"
+			}
+		}
+		"template_striker_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Striker"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_machinegunner.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"srnx_BOT_nij_3a"
+				"gear"				"ins_BOT_carrier_1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_l1a1"
+				"weapon_upgrade"	"underbarrel_bipod"
+				"weapon_ugprade"	"ammo_ap_l1a1"
+				//"weapon_upgrade"	"magazine_extended_rifle_30rd"
+				//Secondary
+				"weapon"			"weapon_sterling"
+				"weapon_ugprade"	"ammo_ap_mp40"
+				//Explosive
+				"weapon"			"weapon_rpg7"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"srnx_BOT_nij_3a"
+				"gear"				"ins_BOT_carrier_1"
+				"weapon"			"weapon_knife"
+				//Primary
+				"weapon"			"weapon_l1a1"
+				//"weapon_upgrade"	"magazine_extended_rifle_30rd"
+				"weapon_ugprade"	"ammo_ap_l1a1"
+				//Secondary
+				"weapon"			"weapon_sterling"
+				"weapon_ugprade"	"ammo_ap_mp40"
+				//Explosive
+				"weapon"			"weapon_rpg7"
+			}
+		}		
+		"template_militant_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Militant"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"ins_BOT_carrier_1"
+				"weapon"			"weapon_knife"
+				//Primary 
+				"weapon"			"weapon_saiga12" //aka death
+				"weapon_upgrade"	"tacbuck"
+				//Secondary
+				"weapon"			"weapon_toz" //aka death
+				"weapon_upgrade"	"commbuck"
+				//Explosive
+				"weapon"			"weapon_f1"
+				//"weapon_upgrade"	"ins_lasersight"
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"ins_BOT_carrier_1"
+				"weapon"			"weapon_knife"
+				//Primary 
+				"weapon"			"weapon_saiga12" //aka death
+				"weapon_upgrade"	"tacbuck"
+				//Secondary
+				"weapon"			"weapon_toz" //aka death
+				"weapon_upgrade"	"commbuck"
+				//Explosive
+				"weapon"			"weapon_f1"
+				//"weapon_upgrade"	"ins_lasersight"
+			}
+		}
+		"template_bomber_insurgent"
+		{	
+			"team"			"insurgents"
+			"print_name"	"#Squad_Cell_Bomber"
+
+			"models"
+			{
+				"player"			"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_ins_m.mdl"
+			}
+
+			"buy_order" 
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				//Bomb Model (melee)
+				"weapon"			"weapon_suicide_bomb"
+				//Explosive
+				"weapon"			"weapon_f1" 
+			}
+			"allowed_weapons"
+			{
+				//Gear
+				"gear"				"ins_BOT_carrier_3"
+				"gear"				"srnx_BOT_ar500"
+				"gear"				"srnx_BOT_leba1"
+				//Bomb Model (melee)
+				"weapon"			"weapon_suicide_bomb"
+				//Explosive
+				"weapon"			"weapon_f1" 
+			}
+		}
+	}
+	//must reinit ammo dumb but must be done
+	"ammo"
+	{
+		//Reinit Single Loaded Ammo
+		"00buck"
+		{
+			"import"				"default"
+			//"import"    "9x19"
+			"SuppressionIncrement"		"30"
+			"bulletcount"				"9"
+			"carry"						"56"
+			"damageType"				"DMG_BUCKSHOT"
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"brass_sound"				"BOUNCE_SHOTSHELL"
+			"Damage"
+			{
+				"800"					"100"
+				"2000"					"38"
+				"7000"					"25"
+			}
+			"PenetrationPower"
+			{
+				"1000"					"150"
+				"8000"					"60"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"0.86"
+				"HITGROUP_STOMACH"			"0.86"
+				"HITGROUP_LEFTARM"			"0.8"
+				"HITGROUP_RIGHTARM"			"0.8"
+				"HITGROUP_LEFTLEG"			"0.8"
+				"HITGROUP_RIGHTLEG"			"0.8"
+			}
+		}
+		"slug"
+		{
+			"import"				"default"
+			//"import"    "9x19"
+			"SuppressionIncrement"		"30"
+			"bulletcount"				"1"
+			"damageType"				"DMG_BUCKSHOT"
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"brass_sound"				"BOUNCE_SHOTSHELL"
+			"Damage"
+			{
+				"800"					"288"
+				"4500"					"144"
+				"9000"					"40"
+			}
+			"PenetrationPower"
+			{
+				"100"					"750"
+				"8000"					"10"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.9"
+				"HITGROUP_CHEST"			"1.8"
+				"HITGROUP_STOMACH"			"1.8"
+				"HITGROUP_LEFTARM"			"0.8"
+				"HITGROUP_RIGHTARM"			"0.8"
+				"HITGROUP_LEFTLEG"			"0.8"
+				"HITGROUP_RIGHTLEG"			"0.8"
+			}
+			
+		}
+		"buckshot"
+		{
+			"import"				"00buck"
+			"carry"					"56"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"slugs"
+		{
+			"import"				"slug"
+			"carry"					"56"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		// ========================================
+		// m40a1
+		// ========================================
+		"762x51mm"
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"130"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"Damage"
+			{
+				"10"					"200"
+				"20000"					"120"
+			}
+			"PenetrationPower"
+			{
+				"10"					"1400"
+				"20000"					"900"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"       "6.00"
+				"HITGROUP_CHEST"      "5.9"
+				"HITGROUP_STOMACH"    "5.9"
+				"HITGROUP_LEFTARM"    "1.4"
+				"HITGROUP_RIGHTARM"   "1.4"
+				"HITGROUP_LEFTLEG"    "1.4"
+				"HITGROUP_RIGHTLEG"   "1.4"
+			}
+		}
+		
+		"762x51mm_hp"
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"130"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"Damage"
+			{
+				"10"					"200"
+				"20000"					"120"
+			}
+      		"PenetrationPower"
+			{
+				"10"					"1000"
+				"20000"					"500"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"       "5.5"
+				"HITGROUP_CHEST"      "5.4"
+				"HITGROUP_STOMACH"    "5.4"
+				"HITGROUP_LEFTARM"    "1.8"
+				"HITGROUP_RIGHTARM"   "1.8"
+				"HITGROUP_LEFTLEG"    "1.8"
+				"HITGROUP_RIGHTLEG"   "1.8"
+			}
+		}
+		"762x51mm_ap"
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"130"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"Damage"
+			{
+				"10"					"200"
+				"20000"					"120"
+			}
+			"PenetrationPower"
+			{
+				"10"					"2100"
+				"20000"					"1100"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"       "6.4"
+				"HITGROUP_CHEST"      "6.3"
+				"HITGROUP_STOMACH"    "6.3"
+				"HITGROUP_LEFTARM"    "1.00"
+				"HITGROUP_RIGHTARM"   "1.00"
+				"HITGROUP_LEFTLEG"    "1.00"
+				"HITGROUP_RIGHTLEG"   "1.00"
+			}
+		}
+		// ========================================
+		// mosin
+		// ========================================
+		"762x54mm"
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"130"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"Damage"
+			{
+				"10"					"200"
+				"20000"					"120"
+			}
+			"PenetrationPower"
+			{
+				"10"					"1400"
+				"20000"					"900"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"       "6.00"
+				"HITGROUP_CHEST"      "5.9"
+				"HITGROUP_STOMACH"    "5.9"
+				"HITGROUP_LEFTARM"    "1.4"
+				"HITGROUP_RIGHTARM"   "1.4"
+				"HITGROUP_LEFTLEG"    "1.4"
+				"HITGROUP_RIGHTLEG"   "1.4"
+			}
+		}
+		"762x54mm_hp"
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"130"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"Damage"
+			{
+				"10"					"200"
+				"20000"					"120"
+			}
+      		"PenetrationPower"
+			{
+				"10"					"1000"
+				"20000"					"500"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"       "5.5"
+				"HITGROUP_CHEST"      "5.4"
+				"HITGROUP_STOMACH"    "5.4"
+				"HITGROUP_LEFTARM"    "1.8"
+				"HITGROUP_RIGHTARM"   "1.8"
+				"HITGROUP_LEFTLEG"    "1.8"
+				"HITGROUP_RIGHTLEG"   "1.8"
+			}
+		}
+		"762x54mm_ap"
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"130"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"Damage"
+			{
+				"10"					"200"
+				"20000"					"120"
+			}
+			"PenetrationPower"
+			{
+				"10"					"2100"
+				"20000"					"1100"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"       "6.4"
+				"HITGROUP_CHEST"      "6.3"
+				"HITGROUP_STOMACH"    "6.3"
+				"HITGROUP_LEFTARM"    "1.00"
+				"HITGROUP_RIGHTARM"   "1.00"
+				"HITGROUP_LEFTLEG"    "1.00"
+				"HITGROUP_RIGHTLEG"   "1.00"
+			}
+		}
+		"762x54_7n14"
+		{
+			"import"				"default"
+			"SuppressionIncrement"			"130"
+			"brass_model"				"models/weapons/shells/762x51.mdl"
+			"carry"					"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"Damage"
+			{
+				"10"					"185"
+				"20000"					"120"
+			}
+      		"PenetrationPower"
+			{
+				"10"					"1000"
+				"20000"					"500"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"       "5.5"
+				"HITGROUP_CHEST"      "5.4"
+				"HITGROUP_STOMACH"    "5.4"
+				"HITGROUP_LEFTARM"    "1.8"
+				"HITGROUP_RIGHTARM"   "1.8"
+				"HITGROUP_LEFTLEG"    "1.8"
+				"HITGROUP_RIGHTLEG"   "1.8"
+			}
+
+		}
+		"762x54mm_sr"
+		{
+			"import"					"762x54_7n14"
+			"carry"						"120"
+      		"flags_clear"				"AMMO_USE_MAGAZINES" 
+		}
+		//L1a1
+		//Custom
+		"762x51_box_30rnd"
+		{
+			"import"    "762x51"
+			"magsize"	"30"
+		}
+		"762x51_hp_box_30rnd"
+		{
+			"import"    "762x51_hp"
+			"magsize"	"30"
+		}
+		"762x51_ap_box_30rnd"
+		{
+			"import"    "762x51_ap"
+			"magsize"	"30"
+		}
+	}
+}

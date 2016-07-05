@@ -1,0 +1,5 @@
+hotel firefight
+clean_sweep_op_a01 elimination
+clean_sweep_op_a01 occupy
+block_party_op_a01 elimination
+hotel occupy

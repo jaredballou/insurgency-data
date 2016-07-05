@@ -1,0 +1,226 @@
+"theater"
+{	
+	"player_gear"
+	{
+		"op_chest_carrier1_navy"	//2 of each 2 nade slot
+		{
+			"team_access"			"security"
+		}
+		"op_chest_carrier2_navy"	//4 of each 3 nade slots
+		{
+			"team_access"			"security"
+		}
+		"op_chest_carrier3_navy"	//6 of each 3 nade slot
+		{
+			"team_access"			"security"
+		}	
+		"armor_v2_light"
+		{
+			"team_access"			"security"
+		}
+		"armor_v2_med"
+		{
+			"team_access"			"security"
+		}
+		"armor_v2_heavy"
+		{
+			"team_access"			"security"
+		}			
+		"armor_v1_light"
+		{
+			"team_access"			"insurgent"
+		}
+		"armor_v1_med"
+		{
+			"team_access"			"insurgent"
+		}
+		"armor_v1_heavy"
+		{
+			"team_access"			"insurgent"
+		}		
+		"omega_cap_tactical"
+        {
+            "team_access"   		 "security"
+        }
+		"alpha_sec_helmet"
+        {			
+            "class_restricted"      "1"            
+        }
+		"alpha_ins_helmet"
+        {			
+            "class_restricted"      "1"
+        }
+		"alpha_cap_tactical"
+        {
+            "class_restricted"       "1"
+        }
+	}
+	"player_templates"
+	{
+		"template_operator_grade_coop"
+		{
+			"team"			"security" 
+			"models"
+			{
+				"player"			"models/characters/operators/w_op_body_1_c.mdl"
+				"viewmodel_hands"	"models/characters/operators/v_op_hands.mdl"				
+				"attachments"
+				{
+					"head"
+					{
+						"model"                 "models/characters/beards/a_op_head_b_1.mdl"
+						"fallback_for_slot"		"misc1"
+					}
+					"body"
+					{
+						"model"                 "models/characters/armor/w_armor_v2_navy.mdl"
+						"fallback_for_slot"		"armor"
+					}
+					"headgear"
+					{
+						"model"                 "models/characters/headgear/a_hg_taccap.mdl"
+						"fallback_for_slot"		"head"
+					}
+					"eyewear"
+					{
+						"model"					"models/characters/eyewear/a_op_aviators.mdl"
+						"fallback_for_slot"		"accessory"
+					}
+				}
+			}
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_op_m4a1"
+				"weapon_upgrade"	"m4_buttstock"
+				"weapon"			"weapon_op_m84"
+			}
+			"allowed_items"
+			{
+				"gear"				"op_sec_nightvision"
+				"gear"				"op_ins_nightvision"
+				"gear"				"sec_sunglasses"
+				"gear"				"sec_sunglasses_b"
+				"gear"				"alpha_beard_head"
+				"gear"				"op_chest_carrier1_navy"
+				"gear"				"op_chest_carrier2_navy"
+				"gear"				"op_chest_carrier3_navy"
+				"gear"				"pistol_ammo_pouch_navy"
+				"gear"				"pistol_ammo_pouchx2_navy"
+				"gear"				"armor_v2_light"
+				"gear"				"armor_v2_med"
+				"gear"				"armor_v2_heavy"
+				"gear"				"tac_sec_helmet"
+				"gear"				"tac_ins_helmet"
+				"gear"				"omega_cap_tactical"
+				"weapon"			"weapon_op_m4a1"
+				"weapon"			"weapon_op_mp5a4"
+				"weapon"			"weapon_op_mk12spr"
+				"weapon" 			"weapon_op_mk18"
+			}
+		}
+		//BOTS
+		"template_operative_b_akm"
+		{
+			"team"					"insurgents"
+			"models"
+			{
+				"player"			"models/characters/civilian_vip.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_vip.mdl"
+				"attachments"
+				{
+					"body"
+					{
+						"model"                 "models/characters/armor/w_armor_v1_tac.mdl"
+						"fallback_for_slot"		"armor"
+					}
+					"headgear"
+					{
+						"model"                 "models/characters/headgear/hg_sec_helm_b.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}			
+			"buy_order"
+			{
+				//"gear"				"armor_bot
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_op_m67"
+			}
+			"allowed_items"
+			{
+				//"gear"				"armor_bot
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_op_m67"
+			}			
+		}
+		"template_operative_b_rpk"
+		{
+				"team"					"insurgents"
+				"models"
+				{
+				"player"			"models/characters/civilian_vip.mdl"
+					"viewmodel_hands"	"models/weapons/v_hands_vip.mdl"
+					"attachments"
+					{
+						"body"
+						{
+							"model"                 "models/characters/armor/w_armor_v1_tac.mdl"
+							"fallback_for_slot"		"armor"
+						}
+						"headgear"
+						{
+							"model"                 "models/characters/headgear/hg_ins_helm_b.mdl"
+							"fallback_for_slot"		"head"
+						}
+					}
+				}			
+			"buy_order"
+			{
+				//"gear"				"armor_bot
+				"weapon"			"weapon_rpk"
+				"weapon"			"weapon_op_m67"
+			}
+			"allowed_items"
+			{
+				//"gear"				"armor_bot
+				"weapon"			"weapon_rpk"
+				"weapon"			"weapon_op_m67"
+			}	
+		}
+		"template_operative_b_aks"
+		{
+			"team"					"insurgents"
+			"models"
+			{
+				"player"			"models/characters/civilian_vip.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_vip.mdl"
+				"attachments"
+				{
+					"body"
+					{
+						"model"                 "models/characters/armor/w_armor_v1_tac.mdl"
+						"fallback_for_slot"		"armor"
+					}
+					"headgear"
+					{
+						"model"                 "models/characters/headgear/hg_ins_helm_b.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}			
+			"buy_order"
+			{
+				//"gear"				"armor_bot"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_op_m67"
+			}
+			"allowed_items"
+			{
+				//"gear"				"armor_bot"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_op_m67"
+			}					
+		}
+	}
+}

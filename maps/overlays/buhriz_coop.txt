@@ -1,0 +1,23 @@
+"map_data"
+{
+	"to_a"
+	{
+		"pos_type"	"arrow"
+		"pos_points"	"411,955 440,952 515,960 544,956 591,919 619,899 626,870 642,840 654,801 676,758"
+	}
+	"APC"
+	{
+		"pos_type"	"point"
+		"pos_x"		"676"
+		"pos_y"		"758"
+	}
+	"Bridge"
+	{
+		"pos_type"	"area"
+		"pos_shape"	"rect"
+		"pos_x"		"500"
+		"pos_y"		"651"
+		"pos_height"	"134"
+		"pos_width"	"30"
+	}
+}

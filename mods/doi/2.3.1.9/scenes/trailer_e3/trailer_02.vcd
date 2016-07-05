@@ -1,0 +1,31 @@
+// Choreo version 1
+actor "player_2_1_4"
+{
+  channel "Sequence"
+  {
+    event sequence "trailer_radio_handoff"
+    {
+      time 0.100000 23.700001
+      param "trailer_radio_handoff"
+      fixedlength
+    }
+  }
+  channel "Flexes"
+  {
+  }
+  channel "Voice"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "48"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "34"
+  "GestureTool" "100"
+}
+fps 30
+snap on
+ignorePhonemes off

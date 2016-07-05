@@ -1,0 +1,59 @@
+// Choreo version 1
+actor "player_2_1_5"
+{
+  channel "Flexes"
+  {
+    event flexanimation "Flexes"
+    {
+      time 0.200000 3.400000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "wrinkler" 
+        {
+          0.1667 0.1400
+          2.3000 0.1100
+        }
+        "raiser" 
+        {
+          0.2667 0.5500
+          1.5667 0.8300
+          2.8667 0.4600
+        }
+        "outer_raiser" 
+        {
+          0.2000 0.3000
+          2.3667 0.5200
+        }
+        "inner_raiser" 
+        {
+          0.3000 0.3400
+          2.3667 0.7400
+        }
+      }
+    }
+  }
+  channel "Voice"
+  {
+    event speak "Voice_Trailer.Line_01"
+    {
+      time 1.200000 2.094762
+      param "Voice_Trailer.Line_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "10"
+  "GestureTool" "100"
+}
+fps 30
+snap on
+ignorePhonemes off

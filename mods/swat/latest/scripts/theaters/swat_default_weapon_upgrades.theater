@@ -1,0 +1,4054 @@
+"#base" "swat_base_weapon_upgrades.theater"
+
+"theater"
+{
+	"weapon_upgrades"
+	{
+		// ========================================
+		// NON-SPECIFIC UPGRADES (CHEAP)
+		// ========================================
+		"ammo_slugs"
+		{
+			"import"					"base_ammo_slugs"
+			"team_access"				"security, insurgent"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_nova"
+				"weapon"				"weapon_m59m"
+				"weapon"				"weapon_to2"
+			}
+		}
+		"magazine_extended_pistol"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"2"
+			"team_access"				"no"
+
+			"print_name"				"#weapon_upgrade_magazine_extended"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+
+			"magsize_override"			"15"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1911"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"magazine_15_1911"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_1911_15.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_m1911"
+					}
+				}
+				
+				"magazine_15_m45"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_p45_15.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_m45"
+					}
+				}
+				
+				"magazine_15_makarov"
+				{
+					"Act_Suffix"		"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_gakarov_15.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_makarov"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_15_1911"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_1911_15.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_m1911"
+					}
+				}
+				
+				"magazine_15_m45"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_p45_15.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_m45"
+					}
+
+				}
+			}
+		}
+		"magazine_extended_carbine_30rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"2"
+			"team_access"				"security, insurgent"
+
+			"print_name"				"#weapon_upgrade_magazine_extended"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+
+			"magsize_override"			"30"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mra1"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_m1a1"
+				{
+					"Act_Suffix"		"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_mra1_30.mdl"
+					"Main"				"1"
+
+					"weapons"
+					{
+						"weapon"		"weapon_mra1"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"magazine_m1a1"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_mra1_30.mdl"
+				}
+			}
+		}
+		"magazine_extended_rifle_30rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"2"
+			"team_access"				"security, insurgent"
+
+			"print_name"				"#weapon_upgrade_magazine_extended"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+
+			"magsize_override"			"30"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_l1a1"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_fal"
+				{
+					"Act_Suffix"		"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_fal_l1a1_30.mdl"
+					"Main"				"1"
+
+					"weapons"
+					{
+						"weapon"		"weapon_fal"
+						"weapon"		"weapon_l1a1"
+					}
+				}
+			}
+		}
+		"magazine_drum_75rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"3"
+			"class_restricted"			"1"
+			"team_acces"				"security, insurgent"
+			"weight"					"96"
+			
+			"print_name"				"#weapon_upgrade_magazine_drum"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+			
+			"magsize_override"			"75"
+			"maxcarry_override"			"4"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_galil_sar"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_galil"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_galil_75.mdl"
+					"Main"				"1"
+
+					"weapons"
+					{
+						"weapon"		"weapon_galil"
+						"weapon"		"weapon_galil_sar"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"magazine_galil"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_galil_75.mdl"					
+				}				
+			}
+		}
+		"magazine_speedloader"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+
+			"print_name"				"#weapon_upgrade_speedloader"
+			"print_desc"				"#weapon_upgrade_speedloader_desc"
+
+			// some magic to disable single reload
+			"weapon_abilities"			"speedreload"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_model10"
+			}
+
+			"viewmodel_attachments"
+			{
+				"speedloader_38"
+				{
+					"ActSuffix"			"_SPEED"
+					"model"				"models/weapons/upgrades/a_speedloader_rev.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_model10"
+					}
+				}
+			}
+		}
+		"siderail_flashlight_rail"
+		{
+			"import"					"base_flashlight"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_ump45"
+				
+			}
+			"viewmodel_attachments"
+			{
+				"flashlight_rail"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_rail.mdl"
+					"Main"					"1"
+				}
+				"standard_mk18"
+				{
+					"model"					"models/weapons/upgrades/a_standard3_mk18.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_mk1g"
+					}
+				}
+				
+				"standard_m4a1"
+				{
+					"model"					"models/weapons/upgrades/a_standard5_m4a1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m4a1"
+					}
+				}
+			}
+		}
+		"siderail_flashlight_band"
+		{
+			"import"					"base_flashlight"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				// security
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_mp5a"
+				"weapon"				"weapon_m249"
+
+				// insurgent
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_mra1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_mp41"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_sterling"
+			}
+			"viewmodel_attachments"
+			{
+				"Flashlight_band"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_band.mdl"
+					"Main"					"1"
+
+					"excluded_weapons"
+					{
+						"weapon"			"weapon_sterling"
+					}
+				}
+				"flashlight_sterling"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_sterling.mdl"
+					"Main"					"1"
+
+					"weapons"
+					{
+						"weapon"			"weapon_sterling"
+					}
+				}
+			}
+		}
+		"siderail_flashlight_shotgun"
+		{
+			"import"					"base_flashlight"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_nova"
+				"weapon"				"weapon_m59m"
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_to2"
+				"weapon"				"weapon_mosin"
+			}
+			"viewmodel_attachments"
+			{
+				"Flashlight_shotgun_sec"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_sec_shotgun.mdl"
+					"Main"					"1"
+
+					"weapons"
+					{
+						"weapon"			"weapon_m590"
+						"weapon"			"weapon_m59m"
+						"weapon"			"weapon_m40a1"
+					}
+				}
+
+				"Flaslight_shotgun_ins"
+				{
+					"model"					"models/weapons/upgrades/a_flashligh1_ins_shotgun.mdl"
+					"Main"					"1"			
+
+					"weapons"
+					{
+						"weapon"			"weapon_m590"
+						"weapon"			"weapon_to2"
+						"weapon"			"weapon_mosin"
+					}	
+				}
+			}
+		}
+		"siderail_flashlight_pistol"
+		{
+			"import"					"base_flashlight_pistol"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_g17"
+				"weapon"				"weapon_p45"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_gakarov"
+			}
+			"viewmodel_attachments"
+			{
+				"flashlight_m9"
+				{
+					"model"					"models/weapons/upgrades/a_flashlight_m9.mdl"
+					"Main"					"1"
+
+					"weapons"
+					{
+						"weapon"			"weapon_g17"
+					}
+				}
+
+				"flashlight_mak"
+				{
+					"model"					"models/weapons/upgrades/a_flashligh1_mak.mdl"
+					"Main"					"1"
+
+					"excluded_weapons"
+					{
+						"weapon"			"weapon_g17"
+					}
+				}
+			}
+		}
+
+		"barrel_heavybarrel"
+		{
+			"import"					"base_heavybarrel"
+			"weight"					"20"
+			"team_access"				"security"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_galil_sar"
+			}
+		}
+		
+		// ========================================
+		// SHARED OPTIC ATTACHMENTS
+		// ========================================
+		"base_optic_rail"
+		{
+			"IsBase"				"1"
+			"upgrade_slot"				"optics"
+			
+			"viewmodel_attachments"
+			{
+				// AKM Modkit
+				"ModKit03"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_06.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_akm"
+						"weapon"				"weapon_ak74"
+						"weapon"				"weapon_rpk"
+					}
+				}
+				
+				// FAL Modkit
+				"ModKitFAL"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_fal.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_fal"
+					}
+				}
+
+				// L1A1 Modkit
+				"ModKitL1A1"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_l1a1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_l1a1"
+					}
+				}
+
+				// AKS74u Modkit
+				"ModKit07"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_07.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_aks74u"
+					}
+				}
+				
+				// M1A1 Modkit
+				"ModKitM1A1"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_mra1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mra1"
+					}
+				}
+				
+				// MP40 modkit
+				"ModKit04"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_04.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mp41"
+						"weapon"				"weapon_sks"
+					}
+				}
+				
+				// Mosin modkit
+				"ModkitMosin"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mosin"
+					}
+				}
+				
+				// MP5/M590/Galil modkit
+				"ModKit05"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_05.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_m59m"
+					}
+				}
+
+				// Sterling Modkit
+				"ModKitSterling"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_sterling.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_sterling"
+					}
+				}
+				
+				// Galil Modkit
+				"ModKitGalil"
+				{
+					"model"					"models/weapons/upgrades/a_mount_galil.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_galil"
+						"weapon"				"weapon_galil_sar"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				// AKM/FAL modkit
+				"Modkit6"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_6.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_akm"
+						"weapon"				"weapon_ak74"
+						"weapon"				"weapon_rpk"
+					}
+				}
+				
+				// AKS74u modkit
+				"Modkit7"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_7.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_aks74u"
+					}
+				}
+				
+				// MP40/SKS modkit
+				"Modkit4"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_4.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mp41"
+						"weapon"				"weapon_sks"
+					}
+				}
+				
+				// Mosin modkit
+				"ModkitMosin"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mosin"
+					}
+				}
+				
+				// MP5 modkit
+				"Modkit5"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_5.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_m59m"
+						"weapon"				"weapon_to2"
+						"weapon"				"weapon_m590"
+						"weapon"				"weapon_nova"
+					}
+				}
+				
+				// Sterling Modkit
+				"ModKitSterling"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_sterling.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_sterling"
+					}
+				}
+				
+				// Galil Modkit
+				"ModKitGalil"
+				{
+					"model"					"models/weapons/upgrades/w_mount_galil.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_galil"
+						"weapon"				"weapon_galil_sar"
+					}
+				}
+				
+				// M1A1 Modkit
+				"ModKitM1A1"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_mra1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mra1"
+					}
+				}
+			}
+		}
+		
+		"optic_2xaimpoint"
+		{
+			"import"					"base_optic_rail"
+			"upgrade_cost"				"4"
+			"print_name"				"#weapon_upgrade_2xaimpoint"
+			"print_desc"				"#weapon_upgrade_2xaimpoint_desc"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				// security weapons
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_mp5a"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_l1a1"
+				
+				// insurgent weapons
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_sterling"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"2xScope_Large"
+				{
+					"model"					"models/weapons/upgrades/a_optic_aimp2x_l.mdl"
+					"AnimIronSights"			"4x_zoom"
+					"AnimIdle"				"4x_idle"
+					"Gesture"				"delta_aimp2x"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+					}
+				}
+				"2xScope_Normal"
+				{
+					"model"					"models/weapons/upgrades/a_optic_aimp2x.mdl"
+					"AnimIronSights"			"4x_zoom"
+					"AnimIdle"				"4x_idle"
+					"Gesture"				"delta_aimp2x"
+					"Main"					"1"
+					
+					"excluded_weapons"
+					{
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+						"weapon"				"weapon_mp40"
+						"weapon"				"weapon_sterling"
+					}
+				}
+				
+				"2xScope_Small"
+				{
+					"model"					"models/weapons/upgrades/a_optic_aimp2x_m.mdl"
+					"AnimIronSights"			"4x_zoom"
+					"AnimIdle"				"4x_idle"
+					"Gesture"				"delta_aimp2x"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_mp40"
+						"weapon"				"weapon_sterling"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Scope"
+				{
+					"model"					"models/weapons/upgrades/w_magaim.mdl"
+				}
+			}
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"16"
+				"fov_wpn_ironsight"			"39"
+				"fov_wpn_focus"				"39"
+				
+				"weapon_m17a4"
+				{
+					"fov_wpn_ironsight"			"63"
+					"fov_wpn_focus"				"70"
+				}
+				"weapon_m4a1"
+				{
+					"fov_wpn_ironsight"			"63"
+					"fov_wpn_focus"				"70"
+				}
+				
+				"weapon_m249"
+				{
+					"fov_wpn_ironsight"			"42"
+					"fov_wpn_focus"				"52"
+				}
+				
+				"weapon_m40a1"
+				{
+					"fov_wpn_ironsight"			"39"
+					"fov_wpn_focus"				"47"
+				}
+				
+				"weapon_mk1g"
+				{
+					"fov_wpn_ironsight"			"59"
+					"fov_wpn_focus"				"67"
+				}
+				
+				"weapon_m14"
+				{
+					"fov_wpn_ironsight"			"41"
+					"fov_wpn_focus"				"51"
+				}
+				
+				"weapon_m59m"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"68"
+				}
+				
+				"weapon_mini14"
+				{
+					"fov_wpn_ironsight"			"48"
+					"fov_wpn_focus"				"57"
+				}
+				
+				"weapon_mp5a"
+				{
+					"fov_wpn_ironsight"			"48"
+					"fov_wpn_focus"				"56"
+				}
+				
+				"weapon_ump45"
+				{
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"58"
+				}
+				
+				"weapon_l1a1"
+				{
+					"fov_wpn_ironsight"			"53"
+					"fov_wpn_focus"				"60"
+				}
+
+				"weapon_akm"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"67"
+				}
+				
+				"weapon_ak74"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"67"
+				}
+				
+				"weapon_fal"
+				{
+					"fov_wpn_ironsight"			"53"
+					"fov_wpn_focus"				"60"
+				}
+				
+				"weapon_galil"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"67"
+				}
+
+				"weapon_galil_sar"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"67"
+				}
+
+				"weapon_aks74u"
+				{
+					"fov_wpn_ironsight"			"62"
+					"fov_wpn_focus"				"67"
+				}
+				
+				"weapon_mra1"
+				{
+					"fov_wpn_ironsight"			"44"
+					"fov_wpn_focus"				"53"
+				}
+				
+				"weapon_mosin"
+				{
+					"fov_wpn_ironsight"			"41"
+					"fov_wpn_focus"				"47"
+				}
+				
+				"weapon_mp40"
+				{
+					"fov_wpn_ironsight"			"43"
+					"fov_wpn_focus"				"51"
+				}
+				
+				"weapon_rpk"
+				{
+					"fov_wpn_ironsight"			"61"
+					"fov_wpn_focus"				"67"
+				}
+				
+				"weapon_sks"
+				{
+					"fov_wpn_ironsight"			"66"
+					"fov_wpn_focus"				"71"
+				}
+				
+				"weapon_sterling"
+				{
+					"fov_wpn_ironsight"			"43"
+					"fov_wpn_focus"				"51"
+				}
+
+				"weapon_to2"
+				{
+					"fov_wpn_ironsight"			"46"
+					"fov_wpn_focus"				"54"
+				}
+			}
+		}
+		
+		"optic_aimpoint"
+		{
+			"import"					"base_optic_rail"
+			"upgrade_cost"				"1"
+			"print_name"				"#weapon_upgrade_aimpoint"
+			"print_desc"				"#weapon_upgrade_aimpoint_desc"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				// security weapons
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_mp5a"
+				"weapon"				"weapon_ump45"
+
+				// insurgent weapons
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_mra1"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_to2"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"2xScope_Large"
+				{
+					"model"					"models/weapons/upgrades/a_optic_aimpoint_l.mdl"
+					"AnimIronSights"		"4x_zoom"
+					"AnimIdle"				"4x_idle"
+					"Gesture"				"delta_aimp"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+					}
+				}
+				"2xScope_Normal"
+				{
+					"model"					"models/weapons/upgrades/a_optic_aimpoint.mdl"
+					"AnimIronSights"		"4x_zoom"
+					"AnimIdle"				"4x_idle"
+					"Gesture"				"delta_aimp"
+					"Main"					"1"
+					
+					"excluded_weapons"
+					{
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+						"weapon"				"weapon_sterling"
+					}
+				}
+				
+				"2xScope_Small"
+				{
+					"model"					"models/weapons/upgrades/a_optic_aimpoint_m.mdl"
+					"AnimIronSights"		"4x_zoom"
+					"AnimIdle"				"4x_idle"
+					"Gesture"				"delta_aimp"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_sterling"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Scope"
+				{
+					"model"					"models/weapons/upgrades/w_aimpoint.mdl"
+				}
+			}
+			
+			"optics"
+			{
+				"optic_holographic"			"1"
+				"optic_material"			"models/weapons/optics/aimpoint_reticule_holo"
+				"optic_paralax_distance"		"5"
+				"optic_reticle_size"			".05"
+				
+				"weapon_m14"
+				{
+					"optic_reticle_size"			".05"
+				}
+			}
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_ironsight"			"52"
+				"fov_wpn_focus"				"60"
+				
+				"weapon_m17a4"
+				{
+					"fov_wpn_ironsight"			"55"
+					"fov_wpn_focus"				"63"
+				}
+				"weapon_m4a1"
+				{
+					"fov_wpn_ironsight"			"55"
+					"fov_wpn_focus"				"63"
+				}
+				
+				"weapon_mini14"
+				{
+					"fov_wpn_ironsight"			"53"
+					"fov_wpn_focus"				"61"
+				}
+				
+				"weapon_mk1g"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"66"
+				}
+				
+				"weapon_mp5a"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"60"
+				}
+				
+				"weapon_ump45"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"60"
+				}
+				
+				"weapon_m59m"
+				{
+					"fov_wpn_ironsight"			"56"
+					"fov_wpn_focus"				"64"
+				}
+				
+				"weapon_m14"
+				{
+					"fov_wpn_ironsight"			"49"
+					"fov_wpn_focus"				"58"
+				}
+				
+				"weapon_m40a1"
+				{
+					"fov_wpn_ironsight"			"42"
+					"fov_wpn_focus"				"50"
+				}
+				
+				"weapon_m249"
+				{
+					"fov_wpn_ironsight"			"49"
+					"fov_wpn_focus"				"58"
+				}
+
+				"weapon_ak74"
+				{
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"58"
+				}
+				
+				"weapon_akm"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"62"
+				}
+				
+				"weapon_aks74u"
+				{
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"58"
+				}
+
+				"weapon_mra1"
+				{
+					"fov_wpn_ironsight"			"48"
+					"fov_wpn_focus"				"56"
+				}
+				
+				"weapon_rpk"
+				{
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"58"
+				}
+				
+				"weapon_sks"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"62"
+				}
+
+				"weapon_sterling"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"60"
+				}
+
+				"weapon_galil"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"62"
+				}
+
+				"weapon_galil_sar"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"62"
+				}
+			}
+		}
+		
+		"optic_elcan"
+		{
+			"import"					"base_optic_rail"
+			"upgrade_cost"				"3"
+			"print_name"				"#weapon_upgrade_elcan"
+			"print_desc"				"#weapon_upgrade_elcan_desc"
+			"team_access"				"no"
+			
+			"allowed_weapons"
+			{
+				// security weapons
+
+
+				// insurgent weapons
+
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Elcan_Small"
+				{
+					"model"					"models/weapons/upgrades/a_optic_elcan_m.mdl"
+					"AnimIronSights"			"elcan_zoom"
+					"AnimIdle"				"elcan_idle"
+					"Gesture"				"delta_elcan"
+					"Main"					"1"
+					
+					"excluded_weapons"
+					{
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+						"weapon"				"weapon_mk1g"
+						"weapon"				"weapon_mra1"
+					}
+				}
+				
+				"Elcan_Normal"
+				{
+					"model"					"models/weapons/upgrades/a_optic_elcan.mdl"
+					"AnimIronSights"			"elcan_zoom"
+					"AnimIdle"				"elcan_idle"
+					"Gesture"				"delta_elcan"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+						"weapon"				"weapon_mk1g"
+						"weapon"				"weapon_mra1"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"ELCAN"
+				{
+					"model"					"models/weapons/upgrades/w_elcan.mdl"
+				}
+			}
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"14"
+				"fov_wpn_ironsight"			"56"
+				"fov_wpn_focus"				"64"
+				
+				"weapon_m17a4"
+				{
+					"fov_wpn_ironsight"			"62"
+					"fov_wpn_focus"				"64"
+				}
+				
+				"weapon_m4a1"
+				{
+					"fov_wpn_ironsight"			"62"
+					"fov_wpn_focus"				"64"
+				}
+				
+				"weapon_mk1g"
+				{
+					"fov_wpn_ironsight"			"70"
+					"fov_wpn_focus"				"72"
+				}
+				
+				"weapon_m14"
+				{
+					"fov_wpn_ironsight"			"42"
+					"fov_wpn_focus"				"49"
+				}
+				
+				"weapon_mini14"
+				{
+					"fov_wpn_ironsight"			"55"
+					"fov_wpn_focus"				"58"
+				}
+				
+				"weapon_m249"
+				{
+					"fov_wpn_ironsight"			"44"
+					"fov_wpn_focus"				"50"
+				}
+				
+				"weapon_m40a1"
+				{
+					"fov_wpn_ironsight"			"39"
+					"fov_wpn_focus"				"44"
+				}
+				
+				"weapon_mp5a"
+				{
+					"fov_wpn_ironsight"			"55"
+					"fov_wpn_focus"				"60"
+				}
+				
+				"weapon_ump45"
+				{
+					"fov_wpn_ironsight"			"48"
+					"fov_wpn_focus"				"54"
+				}
+				
+				"weapon_l1a1"
+				{
+					"fov_wpn_ironsight"			"49"
+					"fov_wpn_focus"				"53"
+				}
+
+				"weapon_akm"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"58"
+				}
+				
+				"weapon_ak74"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"58"
+				}
+				
+				"weapon_fal"
+				{
+					"fov_wpn_ironsight"			"49"
+					"fov_wpn_focus"				"53"
+				}
+				
+				"weapon_aks74u"
+				{
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"59"
+				}
+				
+				"weapon_mra1"
+				{
+					"fov_wpn_ironsight"			"47"
+					"fov_wpn_focus"				"54"
+				}
+				
+				"weapon_mosin"
+				{
+					"fov_wpn_ironsight"			"34"
+					"fov_wpn_focus"				"40"
+				}
+				
+				"weapon_mp40"
+				{
+					"fov_wpn_ironsight"			"46"
+					"fov_wpn_focus"				"53"
+				}
+				
+				"weapon_rpk"
+				{
+					"fov_wpn_ironsight"			"55"
+					"fov_wpn_focus"				"60"
+				}
+				
+				"weapon_sks"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"60"
+				}
+
+				"weapon_sterling"
+				{
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"55"
+				}
+
+				"weapon_galil"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"58"
+				}
+
+				"weapon_galil_sar"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"58"
+				}
+			}
+		}
+		
+		"optic_eotech"
+		{
+			"import"					"base_optic_rail"
+			"upgrade_cost"				"1"
+			"print_name"				"#weapon_upgrade_holographic"
+			"print_desc"				"#weapon_upgrade_holographic_desc"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				// security weapons
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_m59m"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_mp5a"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_nova"
+
+				// insurgent weapons
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_mra1"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_to2"
+				"weapon"				"weapon_m590"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Eotech_Small"
+				{
+					"model"					"models/weapons/upgrades/a_optic_eotech_m.mdl"
+					"AnimIronSights"			"zoom"
+					"AnimIdle"				"idle"
+					"Gesture"				"delta_eotech"
+					"Main"					"1"
+					"ReticleScale"				"0.625"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_mp40"
+						"weapon"				"weapon_ump45"
+						"weapon"				"weapon_sterling"
+					}
+				}
+				
+				"Eotech_Normal"
+				{
+					"model"					"models/weapons/upgrades/a_optic_eotech.mdl"
+					"AnimIronSights"			"zoom"
+					"AnimIdle"				"idle"
+					"Gesture"				"delta_eotech"
+					"Main"					"1"
+					
+					"excluded_weapons"
+					{
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_mp40"
+						"weapon"				"weapon_ump45"
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+						"weapon"				"weapon_mk1g"
+						"weapon"				"weapon_mra1"
+						"weapon"				"weapon_sterling"
+					}
+				}
+				
+				"Eotech_Large"
+				{
+					"model"					"models/weapons/upgrades/a_optic_eotech_l.mdl"
+					"AnimIronSights"			"zoom"
+					"AnimIdle"				"idle"
+					"Gesture"				"delta_eotech"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mk1g"
+						// "weapon"			"weapon_m249"
+					}
+				}
+				"Eotech_XLarge"
+				{
+					"model"					"models/weapons/upgrades/a_optic_eotech_xl.mdl"
+					"AnimIronSights"			"zoom"
+					"AnimIdle"				"idle"
+					"Gesture"				"delta_eotech"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+						"weapon"				"weapon_mra1"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Eotech"
+				{
+					"model"					"models/weapons/upgrades/w_eotech.mdl"
+				}
+			}
+			
+			"optics"
+			{
+				"optic_holographic"			"1"
+				"optic_material"			"models/weapons/optics/eotech_reticule_holo"
+				"optic_paralax_distance"		"7"
+				"optic_reticle_size"			"0.28"
+				
+				"weapon_m14"
+				{
+					"optic_reticle_size"			"0.2"
+				}
+			}
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_ironsight"			"68"
+				"fov_wpn_focus"				"79"
+				
+				"weapon_mk1g"
+				{
+					"fov_wpn_ironsight"			"76"
+					"fov_wpn_focus"				"82"
+				}
+				
+				"weapon_mp5a"
+				{
+					"fov_wpn_ironsight"			"56"
+					"fov_wpn_focus"				"64"
+				}
+				
+				"weapon_ump45"
+				{
+					"fov_wpn_ironsight"			"55"
+					"fov_wpn_focus"				"61"
+				}
+				
+				"weapon_m14"
+				{
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"59"
+				}
+				
+				"weapon_mini14"
+				{
+					"fov_wpn_ironsight"			"46"
+					"fov_wpn_focus"				"55"
+				}
+				
+				"weapon_m40a1"
+				{
+					"fov_wpn_ironsight"			"52"
+					"fov_wpn_focus"				"58"
+				}
+				
+				"weapon_m59m"
+				{
+					"fov_wpn_ironsight"			"62"
+					"fov_wpn_focus"				"68"
+				}
+				
+				"weapon_m249"
+				{
+					"fov_wpn_ironsight"			"61"
+					"fov_wpn_focus"				"66"
+				}
+				
+				"weapon_l1a1"
+				{
+					"fov_wpn_ironsight"			"59"
+					"fov_wpn_focus"				"66"
+				}
+
+				"weapon_akm"
+				{
+					"fov_wpn_ironsight"			"72"
+					"fov_wpn_focus"				"80"
+				}
+				
+				"weapon_ak74"
+				{
+					"fov_wpn_ironsight"			"65"
+					"fov_wpn_focus"				"76"
+				}
+				
+				"weapon_aks74u"
+				{
+					"fov_wpn_ironsight"			"72"
+					"fov_wpn_focus"				"76"
+				}
+				
+				"weapon_fal"
+				{
+					"fov_wpn_ironsight"			"59"
+					"fov_wpn_focus"				"66"
+				}
+				
+				"weapon_mra1"
+				{
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"61"
+				}
+				
+				"weapon_mosin"
+				{
+					"fov_wpn_ironsight"			"30"
+					"fov_wpn_focus"				"42"
+				}
+				
+				"weapon_mp40"
+				{
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"60"
+				}
+				
+				"weapon_rpk"
+				{
+					"fov_wpn_ironsight"			"70"
+					"fov_wpn_focus"				"78"
+				}
+				
+				"weapon_sks"
+				{
+					"fov_wpn_ironsight"			"76"
+					"fov_wpn_focus"				"83"
+				}
+
+				"weapon_sterling"
+				{
+					"fov_wpn_ironsight"			"56"
+					"fov_wpn_focus"				"64"
+				}
+				
+				"weapon_to2"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"66"
+				}
+
+				"weapon_galil"
+				{
+					"fov_wpn_ironsight"			"72"
+					"fov_wpn_focus"				"80"
+				}
+
+				"weapon_galil_sar"
+				{
+					"fov_wpn_ironsight"			"72"
+					"fov_wpn_focus"				"80"
+				}
+			}
+		}
+		
+		"optic_kobra"
+		{
+			"import"					"base_optic_rail"
+			"upgrade_cost"				"1"
+			"print_name"				"#weapon_upgrade_kobra"
+			"print_desc"				"#weapon_upgrade_kobra_desc"
+			"team_access"				"insurgent"
+			
+			"allowed_weapons"
+			{
+				// insurgent weapons
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_to2"
+
+				// security weapons
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_m59m"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_mp5a"
+				"weapon"				"weapon_ump45"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Kobra_Normal"
+				{
+					"model"					"models/weapons/upgrades/a_optic_kobra.mdl"
+					"AnimIronSights"			"zoom"
+					"AnimIdle"				"idle"
+					"Gesture"				"delta_kobra"
+					"Main"					"1"
+					"ReticleScale"				"0.7"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_mp40"
+						"weapon"				"weapon_sterling"
+						"weapon"				"weapon_ump45"
+						"weapon"				"weapon_m249"
+					}
+				}
+				
+				"Kobra_XLarge"
+				{
+					"model"					"models/weapons/upgrades/a_optic_kobra_xl.mdl"
+					"AnimIronSights"			"zoom"
+					"AnimIdle"				"idle"
+					"Gesture"				"delta_kobra"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+					}
+				}
+				"Kobra_Large"
+				{
+					"model"					"models/weapons/upgrades/a_optic_kobra_l.mdl"
+					"AnimIronSights"			"zoom"
+					"AnimIdle"				"idle"
+					"Gesture"				"delta_kobra"
+					"Main"					"1"
+					
+					"excluded_weapons"
+					{
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_mp40"
+						"weapon"				"weapon_sterling"
+						"weapon"				"weapon_ump45"
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+						"weapon"				"weapon_m249"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				// Optic
+				"Kobra"
+				{
+					"model"					"models/weapons/upgrades/w_kobra.mdl"
+				}
+			}
+			
+			"optics"
+			{
+				"optic_holographic"			"1"
+				"optic_material"			"models/weapons/optics/kobra_dot"
+				"optic_paralax_distance"		"4"
+				"optic_reticle_size"			"0.15"
+			}
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_ironsight"			"58"
+				"fov_wpn_focus"				"68"
+				
+				"weapon_akm"
+				{
+					"fov_wpn_ironsight"			"65"
+					"fov_wpn_focus"				"70"
+				}
+				
+				"weapon_fal"
+				{
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"61"
+				}
+
+				"weapon_galil"
+				{
+					"fov_wpn_ironsight"			"65"
+					"fov_wpn_focus"				"70"
+				}
+
+				"weapon_galil_sar"
+				{
+					"fov_wpn_ironsight"			"65"
+					"fov_wpn_focus"				"70"
+				}
+				
+				"weapon_l1a1"
+				{
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"61"
+				}
+				
+				"weapon_aks74u"
+				{
+					"fov_wpn_ironsight"			"66"
+					"fov_wpn_focus"				"71"
+				}
+				
+				"weapon_mra1"
+				{
+					"fov_wpn_ironsight"			"47"
+					"fov_wpn_focus"				"54"
+				}
+				
+				"weapon_mosin"
+				{
+					"fov_wpn_ironsight"			"40"
+					"fov_wpn_focus"				"48"
+				}
+				
+				"weapon_mp40"
+				{
+					"fov_wpn_ironsight"			"48"
+					"fov_wpn_focus"				"54"
+				}
+				
+				"weapon_sks"
+				{
+					"fov_wpn_ironsight"			"65"
+					"fov_wpn_focus"				"70"
+				}
+
+				"weapon_sterling"
+				{
+					"fov_wpn_ironsight"			"56"
+					"fov_wpn_focus"				"63"
+				}
+				
+				"weapon_to2"
+				{
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"60"
+				}
+				
+				"weapon_rpk"
+				{
+					"fov_wpn_ironsight"			"61"
+					"fov_wpn_focus"				"66"
+				}
+
+				"weapon_m17a4"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"70"
+				}
+				
+				"weapon_m4a1"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"70"
+				}
+				
+				"weapon_mk1g"
+				{
+					"fov_wpn_ironsight"			"65"
+					"fov_wpn_focus"				"75"
+				}
+				
+				"weapon_mp5a"
+				{
+					"fov_wpn_ironsight"			"56"
+					"fov_wpn_focus"				"63"
+				}
+				
+				"weapon_ump45"
+				{
+					"fov_wpn_ironsight"			"53"
+					"fov_wpn_focus"				"63"
+				}
+				
+				"weapon_m14"
+				{
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"60"
+				}
+				
+				"weapon_mini14"
+				{
+					"fov_wpn_ironsight"			"49"
+					"fov_wpn_focus"				"58"
+				}
+				
+				"weapon_m40a1"
+				{
+					"fov_wpn_ironsight"			"48"
+					"fov_wpn_focus"				"56"
+				}
+				
+				"weapon_m59m"
+				{
+					"fov_wpn_ironsight"			"61"
+					"fov_wpn_focus"				"70"
+				}
+			}
+		}
+		
+		"optic_po4x24"
+		{
+			"import"					"base_optic_rail"
+			"upgrade_cost"				"3"
+			"print_name"				"#weapon_upgrade_po4x24"
+			"print_desc"				"#weapon_upgrade_po4x24_desc"
+			"team_access"				"no"
+			
+			"allowed_weapons"
+			{
+				// insurgent weapons
+
+
+				// security weapons
+
+			}
+			
+			"viewmodel_attachments"
+			{
+				"POScope_Small"
+				{
+					"model"					"models/weapons/upgrades/a_optic_po4x24_m.mdl"
+					"AnimIronSights"			"po_zoom"
+					"AnimIdle"				"po_idle"
+					"Gesture"				"delta_po"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m14"
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_mp40"
+						"weapon"				"weapon_ump45"
+						"weapon"				"weapon_sks"
+						"weapon"				"weapon_sterling"
+						"weapon"				"weapon_m249"
+						"weapon"				"weapon_galil"
+						"weapon"				"weapon_galil_sar"
+					}
+				}
+				"POScope_Large"
+				{
+					"model"					"models/weapons/upgrades/a_optic_po4x24_l.mdl"
+					"AnimIronSights"			"po_zoom"
+					"AnimIdle"				"po_idle"
+					"Gesture"				"delta_po"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+					}
+				}
+				
+				"POScope_Normal"
+				{
+					"model"					"models/weapons/upgrades/a_optic_po4x24.mdl"
+					"AnimIronSights"			"po_zoom"
+					"AnimIdle"				"po_idle"
+					"Gesture"				"delta_po"
+					"Main"					"1"
+					
+					"excluded_weapons"
+					{
+						"weapon"				"weapon_m14"
+						"weapon"				"weapon_mini14"
+						"weapon"				"weapon_mp5a"
+						"weapon"				"weapon_mp40"
+						"weapon"				"weapon_ump45"
+						"weapon"				"weapon_sks"
+						"weapon"				"weapon_sterling"
+						"weapon"				"weapon_m17a4"
+						"weapon"				"weapon_m4a1"
+						"weapon"				"weapon_m249"
+						"weapon"				"weapon_galil"
+						"weapon"				"weapon_galil_sar"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"PO"
+				{
+					"model"					"models/weapons/upgrades/w_po.mdl"
+				}
+			}
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"12"
+				"fov_wpn_ironsight"			"39"
+				"fov_wpn_focus"				"39"
+				
+				"weapon_akm"
+				{
+					"fov_wpn_ironsight"			"59"
+					"fov_wpn_focus"				"61"
+				}
+				
+				"weapon_ak74"
+				{
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"56"
+				}
+				
+				"weapon_fal"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"61"
+				}
+				
+				"weapon_galil"
+				{
+					"fov_wpn_ironsight"			"59"
+					"fov_wpn_focus"				"61"
+				}
+
+				"weapon_galil_sar"
+				{
+					"fov_wpn_ironsight"			"59"
+					"fov_wpn_focus"				"61"
+				}
+
+				"weapon_l1a1"
+				{
+					"fov_wpn_ironsight"			"58"
+					"fov_wpn_focus"				"61"
+				}
+				
+				"weapon_aks74u"
+				{
+					"fov_wpn_ironsight"			"67"
+					"fov_wpn_focus"				"69"
+				}
+				
+				"weapon_mra1"
+				{
+					"fov_wpn_ironsight"			"42"
+					"fov_wpn_focus"				"48"
+				}
+				
+				"weapon_mosin"
+				{
+					"fov_wpn_ironsight"			"39"
+					"fov_wpn_focus"				"43"
+				}
+				
+				"weapon_mp41"
+				{
+					"fov_wpn_ironsight"			"44"
+					"fov_wpn_focus"				"50"
+				}
+				
+				"weapon_rpk"
+				{
+					"fov_wpn_ironsight"			"67"
+					"fov_wpn_focus"				"70"
+				}
+				
+				"weapon_sks"
+				{
+					"fov_wpn_ironsight"			"53"
+					"fov_wpn_focus"				"57"
+				}
+
+				"weapon_sterling"
+				{
+					"fov_wpn_ironsight"			"45"
+					"fov_wpn_focus"				"52"
+				}
+
+				"weapon_m17a4"
+				{
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"56"
+				}
+				
+				"weapon_mk1g"
+				{
+					"fov_wpn_ironsight"			"64"
+					"fov_wpn_focus"				"68"
+				}
+				
+				"weapon_mini14"
+				{
+					"fov_wpn_ironsight"			"45"
+					"fov_wpn_focus"				"52"
+				}
+				
+				"weapon_m249"
+				{
+					"fov_wpn_ironsight"			"40"
+					"fov_wpn_focus"				"48"
+				}
+				
+				"weapon_m40a1"
+				{
+					"fov_wpn_ironsight"			"40"
+					"fov_wpn_focus"				"45"
+				}
+				
+				"weapon_mp5a"
+				{
+					"fov_wpn_ironsight"			"45"
+					"fov_wpn_focus"				"52"
+				}
+				
+				"weapon_ump45"
+				{
+					"fov_wpn_ironsight"			"42"
+					"fov_wpn_focus"				"51"
+				}
+			}
+		}
+		
+		"optic_scope_7x"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#weapon_upgrade_scope_mosin"
+			"print_desc"				"#weapon_upgrade_scope_mosin_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"6"
+			"team_access"				"no"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_sks"
+			}
+			"viewmodel_attachments"
+			{
+				"scope_mosin"
+				{
+					"model"					"models/weapons/upgrades/a_optic_mosin.mdl"
+					"AnimIronSights"			"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mosin"
+					}
+				}
+				
+				"7xscope_fal"
+				{
+					"model"					"models/weapons/upgrades/a_optic_mosin_l.mdl"
+					"AnimIronSights"			"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_fal"
+						"weapon"				"weapon_l1a1"
+					}
+				}
+				"7xscope_sks"
+				{
+					"model"					"models/weapons/upgrades/a_optic_mosin_m.mdl"
+					"AnimIronSights"			"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_sks"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Scope"
+				{
+					"model"					"models/weapons/upgrades/w_scope_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mosin"
+						"weapon"				"weapon_fal"
+						"weapon"				"weapon_l1a1"
+						"weapon"				"weapon_sks"
+					}
+				}
+			}
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"10"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				"weapon_mosin"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"37"
+					"fov_wpn_focus"				"43"
+				}
+				
+				"weapon_fal"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"59"
+				}
+				
+				"weapon_l1a1"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"59"
+				}
+				
+				"weapon_sks"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"45"
+					"fov_wpn_focus"				"53"
+				}
+			}
+		}
+		
+		"optic_scope_mk4"
+		{
+			"import"					"base_scope"
+			"print_name"				"#weapon_upgrade_scope_m40a1"
+			"print_desc"				"#weapon_upgrade_scope_m40a1_desc"
+			"class_restricted"			"0"
+			"team_access"				"security"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_m17a4"
+			}
+			"viewmodel_attachments"
+			{
+				"scope_m40a1"
+				{
+					"model"					"models/weapons/upgrades/a_optic_m40.mdl"
+					"AnimIronSights"			"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m40a1"
+					}
+				}
+				
+				"mk4scope_m14"
+				{
+					"model"					"models/weapons/upgrades/a_optic_m40_l.mdl"
+					"AnimIronSights"			"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m14"
+						"weapon"				"weapon_m17a4"
+					}
+				}
+			}
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"10"
+				"fov_wpn_ironsight"			"46"
+				"fov_wpn_focus"				"50"
+				
+				"weapon_m40a1"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"46"
+					"fov_wpn_focus"				"50"
+				}
+				
+				"weapon_m14"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"57"
+				}
+
+				"weapon_m17a4"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"66"
+					"fov_wpn_focus"				"68"
+				}
+			}
+			"world_attachments"
+			{
+				"Scope"
+				{
+					"model"					"models/weapons/upgrades/w_scope_m40.mdl"
+				}
+			}
+		}
+
+		// ========================================
+		// .38 REVOLVER SPECIFIC UPGRADES
+		// ========================================
+		"ammo_hp_model10"
+		{
+			"import"					"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_model10"
+			}
+			"ammo_type_override"		"38special_hp"
+		}
+		"ammo_ap_model10"
+		{
+			"import"					"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_model10"
+			}
+			"ammo_type_override"		"38special_ap"
+		}
+		
+		// ========================================
+		// M9 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_hp_m9"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m9"
+			}
+			"ammo_type_override"			"9x19mm_hp"
+		}
+		"ammo_ap_m9"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m9"
+			}
+			"ammo_type_override"			"9x19mm_ap"
+		}
+		
+		// ========================================
+		// MAKAROV SPECIFIC UPGRADES
+		// ========================================
+		"ammo_hp_makarov"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_makarov"
+			}
+			"ammo_type_override"			"9x18mm_hp"
+		}
+		"ammo_ap_makarov"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_makarov"
+			}
+			"ammo_type_override"			"9x18mm_ap"
+		}
+		// ========================================
+		// M45 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_hp_m45"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m45"
+			}
+			"ammo_type_override"			"45acp_hp_pistol"
+		}
+		"ammo_ap_m45"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m45"
+			}
+			"ammo_type_override"			"45acp_ap_pistol"
+		}
+		
+		// ========================================
+		// M1911 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_hp_m1911"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1911"
+			}
+			"ammo_type_override"			"45acp_hp_pistol"
+		}
+		"ammo_ap_m1911"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1911"
+			}
+			"ammo_type_override"			"45acp_ap_pistol"
+		}
+		
+		// ========================================
+		// AKM SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_akm"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_akm"
+			}
+			"ammo_type_override"			"762x38_tracer_box"
+		}
+		"ammo_hp_akm"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_akm"
+			}
+			"ammo_type_override"			"762x38_hp_box"
+		}
+		"ammo_ap_akm"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_akm"
+			}
+			"ammo_type_override"			"762x38_ap_box"
+		}
+		
+		// ========================================
+		// AK-74 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_ak74"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ak74"
+			}
+			"ammo_type_override"			"545x39_tracer"
+		}
+		"ammo_hp_ak74"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ak74"
+			}
+			"ammo_type_override"			"545x39_hp"
+		}
+		"ammo_ap_ak74"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ak74"
+			}
+			"ammo_type_override"			"545x39_ap"
+		}
+		
+		// ========================================
+		// FAL SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_fal"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_l1a1"
+			}
+			"ammo_type_override"			"762x51_tracer_box_20rnd"
+		}
+		"ammo_hp_fal"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_l1a1"
+			}
+			"ammo_type_override"			"762x51_hp_box_20rnd"
+		}
+		"ammo_ap_fal"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_l1a1"
+			}
+			"ammo_type_override"			"762x51_ap_box_20rnd"
+		}
+		// ========================================
+		// GALIL SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_galil"
+		{
+			"import"					"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_galil_sar"
+			}
+			"ammo_type_override"		"556_tracer_35box"
+		}
+		"ammo_hp_galil"
+		{
+			"import"					"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_galil_sar"
+			}
+			"ammo_type_override"		"556_hp_35box"
+		}
+		"ammo_ap_galil"
+		{
+			"import"					"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_galil_sar"
+			}
+			"ammo_type_override"		"556_ap_35box"
+		}
+		// ========================================
+		// AKS74U SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_aks74u"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_aks74u"
+			}
+			"ammo_type_override"			"545x39_tracer"
+		}
+		"ammo_hp_aks74u"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_aks74u"
+			}
+			"ammo_type_override"			"545x39_hp"
+		}
+		"ammo_ap_aks74u"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_aks74u"
+			}
+			"ammo_type_override"			"545x39_ap"
+		}
+		// ========================================
+		// M16A4/M4A1 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_m16a4"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m17a4"
+			}
+			"ammo_type_override"			"556_tracer_stanag"
+		}
+		"ammo_hp_m16a4"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m16a4"
+			}
+			"ammo_type_override"			"556_hp_stanag"
+		}
+		"ammo_ap_m16a4"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m16a4"
+			}
+			"ammo_type_override"			"556_ap_stanag"
+		}
+		"ammo_tracer_m4"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_m4a1"
+			}
+			"ammo_type_override"			"556_tracer_stanag_m4"
+		}
+		"ammo_hp_m4"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_m4a1"
+			}
+			"ammo_type_override"			"556_hp_stanag_m4"
+		}
+		"ammo_ap_m4"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mk18"
+				"weapon"				"weapon_m4a1"
+			}
+			"ammo_type_override"			"556_ap_stanag_m4"
+		}
+		// ========================================
+		// MP5 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_mp5"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mp5a"
+			}
+			"ammo_type_override"			"9x19mm_tracer_smg"
+		}
+		"ammo_hp_mp5"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mp5"
+			}
+			"ammo_type_override"			"9x19mm_hp_smg"
+		}
+		"ammo_ap_mp5"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mp5"
+			}
+			"ammo_type_override"			"9x19mm_ap_smg"
+		}
+		
+		// ========================================
+		// MP40 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_mp40"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mp41"
+				"weapon"				"weapon_sterling"
+			}
+			"ammo_type_override"			"9x19mm_tracer_smg"
+		}
+		"ammo_hp_mp40"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+			}
+			"ammo_type_override"			"9x19mm_hp_smg"
+		}
+		"ammo_ap_mp40"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_sterling"
+			}
+			"ammo_type_override"			"9x19mm_ap_smg"
+		}
+		
+		// ========================================
+		// UMP45 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_ump45"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ump45"
+			}
+			"ammo_type_override"			"45acp_tracer"
+		}
+		"ammo_hp_ump45"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ump45"
+			}
+			"ammo_type_override"			"45acp_hp"
+		}
+		"ammo_ap_ump45"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_ump45"
+			}
+			"ammo_type_override"			"45acp_ap"
+		}
+		
+		// ========================================
+		// MINI-14 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_mini14"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mini14"
+			}
+			"ammo_type_override"			"556_tracer_box"
+		}
+		"ammo_hp_mini14"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mini14"
+			}
+			"ammo_type_override"			"556_hp_box"
+		}
+		"ammo_ap_mini14"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mini14"
+			}
+			"ammo_type_override"			"556_ap_box"
+		}
+		
+		// ========================================
+		// M1A1 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_m1a1"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1a1"
+			}
+			"ammo_type_override"			"30_carbine_tracer"
+		}
+		"ammo_hp_m1a1"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1a1"
+			}
+			"ammo_type_override"			"30_carbine_hp"
+		}
+		"ammo_ap_m1a1"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1a1"
+			}
+			"ammo_type_override"			"30_carbine_ap"
+		}
+		
+		// ========================================
+		// SKS SPECIFIC UPGRADES
+		// ========================================
+		"ammo_tracer_sks"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"0"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_sks"
+			}
+			"ammo_type_override"			"762x38mm_tracer_clip"
+		}
+		"ammo_hp_sks"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_sks"
+			}
+			"ammo_type_override"			"762x38mm_hp_clip"
+		}
+		"ammo_ap_sks"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_sks"
+			}
+			"ammo_type_override"			"762x38mm_ap_clip"
+		}
+		// ========================================
+		// MOSIN SPECIFIC UPGRADES
+		// ========================================
+		"ammo_ap_mosin"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mosin"
+			}
+			"ammo_type_override"			"762x54mm_ap"
+		}
+		
+		// ========================================
+		// M14 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_hp_m14"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m14"
+			}
+			"ammo_type_override"			"762x51_mag_hp"
+		}
+		
+		"ammo_ap_m14"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m14"
+			}
+			"ammo_type_override"			"762x51_mag_ap"
+		}
+		
+		// ========================================
+		// M40A1 SPECIFIC UPGRADES
+		// ========================================
+		"ammo_ap_m40a1"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m40a1"
+			}
+			"ammo_type_override"			"762x51mm_ap"
+		}
+		
+		// ========================================
+		// LMG SPECIFIC UPGRADES
+		// ========================================
+		"ammo_hp_m249"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m249"
+			}
+			"ammo_type_override"			"556_m27_hp"
+		}
+		"ammo_ap_m249"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m249"
+			}
+			"ammo_type_override"			"556_m27_ap"
+		}
+		"ammo_hp_rpk"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_rpk"
+			}
+			"ammo_type_override"			"762x38_hp_drum"
+		}
+		"ammo_ap_rpk"
+		{
+			"import"				"base_ammo_ap"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_rpk"
+			}
+			"ammo_type_override"			"762x38_ap_drum"
+		}
+		
+		// ========================================
+		// NON-SPECIFIC UPGRADES (EXPENSIVE)
+		// ========================================
+		"underbarrel_foregrip_ins1"
+		{
+			"import"					"base_foregrip"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mra1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_galil"
+			}
+			"viewmodel_attachments"
+			{
+				"Foregrip"
+				{
+					"model"					"models/weapons/upgrades/a_foregrip_ins.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+					
+					"scales"
+					{
+						"weapon_mra1"				"0.5"
+						"weapon_sks"				"0.5"
+						"weapon_fal"				"0.45"
+						"weapon_l1a1"				"0.45"
+						"weapon_galil"				"0.45"
+					}
+				}
+				
+				"Standard_GALIL"
+				{
+					"model"					"models/weapons/upgrades/a_standard_galil.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_galil"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"Foregrip"
+				{
+					"model"					"models/weapons/upgrades/w_ins_foregrip.mdl"
+				}
+			}
+		}
+		"underbarrel_foregrip_ins2"
+		{
+			"import"					"base_foregrip"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_to2"
+				"weapon"				"weapon_m590"
+			}
+			"viewmodel_attachments"
+			{
+				"Foregrip"
+				{
+					"model"					"models/weapons/upgrades/a_foregrip_ins2.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+					
+					"scales"
+					{
+						"weapon_to2"				"0.5"
+						"weapon_m590"				"0.5"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"Foregrip"
+				{
+					"model"					"models/weapons/upgrades/w_ins_foregrip.mdl"
+				}
+			}
+		}
+		"underbarrel_woodgrip"
+		{
+			"import"					"base_foregrip"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_ak74"
+			}
+			"viewmodel_attachments"
+			{
+				"Foregrip_AKM"
+				{
+					"model"					"models/weapons/upgrades/a_woodgrips_akm.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_akm"
+					}
+				}
+				
+				"Foregrip_AKS"
+				{
+					"model"					"models/weapons/upgrades/a_woodgrips_aks74u.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_aks74u"
+					}
+				}
+				
+				"Foregrip_AK74"
+				{
+					"model"					"models/weapons/upgrades/a_woodgrips_ak74.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_ak74"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"Foregrip_AKM"
+				{
+					"model"					"models/weapons/upgrades/w_foregrip_wood_1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_akm"
+					}
+				}
+				
+				"Foregrip_AKS"
+				{
+					"model"					"models/weapons/upgrades/w_foregrip_aks74u.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_aks74u"
+					}
+				}
+				
+				"Foregrip_AK74"
+				{
+					"model"					"models/weapons/upgrades/w_foregrip_wood_2.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_ak74"
+					}
+				}
+			}
+		}
+		"underbarrel_foregrip_sec1"
+		{
+			"import"					"base_foregrip"
+			"team_access"				"security"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_m4a1"
+			}
+			"viewmodel_attachments"
+			{
+				"Foregrip"
+				{
+					"model"					"models/weapons/upgrades/a_foregrip_sec.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+					
+					"scales"
+					{
+						"weapon_m17a4"				"0.5"
+						"weapon_mk1g"				"0.5"
+						"weapon_m4a1"				"0.5"
+					}
+				}
+				"Standard_M16A4"
+				{
+					"model"					"models/weapons/upgrades/a_standard2_m16a4.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m17a4"
+					}
+				}
+				
+				"Standard_M4A1"
+				{
+					"model"					"models/weapons/upgrades/a_standard4_m4a1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m4a1"
+					}
+				}
+				
+				"Standard2_M4A1"
+				{
+					"model"					"models/weapons/upgrades/a_standard2_m4a1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m4a1"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"Foregrip"
+				{
+					"model"					"models/weapons/upgrades/w_foregrip_sec1.mdl"
+				}
+			}
+		}
+		"underbarrel_foregrip_sec2"
+		{
+			"import"					"base_foregrip"
+			"team_access"				"security"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nova"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_m59m"
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_l1a1"
+			}
+			"viewmodel_attachments"
+			{
+				"Foregrip"
+				{
+					"model"					"models/weapons/upgrades/a_foregrip_sec2.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+					
+					"scales"
+					{
+						"weapon_m14"				"0.45"
+						"weapon_mini14"				"0.45"
+						"weapon_m59m"				"0.55"
+						"weapon_galil_sar"			"0.45"
+						"weapon_l1a1"				"0.45"
+						"weapon_nova"				"0.55"
+					}
+				}
+				
+				"Standard_GALIL"
+				{
+					"model"					"models/weapons/upgrades/a_standard_galil.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_galil_sar"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"Foregrip"
+				{
+					"model"					"models/weapons/upgrades/w_foregrip_sec2.mdl"
+				}
+			}
+		}
+		"barrel_silencer_sec1"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"3"
+			"class_restricted"			"1"
+			"length"					"12"
+			"team_access"				"security"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_mp5a"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_l1a1"
+
+				"weapon"				"weapon_galil"
+
+				// insurgent weapons this can show up on
+				// for coop
+				"weapon"				"weapon_mra1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_mp41"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+			}
+			"viewmodel_attachments"
+			{
+				"Suppressor"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_sec.mdl"
+					
+					"scales"
+					{
+						"weapon_m14"				"0.75"
+						"weapon_mini14"				"0.75"
+						"weapon_mp5a"				"0.75"
+						"weapon_ump45"				"0.75"
+						"weapon_m40a1"				"1.0"
+						"weapon_sks"				"0.85"
+						"weapon_mp41"				"0.72"
+						"weapon_fal"				"0.8"
+						"weapon_l1a1"				"0.8"
+						"weapon_mosin"				"0.7"
+						"weapon_galil"				"0.8"
+						"weapon_galil_sar"			"0.8"
+						"weapon_ak74"				"0.8"
+						"weapon_akm"				"0.9"
+						"weapon_mra1"				"0.75"
+						"weapon_aks74u"				"0.7"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_sil_sec1.mdl"
+				}
+			}
+		}
+		"barrel_silencer_sec2"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"3"
+			"class_restricted"			"1"
+			"length"					"12"
+			"team_access"				"security"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mk1g"
+			}
+			"viewmodel_attachments"
+			{
+				"Suppressor"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_sec2.mdl"
+				}
+			}
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_sil_sec2.mdl"
+				}
+			}
+		}
+		"barrel_silencer_ins1"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"4"
+			"class_restricted"			"0"
+			"length"					"12"
+			"team_access"				"insurgent"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_mra1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_mp41"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_galil_sar"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Suppressor_Default"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_ins.mdl"
+					
+					"scales"
+					{
+						"weapon_mra1"				".5"
+						"weapon_sks"				"0.85"
+						"weapon_mp41"				"0.72"
+						"weapon_fal"				"0.8"
+						"weapon_mosin"				"0.7"
+					}
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mra1"
+						"weapon"				"weapon_sks"
+						"weapon"				"weapon_mp41"
+						"weapon"				"weapon_fal"
+						"weapon"				"weapon_mosin"
+						"weapon"				"weapon_galil"
+						"weapon"				"weapon_galil_sar"
+					}
+				}
+				
+				"Suppressor_AKM"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_ak.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_akm"
+						"weapon"				"weapon_ak74"
+					}
+				}
+				
+				"Suppressor_AKS"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_aks.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_aks74u"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_sil_ins1.mdl"
+				}
+			}
+		}
+		"barrel_silencer_integrated"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"2"
+			"class_restricted"			"1"
+			"length"					"8"
+			"team_access"				"security, insurgent"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_sterling"
+			}
+
+			"viewmodel_attachments"
+			{
+				"Suppressor_Sterling"
+				{
+					"model"				"models/weapons/upgrades/a_suppressor_sterling.mdl"
+					"Main"				"1"
+
+					"weapons"
+					{
+						"weapon"		"weapon_sterling"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Silencer_Sterling"
+				{
+					"model"				"models/weapons/upgrades/w_sil_sterling.mdl"
+				}
+			}
+		}
+		"barrel_silencer_pistol"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"3"
+			"class_restricted"			"1"
+			"length"					"8"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m45"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_m1911"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Suppressor"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_pistol.mdl"
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_sil_pistol.mdl"
+				}
+			}
+		}
+		"barrel_silencer_heavy"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"4"
+			"class_restricted"			"1"
+			"length"					"12"
+			"team_access"				"security"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_to2"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Suppressor_SG"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_12ga.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m590"
+					}
+				}
+
+				"Suppressor_AKM"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_ak.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_rpk"
+					}
+				}
+				
+				"Suppressor_SG"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_12ga.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_to2"
+					}
+				}
+				
+				"Suppressor_Standard"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_sec.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m249"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Silencer_AKM"
+				{
+					"model"					"models/weapons/upgrades/w_sil_ins1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_rpk"
+					}
+				}
+				
+				"Silencer_SG"
+				{
+					"model"					"models/weapons/upgrades/w_sil_pistol.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_to2"
+					}
+				}
+
+				"Silencer_SG"
+				{
+					"model"					"models/weapons/upgrades/w_sil_pistol.mdl"
+
+					"excluded_weapons"
+					{
+						"weapon"				"weapon_rpk"
+						"weapon"				"weapon_to2"
+					}
+				}
+			}
+		}
+		"siderail_lasersight_rail"
+		{
+			"import"					"base_lasersight"
+			"upgrade_cost"				"3"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_ump45"
+				
+			}
+			"viewmodel_attachments"
+			{
+				"laser_rail"
+				{
+					"model"					"models/weapons/upgrades/a_laser_rail.mdl"
+					"Main"					"1"
+				}
+				"standard_mk1g"
+				{
+					"model"					"models/weapons/upgrades/a_standard3_mk18.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mk1g"
+					}
+				}
+				
+				"standard_m4a1"
+				{
+					"model"					"models/weapons/upgrades/a_standard5_m4a1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m4a1"
+					}
+				}
+			}
+		}
+		"siderail_lasersight_band"
+		{
+			"import"					"base_lasersight"
+			"upgrade_cost"				"3"
+			
+			"allowed_weapons"
+			{
+				// security
+				"weapon"				"weapon_galil_sar"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_mp5a"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_l1a1"
+
+				// insurgent
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_mra1"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_mp41"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_sterling"
+			}
+			"viewmodel_attachments"
+			{
+				"laser_band"
+				{
+					"model"					"models/weapons/upgrades/a_laser_band.mdl"
+					"Main"					"1"
+
+					"excluded_weapons"
+					{
+						"weapon"			"weapon_sterling"
+					}
+				}
+				"laser_sterling"
+				{
+					"model"					"models/weapons/upgrades/a_laser_sterling.mdl"
+					"Main"					"1"
+
+					"weapons"
+					{
+						"weapon"			"weapon_sterling"
+					}
+				}
+			}
+		}
+		"siderail_lasersight_shotgun_sec"
+		{
+			"import"					"base_lasersight"
+			"upgrade_cost"				"3"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nova"
+				"weapon"				"weapon_m59m"
+				"weapon"				"weapon_m40a1"
+			}
+			"viewmodel_attachments"
+			{
+				"laser_band"
+				{
+					"model"					"models/weapons/upgrades/a_laser_sec_shotgun.mdl"
+					"Main"					"1"
+				}
+			}
+		}
+		"siderail_lasersight_shotgun_ins"
+		{
+			"import"					"base_lasersight"
+			"upgrade_cost"				"4"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_to2"
+				"weapon"				"weapon_mosin"
+			}
+			"viewmodel_attachments"
+			{
+				"laser_band"
+				{
+					"model"					"models/weapons/upgrades/a_lase1_ins_shotgun.mdl"
+					"Main"					"1"
+				}
+			}
+		}
+		"siderail_lasersight_pistol"
+		{
+			"import"					"base_lasersight_pistol"
+			"upgrade_cost"				"3"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_m45"
+			}
+			"viewmodel_attachments"
+			{
+				"laser_m9"
+				{
+					"model"					"models/weapons/upgrades/a_laser_m9.mdl"
+					"Main"					"1"
+
+					"weapons"
+					{
+						"weapon"			"weapon_m9"
+					}
+				}
+
+				"laser_mak"
+				{
+					"model"					"models/weapons/upgrades/a_laser_mak.mdl"
+					"Main"					"1"
+
+					"excluded_weapons"
+					{
+						"weapon"			"weapon_m9"
+					}
+				}
+			}
+		}
+		"underbarrel_bipod"
+		{
+			"import"				"base_bipod"
+			"upgrade_cost"				"2"
+			"class_restricted"			"1"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m14"
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_l1a1"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_galil_sar"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Bipod_AR"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_ar.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m17a4"
+					}
+				}
+				"Standard_M16A4"
+				{
+					"model"					"models/weapons/upgrades/a_standard_m16a4.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m17a4"
+					}
+				}
+				"Bipod_M14"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_m14.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m14"
+					}
+				}
+				
+				"Bipod_M40"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_m40.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m40a1"
+					}
+				}
+
+				"Bipod_Mosin"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_mosin"
+					}
+				}
+				
+				"Bipod_FAL"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_fal.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_fal"
+						"weapon"				"weapon_l1a1"
+					}
+				}
+				
+				"Bipod_SKS"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_sks.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_sks"
+					}
+				}
+				
+				"Bipod_GALIL"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_galil.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_galil"
+						"weapon"				"weapon_galil_sar"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"underbarrel_bipod_m40"
+				{
+					"model"					"models/weapons/upgrades/w_bipod_m40.mdl"
+
+					"excluded_weapons"
+					{
+						"weapon"				"weapon_fal"
+						"weapon"				"weapon_l1a1"
+						"weapon"				"weapon_mosin"
+						"weapon"				"weapon_sks"
+						"weapon"				"weapon_galil"
+						"weapon"				"weapon_galil_sar"
+					}
+				}
+
+				"underbarrel_bipod_mosin"
+				{
+					"model"					"models/weapons/upgrades/w_bipod_mosin.mdl"
+
+					"weapons"
+					{
+						"weapon"				"weapon_fal"
+						"weapon"				"weapon_l1a1"
+						"weapon"				"weapon_mosin"
+						"weapon"				"weapon_sks"
+					}
+				}
+				
+				"underbarrel_bipod_galil"
+				{
+					"model"					"models/weapons/upgrades/w_bipod_galil.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_galil"
+						"weapon"				"weapon_galil_sar"
+					}
+				}
+			}
+		}
+		"underbarrel_gl_base"
+		{
+			"IsBase"				"1"
+			"upgrade_slot"				"underbarrel"
+			"class_restricted"			"1"
+			"lock_slot"				"explosive"
+		}
+		
+		"underbarrel_m203_base"
+		{
+			"IsBase"				"1"
+			"import"				"underbarrel_gl_base"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"model"					"models/weapons/upgrades/a_gl_m203.mdl"
+					"Gesture"				"delta_gl"
+					"ActSuffix"				"_GL"
+					"Main"					"1"
+				}
+				
+				"Standard_M4A1"
+				{
+					"model"					"models/weapons/upgrades/a_standard6_m4a1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_m4a1"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Launcher"
+				{
+					"model"					"models/weapons/upgrades/w_m203.mdl"
+				}
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m4a1"
+			}
+		}
+		
+		"underbarrel_m203_he"
+		{
+			"import"				"underbarrel_m203_base"
+			"upgrade_cost"				"4"
+			"print_name"				"#weapon_m203_he"
+			"print_desc"				"#weapon_m203_he_desc"
+			"attach_weapon"				"weapon_m203_he"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"skin"					"0"
+				}
+			}
+		}
+		
+		"underbarrel_m203_smoke"
+		{
+			"import"				"underbarrel_m203_base"
+			"upgrade_cost"				"2"
+			"print_name"				"#weapon_m203_smoke"
+			"print_desc"				"#weapon_m203_smoke_desc"
+			"attach_weapon"				"weapon_m203_smoke"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"Skin"					"1"
+				}
+			}
+		}
+		
+		"underbarrel_gp25_base"
+		{
+			"IsBase"				"1"
+			"import"				"underbarrel_gl_base"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"model"					"models/weapons/upgrades/a_gl_gp25.mdl"
+					"Gesture"				"delta_gl"
+					"ActSuffix"				"_GL"
+					"Main"					"1"
+				}
+				
+				// a bit of a hack to restore the standard fixture on the AKM
+				"Standard_AKM"
+				{
+					"model"					"models/weapons/upgrades/a_standard_akm.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_akm"
+					}
+				}
+				// a bit of a hack to restore the standard fixture on the AK74 ;)
+				"Standard_AK74"
+				{
+					"model"					"models/weapons/upgrades/a_standard_ak74.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_ak74"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Launcher"
+				{
+					"model"					"models/weapons/upgrades/w_gp25.mdl"
+				}
+				
+				"Standard_AKM"
+				{
+					"model"					"models/weapons/upgrades/w_standard_akm.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_akm"
+					}
+				}
+				
+				"Standard_AK74"
+				{
+					"model"					"models/weapons/upgrades/w_standard_ak74.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_ak74"
+					}
+				}
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+			}
+		}
+		
+		"underbarrel_gp25_he"
+		{
+			"import"				"underbarrel_gp25_base"
+			"upgrade_cost"				"4"
+			"print_name"				"#weapon_gp25_he"
+			"print_desc"				"#weapon_m203_he_desc"
+			"attach_weapon"				"weapon_gp25_he"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"skin"					"0"
+				}
+			}
+		}
+		
+		"underbarrel_gp25_smoke"
+		{
+			"import"				"underbarrel_gp25_base"
+			"upgrade_cost"				"2"
+			"print_name"				"#weapon_gp25_smoke"
+			"print_desc"				"#weapon_m203_smoke_desc"
+			"attach_weapon"				"weapon_gp25_smoke"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"skin"					"1"
+				}
+			}
+		}
+	}
+}

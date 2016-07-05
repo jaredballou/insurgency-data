@@ -1,0 +1,762 @@
+"#base" "base_weapon_upgrades.theater"
+
+"theater"
+{
+	"weapon_upgrades"
+	{
+		// ========================================
+		// Base Upgrades
+		// ========================================
+		
+		"base_optic_rail"
+		{
+			"IsBase"					"1"
+			"upgrade_slot"				"optics"
+			
+			"viewmodel_attachments"
+			{				
+				"ModKitG43"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_g43.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_g43"
+					}
+				}
+				
+				"BoltSpringfield"
+				{
+					"model"					"models/weapons/upgrades/a_bolt_springfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_springfield"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"ModkitG43"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_4.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_g43"
+					}
+				}
+			}
+		}
+		
+		// ========================================
+		// Bayonets
+		// ========================================
+		
+		"default_bayonet"
+		{
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"underbarrel"
+			"print_name"				"#weapon_upgrade_bayonet"
+			"print_desc"				"#weapon_upgrade_bayonet_desc"
+			"weapon_abilities"			"bayonet"
+			"class_restricted"			"1"
+			"team_access"				"axis, americans, commonwealth"
+			"lock_slot"					"melee"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_enfield"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"bayonet_m1garand"
+				{
+					"model"				"models/weapons/upgrades/a_garand_bayonet.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_m1garand"
+						"weapon"			"weapon_springfield"
+					}
+				}
+				
+				"bayonet_kar98"
+				{
+					"model"				"models/weapons/upgrades/a_kar98k_bayonet.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_k98"
+					}
+				}
+				
+				"bayonet_enfield"
+				{
+					"model"				"models/weapons/upgrades/a_enfield_bayonet.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_enfield"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"bayonet_m1garand"
+				{
+					"model"				"models/weapons/upgrades/w_garand_bayonet.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_m1garand"
+						"weapon"		"weapon_springfield"
+					}
+				}
+				
+				"bayonet_kar98"
+				{
+					"model"				"models/weapons/upgrades/w_kar98k_bayonet.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_k98"
+					}
+				}
+				
+				"bayonet_enfield"
+				{
+					"model"				"models/weapons/upgrades/w_enfield_bayonet.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_enfield"
+					}
+				}
+			}
+		}
+		
+		// ========================================
+		// Slings
+		// ========================================
+		
+		"default_sling"
+		{
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"stock"
+			"print_name"				"#weapon_upgrade_sling"
+			"print_desc"				"#weapon_upgrade_sling_desc"
+			
+			"class_restricted"			"1"
+			"team_access"				"axis, americans, commonwealth"
+			
+			"draw_speed"				"1.3"
+			"holster_speed"				"1.6"
+			"draw_speed_next_weapon"	"1.2"
+			"holster_speed_prev_weapon"	"1.3"
+			
+			//"excluded_upgrades"
+			//{
+			//	"default_bayonet"		"default_bayonet"
+			//}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_m1carbine"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_bar"
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_stg44"
+				"weapon"				"weapon_enfield"
+			}
+		}
+		
+		// ========================================
+		// Extended Magazines
+		// ========================================
+		
+		"magazine_extended_pistol"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"4"
+			"team_access"				"axis, americans, commonwealth"
+
+			"print_name"				"#weapon_upgrade_magazine_extended"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+
+			"magsize_override"			"15"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1911"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"magazine_15_1911"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_1911_15.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_m1911"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_15_1911"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_1911_15.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_m1911"
+					}
+				}
+			}
+		}
+		
+		"magazine_extended_thompson_30rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"1"
+			"team_access"				"axis, americans, commonwealth"
+			
+			"print_name"				"#weapon_upgrade_magazine_extended_thompson_30"
+			"print_desc"				"#weapon_upgrade_magazine_extended_thompson_30_desc"
+
+			"magsize_override"			"30"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_thompson"
+				{
+					"model"				"models/weapons/upgrades/a_thompson_mag_30.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_thompson"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_thompson_30"
+				{
+					"model"				"models/weapons/upgrades/w_thompson_mag_30.mdl"
+				}
+			}
+		}
+		
+		"magazine_extended_thompson_50rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"3"
+			"team_access"				"commonwealth"
+			
+			"print_name"				"#weapon_upgrade_magazine_extended_thompson_50"
+			"print_desc"				"#weapon_upgrade_magazine_extended_thompson_50_desc"
+
+			"class_restricted"			"1"
+			
+			"magsize_override"			"50"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_thompson"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_thompson_mag_50.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_thompson"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_thompson_50"
+				{
+					"model"				"models/weapons/upgrades/w_thompson_mag_50.mdl"
+				}
+			}
+		}
+		
+		"magazine_stripper_clips"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"1"
+			"team_access"				"axis, americans, commonwealth"
+			
+			"print_name"				"#weapon_upgrade_stripper_clip"
+			"print_desc"				"#weapon_upgrade_stripper_clip_desc"
+			
+			// some magic to disable single reload
+			"weapon_abilities"			"speedreload"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_springfield"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_clip"
+				{
+					"ActSuffix"			"_CLIP"
+				}
+				
+				"clip_enfield"
+				{
+					"model"				"models/weapons/upgrades/a_enfield_stripper_clip.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_enfield"
+					}
+				}
+				
+				"clip_kar98k"
+				{
+					"model"				"models/weapons/upgrades/a_kar98k_stripper_clip.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_k98"
+					}
+				}
+				
+				"clip_springfield"
+				{
+					"model"				"models/weapons/upgrades/a_springfield_stripper_clip.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_springfield"
+					}
+				}
+			}			
+		}
+		
+		"magazine_speedloader"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"1"
+			"team_access"				"axis, americans, commonwealth"
+
+			"print_name"				"#weapon_upgrade_speedloader"
+			"print_desc"				"#weapon_upgrade_speedloader_desc"
+
+			// some magic to disable single reload
+			"weapon_abilities"			"speedreload"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_webley"
+			}
+
+			"viewmodel_attachments"
+			{
+				"speedloader_38"
+				{
+					"ActSuffix"			"_SPEED"
+					"model"				"models/weapons/upgrades/a_speedloader_webley.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_webley"
+					}
+				}
+			}
+		}
+		
+		// ========================================
+		// Foregrips
+		// ========================================
+		
+		"underbarrel_foregrip"
+		{
+			"import"					"base_foregrip"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"foregrip_thompson"
+				{
+					"model"					"models/weapons/upgrades/a_thompson_foregrip.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_thompson"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"foregrip_thompson"
+				{
+					"model"				"models/weapons/upgrades/w_thompson_foregrip.mdl"
+				}
+			}
+		}
+		
+		// ========================================
+		// Optics
+		// ========================================
+		
+		"default_optics"
+		{
+			"upgrade_slot"				"optics"
+			"print_name"				"#weapon_upgrade_irons"
+			"print_desc"				"#weapon_upgrade_irons_desc"
+			
+			"class_restricted"			"1"
+			
+			"upgrade_cost"				"2"
+			"team_access"				"axis, americans, commonwealth"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1carbine"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_thompson"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"default_irons_m1garand"
+				{
+					"model"				"models/weapons/upgrades/a_iron_garand_l.mdl"
+					"Gesture"			"delta_iron"
+					"Main"				"1"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_m1garand"
+					}
+				}
+				
+				"default_irons_m1a1"
+				{
+					"model"				"models/weapons/upgrades/a_iron_m1a1_l.mdl"
+					"Gesture"			"delta_iron_2"
+					"Main"				"1"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_m1carbine"
+					}
+				}
+				
+				"default_irons_thompson"
+				{
+					"model"				"models/weapons/upgrades/a_iron_thompson_s.mdl"
+					"Gesture"			"delta_iron_2"
+					"Main"				"1"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_thompson"
+					}
+				}
+			}
+		}
+		
+		"optic_scope_7x"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#weapon_upgrade_scope_mosin"
+			"print_desc"				"#weapon_upgrade_scope_mosin_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"3"
+			"team_access"				"axis, americans, commonwealth"
+			
+			"sway"
+			{
+				"sway_radius_frac"		"1.3"
+				"sway_speed_frac"		"1.6"
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_enfield"
+			}
+			
+			"excluded_upgrades"
+			{
+				"0"						"magazine_stripper_clips"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"7xscope_k98"
+				{
+					"model"					"models/weapons/upgrades/a_optic_kar98k.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_k98"
+					}
+				}
+				
+				"7xscope_springfield"
+				{
+					"model"					"models/weapons/upgrades/a_optic_springfield.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_springfield"
+					}
+				}
+				
+				"7xscope_g43"
+				{
+					"model"					"models/weapons/upgrades/a_optic_zf4.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_g43"
+					}
+				}
+				
+				"7xscope_enfield"
+				{
+					"model"					"models/weapons/upgrades/a_optic_enfield.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_enfield"
+					}
+				}				
+			}
+			
+			"world_attachments"
+			{
+				"Scope"
+				{
+					"model"					"models/weapons/upgrades/w_scope_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_g43"
+					}
+				}
+				
+				"Scope_kar98"
+				{
+					"model"					"models/weapons/upgrades/w_optic_kar98k.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_k98"
+					}
+				}
+				
+				"Scope_enfield"
+				{
+					"model"					"models/weapons/upgrades/w_optic_enfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_enfield"
+					}
+				}
+				
+				"Scope_springfield"
+				{
+					"model"					"models/weapons/upgrades/w_optic_springfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_springfield"
+					}
+				}
+			}
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"10"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				"weapon_springfield"
+				{
+					"fov_wpn_scope"				"12"
+					"fov_wpn_ironsight"			"46"
+					"fov_wpn_focus"				"51"
+				}
+				
+				"weapon_k98"
+				{
+					"fov_wpn_scope"				"12"
+					"fov_wpn_ironsight"			"66"
+					"fov_wpn_focus"				"68"
+				}
+				
+				"weapon_enfield"
+				{
+					"fov_wpn_scope"				"12"
+					"fov_wpn_ironsight"			"59"
+					"fov_wpn_focus"				"62"
+				}
+				
+				"weapon_g43"
+				{
+					"fov_wpn_scope"				"12"
+					"fov_wpn_ironsight"			"46"
+					"fov_wpn_focus"				"51"
+				}
+			}
+		}
+		
+		// =====================================
+		//	GRENADE LAUNCHERS
+		// =====================================
+		"underbarrel_gl_base"
+		{
+			"IsBase"				"1"
+			"upgrade_slot"			"underbarrel"
+			"class_restricted"		"1"
+			"lock_slot"				"explosive"
+		}
+		
+		"underbarrel_launcher_base"
+		{
+			"IsBase"				"1"
+			"import"				"underbarrel_gl_base"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher_enfield"
+				{
+					"model"					"models/weapons/upgrades/a_enfield_gl.mdl"
+					"Gesture"				"delta_gl"
+					"ActSuffix"				"_GL"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_enfield"
+					}
+				}
+				
+				"Launcher_Kar98k"
+				{
+					"model"					"models/weapons/upgrades/a_kar98k_gl.mdl"
+					"Gesture"				"delta_gl"
+					"ActSuffix"				"_GL"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_k98"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Launcher_enfield"
+				{
+					"model"					"models/weapons/upgrades/w_enfield_gl.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_enfield"
+					}
+				}
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_k98"
+			}
+		}
+		
+		"underbarrel_rifle_grenade"
+		{
+			"import"					"underbarrel_launcher_base"
+			"upgrade_cost"				"4"
+			"print_name"				"#weapon_rifle_grenade"
+			"print_desc"				"#weapon_rifle_grenade_desc"
+			"attach_weapon"				"weapon_rifle_grenade"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"skin"					"0"
+				}
+			}
+		}
+		"underbarrel_rifle_grenade_k98"
+		{
+			"import"					"underbarrel_launcher_base"
+			"upgrade_cost"				"4"
+			"print_name"				"#weapon_rifle_grenade"
+			"print_desc"				"#weapon_rifle_grenade_desc"
+			"attach_weapon"				"weapon_rifle_grenade_k98"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"skin"					"0"
+				}
+			}
+		}
+	}
+}

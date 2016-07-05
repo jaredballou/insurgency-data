@@ -1,0 +1,145 @@
+// Radial menu setup, REQUIRES leader & subordinate subkeys.
+
+"RadialMenu"
+{
+	"leader"
+	{
+		"center"
+		{
+			"leader"
+			{
+				"token"		"#radial_switch_default"
+				"command"	"switch default"
+			}
+		}
+		"left1"
+		{
+			"token"		"#radial_watch_area"
+			"command"	"watch_area"
+		}
+		"left2"
+		{
+			"token"		"#radial_stick_together"
+			"command"	"stick_together"
+		}
+		"left3"
+		{
+			"token"		"#radial_flank_left"
+			"command"	"flank_left"
+		}
+		"left4"
+		{
+			"token"		"#radial_hold_position"
+			"command"	"hold_position"
+		}
+		"right1"
+		{
+			"token"		"#radial_cease_fire"
+			"command"	"cease_fire"
+		}
+		"right2"
+		{
+			"token"		"#radial_spread_out"
+			"command"	"spread_out"
+		}
+		"right3"
+		{
+			"token"		"#radial_flank_right"
+			"command"	"flank_right"
+		}
+		"right4"
+		{
+			"token"		"#radial_go"
+			"command"	"go"
+		}
+		"top"
+		{
+			"radio_available"
+			{
+				"token"		"#radial_request_artillery"
+				"command"	"request_artillery"
+			}
+
+			"token"		"#radial_request_radio"
+			"command"	"request_radio"
+		}
+		"bottom"
+		{
+			"token"		"#radial_report_status"
+			"command"	"report_status"
+		}
+	}
+
+	"default"
+	{
+		"center"
+		{
+			"leader"
+			{
+				"token"		"#radial_switch_leader"
+				"command"	"switch leader"
+			}
+		}
+		"left1"
+		{
+			"token"		"#radial_mark_enemy"
+			"command"	"enemy"
+		}
+		"left2"
+		{
+			"token"		"#radial_moving"
+			"command"	"moving"
+
+			"leader"
+			{
+				"token"		"#radial_move"
+			}
+
+			"objective"
+			{
+				"token"		"#radial_moving_to_objective"
+				"command"	"mark_objective"
+			}
+		}
+		"left3"
+		{
+			"token"		"#radial_area_hostile"
+			"command"	"area_hostile"
+		}
+		"left4"
+		{
+			"token"		"#radial_need_backup"
+			"command"	"need_backup"
+		}
+		"right1"
+		{
+			"token"		"#radial_enemy_down"
+			"command"	"enemy_down"
+		}
+		"right2"
+		{
+			"token"		"#radial_covering"
+			"command"	"covering"
+		}
+		"right3"
+		{
+			"token"		"#radial_area_clear"
+			"command"	"area_clear"
+		}
+		"right4"
+		{
+			"token"		"#radial_ontheway"
+			"command"	"ontheway"
+		}
+		"top"
+		{
+			"token"		"#radial_affirmative"
+			"command"	"affirmative"
+		}
+		"bottom"
+		{
+			"token"		"#radial_negative"
+			"command"	"negative"
+		}
+	}
+}

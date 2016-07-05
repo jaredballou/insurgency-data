@@ -1,0 +1,22 @@
+post_process
+{
+	default
+	{
+		"localcontrast"			"0.5"
+		"edgelocalcontrast"		"0.0"
+		"vignettestart"			"0.8"
+		"vignetteend"			"1.1"
+		"vignetteblur"			"0.0"
+		"fadetoblack"			"0.0"
+	}
+
+	suppression
+	{
+		"localcontrast"			"1.5"
+		"edgelocalcontrast"		"0.0"
+		"vignettestart"			"0.8"
+		"vignetteend"			"1.1"
+		"vignetteblur"			"0.0"
+		"fadetoblack"			"0.0"
+	}
+}

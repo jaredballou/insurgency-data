@@ -1,0 +1,391 @@
+"theater"
+{
+	"ammo"
+	{		
+		// ========================================
+		// Grenades
+		// ========================================
+		
+		"grenade_mk2"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_stielhandgranate"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_smoke"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_no69"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_no77smoke"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_no76"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_rifle"
+		{
+			"carry"					"3"
+		}
+		
+		// ========================================
+		// ROCKETS
+		// ========================================
+		
+		"rocket_bazooka"
+		{
+			"carry"					"1"
+		}
+		
+		"rocket_panzerfaust"
+		{
+			"carry"					"1"
+		}
+		
+		"mortar_piat"
+		{
+			"carry"					"2"
+		}	
+		
+		"flame"
+		{
+			"carry"					"500"
+		}
+		
+		// ========================================
+		// M1 Garand (7.62×63mm)
+		// ========================================
+		
+		"762x63mm"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"100"
+				"12000"					"70"
+			}
+			
+			"PenetrationPower"
+			{
+				"10"					"1000"
+				"20000"					"500"
+			}
+		}
+		
+		"762x63_clip"
+		{
+			"import"		"762x63mm"
+			"carry"			"12"
+			"magsize"		"8"
+		}
+		
+		// ========================================
+		// M1 Carbine (.30 carbine)
+		// ========================================
+		
+		"30_m1carbine"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"80"
+				"12000"					"40"
+			}
+			"PenetrationPower"
+			{
+				"10"					"400"
+				"12000"					"200"
+			}
+		}
+		
+		"30_m1carbine_mag"
+		{
+			"import"				"30_m1carbine"
+			"carry"					"12"
+			"magsize"				"15"
+		}
+		
+		// ========================================
+		// G-43 (7.92×57mm)
+		// ========================================
+		
+		"792x57_clip"
+		{
+			"import"		"762x38mm_clip"
+			"carry"			"12"
+			"magsize"		"10"
+		}
+		
+		// ========================================
+		// MP 40
+		// ========================================
+		
+		"9x19mm_mp40"
+		{
+			"import"				"9x19mm_smg"
+
+			"Damage"
+			{
+				"10"					"46"
+				"12000"					"24"
+			}
+		}
+		
+		// Thompson
+		
+		"45acp_thompson"
+		{
+			"import"				"45acp"
+			"magsize"				"20"
+		}
+		
+		// ========================================
+		// .30-06 Springfield
+		// ========================================
+		
+		"30-06"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"85"
+				"8000"					"40"
+			}
+			"PenetrationPower"
+			{
+				"10"					"1100"
+				"20000"					"600"
+			}
+		}
+		
+		"30-06_belt"
+		{
+			"import"					"30-06"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"5"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"15"
+			
+			"10"					"1050"
+			"12000"					"600"
+		}
+		
+		// ========================================
+		// MG-34 and MG-42
+		// ========================================
+		
+		"792x57"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"75"
+				"8000"					"35"
+			}
+			"PenetrationPower"
+			{
+				"10"					"950"
+				"12000"					"500"
+			}
+		}
+		
+		"792x57_drum"
+		{
+			"import"					"792x57"
+			"carry"						"4"
+			"magsize"					"50"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"10"
+		}
+		
+		"792x57_belt"
+		{
+			"import"					"792x57"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20"
+		}
+		
+		// ========================================
+		// Shotgun Ammo
+		// ========================================
+				
+		"buckshot"
+		{
+			"import"				"00buck"
+			"carry"					"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+		// ========================================
+		// Browning .50cal HMG
+		// ========================================
+		
+		"50cal_us"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"100"
+				"8000"					"50"
+			}
+			"PenetrationPower"
+			{
+				"10"					"800"
+				"8000"					"300"
+			}
+		}
+		"50cal_us_belt"
+		{
+			"import"					"50cal_us"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20"
+		}
+		
+		// ========================================
+		// Vickers and VGO LMG
+		// ========================================
+		
+		"303_brit"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"80"
+				"8000"					"30"
+			}
+			"PenetrationPower"
+			{
+				"10"					"500"
+				"8000"					"200"
+			}
+		}
+		
+		"303_brit_box_20rnd"
+		{
+			"import"					"303_brit"
+			"carry"						"12"
+			"magsize"					"20"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20"
+		}
+		
+		"303_brit_box_30rnd"
+		{
+			"import"					"303_brit"
+			"carry"						"8"
+			"magsize"					"30"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20"
+		}
+		
+		"303_brit_belt_97rnd"
+		{
+			"import"					"303_brit"
+			"carry"						"3"
+			"magsize"					"97"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20"
+		}
+		
+		"303_brit_pan_100rnd"
+		{
+			"import"					"303_brit"
+			"carry"						"3"
+			"magsize"					"100"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20"
+		}
+		
+		"303_brit_belt"
+		{
+			"import"					"303_brit"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"100"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20" 
+		}
+		
+		"303_clip_10"
+		{
+			"import"					"303_brit"
+			"carry"						"6"
+			"magsize"					"5"
+			"Damage"
+			{
+				"10"					"160"
+				"20000"					"100"
+			}
+			"PenetrationPower"
+			{
+				"10"					"1100"
+				"20000"					"600"
+			}
+		}
+		
+		// ========================================
+		// PISTOLS
+		// ========================================
+
+		// webley
+		
+		"9x19_r"
+		{
+			"import"				"9x19"
+			"magsize"				"6"
+			"carry"					"32"
+		}
+		
+		// ========================================
+		// Sten
+		// ========================================
+		"9x19mm_sten"
+		{
+			"import"				"9x19mm_smg"
+			"magsize"				"32"
+			"brass_model"				"models/weapons/shells/9x19.mdl"
+			"Damage"
+			{
+				"10"					"46"
+				"12000"					"24"
+			}
+		}
+		// welrod
+		"9x19mm_w"
+		{
+			"import"				"9x19mm_smg"
+			"magsize"				"9"				
+		}
+	}
+}

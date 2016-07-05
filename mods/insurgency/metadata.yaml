@@ -1,0 +1,60 @@
+---
+name: Insurgency
+desc: Base game
+author: New World Interactive
+steamid: 
+url: http://www.newworldinteractive.com
+email: 
+# List of workshop files that should be used to extract game files
+workshop:
+  files:
+  collections:
+# List of maps that are affiliated with this mod
+maps:
+  - buhriz
+  - buhriz_coop
+  - buhriz_night
+  - contact
+  - contact_night
+  - district
+  - district_coop
+  - district_night
+  - dry_canal
+  - dry_canal_coop
+  - embassy
+  - embassy_coop
+  - embassy_night
+  - heights
+  - heights_coop
+  - heights_night
+  - kandagal
+  - kandagal_night
+  - market
+  - market_coop
+  - market_night
+  - ministry
+  - ministry_coop
+  - ministry_night
+  - panj
+  - panj_night
+  - peak
+  - peak_night
+  - revolt
+  - revolt_coop
+  - revolt_night
+  - siege
+  - siege_coop
+  - sinjar
+  - sinjar_coop
+  - sinjar_night
+  - station
+  - station_night
+  - tell
+  - tell_coop
+  - tell_night
+  - training
+  - uprising
+  - uprising_night
+  - verticality
+  - verticality_coop
+  - verticality_night

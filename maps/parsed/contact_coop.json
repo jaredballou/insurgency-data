@@ -1,0 +1,583 @@
+{
+	"CPSetup": {
+		"navfile": "contact"
+	},
+	"gametypes": {
+		"checkpoint": {
+			"attackingteam": "security",
+			"controlpoint": [
+				"cp1",
+				"cp2",
+				"cp3",
+				"cachepoint_d",
+				"cachepoint_e",
+				"cp6",
+				"cp7"
+			],
+			"entities": {
+				"obj_weapon_cache": {
+					"is_multiple_array": 1,
+					"0": {
+						"angles": "0 270 0",
+						"controlpoint": "cachepoint_d",
+						"origin": "-2010 102 -64",
+						"takedamagebullets": "0",
+						"targetname": "cache_d",
+						"teamnumber": "3"
+					},
+					"1": {
+						"angles": "0 90 0",
+						"controlpoint": "cachepoint_e",
+						"origin": "-1080 -1644 0",
+						"takedamagebullets": "0",
+						"targetname": "cache_e",
+						"teamnumber": "3"
+					}
+				},
+				"point_controlpoint": {
+					"is_multiple_array": 1,
+					"0": {
+						"angles": "0 270 0",
+						"origin": "-2010 102 8",
+						"targetname": "cachepoint_d"
+					},
+					"1": {
+						"angles": "0 90 0",
+						"origin": "-1080 -1644 72",
+						"targetname": "cachepoint_e"
+					}
+				}
+			},
+			"points": {
+				"cache_d": {
+					"pos_classname": "obj_weapon_cache",
+					"pos_controlpoint": "cachepoint_d",
+					"pos_name": "cache_d",
+					"pos_targetname": "cache_d",
+					"pos_team": 3,
+					"pos_type": "obj_weapon_cache",
+					"pos_x": 293,
+					"pos_y": 422
+				},
+				"cache_e": {
+					"pos_classname": "obj_weapon_cache",
+					"pos_controlpoint": "cachepoint_e",
+					"pos_name": "cache_e",
+					"pos_targetname": "cache_e",
+					"pos_team": 3,
+					"pos_type": "obj_weapon_cache",
+					"pos_x": 396,
+					"pos_y": 616
+				},
+				"cachepoint_d": {
+					"pos_classname": "point_controlpoint",
+					"pos_name": "cachepoint_d",
+					"pos_targetname": "cachepoint_d",
+					"pos_team": 0,
+					"pos_type": "point_controlpoint",
+					"pos_x": 293,
+					"pos_y": 422
+				},
+				"cachepoint_e": {
+					"pos_classname": "point_controlpoint",
+					"pos_name": "cachepoint_e",
+					"pos_targetname": "cachepoint_e",
+					"pos_team": 0,
+					"pos_type": "point_controlpoint",
+					"pos_x": 396,
+					"pos_y": 616
+				}
+			},
+			"spawnzones": {
+				"disablespawns": "1",
+				"0": "spawnzone_1",
+				"1": "spawnzone_2",
+				"2": "spawnzone_3",
+				"3": "spawnzone_4",
+				"4": "spawnzone_5",
+				"5": "spawnzone_6",
+				"6": "spawnzone_7"
+			}
+		}
+	},
+	"mapdata_version": 1,
+	"overview": {
+		"material": "overviews\/contact",
+		"pos_x": -4648,
+		"pos_y": 3900,
+		"rotate": 0,
+		"scale": 9,
+		"zoom": 1
+	},
+	"points": {
+		"cp1": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": "5698911",
+			"pos_name": "cp1",
+			"pos_targetname": "cp1",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 670,
+			"pos_y": 104
+		},
+		"cp2": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": "6347081",
+			"pos_name": "cp2",
+			"pos_targetname": "cp2",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 980,
+			"pos_y": 320
+		},
+		"cp3": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": "5698870",
+			"pos_name": "cp3",
+			"pos_targetname": "cp3",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 621,
+			"pos_y": 432
+		},
+		"cp6": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": "5698923",
+			"pos_name": "cp6",
+			"pos_targetname": "cp6",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 367,
+			"pos_y": 775
+		},
+		"cp7": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": "6347300",
+			"pos_name": "cp7",
+			"pos_targetname": "cp7",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 607,
+			"pos_y": 910
+		},
+		"5698361": {
+			"pos_blockzone": "bz1",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 315,
+			"pos_id": "5698361",
+			"pos_name": "5698361",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_1",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 454,
+			"pos_x": 336,
+			"pos_y": 6
+		},
+		"5698367": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 34,
+			"pos_id": "5698367",
+			"pos_name": "5698367",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_1",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 50,
+			"pos_x": 234,
+			"pos_y": 6
+		},
+		"5698369": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 41,
+			"pos_id": "5698369",
+			"pos_name": "5698369",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_2",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 41,
+			"pos_x": 339,
+			"pos_y": 71
+		},
+		"5698377": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 46,
+			"pos_id": "5698377",
+			"pos_name": "5698377",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_3",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 50,
+			"pos_x": 745,
+			"pos_y": 2
+		},
+		"5698872": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp3",
+			"pos_height": 119,
+			"pos_id": "5698872",
+			"pos_name": "5698872",
+			"pos_shape": "rect",
+			"pos_targetname": "cp3_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 45,
+			"pos_x": 575,
+			"pos_y": 373
+		},
+		"5698899": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp6",
+			"pos_height": 45,
+			"pos_id": "5698899",
+			"pos_name": "5698899",
+			"pos_shape": "rect",
+			"pos_targetname": "cp6_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 7,
+			"pos_x": 387,
+			"pos_y": 737
+		},
+		"5698905": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp1",
+			"pos_height": 59,
+			"pos_id": "5698905",
+			"pos_name": "5698905",
+			"pos_shape": "rect",
+			"pos_targetname": "cp1_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 13,
+			"pos_x": 685,
+			"pos_y": 67
+		},
+		"6347095": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp2",
+			"pos_height": 115,
+			"pos_id": "6347095",
+			"pos_name": "6347095",
+			"pos_shape": "rect",
+			"pos_targetname": "cp2_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 49,
+			"pos_x": 959,
+			"pos_y": 257
+		},
+		"6347297": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp7",
+			"pos_height": 73,
+			"pos_id": "6347297",
+			"pos_name": "6347297",
+			"pos_shape": "rect",
+			"pos_targetname": "cp7_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 68,
+			"pos_x": 578,
+			"pos_y": 870
+		},
+		"6347406": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 46,
+			"pos_id": "6347406",
+			"pos_name": "6347406",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_4",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 51,
+			"pos_x": 801,
+			"pos_y": 291
+		},
+		"6347741": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 41,
+			"pos_id": "6347741",
+			"pos_name": "6347741",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_5",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 46,
+			"pos_x": 225,
+			"pos_y": 314
+		},
+		"6348067": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 46,
+			"pos_id": "6348067",
+			"pos_name": "6348067",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_6",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 51,
+			"pos_x": 311,
+			"pos_y": 457
+		},
+		"6348478": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 73,
+			"pos_id": "6348478",
+			"pos_name": "6348478",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_7",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 24,
+			"pos_x": 232,
+			"pos_y": 689
+		},
+		"6348815": {
+			"pos_blockzone": "bz2",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 456,
+			"pos_id": "6348815",
+			"pos_name": "6348815",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_2",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 235,
+			"pos_x": 790,
+			"pos_y": 6
+		},
+		"6348940": {
+			"pos_blockzone": "bz3",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 262,
+			"pos_id": "6348940",
+			"pos_name": "6348940",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_3",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 380,
+			"pos_x": 410,
+			"pos_y": 321
+		},
+		"6349151": {
+			"pos_blockzone": "bz4",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 262,
+			"pos_id": "6349151",
+			"pos_name": "6349151",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_4",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 178,
+			"pos_x": 232,
+			"pos_y": 321
+		},
+		"6349337": {
+			"pos_blockzone": "bz5",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 261,
+			"pos_id": "6349337",
+			"pos_name": "6349337",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_5",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 222,
+			"pos_x": 234,
+			"pos_y": 583
+		},
+		"6349385": {
+			"pos_blockzone": "bz6",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 239,
+			"pos_id": "6349385",
+			"pos_name": "6349385",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_6",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 320,
+			"pos_x": 234,
+			"pos_y": 720
+		},
+		"6349418": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 215,
+			"pos_id": "6349418",
+			"pos_name": "6349418",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_7",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 431,
+			"pos_x": 554,
+			"pos_y": 744
+		},
+		"6370818": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 977,
+			"pos_id": "6370818",
+			"pos_name": "6370818",
+			"pos_shape": "rect",
+			"pos_targetname": "bz1",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 237,
+			"pos_x": 788,
+			"pos_y": 6
+		},
+		"6370908": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 562,
+			"pos_id": "6370908",
+			"pos_name": "6370908",
+			"pos_shape": "rect",
+			"pos_targetname": "bz2",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 281,
+			"pos_x": 744,
+			"pos_y": 421
+		},
+		"6370990": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 84,
+			"pos_id": "6370990",
+			"pos_name": "6370990",
+			"pos_shape": "rect",
+			"pos_targetname": "bz3",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 98,
+			"pos_x": 516,
+			"pos_y": 577
+		},
+		"6371019": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 435,
+			"pos_id": "6371019",
+			"pos_name": "6371019",
+			"pos_shape": "rect",
+			"pos_targetname": "bz4",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 509,
+			"pos_x": 516,
+			"pos_y": 548
+		},
+		"6371065": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 322,
+			"pos_id": "6371065",
+			"pos_name": "6371065",
+			"pos_shape": "rect",
+			"pos_targetname": "bz5",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 455,
+			"pos_x": 61,
+			"pos_y": 661
+		},
+		"6371123": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 435,
+			"pos_id": "6371123",
+			"pos_name": "6371123",
+			"pos_shape": "rect",
+			"pos_targetname": "bz6",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 509,
+			"pos_x": 516,
+			"pos_y": 548
+		},
+		"6371154": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 141,
+			"pos_id": "6371154",
+			"pos_name": "6371154",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_2",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 67,
+			"pos_x": 631,
+			"pos_y": 67
+		},
+		"6371175": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 115,
+			"pos_id": "6371175",
+			"pos_name": "6371175",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_3",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 49,
+			"pos_x": 959,
+			"pos_y": 257
+		},
+		"6371187": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 145,
+			"pos_id": "6371187",
+			"pos_name": "6371187",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_4",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 61,
+			"pos_x": 575,
+			"pos_y": 360
+		},
+		"6371205": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 59,
+			"pos_id": "6371205",
+			"pos_name": "6371205",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_5",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 55,
+			"pos_x": 289,
+			"pos_y": 404
+		},
+		"6371223": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 86,
+			"pos_id": "6371223",
+			"pos_name": "6371223",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_7",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 110,
+			"pos_x": 344,
+			"pos_y": 740
+		},
+		"6371265": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 51,
+			"pos_id": "6371265",
+			"pos_name": "6371265",
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_6",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 53,
+			"pos_x": 348,
+			"pos_y": 608
+		}
+	},
+	"source_files": {
+		"CPSetup": "e001352eee42cad29011d04fe1d61455",
+		"Overview": "f949eb96e23c42e9bd6114be02a1dcbd",
+		"VMF Source": "5200265aa01727ce6cc14ff8579811d4"
+	}
+}

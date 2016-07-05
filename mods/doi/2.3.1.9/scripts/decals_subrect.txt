@@ -1,0 +1,433 @@
+// Decal definitions, format is 
+//   decalname weight
+//   where weight is used to randomly selected a decal to apply from within the group
+
+// This is just an entry to map material types to "impact.xxx"
+"TranslationData"
+{
+	"A"			"Impact.Pumpkin"							//CHAR_TEX_ANTLION
+	"B"			""							//CHAR_TEX_BLOODYFLESH
+	"C"			"Impact.Concrete"			//CHAR_TEX_CONCRETE
+	"D"			"Impact.Dirt"				//CHAR_TEX_DIRT
+	"E"			""							//CHAR_TEX_EGGSHELL
+	"F"			"Impact.Flesh"				//CHAR_TEX_FLESH
+	"G"			""							//CHAR_TEX_GRATE
+	"H"			""							//CHAR_TEX_ALIENFLESH
+	"I"			""							//CHAR_TEX_CLIP
+	"J"			"Impact.Grass"				//CHAR_TEX_GRASS
+	"K"			""							//CHAR_TEX_SNOW
+	"L"			"Impact.Plastic"			//CHAR_TEX_PLASTIC
+	"M"			"Impact.Metal"				//CHAR_TEX_METAL
+	"N"			"Impact.Sand"				//CHAR_TEX_SAND
+	"O"			"Impact.Leaves"				//CHAR_TEX_FOLIAGE
+	"P"			"Impact.Computer"			//CHAR_TEX_COMPUTER
+	"Q"			"Impact.Asphalt"			//CHAR_TEX_ASPHALT
+	"R"			"Impact.Brick"				//CHAR_TEX_BRICK
+	"S"			""							//CHAR_TEX_SLOSH
+	"T"			"Impact.Tile"				//CHAR_TEX_TILE
+	"U"			"Impact.Cardboard"			//CHAR_TEX_CARDBOARD
+	"V"			"Impact.Vent"				//CHAR_TEX_VENT
+	"W"			"Impact.Wood"				//CHAR_TEX_WOOD
+	"X"			""							//DO NOT USE - "fake" materials use this (ladders, wading, clips, etc)
+	"Y"			"Impact.Glass"				//CHAR_TEX_GLASS
+	"1"			""							//CHAR_TEX_CLAY
+	"2"			"Impact.Plaster"			//CHAR_TEX_PLASTER
+	"3"			"Impact.Rock"				//CHAR_TEX_ROCK
+	"4"			"Impact.Rubber"				//CHAR_TEX_RUBBER
+	"5"			"Impact.Sheetrock"			//CHAR_TEX_SHEETROCK
+	"6"			""							//CHAR_TEX_CLOTH
+	"7"			"Impact.Carpet"				//CHAR_TEX_CARPET
+	"8"			"Impact.Cardboard"							//CHAR_TEX_PAPER
+	"9"			""							//CHAR_TEX_UPHOLSTERY
+	"10"		""							//CHAR_TEX_PUDDLE
+}
+
+"Impact.Concrete"
+{
+	"decals/concrete/shot1_subrect" "1"
+	"decals/concrete/shot2_subrect" "1"
+	"decals/concrete/shot3_subrect" "1"
+	"decals/concrete/shot4_subrect" "1"
+}
+
+"Impact.Tile"
+{
+	"decals/tile/tile1_subrect" "1"
+	"decals/tile/tile2_subrect" "1"
+	"decals/tile/tile3_subrect" "1"
+	"decals/tile/tile4_subrect" "1"
+	"decals/tile/tile5_subrect" "1"
+	"decals/tile/tile6_subrect" "1"
+}
+
+"Impact.Dirt"
+{
+	"decals/dirt/dirt1_subrect" "1"
+	"decals/dirt/dirt2_subrect" "1"
+	"decals/dirt/dirt3_subrect" "1"
+	"decals/dirt/dirt4_subrect" "1"
+}
+
+"Impact.Carpet"
+{
+	"decals/dirt/dirt1_subrect" "1"
+	"decals/dirt/dirt2_subrect" "1"
+	"decals/dirt/dirt3_subrect" "1"
+	"decals/dirt/dirt4_subrect" "1"
+}
+
+"Impact.Rubber"
+{
+	"decals/rubber/rubber1_subrect" "1"
+	"decals/rubber/rubber2_subrect" "1"
+	"decals/rubber/rubber3_subrect" "1"
+	"decals/rubber/rubber4_subrect" "1"
+}
+
+"Impact.Cardboard"
+{
+	"decals/cardboard/cardboard1_subrect" "1"
+	"decals/cardboard/cardboard2_subrect" "1"
+	"decals/cardboard/cardboard3_subrect" "1"
+	"decals/cardboard/cardboard4_subrect" "1"
+}
+
+"Impact.Asphalt"
+{
+	"decals/asphalt/asphalt1_subrect" "1"
+	"decals/asphalt/asphalt2_subrect" "1"
+	"decals/asphalt/asphalt3_subrect" "1"
+	"decals/asphalt/asphalt4_subrect" "1"
+}
+
+"Impact.Vent"
+{
+	"decals/metal/metal01b_subrect" "1"
+	"decals/metal/metal02b_subrect" "1"
+	"decals/metal/metal03b_subrect" "1"
+	"decals/metal/metal04b_subrect" "1"
+}
+
+"Impact.Computer"
+{
+	"decals/computer/computer1_subrect" "1"
+	"decals/computer/computer2_subrect" "1"
+	"decals/computer/computer3_subrect" "1"
+	"decals/computer/computer4_subrect" "1"
+}
+
+"Impact.Plastic"
+{
+	"decals/computer/computer1_subrect" "1"
+	"decals/computer/computer2_subrect" "1"
+	"decals/computer/computer3_subrect" "1"
+	"decals/computer/computer4_subrect" "1"
+}
+
+"Impact.Metal"
+{
+	"decals/metal/shot1_subrect" "1"
+	"decals/metal/shot2_subrect" "1"
+	"decals/metal/shot3_subrect" "1"
+	"decals/metal/shot4_subrect" "1"
+}
+
+"Impact.Wood"
+{
+	"decals/wood/shot1_subrect" "1"
+	"decals/wood/shot2_subrect" "1"
+	"decals/wood/shot3_subrect" "1"
+	"decals/wood/shot4_subrect" "1"
+	"decals/wood/shot5_subrect" "1"
+}
+
+"Impact.Glass"
+{
+	"decals/glass/shot1_subrect" "1"
+	"decals/glass/shot2_subrect" "1"
+	"decals/glass/shot3_subrect" "1"
+	"decals/glass/shot4_subrect" "1"
+	"decals/glass/shot5_subrect" "1"
+}
+
+
+"Impact.Flesh"
+{
+
+	"decals/flesh/blood1_subrect" "1"
+	"decals/flesh/blood2_subrect" "1"
+	"decals/flesh/blood3_subrect" "1"
+	"decals/flesh/blood4_subrect" "1"
+	"decals/flesh/blood5_subrect" "1"
+
+}
+
+"Impact.BloodyFlesh"
+{
+
+	"decals/flesh/blood4_subrect" "1"
+
+}
+
+"Impact.Sheetrock"
+{
+	"decals/sheetrock/sheetrock1_subrect" "1"
+	"decals/sheetrock/sheetrock2_subrect" "1"
+	"decals/sheetrock/sheetrock3_subrect" "1"
+	"decals/sheetrock/sheetrock4_subrect" "1"
+}
+
+"Impact.Plaster"
+{
+	"decals/plaster/plaster01_subrect" "1"
+	"decals/plaster/plaster02_subrect" "1"
+	"decals/plaster/plaster03_subrect" "1"
+	"decals/plaster/plaster04_subrect" "1"
+}
+
+"Impact.Rock"
+{
+	"decals/rock/rock01_subrect" "1"
+	"decals/rock/rock02_subrect" "1"
+	"decals/rock/rock03_subrect" "1"
+	"decals/rock/rock04_subrect" "1"
+}
+
+"Impact.Brick"
+{
+	"decals/brick/brick1_subrect" "1"
+	"decals/brick/brick2_subrect" "1"
+	"decals/brick/brick3_subrect" "1"
+	"decals/brick/brick4_subrect" "1"
+}
+"Impact.Pumpkin"
+{
+	"decals/pumpkin/pumpkin1_subrect" "1"
+	"decals/pumpkin/pumpkin2_subrect" "1"
+	"decals/pumpkin/pumpkin3_subrect" "1"
+}
+
+// Sand does not have model versions of the decals.
+"Impact.Sand"
+{
+	"decals/blank/shot1_subrect" "1"
+}
+
+// Grass does not have model versions of the decals.
+"Impact.Grass"
+{
+	"decals/blank/shot1_subrect" "1"
+}
+
+// Leaves does not have model versions of the decals.
+"Impact.Leaves"
+{
+	"decals/blank/shot1_subrect" "1"
+}
+
+"Scorch"
+{
+	"decals/scorch1_subrect" "1"
+	"decals/scorch2_subrect" "1"
+}
+
+"ScorchIncendiary"
+{
+	"decals/scorch_incendiary"  "1"
+}
+
+"Blood"
+{
+	"decals/ins_blood/blood_01" ".5"
+	"decals/ins_blood/blood_02" "1"
+	"decals/ins_blood/blood_03" ".2"
+}
+
+"GlassBreak"
+{
+	"decals/break1_subrect" "1"
+	"decals/break2_subrect" "1"
+	"decals/break3_subrect" "1"
+}
+
+"BigShot"
+{
+	"decals/bigshot1_subrect" "1"
+	"decals/bigshot2_subrect" "1"
+	"decals/bigshot3_subrect" "1"
+	"decals/bigshot4_subrect" "1"
+	"decals/bigshot5_subrect" "1"
+}
+
+"BulletProof"
+{
+	"decals/bproof1_subrect" "1"
+}
+
+"SmallScorch"
+{
+	"decals/smscorch1_subrect" "1"
+	"decals/smscorch2_subrect" "1"
+	"decals/smscorch3_subrect" "1"
+}
+
+"FadingScorch"
+{
+	"decals/scorchfade_subrect" "1"
+}
+
+"RedGlowFade"
+{	
+	"decals/redglowfade" "1"
+}
+
+"CombineBallFade"
+{	
+	"decals/combineballfade" "1"
+}
+
+"CombineBallFade2"
+{	
+	"decals/combineballfade2" "1"
+}
+
+"CombineBallFade3"
+{	
+	"decals/combineballfade3" "1"
+}
+
+"PlasmaGlowFade"
+{	
+	 "decals/plasmaglowfade" "1"
+}
+
+"Splash"
+{ 
+	"decals/decalsplash" "1"
+}
+
+"ExplosiveGunshot"
+{
+	"decals/concrete/shot1_subrect" "1"
+}
+
+"Fire"
+{
+	"sprites/fire_floor" "1"
+}
+
+// Currently a model version of these decals don't exist.
+"Splash.Large"
+{
+	"decals/splash1_subrect" "1"
+	"decals/splash2_subrect" "1"
+	"decals/splash3_subrect" "1"
+}
+
+// Currently a model version of these decals don't exist.
+"Splash.Small"
+{
+	"decals/splash1_subrect" "1"
+	"decals/splash1_subrect" "1"
+	"decals/splash1_subrect" "1"
+}
+
+"Models"
+{
+	// World Model specific decal precache.
+	"decals/Decals_bulletsheet"	"1"
+	"decals/Decals_mod2x"	"1"
+	"decals/Decals_mod2x"	"1"
+	"decals/asphalt/asphalt1" "1"
+	"decals/asphalt/asphalt2" "1"
+	"decals/asphalt/asphalt3" "1"
+	"decals/asphalt/asphalt4" "1"
+	"decals/brick/brick1" "1"
+	"decals/brick/brick2" "1"
+	"decals/brick/brick3" "1"
+	"decals/brick/brick4" "1"
+	"decals/cardboard/cardboard1"	"1"
+	"decals/cardboard/cardboard2"	"1"
+	"decals/cardboard/cardboard3"	"1"
+	"decals/cardboard/cardboard4"	"1"
+	"decals/computer/computer1"	"1"
+	"decals/computer/computer2"	"1"
+	"decals/computer/computer3"	"1"
+	"decals/computer/computer4"	"1"
+	"decals/concrete/shot1" "1"
+	"decals/concrete/shot2" "1"
+	"decals/concrete/shot3" "1"
+	"decals/concrete/shot4" "1"
+	"decals/dirt/shot1" "1"
+	"decals/dirt/shot2" "1"
+	"decals/dirt/shot3" "1"
+	"decals/dirt/shot4" "1"
+	"decals/metal/shot1" "1"
+	"decals/metal/shot2" "1"
+	"decals/metal/shot3" "1"
+	"decals/metal/shot4" "1"
+	"decals/metal/metal01" "1"
+	"decals/metal/metal02" "1"
+	"decals/metal/metal03" "1"
+	"decals/metal/metal04" "1"
+	"decals/plaster/plaster01" "1"
+	"decals/rock/rock01"	"1"
+	"decals/rock/rock02"	"1"
+	"decals/rock/rock03"	"1"
+	"decals/rock/rock04"	"1"
+	"decals/rubber/rubber1"	"1"
+	"decals/rubber/rubber2"	"1"
+	"decals/rubber/rubber3"	"1"
+	"decals/rubber/rubber4"	"1"
+	"decals/sheetrock/sheetrock1"	"1"
+	"decals/sheetrock/sheetrock2"	"1"
+	"decals/sheetrock/sheetrock3"	"1"
+	"decals/sheetrock/sheetrock4"	"1"	
+	"decals/tile/tile1"	"1"
+	"decals/tile/tile2"	"1"
+	"decals/tile/tile3"	"1"
+	"decals/tile/tile4"	"1"
+	"decals/tile/tile5"	"1"
+	"decals/tile/tile6"	"1"
+	"decals/wood/shot1" "1"
+	"decals/wood/shot2" "1"
+	"decals/wood/shot3" "1"
+	"decals/wood/shot4" "1"
+	"decals/wood/shot5" "1"
+	"decals/glass/shot1" "1"
+	"decals/glass/shot2" "1"
+	"decals/glass/shot3" "1"
+	"decals/glass/shot4" "1"
+	"decals/glass/shot5" "1"
+	"decals/flesh/blood1" "1"
+	"decals/flesh/blood2" "1"
+	"decals/flesh/blood3" "1"
+	"decals/flesh/blood4" "1"
+	"decals/flesh/blood5" "1"
+	"decals/bloodyflesh/blood1" "1"
+	"decals/bloodyflesh/blood2" "1"
+	"decals/bloodyflesh/blood3" "1"
+	"decals/bloodyflesh/blood4" "1"
+	"decals/bloodyflesh/blood5" "1"
+	"decals/scorch1" "1"
+	"decals/scorch2" "1"
+
+"decals/blood1" "1"
+"decals/blood2" "1"
+
+
+	"decals/bigshot1" "1"
+	"decals/bigshot2" "1"
+	"decals/bigshot3" "1"
+	"decals/bigshot4" "1"
+	"decals/bigshot5" "1"
+
+	// Model specific decal precache.
+	"decals/bigshot1model" "1"
+	"decals/bigshot2model" "1"
+	"decals/bigshot3model" "1"
+	"decals/bigshot4model" "1"
+	"decals/bigshot5model" "1"
+	"decals/scorch1model" "1"
+	"decals/scorch2model" "1"
+}

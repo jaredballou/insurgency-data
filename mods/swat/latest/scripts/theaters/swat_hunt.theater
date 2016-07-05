@@ -1,0 +1,124 @@
+"#base" "swat_default_coop_shared.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"squads"
+			{
+				// assault squad
+				"#Fireteam_Alpha"	// small arms
+				{
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+				}
+			}
+		}
+		
+		
+		"insurgents"
+		{
+			"squads"
+			{
+				"#Cell_Alpha"	// assault team #1
+				{
+					// role name								preset
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+				}
+				
+				"#Cell_Bravo"	// assault team #2
+				{
+					// role name								preset
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+				}
+				
+				"#Cell_Charlie"	// support team
+				{
+					// role name								preset
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+				}
+				
+				"#Cell_Delta"	// heavy weapons team
+				{
+					// role name								preset
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+				}
+				
+				"#Cell_Echo"
+				{
+					// role name								preset
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+				}
+				
+				"#Cell_Foxtrot"
+				{
+					// role name								preset
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+				}
+			}
+		}	
+	}
+
+	
+	"player_gear"
+	{
+		"?nightmap"
+		{
+			"sec_nightvision"
+			{
+				"gear_cost"				"0"
+			}
+		}
+	}
+}

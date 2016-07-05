@@ -1,0 +1,260 @@
+//-----------------------------------------------------------------------
+// Common Player Response Criterion
+//-----------------------------------------------------------------------
+
+enumeration "Team"
+{
+	"Security"		"2"
+	"Insurgents"	"3"
+}
+
+enumeration "Squad"
+{
+	"Alpha"			"0"
+	"Bravo"			"1"
+	"Charlie"		"2"
+	"Delta"			"3"
+	"Echo"			"4"
+	"Foxtrot"		"5"
+	"Golf"			"6"
+	"Hotel"			"7"
+	"India"			"8"
+	"Juliet"			"9"
+}
+
+enumeration "WeaponClass"
+{
+	"Invalid"			"0"
+	"Melee"				"1"
+	"GrenadeFrag"		"2"
+	"GrenadeIncendiary"	"3"
+	"GrenadeSmoke"		"4"
+	"GrenadeFlash"		"5"
+	"OtherExplosive" 	"6"
+	"Launcher"			"7"
+	"Pistol"			"8"
+	"SMG"				"9"
+	"RifleAuto"			"10"
+	"RifleControlled" 	"11"
+	"LMG"				"12"
+	"Shotgun"			"13"
+	"Sniper"			"14"
+}
+
+enumeration "Bearing"
+{
+	"North"			"0"
+	"NorthEast"		"1"
+	"East"			"2"
+	"SouthEast"		"3"
+	"South"			"4"
+	"SouthWest"		"5"
+	"West"			"6"
+	"NorthWest"		"7"
+}
+
+// Player criterion
+criterion "IsBot"						"bot"		"1"								required
+criterion "IsHuman"						"bot_coop"	"0"								required
+criterion "IsCoopBot"					"bot_coop"	"1"								required
+criterion "IsCoopEnemy"					"bot_coop_enemy"	"1"						required
+criterion "IsCoopEnemyWeight"			"bot_coop_enemy"	"1"						weight 100 required
+
+// Team criterion
+criterion "OnSecurityTeam" 				"team" 		"[Team::Security]" 				required
+criterion "OnInsurgentTeam" 			"team" 		"[Team::Insurgents]"			required
+criterion "HasAliveTeammates"			"last_man_standing" "0"						required
+criterion "IsLastManStanding"			"last_man_standing" "1"						required
+criterion "HasNearbyTeammates"			"nearby_teammates" ">0"						required
+criterion "HasNoNearbyTeammates"		"nearby_teammates" "0"						required
+
+// Squads
+criterion "IsSquadLeader"				"squad_slot" "0"							required
+criterion "IsNotSquadLeader"			"squad_slot" "!=0"							required
+criterion "OnSquadAlpha"				"squad"		"Squad::Alpha"					required
+criterion "OnSquadBravo"				"squad"		"Squad::Bravo"					required
+criterion "OnSquadCharlie"				"squad"		"Squad::Charlie"				required
+criterion "OnSquadDelta"				"squad"		"Squad::Delta"					required
+criterion "OnSquadEcho"					"squad"		"Squad::Echo"					required
+criterion "OnSquadFoxtrot"				"squad"		"Squad::Foxtrot"				required
+criterion "OnSquadGolf"					"squad"		"Squad::Golf"					required
+criterion "OnSquadHotel"				"squad"		"Squad::Hotel"					required
+criterion "HasNearbySquadmates"			"nearby_squadmates" ">0"					required
+criterion "HasNoNearbySquadmates"		"nearby_squadmates" "0"						required
+
+// Damage
+criterion "IsHeadshot"					"hitgroup"	"1"								required
+criterion "IsNotHeadshot"				"hitgroup"	"!=1"							required
+criterion "IsBullet"					"bullet"	">0"							required weight 1
+criterion "IsNotBullet"					"bullet"	"0"								required
+criterion "IsFall"						"fall"		">0"							required
+criterion "HitArmor"					"armor"		"1"								required
+criterion "HasNoArmor"					"armor"		"0"								required
+criterion "IsHighDamage"				"damage"	">=75"							required
+criterion "IsMelee"						"melee"		">0"							required
+criterion "IsNotMelee"					"melee"		"0"								required
+criterion "IsBurn"						"burn"		">0"							required
+criterion "IsNotBurn"					"burn"		"0"								required
+
+// Suppression levels
+criterion "IsNotSuppressed"				"suppression" "<=0.1"						required
+criterion "IsSuppressed"				"suppression" ">0.1"						required
+criterion "IsHeavilySuppressed"			"suppression" ">0.75"						required
+criterion "SuppressedRecent"            "since_last_suppression" "<10"             	required
+criterion "NotSuppressedRecent"         "since_last_suppression" ">=10"            	required
+
+// Suppression contexts
+criterion "SuppressionContextBullet"	"context" 	"bullet"						required
+criterion "SuppressionContextStunned"	"context" 	"stunned"						required
+criterion "SuppressionContextExplosion"	"context" 	"explosion_general"				required
+criterion "SuppressionContextRocketPass" "context" 	"rocket"						required
+criterion "SuppressionContextRocketDet"	"context" 	"explosion_rocket"				required
+
+// Weapon criteria
+criterion "IsRocket"					"weapon_class" "[WeaponClass::Launcher]"	required
+criterion "IsFrag"						"weapon_class" "[WeaponClass::GrenadeFrag]" required
+criterion "IsSmoke"						"weapon_class" "[WeaponClass::GrenadeSmoke]"	required
+criterion "IsFlash"						"weapon_class" "[WeaponClass::GrenadeFlash]"	required
+criterion "IsIncendiary"				"playerweapon" "weapon_anm14"				required
+criterion "IsMolotov"					"playerweapon" "weapon_molotov"				required
+criterion "IsC4_IED"					"playerweapon" "weapon_c4_ied"				required
+criterion "IsC4_Clicker"				"playerweapon" "weapon_c4_clicker"			required
+criterion "IsSinglyLoaded"				"single_load"	"1"							required
+criterion "IsMagazineBased"				"magazine_based" "1"						required
+criterion "IsUsingAmmoPool"				"magazine_based" "0"						required
+
+// Radial Menu Points
+criterion "IsAlpha"						"cp"		"0"				required
+criterion "IsBravo"						"cp"		"1"				required
+criterion "IsCharlie"					"cp"		"2"				required
+criterion "IsDelta"						"cp"		"3"				required
+criterion "IsEcho"						"cp"		"4"				required
+criterion "IsFoxtrot"					"cp"		"5"				required
+criterion "IsGolf"						"cp"		"6"				required
+criterion "IsHotel"						"cp"		"7"				required
+criterion "IsIndia"						"cp"		"8"				required
+criterion "IsJuliet"					"cp"		"9"				required
+criterion "IsKilo"						"cp"		"10"			required
+criterion "IsAttacking"					"attacking"	"1"				required
+criterion "IsDefending"					"attacking"	"0"				required
+criterion "IsDestructible"				"destructible"	"1"			required
+
+// Radial objective discovery
+criterion "IsDiscovery"					"discovery"	 "1"			weight 100 required
+criterion "IsDecoy"						"decoy"		 "1"			weight 100 required
+criterion "IsNotDecoy"					"decoy"		 "0"			weight 100 required
+criterion "IsNotDiscovery"				"discovery"	 "0"			required
+
+// Misc
+criterion "WasSquadLeader"				"wassquadleader"	 "1"			required
+criterion "WasSubordinate"				"wassquadleader"	 "0"			required
+
+criterion "NotRecentlySaidWounded" 		"SaidWounded" 		"!=1" 	required 	weight 5
+criterion "IsEnemySpotRepeat"			"enemy_repeat"		"1"		required 	weight 10
+criterion "NotRecentlySaidRadial"		"since_last_radial"	">2.0"	required 	weight 10
+criterion "RecentKnifeKill"				"s_knife"			"1"		required 	weight 20
+criterion "NotRecentlySaidKnifeKill"	"SaidKnifeKill"		"!=1"	required 	weight 10
+
+// aoe nade types
+criterion "WasOnMe"						"on_me"	 "1"					required weight 5
+criterion "WasNearMe"					"near_me"	 "1"				required
+criterion "WasEnemy"					"aoefriendly"	 "0"				required
+criterion "ClassMolotov" 				"aoeclassname" "grenade_molotov" 	required
+criterion "ClassANM14" 					"aoeclassname" "grenade_anm14"		required
+criterion "CanMakePainSound" 			"SuppressPainSound" "!=1" "required" weight 5
+
+// Compass
+criterion "IsNorth"						"bearing"	"0"		required
+criterion "IsNorthEast"					"bearing"	"1"	required
+criterion "IsEast"						"bearing"	"2"		required
+criterion "IsSouthEast"					"bearing"	"3"	required
+criterion "IsSouth"						"bearing"	"4"		required
+criterion "IsSouthWest"					"bearing"	"5"	required
+criterion "IsWest"						"bearing"	"6"		required
+criterion "IsNorthWest"					"bearing"	"7"	required
+
+// Voice concepts
+criterion "ConceptFireWeapon" 			"Concept" 	"TLK_FIREWEAPON"				required
+criterion "ConceptHurt"					"Concept" 	"TLK_HURT"						required
+criterion "ConceptDetonatedObject"		"Concept" 	"TLK_DETONATED_OBJECT"			required
+criterion "ConceptKilledPlayer"			"Concept" 	"TLK_KILLED_PLAYER"				required
+criterion "ConceptKilledObject"			"Concept" 	"TLK_KILLED_OBJECT"				required
+criterion "ConceptPlayerPain"			"Concept"	"TLK_PLAYER_PAIN"				required
+criterion "ConceptPlayerAttackerPain	"Concept" 	"TLK_PLAYER_ATTACKER_PAIN"		required
+criterion "ConceptPlayerTaunt"			"Concept" 	"TLK_PLAYER_TAUNT"				required
+criterion "ConceptPlayerHelp"			"Concept" 	"TLK_PLAYER_HELP"				required
+criterion "ConceptPlayerGo"				"Concept" 	"TLK_PLAYER_GO"					required
+criterion "ConceptPlayerMoveUp"			"Concept" 	"TLK_PLAYER_MOVEUP"				required
+criterion "ConceptPlayerLeft"			"Concept" 	"TLK_PLAYER_LEFT"				required
+criterion "ConceptPlayerRight"			"Concept" 	"TLK_PLAYER_RIGHT"				required
+criterion "ConceptPlayerYes"			"Concept" 	"TLK_PLAYER_YES"				required
+criterion "ConceptPlayerNo"				"Concept" 	"TLK_PLAYER_NO"					required
+criterion "ConceptPlayerIncoming"		"Concept" 	"TLK_PLAYER_INCOMING"			required
+criterion "ConceptPlayerTaunts"			"Concept" 	"TLK_PLAYER_TAUNTS"				required
+criterion "ConceptPlayerBattlecry"		"Concept" 	"TLK_PLAYER_BATTLECRY"			required
+criterion "ConceptPlayerCheers"			"Concept" 	"TLK_PLAYER_CHEERS"				required
+criterion "ConceptPlayerJeers"			"Concept" 	"TLK_PLAYER_JEERS"				required
+criterion "ConceptPlayerPositive"		"Concept" 	"TLK_PLAYER_POSITIVE"			required
+criterion "ConceptPlayerNegative"		"Concept" 	"TLK_PLAYER_NEGATIVE"			required
+criterion "ConceptPlayerNiceShot"		"Concept" 	"TLK_PLAYER_NICESHOT"			required
+criterion "ConceptPlayerGoodJob"		"Concept" 	"TLK_PLAYER_GOODJOB"			required
+criterion "ConceptFlagPickup"			"Concept" 	"TLK_FLAGPICKUP"				required
+criterion "ConceptFlagCaptured"			"Concept" 	"TLK_FLAGCAPTURED"				required
+criterion "ConceptRoundStart"			"Concept" 	"TLK_ROUND_START"				required
+criterion "ConceptLastPlayer"			"Concept" 	"TLK_SUDDENDEATH_START"			required
+criterion "ConceptOnFire"				"Concept" 	"TLK_ONFIRE"					required
+criterion "ConceptStalemate"			"Concept" 	"TLK_STALEMATE"					required
+criterion "ConceptBuildingObject"		"Concept" 	"TLK_BUILDING_OBJECT"			required
+criterion "ConceptLostObject"			"Concept" 	"TLK_LOST_OBJECT"				required
+criterion "ConceptLostControlPoint"		"Concept" 	"TLK_LOST_CONTROL_POINT"		required
+criterion "ConceptCapturedPoint"		"Concept" 	"TLK_CAPTURED_POINT"			required
+criterion "ConceptCaptureBlocked"		"Concept" 	"TLK_CAPTURE_BLOCKED"			required
+criterion "ConceptDied"					"Concept" 	"TLK_DIED"						required
+criterion "ConceptPlayerThanks"			"Concept" 	"TLK_PLAYER_THANKS"				required
+criterion "ConceptHeardSomething"		"Concept" 	"TLK_HEARD_SOMETHING"			required
+criterion "ConceptReloading"			"Concept"	"TLK_RELOADING"					required
+criterion "ConceptThrowingGrenade"		"Concept"	"TLK_THROWING_GRENADE"			required
+criterion "ConceptPlantingExplosive"	"Concept"	"TLK_PLANTING_EXPLOSIVE"		required
+criterion "ConceptDetonatingExplosive"	"Concept"	"TLK_DETONATING_EXPLOSIVE"		required
+criterion "ConceptFiringProjectile"		"Concept"	"TLK_FIRING_PROJECTILE"			required
+criterion "ConceptPlayerIdle"			"Concept"	"TLK_PLAYER_IDLE"				required
+criterion "ConceptFireWeaponSuppression" "Concept"	"TLK_FIREWEAPON_SUPPRESSION"	required
+criterion "ConceptInvestigate"			"Concept"	"TLK_INVESTIGATE"				required
+criterion "ConceptFriendlyFire"			"Concept"	"TLK_FRIENDLY_FIRE"				required
+criterion "ConceptFriendlyDown"			"Concept"	"TLK_FRIENDLY_DOWN"				required
+criterion "ConceptBeingSuppressed"		"Concept"	"TLK_BEING_SUPPRESSED"			required
+criterion "ConceptFlashed"				"Concept"	"TLK_FLASHED"					required
+criterion "ConceptCoopSpottedRPG"		"Concept"	"TLK_SPOTTED_RPG"				required
+criterion "ConceptCoopBotLostSight"		"Concept"	"TLK_BOT_LOST_SIGHT"			required
+criterion "ConceptAOEGrenadeDetonate"	"Concept"	"TLK_AOE_GRENADE_DETONATE"		required
+
+// Radial Menu
+criterion "ConceptRadialAffirmative"	"Concept"	"TLK_RADIAL_AFFIRMATIVE"		required
+criterion "ConceptRadialNegative"		"Concept"	"TLK_RADIAL_NEGATIVE"			required
+criterion "ConceptRadialEnemy"			"Concept"	"TLK_RADIAL_ENEMY"				required
+criterion "ConceptRadialMoving"			"Concept"	"TLK_RADIAL_MOVING"				required
+criterion "ConceptRadialHostile"		"Concept"	"TLK_RADIAL_AREA_HOSTILE"		required
+criterion "ConceptRadialBackup"			"Concept"	"TLK_RADIAL_NEED_BACKUP"		required
+criterion "ConceptRadialEnemyDown"		"Concept"	"TLK_RADIAL_ENEMY_DOWN"			required
+criterion "ConceptRadialCovering"		"Concept"	"TLK_RADIAL_COVERING"			required
+criterion "ConceptRadialClear"			"Concept"	"TLK_RADIAL_AREA_CLEAR"			required
+criterion "ConceptRadialOnTheWay"		"Concept"	"TLK_RADIAL_ONTHEWAY"			required
+criterion "ConceptRadialObjective"		"Concept"	"TLK_RADIAL_OBJECTIVE"			required
+
+//criterion "ConceptRadialOpenFire"		"Concept"	"TLK_RADIAL_OPEN_FIRE"			required
+criterion "ConceptRadialMoveDirection"	"Concept"	"TLK_RADIAL_MOVE_DIRECTION"		required
+criterion "ConceptRadialFlankLeft"		"Concept"	"TLK_RADIAL_FLANK_LEFT"			required
+criterion "ConceptRadialFlankRight"		"Concept"	"TLK_RADIAL_FLANK_RIGHT"		required
+criterion "ConceptRadialGetReady"		"Concept"	"TLK_RADIAL_GET_READY"			required
+criterion "ConceptRadialCeaseFire"		"Concept"	"TLK_RADIAL_CEASE_FIRE"			required
+criterion "ConceptRadialWatchArea"		"Concept"	"TLK_RADIAL_WATCH_AREA"			required
+criterion "ConceptRadialGo"				"Concept"	"TLK_RADIAL_GO"					required
+criterion "ConceptRadialReportStatus"	"Concept"	"TLK_RADIAL_REPORT_STATUS"		required
+criterion "ConceptRadialStickTogether"	"Concept"	"TLK_RADIAL_STICK_TOGETHER"		required
+criterion "ConceptRadialSpreadOut"		"Concept"	"TLK_RADIAL_SPREAD_OUT"			required
+criterion "ConceptRadialHoldPosition"	"Concept"	"TLK_RADIAL_HOLD_POSITION"		required
+
+//survival mode
+criterion "ConceptInvestigateAggressive""Concept"	"TLK_INVESTIGATE_AGGRESSIVE"	required
+criterion "ConceptFlashlightSpotted"	"Concept"	"TLK_FLASHLIGHT_SPOTTED"		required
+criterion "ConceptIncomingGrenade"		"Concept"	"TLK_INCOMING_GRENADE"			required

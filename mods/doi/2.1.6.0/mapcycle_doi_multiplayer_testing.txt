@@ -1,0 +1,5 @@
+doi_landfall invasion
+doi_landfall push
+doi_landfall skirmish
+doi_landfall firefight
+doi_landfall occupy

@@ -1,0 +1,225 @@
+"#base" "swat.theater"
+
+"theater"
+{
+	"core"
+	{
+		"precache"
+		{
+			// default theater specific sounds
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			"sounds"			"scripts/swat_sounds_cues.txt"
+			"sounds"			"scripts/ins_sounds_voice.txt"
+			"sounds"			"scripts/swat_sounds_radial_security.txt"				
+			"sounds"			"scripts/ins_sounds_radial_insurgent.txt"			
+			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
+			"sounds"			"scripts/swat_sounds_responses_security.txt"
+			"sounds"			"scripts/swat_sounds_hq.txt"
+			"sounds"			"scripts/swat_game_sounds_player.txt"
+			
+			// coop specific
+			"sounds"			"scripts/ins_sounds_voice_coop.txt"
+		}
+	}
+	
+	
+	"player_templates"
+	{
+		"template_rifleman_security"
+		{
+			"team"						"security"
+			"print_name"				"#Squad_Fireteam_Rifleman"
+			
+			"models"
+			{
+				"player"				"models/characters/security_rifleman.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_m.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_rig"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_gakarov"
+				"weapon"				"weapon_anm14"
+				"weapon"				"weapon_m84"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nova"		
+				"weapon"				"weapon_anm14"
+				"weapon"				"weapon_g18"
+				"weapon"				"weapon_gakarov"
+				"weapon"				"weapon_m17a4"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_m59m"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_mp5a" 
+				"weapon"				"weapon_mk1g"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_c4_clicker"
+				"weapon_upgrade"		"barrel_silencer_sec1"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_m4a1"				"1"
+				}
+				"weapon_upgrade"
+				{
+					"underbarrel_foregrip_sec1"	"1"
+					"underbarrel_foregrip_sec2"	"1"
+				}
+			}
+		}
+		
+		// 
+		// BEGIN PLACEHOLDER BOT CLASS TEMPLATES
+		// 
+		"template_coop_specialist"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Specialist"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				//"viewmodel_hands"			"models/weapons/v_hands_ins_m.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_makarov"
+
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_galil"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_anm14"
+			}
+		}
+		"template_coop_fighter"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Fighter"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_fighter.mdl"
+				//"viewmodel_hands"			"models/weapons/v_hands_ins_m.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_akm""
+				// "weapon_upgrade"	"ins_foregrip"
+				"weapon"				"weapon_molotov"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"template_coop_machinegunner"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_MachineGunner"
+				"weapon"				"weapon_makarov"			
+			"models"
+			{
+				"player"				"models/characters/insurgent_machinegunner.mdl"
+				//"viewmodel_hands"			"models/weapons/v_hands_ins_m.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"template_coop_sapper"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Sapper"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_sapper.mdl"
+				//"viewmodel_hands"			"models/weapons/v_hands_ins_l.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_makarov"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_sterling"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_rpg7"
+				"weapon"				"weapon_kabar"
+			}
+		}
+		"template_coop_sharpshooter"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Sharpshooter"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+				//"viewmodel_hands"			"models/weapons/v_hands_ins_l.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_kabar"
+				// "weapon"			"weapon_makarov"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+			}
+		}
+		// 
+		// END PLACEHOLDER BOT CLASS TEMPLATES
+		// 
+	}
+}

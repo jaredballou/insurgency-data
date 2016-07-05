@@ -1,0 +1,8 @@
+UnlitGeneric
+{
+	$translucent 1
+	"$basetexture" "vgui/backgrounds/maps/clean_sweep_op_hunt"
+	$vertexalpha 1
+	$no_fullbright 1
+	$ignorez 1
+}

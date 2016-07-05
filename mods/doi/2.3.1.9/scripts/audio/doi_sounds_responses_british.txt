@@ -1,0 +1,95 @@
+// Squad_Lead_British
+
+//Reloading
+
+"Voice_Response_British.Lead_Reloading"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/british/squadlead/reloading1.ogg"
+		"wave"		"player/voice/responses/british/squadlead/reloading2.ogg"
+		"wave"		"player/voice/responses/british/squadlead/reloading3.ogg"
+		"wave"		"player/voice/responses/british/squadlead/reloading4.ogg"
+		"wave"		"player/voice/responses/british/squadlead/reloading5.ogg"
+		"wave"		"player/voice/responses/british/squadlead/reloading6.ogg"
+		"wave"		"player/voice/responses/british/squadlead/reloading7.ogg"
+		"wave"		"player/voice/responses/british/squadlead/reloading8.ogg"
+		"wave"		"player/voice/responses/british/squadlead/reloading9.ogg"
+		"wave"		"player/voice/responses/british/squadlead/reloading10.ogg"		
+	}	
+}
+
+//Being Suppressed
+
+"Voice_Response_British.Lead_UnderSuppression"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression1.ogg"			
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression2.ogg"		
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression3.ogg"		
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression4.ogg"		
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression5.ogg"		
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression6.ogg"		
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression7.ogg"		
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression8.ogg"		
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression9.ogg"		
+		"wave"		"player/voice/responses/british/squadlead/generalsuppression10.ogg"				
+	}	
+}
+
+// Subordinate_British
+
+//Reloading
+
+"Voice_Response_British.Sub_Reloading"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/british/subordinate/reloading1.ogg"
+		"wave"		"player/voice/responses/british/subordinate/reloading2.ogg"
+		"wave"		"player/voice/responses/british/subordinate/reloading3.ogg"
+		"wave"		"player/voice/responses/british/subordinate/reloading4.ogg"
+		"wave"		"player/voice/responses/british/subordinate/reloading5.ogg"
+		"wave"		"player/voice/responses/british/subordinate/reloading6.ogg"
+		"wave"		"player/voice/responses/british/subordinate/reloading7.ogg"
+		"wave"		"player/voice/responses/british/subordinate/reloading8.ogg"
+		"wave"		"player/voice/responses/british/subordinate/reloading9.ogg"
+		"wave"		"player/voice/responses/british/subordinate/reloading10.ogg"		
+	}	
+}
+
+//Being Suppressed
+
+"Voice_Response_British.Sub_UnderSuppression"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression1.ogg"			
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression2.ogg"		
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression3.ogg"		
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression4.ogg"		
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression5.ogg"		
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression6.ogg"		
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression7.ogg"		
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression8.ogg"		
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression9.ogg"		
+		"wave"		"player/voice/responses/british/subordinate/generalsuppression10.ogg"				
+	}	
+}

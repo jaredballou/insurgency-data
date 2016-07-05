@@ -1,0 +1,165 @@
+// Squad_Lead_American
+
+"Bot.America_SquadLead.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/america/squadlead/alert1.ogg"
+		"wave"		"player/voice/bot/america/squadlead/alert2.ogg"
+		"wave"		"player/voice/bot/america/squadlead/alert3.ogg"
+		"wave"		"player/voice/bot/america/squadlead/alert4.ogg"
+		"wave"		"player/voice/bot/america/squadlead/alert5.ogg"		
+	}	
+}
+
+"Bot.America_SquadLead.Engaging"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/america/squadlead/engaging1.ogg"
+		"wave"		"player/voice/bot/america/squadlead/engaging2.ogg"
+		"wave"		"player/voice/bot/america/squadlead/engaging3.ogg"
+		"wave"		"player/voice/bot/america/squadlead/engaging4.ogg"
+		"wave"		"player/voice/bot/america/squadlead/engaging5.ogg"		
+	}	
+}
+
+// Subordinate_American
+
+"Bot.America_Subordinate.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/america/subordinate/alert1.ogg"
+		"wave"		"player/voice/bot/america/subordinate/alert2.ogg"
+		"wave"		"player/voice/bot/america/subordinate/alert3.ogg"
+		"wave"		"player/voice/bot/america/subordinate/alert4.ogg"
+		"wave"		"player/voice/bot/america/subordinate/alert5.ogg"		
+	}	
+}
+
+"Bot.America_Subordinate.Engaging"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/america/subordinate/engaging1.ogg"
+		"wave"		"player/voice/bot/america/subordinate/engaging2.ogg"
+		"wave"		"player/voice/bot/america/subordinate/engaging3.ogg"
+		"wave"		"player/voice/bot/america/subordinate/engaging4.ogg"
+		"wave"		"player/voice/bot/america/subordinate/engaging5.ogg"		
+	}	
+}
+
+// Squad_Lead_British
+
+"Bot.British_SquadLead.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/british/squadlead/alert1.ogg"
+		"wave"		"player/voice/bot/british/squadlead/alert2.ogg"
+		"wave"		"player/voice/bot/british/squadlead/alert3.ogg"
+		"wave"		"player/voice/bot/british/squadlead/alert4.ogg"
+		"wave"		"player/voice/bot/british/squadlead/alert5.ogg"		
+	}	
+}
+
+"Bot.British_SquadLead.Engaging"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/british/squadlead/engaging1.ogg"
+		"wave"		"player/voice/bot/british/squadlead/engaging2.ogg"
+		"wave"		"player/voice/bot/british/squadlead/engaging3.ogg"
+		"wave"		"player/voice/bot/british/squadlead/engaging4.ogg"
+		"wave"		"player/voice/bot/british/squadlead/engaging5.ogg"		
+	}	
+}
+
+// Subordinate_British
+
+"Bot.British_Subordinate.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/british/subordinate/alert1.ogg"
+		"wave"		"player/voice/bot/british/subordinate/alert2.ogg"
+		"wave"		"player/voice/bot/british/subordinate/alert3.ogg"
+		"wave"		"player/voice/bot/british/subordinate/alert4.ogg"
+		"wave"		"player/voice/bot/british/subordinate/alert5.ogg"		
+	}	
+}
+
+"Bot.British_Subordinate.Engaging"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/british/subordinate/engaging1.ogg"
+		"wave"		"player/voice/bot/british/subordinate/engaging2.ogg"
+		"wave"		"player/voice/bot/british/subordinate/engaging3.ogg"
+		"wave"		"player/voice/bot/british/subordinate/engaging4.ogg"
+		"wave"		"player/voice/bot/british/subordinate/engaging5.ogg"		
+	}	
+}
+
+// Bot Generic
+
+"Bot.Generic.Retreat"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/generic/retreat1.ogg"
+		"wave"		"player/voice/bot/generic/retreat2.ogg"		
+		"wave"		"player/voice/bot/generic/retreat3.ogg"
+		"wave"		"player/voice/bot/generic/retreat4.ogg"	
+		"wave"		"player/voice/bot/generic/retreat5.ogg"
+		"wave"		"player/voice/bot/generic/retreat6.ogg"	
+		"wave"		"player/voice/bot/generic/retreat7.ogg"
+		"wave"		"player/voice/bot/generic/retreat8.ogg"			
+	}	
+}
+
+"Bot.Generic.Melee"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{			
+		"wave"		"player/voice/bot/generic/stabslash1.ogg"
+		"wave"		"player/voice/bot/generic/stabslash2.ogg"
+		"wave"		"player/voice/bot/generic/stabslash3.ogg"
+		"wave"		"player/voice/bot/generic/stabslash4.ogg"
+		"wave"		"player/voice/bot/generic/stabslash5.ogg"
+		"wave"		"player/voice/bot/generic/stabslash6.ogg"
+		"wave"		"player/voice/bot/generic/stabslash7.ogg"
+		"wave"		"player/voice/bot/generic/stabslash8.ogg"		
+	}	
+}

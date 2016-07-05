@@ -1,0 +1,28 @@
+---
+name: Day of Infamy
+desc: WWII Mod
+author: New World Interactive
+steamid: dayofinfamy
+url: 
+email: 
+# List of workshop files that should be used to extract game files
+workshop:
+  files:
+    - 601757902 # Day of Infamy
+    - 601789279 # Day of Infamy - Bastogne
+    - 601791962 # Day of Infamy - Dog Red
+    - 604412679 # Day of Infamy - Bastogne Night
+    - 608694820 # doi_landfall
+    - 613021926 # Day of Infamy - Carentan
+    - 623454326 # Bridge at Remagen
+    - 643884052 # doi_metz
+  collections:
+    - 604418860 # Day of Infamy
+# List of maps that are affiliated with this mod
+maps:
+  - doi_bastogne
+  - doi_bastogne_night
+  - doi_dog_red
+  - doi_landfall
+  - doi_ps7
+  - doi_ps7_beta01

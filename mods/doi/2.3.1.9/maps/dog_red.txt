@@ -1,0 +1,181 @@
+"cpsetup.txt"
+{
+
+	"compassOffset" "180"
+
+	"navfile"   		"dog_red"
+	"nightlighting"		"0"
+		
+	"offensive"
+	{
+		"TeamOne"           "americans"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		"controlpoint"		"pushpoint_01"
+		"controlpoint"		"pushpoint_02"
+		"controlpoint"		"pushpoint_03"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_1"
+			"1"  "spawnzone_2"
+			"2"  "spawnzone_3"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"-2382 9400 679"
+				"angles"		"0 90 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-2382 9400 751"
+				"angles"		"0 0 0"
+				"targetname"	"radiopoint_final"
+			}		
+		}	
+	}
+	
+	"stronghold"
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+	    "controlpoint"		"cap_stronghold_01"
+	    "controlpoint"		"cap_stronghold_02"
+		"controlpoint"		"pushpoint_02"
+		"controlpoint"		"pushpoint_03"
+	    "controlpoint"		"cap_stronghold_03"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"-269.624268 -3293.623779 -289.451599"
+				"location_axis"						"-197.332520 3832.171387 510.487915"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				"location_allies"					"-2137.491211 -3170.633301 -276.152832"
+				"location_axis"						"-8.710751 5015.974121 304.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				"location_allies"					"1591.023926 -3107.254883 -280.874664"
+				"location_axis"						"-8.710751 5015.974121 304.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				"location_allies"					"-147.860397 1619.225830 -9.365326"
+				"location_axis"						"-1628.886597 6950.819336 396.000854"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				"location_allies"					"-168.165985 2714.813232 232.031250"
+				"location_axis"						"-836.528748 9199.102539 616.508789"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_axis"						"-2469.308838 9826.300781 687.639221"
+			}
+			
+			"fallback_spawns"
+			{
+				"location_allies"					"-269.624268 -3293.623779 -289.451599"
+				"location_axis"						"-2469.308838 9826.300781 687.639221"
+			}
+		}
+	}
+	
+	"entrenchment"
+	{
+		"TeamOne"           "americans"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+	    "controlpoint"		"cap_stronghold_01"
+	    "controlpoint"		"cap_stronghold_02"
+		"controlpoint"		"pushpoint_02"
+		"controlpoint"		"pushpoint_03"
+	    "controlpoint"		"cap_stronghold_03"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"-269.624268 -3293.623779 -289.451599"
+				"location_axis"						"-197.332520 3832.171387 510.487915"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				"location_allies"					"-2137.491211 -3170.633301 -276.152832"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				"location_allies"					"1591.023926 -3107.254883 -280.874664"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				"location_allies"					"-147.860397 1619.225830 -9.365326"
+				"location_axis"						"-150.173340 3160.475830 232.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				"location_allies"					"-168.165985 2714.813232 232.031250"
+				"location_axis"						"-1610.896240 6951.197266 394.919708"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_axis"						"-2073.970459 9580.122070 640.031250"
+			}
+			
+			"fallback_spawns"
+			{
+				"location_allies"					"-269.624268 -3293.623779 -289.451599"
+				"location_axis"						"-2073.970459 9580.122070 640.031250"
+			}	
+		}
+	}
+}

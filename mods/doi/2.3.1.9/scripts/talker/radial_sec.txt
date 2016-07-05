@@ -1,0 +1,2197 @@
+
+// 
+// Squad Leader Specific Radial Commands
+//
+// OpenFire
+Response Sec_Leader_OpenFire_UnSupp_N { 
+	speak "Radial_Security.Leader_UnSupp_OpenFireNorth" noscene 
+}
+Response Sec_Leader_OpenFire_UnSupp_NE {
+	speak "Radial_Security.Leader_UnSupp_OpenFireNorthEast" noscene
+}
+Response Sec_Leader_OpenFire_UnSupp_E {
+	speak "Radial_Security.Leader_UnSupp_OpenFireEast" noscene
+}
+Response Sec_Leader_OpenFire_UnSupp_SE {
+	speak "Radial_Security.Leader_UnSupp_OpenFireSouthEast" noscene
+}
+Response Sec_Leader_OpenFire_UnSupp_S {
+	speak "Radial_Security.Leader_UnSupp_OpenFireSouth" noscene
+}
+Response Sec_Leader_OpenFire_UnSupp_SW {
+	speak "Radial_Security.Leader_UnSupp_OpenFireSouthWest" noscene
+}
+Response Sec_Leader_OpenFire_UnSupp_W {
+	speak "Radial_Security.Leader_UnSupp_OpenFireWest" noscene
+}
+Response Sec_Leader_OpenFire_UnSupp_NW {
+	speak "Radial_Security.Leader_UnSupp_OpenFireNorthWest" noscene
+}
+
+Response Sec_Leader_OpenFire_Supp_N { 
+	speak "Radial_Security.Leader_Supp_OpenFireNorth" noscene 
+}
+Response Sec_Leader_OpenFire_Supp_NE {
+	speak "Radial_Security.Leader_Supp_OpenFireNorthEast" noscene
+}
+Response Sec_Leader_OpenFire_Supp_E {
+	speak "Radial_Security.Leader_Supp_OpenFireEast" noscene
+}
+Response Sec_Leader_OpenFire_Supp_SE {
+	speak "Radial_Security.Leader_Supp_OpenFireSouthEast" noscene
+}
+Response Sec_Leader_OpenFire_Supp_S {
+	speak "Radial_Security.Leader_Supp_OpenFireSouth" noscene
+}
+Response Sec_Leader_OpenFire_Supp_SW {
+	speak "Radial_Security.Leader_Supp_OpenFireSouthWest" noscene
+}
+Response Sec_Leader_OpenFire_Supp_W {
+	speak "Radial_Security.Leader_Supp_OpenFireWest" noscene
+}
+Response Sec_Leader_OpenFire_Supp_NW {
+	speak "Radial_Security.Leader_Supp_OpenFireNorthWest" noscene
+}
+
+Rule Sec_Leader_OpenFire_UnSupp_N {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorth
+	response		Sec_Leader_OpenFire_UnSupp_N
+}	
+Rule Sec_Leader_OpenFire_UnSupp_NE {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthEast
+	response		Sec_Leader_OpenFire_UnSupp_NE
+}	
+Rule Sec_Leader_OpenFire_UnSupp_E {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsEast
+	response		Sec_Leader_OpenFire_UnSupp_E
+}	
+Rule Sec_Leader_OpenFire_UnSupp_SE {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthEast
+	response		Sec_Leader_OpenFire_UnSupp_SE
+}	
+Rule Sec_Leader_OpenFire_UnSupp_S {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouth
+	response		Sec_Leader_OpenFire_UnSupp_S
+}	
+Rule Sec_Leader_OpenFire_UnSupp_SW {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthWest
+	response		Sec_Leader_OpenFire_UnSupp_SW
+}	
+Rule Sec_Leader_OpenFire_UnSupp_W {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsWest
+	response		Sec_Leader_OpenFire_UnSupp_W
+}	
+Rule Sec_Leader_OpenFire_UnSupp_NW {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthWest
+	response		Sec_Leader_OpenFire_UnSupp_NW
+}	
+
+Rule Sec_Leader_OpenFire_Supp_N {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsNorth
+	response		Sec_Leader_OpenFire_Supp_N
+}	
+Rule Sec_Leader_OpenFire_Supp_NE {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsNorthEast
+	response		Sec_Leader_OpenFire_Supp_NE
+}	
+Rule Sec_Leader_OpenFire_Supp_E {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsEast
+	response		Sec_Leader_OpenFire_Supp_E
+}	
+Rule Sec_Leader_OpenFire_Supp_SE {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsSouthEast
+	response		Sec_Leader_OpenFire_Supp_SE
+}	
+Rule Sec_Leader_OpenFire_Supp_S {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsSouth
+	response		Sec_Leader_OpenFire_Supp_S
+}	
+Rule Sec_Leader_OpenFire_Supp_SW {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsSouthWest
+	response		Sec_Leader_OpenFire_Supp_SW
+}	
+Rule Sec_Leader_OpenFire_Supp_W {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsWest
+	response		Sec_Leader_OpenFire_Supp_W
+}	
+Rule Sec_Leader_OpenFire_Supp_NW {
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsNorthWest
+	response		Sec_Leader_OpenFire_Supp_NW
+}	
+
+Response Sec_Leader_MoveDirection_UnSupp_N { 
+	speak "Radial_Security.Leader_UnSupp_MoveToNorth" noscene 
+}
+Response Sec_Leader_MoveDirection_UnSupp_NE {
+	speak "Radial_Security.Leader_UnSupp_MoveToNorthEast" noscene
+}
+Response Sec_Leader_MoveDirection_UnSupp_E {
+	speak "Radial_Security.Leader_UnSupp_MoveToEast" noscene
+}
+Response Sec_Leader_MoveDirection_UnSupp_SE {
+	speak "Radial_Security.Leader_UnSupp_MoveToSouthEast" noscene
+}
+Response Sec_Leader_MoveDirection_UnSupp_S {
+	speak "Radial_Security.Leader_UnSupp_MoveToSouth" noscene
+}
+Response Sec_Leader_MoveDirection_UnSupp_SW {
+	speak "Radial_Security.Leader_UnSupp_MoveToSouthWest" noscene
+}
+Response Sec_Leader_MoveDirection_UnSupp_W {
+	speak "Radial_Security.Leader_UnSupp_MoveToWest" noscene
+}
+Response Sec_Leader_MoveDirection_UnSupp_NW {
+	speak "Radial_Security.Leader_UnSupp_MoveToNorthWest" noscene
+}
+
+Response Sec_Leader_MoveDirection_Supp_N { 
+	speak "Radial_Security.Leader_Supp_MoveToNorth" noscene 
+}
+Response Sec_Leader_MoveDirection_Supp_NE {
+	speak "Radial_Security.Leader_Supp_MoveToNorthEast" noscene
+}
+Response Sec_Leader_MoveDirection_Supp_E {
+	speak "Radial_Security.Leader_Supp_MoveToEast" noscene
+}
+Response Sec_Leader_MoveDirection_Supp_SE {
+	speak "Radial_Security.Leader_Supp_MoveToSouthEast" noscene
+}
+Response Sec_Leader_MoveDirection_Supp_S {
+	speak "Radial_Security.Leader_Supp_MoveToSouth" noscene
+}
+Response Sec_Leader_MoveDirection_Supp_SW {
+	speak "Radial_Security.Leader_Supp_MoveToSouthWest" noscene
+}
+Response Sec_Leader_MoveDirection_Supp_W {
+	speak "Radial_Security.Leader_Supp_MoveToWest" noscene
+}
+Response Sec_Leader_MoveDirection_Supp_NW {
+	speak "Radial_Security.Leader_Supp_MoveToNorthWest" noscene
+}
+
+Rule Sec_Leader_MoveDirection_UnSupp_N {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorth
+	response		Sec_Leader_MoveDirection_UnSupp_N
+}	
+Rule Sec_Leader_MoveDirection_UnSupp_NE {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthEast
+	response		Sec_Leader_MoveDirection_UnSupp_NE
+}	
+Rule Sec_Leader_MoveDirection_UnSupp_E {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam NotSuppressedRecent IsEast
+	response		Sec_Leader_MoveDirection_UnSupp_E
+}	
+Rule Sec_Leader_MoveDirection_UnSupp_SE {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthEast
+	response		Sec_Leader_MoveDirection_UnSupp_SE
+}	
+Rule Sec_Leader_MoveDirection_UnSupp_S {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouth
+	response		Sec_Leader_MoveDirection_UnSupp_S
+}	
+Rule Sec_Leader_MoveDirection_UnSupp_SW {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthWest
+	response		Sec_Leader_MoveDirection_UnSupp_SW
+}	
+Rule Sec_Leader_MoveDirection_UnSupp_W {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam NotSuppressedRecent IsWest
+	response		Sec_Leader_MoveDirection_UnSupp_W
+}	
+Rule Sec_Leader_MoveDirection_UnSupp_NW {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthWest
+	response		Sec_Leader_MoveDirection_UnSupp_NW
+}	
+
+Rule Sec_Leader_MoveDirection_Supp_N {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam SuppressedRecent IsNorth
+	response		Sec_Leader_MoveDirection_Supp_N
+}	
+Rule Sec_Leader_MoveDirection_Supp_NE {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam SuppressedRecent IsNorthEast
+	response		Sec_Leader_MoveDirection_Supp_NE
+}	
+Rule Sec_Leader_MoveDirection_Supp_E {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam SuppressedRecent IsEast
+	response		Sec_Leader_MoveDirection_Supp_E
+}	
+Rule Sec_Leader_MoveDirection_Supp_SE {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam SuppressedRecent IsSouthEast
+	response		Sec_Leader_MoveDirection_Supp_SE
+}	
+Rule Sec_Leader_MoveDirection_Supp_S {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam SuppressedRecent IsSouth
+	response		Sec_Leader_MoveDirection_Supp_S
+}	
+Rule Sec_Leader_MoveDirection_Supp_SW {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam SuppressedRecent IsSouthWest
+	response		Sec_Leader_MoveDirection_Supp_SW
+}	
+Rule Sec_Leader_MoveDirection_Supp_W {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam SuppressedRecent IsWest
+	response		Sec_Leader_MoveDirection_Supp_W
+}	
+Rule Sec_Leader_MoveDirection_Supp_NW {
+	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam SuppressedRecent IsNorthWest
+	response		Sec_Leader_MoveDirection_Supp_NW
+}	
+
+Response Sec_Leader_WatchArea_UnSupp_N { 
+	speak "Radial_Security.Leader_UnSupp_WatchNorth" noscene 
+}
+Response Sec_Leader_WatchArea_UnSupp_NE {
+	speak "Radial_Security.Leader_UnSupp_WatchNorthEast" noscene
+}
+Response Sec_Leader_WatchArea_UnSupp_E {
+	speak "Radial_Security.Leader_UnSupp_WatchEast" noscene
+}
+Response Sec_Leader_WatchArea_UnSupp_SE {
+	speak "Radial_Security.Leader_UnSupp_WatchSouthEast" noscene
+}
+Response Sec_Leader_WatchArea_UnSupp_S {
+	speak "Radial_Security.Leader_UnSupp_WatchSouth" noscene
+}
+Response Sec_Leader_WatchArea_UnSupp_SW {
+	speak "Radial_Security.Leader_UnSupp_WatchSouthWest" noscene
+}
+Response Sec_Leader_WatchArea_UnSupp_W {
+	speak "Radial_Security.Leader_UnSupp_WatchWest" noscene
+}
+Response Sec_Leader_WatchArea_UnSupp_NW {
+	speak "Radial_Security.Leader_UnSupp_WatchNorthWest" noscene
+}
+
+Response Sec_Leader_WatchArea_Supp_N { 
+	speak "Radial_Security.Leader_Supp_WatchNorth" noscene 
+}
+Response Sec_Leader_WatchArea_Supp_NE {
+	speak "Radial_Security.Leader_Supp_WatchNorthEast" noscene
+}
+Response Sec_Leader_WatchArea_Supp_E {
+	speak "Radial_Security.Leader_Supp_WatchEast" noscene
+}
+Response Sec_Leader_WatchArea_Supp_SE {
+	speak "Radial_Security.Leader_Supp_WatchSouthEast" noscene
+}
+Response Sec_Leader_WatchArea_Supp_S {
+	speak "Radial_Security.Leader_Supp_WatchSouth" noscene
+}
+Response Sec_Leader_WatchArea_Supp_SW {
+	speak "Radial_Security.Leader_Supp_WatchSouthWest" noscene
+}
+Response Sec_Leader_WatchArea_Supp_W {
+	speak "Radial_Security.Leader_Supp_WatchWest" noscene
+}
+Response Sec_Leader_WatchArea_Supp_NW {
+	speak "Radial_Security.Leader_Supp_WatchNorthWest" noscene
+}
+
+Rule Sec_Leader_WatchArea_UnSupp_N {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorth
+	response		Sec_Leader_WatchArea_UnSupp_N
+}	
+Rule Sec_Leader_WatchArea_UnSupp_NE {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthEast
+	response		Sec_Leader_WatchArea_UnSupp_NE
+}	
+Rule Sec_Leader_WatchArea_UnSupp_E {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam NotSuppressedRecent IsEast
+	response		Sec_Leader_WatchArea_UnSupp_E
+}	
+Rule Sec_Leader_WatchArea_UnSupp_SE {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthEast
+	response		Sec_Leader_WatchArea_UnSupp_SE
+}	
+Rule Sec_Leader_WatchArea_UnSupp_S {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouth
+	response		Sec_Leader_WatchArea_UnSupp_S
+}	
+Rule Sec_Leader_WatchArea_UnSupp_SW {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthWest
+	response		Sec_Leader_WatchArea_UnSupp_SW
+}	
+Rule Sec_Leader_WatchArea_UnSupp_W {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam NotSuppressedRecent IsWest
+	response		Sec_Leader_WatchArea_UnSupp_W
+}	
+Rule Sec_Leader_WatchArea_UnSupp_NW {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthWest
+	response		Sec_Leader_WatchArea_UnSupp_NW
+}	
+
+Rule Sec_Leader_WatchArea_Supp_N {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam SuppressedRecent IsNorth
+	response		Sec_Leader_WatchArea_Supp_N
+}	
+Rule Sec_Leader_WatchArea_Supp_NE {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam SuppressedRecent IsNorthEast
+	response		Sec_Leader_WatchArea_Supp_NE
+}	
+Rule Sec_Leader_WatchArea_Supp_E {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam SuppressedRecent IsEast
+	response		Sec_Leader_WatchArea_Supp_E
+}	
+Rule Sec_Leader_WatchArea_Supp_SE {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam SuppressedRecent IsSouthEast
+	response		Sec_Leader_WatchArea_Supp_SE
+}	
+Rule Sec_Leader_WatchArea_Supp_S {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam SuppressedRecent IsSouth
+	response		Sec_Leader_WatchArea_Supp_S
+}	
+Rule Sec_Leader_WatchArea_Supp_SW {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam SuppressedRecent IsSouthWest
+	response		Sec_Leader_WatchArea_Supp_SW
+}	
+Rule Sec_Leader_WatchArea_Supp_W {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam SuppressedRecent IsWest
+	response		Sec_Leader_WatchArea_Supp_W
+}	
+Rule Sec_Leader_WatchArea_Supp_NW {
+	criteria		ConceptRadialWatchArea IsSquadLeader OnSecurityTeam SuppressedRecent IsNorthWest
+	response		Sec_Leader_WatchArea_Supp_NW
+}	
+
+Response Sec_Leader_FlankLeft_UnSupp_N { 
+	speak "Radial_Security.Leader_UnSupp_FlankLeft" noscene 
+}
+Response Sec_Leader_FlankLeft_Supp_N { 
+	speak "Radial_Security.Leader_Supp_FlankLeft" noscene 
+}
+
+Rule Sec_Leader_FlankLeft_UnSupp_N {
+	criteria		ConceptRadialFlankLeft IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Leader_FlankLeft_UnSupp_N
+}
+Rule Sec_Leader_FlankLeft_Supp_N {
+	criteria		ConceptRadialFlankLeft IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Leader_FlankLeft_Supp_N
+}
+
+Response Sec_Leader_FlankRight_UnSupp_N { 
+	speak "Radial_Security.Leader_UnSupp_FlankRight" noscene 
+}
+Response Sec_Leader_FlankRight_Supp_N { 
+	speak "Radial_Security.Leader_Supp_FlankRight" noscene 
+}
+
+Rule Sec_Leader_FlankRight_UnSupp_N {
+	criteria		ConceptRadialFlankRight IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Leader_FlankRight_UnSupp_N
+}
+Rule Sec_Leader_FlankRight_Supp_N {
+	criteria		ConceptRadialFlankRight IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Leader_FlankRight_Supp_N
+}
+
+// Response Sec_Leader_GetReady_UnSupp_N { 
+// 	speak "Radial_Security.Leader_UnSupp_GetReady" noscene 
+// }
+// Response Sec_Leader_GetReady_Supp_N { 
+// 	speak "Radial_Security.Leader_Supp_GetReady" noscene 
+// }
+
+// Rule Sec_Leader_GetReady_UnSupp_N {
+// 	criteria		ConceptRadialGetReady IsSquadLeader OnSecurityTeam NotSuppressedRecent
+// 	response		Sec_Leader_GetReady_UnSupp_N
+// }
+// Rule Sec_Leader_GetReady_Supp_N {
+// 	criteria		ConceptRadialGetReady IsSquadLeader OnSecurityTeam SuppressedRecent
+// 	response		Sec_Leader_GetReady_Supp_N
+// }
+
+Response Sec_Leader_CeaseFire_UnSupp_N { 
+	speak "Radial_Security.Leader_UnSupp_CeaseFire" noscene 
+}
+Response Sec_Leader_CeaseFire_Supp_N { 
+	speak "Radial_Security.Leader_Supp_CeaseFire" noscene 
+}
+
+Rule Sec_Leader_CeaseFire_UnSupp_N {
+	criteria		ConceptRadialCeaseFire IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Leader_CeaseFire_UnSupp_N
+}
+Rule Sec_Leader_CeaseFire_Supp_N {
+	criteria		ConceptRadialCeaseFire IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Leader_CeaseFire_Supp_N
+}
+
+Response Sec_Leader_Go_UnSupp_N { 
+	speak "Radial_Security.Leader_UnSupp_Go" noscene 
+}
+Response Sec_Leader_Go_Supp_N { 
+	speak "Radial_Security.Leader_Supp_Go" noscene 
+}
+
+Rule Sec_Leader_Go_UnSupp_N {
+	criteria		ConceptRadialGo IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Leader_Go_UnSupp_N
+}
+Rule Sec_Leader_Go_Supp_N {
+	criteria		ConceptRadialGo IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Leader_Go_Supp_N
+}
+
+Response Sec_Leader_ReportStatus_UnSupp_N { 
+	speak "Radial_Security.Leader_UnSupp_ReportStatus" noscene 
+}
+Response Sec_Leader_ReportStatus_Supp_N { 
+	speak "Radial_Security.Leader_Supp_ReportStatus" noscene 
+}
+
+Rule Sec_Leader_ReportStatus_UnSupp_N {
+	criteria		ConceptRadialReportStatus IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Leader_ReportStatus_UnSupp_N
+}
+Rule Sec_Leader_ReportStatus_Supp_N {
+	criteria		ConceptRadialReportStatus IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Leader_ReportStatus_Supp_N
+}
+
+Response Sec_Leader_StickTogether_UnSupp { 
+	speak "Radial_Security.Leader_UnSupp_StickTogether" noscene 
+}
+Response Sec_Leader_StickTogether_Supp { 
+	speak "Radial_Security.Leader_Supp_StickTogether" noscene 
+}
+
+Rule Sec_Leader_StickTogether_UnSupp {
+	criteria		ConceptRadialStickTogether IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Leader_StickTogether_UnSupp
+}
+Rule Sec_Leader_StickTogether_Supp {
+	criteria		ConceptRadialStickTogether IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Leader_StickTogether_Supp
+}
+
+Response Sec_Leader_SpreadOut_UnSupp { 
+	speak "Radial_Security.Leader_UnSupp_SpreadOut" noscene 
+}
+Response Sec_Leader_SpreadOut_Supp { 
+	speak "Radial_Security.Leader_Supp_SpreadOut" noscene 
+}
+
+Rule Sec_Leader_SpreadOut_UnSupp {
+	criteria		ConceptRadialSpreadOut IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Leader_SpreadOut_UnSupp
+}
+Rule Sec_Leader_SpreadOut_Supp {
+	criteria		ConceptRadialSpreadOut IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Leader_SpreadOut_Supp
+}
+
+Response Sec_Leader_HoldPosition_UnSupp { 
+	speak "Radial_Security.Leader_UnSupp_HoldPosition" noscene 
+}
+Response Sec_Leader_HoldPosition_Supp { 
+	speak "Radial_Security.Leader_Supp_HoldPosition" noscene 
+}
+
+Rule Sec_Leader_HoldPosition_UnSupp {
+	criteria		ConceptRadialHoldPosition IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Leader_HoldPosition_UnSupp
+}
+Rule Sec_Leader_HoldPosition_Supp {
+	criteria		ConceptRadialHoldPosition IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Leader_HoldPosition_Supp
+}
+
+
+// 
+// Squad Leader Radial Commands
+//
+
+// Enemy Directions
+Response Sec_Lead_Supp_Enemy_North
+{
+	speak			"Radial_Security.Leader_Supp_North" noscene
+}
+Response Sec_Lead_Supp_Enemy_NorthEast
+{
+	speak			"Radial_Security.Leader_Supp_NorthEast" noscene
+}
+Response Sec_Lead_Supp_Enemy_East
+{
+	speak			"Radial_Security.Leader_Supp_East" noscene
+}
+Response Sec_Lead_Supp_Enemy_SouthEast
+{
+	speak			"Radial_Security.Leader_Supp_SouthEast" noscene
+}
+Response Sec_Lead_Supp_Enemy_South
+{
+	speak			"Radial_Security.Leader_Supp_South" noscene
+}
+Response Sec_Lead_Supp_Enemy_SouthWest
+{
+	speak			"Radial_Security.Leader_Supp_SouthWest" noscene
+}
+Response Sec_Lead_Supp_Enemy_West
+{
+	speak			"Radial_Security.Leader_Supp_West" noscene
+}
+Response Sec_Lead_Supp_Enemy_NorthWest
+{
+	speak			"Radial_Security.Leader_Supp_NorthWest" noscene
+}
+
+Response Sec_Lead_UnSupp_Enemy_North
+{
+	speak			"Radial_Security.Leader_UnSupp_North" noscene
+}
+Response Sec_Lead_UnSupp_Enemy_NorthEast
+{
+	speak			"Radial_Security.Leader_UnSupp_NorthEast" noscene
+}
+Response Sec_Lead_UnSupp_Enemy_East
+{
+	speak			"Radial_Security.Leader_UnSupp_East" noscene
+}
+Response Sec_Lead_UnSupp_Enemy_SouthEast
+{
+	speak			"Radial_Security.Leader_UnSupp_SouthEast" noscene
+}
+Response Sec_Lead_UnSupp_Enemy_South
+{
+	speak			"Radial_Security.Leader_UnSupp_South" noscene
+}
+Response Sec_Lead_UnSupp_Enemy_SouthWest
+{
+	speak			"Radial_Security.Leader_UnSupp_SouthWest" noscene
+}
+Response Sec_Lead_UnSupp_Enemy_West
+{
+	speak			"Radial_Security.Leader_UnSupp_West" noscene
+}
+Response Sec_Lead_UnSupp_Enemy_NorthWest
+{
+	speak			"Radial_Security.Leader_UnSupp_NorthWest" noscene
+}
+Response Sec_Lead_UnSupp_Enemy_Confirm
+{
+	speak			"Voice_Security.Leader_EnemySpotted" noscene
+}
+
+// Suppressed
+Rule Sec_Lead_Supp_Enemy_North
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsNorth
+	response		Sec_Lead_Supp_Enemy_North
+}
+Rule Sec_Lead_Supp_Enemy_NorthEast
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsNorthEast
+	response		Sec_Lead_Supp_Enemy_NorthEast
+}
+Rule Sec_Lead_Supp_Enemy_East
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsEast
+	response		Sec_Lead_Supp_Enemy_East
+}
+Rule Sec_Lead_Supp_Enemy_SouthEast
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsSouthEast
+	response		Sec_Lead_Supp_Enemy_SouthEast
+}
+Rule Sec_Lead_Supp_Enemy_South
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsSouth
+	response		Sec_Lead_Supp_Enemy_South
+}
+Rule Sec_Lead_Supp_Enemy_SouthWest
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsSouthWest
+	response		Sec_Lead_Supp_Enemy_SouthWest
+}
+Rule Sec_Lead_Supp_Enemy_West
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsWest
+	response		Sec_Lead_Supp_Enemy_West
+}
+Rule Sec_Lead_Supp_Enemy_NorthWest
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam SuppressedRecent IsNorthWest
+	response		Sec_Lead_Supp_Enemy_NorthWest
+}
+
+// Unsuppressed
+Rule Sec_Lead_UnSupp_Enemy_North
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorth
+	response		Sec_Lead_UnSupp_Enemy_North
+}
+Rule Sec_Lead_UnSupp_Enemy_NorthEast
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthEast
+	response		Sec_Lead_UnSupp_Enemy_NorthEast
+}
+Rule Sec_Lead_UnSupp_Enemy_East
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsEast
+	response		Sec_Lead_UnSupp_Enemy_East
+}
+Rule Sec_Lead_UnSupp_Enemy_SouthEast
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthEast
+	response		Sec_Lead_UnSupp_Enemy_SouthEast
+}
+Rule Sec_Lead_UnSupp_Enemy_South
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouth
+	response		Sec_Lead_UnSupp_Enemy_South
+}
+Rule Sec_Lead_UnSupp_Enemy_SouthWest
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthWest
+	response		Sec_Lead_UnSupp_Enemy_SouthWest
+}
+Rule Sec_Lead_UnSupp_Enemy_West
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsWest
+	response		Sec_Lead_UnSupp_Enemy_West
+}
+Rule Sec_Lead_UnSupp_Enemy_NorthWest
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthWest
+	response		Sec_Lead_UnSupp_Enemy_NorthWest
+}
+Rule Sec_Lead_UnSupp_Enemy_Confirm
+{
+	criteria		ConceptRadialEnemy IsSquadLeader OnSecurityTeam NotSuppressedRecent IsEnemySpotRepeat
+	response		Sec_Lead_UnSupp_Enemy_Confirm
+}
+
+// Moving
+// Response Sec_Lead_UnSupp_Moving
+// {
+// 	speak			"Radial_Security.Leader_UnSupp_Moving" noscene
+// }
+// Response Sec_Lead_Supp_Moving
+// {
+// 	speak			"Radial_Security.Leader_Supp_Moving" noscene
+// }
+
+// Rule Sec_Lead_UnSupp_Moving
+// {
+// 	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam NotSuppressedRecent
+// 	response		Sec_Lead_UnSupp_Moving
+// }
+// Rule Sec_Lead_Supp_Moving
+// {
+// 	criteria		ConceptRadialMoving IsSquadLeader OnSecurityTeam SuppressedRecent
+// 	response		Sec_Lead_Supp_Moving
+// }
+
+// Hostiles
+Response Sec_Lead_UnSupp_Hostile
+{
+	speak			"Radial_Security.Leader_UnSupp_Hostiles" noscene
+}
+Response Sec_Lead_Supp_Hostile
+{
+	speak			"Radial_Security.Leader_Supp_Hostiles" noscene
+}
+
+Rule Sec_Lead_UnSupp_Hostile
+{
+	criteria		ConceptRadialHostile IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Lead_UnSupp_Hostile
+}
+Rule Sec_Lead_Supp_Hostile
+{
+	criteria		ConceptRadialHostile IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Lead_Supp_Hostile
+}
+
+// Need Backup
+Response Sec_Lead_UnSupp_Backup
+{
+	speak			"Radial_Security.Leader_UnSupp_Backup" noscene
+}
+Rule Sec_Lead_UnSupp_Backup
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam
+	response		Sec_Lead_UnSupp_Backup
+}	
+
+Response Sec_Lead_Supp_Backup
+{
+	speak			"Radial_Security.Leader_Supp_Backup" noscene
+}
+Rule Sec_Lead_Supp_Backup
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Lead_Supp_Backup
+}	
+
+
+Response Security_Leader_NeedBackup_Alpha
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Alpha_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Alpha
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsAlpha
+	response		Security_Leader_NeedBackup_Alpha
+}	
+
+Response Security_Leader_NeedBackup_Bravo
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Bravo_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Bravo
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsBravo
+	response		Security_Leader_NeedBackup_Bravo
+}	
+
+Response Security_Leader_NeedBackup_Charlie
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Charlie_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Charlie
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsCharlie
+	response		Security_Leader_NeedBackup_Charlie
+}	
+
+Response Security_Leader_NeedBackup_Delta
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Delta_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Delta
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsDelta
+	response		Security_Leader_NeedBackup_Delta
+}	
+
+Response Security_Leader_NeedBackup_Echo
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Echo_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Echo
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsEcho
+	response		Security_Leader_NeedBackup_Echo
+}	
+
+Response Security_Leader_NeedBackup_Foxtrot
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Foxtrot_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Foxtrot
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsFoxtrot
+	response		Security_Leader_NeedBackup_Foxtrot
+}	
+
+Response Security_Leader_NeedBackup_Golf
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Golf_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Golf
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsGolf
+	response		Security_Leader_NeedBackup_Golf
+}	
+
+Response Security_Leader_NeedBackup_Hotel
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Hotel_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Hotel
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsHotel
+	response		Security_Leader_NeedBackup_Hotel
+}	
+
+Response Security_Leader_NeedBackup_India
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_India_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_India
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsIndia
+	response		Security_Leader_NeedBackup_India
+}	
+
+Response Security_Leader_NeedBackup_Juliet
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Juliet_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Juliet
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsJuliet
+	response		Security_Leader_NeedBackup_Juliet
+}	
+
+Response Security_Leader_NeedBackup_Kilo
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Kilo_Backup" noscene
+}
+Rule Security_Leader_NeedBackup_Kilo
+{
+	criteria		ConceptRadialBackup IsSquadLeader OnSecurityTeam IsKilo
+	response		Security_Leader_NeedBackup_Kilo
+}	
+
+// Enemy Down
+Response Sec_Lead_UnSupp_TargetDown
+{
+	speak			"Radial_Security.Leader_UnSupp_TargetDown" noscene
+}
+Response Sec_Lead_Supp_TargetDown
+{
+	speak			"Radial_Security.Leader_Supp_TargetDown" noscene
+}
+
+Rule Sec_Lead_UnSupp_TargetDown
+{
+	criteria		ConceptRadialEnemyDown IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Lead_UnSupp_TargetDown
+}
+Rule Sec_Lead_Supp_TargetDown
+{
+	criteria		ConceptRadialEnemyDown IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Lead_Supp_TargetDown
+}
+
+// Enemy down (knife)
+Response Sec_Lead_UnSupp_TargetDown_Knife
+{
+	speak			"Radial_Security.Leader_UnSupp_EnemyDownKnife" noscene
+}
+Rule Sec_Lead_UnSupp_TargetDown_Knife
+{
+	criteria		ConceptRadialEnemyDown IsSquadLeader OnSecurityTeam RecentKnifeKill NotRecentlySaidKnifeKill
+	applycontext 	"SaidKnifeKill:1:8"
+	response		Sec_Lead_UnSupp_TargetDown_Knife
+}
+
+// Covering
+Response Sec_Lead_UnSupp_Covering
+{
+	speak			"Radial_Security.Leader_UnSupp_Covering" noscene
+}
+Response Sec_Lead_Supp_Covering
+{
+	speak			"Radial_Security.Leader_Supp_Covering" noscene
+}
+
+Rule Sec_Lead_UnSupp_Covering
+{
+	criteria		ConceptRadialCovering IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Lead_UnSupp_Covering
+}
+Rule Sec_Lead_Supp_Covering
+{
+	criteria		ConceptRadialCovering IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Lead_Supp_Covering
+}
+
+// Area Clear
+Response Sec_Lead_UnSupp_AreaClear
+{
+	speak			"Radial_Security.Leader_UnSupp_Clear" noscene
+}
+Response Sec_Lead_Supp_AreaClear
+{
+	speak			"Radial_Security.Leader_Supp_Clear" noscene
+}
+
+Rule Sec_Lead_UnSupp_AreaClear
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Lead_UnSupp_AreaClear
+}
+Rule Sec_Lead_Supp_AreaClear
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Lead_Supp_AreaClear
+}	
+
+Response Security_Leader_AreaClear_Alpha
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Alpha_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Alpha
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsAlpha
+	response		Security_Leader_AreaClear_Alpha
+}	
+
+Response Security_Leader_AreaClear_Bravo
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Bravo_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Bravo
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsBravo
+	response		Security_Leader_AreaClear_Bravo
+}	
+
+Response Security_Leader_AreaClear_Charlie
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Charlie_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Charlie
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsCharlie
+	response		Security_Leader_AreaClear_Charlie
+}	
+
+Response Security_Leader_AreaClear_Delta
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Delta_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Delta
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsDelta
+	response		Security_Leader_AreaClear_Delta
+}	
+
+Response Security_Leader_AreaClear_Echo
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Echo_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Echo
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsEcho
+	response		Security_Leader_AreaClear_Echo
+}	
+
+Response Security_Leader_AreaClear_Foxtrot
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Foxtrot_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Foxtrot
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsFoxtrot
+	response		Security_Leader_AreaClear_Foxtrot
+}	
+
+Response Security_Leader_AreaClear_Golf
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Golf_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Golf
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsGolf
+	response		Security_Leader_AreaClear_Golf
+}	
+
+Response Security_Leader_AreaClear_Hotel
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Hotel_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Hotel
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsHotel
+	response		Security_Leader_AreaClear_Hotel
+}	
+
+Response Security_Leader_AreaClear_India
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_India_Clear" noscene
+}
+Rule Security_Leader_AreaClear_India
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsIndia
+	response		Security_Leader_AreaClear_India
+}	
+
+Response Security_Leader_AreaClear_Juliet
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Juliet_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Juliet
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsJuliet
+	response		Security_Leader_AreaClear_Juliet
+}	
+
+Response Security_Leader_AreaClear_Kilo
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_Kilo_Clear" noscene
+}
+Rule Security_Leader_AreaClear_Kilo
+{
+	criteria		ConceptRadialClear IsSquadLeader OnSecurityTeam IsKilo
+	response		Security_Leader_AreaClear_Kilo
+}	
+
+Response Security_Leader_Discovered
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_CacheLocated"
+}
+Rule Security_Leader_Discovered
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsDiscovery IsNotDecoy
+	response 		Security_Leader_Discovered
+}
+
+Response Security_Leader_ObjDecoy
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_CacheFalse"
+}
+Rule Security_Leader_ObjDecoy
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsDiscovery IsDecoy
+	response 		Security_Leader_ObjDecoy
+}
+
+Response Security_Leader_AttackAlpha
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackAlpha" noscene
+}
+Rule Security_Leader_AttackAlpha
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsAlpha IsAttacking
+	response		Security_Leader_AttackAlpha
+}	
+
+Response Security_Leader_AttackBravo
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackBravo" noscene
+}
+Rule Security_Leader_AttackBravo
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsBravo IsAttacking
+	response		Security_Leader_AttackBravo
+}	
+
+Response Security_Leader_AttackCharlie
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackCharlie" noscene
+}
+Rule Security_Leader_AttackCharlie
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsCharlie IsAttacking
+	response		Security_Leader_AttackCharlie
+}	
+
+Response Security_Leader_AttackDelta
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackDelta" noscene
+}
+Rule Security_Leader_AttackDelta
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsDelta IsAttacking
+	response		Security_Leader_AttackDelta
+}	
+
+Response Security_Leader_AttackEcho
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackEcho" noscene
+}
+Rule Security_Leader_AttackEcho
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsEcho IsAttacking
+	response		Security_Leader_AttackEcho
+}
+
+Response Security_Leader_AttackFoxtrot
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackFoxtrot" noscene
+}
+Rule Security_Leader_AttackFoxtrot
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsFoxtrot IsAttacking
+	response		Security_Leader_AttackFoxtrot
+}
+
+Response Security_Leader_AttackGolf
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackGolf" noscene
+}
+Rule Security_Leader_AttackGolf
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsGolf IsAttacking
+	response		Security_Leader_AttackGolf
+}
+
+Response Security_Leader_AttackHotel
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackHotel" noscene
+}
+Rule Security_Leader_AttackHotel
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsHotel IsAttacking
+	response		Security_Leader_AttackHotel
+}
+
+Response Security_Leader_AttackIndia
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackIndia" noscene
+}
+Rule Security_Leader_AttackIndia
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsIndia IsAttacking
+	response		Security_Leader_AttackIndia
+}
+
+Response Security_Leader_AttackJuliet
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_AttackJuliet" noscene
+}
+Rule Security_Leader_AttackJuliet
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsJuliet IsAttacking
+	response		Security_Leader_AttackJuliet
+}
+
+Response Security_Leader_DefendAlpha
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendAlpha" noscene
+}
+Rule Security_Leader_DefendAlpha
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsAlpha IsDefending
+	response		Security_Leader_DefendAlpha
+}	
+
+Response Security_Leader_DefendBravo
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendBravo" noscene
+}
+Rule Security_Leader_DefendBravo
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsBravo IsDefending
+	response		Security_Leader_DefendBravo
+}	
+
+Response Security_Leader_DefendCharlie
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendCharlie" noscene
+}
+Rule Security_Leader_DefendCharlie
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsCharlie IsDefending
+	response		Security_Leader_DefendCharlie
+}	
+
+Response Security_Leader_DefendDelta
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendDelta" noscene
+}
+Rule Security_Leader_DefendDelta
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsDelta IsDefending
+	response		Security_Leader_DefendDelta
+}	
+
+Response Security_Leader_DefendEcho
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendEcho" noscene
+}
+Rule Security_Leader_DefendEcho
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsEcho IsDefending
+	response		Security_Leader_DefendEcho
+}	
+
+Response Security_Leader_DefendFoxtrot
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendFoxtrot" noscene
+}
+Rule Security_Leader_DefendFoxtrot
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsFoxtrot IsDefending
+	response		Security_Leader_DefendFoxtrot
+}	
+
+Response Security_Leader_DefendGolf
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendGolf" noscene
+}
+Rule Security_Leader_DefendGolf
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsGolf IsDefending
+	response		Security_Leader_DefendGolf
+}	
+
+Response Security_Leader_DefendHotel
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendHotel" noscene
+}
+Rule Security_Leader_DefendHotel
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsHotel IsDefending
+	response		Security_Leader_DefendHotel
+}	
+
+Response Security_Leader_DefendIndia
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendIndia" noscene
+}
+Rule Security_Leader_DefendIndia
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsIndia IsDefending
+	response		Security_Leader_DefendIndia
+}	
+
+Response Security_Leader_DefendJuliet
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DefendJuliet" noscene
+}
+Rule Security_Leader_DefendJuliet
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsJuliet IsDefending
+	response		Security_Leader_DefendJuliet
+}	
+
+// Destroy Vo
+
+Response Security_Leader_DestroyAlpha
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyAlpha" noscene
+}
+Rule Security_Leader_DestroyAlpha
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsAlpha IsAttacking IsDestructible
+	response		Security_Leader_DestroyAlpha
+}	
+
+Response Security_Leader_DestroyBravo
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyBravo" noscene
+}
+Rule Security_Leader_DestroyBravo
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsBravo IsAttacking IsDestructible
+	response		Security_Leader_DestroyBravo
+}	
+
+Response Security_Leader_DestroyCharlie
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyCharlie" noscene
+}
+Rule Security_Leader_DestroyCharlie
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsCharlie IsAttacking IsDestructible
+	response		Security_Leader_DestroyCharlie
+}	
+
+Response Security_Leader_DestroyDelta
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyDelta" noscene
+}
+Rule Security_Leader_DestroyDelta
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsDelta IsAttacking IsDestructible
+	response		Security_Leader_DestroyDelta
+}	
+
+Response Security_Leader_DestroyEcho
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyEcho" noscene
+}
+Rule Security_Leader_DestroyEcho
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsEcho IsAttacking IsDestructible
+	response		Security_Leader_DestroyEcho
+}
+
+Response Security_Leader_DestroyFoxtrot
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyFoxtrot" noscene
+}
+Rule Security_Leader_DestroyFoxtrot
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsFoxtrot IsAttacking IsDestructible
+	response		Security_Leader_DestroyFoxtrot
+}
+
+Response Security_Leader_DestroyGolf
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyGolf" noscene
+}
+Rule Security_Leader_DestroyGolf
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsGolf IsAttacking IsDestructible
+	response		Security_Leader_DestroyGolf
+}
+
+Response Security_Leader_DestroyHotel
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyHotel" noscene
+}
+Rule Security_Leader_DestroyHotel
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsHotel IsAttacking IsDestructible
+	response		Security_Leader_DestroyHotel
+}
+
+Response Security_Leader_DestroyIndia
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyIndia" noscene
+}
+Rule Security_Leader_DestroyIndia
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsIndia IsAttacking IsDestructible
+	response		Security_Leader_DestroyIndia
+}
+
+Response Security_Leader_DestroyJuliet
+{
+	PermitRepeats
+	speak			"Voice_Security.Leader_DestroyJuliet" noscene
+}
+Rule Security_Leader_DestroyJuliet
+{
+	criteria		ConceptRadialObjective IsSquadLeader OnSecurityTeam IsJuliet IsAttacking IsDestructible
+	response		Security_Leader_DestroyJuliet
+}
+
+// On The Way
+Response Sec_Lead_UnSupp_OnTheWay
+{
+	speak			"Radial_Security.Leader_UnSupp_OnTheWay" noscene
+}
+Response Sec_Lead_Supp_OnTheWay
+{
+	speak			"Radial_Security.Leader_Supp_OnTheWay" noscene
+}
+
+Rule Sec_Lead_UnSupp_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Lead_UnSupp_OnTheWay
+}
+Rule Sec_Lead_Supp_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Lead_Supp_OnTheWay
+}
+
+// Affirmative
+Response Sec_Lead_UnSupp_Affirmative
+{
+	speak			"Radial_Security.Leader_UnSupp_Affirmative" noscene
+}
+Response Sec_Lead_Supp_Affirmative
+{
+	speak			"Radial_Security.Leader_Supp_Affirmative" noscene
+}
+
+Rule Sec_Lead_UnSupp_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Lead_UnSupp_Affirmative
+}
+Rule Sec_Lead_Supp_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Lead_Supp_Affirmative
+}
+
+// Negative
+Response Sec_Lead_UnSupp_Negative
+{
+	speak			"Radial_Security.Leader_UnSupp_Negative" noscene
+}
+Response Sec_Lead_Supp_Negative
+{
+	speak			"Radial_Security.Leader_Supp_Negative" noscene
+}
+
+Rule Sec_Lead_UnSupp_Negative
+{
+	criteria		ConceptRadialNegative IsSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Lead_UnSupp_Negative
+}
+Rule Sec_Lead_Supp_Negative
+{
+	criteria		ConceptRadialNegative IsSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Lead_Supp_Negative
+}
+
+// 
+// Squad Member Radial Commands
+//
+
+// Enemy Directions
+Response Sec_Sub_Supp_Enemy_North
+{
+	speak			"Radial_Security.Subordinate_Supp_North" noscene
+}
+Response Sec_Sub_Supp_Enemy_NorthEast
+{
+	speak			"Radial_Security.Subordinate_Supp_NorthEast" noscene
+}
+Response Sec_Sub_Supp_Enemy_East
+{
+	speak			"Radial_Security.Subordinate_Supp_East" noscene
+}
+Response Sec_Sub_Supp_Enemy_SouthEast
+{
+	speak			"Radial_Security.Subordinate_Supp_SouthEast" noscene
+}
+Response Sec_Sub_Supp_Enemy_South
+{
+	speak			"Radial_Security.Subordinate_Supp_South" noscene
+}
+Response Sec_Sub_Supp_Enemy_SouthWest
+{
+	speak			"Radial_Security.Subordinate_Supp_SouthWest" noscene
+}
+Response Sec_Sub_Supp_Enemy_West
+{
+	speak			"Radial_Security.Subordinate_Supp_West" noscene
+}
+Response Sec_Sub_Supp_Enemy_NorthWest
+{
+	speak			"Radial_Security.Subordinate_Supp_NorthWest" noscene
+}
+
+Response Sec_Sub_UnSupp_Enemy_North
+{
+	speak			"Radial_Security.Subordinate_UnSupp_North" noscene
+}
+Response Sec_Sub_UnSupp_Enemy_NorthEast
+{
+	speak			"Radial_Security.Subordinate_UnSupp_NorthEast" noscene
+}
+Response Sec_Sub_UnSupp_Enemy_East
+{
+	speak			"Radial_Security.Subordinate_UnSupp_East" noscene
+}
+Response Sec_Sub_UnSupp_Enemy_SouthEast
+{
+	speak			"Radial_Security.Subordinate_UnSupp_SouthEast" noscene
+}
+Response Sec_Sub_UnSupp_Enemy_South
+{
+	speak			"Radial_Security.Subordinate_UnSupp_South" noscene
+}
+Response Sec_Sub_UnSupp_Enemy_SouthWest
+{
+	speak			"Radial_Security.Subordinate_UnSupp_SouthWest" noscene
+}
+Response Sec_Sub_UnSupp_Enemy_West
+{
+	speak			"Radial_Security.Subordinate_UnSupp_West" noscene
+}
+Response Sec_Sub_UnSupp_Enemy_NorthWest
+{
+	speak			"Radial_Security.Subordinate_UnSupp_NorthWest" noscene
+}
+Response Sec_Sub_UnSupp_Enemy_Confirm
+{
+	speak			"Voice_Security.Subordinate_EnemySpotted" noscene
+}
+
+// Suppressed
+Rule Sec_Sub_Supp_Enemy_North
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam SuppressedRecent IsNorth
+	response		Sec_Sub_Supp_Enemy_North
+}
+Rule Sec_Sub_Supp_Enemy_NorthEast
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam SuppressedRecent IsNorthEast
+	response		Sec_Sub_Supp_Enemy_NorthEast
+}
+Rule Sec_Sub_Supp_Enemy_East
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam SuppressedRecent IsEast
+	response		Sec_Sub_Supp_Enemy_East
+}
+Rule Sec_Sub_Supp_Enemy_SouthEast
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam SuppressedRecent IsSouthEast
+	response		Sec_Sub_Supp_Enemy_SouthEast
+}
+Rule Sec_Sub_Supp_Enemy_South
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam SuppressedRecent IsSouth
+	response		Sec_Sub_Supp_Enemy_South
+}
+Rule Sec_Sub_Supp_Enemy_SouthWest
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam SuppressedRecent IsSouthWest
+	response		Sec_Sub_Supp_Enemy_SouthWest
+}
+Rule Sec_Sub_Supp_Enemy_West
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam SuppressedRecent IsWest
+	response		Sec_Sub_Supp_Enemy_West
+}
+Rule Sec_Sub_Supp_Enemy_NorthWest
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam SuppressedRecent IsNorthWest
+	response		Sec_Sub_Supp_Enemy_NorthWest
+}
+
+// Unsuppressed
+Rule Sec_Sub_UnSupp_Enemy_North
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam NotSuppressedRecent IsNorth
+	response		Sec_Sub_UnSupp_Enemy_North
+}
+Rule Sec_Sub_UnSupp_Enemy_NorthEast
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthEast
+	response		Sec_Sub_UnSupp_Enemy_NorthEast
+}
+Rule Sec_Sub_UnSupp_Enemy_East
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam NotSuppressedRecent IsEast
+	response		Sec_Sub_UnSupp_Enemy_East
+}
+Rule Sec_Sub_UnSupp_Enemy_SouthEast
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthEast
+	response		Sec_Sub_UnSupp_Enemy_SouthEast
+}
+Rule Sec_Sub_UnSupp_Enemy_South
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam NotSuppressedRecent IsSouth
+	response		Sec_Sub_UnSupp_Enemy_South
+}
+Rule Sec_Sub_UnSupp_Enemy_SouthWest
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam NotSuppressedRecent IsSouthWest
+	response		Sec_Sub_UnSupp_Enemy_SouthWest
+}
+Rule Sec_Sub_UnSupp_Enemy_West
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam NotSuppressedRecent IsWest
+	response		Sec_Sub_UnSupp_Enemy_West
+}
+Rule Sec_Sub_UnSupp_Enemy_NorthWest
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam NotSuppressedRecent IsNorthWest
+	response		Sec_Sub_UnSupp_Enemy_NorthWest
+}
+Rule Sec_Sub_UnSupp_Enemy_Confirm
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader OnSecurityTeam NotSuppressedRecent IsEnemySpotRepeat
+	response		Sec_Sub_UnSupp_Enemy_Confirm
+}
+
+// Moving
+Response Sec_Sub_UnSupp_Moving
+{
+	speak			"Radial_Security.Subordinate_UnSupp_Moving" noscene
+}
+Response Sec_Sub_Supp_Moving
+{
+	speak			"Radial_Security.Subordinate_Supp_Moving" noscene
+}
+
+Rule Sec_Sub_UnSupp_Moving
+{
+	criteria		ConceptRadialMoving IsNotSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Sub_UnSupp_Moving
+}
+Rule Sec_Sub_Supp_Moving
+{
+	criteria		ConceptRadialMoving IsNotSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Sub_Supp_Moving
+}
+
+// Hostiles
+Response Sec_Sub_UnSupp_Hostile
+{
+	speak			"Radial_Security.Subordinate_UnSupp_Hostiles" noscene
+}
+Response Sec_Sub_Supp_Hostile
+{
+	speak			"Radial_Security.Subordinate_Supp_Hostiles" noscene
+}
+
+Rule Sec_Sub_UnSupp_Hostile
+{
+	criteria		ConceptRadialHostile IsNotSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Sub_UnSupp_Hostile
+}
+Rule Sec_Sub_Supp_Hostile
+{
+	criteria		ConceptRadialHostile IsNotSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Sub_Supp_Hostile
+}
+
+// Need Backup
+Response Sec_Sub_UnSupp_Backup
+{
+	speak			"Radial_Security.Subordinate_UnSupp_Backup" noscene
+}
+Rule Sec_Sub_UnSupp_Backup
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam
+	response		Sec_Sub_UnSupp_Backup
+}	
+
+Response Sec_Sub_Supp_Backup
+{
+	speak			"Radial_Security.Subordinate_Supp_Backup" noscene
+}
+Rule Sec_Sub_Supp_Backup
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Sub_Supp_Backup
+}	
+
+Response Security_Subordinate_NeedBackup_Alpha
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Alpha_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Alpha
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsAlpha
+	response		Security_Subordinate_NeedBackup_Alpha
+}	
+
+Response Security_Subordinate_NeedBackup_Bravo
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Bravo_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Bravo
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsBravo
+	response		Security_Subordinate_NeedBackup_Bravo
+}	
+
+Response Security_Subordinate_NeedBackup_Charlie
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Charlie_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Charlie
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsCharlie
+	response		Security_Subordinate_NeedBackup_Charlie
+}	
+
+Response Security_Subordinate_NeedBackup_Delta
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Delta_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Delta
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsDelta
+	response		Security_Subordinate_NeedBackup_Delta
+}	
+
+Response Security_Subordinate_NeedBackup_Echo
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Echo_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Echo
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsEcho
+	response		Security_Subordinate_NeedBackup_Echo
+}	
+
+Response Security_Subordinate_NeedBackup_Foxtrot
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Foxtrot_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Foxtrot
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsFoxtrot
+	response		Security_Subordinate_NeedBackup_Foxtrot
+}	
+
+Response Security_Subordinate_NeedBackup_Golf
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Golf_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Golf
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsGolf
+	response		Security_Subordinate_NeedBackup_Golf
+}	
+
+Response Security_Subordinate_NeedBackup_Hotel
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Hotel_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Hotel
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsHotel
+	response		Security_Subordinate_NeedBackup_Hotel
+}	
+
+Response Security_Subordinate_NeedBackup_India
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_India_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_India
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsIndia
+	response		Security_Subordinate_NeedBackup_India
+}	
+
+Response Security_Subordinate_NeedBackup_Juliet
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Juliet_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Juliet
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsJuliet
+	response		Security_Subordinate_NeedBackup_Juliet
+}	
+
+Response Security_Subordinate_NeedBackup_Kilo
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Kilo_Backup" noscene
+}
+Rule Security_Subordinate_NeedBackup_Kilo
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader OnSecurityTeam IsKilo
+	response		Security_Subordinate_NeedBackup_Kilo
+}	
+
+// Enemy Down
+Response Sec_Sub_UnSupp_TargetDown
+{
+	speak			"Radial_Security.Subordinate_UnSupp_TargetDown" noscene
+}
+Response Sec_Sub_Supp_TargetDown
+{
+	speak			"Radial_Security.Subordinate_Supp_TargetDown" noscene
+}
+
+Rule Sec_Sub_UnSupp_TargetDown
+{
+	criteria		ConceptRadialEnemyDown IsNotSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Sub_UnSupp_TargetDown
+}
+Rule Sec_Sub_Supp_TargetDown
+{
+	criteria		ConceptRadialEnemyDown IsNotSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Sub_Supp_TargetDown
+}
+
+Response Sec_Sub_UnSupp_TargetDown_Knife
+{
+	speak			"Radial_Security.Subordinate_UnSupp_EnemyDownKnife" noscene
+}
+Rule Sec_Sub_UnSupp_TargetDown_Knife
+{
+	criteria		ConceptRadialEnemyDown IsNotSquadLeader OnSecurityTeam RecentKnifeKill NotRecentlySaidKnifeKill
+	applycontext 	"SaidKnifeKill:1:8"
+	response		Sec_Sub_UnSupp_TargetDown_Knife
+}
+
+// Covering
+Response Sec_Sub_UnSupp_Covering
+{
+	speak			"Radial_Security.Subordinate_UnSupp_Covering" noscene
+}
+Response Sec_Sub_Supp_Covering
+{
+	speak			"Radial_Security.Subordinate_Supp_Covering" noscene
+}
+
+Rule Sec_Sub_UnSupp_Covering
+{
+	criteria		ConceptRadialCovering IsNotSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Sub_UnSupp_Covering
+}
+Rule Sec_Sub_Supp_Covering
+{
+	criteria		ConceptRadialCovering IsNotSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Sub_Supp_Covering
+}
+
+// Area Clear
+Response Sec_Sub_UnSupp_AreaClear
+{
+	speak			"Radial_Security.Subordinate_UnSupp_Clear" noscene
+}
+Response Sec_Sub_Supp_AreaClear
+{
+	speak			"Radial_Security.Subordinate_Supp_Clear" noscene
+}
+
+Rule Sec_Sub_UnSupp_AreaClear
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Sub_UnSupp_AreaClear
+}
+Rule Sec_Sub_Supp_AreaClear
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Sub_Supp_AreaClear
+}
+
+Response Security_Subordinate_AreaClear_Alpha
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Alpha_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Alpha
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsAlpha
+	response		Security_Subordinate_AreaClear_Alpha
+}	
+
+Response Security_Subordinate_AreaClear_Bravo
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Bravo_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Bravo
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsBravo
+	response		Security_Subordinate_AreaClear_Bravo
+}	
+
+Response Security_Subordinate_AreaClear_Charlie
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Charlie_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Charlie
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsCharlie
+	response		Security_Subordinate_AreaClear_Charlie
+}	
+
+Response Security_Subordinate_AreaClear_Delta
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Delta_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Delta
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsDelta
+	response		Security_Subordinate_AreaClear_Delta
+}	
+
+Response Security_Subordinate_AreaClear_Echo
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Echo_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Echo
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsEcho
+	response		Security_Subordinate_AreaClear_Echo
+}	
+
+Response Security_Subordinate_AreaClear_Foxtrot
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Foxtrot_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Foxtrot
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsFoxtrot
+	response		Security_Subordinate_AreaClear_Foxtrot
+}	
+
+Response Security_Subordinate_AreaClear_Golf
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Golf_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Golf
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsGolf
+	response		Security_Subordinate_AreaClear_Golf
+}	
+
+Response Security_Subordinate_AreaClear_Hotel
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Hotel_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Hotel
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsHotel
+	response		Security_Subordinate_AreaClear_Hotel
+}	
+
+Response Security_Subordinate_AreaClear_India
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_India_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_India
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsIndia
+	response		Security_Subordinate_AreaClear_India
+}	
+
+Response Security_Subordinate_AreaClear_Juliet
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Juliet_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Juliet
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsJuliet
+	response		Security_Subordinate_AreaClear_Juliet
+}	
+
+Response Security_Subordinate_AreaClear_Kilo
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_Kilo_Clear" noscene
+}
+Rule Security_Subordinate_AreaClear_Kilo
+{
+	criteria		ConceptRadialClear IsNotSquadLeader OnSecurityTeam IsKilo
+	response		Security_Subordinate_AreaClear_Kilo
+}	
+
+Response Security_Subordinate_Discovered
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_CacheLocated"
+}
+Rule Security_Subordinate_Discovered
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsDiscovery IsNotDecoy
+	response 		Security_Subordinate_Discovered
+}
+
+Response Security_Subordinate_ObjDecoy
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_CacheFalse"
+}
+Rule Security_Subordinate_ObjDecoy
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsDiscovery IsDecoy
+	response 		Security_Subordinate_ObjDecoy
+}
+
+Response Security_Subordinate_AttackAlpha
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackAlpha" noscene
+}
+Rule Security_Subordinate_AttackAlpha
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsAlpha
+	response		Security_Subordinate_AttackAlpha
+}	
+
+Response Security_Subordinate_AttackBravo
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackBravo" noscene
+}
+Rule Security_Subordinate_AttackBravo
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsBravo
+	response		Security_Subordinate_AttackBravo
+}	
+
+Response Security_Subordinate_AttackCharlie
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackCharlie" noscene
+}
+Rule Security_Subordinate_AttackCharlie
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsCharlie
+	response		Security_Subordinate_AttackCharlie
+}	
+
+Response Security_Subordinate_AttackDelta
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackDelta" noscene
+}
+Rule Security_Subordinate_AttackDelta
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsDelta
+	response		Security_Subordinate_AttackDelta
+}	
+
+Response Security_Subordinate_AttackEcho
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackEcho" noscene
+}
+Rule Security_Subordinate_AttackEcho
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsEcho
+	response		Security_Subordinate_AttackEcho
+}
+
+Response Security_Subordinate_AttackFoxtrot
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackFoxtrot" noscene
+}
+Rule Security_Subordinate_AttackFoxtrot
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsFoxtrot
+	response		Security_Subordinate_AttackFoxtrot
+}
+
+Response Security_Subordinate_AttackGolf
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackGolf" noscene
+}
+Rule Security_Subordinate_AttackGolf
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsGolf
+	response		Security_Subordinate_AttackGolf
+}
+
+Response Security_Subordinate_AttackHotel
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackHotel" noscene
+}
+Rule Security_Subordinate_AttackHotel
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsHotel
+	response		Security_Subordinate_AttackHotel
+}
+
+Response Security_Subordinate_AttackIndia
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackIndia" noscene
+}
+Rule Security_Subordinate_AttackIndia
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsIndia
+	response		Security_Subordinate_AttackIndia
+}
+
+Response Security_Subordinate_AttackJuliet
+{
+	PermitRepeats
+	speak			"Voice_Security.Subordinate_AttackJuliet" noscene
+}
+Rule Security_Subordinate_AttackJuliet
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader OnSecurityTeam IsJuliet
+	response		Security_Subordinate_AttackJuliet
+}
+
+// On The Way
+Response Sec_Sub_UnSupp_OnTheWay
+{
+	speak			"Radial_Security.Subordinate_UnSupp_OnTheWay" noscene
+}
+Response Sec_Sub_Supp_OnTheWay
+{
+	speak			"Radial_Security.Subordinate_Supp_OnTheWay" noscene
+}
+
+Rule Sec_Sub_UnSupp_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsNotSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Sub_UnSupp_OnTheWay
+}
+Rule Sec_Sub_Supp_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsNotSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Sub_Supp_OnTheWay
+}
+
+// Affirmative
+Response Sec_Sub_UnSupp_Affirmative
+{
+	speak			"Radial_Security.Subordinate_UnSupp_Affirmative" noscene
+}
+Response Sec_Sub_Supp_Affirmative
+{
+	speak			"Radial_Security.Subordinate_Supp_Affirmative" noscene
+}
+
+Rule Sec_Sub_UnSupp_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsNotSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Sub_UnSupp_Affirmative
+}
+Rule Sec_Sub_Supp_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsNotSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Sub_Supp_Affirmative
+}
+
+// Negative
+Response Sec_Sub_UnSupp_Negative
+{
+	speak			"Radial_Security.Subordinate_UnSupp_Negative" noscene
+}
+Response Sec_Sub_Supp_Negative
+{
+	speak			"Radial_Security.Subordinate_Supp_Negative" noscene
+}
+
+Rule Sec_Sub_UnSupp_Negative
+{
+	criteria		ConceptRadialNegative IsNotSquadLeader OnSecurityTeam NotSuppressedRecent
+	response		Sec_Sub_UnSupp_Negative
+}
+Rule Sec_Sub_Supp_Negative
+{
+	criteria		ConceptRadialNegative IsNotSquadLeader OnSecurityTeam SuppressedRecent
+	response		Sec_Sub_Supp_Negative
+}

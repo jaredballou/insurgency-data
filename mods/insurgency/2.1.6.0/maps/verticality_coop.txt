@@ -1,0 +1,97 @@
+"cpsetup.txt"
+{
+
+	"compassOffset" "180"
+
+	"navfile"   		"verticality"
+	"nightlighting"		"0"
+
+	"checkpoint"
+	{
+		"AttackingTeam"		"security"
+		"controlpoint"		"cp1"
+		"controlpoint"		"cp2"
+		"controlpoint"		"cachepoint_c"
+		"controlpoint"		"cp4"
+		"controlpoint"		"cachepoint_e"
+		"controlpoint"		"cp6"
+		"controlpoint"		"cp7"
+		"controlpoint"		"cachepoint_h"
+
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_1"
+			"1"  "spawnzone_2"
+			"2"  "spawnzone_3"
+			"3"  "spawnzone_4"
+			"4"  "spawnzone_5"
+			"5"  "spawnzone_6"
+			"6"  "spawnzone_7"
+			"7"  "spawnzone_8"
+		}
+
+		"settings"
+		{
+		    "counterattack_chance"
+		    {
+		        "7"     "1.0" // 100% chance on H
+		    }
+		}
+
+		"entities"
+		{
+
+			// Cache C
+			"obj_weapon_cache"
+			{
+				"origin"		"-826 -1846 560"
+				"angles"		"0 90 0"
+				"targetname"	"cache_c"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_c"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-826 -1846 632"
+				"angles"		"0 90 0"
+				"targetname"	"cachepoint_c" 
+			}
+
+			// Cache E
+			"obj_weapon_cache"
+			{
+				"origin"		"-1480 1510 496"
+				"angles"		"0 270 0"
+				"targetname"	"cache_e"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_e"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-1480 1510 568"
+				"angles"		"0 270 0"
+				"targetname"	"cachepoint_e" 
+			}
+
+			// Cache H
+			"obj_weapon_cache"
+			{
+				"origin"		"-6404 -976 226"
+				"angles"		"0 0 0"
+				"targetname"	"cache_h"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_h"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-6404 -976 298"
+				"angles"		"0 0 0"
+				"targetname"	"cachepoint_h" 
+			}	
+		}
+	}
+}

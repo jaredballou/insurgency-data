@@ -1,0 +1,6 @@
+"UnlitGeneric" 
+{ 	
+	"$basetexture" 		"vgui/borders/br_bg_hud_gradient" 	
+	"$translucent" 1
+	"$ignorez" 1
+}

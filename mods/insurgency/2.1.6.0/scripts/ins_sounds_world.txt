@@ -1,0 +1,607 @@
+"World.Generic.Frogs"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.05"
+	"pitch"			"100"
+	"soundlevel"    "SNDLVL_90dB"
+    "wave"		")soundscape/ambience/frog_chorus_02.wav"
+
+}
+
+"World.Generic.WaterDrips"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"    "SNDLVL_70dB"
+    "wave"		")soundscape/ambience/waterdrops_ambience.wav"
+
+}
+
+"World.Generic.BurningFire"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_98dB"
+	"wave"	")soundscape\emitters\loop\fire_roaring_02.wav"
+
+}
+
+"World.Generic.Transformer"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	"soundscape\emitters\loop\transformer_loop_02.wav"
+
+}
+
+"World.Generic.AirconOut"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		    "115"
+	"soundlevel"  	"SNDLVL_95dB"
+	"wave"	"soundscape\emitters\loop\airconditioner_out.wav"
+
+}
+
+"World.Generic.LargeAirconOut"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		    "115"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"	"soundscape\emitters\loop\airconditioner_out.wav"
+
+}
+
+"World.Generic.AirconOutInside"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		    "115"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	"soundscape\emitters\loop\airconditioner_inside_01.wav"
+
+}
+
+"World.Generic.RadioTower"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"80"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"	"soundscape\emitters\loop\radio_tower_moving.wav"
+
+}
+
+"World.Generic.RocketLaunch"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_180dB"
+	"rndwave"
+	{
+	"wave"	")soundscape\emitters\oneshot\MLRS_01.ogg"
+	"wave"	")soundscape\emitters\oneshot\MLRS_02.ogg"
+	"wave"	")soundscape\emitters\oneshot\MLRS_03.ogg"
+	}
+
+}
+
+"World.Generic.BarrelFire"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"90,100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")soundscape\emitters\loop\barrel_fire_01_opt.wav"
+
+}
+
+"World.Generic.OpenFire"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"110"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")soundscape\emitters\loop\fire_roaring_03.wav"
+
+}
+
+"World.Generic.MosqueRadio"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"110"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")soundscape\emitters\loop\room_radio_loop.wav"
+
+}
+
+"World.Generic.Flagpole"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"90"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"	")soundscape\emitters\loop\flagpole_loop_03.wav"
+
+}
+
+"World.Generic.FlagpoleAlt"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"90"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"	")soundscape\emitters\loop\flagpole_loop_04.wav"
+
+}
+
+"World.Generic.WaterTanks"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_95dB"
+	"wave"	")soundscape\emitters\loop\large_water_tank.wav"
+
+}
+
+"World.Generic.DistantFireFight"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_180dB"
+	"wave"	")soundscape\emitters\loop\distant_firefight_01.wav"
+
+}
+
+"World.Generic.HmmwvRadio"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"	")soundscape\emitters\loop\humvee_radio_02.wav"
+
+}
+
+"World.Generic.A10GunRun"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_180dB"
+	"rndwave"
+	{
+	"wave"	")soundscape\emitters\oneshot\A10_strafingrun_01.ogg"
+	"wave"	")soundscape\emitters\oneshot\A10_strafingrun_02.ogg"
+	"wave"	")soundscape\emitters\oneshot\A10_strafingrun_03.ogg"
+	"wave"	")soundscape\emitters\oneshot\A10_strafingrun_04.ogg"
+	"wave"	")soundscape\emitters\oneshot\A10_strafingrun_05.ogg"
+	"wave"	")soundscape\emitters\oneshot\A10_strafingrun_06.ogg"
+	"wave"	")soundscape\emitters\oneshot\A10_strafingrun_07.ogg"
+	"wave"	")soundscape\emitters\oneshot\A10_strafingrun_08.ogg"	
+	}
+
+}
+
+"World.Generic.M1a1AbramsIdle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"	")soundscape\emitters\loop\m1a1_abrams_tank_idle_01.wav"
+
+}
+
+"World.Generic.RadioTowerExplode"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_150dB"
+	"wave"	")soundscape\emitters\oneshot\radio_tower_explode.ogg"
+
+}
+
+"World.Generic.TreatmentPlant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_150dB"
+	"wave"	")soundscape\emitters\loop\treatment_plant_loop.wav"
+
+}
+
+"World.Generic.Alarm"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")soundscape\emitters\oneshot\alarm_03.ogg"
+
+}
+
+"World.Generic.SomaliRadioLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")soundscape\emitters\loop\somalia_radio_loop.wav"
+
+}
+
+"World.Generic.CarEngine"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")soundscape\emitters\loop\humvee_loop.wav"
+
+}
+
+"World.Generic.T62Idle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"	")soundscape\emitters\loop\T62_tank_idle.wav"
+
+}
+
+"World.Generic.HalogenLamp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"	")soundscape\emitters\loop\halogen_light_loop.wav"
+
+}
+
+"World.Generic.CarRadioLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"90"
+	"soundlevel"  	"SNDLVL_60dB"
+	"wave"	")soundscape\emitters\loop\car_radio_loop.wav"
+
+}
+
+"World.Generic.LightningStrike"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_180dB"
+	"rndwave"
+	{
+	"wave"	")soundscape\emitters\oneshot\lightning_strike_01.ogg"
+	"wave"	")soundscape\emitters\oneshot\lightning_strike_02.ogg"
+	"wave"	")soundscape\emitters\oneshot\lightning_strike_03.ogg"
+	}
+
+}
+
+"World.Generic.WaterSplashing"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"130"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")soundscape\emitters\loop\water_splashing.wav"
+
+}
+
+"World.Generic.Stream_01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"	")soundscape\ambience\stream_ambience_03.wav"
+
+}
+
+"World.Generic.Stream_02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"90"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"	")soundscape\ambience\stream_ambience_03_a.wav"
+
+}
+
+"World.Generic.Stream_03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"80"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"	")soundscape\ambience\stream_ambience_03_b.wav"
+	
+}
+
+"World.Generic.RadioMast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")soundscape\emitters\loop\small_radio_mast.wav"
+
+}
+
+"World.Generic.RadioMast2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"85"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"	")soundscape\emitters\loop\small_radio_mast.wav"
+
+}
+
+"World.Generic.AAGunLong"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_180dB"
+	"rndwave"
+	{
+	"wave"	")soundscape\emitters\Oneshot\AA_gun_buhriz_long.ogg"	
+	}
+
+}
+
+"World.Generic.ODA_Baby_01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_120dB"
+	"wave"	")hq\security\squaddead20.ogg"
+
+}
+
+"World.Generic.ODA_Baby_02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_120dB"
+	"wave"	")hq\security\squaddead22.ogg"
+
+}
+
+"World.Generic.ODA_Baby_03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_120dB"
+	"wave"	")hq\security\squaddead23.ogg"
+
+}
+
+"World.Generic.ODA_Baby_04"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_120dB"
+	"wave"	")hq\security\squaddead21.ogg"
+
+}
+
+"World.Generic.DistantFireFightFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_180dB"
+	"wave"	")soundscape\emitters\loop\distant_firefight_far_01.wav"
+
+}
+
+"World.Generic.ElevatorBell"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")soundscape\emitters\oneshot\lift_bell.ogg"
+
+}
+
+"World.Generic.ElevatorDoorsOpen"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")soundscape\emitters\oneshot\elevator_doors_open.ogg"
+
+}
+
+"World.Generic.ElevatorDoorsClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")soundscape\emitters\oneshot\elevator_doors_close.ogg"
+
+}
+
+"World.Generic.ElevatorMoving"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")soundscape\emitters\loop\elevator_moving_loop.wav"
+
+}
+
+"World.Generic.EmergencyRadio"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"	")soundscape\emitters\oneshot\emergency_radio_wet.ogg"
+
+}
+
+"World.Generic.EmergencyRadioDamp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"	")soundscape\emitters\oneshot\emergency_radio_dry.ogg"
+
+}
+
+"World.Generic.EmergencyRadioDestroyed"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"	")physics\dynamic\emergency_radio_explode.ogg"
+
+}
+
+"World.Generic.HeliCrashSteaming"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"60"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")soundscape\emitters\loop\heli_crash_steaming_loop.wav"
+
+}
+
+"World.Generic.RadioDestroyed"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"	")physics\dynamic\radio_destroyed.ogg"
+
+}
+
+"World.Generic.EmergencySprinklerHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_65dB"
+	"wave"	")physics\dynamic\emergency_sprinkler_system_hit.ogg"
+
+}
+
+"World.Generic.EmergencySprinkler"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_65dB"
+	"wave"	")physics\dynamic\emergency_sprinkler_system_loop.wav"
+
+}
+
+"World.Generic.EmergencySprinklerEnd"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_65dB"
+	"wave"	")physics\dynamic\emergency_sprinkler_system_end.ogg"
+
+}
+
+"World.Generic.CashRegisterDestroyed"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"	")physics\dynamic\cash_register_destroy.ogg"
+
+}
+
+"World.Generic.CarAlarm"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"rndwave"
+	{
+	"wave"	")physics\dynamic\car_alarm_01.ogg"
+	"wave"	")common\silence_1sec_lp.wav"	
+	"wave"	")physics\dynamic\car_alarm_02.ogg"
+	"wave"	")common\silence_1sec_lp.wav"		
+	"wave"	")physics\dynamic\car_alarm_03.ogg"
+	"wave"	")common\silence_1sec_lp.wav"		
+	"wave"	")physics\dynamic\car_alarm_04.ogg"
+	"wave"	")physics\dynamic\car_alarm_05.ogg"	
+	}
+
+}
+
+"World.Generic.CarAlarmDying"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"rndwave"
+	{
+	"wave"	")physics\dynamic\car_alarm_dying_01.ogg"
+	"wave"	")physics\dynamic\car_alarm_dying_02.ogg"
+	"wave"	")physics\dynamic\car_alarm_dying_03.ogg"	
+	"wave"	")physics\dynamic\car_alarm_dying_04.ogg"		
+	}
+
+}
+
+"World.Generic.FireAlarmLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"	")physics\dynamic\fire_alarm_loop.wav"
+
+}
+
+"World.Generic.AmmoBoxCookOff"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"	")physics\dynamic\ammobox_cookoff.ogg"
+}

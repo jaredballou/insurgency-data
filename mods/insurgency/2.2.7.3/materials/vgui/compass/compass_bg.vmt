@@ -1,0 +1,6 @@
+UnlitGeneric
+{
+	$baseTexture vgui\compass\compass_bg
+	$translucent 1
+	$alpha 1
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/backgrounds/maps/Dry_Canal"
+	"$translucent" 1
+	"$vertexalpha" 1
+}

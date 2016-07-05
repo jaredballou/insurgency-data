@@ -1,0 +1,24 @@
+---
+game:
+  - You can pick up ammo from weapons on the ground, either magazines from primaries or grenades. You can pick up as many as 3 grenades per type, and 10 magazines per type.
+  - No score is awarded for capturing or destroying points.
+  - Bots cannot take back points, so you do not have to remain on the point for a counterattack.
+  - Sliding is disabled
+  - Suppression and Assists generate the most points, work together!
+classes:
+  - Specialist can be Sniper, Heavy Demo, or Assault.
+  - Riflemen all get access to M203
+weapons:
+  - M249 is a defensive machinegun. It has increased suppression, but much higher recoil unless on bipod.
+  - M249 can be converted to 7.62mm. This gives it 50% more damage and 100% more suppression, increased recoil, and 100 round magazines.
+  - Galil SAR is the assault machinegun
+  - M203 HE has larger radius
+  - M203 HEDP has smaller radius than stock, but higher damage
+  - M67 and F1 grenades have larger radius and fragmentation effects
+  - M203 can be equipped with other explosives
+  - RPG has higher damage and radius, but reduced penetration and has rocket drift. It is much less accurate, so stay in cover and you should live.
+  - AT4 and C4 has much higher penetration to kill through walls.
+  - IED has massive radius and slightly more damage, but no penetration.
+  - M590 and MP5K moved to secondary weapon slot
+bots:
+  - Bots will spawn in small groups around players

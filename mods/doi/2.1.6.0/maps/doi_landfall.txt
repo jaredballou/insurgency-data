@@ -1,0 +1,352 @@
+"cpsetup.txt"
+{
+
+	"navfile"   		"doi_landfall"
+	"nightlighting"		"0"
+	"theaterfile"		"doi"
+		
+	"checkpoint"
+	{
+		"AttackingTeam"		"security"
+		"controlpoint"		"cp_a"
+		"controlpoint"		"cp_b"
+		"controlpoint"		"cp_c"
+		"controlpoint"		"cp_d"
+		"controlpoint"		"cp_e"
+		"controlpoint"		"radiopoint_f"
+		"controlpoint"		"cp_g"
+
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_a"
+			"1"  "spawnzone_b"
+			"2"  "spawnzone_c"
+			"3"  "spawnzone_d"
+			"4"  "spawnzone_e"
+			"5"  "spawnzone_f"
+			"6"  "spawnzone_g"
+		}
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"-2819 12234 -80"
+				"angles"		"0 90 0"
+				"targetname"	"radio_f"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_f"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-2819 12234 -66"
+				"angles"		"0 0 0"
+				"targetname"	"radiopoint_f"
+			}		
+		}	
+	}
+	"invasion"
+	{
+		"AttackingTeam"		"security"
+		"controlpoint"		"cp_a"
+		"controlpoint"		"cp_b"
+		"controlpoint"		"cp_c"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_push_a"
+			"1"  "spawnzone_push_b"
+			"2"  "spawnzone_push_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"-488 10454 44"
+				"angles"		"0 90 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-488 10454 59"
+				"angles"		"0 90 0"
+				"targetname"	"radiopoint_final"
+			}		
+		}	
+	}
+	"push"
+	{
+		"AttackingTeam"		"security"
+		"controlpoint"		"cp_a"
+		"controlpoint"		"cp_b"
+		"controlpoint"		"cp_c"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_push_a"
+			"1"  "spawnzone_push_b"
+			"2"  "spawnzone_push_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"-488 10454 44"
+				"angles"		"0 90 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-488 10454 59"
+				"angles"		"0 90 0"
+				"targetname"	"radiopoint_final"
+			}		
+		}	
+	}
+	"occupy"
+	{
+		"controlpoint"		 "cp_a"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"   "occupy_spawn"
+		}
+	}
+	"conquer"
+	{
+		"AttackingTeam"		"security"
+		
+		"controlpoint"		"cp_c"
+		"controlpoint"		"cp_d"
+		"controlpoint"		"cp_e" 
+		"controlpoint"		"radiopoint_a"
+		"controlpoint"		"radiopoint_b"
+		"controlpoint"		"radiopoint_c"
+		"controlpoint"		"radiopoint_d"
+		"controlpoint"		"radiopoint_e"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"navspawn"
+			{
+				"origin"		"389 5642 26"
+				"teamnumber"	"2"
+				"bonus" 		"0"
+				"expandtype"	"box"
+				"expandradius"	"600.0"
+				"playerspread"	"16"
+			}
+		}
+		
+		"entities"
+		{			
+			// radio A
+			"obj_destructible"
+			{
+				"origin"		"-678 7829 42"
+				"angles"		"0 0 0"
+				"targetname"	"radio_a"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_a"
+			}		
+			"point_controlpoint"
+			{
+				"origin"		"-678 7829 56"
+				"angles"		"0 0 0"
+				"targetname"	"radiopoint_a"
+			}	
+			
+			// radio B
+			"obj_destructible"
+			{
+				"origin"		"154 8167 157"
+				"angles"		"0 180 0"
+				"targetname"	"radio_b"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_b"
+			}						
+			"point_controlpoint"
+			{
+				"origin"		"154 8167 167"
+				"angles"		"0 180 0"
+				"targetname"	"radiopoint_b"
+			}
+			
+			// radio C
+			"obj_destructible"
+			{
+				"origin"		"-488 10454 44"
+				"angles"		"0 90 0"
+				"targetname"	"radio_c"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_c"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-488 10454 59"
+				"angles"		"0 90 0"
+				"targetname"	"radiopoint_c"
+			}
+		
+			// Radio d
+			"obj_destructible"
+			{
+				"origin"		"-33 11511 113"
+				"angles"		"0 270 0"
+				"targetname"	"radio_d"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_d"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-33 11511 127"
+				"angles"		"0 270 0"
+				"targetname"	"radiopoint_d"
+			}
+			
+			// radio E
+			"obj_destructible"
+			{
+				"origin"		"-925 12833 98"
+				"angles"		"0 0 0"
+				"targetname"	"radio_e"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_e"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"-925 12833 112"
+				"angles"		"0 0 0"
+				"targetname"	"radiopoint_e"
+			}			
+		}
+	}
+	"skirmish"
+	{	
+		"controlpoint"		"radiopoint_a"
+	    	"controlpoint"		"cp_a"
+		"controlpoint"		"cp_b"
+		"controlpoint"		"cp_c" 
+		"controlpoint"		"radiopoint_e"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+		
+		"entities"
+		{	
+			// Radio A
+			"obj_destructible"
+			{
+				"origin"		"597 1101 34"
+				"angles"		"0 0 0"
+				"targetname"	"radio_a"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_a"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"597 1101 50"
+				"angles"		"0 0 0"
+				"targetname"	"radiopoint_a"
+			}	
+			
+			// Radio E
+			"obj_destructible"
+			{
+				"origin"		"-488 10454 44"
+				"angles"		"0 90 0"
+				"targetname"	"radio_e"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_e"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-488 10454 59"
+				"angles"		"0 90 0"
+				"targetname"	"radiopoint_e"
+			}
+		}
+	}
+	
+	"firefight"	
+	{
+	    	"controlpoint"		"cp_a"
+		"controlpoint"		"cp_b"
+		"controlpoint"		"cp_c" 
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+	}
+	"outpost"
+	{
+		"AttackingTeam"		"insurgents"
+		"controlpoint"		"radiopoint_a"
+		"controlpoint"		"radiopoint_b"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"entities"
+		{				
+			// radio a
+			"obj_destructible"
+			{
+				"origin"		"-4558 12116 161"
+				"angles"		"0 0 0"
+				"targetname"	"radio_a"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_a"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"-4558 12116 176"
+				"angles"		"0 0 0"
+				"targetname"	"radiopoint_a"
+			}	
+			
+			// radio b
+			"obj_destructible"
+			{
+				"origin"		"154 8167 156"
+				"angles"		"0 180 0"
+				"targetname"	"radio_b"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_b"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"154 8167 171"
+				"angles"		"0 180 0"
+				"targetname"	"radiopoint_b"
+			}
+		}
+	}
+}

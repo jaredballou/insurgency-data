@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/gameui/swat_logo.vtf"
+	"$translucent" 1
+	"$vertexalpha" 1
+}

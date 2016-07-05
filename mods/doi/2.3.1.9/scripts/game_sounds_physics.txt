@@ -1,0 +1,5444 @@
+// --------------------------
+// EQUIPMENT LAYERS
+// --------------------------
+"Equipment_Flamethrower.Step"
+{
+	"channel"       "CHAN_STATIC"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"		"player/footsteps/Equipment/Flamethrower/fs_equip_flamethrower_01.wav"
+		"wave"		"player/footsteps/Equipment/Flamethrower/fs_equip_flamethrower_02.wav"
+		"wave"		"player/footsteps/Equipment/Flamethrower/fs_equip_flamethrower_03.wav"
+		"wave"		"player/footsteps/Equipment/Flamethrower/fs_equip_flamethrower_04.wav"
+		"wave"		"player/footsteps/Equipment/Flamethrower/fs_equip_flamethrower_05.wav"
+		"wave"		"player/footsteps/Equipment/Flamethrower/fs_equip_flamethrower_06.wav"
+		"wave"		"player/footsteps/Equipment/Flamethrower/fs_equip_flamethrower_07.wav"
+		"wave"		"player/footsteps/Equipment/Flamethrower/fs_equip_flamethrower_08.wav"				
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+
+// --------------------------
+// DEFAULT
+// --------------------------
+"Default.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"		"player/footsteps/Dirt/fs_dirt_01.wav"
+		"wave"		"player/footsteps/Dirt/fs_dirt_03.wav"
+		"wave"		"player/footsteps/Dirt/fs_dirt_05.wav"
+		"wave"		"player/footsteps/Dirt/fs_dirt_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Default.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Dirt/fs_dirt_02.wav"
+		"wave"		"player/footsteps/Dirt/fs_dirt_04.wav"
+		"wave"		"player/footsteps/Dirt/fs_dirt_06.wav"
+		"wave"		"player/footsteps/Dirt/fs_dirt_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Default.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/dirt_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/dirt_bullet_impact_02.wav"
+		"wave"		"physics/surfaces/dirt_bullet_impact_03.wav"
+		"wave"		"physics/surfaces/dirt_bullet_impact_04.wav"
+		"wave"		"physics/surfaces/dirt_bullet_impact_05.wav"
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Default.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Default.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Default.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_75dB"
+	"volume"		".8"
+	"pitch"			"95,100"
+	"rndwave"
+	{
+	"wave"		"physics/plastic/plasticbarrel_impact_hard_01.wav"
+	"wave"		"physics/plastic/plasticbarrel_impact_hard_02.wav"
+	"wave"		"physics/plastic/plasticbarrel_impact_hard_03.wav"
+	}
+}
+
+"Default.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_75dB"
+	"volume"		".75"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+	"wave"		"physics/plastic/plasticbarrel_impact_soft_01.wav"
+	"wave"		"physics/plastic/plasticbarrel_impact_soft_02.wav"
+	"wave"		"physics/plastic/plasticbarrel_impact_soft_03.wav"
+	}
+}
+
+"Default.ScrapeRough"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"pitch"		"96,104"
+	"wave"		"physics/plastic/plasticbarrel_scrape_rough.wav"
+}
+
+"Default.ScrapeSmooth"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.40"
+	"pitch"		"96,104"
+	"wave"		"physics/plastic/plasticbarrel_scrape_smooth.wav"
+}
+
+// --------------------------
+// SOLIDMETAL
+// --------------------------
+
+"SolidMetal.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"		"player/footsteps/SolidMetal/fs_solidmetal_01.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_solidmetal_03.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_solidmetal_05.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_solidmetal_07.wav"				
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"SolidMetal.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"		"player/footsteps/SolidMetal/fs_solidmetal_02.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_solidmetal_04.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_solidmetal_06.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_solidmetal_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"SolidMetal.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/metal/solidmetal_bullet_impact_01.wav"
+		"wave"		"physics/metal/solidmetal_bullet_impact_02.wav"
+		"wave"		"physics/metal/solidmetal_bullet_impact_03.wav"
+		"wave"		"physics/metal/solidmetal_bullet_impact_04.wav"
+		"wave"		"physics/metal/solidmetal_bullet_impact_05.wav"
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "SolidMetal.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"SolidMetal.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"SolidMetal.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_75dB"
+	"volume"		"0.5"
+	"pitch"		"95,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/solidmetal_impact_hard_01.wav"
+		"wave"		"physics/metal/solidmetal_impact_hard_02.wav"
+		"wave"		"physics/metal/solidmetal_impact_hard_03.wav"		
+	}
+}
+
+"SolidMetal.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.4"
+	"pitch"		"95,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/solidmetal_impact_soft_01.wav"
+		"wave"		"physics/metal/solidmetal_impact_soft_02.wav"
+		"wave"		"physics/metal/solidmetal_impact_soft_03.wav"		
+	}
+}
+
+"SolidMetal.ScrapeRough"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.2"
+	"pitch"		"95,105"
+	"wave"		"physics/metal/solidmetal_scrape_rough.wav"
+}
+
+"SolidMetal.ScrapeSmooth"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.2"
+	"pitch"		"95,105"
+	"wave"		"physics/metal/solidmetal_scrape_smooth.wav"
+}
+
+// --------------------------
+// DIRT
+// --------------------------
+
+"Dirt.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Dirt/fs_dirt_01.wav"
+		"wave"		"player/footsteps/Dirt/fs_dirt_03.wav"		
+		"wave"		"player/footsteps/Dirt/fs_dirt_05.wav"	
+		"wave"		"player/footsteps/Dirt/fs_dirt_07.wav"			
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Dirt.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Dirt/fs_dirt_02.wav"
+		"wave"		"player/footsteps/Dirt/fs_dirt_04.wav"		
+		"wave"		"player/footsteps/Dirt/fs_dirt_06.wav"	
+		"wave"		"player/footsteps/Dirt/fs_dirt_08.wav"			
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Dirt.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/dirt_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/dirt_bullet_impact_02.wav"
+		"wave"		"physics/surfaces/dirt_bullet_impact_03.wav"
+		"wave"		"physics/surfaces/dirt_bullet_impact_04.wav"
+		"wave"		"physics/surfaces/dirt_bullet_impact_05.wav"		
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Dirt.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Dirt.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Dirt.Impact"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"98,100"
+	"wave"		"physics/surfaces/sand_bullet_impact_01.wav"
+}
+
+"Dirt.Scrape"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"pitch"		"95,100"
+	"wave"		"physics/cardboard/cardboard_scrape_rough.wav"
+}
+
+// --------------------------
+// GRASS
+// --------------------------
+
+"Grass.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Grass/fs_grass_01.wav"
+		"wave"		"player/footsteps/Grass/fs_grass_03.wav"
+		"wave"		"player/footsteps/Grass/fs_grass_05.wav"
+		"wave"		"player/footsteps/Grass/fs_grass_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Grass.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Grass/fs_grass_02.wav"
+		"wave"		"player/footsteps/Grass/fs_grass_04.wav"
+		"wave"		"player/footsteps/Grass/fs_grass_06.wav"
+		"wave"		"player/footsteps/Grass/fs_grass_08.wav"	
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Grass.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/grass_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/grass_bullet_impact_02.wav"
+		"wave"		"physics/surfaces/grass_bullet_impact_03.wav"
+		"wave"		"physics/surfaces/grass_bullet_impact_04.wav"
+		"wave"		"physics/surfaces/grass_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Grass.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Grass.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+// --------------------------
+// METALGRATE
+// --------------------------
+
+"MetalGrate.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/SolidMetal/fs_metal_01.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_metal_03.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_metal_05.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_metal_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"MetalGrate.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/SolidMetal/fs_metal_02.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_metal_04.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_metal_06.wav"
+		"wave"		"player/footsteps/SolidMetal/fs_metal_08.wav"	
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"MetalGrate.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/metal/metalpanel_bullet_impact_01.wav"
+		"wave"		"physics/metal/metalpanel_bullet_impact_02.wav"
+		"wave"		"physics/metal/metalpanel_bullet_impact_03.wav"
+		"wave"		"physics/metal/metalpanel_bullet_impact_04.wav"
+		"wave"		"physics/metal/metalpanel_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "MetalGrate.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"MetalGrate.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"MetalGrate.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.6"
+	"pitch"		"95,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/metalbarrel_impact_hard_01.wav"
+		"wave"		"physics/metal/metalbarrel_impact_hard_02.wav"
+		"wave"		"physics/metal/metalbarrel_impact_hard_03.wav"
+	}
+
+}
+
+"MetalGrate.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.50"
+	"pitch"		"95,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/metalbarrel_impact_soft_01.wav"
+		"wave"		"physics/metal/metalbarrel_impact_soft_02.wav"
+		"wave"		"physics/metal/metalbarrel_impact_soft_03.wav"
+	}
+}
+
+"MetalGrate.ScrapeRough"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.2"
+	"pitch"		"95,100"
+	"wave"		"physics/metal/metalbarrel_scrape_rough.wav"
+}
+
+"MetalGrate.ScrapeSmooth"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.2"
+	"pitch"		"95,100"
+	"wave"		"physics/metal/metalbarrel_scrape_smooth.wav"
+}
+
+// --------------------------
+// METALVENT
+// --------------------------
+
+"MetalVent.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/MetalVent/fs_metalvent_01.wav"
+		"wave"		"player/footsteps/MetalVent/fs_metalvent_03.wav"
+		"wave"		"player/footsteps/MetalVent/fs_metalvent_05.wav"
+		"wave"		"player/footsteps/MetalVent/fs_metalvent_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"MetalVent.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/MetalVent/fs_metalvent_02.wav"
+		"wave"		"player/footsteps/MetalVent/fs_metalvent_04.wav"
+		"wave"		"player/footsteps/MetalVent/fs_metalvent_06.wav"
+		"wave"		"player/footsteps/MetalVent/fs_metalvent_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"MetalVent.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.7"
+	"rndwave"
+	{
+		"wave"		"physics/metal/metalbarrel_bullet_impact_01.wav"
+		"wave"		"physics/metal/metalbarrel_bullet_impact_02.wav"
+		"wave"		"physics/metal/metalbarrel_bullet_impact_03.wav"
+		"wave"		"physics/metal/metalbarrel_bullet_impact_04.wav"
+		"wave"		"physics/metal/metalbarrel_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "MetalVent.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"MetalVent.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"MetalVent.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/metalbarrel_impact_hard_01.wav"
+		"wave"		"physics/metal/metalbarrel_impact_hard_02.wav"
+		"wave"		"physics/metal/metalbarrel_impact_hard_03.wav"
+	}
+}
+
+// --------------------------
+// TILE
+// --------------------------
+
+"Tile.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"		"player/footsteps/Tile/fs_tile_01.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_03.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_05.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Tile.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Tile/fs_tile_02.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_04.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_06.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Tile.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/tile_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/tile_bullet_impact_02.wav"
+		"wave"		"physics/surfaces/tile_bullet_impact_03.wav"
+		"wave"		"physics/surfaces/tile_bullet_impact_04.wav"
+		"wave"		"physics/surfaces/tile_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Tile.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Tile.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+// --------------------------
+// WATER
+// --------------------------
+
+"Water.StepLeft"
+{
+	"channel"       "CHAN_STATIC"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Water/fs_water_01.wav"
+		"wave"		"player/footsteps/Water/fs_water_03.wav"
+		"wave"		"player/footsteps/Water/fs_water_05.wav"
+		"wave"		"player/footsteps/Water/fs_water_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+			"limit_entry"
+			{
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			}
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Water.StepRight"
+{
+	"channel"       "CHAN_STATIC"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Water/fs_water_02.wav"
+		"wave"		"player/footsteps/Water/fs_water_04.wav"
+		"wave"		"player/footsteps/Water/fs_water_06.wav"
+		"wave"		"player/footsteps/Water/fs_water_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+			"limit_entry"
+			{
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			}
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Water.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.8"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/water_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/water_bullet_impact_02.wav"
+		"wave"		"physics/surfaces/water_bullet_impact_03.wav"
+		"wave"		"physics/surfaces/water_bullet_impact_04.wav"
+		"wave"		"physics/surfaces/water_bullet_impact_05.wav"		
+
+
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Water.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Water.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"BaseEntity.EnterWater"
+{
+	"channel"		"CHAN_STATIC"
+    "soundlevel"    "SNDLVL_80dB"
+    "pitch"         "PITCH_NORM" 
+    "volume"        "0.7"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/entity_enter_water_01.wav"
+		"wave"		"physics/surfaces/entity_enter_water_02.wav"
+		"wave"		"physics/surfaces/entity_enter_water_03.wav"
+		"wave"		"physics/surfaces/entity_enter_water_04.wav"		
+	}
+}
+
+"BaseEntity.ExitWater"
+{
+	"channel"		"CHAN_STATIC"
+    "soundlevel"    "SNDLVL_80dB"
+    "pitch"         "PITCH_NORM" 
+    "volume"        "0.7"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/entity_enter_water_01.wav"
+		"wave"		"physics/surfaces/entity_enter_water_02.wav"
+		"wave"		"physics/surfaces/entity_enter_water_03.wav"
+		"wave"		"physics/surfaces/entity_enter_water_04.wav"		
+	}
+}
+
+
+
+// --------------------------
+// LADDER
+// --------------------------
+
+"Ladder.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/MetalLadder/fs_metalladder_01.wav"
+		"wave"		"player/footsteps/MetalLadder/fs_metalladder_03.wav"
+		"wave"		"player/footsteps/MetalLadder/fs_metalladder_05.wav"
+		"wave"		"player/footsteps/MetalLadder/fs_metalladder_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Ladder.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/MetalLadder/fs_metalladder_02.wav"
+		"wave"		"player/footsteps/MetalLadder/fs_metalladder_04.wav"
+		"wave"		"player/footsteps/MetalLadder/fs_metalladder_06.wav"
+		"wave"		"player/footsteps/MetalLadder/fs_metalladder_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Ladder.WoodStepLeft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/WoodLadder/fs_woodladder_01.wav"
+		"wave"		"player/footsteps/WoodLadder/fs_woodladder_03.wav"
+		"wave"		"player/footsteps/WoodLadder/fs_woodladder_05.wav"
+		"wave"		"player/footsteps/WoodLadder/fs_woodladder_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Ladder.WoodStepRight"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/WoodLadder/fs_woodladder_02.wav"
+		"wave"		"player/footsteps/WoodLadder/fs_woodladder_04.wav"
+		"wave"		"player/footsteps/WoodLadder/fs_woodladder_06.wav"
+		"wave"		"player/footsteps/WoodLadder/fs_woodladder_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+// --------------------------
+// GLASS
+// --------------------------
+
+"Glass.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Tile/fs_tile_01.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_03.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_05.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Glass.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Tile/fs_tile_02.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_04.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_06.wav"
+		"wave"		"player/footsteps/Tile/fs_tile_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Glass.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/glass/glass_bullet_impact_01.wav"
+		"wave"		"physics/glass/glass_bullet_impact_02.wav"
+		"wave"		"physics/glass/glass_bullet_impact_03.wav"
+		"wave"		"physics/glass/glass_bullet_impact_04.wav"
+		"wave"		"physics/glass/glass_bullet_impact_05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Glass.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Glass.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Glass.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.50"
+	"rndwave"
+	{
+		"wave"		"physics/glass/glass_impact_hard_01.wav"
+		"wave"		"physics/glass/glass_impact_hard_02.wav"
+		"wave"		"physics/glass/glass_impact_hard_03.wav"
+	}
+}
+
+"Glass.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.40"
+	"rndwave"
+	{
+		"wave"		"physics/glass/glass_impact_soft_01.wav"
+		"wave"		"physics/glass/glass_impact_soft_02.wav"
+		"wave"		"physics/glass/glass_impact_soft_03.wav"
+	}
+
+}
+
+"Glass.ScrapeRough"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.30"
+    "wave"		"physics/glass/glass_scrape_rough.wav"
+
+}
+
+"Glass.ScrapeSmooth"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.20"
+	"wave"		"physics/glass/glass_scrape_smooth.wav"
+}
+
+"Glass.Break"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.70"
+	"rndwave"
+	{
+		"wave"		"physics/glass/glass_bullet_impact_01.wav"
+		"wave"		"physics/glass/glass_bullet_impact_02.wav"
+		"wave"		"physics/glass/glass_bullet_impact_03.wav"
+		"wave"		"physics/glass/glass_bullet_impact_04.wav"
+		"wave"		"physics/glass/glass_bullet_impact_05.wav"			
+	}
+}
+
+// --------------------------
+// VEHICLE GLASS
+// --------------------------
+
+"VehicleGlass.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/glass/vehicle_glass_bullet_impact_01.wav"
+		"wave"		"physics/glass/vehicle_glass_bullet_impact_02.wav"
+		"wave"		"physics/glass/vehicle_glass_bullet_impact_03.wav"
+		"wave"		"physics/glass/vehicle_glass_bullet_impact_04.wav"
+		"wave"		"physics/glass/vehicle_glass_bullet_impact_05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "VehicleGlass.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"VehicleGlass.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+// --------------------------
+// POTTERY
+// --------------------------
+
+"Pottery.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"			"97,100"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/pottery/pottery_bullet_impact_01.wav"
+		"wave"		"physics/pottery/pottery_bullet_impact_02.wav"
+		"wave"		"physics/pottery/pottery_bullet_impact_03.wav"
+		"wave"		"physics/pottery/pottery_bullet_impact_04.wav"
+		"wave"		"physics/pottery/pottery_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Pottery.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Pottery.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Pottery.Break"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"1.0"
+	"pitch"			"97,100"
+	"rndwave"
+	{
+		"wave"		"physics/pottery/pottery_break_01.wav"
+		"wave"		"physics/pottery/pottery_break_02.wav"
+		"wave"		"physics/pottery/pottery_break_03.wav"
+		"wave"		"physics/pottery/pottery_break_04.wav"
+		"wave"		"physics/pottery/pottery_break_05.wav"	
+	}
+}
+
+"Pottery.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.90"
+	"rndwave"
+	{
+		"wave"		"physics/pottery/pottery_impact_hard_01.wav"
+		"wave"		"physics/pottery/pottery_impact_hard_02.wav"
+		"wave"		"physics/pottery/pottery_impact_hard_03.wav"
+	}
+}
+
+"Pottery.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.40"
+	"rndwave"
+	{
+		"wave"		"physics/pottery/pottery_impact_soft_01.wav"
+		"wave"		"physics/pottery/pottery_impact_soft_02.wav"
+		"wave"		"physics/pottery/pottery_impact_soft_03.wav"
+	}
+}
+
+// --------------------------
+// COMPUTER
+// --------------------------
+
+"Computer.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.7"
+	"rndwave"
+	{
+		"wave"		"physics/metal/computer_bullet_impact_01.wav"
+		"wave"		"physics/metal/computer_bullet_impact_02.wav"
+		"wave"		"physics/metal/computer_bullet_impact_03.wav"
+		"wave"		"physics/metal/computer_bullet_impact_04.wav"
+		"wave"		"physics/metal/computer_bullet_impact_05.wav"		
+
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Computer.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Computer.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Computer.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.50"
+	"rndwave"
+	{
+		"wave"		"physics/metal/computer_impact_hard_01.wav"
+		"wave"		"physics/metal/computer_impact_hard_02.wav"
+		"wave"		"physics/metal/computer_impact_hard_03.wav"
+	}
+}
+
+"Computer.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.40"
+	"rndwave"
+	{
+		"wave"		"physics/metal/computer_impact_soft_01.wav"
+		"wave"		"physics/metal/computer_impact_soft_02.wav"
+		"wave"		"physics/metal/computer_impact_soft_03.wav"
+	}
+}
+
+// --------------------------
+// CONCRETE
+// --------------------------
+
+"Concrete.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"		"player/footsteps/Concrete/fs_concrete_01.wav"
+		"wave"		"player/footsteps/Concrete/fs_concrete_03.wav"
+		"wave"		"player/footsteps/Concrete/fs_concrete_05.wav"
+		"wave"		"player/footsteps/Concrete/fs_concrete_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Concrete.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Concrete/fs_concrete_02.wav"
+		"wave"		"player/footsteps/Concrete/fs_concrete_04.wav"
+		"wave"		"player/footsteps/Concrete/fs_concrete_06.wav"
+		"wave"		"player/footsteps/Concrete/fs_concrete_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Concrete.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/concrete/concrete_bullet_impact_01.wav"
+		"wave"		"physics/concrete/concrete_bullet_impact_02.wav"
+		"wave"		"physics/concrete/concrete_bullet_impact_03.wav"
+		"wave"		"physics/concrete/concrete_bullet_impact_04.wav"
+		"wave"		"physics/concrete/concrete_bullet_impact_05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Concrete.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Concrete.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Concrete.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"rndwave"
+	{
+		"wave"		"physics/concrete/concrete_impact_hard_01.wav"
+		"wave"		"physics/concrete/concrete_impact_hard_02.wav"
+		"wave"		"physics/concrete/concrete_impact_hard_03.wav"
+	}
+}
+
+"Concrete.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.50"
+	"rndwave"
+	{
+		"wave"		"physics/concrete/concrete_impact_soft_01.wav"
+		"wave"		"physics/concrete/concrete_impact_soft_02.wav"
+		"wave"		"physics/concrete/concrete_impact_soft_03.wav"
+	}
+}
+
+"Concrete.ScrapeRough"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"wave"		"physics/concrete/concrete_scrape_rough.wav"
+}
+
+"Concrete.ScrapeSmooth"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"wave"		"physics/concrete/concrete_scrape_smooth.wav"
+}
+
+// --------------------------
+// GRAVEL
+// --------------------------
+
+"Gravel.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Gravel/fs_gravel_01.wav"
+		"wave"		"player/footsteps/Gravel/fs_gravel_03.wav"
+		"wave"		"player/footsteps/Gravel/fs_gravel_05.wav"
+		"wave"		"player/footsteps/Gravel/fs_gravel_07.wav"		
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Gravel.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Gravel/fs_gravel_02.wav"
+		"wave"		"player/footsteps/Gravel/fs_gravel_04.wav"
+		"wave"		"player/footsteps/Gravel/fs_gravel_06.wav"
+		"wave"		"player/footsteps/Gravel/fs_gravel_08.wav"	
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Gravel.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.7"
+	"rndwave"
+	{
+
+		"wave"		"physics/surfaces/gravel_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/gravel_bullet_impact_02.wav"
+		"wave"		"physics/surfaces/gravel_bullet_impact_03.wav"
+		"wave"		"physics/surfaces/gravel_bullet_impact_04.wav"
+		"wave"		"physics/surfaces/gravel_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Gravel.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Gravel.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+// --------------------------
+// CHAINLINK
+// --------------------------
+
+"ChainLink.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+
+		"wave"		"physics/metal/chainlink_bullet_impact_01.wav"
+		"wave"		"physics/metal/chainlink_bullet_impact_02.wav"
+		"wave"		"physics/metal/chainlink_bullet_impact_03.wav"
+		"wave"		"physics/metal/chainlink_bullet_impact_04.wav"
+		"wave"		"physics/metal/chainlink_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "ChainLink.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"ChainLink.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+// --------------------------
+// FLESH
+// --------------------------
+
+"Flesh.BulletImpact"
+{
+	"pitch"			"95,105"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"player/damage/pl_BulletBodyImpact_01.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_02.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_03.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_04.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_05.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_06.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_07.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_08.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_09.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_10.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_11.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_12.wav"
+		"wave"		"player/damage/pl_BulletBodyImpact_13.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "20"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Flesh.BulletImpactDistant"
+			}
+			
+
+        }
+	}
+}
+
+"Flesh.BulletImpactDistant"
+{
+	"pitch"			"95,105"
+	"soundlevel"	"SNDLVL_60dB"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"player/damage/3p_BulletBodyImpact_01.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_02.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_03.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_04.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_05.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_06.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_07.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_08.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_09.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_10.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_11.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_12.wav"
+		"wave"		"player/damage/3p_BulletBodyImpact_13.wav"		
+	}
+}	
+
+"Flesh.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/body/body_medium_impact_hard1.wav"
+		"wave"		"physics/body/body_medium_impact_hard2.wav"
+		"wave"		"physics/body/body_medium_impact_hard3.wav"
+		"wave"		"physics/body/body_medium_impact_hard4.wav"
+		"wave"		"physics/body/body_medium_impact_hard5.wav"
+		"wave"		"physics/body/body_medium_impact_hard6.wav"
+	}
+}
+
+"Flesh.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/body/body_medium_impact_hard1.wav"
+		"wave"		"physics/body/body_medium_impact_hard2.wav"
+		"wave"		"physics/body/body_medium_impact_hard3.wav"
+		"wave"		"physics/body/body_medium_impact_hard4.wav"
+		"wave"		"physics/body/body_medium_impact_hard5.wav"
+		"wave"		"physics/body/body_medium_impact_hard6.wav"
+	}
+}
+
+
+// --------------------------
+// CARPET
+// --------------------------
+
+"Carpet.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Carpet/fs_carpet_01.wav"
+		"wave"		"player/footsteps/Carpet/fs_carpet_03.wav"
+		"wave"		"player/footsteps/Carpet/fs_carpet_05.wav"
+		"wave"		"player/footsteps/Carpet/fs_carpet_07.wav"
+	
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Carpet.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Carpet/fs_carpet_02.wav"
+		"wave"		"player/footsteps/Carpet/fs_carpet_04.wav"
+		"wave"		"player/footsteps/Carpet/fs_carpet_06.wav"
+		"wave"		"player/footsteps/Carpet/fs_carpet_08.wav"
+
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Carpet.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.7"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/carpet_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/carpet_bullet_impact_02.wav"
+		"wave"		"physics/surfaces/carpet_bullet_impact_03.wav"
+		"wave"		"physics/surfaces/carpet_bullet_impact_04.wav"
+		"wave"		"physics/surfaces/carpet_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Carpet.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Carpet.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Carpet.Impact"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/carpet_impact_hard_01.wav"
+		"wave"		"physics/surfaces/carpet_impact_hard_02.wav"
+		"wave"		"physics/surfaces/carpet_impact_hard_03.wav"		
+	}
+}
+
+"Carpet.Scrape"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"wave"		"physics/surfaces/carpet_scrape_rough.wav"
+}
+
+// --------------------------
+// PLASTER
+// --------------------------
+
+"Plaster.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/dirt_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/sand_bullet_impact_02.wav"
+		"wave"		"physics/cardboard/cardboard_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/sand_bullet_impact_04.wav"
+		"wave"		"physics/surfaces/dirt_bullet_impact_05.wav"
+		"wave"      "physics/cardboard/cardboard_bullet_impact_03.wav" 
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Plaster.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Plaster.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Plaster.Impact"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"rndwave"
+	{
+	"wave"		"physics/cardboard/cardboard_impact_hard_01.wav"	
+	"wave"		"physics/surfaces/sand_bullet_impact_02.wav"
+	"wave"      "physics/cardboard/cardboard_impact_hard_03.wav" 
+	}
+}
+
+"Plaster.Scrape"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"wave"		"physics/surfaces/carpet_scrape_rough.wav"
+}
+
+// --------------------------
+// SAND
+// --------------------------
+
+"Sand.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"		"player/footsteps/Sand/fs_sand_01.wav"
+		"wave"		"player/footsteps/Sand/fs_sand_03.wav"
+		"wave"		"player/footsteps/Sand/fs_sand_05.wav"
+		"wave"		"player/footsteps/Sand/fs_sand_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Sand.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Sand/fs_sand_02.wav"
+		"wave"		"player/footsteps/Sand/fs_sand_04.wav"
+		"wave"		"player/footsteps/Sand/fs_sand_06.wav"
+		"wave"		"player/footsteps/Sand/fs_sand_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Sand.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/surfaces/sand_bullet_impact_01.wav"
+		"wave"		"physics/surfaces/sand_bullet_impact_02.wav"
+		"wave"		"physics/surfaces/sand_bullet_impact_03.wav"
+		"wave"		"physics/surfaces/sand_bullet_impact_04.wav"
+		"wave"		"physics/surfaces/sand_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Sand.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Sand.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+// --------------------------
+// WATERMELON
+// --------------------------
+
+"Watermelon.BulletImpact"
+{
+	"pitch"			"102,110"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.9"
+	"rndwave"
+	{
+		"wave"		"physics/flesh/melon_bullet_impact_01.wav"
+		"wave"		"physics/flesh/melon_bullet_impact_02.wav"
+		"wave"		"physics/flesh/melon_bullet_impact_03.wav"
+		"wave"		"physics/flesh/melon_bullet_impact_04.wav"
+		"wave"		"physics/flesh/melon_bullet_impact_05.wav"	
+		"wave"		"physics/flesh/melon_bullet_impact_06.wav"	
+		"wave"		"physics/flesh/melon_bullet_impact_07.wav"	
+		"wave"		"physics/flesh/melon_bullet_impact_08.wav"	
+		"wave"		"physics/flesh/melon_bullet_impact_09.wav"			
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Watermelon.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Watermelon.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Watermelon.Impact"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"rndwave"
+	{
+		"wave"		"physics/flesh/melon_impact_hard_01.wav"
+		"wave"		"physics/flesh/melon_impact_hard_02.wav"
+		"wave"		"physics/flesh/melon_impact_hard_03.wav"		
+	}
+}
+
+"Watermelon.Scrape"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"wave"		"physics/flesh/melon_scrape_rough.wav"
+}
+
+// --------------------------
+// FRUIT
+// --------------------------
+
+"Fruit.BulletImpact"
+{
+	"pitch"			"102,110"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.9"
+	"rndwave"
+	{
+		"wave"		"physics/flesh/fruit_bullet_impact_01.wav"
+		"wave"		"physics/flesh/fruit_bullet_impact_02.wav"
+		"wave"		"physics/flesh/fruit_bullet_impact_03.wav"
+		"wave"		"physics/flesh/fruit_bullet_impact_04.wav"
+		"wave"		"physics/flesh/fruit_bullet_impact_05.wav"	
+		"wave"		"physics/flesh/fruit_bullet_impact_06.wav"	
+		"wave"		"physics/flesh/fruit_bullet_impact_07.wav"	
+		"wave"		"physics/flesh/fruit_bullet_impact_08.wav"	
+		"wave"		"physics/flesh/fruit_bullet_impact_09.wav"			
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Fruit.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Fruit.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Fruit.Impact"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"rndwave"
+	{
+		"wave"		"physics/flesh/fruit_impact_hard_01.wav"
+		"wave"		"physics/flesh/fruit_impact_hard_02.wav"
+		"wave"		"physics/flesh/fruit_impact_hard_03.wav"		
+	}
+}
+
+"Fruit.Scrape"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"wave"		"physics/flesh/fruit_scrape_rough.wav"
+}
+
+// --------------------------
+// GLASSBOTTLE
+// --------------------------
+
+"GlassBottle.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/glass/glassbottle_bullet_impact_01.wav"
+		"wave"		"physics/glass/glassbottle_bullet_impact_02.wav"
+		"wave"		"physics/glass/glassbottle_bullet_impact_03.wav"
+		"wave"		"physics/glass/glassbottle_bullet_impact_04.wav"
+		"wave"		"physics/glass/glassbottle_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "GlassBottle.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"GlassBottle.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"GlassBottle.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"95,100"
+	"rndwave"
+	{
+		"wave"		"physics/glass/glass_bottle_impact_hard_01.wav"
+		"wave"		"physics/glass/glass_bottle_impact_hard_02.wav"
+		"wave"		"physics/glass/glass_bottle_impact_hard_03.wav"		
+	}
+}
+
+"GlassBottle.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.50"
+	"pitch"		"95,100"
+	"rndwave"
+	{
+		"wave"		"physics/glass/glass_bottle_impact_soft_01.wav"
+		"wave"		"physics/glass/glass_bottle_impact_soft_02.wav"
+		"wave"		"physics/glass/glass_bottle_impact_soft_03.wav"		
+	}
+}
+
+"GlassBottle.ScrapeRough"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.30"
+	"pitch"		"98,100"
+	"wave"		"physics/glass/glass_bottle_scrape_rough.wav"
+}
+
+"GlassBottle.ScrapeSmooth"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.30"
+	"pitch"		"98,100"
+	"wave"		"physics/glass/glass_bottle_scrape_smooth.wav"
+}
+
+// --------------------------
+// METALBARREL
+// --------------------------
+
+"Metal_Barrel.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.7"
+	"rndwave"
+	{
+		"wave"		"physics/metal/metalbarrel_bullet_impact_01.wav"
+		"wave"		"physics/metal/metalbarrel_bullet_impact_02.wav"
+		"wave"		"physics/metal/metalbarrel_bullet_impact_03.wav"
+		"wave"		"physics/metal/metalbarrel_bullet_impact_04.wav"
+		"wave"		"physics/metal/metalbarrel_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Metal_Barrel.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Metal_Barrel.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Metal_Barrel.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/metalbarrel_impact_hard_01.wav"
+		"wave"		"physics/metal/metalbarrel_impact_hard_02.wav"
+		"wave"		"physics/metal/metalbarrel_impact_hard_03.wav"		
+	}
+}
+
+"Metal_Barrel.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.50"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/metalbarrel_impact_soft_01.wav"
+		"wave"		"physics/metal/metalbarrel_impact_soft_02.wav"
+		"wave"		"physics/metal/metalbarrel_impact_soft_03.wav"		
+	}
+}
+
+// --------------------------
+// POPCAN
+// --------------------------
+
+"Popcan.BulletImpact"
+{
+	"pitch"			"130"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/metal/sodacan_bullet_impact_01.wav"
+		"wave"		"physics/metal/sodacan_bullet_impact_02.wav"
+		"wave"		"physics/metal/sodacan_bullet_impact_03.wav"
+		"wave"		"physics/metal/sodacan_bullet_impact_04.wav"
+		"wave"		"physics/metal/sodacan_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Popcan.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Popcan.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Popcan.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/sodacan_impact_hard_01.wav"
+		"wave"		"physics/metal/sodacan_impact_hard_02.wav"
+		"wave"		"physics/metal/sodacan_impact_hard_03.wav"		
+	}
+}
+
+"Popcan.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.40"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/sodacan_impact_soft_01.wav"
+		"wave"		"physics/metal/sodacan_impact_soft_02.wav"
+		"wave"		"physics/metal/sodacan_impact_soft_03.wav"		
+	}
+}
+
+"Popcan.ScrapeRough"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.40"
+	"pitch"		"98,100"
+	"wave"		"physics/metal/sodacan_scrape_rough.wav"
+}
+
+"Popcan.ScrapeSmooth"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.30"
+	"pitch"		"130,140"
+	"wave"		"physics/metal/sodacan_scrape_rough.wav"
+}
+
+// --------------------------
+// PAINTCAN
+// --------------------------
+
+"Paintcan.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/metal/paintcan_bullet_impact_01.wav"
+		"wave"		"physics/metal/paintcan_bullet_impact_02.wav"
+		"wave"		"physics/metal/paintcan_bullet_impact_03.wav"
+		"wave"		"physics/metal/paintcan_bullet_impact_04.wav"
+		"wave"		"physics/metal/paintcan_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Paintcan.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Paintcan.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Paintcan.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/paintcan_impact_hard_01.wav"
+		"wave"		"physics/metal/paintcan_impact_hard_02.wav"
+		"wave"		"physics/metal/paintcan_impact_hard_03.wav"		
+	}
+}
+
+"Paintcan.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.40"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/metal/paintcan_impact_soft_01.wav"
+		"wave"		"physics/metal/paintcan_impact_soft_02.wav"
+		"wave"		"physics/metal/paintcan_impact_soft_03.wav"		
+	}
+}
+
+"Paintcan.Roll"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.40"
+	"pitch"		"98,100"
+	"wave"		"physics/metal/paintcan_roll.wav"
+}
+
+// --------------------------
+// PAPERCUP
+// --------------------------
+
+"Papercup.Impact"
+{
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/cardboard/papercup_impact_hard_01.wav"
+		"wave"		"physics/cardboard/papercup_impact_hard_02.wav"
+		"wave"		"physics/cardboard/papercup_impact_hard_03.wav"		
+	}
+}
+
+"Papercup.Scrape"
+{
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"wave"		"physics/cardboard/papercup_scrape_rough.wav"
+
+}
+
+// --------------------------
+// BREAKABLEGLASS
+// --------------------------
+
+"Breakable.MatGlass"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.5"
+	"rndwave"
+	{
+		"wave"		"physics/glass/glass_shatter_01.wav"
+		"wave"		"physics/glass/glass_shatter_02.wav"
+		"wave"		"physics/glass/glass_shatter_03.wav"
+		"wave"		"physics/glass/glass_shatter_04.wav"
+		"wave"		"physics/glass/glass_shatter_05.wav"		
+    } 		
+
+} 
+
+
+// --------------------------
+// CARDBOARD
+// --------------------------
+
+"Cardboard.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/cardboard/cardboard_bullet_impact_01.wav"
+		"wave"		"physics/cardboard/cardboard_bullet_impact_02.wav"
+		"wave"		"physics/cardboard/cardboard_bullet_impact_03.wav"
+		"wave"		"physics/cardboard/cardboard_bullet_impact_04.wav"
+		"wave"		"physics/cardboard/cardboard_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Cardboard.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Cardboard.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Cardboard.ImpactHard"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.80"
+	"rndwave"
+	{
+		"wave"		"physics/cardboard/cardboard_impact_hard_01.wav"
+		"wave"		"physics/cardboard/cardboard_impact_hard_02.wav"
+		"wave"		"physics/cardboard/cardboard_impact_hard_03.wav"		
+
+	}
+}
+
+"Cardboard.ImpactSoft"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"rndwave"
+	{
+		"wave"		"physics/cardboard/cardboard_impact_soft_01.wav"
+		"wave"		"physics/cardboard/cardboard_impact_soft_02.wav"
+		"wave"		"physics/cardboard/cardboard_impact_soft_03.wav"		
+
+	}
+}
+
+"Cardboard.ScrapeRough"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.35"
+	"pitch"		"96,104"
+	"wave"		"physics/cardboard/cardboard_scrape_rough.wav"
+}
+
+"Cardboard.ScrapeSmooth"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.55"
+	"pitch"		"96,104"
+	"wave"		"physics/cardboard/cardboard_scrape_smooth.wav"
+}
+
+// --------------------------
+// PLASTICBARREL
+// --------------------------
+
+"Plastic_Barrel.BulletImpact"
+{
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"pitch"		"96,104"
+	"rndwave"
+	{
+		"wave"		"physics/plastic/plasticbarrel_bullet_impact_01.wav"
+		"wave"		"physics/plastic/plasticbarrel_bullet_impact_02.wav"
+		"wave"		"physics/plastic/plasticbarrel_bullet_impact_03.wav"
+		"wave"		"physics/plastic/plasticbarrel_bullet_impact_04.wav"
+		"wave"		"physics/plastic/plasticbarrel_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Plastic_Barrel.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Plastic_Barrel.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Plastic_Barrel.ImpactHard"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.90"
+	"pitch"		"96,104"
+	"rndwave"
+	{
+		"wave"		"physics/plastic/plasticbarrel_impact_hard_01.wav"
+		"wave"		"physics/plastic/plasticbarrel_impact_hard_02.wav"
+		"wave"		"physics/plastic/plasticbarrel_impact_hard_03.wav"		
+	}
+}
+
+"Plastic_Barrel.ImpactSoft"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"95,105"
+	"rndwave"
+	{
+		"wave"		"physics/plastic/plasticbarrel_impact_soft_01.wav"
+		"wave"		"physics/plastic/plasticbarrel_impact_soft_02.wav"
+		"wave"		"physics/plastic/plasticbarrel_impact_soft_03.wav"		
+	}
+}
+
+"Plastic_Barrel.ScrapeRough"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.35"
+	"pitch"		"96,104"
+	"wave"		"physics/plastic/plasticbarrel_scrape_rough.wav"
+}
+
+"Plastic_Barrel.ScrapeSmooth"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.55"
+	"pitch"		"96,104"
+	"wave"		"physics/plastic/plasticbarrel_scrape_smooth.wav"
+}
+
+// --------------------------
+// PLASTICBOX
+// --------------------------
+
+"Plastic_Box.BulletImpact"
+{
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"pitch"		"96,104"
+	"rndwave"
+	{
+		"wave"		"physics/plastic/plasticbox_bullet_impact_01.wav"
+		"wave"		"physics/plastic/plasticbox_bullet_impact_02.wav"
+		"wave"		"physics/plastic/plasticbox_bullet_impact_03.wav"
+		"wave"		"physics/plastic/plasticbox_bullet_impact_04.wav"
+		"wave"		"physics/plastic/plasticbox_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Plastic_Box.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Plastic_Box.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Plastic_Box.ImpactHard"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.80"
+	"pitch"		"96,104"
+	"rndwave"
+	{
+		"wave"		"physics/plastic/plasticbox_impact_hard_01.wav"
+		"wave"		"physics/plastic/plasticbox_impact_hard_02.wav"
+		"wave"		"physics/plastic/plasticbox_impact_hard_03.wav"		
+	}
+}
+
+"Plastic_Box.ImpactSoft"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"96,104"
+	"rndwave"
+	{
+		"wave"		"physics/plastic/plasticbox_impact_soft_01.wav"
+		"wave"		"physics/plastic/plasticbox_impact_soft_02.wav"
+		"wave"		"physics/plastic/plasticbox_impact_soft_03.wav"		
+	}
+}
+
+"Plastic_Box.ScrapeRough"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.35"
+	"pitch"		"96,104"
+	"wave"		"physics/plastic/plasticbox_scrape_rough.wav"
+}
+
+"Plastic_Box.ScrapeSmooth"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.55"
+	"pitch"		"96,104"
+	"wave"		"physics/plastic/plasticbox_scrape_smooth.wav"
+}
+
+// --------------------------
+// RUBBER
+// --------------------------
+
+"Rubber.BulletImpact"
+{
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"pitch"		"90,100"
+	"rndwave" 
+	{
+	"wave"		"physics/rubber/rubber_tire_bullet_impact_01.wav"
+	"wave"		"physics/rubber/rubber_tire_bullet_impact_02.wav"
+	"wave"		"physics/rubber/rubber_tire_bullet_impact_03.wav"
+	"wave"		"physics/rubber/rubber_tire_bullet_impact_04.wav"
+	"wave"		"physics/rubber/rubber_tire_bullet_impact_05.wav"	
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Rubber.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Rubber.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Rubber.Impact"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.50"
+	"rndwave" 
+	{
+	"wave"		"physics/rubber/rubber_impact_hard_01.wav"
+	"wave"		"physics/rubber/rubber_impact_hard_02.wav"
+	"wave"		"physics/rubber/rubber_impact_hard_03.wav"	
+	}
+}
+
+"Rubber.ScrapeRough"
+{
+
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.50"
+	"wave"		"physics/rubber/rubber_scrape_rough.wav"
+
+}
+
+// --------------------------
+// WOOD
+// --------------------------
+
+"Wood.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Wood/fs_wood_01.wav"
+		"wave"		"player/footsteps/Wood/fs_wood_03.wav"
+		"wave"		"player/footsteps/Wood/fs_wood_05.wav"
+		"wave"		"player/footsteps/Wood/fs_wood_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+	
+
+"Wood.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Wood/fs_wood_02.wav"
+		"wave"		"player/footsteps/Wood/fs_wood_04.wav"
+		"wave"		"player/footsteps/Wood/fs_wood_06.wav"
+		"wave"		"player/footsteps/Wood/fs_wood_08.wav"		
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+	
+"Wood.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/wood/solidwood_bullet_impact_01.wav"
+		"wave"		"physics/wood/solidwood_bullet_impact_02.wav"
+		"wave"		"physics/wood/solidwood_bullet_impact_03.wav"
+		"wave"		"physics/wood/solidwood_bullet_impact_04.wav"
+		"wave"		"physics/wood/solidwood_bullet_impact_05.wav"
+
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Wood.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Wood.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Wood.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_80db"
+	"volume"		".7"
+	"rndwave"
+	{
+		"wave"		"physics/wood/solidwood_impact_hard_01.wav"
+		"wave"		"physics/wood/solidwood_impact_hard_02.wav"
+		"wave"		"physics/wood/solidwood_impact_hard_03.wav"
+	}
+}
+
+"Wood.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_80db"
+	"volume"		".5"
+	"rndwave"
+	{
+		"wave"		"physics/wood/solidwood_impact_soft_01.wav"
+		"wave"		"physics/wood/solidwood_impact_soft_02.wav"
+		"wave"		"physics/wood/solidwood_impact_soft_03.wav"
+	}
+}
+
+"Wood.ScrapeRough"
+{
+	
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.3"
+	"pitch"		"96,104"
+	"wave"		"physics/wood/solidwood_scrape_rough.wav"
+}
+
+"Wood.ScrapeSmooth"
+{
+	
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.3"
+	"pitch"		"96,104"
+	"wave"		"physics/wood/solidwood_scrape_smooth.wav"
+}
+
+// --------------------------
+// WOODBOX
+// --------------------------
+
+"Wood_Box.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/wood/woodbox_bullet_impact_01.wav"
+		"wave"		"physics/wood/woodbox_bullet_impact_02.wav"
+		"wave"		"physics/wood/woodbox_bullet_impact_03.wav"
+		"wave"		"physics/wood/woodbox_bullet_impact_04.wav"
+		"wave"		"physics/wood/woodbox_bullet_impact_05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Wood_Box.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Wood_Box.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Wood_Box.ImpactHard"
+{
+	
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/wood/woodbox_impact_hard_01.wav"
+		"wave"		"physics/wood/woodbox_impact_hard_02.wav"
+		"wave"		"physics/wood/woodbox_impact_hard_03.wav"		
+	}
+}
+
+"Wood_Box.ImpactSoft"
+{
+	
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"98,100"
+	"rndwave"
+	{
+		"wave"		"physics/wood/woodbox_impact_soft_01.wav"
+		"wave"		"physics/wood/woodbox_impact_soft_02.wav"
+		"wave"		"physics/wood/woodbox_impact_soft_03.wav"		
+	}
+}
+
+"Wood_Box.ScrapeRough"
+{
+	
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"pitch"		"96,104"
+	"wave"		"physics/wood/woodbox_scape_rough.wav"
+}
+
+"Wood_Box.ScrapeSmooth"
+{
+	
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.50"
+	"pitch"		"96,104"
+	"wave"		"physics/wood/woodbox_scape_smooth.wav"
+}
+
+// --------------------------
+// METALBOX
+// --------------------------
+
+"Metal_Box.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/metal/metalbox_bullet_impact_01.wav"
+		"wave"		"physics/metal/metalbox_bullet_impact_02.wav"
+		"wave"		"physics/metal/metalbox_bullet_impact_03.wav"
+		"wave"		"physics/metal/metalbox_bullet_impact_04.wav"
+		"wave"		"physics/metal/metalbox_bullet_impact_05.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Metal_Box.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"Metal_Box.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"Metal_Box.ImpactHard"
+{
+	
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"1.0"
+	"pitch"			"95,100"
+	"rndwave"
+	{
+	"wave"		"physics/metal/metalbox_impact_hard_01.wav"
+	"wave"		"physics/metal/metalbox_impact_hard_02.wav"
+	"wave"		"physics/metal/metalbox_impact_hard_03.wav"	
+	}
+}
+
+"Metal_Box.ImpactSoft"
+{
+
+	
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		".85"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+	"wave"		"physics/metal/metalbox_impact_soft_01.wav"
+	"wave"		"physics/metal/metalbox_impact_soft_02.wav"
+	"wave"		"physics/metal/metalbox_impact_soft_03.wav"	
+	}
+}
+
+"Metal_Box.ScrapeRough"
+{
+	
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.2"
+	"pitch"		"95,105"
+	"wave"		"physics/metal/metalbox_scrape_rough.wav"
+}
+
+"Metal_Box.ScrapeSmooth"
+{
+	
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.2"
+	"pitch"		"95,105"
+	"wave"		"physics/metal/metalbox_scrape_smooth.wav"
+}
+
+// --------------------------
+// WEAPON
+// --------------------------
+
+"weapon.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"0.7"
+	"rndwave"
+	{
+		"wave"		"physics/metal/computer_impact_hard_01.wav"
+		"wave"		"physics/metal/computer_impact_hard_02.wav"
+		"wave"		"physics/metal/computer_impact_hard_03.wav"		
+
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_limit_bullet_impact"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_rics"
+		}
+	}
+
+}
+
+"weapon.ImpactHard"
+{
+	
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.60"
+	"pitch"		"95,105"
+	"rndwave"
+	{
+		"wave"		"physics/metal/weapon_impact_hard_01.wav"
+		"wave"		"physics/metal/weapon_impact_hard_02.wav"
+		"wave"		"physics/metal/weapon_impact_hard_03.wav"	
+		"wave"		"physics/metal/weapon_impact_hard_04.wav"
+		"wave"		"physics/metal/weapon_impact_hard_05.wav"
+		"wave"		"physics/metal/weapon_impact_hard_06.wav"			
+	}
+}
+
+"weapon.ImpactSoft"
+{
+	
+	"soundlevel"		"SNDLVL_NORM"
+	"volume"		"0.45"
+	"pitch"		"95,105"
+	"rndwave"
+	{
+		"wave"		"physics/metal/weapon_impact_soft_01.wav"
+		"wave"		"physics/metal/weapon_impact_soft_02.wav"
+		"wave"		"physics/metal/weapon_impact_soft_03.wav"	
+		"wave"		"physics/metal/weapon_impact_soft_04.wav"
+		"wave"		"physics/metal/weapon_impact_soft_05.wav"
+		"wave"		"physics/metal/weapon_impact_soft_06.wav"		
+	}
+}
+
+"weapon.ScrapeRough"
+{
+	
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.40"
+	"pitch"		"75,85"
+	"wave"		"physics/metal/weapon_scrape_rough.wav"
+}
+
+"weapon.ScrapeSmooth"
+{
+	
+	"soundlevel"		"SNDLVL_70dB"
+	"volume"		"0.40"
+	"pitch"		"96,104"
+	"wave"		"physics/metal/weapon_scrape_smooth.wav"
+}
+
+// --------------------------
+// VECHICLE
+// --------------------------
+
+"VehicleBody.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_80dB"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/metal/vehicle_bullet_impact_01.wav"
+		"wave"		"physics/metal/vehicle_bullet_impact_02.wav"
+		"wave"		"physics/metal/vehicle_bullet_impact_03.wav"
+		"wave"		"physics/metal/vehicle_bullet_impact_04.wav"
+		"wave"		"physics/metal/vehicle_bullet_impact_05.wav"		
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "VehicleBody.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"VehicleBody.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+
+// --------------------------
+// MUD
+// --------------------------
+"Mud.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"		"player/footsteps/Mud/fs_mud_01.wav"
+		"wave"		"player/footsteps/Mud/fs_mud_03.wav"
+		"wave"		"player/footsteps/Mud/fs_mud_05.wav"
+		"wave"		"player/footsteps/Mud/fs_mud_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Mud.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Mud/fs_mud_02.wav"
+		"wave"		"player/footsteps/Mud/fs_mud_04.wav"
+		"wave"		"player/footsteps/Mud/fs_mud_06.wav"
+		"wave"		"player/footsteps/Mud/fs_mud_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+
+// --------------------------
+// SNOW
+// --------------------------
+
+"Snow.StepLeft"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"		"player/footsteps/Snow/fs_snow_01.wav"
+		"wave"		"player/footsteps/Snow/fs_snow_03.wav"
+		"wave"		"player/footsteps/Snow/fs_snow_05.wav"
+		"wave"		"player/footsteps/Snow/fs_snow_07.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Snow.StepRight"
+{
+	"channel"       "CHAN_BODY"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Snow/fs_snow_02.wav"
+		"wave"		"player/footsteps/Snow/fs_snow_04.wav"
+		"wave"		"player/footsteps/Snow/fs_snow_06.wav"
+		"wave"		"player/footsteps/Snow/fs_snow_08.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+// EQUIPMENT LAYER
+
+"Equipment.Light"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"0.5"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Equipment/equipment_light_01.wav"
+		"wave"		"player/footsteps/Equipment/equipment_light_02.wav"
+		"wave"		"player/footsteps/Equipment/equipment_light_03.wav"
+		"wave"		"player/footsteps/Equipment/equipment_light_04.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+"Equipment.Medium"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"0.5"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Equipment/equipment_medium_01.wav"
+		"wave"		"player/footsteps/Equipment/equipment_medium_02.wav"
+		"wave"		"player/footsteps/Equipment/equipment_medium_03.wav"
+		"wave"		"player/footsteps/Equipment/equipment_medium_04.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+
+"Equipment.Heavy"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"  	"SNDLVL_90dB"
+	"volume"		"0.5"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"player/footsteps/Equipment/equipment_heavy_01.wav"
+		"wave"		"player/footsteps/Equipment/equipment_heavy_02.wav"
+		"wave"		"player/footsteps/Equipment/equipment_heavy_03.wav"
+		"wave"		"player/footsteps/Equipment/equipment_heavy_04.wav"
+	}
+
+	"soundentry_version" "2"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_limit_footsteps_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_footsteps"
+		}
+	}
+}
+
+//FIX MISSING
+"Bounce.Glass"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+}
+"Bounce.Metal"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+}
+"Bounce.Flesh"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+}
+"Bounce.Wood"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"97,103"
+	"volume"		"0.5"
+		
+	"rndwave"
+	{
+		"wave"		"physics/wood/woodplank_impact_hard_01.wav"
+		"wave"		"physics/wood/woodplank_impact_hard_02.wav"
+		"wave"		"physics/wood/woodplank_impact_hard_03.wav"
+		"wave"		"physics/wood/woodplank_impact_hard_04.wav"
+		"wave"		"physics/wood/woodplank_impact_hard_05.wav"
+		"wave"		"physics/wood/woodplank_impact_hard_06.wav"	
+		"wave"		"physics/wood/woodplank_impact_hard_07.wav"				
+	}
+	
+}
+"Bounce.Shrapnel"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_30dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+}
+"Bounce.ShotgunShell"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_30dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.25"
+	
+	"rndwave"
+	{
+		"wave"		"weapons/bullets/shells/concrete/shotgun_shell_concrete_01.wav"
+		"wave"		"weapons/bullets/shells/concrete/shotgun_shell_concrete_02.wav"
+		"wave"		"weapons/bullets/shells/concrete/shotgun_shell_concrete_03.wav"
+		"wave"		"weapons/bullets/shells/concrete/shotgun_shell_concrete_04.wav"
+		"wave"		"weapons/bullets/shells/concrete/shotgun_shell_concrete_05.wav"
+		"wave"		"weapons/bullets/shells/concrete/shotgun_shell_concrete_06.wav"
+	}
+}
+"Bounce.Shell"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.25"
+	
+	"rndwave"
+	{
+		"wave"		"weapons/bullets/shells/concrete/9mm_shell_concrete_01.wav"
+		"wave"		"weapons/bullets/shells/concrete/9mm_shell_concrete_02.wav"
+		"wave"		"weapons/bullets/shells/concrete/9mm_shell_concrete_03.wav"
+		"wave"		"weapons/bullets/shells/concrete/9mm_shell_concrete_04.wav"
+		"wave"		"weapons/bullets/shells/concrete/9mm_shell_concrete_05.wav"
+		"wave"		"weapons/bullets/shells/concrete/9mm_shell_concrete_06.wav"
+	}
+}
+"Bounce.38Shell"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.25"
+	
+	"rndwave"
+	{
+		"wave"		"weapons/bullets/shells/concrete/38_shell_concrete_01.wav"
+		"wave"		"weapons/bullets/shells/concrete/38_shell_concrete_02.wav"
+		"wave"		"weapons/bullets/shells/concrete/38_shell_concrete_03.wav"
+		"wave"		"weapons/bullets/shells/concrete/38_shell_concrete_04.wav"
+		"wave"		"weapons/bullets/shells/concrete/38_shell_concrete_05.wav"
+		"wave"		"weapons/bullets/shells/concrete/38_shell_concrete_06.wav"		
+	}
+}
+"Bounce.M249Link"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.25"
+	
+	"rndwave"
+	{
+		"wave"		"weapons/bullets/shells/concrete/m249_link_concrete_01.wav"
+		"wave"		"weapons/bullets/shells/concrete/m249_link_concrete_02.wav"
+		"wave"		"weapons/bullets/shells/concrete/m249_link_concrete_03.wav"
+		"wave"		"weapons/bullets/shells/concrete/m249_link_concrete_04.wav"
+		"wave"		"weapons/bullets/shells/concrete/m249_link_concrete_05.wav"
+		"wave"		"weapons/bullets/shells/concrete/m249_link_concrete_06.wav"
+		"wave"		"weapons/bullets/shells/concrete/m249_link_concrete_07.wav"
+		"wave"		"weapons/bullets/shells/concrete/m249_link_concrete_08.wav"		
+	}
+}
+"Bounce.Concrete"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"flesh.stepleft"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"flesh.stepright"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"flesh.scrapesmooth"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"flesh.scraperough"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"flesh.break"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Metal.SawbladeStick"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.MatWood"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.MatMetal"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.MatFlesh"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.MatConcrete"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.Computer"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.Crate"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"98,100"
+	"volume"		"0.6"
+	
+	"rndwave"
+	{
+		"wave"	"physics/wood/woodboards_break_01.wav"
+		"wave"	"physics/wood/woodboards_break_02.wav"
+		"wave"	"physics/wood/woodboards_break_03.wav"		
+		"wave"	"physics/wood/woodboards_break_04.wav"	
+		"wave"	"physics/wood/woodboards_break_05.wav"			
+	}
+}
+
+"Breakable.Glass"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.Metal"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.Flesh"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.Concrete"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Breakable.Ceiling"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"glassbottle.break"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"undergroundcube.impactsoft"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"undergroundcube.impacthard"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"turretgibs.impactsoft"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"turretgibs.impacthard"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Underwater.BulletImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+"Physics.WaterSplash"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+
+
+"MetalDoor1.Open"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_01_open.wav"
+}
+
+"MetalDoor2.Open"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_02_open.wav"
+}
+
+"MetalDoor3.Open"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_03_open.wav"
+}
+
+"MetalDoor4.Open"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_04_open.wav"
+}
+
+"MetalDoor5.Open"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_05_open.wav"
+}
+
+"MetalDoor6.Open"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_06_open.wav"
+}
+
+"MetalDoor7.Open"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_07_open.wav"
+}
+
+"MetalDoor8.Open"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_08_open.wav"
+}
+
+"MetalDoor9.Open"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_09_open.wav"
+}
+
+"MetalDoor1.Close"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_01_close.wav"
+}
+
+"MetalDoor2.Close"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_02_close.wav"
+}
+
+"MetalDoor3.Close"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_03_close.wav"
+}
+
+"MetalDoor4.Close"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_04_close.wav"
+}
+
+"MetalDoor5.Close"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_05_close.wav"
+}
+
+"MetalDoor6.Close"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_06_close.wav"
+}
+
+"MetalDoor7.Close"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_07_close.wav"
+}
+
+"MetalDoor8.Close"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_08_close.wav"
+}
+
+"MetalDoor9.Close"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/metaldoors/metal_door_09_close.wav"
+}
+
+"RollerDoor1.Start"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_01_start.wav"
+}
+
+"RollerDoor1.Moving"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_01_moving.wav"
+}
+
+"RollerDoor1.Stop"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_01_stop.wav"
+}
+
+"RollerDoor2.Start"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_02_start.wav"
+}
+
+"RollerDoor2.Moving"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_02_moving.wav"
+}
+
+"RollerDoor2.Stop"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_02_stop.wav"
+}
+
+"RollerDoor3.Start"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_03_start.wav"
+}
+
+"RollerDoor3.Moving"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_03_moving.wav"
+}
+
+"RollerDoor3.Stop"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_03_stop.wav"
+}
+
+"RollerDoor4.Start"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_04_start.wav"
+}
+
+"RollerDoor4.Moving"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_04_moving.wav"
+}
+
+"RollerDoor4.Stop"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_04_stop.wav"
+}
+
+"RollerDoor5.Start"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_05_start.wav"
+}
+
+"RollerDoor5.Moving"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_05_moving.wav"
+}
+
+"RollerDoor5.Stop"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_05_stop.wav"
+}
+
+"RollerDoor6.Start"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_06_start.wav"
+}
+
+"RollerDoor6.Moving"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_06_moving.wav"
+}
+
+"RollerDoor6.Stop"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_06_stop.wav"
+}
+
+"RollerDoor7.Start"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_07_start.wav"
+}
+
+"RollerDoor7.Moving"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_07_moving.wav"
+}
+
+"RollerDoor7.Stop"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_07_stop.wav"
+}
+
+"RollerDoor8.Start"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_08_start.wav"
+}
+
+"RollerDoor8.Moving"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_08_moving.wav"
+}
+
+"RollerDoor8.Stop"
+{
+	
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel" 	"SNDLVL_NORM"
+	"wave"		    "physics/doors/rollerdoors/roller_door_08_stop.wav"
+}
+
+"Foliage.Movement"
+{
+	"channel"       "CHAN_STATIC"
+	"soundlevel"  	"SNDLVL_80dB"
+	"volume"		"0.25,0.35"
+	"pitch"			"95,110"
+	"rndwave"
+	{	
+		"wave"		"physics/foliage/foliage_movement_01.wav"
+		"wave"		"physics/foliage/foliage_movement_02.wav"
+		"wave"		"physics/foliage/foliage_movement_03.wav"
+		"wave"		"physics/foliage/foliage_movement_04.wav"
+		"wave"		"physics/foliage/foliage_movement_05.wav"
+		"wave"		"physics/foliage/foliage_movement_06.wav"
+		"wave"		"physics/foliage/foliage_movement_07.wav"
+		"wave"		"physics/foliage/foliage_movement_08.wav"		
+	}
+
+}
+
+// --------------------------
+// DOOR SPAM FIXES TEMP
+// --------------------------
+
+"RotDoorSound.DefaultMove"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+
+"RotDoorSound.DefaultArrive"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+
+"RotDoorSound.DefaultLocked"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+
+"DoorSound.DefaultMove"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+
+"DoorSound.DefaultArrive"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+
+"DoorSound.DefaultLocked"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+
+"DoorSound.Null"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+	"wave"			"common/null.wav" 
+}
+
+"VehicleGlass.Break"
+{
+
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		")physics/glass/vehicle_glass_shatter_full.wav"			
+	}
+}
+
+// --------------------------
+// FLAMETHROWER FUELTANK
+// --------------------------
+
+"FlameThrowerTank.BulletImpact"
+{
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_80dB"
+	"volume"		"1.0"
+	"rndwave"
+	{
+		"wave"		"physics/special/flamethrower_tank_bulletimpact_01.wav"
+		"wave"		"physics/special/flamethrower_tank_bulletimpact_02.wav"
+		"wave"		"physics/special/flamethrower_tank_bulletimpact_03.wav"
+		"wave"		"physics/special/flamethrower_tank_bulletimpact_04.wav"
+		"wave"		"physics/special/flamethrower_tank_bulletimpact_05.wav"		
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_bullet_impact"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "FlameThrowerTank.BulletImpactDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "BulletImpacts"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "1100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+
+		}
+	}
+
+}
+
+"FlameThrowerTank.BulletImpactDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"	
+}
+
+"General.BurningFlesh"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"			")physics/Flesh/BurningFlesh_loop.wav"
+}
+
+		

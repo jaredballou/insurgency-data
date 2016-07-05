@@ -1,0 +1,15 @@
+"doi_ps7"
+{
+material	overviews/doi_ps7.vtf // texture file
+pos_x		"-5055"			// X coordinate
+pos_y		"4602"			// Y coordinate
+scale		"9.5" 			// scale used when taking the screenshot
+//pos_x		"-2000"			// X coordinate
+//pos_y		"2500"			// Y coordinate
+//scale		"14.0" 			// scale used when taking the screenshot
+//pos_x		"-376"			// X coordinate
+//pos_y		"660"			// Y coordinate
+//scale		"1.0" 			// scale used when taking the screenshot
+rotate		"0"			// map was rotated by 90 degrees in image editor
+zoom		1			// optimal zoom factor if map is shown in full size
+}

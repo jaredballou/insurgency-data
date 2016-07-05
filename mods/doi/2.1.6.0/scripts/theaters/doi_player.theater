@@ -1,0 +1,88 @@
+"#base" "base_player.theater"
+
+"theater"
+{
+	"player_settings"
+	{		
+		"weight"
+		{
+			"min_weight"				"30"
+			"max_weight"				"360"
+		}
+		
+		"speed"
+		{
+			"speed_sprint"				"304"
+			
+			"AccelerationByWeight"
+			{
+				"30"					"4.30"
+				"360"					"4.15"
+			}
+			
+			"DecelerationByWeight"
+			{
+				"30"					"280.0"	// these are much higher than acceleration values because it's loss in velocity per second
+				"360"					"420.0"
+			}
+			
+			"FrictionByWeight"
+			{
+				"30"					"4.20"
+				"360"					"4.80"
+			}
+		}
+		
+		"stamina"
+		{
+			"StaminaMaxByWeight"
+			{
+				"30"					"120"
+				"360"					"60"
+			}
+		}
+		
+		"slide"
+		{
+			"DistanceByWeight"
+			{
+				"30"					"0.6"
+				"360"					"0.5"
+			}
+			
+			"SpeedByWeight"
+			{
+				"30"					"240"
+				"360"					"180"
+			}
+		}
+		
+		"lean"
+		{
+			"LeanViewModelSpeedByWeight"
+			{
+				"30"					"7"
+				"360"					"2"
+			}
+		}
+		
+		"suppression"
+		{
+			"suppression_resistance"		"0.1"
+		}
+		
+		"damage"
+		{
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"4.00"
+				"HITGROUP_CHEST"			"2.00"
+				"HITGROUP_STOMACH"			"1.50"
+				"HITGROUP_LEFTARM"			"1.20"
+				"HITGROUP_RIGHTARM"			"1.25"
+				"HITGROUP_LEFTLEG"			"0.50"
+				"HITGROUP_RIGHTLEG"			"0.55"
+			}
+		}
+	}
+}

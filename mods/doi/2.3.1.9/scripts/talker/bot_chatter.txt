@@ -1,0 +1,351 @@
+// Enemy spotted
+Response BotInsurgentCoop_Enemy
+{
+	PermitRepeats
+	speak			"Bot.Insurgent.OpenFire" noscene predelay "0.0,0.5" odds 60
+}
+
+Rule BotInsurgentCoop_Enemy
+{
+	criteria		ConceptRadialEnemy OnInsurgentTeam IsCoopEnemyWeight HasNearbyTeammates
+	response		BotInsurgentCoop_Enemy
+}	
+
+// Idle
+Response BotInsurgentCoop_Idle
+{
+	PermitRepeats
+	speak			"Bot.Insurgent.Idle" noscene odds 25
+}
+
+Rule BotInsurgentCoop_Idle
+{
+	criteria		ConceptPlayerIdle OnInsurgentTeam IsCoopEnemyWeight HasNearbyTeammates
+	response		BotInsurgentCoop_Idle
+}	
+
+// Flashed
+Response BotInsurgentCoop_Flashed
+{
+	PermitRepeats
+	speak			"Bot.Insurgent.Blinded" noscene predelay "0.5,1.0" odds 80 respeakdelay "3.0"
+}
+
+Rule BotInsurgentCoop_Flashed
+{
+	criteria		ConceptFlashed OnInsurgentTeam IsCoopEnemyWeight
+	response		BotInsurgentCoop_Flashed
+}	
+
+// LostSight
+Response BotInsurgentCoop_LostSight
+{
+	PermitRepeats
+	speak			"Bot.Insurgent.InvestigateAggressive" noscene predelay "0.0,0.75" odds 20 respeakdelay "8.0"
+}
+
+Rule BotInsurgentCoop_LostSight
+{
+	criteria		ConceptCoopBotLostSight OnInsurgentTeam IsCoopEnemyWeight
+	response		BotInsurgentCoop_LostSight
+}	
+
+
+
+// Flashed - TLK_FLASHED
+Response BotSecurityCoop_Flashed_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.Blinded" noscene predelay "0.5,1.0" odds 80 respeakdelay "3.0"
+}
+
+Rule BotSecurityCoop_Flashed_Lead
+{
+	criteria		ConceptFlashed OnSecurityTeam IsSquadLeader
+	response		BotSecurityCoop_Flashed_Lead
+}
+
+Response BotSecurityCoop_Flashed_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.Blinded" noscene predelay "0.5,1.0" odds 80 respeakdelay "3.0"
+}
+Rule BotSecurityCoop_Flashed_Sub
+{
+	criteria		ConceptFlashed OnSecurityTeam IsNotSquadLeader
+	response		BotSecurityCoop_Flashed_Sub
+}
+
+// HeardSomething - TLK_HEARD_SOMETHING
+Response BotSecurityCoop_HeardSomething_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.HeardSomething" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 40
+}
+
+Rule BotSecurityCoop_HeardSomething_Lead
+{
+	criteria		ConceptHeardSomething OnSecurityTeam IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_HeardSomething_Lead
+}
+
+Response BotSecurityCoop_HeardSomething_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.HeardSomething" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 30
+}
+Rule BotSecurityCoop_HeardSomething_Sub
+{
+	criteria		ConceptHeardSomething OnSecurityTeam IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_HeardSomething_Sub
+}
+
+
+//InvestigateAggressive TLK_INVESTIGATE_AGGRESSIVE
+Response BotSecurityCoop_InvestigateAggressive_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.AggressiveInvestigation" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 20
+}
+
+Rule BotSecurityCoop_InvestigateAggressive_Lead
+{
+	criteria		ConceptInvestigateAggressive OnSecurityTeam IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_InvestigateAggressive_Lead
+}
+
+Response BotSecurityCoop_InvestigateAggressive_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.AggressiveInvestigation" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 20
+}
+Rule BotSecurityCoop_InvestigateAggressive_Sub
+{
+	criteria		ConceptInvestigateAggressive OnSecurityTeam IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_InvestigateAggressive_Sub
+}
+
+
+//FlashlightSpotted TLK_FLASHLIGHT_SPOTTED
+Response BotSecurityCoop_FlashlightSpotted_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.FlashLightSpotted" noscene predelay "0.5,2.0" respeakdelay "5.0,6.0" odds 50
+}
+
+Rule BotSecurityCoop_FlashlightSpotted_Lead
+{
+	criteria		ConceptFlashlightSpotted OnSecurityTeam IsSquadLeader
+	response		BotSecurityCoop_FlashlightSpotted_Lead
+}
+
+Response BotSecurityCoop_FlashlightSpotted_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.FlashLightSpotted" noscene predelay "0.5,2.0" respeakdelay "5.0,6.0" odds 50
+}
+Rule BotSecurityCoop_FlashlightSpotted_Sub
+{
+	criteria		ConceptFlashlightSpotted OnSecurityTeam IsNotSquadLeader
+	response		BotSecurityCoop_FlashlightSpotted_Sub
+}
+
+//Investigate TLK_INVESTIGATE
+Response BotSecurityCoop_Investigate_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.BeginInvestigate" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 20
+}
+
+Rule BotSecurityCoop_Investigate_Lead
+{
+	criteria		ConceptInvestigate OnSecurityTeam IsSquadLeader
+	response		BotSecurityCoop_Investigate_Lead
+}
+
+Response BotSecurityCoop_Investigate_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.BeginInvestigate" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 20
+}
+Rule BotSecurityCoop_Investigate_Sub
+{
+	criteria		ConceptInvestigate OnSecurityTeam IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_Investigate_Sub
+}
+
+//idle TLK_PLAYER_IDLE
+Response BotSecurityCoop_Idle_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.Idle" noscene predelay "1.5,3.0" respeakdelay "10.0,30.0" odds 20
+}
+
+Rule BotSecurityCoop_Idle_Lead
+{
+	criteria		ConceptPlayerIdle OnSecurityTeam IsSquadLeader
+	response		BotSecurityCoop_Idle_Lead
+}
+
+Response BotSecurityCoop_Idle_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.Idle" noscene predelay "1.5,3.0" respeakdelay "10.0,30.0" odds 20
+}
+Rule BotSecurityCoop_Idle_Sub
+{
+	criteria		ConceptPlayerIdle OnSecurityTeam IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_Idle_Sub
+}
+
+
+//Enemy Sight TLK_FIREWEAPON
+Response BotSecurityCoop_FireWeapon_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.FireWeapon" noscene predelay "1.5,3.0" odds 20
+}
+
+Rule BotSecurityCoop_FireWeapon_Lead
+{
+	criteria		ConceptFireWeapon OnSecurityTeam IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_FireWeapon_Lead
+}
+
+Response BotSecurityCoop_FireWeapon_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.FireWeapon" noscene predelay "1.5,3.0" odds 20
+}
+Rule BotSecurityCoop_FireWeapon_Sub
+{
+	criteria		ConceptFireWeapon OnSecurityTeam IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_FireWeapon_Sub
+}
+
+//Suppress Enemy TLK_FIREWEAPON_SUPPRESSION
+Response BotSecurityCoop_FireWeaponSuppression_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.SuppressEnemy" noscene predelay "1.5,3.0" odds 25
+}
+
+Rule BotSecurityCoop_FireWeaponSuppression_Lead
+{
+	criteria		ConceptFireWeaponSuppression OnSecurityTeam IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_FireWeaponSuppression_Lead
+}
+
+Response BotSecurityCoop_FireWeaponSuppression_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.SuppressEnemy" noscene predelay "1.5,3.0" odds 25
+}
+Rule BotSecurityCoop_FireWeaponSuppression_Sub
+{
+	criteria		ConceptFireWeaponSuppression OnSecurityTeam IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_FireWeaponSuppression_Sub
+}
+
+// KilledPlayer TLK_KILLED_PLAYER
+Response BotSecurityCoop_KilledPlayer_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.TargetDown" noscene predelay "1.5,3.0" 
+}
+
+Rule BotSecurityCoop_KilledPlayer_Lead
+{
+	criteria		ConceptKilledPlayer OnSecurityTeam IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_KilledPlayer_Lead
+}
+
+Response BotSecurityCoop_KilledPlayer_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.TargetDown" noscene predelay "1.5,3.0"
+}
+Rule BotSecurityCoop_KilledPlayer_Sub
+{
+	criteria		ConceptKilledPlayer OnSecurityTeam IsNotSquadLeader
+	response		BotSecurityCoop_KilledPlayer_Sub
+}
+
+// Incoming Grenade TLK_INCOMING_GRENADE
+Response BotSecurityCoop_IncomingGrenade_Lead
+{
+	PermitRepeats
+	speak			"Bot.Security_Lead.IncomingGrenade" noscene predelay "0.5,1.0" odds 50
+}
+
+Rule BotSecurityCoop_IncomingGrenade_Lead
+{
+	criteria		ConceptIncomingGrenade OnSecurityTeam IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_IncomingGrenade_Lead
+}
+
+Response BotSecurityCoop_IncomingGrenade_Sub
+{
+	PermitRepeats
+	speak			"Bot.Security_Sub.IncomingGrenade" noscene predelay "0.5,1.0" odds 50
+}
+Rule BotSecurityCoop_IncomingGrenade_Sub
+{
+	criteria		ConceptIncomingGrenade OnSecurityTeam IsNotSquadLeader
+	response		BotSecurityCoop_IncomingGrenade_Sub
+}
+
+
+// insurgents
+Response BotInsurgentCoop_IncomingGrenade_Lead
+{
+	PermitRepeats
+	speak			"Bot.Insurgent_Lead.IncomingGrenade" noscene predelay "0.5,1.0" odds 50
+}
+
+Rule BotInsurgentCoop_IncomingGrenade_Lead
+{
+	criteria		ConceptIncomingGrenade OnInsurgentTeam IsSquadLeader HasNearbyTeammates
+	response		BotInsurgentCoop_IncomingGrenade_Lead
+}
+
+Response BotInsurgentCoop_IncomingGrenade_Sub
+{
+	PermitRepeats
+	speak			"Bot.Insurgent_Sub.IncomingGrenade" noscene predelay "0.5,1.0" odds 50
+}
+Rule BotInsurgentCoop_IncomingGrenade_Sub
+{
+	criteria		ConceptIncomingGrenade OnInsurgentTeam IsNotSquadLeader
+	response		BotInsurgentCoop_IncomingGrenade_Sub
+}
+
+
+// insert more VO here
+
+Response BotDOICoop_Melee
+{
+	PermitRepeats
+	speak			"Bot.Generic.Melee" noscene delay "5" respeakdelay "7" 
+}
+
+Rule BotDOICoop_Melee
+{
+	criteria		ConceptMeleeing
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response		BotDOICoop_Melee
+}
+
+Response BotDOICoop_Flee
+{
+	PermitRepeats
+	speak			"Bot.Generic.Retreat" noscene delay "5" respeakdelay "7" 
+}
+
+Rule BotDOICoop_Flee
+{
+	criteria		ConceptFleeing
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response		BotDOICoop_Flee
+}
+

@@ -1,0 +1,89 @@
+"#base" "swat.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"?elimination_security_attack"
+			{
+				"squads"
+				{
+					// assault squad
+					"#Fireteam_Alpha"	// small arms
+					{
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					}
+					
+					// recon team
+					"#Fireteam_Bravo"
+					{
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					"#Squad_Fireteam_Rifleman"		"template_rifleman_security"
+					}
+				}
+			}
+		}	
+		"insurgents"
+		{			
+			"?elimination_insurgents_defend"
+			{
+				"squads"
+				{
+					// assault group
+					"#Cell_Alpha"
+					{
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					}
+					
+					// scout cell
+					"#Cell_Bravo"
+					{
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					"#Squad_Cell_Fighter"			"template_fighter_insurgent"
+					}
+				}
+			}
+		}
+	}
+	"weapons"
+	{
+		"?strike_security_attack"
+		{
+			"weapon_anm14"
+			{                                                                                                      "weapon_cost""0"}
+		}
+		"?strike_insurgents_attack"
+		{
+			"weapon_molotov"
+			{                                                                                                      "weapon_cost""0"}
+		}
+	}
+}

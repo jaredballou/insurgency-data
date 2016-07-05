@@ -1,0 +1,22 @@
+UnlitGeneric
+{
+	$baseTexture "vgui\compass\compass_distalpha"
+	$translucent	1
+	$DISTANCEALPHA 	1
+		
+	$softedges		1
+	$edgesoftnessstart	.5
+	$edgesoftnessend	.45
+	$scaleedgesoftnessbasedonscreenres 1
+	
+	$glow		1
+	$glowcolor	"[0 0 0]"
+	$glowalpha	0.7
+	$glowstart	.1
+	$glowend	.5
+
+	$vertexcolor	1
+	$vertexalpha	1
+	$no_fullbright	1
+	$ignorez	1
+}

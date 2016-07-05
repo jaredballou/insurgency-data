@@ -1,0 +1,454 @@
+"#base" "base_weapon_upgrades.theater"
+
+"theater"
+{
+	"weapon_upgrades"
+	{
+		// ========================================
+		// Base Upgrades
+		// ========================================
+		
+		"base_optic_rail"
+		{
+			"IsBase"					"1"
+			"upgrade_slot"				"optics"
+			
+			"viewmodel_attachments"
+			{				
+				"ModKitG43"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_g43.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_g43_sniper"
+					}
+				}
+				
+				"ModkitSpringfield"
+				{
+					"model"					"models/weapons/upgrades/a_modkit_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_springfield"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"ModkitG43"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_4.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_g43_sniper"
+					}
+				}
+				
+				"ModkitSpringfield"
+				{
+					"model"					"models/weapons/upgrades/w_modkit_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_springfield"
+					}
+				}
+			}
+		}
+		
+		// ========================================
+		// Bayonets
+		// ========================================
+		
+		"default_bayonet"
+		{
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"underbarrel"
+			"print_name"				"#weapon_upgrade_bayonet"
+			"print_desc"				"#weapon_upgrade_bayonet_desc"
+			"weapon_abilities"			"bayonet"
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_springfield"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"bayonet_m1garand"
+				{
+					"model"				"models/weapons/upgrades/a_bayonet.mdl"
+					
+					"weapon"			"weapon_m1garand"
+					"weapon"			"weapon_g43"
+					"weapon"			"weapon_k98"
+					"weapon"			"weapon_springfield"
+				}				
+			}
+			"world_attachments"
+			{
+				"bayonet_m1garand"
+				{
+					"model"				"models/weapons/upgrades/w_bayonet.mdl"
+					
+					"weapon"			"weapon_m1garand"
+					"weapon"			"weapon_g43"
+					"weapon"			"weapon_k98"
+					"weapon"			"weapon_springfield"
+				}
+			}
+		}
+		
+		// ========================================
+		// Slings
+		// ========================================
+		
+		"default_sling"
+		{
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"stock"
+			"print_name"				"#weapon_upgrade_sling"
+			"print_desc"				"#weapon_upgrade_sling_desc"
+			
+			"class_restricted"			"1"
+			"team_access"				"security, insurgent"
+			
+			"draw_speed"				"1.3"
+			"holster_speed"				"1.6"
+			"draw_speed_next_weapon"	"1.2"
+			"holster_speed_prev_weapon"	"1.3"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_m1carbine"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_bar"
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_stg44"
+			}
+		}
+		
+		// ========================================
+		// Extended Magazines
+		// ========================================
+		
+		"magazine_extended_pistol"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"4"
+			"team_access"				"security, insurgent"
+
+			"print_name"				"#weapon_upgrade_magazine_extended"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+
+			"magsize_override"			"15"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1911"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"magazine_15_1911"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_1911_15.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_m1911"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_15_1911"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_1911_15.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_m1911"
+					}
+				}
+			}
+		}
+		
+		"magazine_extended_carbine_30rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"4"
+			"team_access"				"security, insurgent"
+
+			"print_name"				"#weapon_upgrade_magazine_extended"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+
+			"magsize_override"			"30"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1carbine"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_m1carbine"
+				{
+					"model"				"models/weapons/upgrades/a_magazine_m1a1_30.mdl"
+					"Main"				"1"
+
+					"weapons"
+					{
+						"weapon"		"weapon_m1carbine"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"magazine_m1carbine"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_m1a1_30.mdl"
+				}
+			}
+		}
+		
+		"magazine_extended_thompson_30rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"1"
+			"team_access"				"security, insurgent"
+			
+			"print_name"				"#weapon_upgrade_magazine_extended_thompson_30"
+			"print_desc"				"#weapon_upgrade_magazine_extended_thompson_30_desc"
+
+			"magsize_override"			"30"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_thompson"
+				{
+					"model"				"models/weapons/upgrades/a_thompson_mag_30.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_thompson"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_thompson_30"
+				{
+					"model"				"models/weapons/upgrades/w_thompson_mag_30.mdl"
+				}
+			}
+		}
+		
+		"magazine_extended_thompson_50rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"5"
+			"team_access"				"security, insurgent"
+			
+			"print_name"				"#weapon_upgrade_magazine_extended_thompson_50"
+			"print_desc"				"#weapon_upgrade_magazine_extended_thompson_50_desc"
+
+			"class_restricted"			"1"
+			
+			"magsize_override"			"50"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_thompson"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_thompson_mag_50.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_thompson"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_thompson_50"
+				{
+					"model"				"models/weapons/upgrades/w_thompson_mag_50.mdl"
+				}
+			}
+		}
+		
+		// ========================================
+		// Foregrips
+		// ========================================
+		
+		"underbarrel_foregrip_thompson"
+		{
+			"import"					"base_foregrip"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"foregrip_thompson"
+				{
+					"model"					"models/weapons/upgrades/a_thompson_foregrip.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+				}
+			}
+			
+			"world_attachments"
+			{
+				"foregrip_thompson"
+				{
+					"model"				"models/weapons/upgrades/w_thompson_foregrip.mdl"
+				}
+			}
+		}
+		
+		// ========================================
+		// Optics
+		// ========================================
+		
+		"optic_scope_7x"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#weapon_upgrade_scope_mosin"
+			"print_desc"				"#weapon_upgrade_scope_mosin_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"5"
+			"team_access"				"security, insurgent"
+			
+			"sway"
+			{
+				"sway_radius_frac"		"1.3"
+				"sway_speed_frac"		"1.6"
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_k98_sniper"
+				"weapon"				"weapon_g43_sniper"
+			}
+			"viewmodel_attachments"
+			{
+				"7xscope_k98"
+				{
+					"model"					"models/weapons/upgrades/a_optic_mosin_l.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_k98_sniper"
+					}
+				}
+				
+				"7xscope_springfield"
+				{
+					"model"					"models/weapons/upgrades/a_optic_mosin.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_springfield"
+					}
+				}
+				
+				"7xscope_g43"
+				{
+					"model"					"models/weapons/upgrades/a_optic_zf4.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_g43_sniper"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"Scope"
+				{
+					"model"					"models/weapons/upgrades/w_scope_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_springfield"
+						"weapon"				"weapon_k98_sniper"
+						"weapon"				"weapon_g43_sniper"
+					}
+				}
+			}
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"10"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				"weapon_springfield"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"47"
+					"fov_wpn_focus"				"50"
+				}
+				
+				"weapon_k98_sniper"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"54"
+					"fov_wpn_focus"				"56"
+				}
+				
+				"weapon_g43_sniper"
+				{
+					"fov_wpn_scope"				"10"
+					"fov_wpn_ironsight"			"40"
+					"fov_wpn_focus"				"43"
+				}
+			}
+		}
+	}
+}

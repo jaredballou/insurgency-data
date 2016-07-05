@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Day of Infamy menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="css/doi-theme.css">
+	
+	<style type="text/css">
+		body { padding-top: 80px; }
+	</style>
+</head>
+
+<body data-bind="css: { 'in-game': ingameMenu(), 'main-menu': !ingameMenu() }">	
+	<!--MAIN MENU-->
+	<!-- MAIN NAVIGATION -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li data-bind="css: { active: menuSection() === MenuSections.HOME }"><a href="#" data-l10n-id="#GameUI_Play" data-bind="click: changeSection.bind($data, MenuSections.HOME)">home</a></li>
+				<li data-bind="css: { active: menuSection() === MenuSections.OPTIONS }"><a href="#" data-l10n-id="#GameUI_Options" data-bind="click: changeSection.bind($data, MenuSections.OPTIONS)">options</a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<!--<li><a href="#">WORKSHOP</a></li>
+				<li><a href="#">COMMUNITY</a></li>
+				<li><a href="#">HELP</a></li>-->
+				<li data-bind='ifnot: ingameMenu()'><a href="#" data-l10n-id="#GameUI_Quit" data-bind='click: function() { engine.call("consoleCommand", "quit"); }'>quit</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!--ANIMATED TEXT-->	
+	<div id="main-menu" data-bind="if: menuSection() === MenuSections.HOME">
+		<div class="content container">
+			<div class="main-menu-bits" data-bind="ifnot: ingameMenu">
+				<!-- MILESTONE VER -->	
+				<div class="early-access">
+					CLOSED ALPHA
+				</div>
+				
+				<!--LOGO-->
+				<div id="logo-main">
+					<img src="images/logo.png" class="logo" alt="Day of Infamy">
+				</div>
+			</div>
+					
+			<!--LINKS-->
+			<ul class="links-primary">
+				<!-- shown in-game -->
+				<!-- ko if: ingameMenu -->
+				<li><a href="#" data-l10n-id="#GameUI_ResumeGame" data-bind='click: function() { engine.call("consoleCommand", "gameui_hide"); }'>resume game</a></li>
+				<li><a href="#" data-l10n-id="#GameUI_ExitToMainMenu" data-bind='click: function() { engine.call("consoleCommand", "disconnect"); }'>disconnect</a></li>
+				<!-- /ko -->
+				
+				<!-- shown out of game -->
+				<!-- ko ifnot: ingameMenu -->
+				<!--<li><a href="#" data-l10n-id="#GameUI_PlayCampaign" onclick='engine.call("consoleCommand", "openserverbrowser");'>Singleplayer Missions</a></li>-->
+				<li><a href="#" data-l10n-id="#GameUI_PlayMultiplayer" onclick='engine.call("consoleCommand", "openserverbrowser");'>Cooperative Operations</a></li>
+				<li><a href="#" data-l10n-id="#GameUI_PlayCoop" onclick='engine.call("consoleCommand", "openserverbrowser");'>Multiplayer Combat</a></li>
+				<!-- /ko -->
+			</ul>
+			
+			<!-- VERSION -->
+			<div class="build-info">
+				<div class="version" data-bind="text: version"></div>
+			</div>
+			
+		</div>
+	
+		<!-- news -->
+		<div id="news" data-bind="if: newsArticle">
+			<h3 id="news-heading" data-bind="click: newsToggle">
+				<div class="heading-toggle pull-right">
+					<a href="#" class="fa" data-bind="css: { 'fa-chevron-up': !newsExpanded(), 'fa-chevron-down': newsExpanded() }"></a>
+				</div>
+				
+				<span data-bind="text: newsArticle().title">News</span>
+			</h3>
+			
+			<div id="news-expanded" data-bind="if: newsExpanded">
+				<div class="news-excerpt">
+					<span data-bind="html: newsArticle().excerpt"></span>
+					<a href="#" data-l10n-id="#GameUI_ReadMore" data-bind="click: newsReadMore">Read More</a>
+					
+					<span class="news-image">
+						<img data-bind="attr: { src: newsArticle().thumbnail_images.medium_large.url }" style="width: 100%">
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//MAIN MENU-->
+			
+	<!--OPTIONS-->
+	<div id="options" class="container div" data-bind="if: menuSection() === MenuSections.OPTIONS">
+				
+		<!-- options menu -->
+		<div id="menu-options options-form" class="panel panel-default">
+			<!-- options sections -->
+			<ul class="nav nav-pills panel-heading" data-bind="foreach: options">
+				<li data-bind="css: { active: $root.optionsSection() === $data }">
+					<a href="#" data-bind="click: function() { $root.optionsSection($data) }, text: name">Section</a>
+				</li>
+			</ul>
+		
+			<form class="form-horizontal" onsubmit="">
+				<!-- iterate through each option category -->
+				<div class="options-category panel-body" data-bind="foreach: options">
+					<!-- ko if: $root.optionsSection() == $data -->
+					<!-- options in this category -->
+					<div class="options-group" data-bind="foreach: settings">
+						<!-- ko if: function() { return $data.shouldDisplay(); } -->
+						
+						<!-- container for option -->
+						<div class="form-group" data-bind="template: { name: template }"></div>
+						<!-- /ko -->
+						
+					</div>
+					
+					<!-- apply settings -->
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-primary" data-bind="click: saveChanges">Save Changes</button>
+						</div>
+					</div>
+					<!-- /ko -->
+				</div>
+			</form>
+		</div> 
+	</div>
+	
+	<!-- party -->
+	<div id="party">
+		<ul class="party-members">
+			<li class="party-empty"></li>
+			<li class="party-empty"></li>
+			<li class="party-empty"></li>
+			<li class="party-empty"></li>
+			<li class="party-empty"></li>
+			<li class="party-empty"></li>
+			<li class="party-empty"></li>
+			<li class="party-empty"></li>
+		</ul>
+	</div>
+
+	<!-- template for subsection -->
+	<script type="text/html" id="options-template-subsection">
+		<div class="col-sm-10 options-section-break">
+			<h4 data-bind="text: title">Section</h4>
+		</div>
+	</script>
+	
+	<!-- template for checkbox entry -->
+	<script type="text/html" id="options-template-checkbox">
+		<div class="col-sm-offset-2 col-sm-10">
+			
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" data-bind="attr: { name: cvar }, checked: value"> <span class="checkbox-desc" data-bind="text: name">Label</span>
+				</label>
+			</div>
+		</div>								
+	</script>
+	
+	<!-- template for slider -->
+	<script type="text/html" id="options-template-slider">
+		<label class="col-sm-2 control-label" data-bind="attr: { for: cvar }, text: name">Cvar</label>
+		
+		<div class="col-sm-10 slider-group">
+			<input type="range" class="form-control" data-bind="attr: { id: cvar, min: min, max: max }, value: value" step="0.1">
+			<span class="slider-value" data-bind="text: value()">0.0</span>
+		</div>							
+	</script>		
+	
+	<!-- template for toggle -->
+	<script type="text/html" id="options-template-toggle">
+		<label class="col-sm-2 control-label" data-bind="text: name">Cvar</label>
+		
+		<div class="col-sm-10 toggle-group">
+			<ul class="pagination">
+				<li><a href="#" data-bind="click: selectPrev">&laquo</a>
+		
+				<li class="toggle-display" data-bind="foreach: { data: Object.keys(toggles) }">
+					<span class="radio-toggle" data-bind="css: { 'radio-inactive' : $parent.value() != $data } ">
+						<input type="radio" data-bind="attr: { name: $parent.cvar }, value: $data, checked: $parent.value">
+						<span data-bind="text: engine.translate($parent.toggles[$data])">Setting</span>
+					</span>
+				</li>
+			
+				<li><a href="#" data-bind="click: selectNext">&raquo;</a></li>
+			</ul>
+		</div>							
+	</script>
+	
+	<!-- template for key bindings -->
+	<script type="text/html" id="options-keybindings">
+		<table class="table col-sm-10">
+			<thead>
+				<tr>
+					<th>Binding</th>
+					<th>Keyboard</th>
+					<th>Controller</th>
+				</tr>
+			</thead>
+			<tbody data-bind="foreach: bindings">
+				<tr>
+					<!-- ko if: binding != "party-empty" -->
+					<td data-bind="text: engine.translate( $data.description )"></td>
+					<td><button class="btn btn-default btn-rebind" data-bind='tooltip: { title: binding }, click: function(data, event) { $parent.startKeyBinding(data, true); }, text: keyKeyboard.length > 0 ? keyKeyboard : engine.translate("#GameUI_KeyUnbound"), css: { "btn-warning": keyKeyboard.length <= 0 }'></button></td>
+					<td><button class="btn btn-default btn-rebind" data-bind='click: function(data, event) { $parent.startKeyBinding(data, false); }, text: keyController.length > 0 ? keyController : engine.translate("#GameUI_KeyUnbound"), css: { "btn-warning": keyController.length <= 0 }'></button></td>
+					<!-- /ko -->
+					<!-- ko if: binding == "party-empty" -->
+					<th colspan="3" data-bind="text: engine.translate( $data.description );"></th>
+					<!-- /ko -->
+				</tr>
+			</tbody>
+		</table>
+	</script>
+						
+	<!-- prompt modal -->
+	<div data-bind="modal: { visible: modalShow, header: { data: { label: modalTitle } }, body: { data: { content: modalContent } }"></div>
+
+	<!-- javascript includes -->
+	<script type="text/javascript" src="js/coherent.js"></script>
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/knockout-3.4.0.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/knockstrap.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+		
+</body>
+</html>

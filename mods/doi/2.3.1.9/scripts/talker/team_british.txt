@@ -1,0 +1,82 @@
+//
+//  Radial commands
+// 
+//
+
+// Request Artillery
+Response British_Radial_RequestArtillery_Lead_UnSupp {
+	speak "Radial_British.SquadLead_UnSupp_RequestArtillery" noscene
+}
+
+Response British_Radial_RequestArtillery_Lead_Supp {
+	speak "Radial_British.SquadLead_Supp_RequestArtillery" noscene
+}
+
+Rule British_Radial_RequestArtillery_Lead_UnSupp {
+	criteria		ConceptRadialRequestArtillery IsSquadLeader IsBritish
+	ApplyContext 	"SuppressPainSound:1:3" // Suppress pain sounds for a second
+	response		British_Radial_RequestArtillery_Lead_UnSupp
+}	
+
+Rule British_Radial_RequestArtillery_Lead_Supp {
+	criteria		ConceptRadialRequestArtillery IsSquadLeader SuppressedRecent IsBritish
+	ApplyContext 	"SuppressPainSound:1:3" // Suppress pain sounds for a second
+	response		British_Radial_RequestArtillery_Lead_Supp
+}	
+
+// Request Radio
+Response British_Radial_RequestRadio_UnSupp {
+	speak "Radial_British.SquadLead_UnSupp_RequestRadio" noscene
+}
+
+Response British_Radial_RequestRadio_Supp {
+	speak "Radial_British.SquadLead_Supp_RequestRadio" noscene
+}
+
+Rule British_Radial_RequestRadio_UnSupp {
+	criteria		ConceptRadialRequestRadio IsSquadLeader IsBritish
+	response		British_Radial_RequestRadio_UnSupp
+}	
+
+Rule British_Radial_RequestRadio_Supp {
+	criteria		ConceptRadialRequestRadio IsSquadLeader SuppressedRecent IsBritish
+	response		British_Radial_RequestRadio_Supp
+}	
+
+//
+// General Responses
+//
+
+Response British_Reload_Lead{
+	speak 			"Voice_Response_British.Lead_Reloading" noscene delay "5" respeakdelay "30"
+}
+Rule British_Reload_Lead{
+	criteria		ConceptReloading IsSquadLeader IsBritish NotRecentlySaidRadial
+	response 		British_Reload_Lead
+}
+
+Response British_Suppressed_Lead{
+	speak			"Voice_Response_British.Lead_UnderSuppression" noscene delay "5" respeakdelay "7"
+}
+Rule British_Suppressed_Lead{
+	criteria		ConceptBeingSuppressed IsSquadLeader IsBritish NotRecentlySaidRadial
+	ApplyContext 	"SuppressPainSound:1:2" // Suppress other pain
+	response 		British_Suppressed_Lead
+}
+
+Response British_Reload_Sub{
+	speak 			"Voice_Response_British.Sub_Reloading" noscene delay "5" respeakdelay "30"
+}
+Rule British_Reload_Sub{
+	criteria		ConceptReloading IsBritish NotRecentlySaidRadial
+	response 		British_Reload_Sub
+}
+
+Response British_Suppressed_Sub{
+	speak			"Voice_Response_British.Sub_UnderSuppression" noscene delay "5" respeakdelay "7"
+}
+Rule British_Suppressed_Sub{
+	criteria		ConceptBeingSuppressed IsBritish NotRecentlySaidRadial
+	ApplyContext 	"SuppressPainSound:1:2" // Suppress other pain
+	response 		British_Suppressed_Sub
+}

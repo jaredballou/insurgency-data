@@ -1,0 +1,39 @@
+"Player.Security_StartInvasionAttack_Game"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_01.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_02.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_03.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_04.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_05.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_06.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_07.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_08.ogg"		
+	}
+}
+
+"Player.Security_StartInvasionAttack_Round"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_01.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_02.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_03.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_04.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_05.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_06.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_07.ogg"
+		"wave"			"*hq\Allies\invasion_dogred_gamestart_08.ogg"		
+	}
+}

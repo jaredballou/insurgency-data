@@ -1,0 +1,9 @@
+"vigilance"
+{
+	material	overviews/vigilance
+	pos_x		-3515
+	pos_y		2140
+	scale		6.0
+	rotate		0
+	zoom		1
+}

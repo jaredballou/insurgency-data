@@ -1,0 +1,44 @@
+// LINE 01 - "Bloody Hell"
+"Voice_Trailer.Line_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"		"player/voice/trailerVO/01_TrailerVO_bloody_hell.wav"
+}
+
+// LINE 02 - "You Took The Scenic Route Didn't You"
+"Voice_Trailer.Line_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"		"player/voice/trailerVO/02_TrailerVO_you_took_the_scenic_route.wav"
+}
+
+// LINE 03 - "Yes Sir, Sorry Sir"
+"Voice_Trailer.Line_03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"		"player/voice/trailerVO/03_TrailerVO_yes_sir_sorry_sir.wav"
+}
+
+// LINE 04 - "Command This Is One Section, Request Immediate Barrage On Objective Able, Over"
+"Voice_Trailer.Line_04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"		"player/voice/trailerVO/04_TrailerVO_request_barrage.wav"
+}
+
+// LINE 04 - "Alright Lads, We've Got A War To Win"
+"Voice_Trailer.Line_05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"		"player/voice/trailerVO/05_TrailerVO_alright_lads_we_got_a_war_to_win.wav"
+}

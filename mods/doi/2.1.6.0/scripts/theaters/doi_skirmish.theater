@@ -1,0 +1,91 @@
+"#base" "doi.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"squads"
+			{
+				"#squad_american_rifle"
+				{
+					"#class_american_officer"		"template_american_officer"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_support"		"template_american_support"
+					"#class_american_sniper"		"template_american_sniper"
+				}
+				
+				"#squad_american_assault"
+				{
+					"#class_american_officer"		"template_american_officer"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_demolitions"	"template_american_demolitions"
+					"#class_american_demolitions"	"template_american_demolitions"
+				}
+				
+				"#squad_american_support"
+				{
+					"#class_american_officer"		"template_american_officer"
+					"#class_american_assault"		"template_american_assault"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_rifleman"		"template_american_rifleman"
+					"#class_american_support"		"template_american_support"
+					"#class_american_sniper"		"template_american_sniper"
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"squads"
+			{
+				"#squad_german_rifle"
+				{
+					"#class_german_officer"			"template_german_officer"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_machinegunner"	"template_german_machinegunner"
+					"#class_german_sniper"			"template_german_sniper"
+				}
+				
+				"#squad_german_assault"
+				{
+					"#class_german_officer"			"template_german_officer"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_demolitions"		"template_german_demolitions"
+					"#class_german_demolitions"		"template_german_demolitions"
+				}
+				
+				"#squad_german_support"
+				{
+					"#class_german_officer"			"template_german_officer"
+					"#class_german_assault"			"template_german_assault"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_rifleman"		"template_german_rifleman"
+					"#class_german_machinegunner"	"template_german_machinegunner"
+					"#class_german_sniper"			"template_german_sniper"
+				}
+			}
+		}
+	}
+}

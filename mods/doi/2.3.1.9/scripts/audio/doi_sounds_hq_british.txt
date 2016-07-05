@@ -1,0 +1,727 @@
+//==========================
+// 	BRITISH HQ - ARTILLERY
+//==========================
+
+"HQ_British.Artillery_Begin"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Artillery\artillerybegin1.ogg"
+		"wave"			"hq\British\Artillery\artillerybegin2.ogg"
+		"wave"			"hq\British\Artillery\artillerybegin3.ogg"
+		"wave"			"hq\British\Artillery\artillerybegin4.ogg"
+		"wave"			"hq\British\Artillery\artillerybegin5.ogg"
+	}
+}
+
+"HQ_British.Artillery_End"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Artillery\artilleryend1.ogg"
+		"wave"			"hq\British\Artillery\artilleryend2.ogg"
+		"wave"			"hq\British\Artillery\artilleryend3.ogg"
+		"wave"			"hq\British\Artillery\artilleryend4.ogg"
+		"wave"			"hq\British\Artillery\artilleryend5.ogg"	
+	}
+}
+
+"HQ_British.Artillery_Busy"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Artillery\artillerybusy1.ogg"
+		"wave"			"hq\British\Artillery\artillerybusy2.ogg"
+		"wave"			"hq\British\Artillery\artillerybusy3.ogg"
+		"wave"			"hq\British\Artillery\artillerybusy4.ogg"
+		"wave"			"hq\British\Artillery\artillerybusy5.ogg"	
+	}
+}
+
+"HQ_British.Artillery_Reloading"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Artillery\artilleryloading1.ogg"
+		"wave"			"hq\British\Artillery\artilleryloading2.ogg"
+		"wave"			"hq\British\Artillery\artilleryloading3.ogg"
+		"wave"			"hq\British\Artillery\artilleryloading4.ogg"
+		"wave"			"hq\British\Artillery\artilleryloading5.ogg"		
+	}
+}
+
+"HQ_British.Artillery_NotValidTarget"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Artillery\artillerynotvalidtarget1.ogg"
+		"wave"			"hq\British\Artillery\artillerynotvalidtarget2.ogg"
+		"wave"			"hq\British\Artillery\artillerynotvalidtarget3.ogg"
+		"wave"			"hq\British\Artillery\artillerynotvalidtarget4.ogg"
+		"wave"			"hq\British\Artillery\artillerynotvalidtarget5.ogg"		
+	}
+}
+
+"HQ_British.Artillery_Ready"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Artillery\artilleryready1.ogg"
+		"wave"			"hq\British\Artillery\artilleryready2.ogg"
+		"wave"			"hq\British\Artillery\artilleryready3.ogg"
+		"wave"			"hq\British\Artillery\artilleryready4.ogg"
+		"wave"			"hq\British\Artillery\artilleryready5.ogg"		
+	}
+}
+
+"HQ_British.Artillery_RequestNotCompleted"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_TALKING"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Artillery\artillerydoesnotcopy1.ogg"
+		"wave"			"hq\British\Artillery\artillerydoesnotcopy2.ogg"
+		"wave"			"hq\British\Artillery\artillerydoesnotcopy3.ogg"
+		"wave"			"hq\British\Artillery\artillerydoesnotcopy4.ogg"
+		"wave"			"hq\British\Artillery\artillerydoesnotcopy5.ogg"		
+	}
+}
+
+
+//============================
+// 	BRITISH HQ - ANNOUNCEMENT
+//============================
+
+// 	BRITISH HQ - ALLIES DESTROYED
+
+"HQ_British.Objective_AlliesDestroyed_0"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_able1.ogg"
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_able2.ogg"		
+	}
+}
+
+"HQ_British.Objective_AlliesDestroyed_1" // Baker
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_baker1.ogg"
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_baker2.ogg"		
+	}
+}
+
+"HQ_British.Objective_AlliesDestroyed_2" // Charlie
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_charlie1.ogg"
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_charlie2.ogg"		
+	}
+}
+
+"HQ_British.Objective_AlliesDestroyed_3" // Dog
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_dog1.ogg"
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_dog2.ogg"		
+	}
+}
+
+"HQ_British.Objective_AlliesDestroyed_4" // Easy
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_easy1.ogg"
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_easy2.ogg"		
+	}
+}
+
+"HQ_British.Objective_AlliesDestroyed_5" // Fox
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_fox1.ogg"
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_fox2.ogg"		
+	}
+}
+
+"HQ_British.Objective_AlliesDestroyed_6" // George
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_george1.ogg"
+		"wave"			"hq\British\Announcement\Objective_AlliesDestroyed\allies_destroyed_george2.ogg"		
+	}
+}
+
+// 	BRITISH HQ - ENEMY DESTROYED
+
+"HQ_British.Objective_EnemyDestroyed_0"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_able1.ogg"
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_able2.ogg"		
+	}
+}
+
+"HQ_British.Objective_EnemyDestroyed_1" // Baker
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_baker1.ogg"
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_baker2.ogg"		
+	}
+}
+
+"HQ_British.Objective_EnemyDestroyed_2" // Charlie
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_charlie1.ogg"
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_charlie2.ogg"		
+	}
+}
+
+"HQ_British.Objective_EnemyDestroyed_3" // Dog
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_dog1.ogg"
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_dog2.ogg"		
+	}
+}
+
+"HQ_British.Objective_EnemyDestroyed_4" // Easy
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_easy1.ogg"
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_easy2.ogg"		
+	}
+}
+
+"HQ_British.Objective_EnemyDestroyed_5" // Fox
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_fox1.ogg"
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_fox2.ogg"		
+	}
+}
+
+"HQ_British.Objective_EnemyDestroyed_6" // George
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_george1.ogg"
+		"wave"			"hq\British\Announcement\Objective_EnemyDestroyed\enemy_destroyed_george2.ogg"		
+	}
+}
+
+// 	BRITISH HQ - LOSING OBJECTIVE
+
+"HQ_British.Objective_Losing_0"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_able1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_able2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Losing_1" // Baker
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_baker1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_baker2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Losing_2" // Charlie
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_charlie1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_charlie2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Losing_3" // Dog
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_dog1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_dog2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Losing_4" // Easy
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_easy1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_easy2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Losing_5" // Fox
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_fox1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_fox2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Losing_6" // George
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_george1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Losing\losing_george2.ogg"		
+	}
+}
+
+// 	BRITISH HQ - LOST OBJECTIVE
+
+"HQ_British.Objective_Lost_0"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_able1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_able2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Lost_1" // Baker
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_baker1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_baker2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Lost_2" // Charlie
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_charlie1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_charlie2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Lost_3" // Dog
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_dog1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_dog2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Lost_4" // Easy
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_easy1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_easy2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Lost_5" // Fox
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_fox1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_fox2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Lost_6" // George
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_george1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Lost\lost_george2.ogg"		
+	}
+}
+
+// 	BRITISH HQ - TAKING OBJECTIVE
+
+"HQ_British.Objective_Taking_0"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_able1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_able2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taking_1" // Baker
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_baker1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_baker2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taking_2" // Charlie
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_charlie1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_charlie2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taking_3" // Dog
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_dog1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_dog2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taking_4" // Easy
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_easy1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_easy2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taking_5" // Fox
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_fox1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_fox2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taking_6" // George
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_george1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taking\taking_george2.ogg"		
+	}
+}
+
+// 	BRITISH HQ - TAKEN OBJECTIVE
+
+"HQ_British.Objective_Taken_0"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_able1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_able2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taken_1" // Baker
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_baker1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_baker2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taken_2" // Charlie
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_charlie1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_charlie2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taken_3" // Dog
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_dog1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_dog2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taken_4" // Easy
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_easy1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_easy2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taken_5" // Fox
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_fox1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_fox2.ogg"		
+	}
+}
+
+"HQ_British.Objective_Taken_6" // George
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"1.00"
+	 
+	"rndwave"	
+	{
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_george1.ogg"
+		"wave"			"hq\British\Announcement\Objective_Taken\taken_george2.ogg"		
+	}
+}

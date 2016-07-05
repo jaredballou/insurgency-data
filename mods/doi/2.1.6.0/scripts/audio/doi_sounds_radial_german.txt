@@ -1,0 +1,121 @@
+//NEW RADIAL GERMAN
+
+// LEADER GERMAN
+
+//AFFIRMATIVE UN-SUPP
+
+"Radial_Insurgent.Leader_UnSupp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/german/leader/unsuppressed/affirmative1.ogg"
+		"wave"		"player/voice/radial/german/leader/unsuppressed/affirmative2.ogg"		
+	}	
+}
+
+//AFFIRMATIVE SUPP
+
+"Radial_Insurgent.Leader_Supp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/german/leader/suppressed/affirmative1.ogg"
+		"wave"		"player/voice/radial/german/leader/suppressed/affirmative2.ogg"		
+	}	
+}
+
+
+
+//NEGATIVE UN-SUPP
+
+"Radial_Insurgent.Leader_UnSupp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/german/leader/unsuppressed/negative1.ogg"
+		"wave"		"player/voice/radial/german/leader/unsuppressed/negative2.ogg"			
+	}	
+}
+
+//NEGATIVE SUPP
+
+"Radial_Insurgent.Leader_Supp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/german/leader/suppressed/negative1.ogg"
+		"wave"		"player/voice/radial/german/leader/suppressed/negative2.ogg"			
+	}	
+}
+
+// SUBORDINATE GERMAN
+
+//AFFIRMATIVE UN-SUPP
+
+"Radial_Insurgent.Subordinate_UnSupp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/german/subordinate/unsuppressed/affirmative1.ogg"
+		"wave"		"player/voice/radial/german/subordinate/unsuppressed/affirmative2.ogg"		
+	}	
+}
+
+//AFFIRMATIVE SUPP
+
+"Radial_Insurgent.Subordinate_Supp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/german/subordinate/suppressed/affirmative1.ogg"
+		"wave"		"player/voice/radial/german/subordinate/suppressed/affirmative2.ogg"		
+	}	
+}
+
+
+
+//NEGATIVE UN-SUPP
+
+"Radial_Insurgent.Subordinate_UnSupp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/german/subordinate/unsuppressed/negative1.ogg"
+		"wave"		"player/voice/radial/german/subordinate/unsuppressed/negative2.ogg"			
+	}	
+}
+
+//NEGATIVE SUPP
+
+"Radial_Insurgent.Subordinate_Supp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/german/subordinate/suppressed/negative1.ogg"
+		"wave"		"player/voice/radial/german/subordinate/suppressed/negative2.ogg"			
+	}	
+}

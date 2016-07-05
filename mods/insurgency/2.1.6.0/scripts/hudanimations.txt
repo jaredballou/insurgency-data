@@ -1,0 +1,407 @@
+// sample animation script
+//
+//
+// commands:
+//	Animate <panel name> <variable> <target value> <interpolator> <start time> <duration>
+//		variables:
+//			FgColor
+//			BgColor
+//			Position
+//			Size
+//			Blur		(hud panels only)
+//			TextColor	(hud panels only)
+//			Ammo2Color	(hud panels only)
+//			Alpha		(hud weapon selection only)
+//			SelectionAlpha  (hud weapon selection only)
+//			TextScan	(hud weapon selection only)
+//
+//		interpolator:
+//			Linear
+//			Accel - starts moving slow, ends fast
+//			Deaccel - starts moving fast, ends slow
+//
+//	RunEvent <event name> <start time>
+//		starts another even running at the specified time
+//
+//	StopEvent <event name> <start time>
+//		stops another event that is current running at the specified time
+//
+//	StopAnimation <panel name> <variable> <start time>
+//		stops all animations refering to the specified variable in the specified panel
+//
+//	StopPanelAnimations <panel name> <start time>
+//		stops all active animations operating on the specified panel
+//
+//
+// Useful game console commands:
+//	cl_Animationinfo <hudelement name> or <panelname> 
+//		displays all the animatable variables for the hud element
+//
+
+
+event LevelInit
+{
+}
+
+// -----------------------------------------------------------------
+// EndRoundLobby
+// -----------------------------------------------------------------
+event EndRoundLobby_Begin
+{
+	StopEvent EndRoundLobby_FadeAway 0.0
+
+	Animate CInsEndRoundLobbyMenu	BgColor 		"255 255 255 0"		Linear	0.0 0.0
+	Animate CInsEndRoundLobbyMenu	alpha			"255"				Linear	0.0	1.0
+	Animate CInsEndRoundLobbyMenu	BlackLineColor 	"0 0 0 0" 			Linear 	0.0 0.0
+
+	Animate CInsEndRoundLobbyMenu	BgColor   	 	"255 255 255 255" 	Accel  	1.0  1.5
+	Animate CInsEndRoundLobbyMenu	BlackLineColor 	"0 0 0 255" 		Linear 	2.0  1.5
+}
+
+event EndRoundLobby_FadeAway
+{	
+	StopEvent EndRoundLobby_Begin 0.0
+
+	Animate CInsEndRoundLobbyMenu	alpha		"0"			Linear	0.0		1.0
+	Animate CInsEndRoundLobbyMenu	BgColor     "255 255 255 0" Linear 0.0    1.0
+	Animate CInsEndRoundLobbyMenu	BlackLineColor "0 0 0 0" Linear 0.0 	1.0
+}
+
+event EndRoundLobbyChildren_Begin
+{
+	StopEvent EndRoundLobbyChildren_FadeAway 0.0
+
+	// reset positions/alpha
+	Animate VictoryLabel			ypos		"315"		Linear 0.0  0.0
+	Animate VictorySubtitle			ypos		"385"		Linear 0.0  0.0
+	Animate LocalPlayerInfo			alpha 		"0"			Linear 0.0 	0.0
+	Animate Team1Info				alpha 		"0"			Linear 0.0 	0.0
+	Animate Team2Info 				alpha 		"0"			Linear 0.0 	0.0
+	Animate RoundsWonTitle			alpha 		"0"			Linear 0.0 	0.0
+	Animate RoundsWonSecurity		alpha 		"0"			Linear 0.0 	0.0
+	Animate RoundsWonSecurityValue	alpha 		"0"			Linear 0.0 	0.0
+	Animate RoundsWonInsurgents 	alpha 		"0"			Linear 0.0 	0.0
+	Animate RoundsWonInsurgentsValue alpha 		"0"			Linear 0.0 	0.0
+	Animate LocationTitle 			alpha 		"0"			Linear 0.0 	0.0
+	Animate LocationValue 			alpha 		"0"			Linear 0.0 	0.0
+	Animate GamemodeTitle 			alpha 		"0"			Linear 0.0 	0.0
+	Animate GamemodeValue 			alpha 		"0"			Linear 0.0 	0.0
+	Animate MapVotePanel			alpha		"0"			Linear 0.0	0.0
+	
+	// move to the top
+	Animate VictoryLabel			ypos		"25"		Linear 2.0  0.5
+	Animate VictoryLabel			alpha		"255"		Linear 0.0	0.0
+	Animate VictorySubtitle			ypos		"95"		Linear 2.0  0.5
+	Animate VictorySubtitle			alpha		"255"		Linear 0.0	0.0
+
+	// show the labels
+	Animate LocalPlayerInfo			alpha 		"255"		Linear 2.5 	1.0
+	Animate Team1Info				alpha 		"255"		Linear 2.5 	1.0
+	Animate Team2Info 				alpha 		"255"		Linear 2.5 	1.0
+	Animate RoundsWonTitle			alpha 		"255"		Linear 2.5 	1.0
+	Animate RoundsWonSecurity		alpha 		"255"		Linear 2.5 	1.0
+	Animate RoundsWonSecurityValue	alpha 		"255"		Linear 2.5 	1.0
+	Animate RoundsWonInsurgents 	alpha 		"255"		Linear 2.5 	1.0
+	Animate RoundsWonInsurgentsValue alpha 		"255"		Linear 2.5 	1.0
+	Animate LocationTitle 			alpha 		"255"		Linear 2.5 	1.0
+	Animate LocationValue 			alpha 		"255"		Linear 2.5 	1.0
+	Animate GamemodeTitle 			alpha 		"255"		Linear 2.5 	1.0
+	Animate GamemodeValue 			alpha 		"255"		Linear 2.5 	1.0
+}
+
+event EndRoundLobbyChildren_FadeAway
+{	
+	StopEvent EndRoundLobbyChildren_Begin 0.0
+
+	// move to the middle
+	Animate VictoryLabel			ypos		"315"		Linear 1.0  0.0
+	Animate VictorySubtitle			ypos		"385"		Linear 1.0  0.0
+
+	// hide the labels
+	Animate LocalPlayerInfo			alpha 		"0"			Linear 0.0 	1.0
+	Animate Team1Info				alpha 		"0"			Linear 0.0 	1.0
+	Animate Team2Info 				alpha 		"0"			Linear 0.0 	1.0
+	Animate RoundsWonTitle			alpha 		"0"			Linear 0.0 	1.0
+	Animate RoundsWonSecurity		alpha 		"0"			Linear 0.0 	1.0
+	Animate RoundsWonSecurityValue	alpha 		"0"			Linear 0.0 	1.0
+	Animate RoundsWonInsurgents 	alpha 		"0"			Linear 0.0 	1.0
+	Animate RoundsWonInsurgentsValue alpha 		"0"			Linear 0.0 	1.0
+	Animate LocationTitle 			alpha 		"0"			Linear 0.0 	1.0
+	Animate LocationValue 			alpha 		"0"			Linear 0.0 	1.0
+	Animate GamemodeTitle 			alpha 		"0"			Linear 0.0 	1.0
+	Animate GamemodeValue 			alpha 		"0"			Linear 0.0 	1.0
+	Animate MapVotePanel			alpha		"0"			Linear 0.0	1.0
+}
+
+event EndRoundLobby_StartVoteLobbyPanel
+{
+	Animate Team1Info				alpha		"0"			Linear 0.0 1.0
+	Animate Team2Info				alpha		"0"			Linear 0.0 1.00
+	
+	Animate MapVotePanel			alpha		"255"		Linear 1.1 1.0
+}
+
+event EndRoundLobby_HighlightWinner
+{
+	Animate VoteButton				disabledBgColor_override "181 230 29 50" Pulse 8.0 0.0 2.5	
+	Animate VoteButton				BgColor		"181 230 29 50" Pulse 8.0 0.0 2.5
+
+	Animate VoteButton				disabledBgColor_override "Blank" Linear 2.5 1.0	
+	Animate VoteButton				BgColor		"Blank" Linear 2.5 1.0		
+}
+
+// -----------------------------------------------------------------
+// StartRoundSetup
+// -----------------------------------------------------------------
+event StartRoundSetup_Begin
+{
+	StopEvent StartRoundSetup_FadeAway 0.0
+	StopEvent StartRoundSetup_PositionGameTypeLabel 0.0
+
+	Animate CInsStartRoundSetup		alpha		"255"		Deaccel	0.66 0.33
+	Animate GameTypeLabel			alpha		"0"			Deaccel	0.66 0.33
+	Animate GameTypeLabel			ypos		"15"		Deaccel	0.66 0.33
+	Animate GameTypeLabel			BorderEdgeColor	"255 255 255 50" Deaccel 0.66 0.33
+
+	RunEvent StartRoundSetup_PositionGameTypeLabel	0.1
+}
+
+event StartRoundSetup_PositionGameTypeLabel
+{
+	Animate GameTypeRoundsLabel			alpha	"255"				Deaccel	0.25	0.33
+	Animate GameTypeRoundsLabel			ypos	"38"				Deaccel	0.25	0.2
+	Animate GameTypeRoundsLabel			BorderEdgeColor	"255 255 255 50" 	Deaccel	0.25	0.33
+}
+
+event StartRoundSetup_FadeAway
+{	
+	StopEvent StartRoundSetup_Begin 0.0
+	StopEvent StartRoundSetup_PositionGameTypeRoundsLabel 0.0
+
+	Animate CInsStartRoundSetup	alpha		"0"				Linear	1.5	1.00
+	
+	Animate GameTypeRoundsLabel			alpha		"100"			Linear	1.75	0.33
+	Animate GameTypeRoundsLabel			ypos		"150"		Accel	1.75	0.33
+	Animate GameTypeRoundsLabel			BorderEdgeColor	"255 255 255 0" 	Linear	1.75	0.33
+
+}
+
+// -----------------------------------------------------------------
+// WeaponSelection
+// -----------------------------------------------------------------
+event OpenWeaponSelectionMenu
+{
+	StopEvent CloseWeaponSelectionMenu	0.0
+
+	Animate HudWeaponSelection			alpha		"255"		Linear	0.00	0.25
+}
+
+event CloseWeaponSelectionMenu
+{
+	StopEvent OpenWeaponSelectionMenu	0.0
+
+	Animate HudWeaponSelection			alpha		"0"			Linear	0.00	1.50
+}
+
+// -----------------------------------------------------------------
+// Firemode
+// -----------------------------------------------------------------
+event ShowFiremodeDisplay
+{
+	StopEvent HideFiremodeDisplay		0.0
+	Animate CHudWeaponInfo_FireMode		alpha		"255"		Linear	0.00	0.25
+}
+
+event HideFiremodeDisplay
+{
+	StopEvent ShowFiremodeDisplay		0.0
+	Animate CHudWeaponInfo_FireMode		alpha		"0"			Linear	0.00	1.50
+}
+
+// -----------------------------------------------------------------
+// Ammo Counter
+// -----------------------------------------------------------------
+event ShowAmmoCounter
+{
+	StopEvent HideAmmoCounter			0.0
+	Animate CHudWeaponInfo_ClipCount	alpha		"255"		Linear	0.00	0.25
+}
+
+event HideAmmoCounter
+{
+	StopEvent ShowAmmoCounter			0.0
+	Animate CHudWeaponInfo_ClipCount	alpha		"0"			Linear	0.00	1.50
+}
+
+// -----------------------------------------------------------------
+// Tokens
+// -----------------------------------------------------------------
+event OpenTokenZone
+{
+	StopEvent CloseTokenZone	0.0
+
+	Animate CHudTokenSpawnZoneDisplay			alpha		"255"		Linear	0.00	0.25
+}
+
+event CloseTokenZone
+{
+	StopEvent OpenTokenZone	0.0
+
+	Animate CHudTokenSpawnZoneDisplay			alpha		"0"			Linear	0.00	1.50
+}
+
+// -----------------------------------------------------------------
+// HudObjectiveStatus
+// -----------------------------------------------------------------
+event ObjMessageOnShow
+{
+	StopEvent	ObjMessageFadeIn 0.0
+
+	Animate CHudGame_ObjMessage		Alpha		"0"			Linear	0.0		0.001
+		
+	RunEvent ObjMessageFadeIn	0.01
+}
+
+event ObjMessageFadeIn
+{
+	Animate CHudGame_ObjMessage		Alpha		"255"		Linear	0.0		0.25
+}
+
+// -----------------------------------------------------------------
+// TODO: REVIEW THESE
+// -----------------------------------------------------------------
+event TestMovement
+{
+	Animate HudHealth	Position	"256 120"	Linear	0.0		2.0
+	Animate HudHealth	Size		"128 24"	Linear	0.0		1.5
+}
+
+event HintMessageShow
+{
+	Animate HudHintDisplay HintSize	"1"		Deaccel 0.0	0.3
+	Animate HudHintDisplay FgColor	"HintMessageFg" 	Linear 0.4      0.4
+
+	// flash text
+	Animate HudHintDisplay FgColor	"HintMessageFg" 	Linear 1.5 0.01
+	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 2.0 0.2
+	Animate HudHintDisplay FgColor	"HintMessageFg" 	Linear 2.2 0.2
+	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 3.0 0.2
+	Animate HudHintDisplay FgColor	"HintMessageFg" 	Linear 3.2 0.2
+
+	// hide the panel after a while	
+	Animate HudHintDisplay FgColor	"255 220 0 0"   Linear  10.0 	0.2
+	Animate HudHintDisplay HintSize	"0"		Deaccel 10.2	0.3
+}
+
+
+event HintMessageHide
+{
+	Animate HudHintDisplay FgColor	"255 220 0 0"   Linear  0.0 	0.2
+	Animate HudHintDisplay HintSize	"0"		Deaccel 0.2	0.3
+}
+
+event KeyHintMessageShow
+{
+	// show the hints
+	Animate HudHintKeyDisplay Alpha	255 Linear 0.0 0.5
+
+	// flash text
+	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 0.0 0.01
+	Animate HudHintKeyDisplay FgColor	"255 220 0 255" Linear 0.5 0.2
+	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 0.7 0.2
+	Animate HudHintKeyDisplay FgColor	"255 220 0 255" Linear 1.5 0.2
+	Animate HudHintKeyDisplay FgColor	"FgColor" 	Linear 1.7 0.2
+
+	// hide the panel after a while	
+	Animate HudHintKeyDisplay Alpha	0 Linear 12.0 1.0
+}
+
+event KeyHintMessageHide
+{
+	Animate HudHintKeyDisplay Alpha	0 Linear 0.0 0.5
+}
+
+
+// Commentary hud element
+event ShowCommentary
+{
+	StopEvent	HideCommentary 0.0
+	Animate 	HudCommentary 	Alpha	255 Linear 0.0 0.5
+}
+
+event HideCommentary
+{
+	StopEvent	ShowCommentary 0.0
+	Animate 	HudCommentary 	Alpha	0 Linear 0.0 0.5
+}
+
+event MenuOpen
+{
+	StopEvent	MenuClose 0.0 
+
+	// fade in
+	Animate HudMenu Alpha 		"255"		Linear 0.0 0.1
+	Animate HudMenu SelectionAlpha 	"255"		Linear 0.0 0.1
+	Animate HudMenu FgColor		"FgColor"		Linear 0.0 0.1
+	Animate HudMenu MenuColor		"MenuColor"	Linear  0.0 0.1
+	Animate HudMenu ItemColor		"ItemColor"	Linear 0.0 0.1
+	Animate HudMenu TextScan		"1"		Linear 0.0 0.1
+
+	// Undo any blur
+	Animate HudMenu		Blur		"1"			Linear	0.0		0.01
+}
+
+event MenuClose
+{	
+	// Hide it
+	Animate HudMenu Alpha 		"0" Linear 0.0 1
+	Animate HudMenu SelectionAlpha 	"0" Linear 0.0 1
+	Animate HudMenu FgColor		"0 0 0 0" Linear 0.0 1
+	Animate HudMenu MenuColor		"0 0 0 0" Linear 0.0 1
+	Animate HudMenu ItemColor		"0 0 0 0" Linear 0.0 1
+}
+
+event MenuPulse
+{
+	Animate HudMenu		Blur		"7"			Linear	0.0		0.1
+	Animate HudMenu		Blur		"2"			Deaccel	0.1		0.1
+	Animate HudMenu		Blur		"7"			Linear	0.2		0.1
+	Animate HudMenu		Blur		"2"			Deaccel	0.3		0.1
+	Animate HudMenu		Blur		"7"			Linear	0.4		0.1
+	Animate HudMenu		Blur		"2"			Deaccel	0.5		0.1
+	Animate	HudMenu		Blur		"1"			Deaccel	0.6		0.4
+}
+
+event MapOff
+{
+	Animate overview Position "0 0" Linear 0.0 0.0
+	Animate overview Size "0 0" Linear 0.0 0.0
+}
+
+event MapZoomToSmall
+{
+	Animate overview Position "0 0" Linear 0.0 0.2
+	Animate overview Size "192 192" Linear 0.0 0.2
+
+	StopAnimation overview zoom 0.0
+	Animate overview zoom "1.0" Linear 0.0 0.0001
+	Animate overview zoom "3.0" Spline 0.0001 1.0
+}
+
+event MapZoomToLarge
+{
+	Animate overview Position "0 c-360" Linear 0.0 0.0 
+	Animate overview Size "720 720" Linear 0.0 0.0
+	
+	StopAnimation overview zoom 0.0
+	Animate overview zoom "1.0" Spline 0.0 0.05
+}
+
+event MapZoomTactical
+{
+	Animate overview Position "c-330 c-330" Linear 0.0 0.0
+	Animate overview Size "660 660" Linear 0.0 0.0
+	
+	StopAnimation overview zoom 0.0
+	Animate overview zoom "1.0" Spline 0.0 0.05
+}

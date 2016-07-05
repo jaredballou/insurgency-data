@@ -1,0 +1,95 @@
+// Squad_Lead_American
+
+//Reloading
+
+"Voice_Response_America.Lead_Reloading"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/america/squadlead/reloading1.ogg"
+		"wave"		"player/voice/responses/america/squadlead/reloading2.ogg"
+		"wave"		"player/voice/responses/america/squadlead/reloading3.ogg"
+		"wave"		"player/voice/responses/america/squadlead/reloading4.ogg"
+		"wave"		"player/voice/responses/america/squadlead/reloading5.ogg"
+		"wave"		"player/voice/responses/america/squadlead/reloading6.ogg"
+		"wave"		"player/voice/responses/america/squadlead/reloading7.ogg"
+		"wave"		"player/voice/responses/america/squadlead/reloading8.ogg"
+		"wave"		"player/voice/responses/america/squadlead/reloading9.ogg"
+		"wave"		"player/voice/responses/america/squadlead/reloading10.ogg"		
+	}	
+}
+
+//Being Suppressed
+
+"Voice_Response_America.Lead_UnderSuppression"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression1.ogg"			
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression2.ogg"		
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression3.ogg"		
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression4.ogg"		
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression5.ogg"		
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression6.ogg"		
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression7.ogg"		
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression8.ogg"		
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression9.ogg"		
+		"wave"		"player/voice/responses/america/squadlead/generalsuppression10.ogg"				
+	}	
+}
+
+// Subordinate_American
+
+//Reloading
+
+"Voice_Response_America.Sub_Reloading"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/america/subordinate/reloading1.ogg"
+		"wave"		"player/voice/responses/america/subordinate/reloading2.ogg"
+		"wave"		"player/voice/responses/america/subordinate/reloading3.ogg"
+		"wave"		"player/voice/responses/america/subordinate/reloading4.ogg"
+		"wave"		"player/voice/responses/america/subordinate/reloading5.ogg"
+		"wave"		"player/voice/responses/america/subordinate/reloading6.ogg"
+		"wave"		"player/voice/responses/america/subordinate/reloading7.ogg"
+		"wave"		"player/voice/responses/america/subordinate/reloading8.ogg"
+		"wave"		"player/voice/responses/america/subordinate/reloading9.ogg"
+		"wave"		"player/voice/responses/america/subordinate/reloading10.ogg"		
+	}	
+}
+
+//Being Suppressed
+
+"Voice_Response_America.Sub_UnderSuppression"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression1.ogg"			
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression2.ogg"		
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression3.ogg"		
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression4.ogg"		
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression5.ogg"		
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression6.ogg"		
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression7.ogg"		
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression8.ogg"		
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression9.ogg"		
+		"wave"		"player/voice/responses/america/subordinate/generalsuppression10.ogg"				
+	}	
+}

@@ -1,0 +1,126 @@
+// Official NWI playlist
+// See example.playlist for documentation/format guide
+
+"playlist"
+{
+	"name"					"#Playlist_Comp"
+	"description"				"#Playlist_Comp_Desc"
+	"category"				"pvp" // Required: Menu category, should be "pvp" or "coop"
+	
+	"require_maxplayers_min"		"10"	// Min player slots required for this playlist
+	"require_maxplayers_max"		"10"	// Max player slots required for this playlist
+
+	"sv_pure"
+	{
+		"default"                       "2"
+	}
+
+	"allowed_maps"
+	{
+		"ministry"				"firefight"
+		"market"				"firefight"
+		"uprising"				"firefight"
+		"heights"				"firefight"
+		"revolt"				"firefight"
+		"district"				"firefight"
+		"siege"					"firefight"
+		"verticality"				"firefight"
+		"panj"					"firefight"
+		"station"				"firefight"
+	}
+	
+	// recommended settings but can be changed
+	"cvars"
+	{
+		"mp_tkpunish"				"1"	// How to punish team killing ( 0 = none, 1 = warning, 2 = kill )
+		"sv_hud_targetindicator"		"1"	// show friendly player names when looking at them
+		"mp_timer_pregame"			"10"	// timer for the pre-game
+		"mp_timer_preround"			"15"	// timer for the pre-round
+		"mp_timer_postround"			"15"	// timer for the post-round
+		"mp_timer_postgame"			"10"	// timer for the post-game
+		"mp_voice_use_3d_voip"			"1"	// disabling this will turn off the 3d voip system and allow all players to hear one another
+	}
+	
+	"forced_cvars"
+	{
+		"sv_hud_scoreboard_show_score_dead"	"0"
+		"mp_theater_override"			"default_comp"
+		"mp_player_spotting"			"0"	// client replicated
+		"sv_hq_messages_allowed"		"0"
+		"mp_winlimit"				"6"
+		"mp_switchteams_each_round"		"5"
+		"mp_maxgames"				"1"
+		"mp_maxrounds"				"11"
+		"mp_switchteams_reset_supply"		"1"
+		"mapcyclefile"				"mapcycle_comp.txt"
+		"ins_bot_quota"				"0"
+		"mp_teams_auto_join"			"0"	// when enabled, players are automatically assigned to a team on join
+		"mp_teams_unbalance_limit"		"2"	// the amount of player difference between each team the server considers to be imbalanced
+		"mp_autoteambalance"			"1"	// should the server auto balance the teams if they are imbalanced?
+		"mp_minteamplayers"			"3"	// min players on each team to start the match
+		"sv_deadtalk"				"0"	// enabling this will allow the dead and living to chat text each other
+		"sv_deadtalk_team"			"1"	// is deadchat limited to just your team?
+		"sv_deadvoice"				"1"	// enabling this will allow the dead and living to VOIP each other
+		"sv_vote_issue_changegamemode_allowed"	"0"	// no changegamemode
+		"sv_nwi_banlist"			"1"	// global ban list
+		"sv_hud_deathmessages"			"0"	// death messages
+		"sv_hud_deathmessages_spectator"	"1"
+		"sv_alltalk"				"0"
+		"sv_alltalk_intermission"	"0"
+		"mp_voice_use_3d_voip"			"1"
+		"mp_friendlyfire_damage"		"1"
+		"mp_spectator_allow_chase"		"0"
+		"mp_supply_token_base"			"7"	// starting supply
+		"sv_suppress_steam_score"		"1"
+		
+		"host_timescale"			"1.0"
+		
+		"firefight"
+		{
+			"mp_roundtime"				"180"
+			"mp_cp_capture_time"			"20"
+			"mp_cp_speedup_rate"			".33"
+			"mp_supply_rate_losing_team_high"	"0"
+			"mp_supply_rate_losing_team_low"	"0"
+			"mp_supply_rate_winning_team_high"	"0"
+			"mp_supply_rate_winning_team_low"	"0"
+		}
+	}
+	
+	"solo_cvars"
+	{
+		"ins_bot_quota"							"5"
+		"mp_teams_unbalance_limit"				"0"
+		"mp_teams_auto_join" 					"0"
+	}
+	
+	
+
+	"filters"
+	{
+		// Minimum player count filter, removing this key will remove this filter.
+		"players"
+		{
+			"min"					"0"	// Minimum slider value
+			"max"					"10"
+		}
+		
+		"tags"
+		{
+		}
+	}
+
+    // Placeholder solo menu info
+    "solo_info"
+    {
+        "line_1"                ""
+        "line_2"                "Team: Security"
+        "line_3"                ""
+        "line_4"                ""
+        "line_5"                ""
+        "line_6"                "Team: Insurgents"
+        "line_7"                ""
+        "line_8"                ""
+
+    }
+}

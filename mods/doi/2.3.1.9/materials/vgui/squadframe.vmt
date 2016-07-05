@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/SquadFrame"
+
+	"$translucent" 1
+}

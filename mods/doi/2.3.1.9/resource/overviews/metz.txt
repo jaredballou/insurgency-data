@@ -1,0 +1,11 @@
+"metz"
+{
+	material	overviews/metz		// texture file
+	pos_x		-14664					// X coordinate
+	pos_y		14874					// Y coordinate
+	scale		14.5 						// scale used when taking the screenshot
+	rotate		0						// map was rotated by 90 degrees in image editor
+	zoom		1						// optimal zoom factor if map is shown in full size
+	grid_divisions 10       			// number grid rows and columns
+	grid_dark	1 						// use dark grid
+}

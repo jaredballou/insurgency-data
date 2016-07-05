@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/gameui/match_sustained"
+	"$translucent" 1
+}

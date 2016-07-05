@@ -1,0 +1,133 @@
+
+"Vote.Created"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"UI/vote_started.wav"
+}
+
+"Vote.Passed"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"UI/vote_success.wav"
+}
+
+"Vote.Failed"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"UI/vote_failure.wav"
+}
+
+"Vote.Cast.Yes"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"		"110"
+
+	"wave"		"UI/vote_yes.wav"
+}
+
+"Vote.Cast.No"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"UI/vote_no.wav"
+}
+
+"Inventory.MouseOver"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.75"
+
+	"wave"			"#ui\buttonrollover.wav"
+}
+
+"Inventory.MouseClick"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.75"
+
+	"wave"			"#ui\buttonclick.wav"
+}
+
+"Inventory.MouseClickRelease"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.75"
+
+	"wave"			"#ui\buttonclickrelease.wav"
+}
+
+"Instructor.LessonStart"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.75"
+
+	"wave"			"#ui\sfx\click_05.wav"
+}
+
+"Instructor.ImportantLessonStart"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.75"
+
+	"wave"			"#ui\sfx\click_06.wav"
+}
+
+//FIX MISSING
+
+"Player.DenyWeaponSelection"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+}
+"Player.WeaponSelected"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+}
+"Player.WeaponSelectionClose"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+}
+"Player.WeaponSelectionMoveSlot"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+}
+"HudChat.Message"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.0"
+}

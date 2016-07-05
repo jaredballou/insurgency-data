@@ -1,0 +1,12 @@
+"#base" "elite.theater"
+
+"theater"
+{
+	"weapons"
+	{
+		"weapon_anm14"
+		{
+			"weapon_cost"				"0"
+		}
+	}
+}

@@ -1,0 +1,239 @@
+// Official NWI playlist
+// See example.playlist for documentation/format guide
+
+"playlist"
+{
+	"name"							"#Playlist_PVP_Sustained"
+	"description"					"#Playlist_PVP_Sustained_Desc"
+	"category"						"pvp" // Required: Menu category, should be "pvp" or "coop"
+	
+	"require_maxplayers_max"		"32"	// Max player slots required for this playlist
+	
+	"allowed_maps"
+	{
+		"buhriz" "push"
+		"buhriz_night" "push"
+		"contact" "push"
+		"contact_night" "push"
+		"district" "push"
+		"district_night" "push"
+		"drycanal" "push"
+		"drycanal_night" "push"
+		"embassy" "push"
+		"embassy_night" "push"
+		"heights" "push"
+		"heights_night" "push"
+		"kandagal" "push"
+		"kandagal_night" "push"
+		"market" "push"
+		"market_night" "push"
+		"panj" "push"
+		"panj_night" "push"
+		"peak" "push"
+		"peak_night" "push"
+		"revolt" "push"
+		"revolt_night" "push"
+		"siege" "push"
+		"sinjar" "push"
+		"sinjar_night" "push"
+		"station" "push"
+		"station_night" "push"
+		"tell" "push"
+		"tell_night" "push"
+		"verticality" "push"
+		"verticality_night" "push"
+		"contact" "skirmish"
+		"contact_night" "skirmish"
+		"district" "skirmish"
+		"district_night" "skirmish"
+		"drycanal" "skirmish"
+		"drycanal_night" "skirmish"
+		"embassy" "skirmish"
+		"embassy_night" "skirmish"
+		"heights" "skirmish"
+		"heights_night" "skirmish"
+		"kandagal" "skirmish"
+		"kandagal_night" "skirmish"
+		"market" "skirmish"
+		"market_night" "skirmish"
+		"ministry" "skirmish"
+		"ministry_night" "skirmish"
+		"panj" "skirmish"
+		"panj_night" "skirmish"
+		"peak" "skirmish"
+		"peak_night" "skirmish"
+		"revolt" "skirmish"
+		"revolt_night" "skirmish"
+		"siege" "skirmish"
+		"verticality" "skirmish"
+		"verticality_night" "skirmish"
+		"buhriz" "strike"
+		"buhriz_night" "strike"
+		"contact" "strike"
+		"contact_night" "strike"
+		"district" "strike"
+		"district_night" "strike"
+		"drycanal" "strike"
+		"drycanal_night" "strike"
+		"embassy" "strike"
+		"embassy_night" "strike"
+		"heights" "strike"
+		"heights_night" "strike"
+		"market" "strike"
+		"market_night" "strike"
+		"panj" "strike"
+		"panj_night" "strike"
+		"revolt" "strike"
+		"revolt_night" "strike"
+		"verticality" "strike"
+		"verticality_night" "strike"
+		"buhriz" "occupy"
+		"buhriz_night" "occupy"
+		"contact" "occupy"
+		"contact_night" "occupy"
+		"district" "occupy"
+		"district_night" "occupy"
+		"drycanal" "occupy"
+		"drycanal_night" "occupy"
+		"embassy" "occupy"
+		"embassy_night" "occupy"
+		"heights" "occupy"
+		"heights_night" "occupy"
+		"kandagal" "occupy"
+		"kandagal_night" "occupy"
+		"market" "occupy"
+		"market_night" "occupy"
+		"ministry" "occupy"
+		"ministry_night" "occupy"
+		"panj" "occupy"
+		"panj_night" "occupy"
+		"peak" "occupy"
+		"peak_night" "occupy"
+		"revolt" "occupy"
+		"revolt_night" "occupy"
+		"siege" "occupy"
+		"station" "occupy"
+		"station_night" "occupy"
+		"tell" "occupy"
+		"tell_night" "occupy"
+		"uprising" "occupy"
+		"uprising_night" "occupy"
+		"verticality" "occupy"
+		"verticality_night" "occupy"
+	}
+	
+	// recommended settings but can be changed
+	"cvars"
+	{
+		"mp_friendlyfire"				"1"	// friendly fire
+		"mp_tkpunish"					"1"	// How to punish team killing ( 0 = none, 1 = warning, 2 = kill )
+		"mp_minteamplayers"				"1"	// min players on each team to start the match
+		"sv_hud_deathmessages"			"0"	// death messages
+		"sv_hud_targetindicator"		"1"	// show friendly player names when looking at them
+		"mp_timer_pregame"				"10"	// timer for the pre-game (before the game starts, usually after map change or on mp_restartgame 1)
+		"mp_timer_preround"				"15"	// timer for the pre-round (before the round starts, usually after a previous round ends or on mp_restartround 1)
+		"mp_timer_postround"			"15"	// timer for the post-round (after the round starts)
+		"mp_timer_postgame"				"10"	// timer for the post-game (at the end of a game / map rotation)
+		"mp_voice_use_3d_voip"			"1"	// disabling this will turn off the 3d voip system and allow all players to hear one another
+		"mapcyclefile"					"mapcycle_sustained_combat.txt"
+	}
+	
+	"forced_cvars"
+	{
+		"mp_theater_override"			""
+		"ins_bot_quota"					"0"	// if set higher than 0, the server will add this many bots to each team
+		"mp_teams_auto_join"			"1"	// when enabled, players are automatically assigned to a team on join
+		"mp_teams_unbalance_limit"		"1"	// the amount of player difference between each team the server considers to be imbalanced
+		"mp_autoteambalance"			"1"	// should the server auto balance the teams if they are imbalanced?
+		"sv_deadtalk"					"0"	// enabling this will allow the dead and living to chat text each other
+		"sv_deadtalk_team"				"1"	// is deadchat limited to just your team?
+		"sv_deadvoice"					"0"	// enabling this will allow the dead and living to VOIP each other
+		"sv_vote_issue_changegamemode_allowed"	"0"	// no changegamemode
+		"sv_nwi_banlist"				"1"	// global ban list
+		"mp_supply_token_base"			"10"	// force to 10 starting supply, too many are changing this
+		"host_timescale"				"1.0"
+		"sv_allow_jumpshot"				"0"
+		
+		"occupy"
+		{
+			"mp_occupy_bonus_wave"				"1"
+			"mp_wave_count_perteam"				"5"
+			"mp_wave_capture_increment"			"1"
+			"mp_wave_dpr_perteam"				"0.2"
+			"mp_respawnwavetime_min"			"20"
+			"mp_respawnwavetime_max"			"30"
+			"mp_cp_capture_time"				"15"
+			"mp_supply_rate_winning_team_high"	"2"
+			"mp_supply_rate_losing_team_high"	"2"
+			"mp_supply_rate_winning_team_low"	"1"
+			"mp_supply_rate_losing_team_low"	"1"
+		}
+		
+		"skirmish"
+		{
+			"mp_wave_count_perteam"				"3"
+			"mp_wave_capture_increment"			"1"
+			"mp_wave_dpr_perteam"				"0.2"
+			"mp_respawnwavetime_min"			"20"
+			"mp_respawnwavetime_max"			"30"
+			"mp_cp_capture_time"				"30"
+			"mp_supply_rate_winning_team_high"	"2"
+			"mp_supply_rate_losing_team_high"	"2"
+			"mp_supply_rate_winning_team_low"	"1"
+			"mp_supply_rate_losing_team_low"	"1"
+		}
+		
+		"push"
+		{
+			"mp_wave_count_attackers"			"5"
+			"mp_wave_count_defenders"			"15"
+			"mp_wave_capture_increment"			"5"
+			"mp_wave_dpr_attackers"				"0.2"
+			"mp_wave_dpr_defenders"				"0.2"
+			"mp_respawnwavetime_min"			"20"
+			"mp_respawnwavetime_max"			"35"
+			"mp_cp_capture_time"				"30"
+			"mp_supply_rate_winning_team_high"	"2"
+			"mp_supply_rate_losing_team_high"	"2"
+			"mp_supply_rate_winning_team_low"	"1"
+			"mp_supply_rate_losing_team_low"	"1"
+		}
+	}
+	
+	"solo_cvars"
+	{
+		"ins_bot_quota"							"12"
+		"mp_teams_unbalance_limit"				"0"
+		"mp_teams_auto_join" 					"0"
+	}
+	
+	"filters"
+	{
+		// Minimum player count filter, removing this key will remove this filter.
+		"players"
+		{
+			// Default min/max values are 0 to require_maxplayers_max
+		}
+		
+		"tags"
+		{
+			"deathmsgs"
+			{
+				"default"				"2"
+			}
+		}
+	}
+        
+    // Placeholder solo menu info
+    "solo_info"
+    {
+            "line_1"                ""
+            "line_2"                "Team: Security"
+            "line_3"                ""
+            "line_4"                ""
+            "line_5"                ""
+            "line_6"                "Team: Insurgents"
+            "line_7"                ""
+            "line_8"                ""
+    }
+}

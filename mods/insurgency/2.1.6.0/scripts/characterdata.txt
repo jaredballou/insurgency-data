@@ -1,0 +1,151 @@
+CharacterData
+{
+	"default"
+	{
+		"Security"
+		{
+			"model"	
+			{
+				"light"		"models/characters/security_light.mdl"
+				"medium"	"models/characters/security_standard.mdl"
+				"heavy"		"models/characters/security_heavy.mdl"
+			}
+
+			"tint"
+			{
+				"light"		"255 255 255"
+				"medium"	"255 255 255"
+				"heavy"		"255 255 255"
+			}
+		}
+
+		"Insurgents"
+		{			
+			"model"	
+			{
+				"light"		"models/characters/insurgent_light.mdl"
+				"medium"	"models/characters/insurgent_standard.mdl"
+				"heavy"		"models/characters/insurgent_heavy.mdl"
+			}
+
+			"tint"
+			{
+				"light"		"255 255 255"
+				"medium"	"255 255 255"
+				"heavy"		"255 255 255"
+			}
+		}
+	}
+
+	"siege"
+	{
+		"Security"
+		{
+			"model"	
+			{
+				"light"		"models/characters/security_light.mdl"
+				"medium"	"models/characters/security_standard.mdl"
+				"heavy"		"models/characters/security_heavy.mdl"
+			}
+
+			"tint"
+			{
+				"light"		"255 255 255"
+				"medium"	"255 255 255"
+				"heavy"		"255 255 255"
+			}
+		}
+
+		"Insurgents"
+		{			
+			"model"	
+			{
+				"light"		"models/characters/insurgent_light.mdl"
+				"medium"	"models/characters/insurgent_standard.mdl"
+				"heavy"		"models/characters/insurgent_heavy.mdl"
+			}
+
+			"tint"
+			{
+				"light"		"255 255 255"
+				"medium"	"255 255 255"
+				"heavy"		"255 255 255"
+			}
+		}
+	}
+
+	"heights"
+	{
+		"Security"
+		{
+			"model"	
+			{
+				"light"		"models/characters/security_light.mdl"
+				"medium"	"models/characters/security_standard.mdl"
+				"heavy"		"models/characters/security_heavy.mdl"
+			}
+
+			"tint"
+			{
+				"light"		"255 255 255"
+				"medium"	"255 255 255"
+				"heavy"		"255 255 255"
+			}
+		}
+
+		"Insurgents"
+		{			
+			"model"	
+			{
+				"light"		"models/characters/insurgent_light.mdl"
+				"medium"	"models/characters/insurgent_standard.mdl"
+				"heavy"		"models/characters/insurgent_heavy.mdl"
+			}
+
+			"tint"
+			{
+				"light"		"255 255 255"
+				"medium"	"255 255 255"
+				"heavy"		"255 255 255"
+			}
+		}
+	}
+
+	"ministry"
+	{
+		"Security"
+		{
+			"model"	
+			{
+				"light"		"models/characters/security_light.mdl"
+				"medium"	"models/characters/security_standard.mdl"
+				"heavy"		"models/characters/security_heavy.mdl"
+			}
+
+			"tint"
+			{
+				"light"		"255 255 255"
+				"medium"	"255 255 255"
+				"heavy"		"255 255 255"
+			}
+		}
+
+		"Insurgents"
+		{			
+			"model"	
+			{
+				"light"		"models/characters/insurgent_light.mdl"
+				"medium"	"models/characters/insurgent_standard.mdl"
+				"heavy"		"models/characters/insurgent_heavy.mdl"
+			}
+
+			"tint"
+			{
+				"light"		"255 255 255"
+				"medium"	"255 255 255"
+				"heavy"		"255 255 255"
+			}
+		}
+	}
+
+}

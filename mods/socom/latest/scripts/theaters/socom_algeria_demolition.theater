@@ -1,0 +1,724 @@
+"#base" "socom.theater"
+
+"theater"
+{
+	"core"
+	{
+		"precache"
+		{
+			"localize"			"resource/socom_demolition.txt"
+		}
+	}
+
+	"player_templates"
+	{
+		"template_algeria_alpha_seal1"
+		{	
+			"team"			"security"
+			"print_name"	"SEAL 1"
+
+			"models"
+			{
+				"player"				"models/socom/characters/turkmenistan/seal1.mdl"
+				"viewmodel_hands"		"models/socom/hands/turkmenistan/seal1.mdl"
+			}
+
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon"			"weapon_m9"
+				"weapon"			"weapon_m67"
+				"?nightmap"
+				{
+					"gear"				"sec_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mk18"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_m249"
+				"weapon"			"weapon_m40a1"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_claymore"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon_upgrade"	"barrel_silencer_sec2"
+				"weapon_upgrade"	"barrel_silencer_pistol"
+			}
+		}
+		
+		"template_algeria_alpha_seal2"
+		{	
+			"team"			"security"
+			"print_name"	"SEAL 2"
+
+			"models"
+			{
+				"player"				"models/socom/characters/turkmenistan/seal2.mdl"
+				"viewmodel_hands"		"models/socom/hands/turkmenistan/seal2.mdl"
+			}
+
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon"			"weapon_m9"
+				"weapon"			"weapon_m67"
+				"?nightmap"
+				{
+					"gear"				"sec_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mk18"
+				"weapon"			"weapon_galil_sar"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_m14"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_at4"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon_upgrade"	"barrel_silencer_sec2"
+				"weapon_upgrade"	"barrel_silencer_pistol"
+				"weapon_upgrade"	"underbarrel_bipod"
+			}
+		}
+		
+		"template_algeria_alpha_seal3"
+		{	
+			"team"			"security"
+			"print_name"	"SEAL 3"
+
+			"models"
+			{
+				"player"				"models/socom/characters/turkmenistan/seal3.mdl"
+				"viewmodel_hands"		"models/socom/hands/turkmenistan/seal3.mdl"
+			}
+
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon"			"weapon_m9"
+				"weapon"			"weapon_m67"
+				"?nightmap"
+				{
+					"gear"				"sec_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_m16a4"
+				"weapon"			"weapon_m14"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_claymore"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon_upgrade"	"barrel_silencer_sec2"
+				"weapon_upgrade"	"barrel_silencer_pistol"
+			}
+		}
+		
+		"template_algeria_alpha_seal4"
+		{	
+			"team"			"security"
+			"print_name"	"SAS 4"
+
+			"models"
+			{
+				"player"				"models/socom/characters/algeria/seal4.mdl"
+				"viewmodel_hands"		"models/socom/hands/algeria/seal4.mdl"
+			}
+
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon"			"weapon_m9"
+				"weapon"			"weapon_m67"
+				"?nightmap"
+				{
+					"gear"				"sec_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mk18"
+				"weapon"			"weapon_galil_sar"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_m249"
+				"weapon"			"weapon_m40a1"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_claymore"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon_upgrade"	"barrel_silencer_sec2"
+				"weapon_upgrade"	"barrel_silencer_pistol"
+				"weapon_upgrade"	"underbarrel_bipod"
+				"weapon_upgrade"	"optic_scope_mk4"
+			}
+		}
+		
+		"template_algeria_bravo_seal1"
+		{	
+			"team"			"security"
+			"print_name"	"SEAL 1"
+
+			"models"
+			{
+				"player"				"models/socom/characters/turkmenistan/seal1.mdl"
+				"viewmodel_hands"		"models/socom/hands/turkmenistan/seal1.mdl"
+			}
+
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon"			"weapon_m9"
+				"weapon"			"weapon_m67"
+				"?nightmap"
+				{
+					"gear"				"sec_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_m16a4"
+				"weapon"			"weapon_m14"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_claymore"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon_upgrade"	"barrel_silencer_sec2"
+				"weapon_upgrade"	"barrel_silencer_pistol"
+			}
+		}
+		
+		"template_algeria_bravo_seal2"
+		{	
+			"team"			"security"
+			"print_name"	"SEAL 2"
+
+			"models"
+			{
+				"player"				"models/socom/characters/turkmenistan/seal2.mdl"
+				"viewmodel_hands"		"models/socom/hands/turkmenistan/seal2.mdl"
+			}
+
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon"			"weapon_m9"
+				"weapon"			"weapon_m67"
+				"?nightmap"
+				{
+					"gear"				"sec_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_galil_sar"
+				"weapon"			"weapon_m16a4"
+				"weapon"			"weapon_m40a1"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_at4"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon_upgrade"	"barrel_silencer_sec2"
+				"weapon_upgrade"	"barrel_silencer_pistol"
+				"weapon_upgrade"	"underbarrel_bipod"
+			}
+		}
+		
+		"template_algeria_bravo_seal3"
+		{	
+			"team"			"security"
+			"print_name"	"SEAL 3"
+
+			"models"
+			{
+				"player"				"models/socom/characters/turkmenistan/seal3.mdl"
+				"viewmodel_hands"		"models/socom/hands/turkmenistan/seal3.mdl"
+			}
+
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon"			"weapon_m9"
+				"weapon"			"weapon_m67"
+				"?nightmap"
+				{
+					"gear"				"sec_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mk18"
+				"weapon"			"weapon_ump45"
+				"weapon"			"weapon_m249"
+				"weapon"			"weapon_m40a1"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_claymore"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon_upgrade"	"barrel_silencer_sec2"
+				"weapon_upgrade"	"barrel_silencer_pistol"
+			}
+		}
+		
+		"template_algeria_bravo_seal4"
+		{	
+			"team"			"security"
+			"print_name"	"SAS 4"
+
+			"models"
+			{
+				"player"				"models/socom/characters/algeria/seal4.mdl"
+				"viewmodel_hands"		"models/socom/hands/algeria/seal4.mdl"
+			}
+
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_m4a1"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon"			"weapon_m9"
+				"weapon"			"weapon_m67"
+				"?nightmap"
+				{
+					"gear"				"sec_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_m4a1"
+				"weapon"			"weapon_mini14"
+				"weapon"			"weapon_mp5"
+				"weapon"			"weapon_galil_sar"
+				"weapon"			"weapon_m590"
+				"weapon"			"weapon_m14"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_anm14"
+				"weapon"			"weapon_claymore"
+				"weapon_upgrade"	"barrel_silencer_sec1"
+				"weapon_upgrade"	"barrel_silencer_sec2"
+				"weapon_upgrade"	"barrel_silencer_pistol"
+				"weapon_upgrade"	"underbarrel_bipod"
+				"weapon_upgrade"	"optic_scope_mk4"
+			}
+		}
+
+		"template_algeria_alpha_terrorist1"
+		{	
+			"team"			"insurgents"
+			"print_name"	"Terrorist 1"
+
+			"models"
+			{
+				"player"			"models/socom/characters/algeria/terrorist1.mdl"
+				"viewmodel_hands"	"models/socom/hands/algeria/terrorist2.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_f1"
+				"?nightmap"
+				{
+					"gear"				"ins_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_sterling"
+				"weapon"			"weapon_rpk"
+				"weapon"			"weapon_mosin"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_molotov"
+				"weapon"			"weapon_pmnmine"
+				"weapon_upgrade"	"barrel_silencer_ins1"
+			}
+		}
+
+		"template_algeria_alpha_terrorist2"
+		{	
+			"team"			"insurgents"
+			"print_name"	"Terrorist 2"
+
+			"models"
+			{
+				"player"			"models/socom/characters/algeria/terrorist2.mdl"
+				"viewmodel_hands"	"models/socom/hands/algeria/terrorist2.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_f1"
+				"?nightmap"
+				{
+					"gear"				"ins_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_galil"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_fal"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_molotov"
+				"weapon"			"weapon_pmnmine"
+				"weapon_upgrade"	"barrel_silencer_ins1"
+			}
+		}
+
+		"template_algeria_alpha_terrorist3"
+		{	
+			"team"			"insurgents"
+			"print_name"	"Terrorist 3"
+
+			"models"
+			{
+				"player"			"models/socom/characters/algeria/terrorist3.mdl"
+				"viewmodel_hands"	"models/socom/hands/algeria/terrorist2.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_f1"
+				"?nightmap"
+				{
+					"gear"				"ins_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_sterling"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_mosin"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_molotov"
+				"weapon"			"weapon_rpg7"
+				"weapon_upgrade"	"barrel_silencer_ins1"
+				"weapon_upgrade"	"underbarrel_bipod"
+			}
+		}
+
+		"template_algeria_alpha_terrorist4"
+		{	
+			"team"			"insurgents"
+			"print_name"	"Terrorist 4"
+
+			"models"
+			{
+				"player"			"models/socom/characters/algeria/terrorist4.mdl"
+				"viewmodel_hands"	"models/socom/hands/algeria/terrorist2.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_f1"
+				"?nightmap"
+				{
+					"gear"				"ins_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_galil"
+				"weapon"			"weapon_rpk"
+				"weapon"			"weapon_fal"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_molotov"
+				"weapon"			"weapon_pmnmine"
+				"weapon_upgrade"	"barrel_silencer_ins1"
+				"weapon_upgrade"	"underbarrel_bipod"
+				"weapon_upgrade"	"optic_scope_7x"
+			}
+		}
+
+		"template_algeria_bravo_terrorist1"
+		{	
+			"team"			"insurgents"
+			"print_name"	"Terrorist 1"
+
+			"models"
+			{
+				"player"			"models/socom/characters/algeria/terrorist1.mdl"
+				"viewmodel_hands"	"models/socom/hands/algeria/terrorist2.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_f1"
+				"?nightmap"
+				{
+					"gear"				"ins_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_sterling"
+				"weapon"			"weapon_sks"
+				"weapon"			"weapon_fal"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_molotov"
+				"weapon"			"weapon_pmnmine"
+				"weapon_upgrade"	"barrel_silencer_ins1"
+			}
+		}
+
+		"template_algeria_bravo_terrorist2"
+		{	
+			"team"			"insurgents"
+			"print_name"	"Terrorist 2"
+
+			"models"
+			{
+				"player"			"models/socom/characters/algeria/terrorist2.mdl"
+				"viewmodel_hands"	"models/socom/hands/algeria/terrorist2.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_f1"
+				"?nightmap"
+				{
+					"gear"				"ins_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_galil"
+				"weapon"			"weapon_rpk"
+				"weapon"			"weapon_mosin"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_molotov"
+				"weapon"			"weapon_pmnmine"
+				"weapon_upgrade"	"barrel_silencer_ins1"
+			}
+		}
+
+		"template_algeria_bravo_terrorist3"
+		{	
+			"team"			"insurgents"
+			"print_name"	"Terrorist 3"
+
+			"models"
+			{
+				"player"			"models/socom/characters/algeria/terrorist3.mdl"
+				"viewmodel_hands"	"models/socom/hands/algeria/terrorist2.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_f1"
+				"?nightmap"
+				{
+					"gear"				"ins_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_mp40"
+				"weapon"			"weapon_sterling"
+				"weapon"			"weapon_rpk"
+				"weapon"			"weapon_fal"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_molotov"
+				"weapon"			"weapon_rpg7"
+				"weapon_upgrade"	"barrel_silencer_ins1"
+				"weapon_upgrade"	"underbarrel_bipod"
+			}
+		}
+
+		"template_algeria_bravo_terrorist4"
+		{	
+			"team"			"insurgents"
+			"print_name"	"Terrorist 4"
+
+			"models"
+			{
+				"player"			"models/socom/characters/algeria/terrorist4.mdl"
+				"viewmodel_hands"	"models/socom/hands/algeria/terrorist2.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"			"weapon_gurkha"
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_makarov"
+				"weapon"			"weapon_f1"
+				"?nightmap"
+				{
+					"gear"				"ins_nightvision"
+				}
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_ak74"
+				"weapon"			"weapon_m1a1"
+				"weapon"			"weapon_aks74u"
+				"weapon"			"weapon_galil"
+				"weapon"			"weapon_sks"
+				"weapon"			"weapon_mosin"
+				"weapon"			"weapon_m84"
+				"weapon"			"weapon_m18"
+				"weapon"			"weapon_molotov"
+				"weapon"			"weapon_pmnmine"
+				"weapon_upgrade"	"barrel_silencer_ins1"
+				"weapon_upgrade"	"underbarrel_bipod"
+				"weapon_upgrade"	"optic_scope_7x"
+			}
+		}
+	}
+
+	"teams"
+	{
+		"security"
+		{
+			"name"		"SEALs"
+			"logo"		"gameui/fac_sec"
+
+			"squads"
+			{
+				"#Fireteam_Alpha"
+				{
+					"SEAL 1"				"template_algeria_alpha_seal1"
+					"SEAL 2"				"template_algeria_alpha_seal2"
+					"SEAL 3"				"template_algeria_alpha_seal3"
+					"SAS 4"					"template_algeria_alpha_seal4"
+					"SEAL 1"				"template_algeria_alpha_seal1"
+					"SEAL 2"				"template_algeria_alpha_seal2"
+					"SEAL 3"				"template_algeria_alpha_seal3"
+					"SAS 4"					"template_algeria_alpha_seal4"
+				}
+
+				"#Fireteam_Bravo"
+				{
+					"SEAL 1"				"template_algeria_bravo_seal1"
+					"SEAL 2"				"template_algeria_bravo_seal2"
+					"SEAL 3"				"template_algeria_bravo_seal3"
+					"SEAL 4"				"template_algeria_bravo_seal4"
+					"SEAL 1"				"template_algeria_bravo_seal1"
+					"SEAL 2"				"template_algeria_bravo_seal2"
+					"SEAL 3"				"template_algeria_bravo_seal3"
+					"SEAL 4"				"template_algeria_bravo_seal4"
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"name"		"Terrorists"
+			"logo"		"gameui/fac_ins"
+
+			"squads"
+			{
+				"#Cell_Alpha"
+				{
+					"Terrorist 1"				"template_algeria_alpha_terrorist1"
+					"Terrorist 2"				"template_algeria_alpha_terrorist2"
+					"Terrorist 3"				"template_algeria_alpha_terrorist3"
+					"Terrorist 4"				"template_algeria_alpha_terrorist4"
+					"Terrorist 1"				"template_algeria_alpha_terrorist1"
+					"Terrorist 2"				"template_algeria_alpha_terrorist2"
+					"Terrorist 3"				"template_algeria_alpha_terrorist3"
+					"Terrorist 4"				"template_algeria_alpha_terrorist4"
+				}
+
+				"#Cell_Bravo"
+				{
+					"Terrorist 1"				"template_algeria_bravo_terrorist1"
+					"Terrorist 2"				"template_algeria_bravo_terrorist2"
+					"Terrorist 3"				"template_algeria_bravo_terrorist3"
+					"Terrorist 4"				"template_algeria_bravo_terrorist4"
+					"Terrorist 1"				"template_algeria_bravo_terrorist1"
+					"Terrorist 2"				"template_algeria_bravo_terrorist2"
+					"Terrorist 3"				"template_algeria_bravo_terrorist3"
+					"Terrorist 4"				"template_algeria_bravo_terrorist4"
+				}
+			}
+		}
+	}
+}

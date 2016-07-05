@@ -1,0 +1,116 @@
+"#base" "base_operator_ammo.theater"
+"#base" "base_operator_ammo_upgrades.theater"
+"#base" "base_operator_ordinance.theater"
+"#base" "base_operator_coop_players.theater"
+"#base" "base_operator_coop_players_upgrades.theater"
+"#base" "base_operator_weapons.theater"
+"#base" "base_operator_weapons_optics.theater"
+"#base" "base_operator_weapons_upgrades.theater"
+
+"theater"
+{
+	"core"
+	{
+		"precache"
+		{
+			// default theater specific sounds
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			"sounds"			"scripts/ins_sounds_cues.txt"
+			"sounds"			"scripts/ins_sounds_voice.txt"
+			"sounds"			"scripts/ins_sounds_responses_security.txt"
+			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
+			"sounds"			"scripts/ins_sounds_hq.txt"
+			"sounds"			"scripts/ins_sounds_operator.txt"
+		}
+	}
+	"teams"
+	{
+		"security"
+		{
+			"logo"		"gameui/fac_alpha"
+			"name"		"#Team_Security"
+			"squads"
+			{
+				"#Fireteam_Alpha"	// small arms
+				{
+					"Alpha Operator"						"template_operator_grade_coop"
+					"Alpha Operator"						"template_operator_grade_coop"
+					"Alpha Operator"						"template_operator_grade_coop"
+					"Alpha Operator"						"template_operator_grade_coop"
+					"Alpha Operator"						"template_operator_grade_coop"
+					"Alpha Operator"						"template_operator_grade_coop"
+					"Alpha Operator"						"template_operator_grade_coop"
+					"Alpha Operator"						"template_operator_grade_coop"
+				}
+			}
+		}		
+		"insurgents"
+		{
+		"logo"		"gameui/fac_omega"
+		"name"		"#Team_Insurgent"
+		"squads"
+			{
+				"#Cell_Alpha"	
+				{
+				"#Squad_Cell_Leader_Specialist"				"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_MachineGunner"					"template_operative_b_aks"	
+				"#Squad_Cell_Specialist"					"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_rpk"	
+				}			
+				"#Cell_Bravo"	
+				{
+				"#Squad_Cell_Leader_Specialist"				"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_MachineGunner"					"template_operative_b_aks"	
+				"#Squad_Cell_Specialist"					"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_rpk"		
+				}			
+				"#Cell_Charlie"	
+				{
+				"#Squad_Cell_Leader_Specialist"				"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_MachineGunner"					"template_operative_b_aks"	
+				"#Squad_Cell_Specialist"					"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_rpk"	
+				}			
+				"#Cell_Delta"	
+				{
+				"#Squad_Cell_Leader_Specialist"				"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_MachineGunner"					"template_operative_b_aks"	
+				"#Squad_Cell_Specialist"					"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_rpk"		
+				}	
+				"#Cell_Echo"
+				{
+				"#Squad_Cell_Leader_Specialist"				"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_MachineGunner"					"template_operative_b_aks"	
+				"#Squad_Cell_Specialist"					"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_rpk"		
+				}	
+				"#Cell_Foxtrot"
+				{
+				"#Squad_Cell_Leader_Specialist"				"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_Fighter"						"template_operative_b_akm"	
+				"#Squad_Cell_MachineGunner"					"template_operative_b_aks"	
+				"#Squad_Cell_Specialist"					"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_aks"	
+				"#Squad_Cell_Fighter"						"template_operative_b_rpk"		
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,362 @@
+"theater"
+{
+	"player_settings"
+	{
+		"scoring"
+		{
+			"kill"						"10" 
+			"kill_offensive"			"20"
+			"kill_defensive"			"20" 
+			"kill_headshot_bonus"		"10"	
+			"kill_savior"				"10"	
+			"kill_bonus_domination"		"10"	
+			"kill_bonus_revenge"		"10"	
+			"assist"					"10"
+			"obj_captured"				"100"
+			"obj_neutralized"			"0"
+			"cache_destroyed"			"100"
+			"intel_captured"			"100"
+			"vip_killed"				"100"
+			"safehouse_secured"			"100"
+		}
+		// Weight is in hectograms
+		"weight"
+		{
+			"min_weight"			"60" 
+			"max_weight"			"640" 
+		}
+		"speed"
+		{
+			"frac_side_move"		"0.7"
+			"frac_back_move"		"0.7"
+			"frac_side_step"		"0.7"
+			"speed_prone"			"40"
+			"speed_crouch_walk"		"40"
+			"speed_crouch_run"		"80"
+			"speed_walk"			"80"
+			"speed_run"				"120"
+			"speed_sprint"			"300"
+			"AccelerationByWeight"
+			{
+				"0"					"4"
+				"640"				"3.8"
+			}			
+			"DecelerationByWeight"
+			{
+				"0"					"450.0" // these are much higher than acceleration values because it's loss in velocity per second
+				"640"				"400.0"
+			}			
+			"FrictionByWeight"
+			{
+				"0"					"4.20"
+				"640"				"4.90"
+			}			
+			"SprintSpeedFactorByStamina"
+			{
+				"0"					"0.5"
+				"40"				"0.6"
+				"60"				"1.0"
+				"100"				"1.0"
+			}
+		}
+		"turning"
+		{
+			"frac_turn_sprint"		"0.6"
+			"frac_turn_lean"		"0.9"
+		}
+		"stamina"
+		{
+			"StaminaMaxByWeight"
+			{
+				"0"					"100"
+				"640"				"100"
+			}
+			"stamina_regain"		"7"
+			"stamina_sprint_take"	"13" 
+			"stamina_jump_take"		"60"
+			"stamina_dmg_take"		"1"			
+			"land_viewpunch_minvel"		"120"
+			"land_viewpunch_basepitch" 	"0.75"
+			"land_viewpunch_jumppitch" 	"0.5"
+			"land_viewpunch_landpitch" 	"0.01"
+			"land_viewpunch_maxangle"	"-12.0"
+			"land_viewpunch_freeaim"	"1.0"
+			"land_viewpunch_viewkick"	"1.0"
+		}
+		"focus"
+		{
+			"FocusTimeStamina"
+			{
+				"0"					"3.0"
+				"100"				"6.0"
+			}
+			"FocusCooldownStamina"
+			{
+				"0"					"1.25"
+				"100"				"2"
+			}
+			"FocusEffectivenessStamina"
+			{
+				"0"					"0.3"
+				"50"				"0.5"
+				"75"				"1.0"
+				"100"				"1.0"
+			}
+		}
+		"slide"
+		{
+			"min_sprint_time"		"1.6"
+			"post_sprint_grace"		"0.01"			
+			"DistanceByWeight"
+			{
+				"0"					"0.5"
+				"640"				"0.4"
+			}			
+			"SpeedByWeight"
+			{
+				"0"					"150"
+				"640"				"130"
+			}
+		}
+		"lean"
+		{
+			"lean_left_offset_stance"				"14 11 8"
+			"lean_right_offset_stance"				"27 25 8"
+			"lean_left_moving_offset_stance"		"8 5 4"
+			"lean_right_moving_offset_stance"		"12 8 6"
+			"lean_roll_offset_stance"				"10"
+			"lean_down_offset_stance"				"11"
+			"lean_down_offset_stance_crouch"		"2"			
+			"LeanSpeedByWeight"
+			{
+				"0"				"3.8"
+				"640"			"3.2"
+			}
+			"LeanViewModelSpeedByWeight"
+			{
+				"60"				"7"
+				"640"				"2"
+			}
+		}
+		"suppression"
+		{
+			"suppression_resistance"	"0.05"
+			"suppression_recovery_rate"	"25"
+		}		
+		"damage"
+		{
+			"damage_decay_rate"					"20"
+			"explosion_deafen_radius_factor"	"0.4"
+			"default_penetration_power"			"10"
+			"max_penetration_distance"			"300"			
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"					"3" // death
+				"HITGROUP_CHEST"				"1.00"
+				"HITGROUP_STOMACH"				"1.00"
+				"HITGROUP_LEFTARM"				"1.00"
+				"HITGROUP_RIGHTARM"				"1.00"
+				"HITGROUP_LEFTLEG"				"1.00"
+				"HITGROUP_RIGHTLEG"				"1.00"
+			}
+			"VelocityHitgroups"
+			{
+				"HITGROUP_LEFTLEG"    			"0.10"
+				"HITGROUP_RIGHTLEG"   	 		"0.10"
+				"HITGROUP_CHEST"    			"0.60"
+				"HITGROUP_STOMACH"    			"0.60"
+			}
+			"BulletPenetrationPower" // Usu # = PenReq/Unit - Letter = gamematerial - W+M Behave as -50% Listed Value - WIP 
+			{
+				"CHAR_TEX_ASPHALT"				"45" // Q ...Was 18
+				"CHAR_TEX_BRICK"				"50" // R
+				"CHAR_TEX_CARDBOARD"			"6"  // U or V ...Was 5
+				"CHAR_TEX_CARPET"				"20" // O ...Was 15
+				"CHAR_TEX_COMPUTER"				"20" // P
+				"CHAR_TEX_CONCRETE"				"50" // C
+				"CHAR_TEX_PLASTER"				"50" // O
+				"CHAR_TEX_DIRT"					"40" // D
+				"CHAR_TEX_FLESH"				"35" // F
+				"CHAR_TEX_FOLIAGE"				"30" // O
+				"CHAR_TEX_GLASS"				"2"  // ?
+				"CHAR_TEX_GRASS"				"40" // J ...Was 60
+				"CHAR_TEX_GRAVEL"				"39" // ? ...Was Undefined, behaved like 10
+				"CHAR_TEX_METAL"				"70" // M BEHAVES AS -50% VALUE, should act like 35 ...Was 60
+				"CHAR_TEX_METALPANEL"			"14" // N ...Was Undefined, possibly acts at 1/2 pwr
+				"CHAR_TEX_MUD"					"37" // D ...Was Undefined
+				"CHAR_TEX_PAPER"				"15" // U or V ...Was Undefined
+				"CHAR_TEX_PLASTIC"				"10" // L
+				"CHAR_TEX_ROCK"					"60" // O
+				"CHAR_TEX_RUBBER"				"8"  // ?SquareCharacter?
+				"CHAR_TEX_SAND"					"48" // N ...Was 60
+				"CHAR_TEX_SHEETROCK"			"5"	 // TODO
+				"CHAR_TEX_SLOSH"				"12" // TODO
+				"CHAR_TEX_TILE"					"40" // F ...Was 13
+				"CHAR_TEX_VENT"					"8"  // TODO
+				"CHAR_TEX_WOOD"					"30" // W BEHAVES AS -50% VALUE Should be raised w/ weak objs using panel
+				"CHAR_TEX_WOOD_PANEL"			"20" // W BEHAVES AS -50% VALUE ...Was Undefined			
+			}
+		}
+		"health"
+		{
+		}
+	}
+	"player_templates"
+	{
+		////////////////////////////////
+		////////ALPHA///////////////////
+		////////////////////////////////
+		"template_operator_grade_coop"
+		{
+			"team"			"security" 
+			"models"
+			{
+				"player"			"models/characters/operators/w_op_body_1_c.mdl"
+				"viewmodel_hands"	"models/characters/operators/v_op_hands.mdl"				
+				"attachments"
+				{
+					"head"
+					{
+						"model"                 "models/characters/beards/a_op_head_b_1.mdl"
+						"fallback_for_slot"		"misc1"
+					}
+					"body"
+					{
+						"model"                 "models/characters/armor/w_armor_v2_navy.mdl"
+						"fallback_for_slot"		"armor"
+					}
+					"headgear"
+					{
+						"model"                 "models/characters/headgear/a_hg_taccap.mdl"
+						"fallback_for_slot"		"head"
+					}
+					"eyewear"
+					{
+						"model"					"models/characters/eyewear/a_op_glasses_a1.mdl"
+						"fallback_for_slot"		"accessory"
+					}
+				}
+			}
+			"buy_order"
+			{
+				"weapon"			"weapon_kabar"
+				"weapon"			"weapon_op_m4a1"
+				"weapon_upgrade"	"m4_buttstock"
+				"weapon"			"weapon_op_m84"
+			}
+			"allowed_items"
+			{
+				"weapon"			"weapon_op_m4a1"
+				"weapon"			"weapon_op_mp5a4"
+				"weapon"			"weapon_op_mk12spr"
+				"weapon" 			"weapon_op_mk18"
+			}
+		}
+		////////////////////////////////////
+		//////////OMEGA/////////////////////
+		////////////////////////////////////		
+		//BOTS
+		"template_operative_b_akm"
+		{
+			"team"					"insurgents"
+			"models"
+			{
+				"player"			"models/characters/civilian_vip.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_vip.mdl"
+				"attachments"
+				{
+					"body"
+					{
+						"model"                 "models/characters/armor/w_armor_v1_tac.mdl"
+						"fallback_for_slot"		"armor"
+					}
+					"headgear"
+					{
+						"model"                 "models/characters/headgear/hg_sec_helm_b.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}			
+			"buy_order"
+			{
+				//"gear"				"armor_bot
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_op_m67"
+			}
+			"allowed_items"
+			{
+				//"gear"				"armor_bot
+				"weapon"			"weapon_akm"
+				"weapon"			"weapon_op_m67"
+			}			
+		}
+		"template_operative_b_rpk"
+		{
+				"team"					"insurgents"
+				"models"
+				{
+				"player"			"models/characters/civilian_vip.mdl"
+					"viewmodel_hands"	"models/weapons/v_hands_vip.mdl"
+					"attachments"
+					{
+						"body"
+						{
+							"model"                 "models/characters/armor/w_armor_v1_tac.mdl"
+							"fallback_for_slot"		"armor"
+						}
+						"headgear"
+						{
+							"model"                 "models/characters/headgear/hg_ins_helm_b.mdl"
+							"fallback_for_slot"		"head"
+						}
+					}
+				}			
+			"buy_order"
+			{
+				//"gear"				"armor_bot
+				"weapon"			"weapon_rpk"
+				"weapon"			"weapon_op_m67"
+			}
+			"allowed_items"
+			{
+				//"gear"				"armor_bot
+				"weapon"			"weapon_rpk"
+				"weapon"			"weapon_op_m67"
+			}	
+		}
+		"template_operative_b_aks"
+		{
+			"team"					"insurgents"
+			"models"
+			{
+				"player"			"models/characters/civilian_vip.mdl"
+				"viewmodel_hands"	"models/weapons/v_hands_vip.mdl"
+				"attachments"
+				{
+					"body"
+					{
+						"model"                 "models/characters/armor/w_armor_v1_tac.mdl"
+						"fallback_for_slot"		"armor"
+					}
+					"headgear"
+					{
+						"model"                 "models/characters/headgear/hg_ins_helm_b.mdl"
+						"fallback_for_slot"		"head"
+					}
+				}
+			}			
+			"buy_order"
+			{
+				//"gear"				"armor_bot"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_op_m67"
+			}
+			"allowed_items"
+			{
+				//"gear"				"armor_bot"
+				"weapon"			"weapon_toz"
+				"weapon"			"weapon_op_m67"
+			}					
+		}
+	}
+}

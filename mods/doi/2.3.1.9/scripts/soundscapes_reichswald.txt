@@ -1,0 +1,1498 @@
+//Reichswald Soundscape
+
+"wwii.reichswald_exterior"
+{
+
+	// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "41"
+	"dsp_volume" "0"
+	"fadetime" "0.8"
+
+	// *** looping sounds *** //
+	
+	//	Rain
+	"playlooping"
+	{
+		"volume"	"0.35" //0.9
+		"pitch"		"85"
+		"wave"	"soundscape\ambience\rain_downpour.wav"
+	}
+	
+	//	Rain Puddles
+	"playlooping"
+	{
+		"volume"	"0.3" //0.4
+		"pitch"		"90"
+		"wave"	"soundscape\ambience\rain_puddles.wav"
+	}
+	
+	//	Rain Foliage
+	"playlooping"
+	{
+		"volume"	"0.4" //0.6
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\rain_foliage.wav"
+	}
+	
+	//	Tone
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"60"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"
+	}
+	
+
+	
+	//	Mountain Wind Ambience
+	"playlooping"
+	{
+		"volume"	"0.5" //0.9
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_mountain_ambience.wav"
+	}
+	
+	//	Wind Howls
+	"playlooping"
+	{
+		"volume"	"0.5" //0.9
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_01_hp.wav"
+	}
+	
+	//	Wind Howls 2
+	"playlooping"
+	{
+		"volume"	"0.3" //0.2
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_howls.wav"
+	}
+	
+	//	Wind Trees
+	"playlooping"
+	{
+		"volume"	"0.6" //0.2
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_trees.wav"
+	}
+	
+	//Leaf rustles 4
+	"playrandom"
+	{
+		"time"		"6,16"
+		"volume"	"0.06,0.18"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_01.ogg"	
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_02.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_03.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_04.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_05.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_06.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_07.ogg"			
+		}
+	} 
+	
+	
+
+	
+		 // Wind Howl
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.2"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_04.ogg"			
+		
+		}
+	} 
+	
+	// Tree Creaking
+	"playrandom"
+	{
+		"time"		"2,8"
+		"volume"	"0.4,0.8"
+		"pitch"		"50,120"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_08.ogg"			
+	
+		
+		}
+	} 
+	
+  	//	Bird Song Background
+	"playlooping"
+	{
+		"volume"	"0.2" //0.3
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\bird_ambience.wav"
+	}
+	
+
+	//ravens
+	"playrandom"
+	{
+		"time"		"10,20" //10/20
+		"volume"	"0.4,1.0" //0.4/1.0
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\birds_raven_01_mono.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_raven_02_mono.ogg"	
+		
+		}
+	} 
+	
+	//bg raven cries 1
+	"playrandom"
+	{
+		"time"		"10,25" //7,14
+		"volume"	"0.4,1.0"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_04.ogg"			
+		}
+	} 	
+	
+	//bg raven cries 2
+	"playrandom"
+	{
+		"time"		"20,35"
+		"volume"	"0.2,0.4"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_06.ogg"	
+		}
+	} 
+	
+	//Crow Distant
+	"playrandom"
+	{
+		"time"		"15,25"
+		"volume"	"0.3,0.7"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\crow_call_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\crow_call_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\crow_call_distant_03.ogg"			
+		}
+	} 
+	
+
+	
+	//Dove calls
+	"playrandom"
+	{
+		"time"		"14,27"
+		"volume"	"0.05,0.1"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dove_call_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_05.ogg"			
+		}
+	} 
+	
+		//bg geese flyby
+	"playrandom"
+	{
+		"time"		"40,70"
+		"volume"	"0.3,0.6"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\geese_flyby.ogg"	
+		}
+	}
+
+//Tanks Approaching Twisted Metal
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.15, 0.2"//"0.4, 0.7"
+		"pitch"		"65"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_08.ogg"			
+		}
+	} 	
+	
+	
+	
+	// positional //
+	
+	//lake wave -01
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.65"
+		"pitch"		"90,100"
+		"position"	"0"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+		//lake wave -02
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.65"
+		"pitch"		"90,100"
+		"position"	"1"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+		//lake wave -03
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.65"
+		"pitch"		"90,100"
+		"position"	"2"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+		//lake wave -04
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.65"
+		"pitch"		"90,100"
+		"position"	"3"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+		//lake wave -05
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.65"
+		"pitch"		"90,100"
+		"position"	"4"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+		//lake wave -06
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.65"
+		"pitch"		"90,100"
+		"position"	"5"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+		//lake wave -07
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.65"
+		"pitch"		"90,100"
+		"position"	"6"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+		//lake wave -08
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.65"
+		"pitch"		"90,100"
+		"position"	"7"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+
+
+}
+
+"wwii.reichswald_interior_bunker"
+{
+
+	// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "41"
+	"dsp_volume" "0"
+	"fadetime" "0.8"
+
+	// *** looping sounds *** //
+	
+	
+	//	Rain Inside
+	"playlooping"
+	{
+		"volume"	"0.35" //0.15
+		"pitch"		"85"
+		"wave"	"soundscape\ambience\rain_downpour_indoor.wav"
+	}
+	
+	//	Rain Puddles
+	"playlooping"
+	{
+		"volume"	"0.1" //0.4
+		"pitch"		"90"
+		"wave"	"soundscape\ambience\rain_puddles.wav"
+	}
+	
+	//	Rain Foliage
+	"playlooping"
+	{
+		"volume"	"0.2" //0.6
+		"pitch"		"85"
+		"wave"	"soundscape\ambience\rain_foliage.wav"
+	}
+	
+	//	Tone
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"60"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"
+	}
+	
+
+	
+		//	Mountain Wind Ambience
+	"playlooping"
+	{
+		"volume"	"0.5" //0.9
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_mountain_ambience.wav"
+	}
+	
+	//	Wind Howls
+	"playlooping"
+	{
+		"volume"	"0.5" //0.9
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_01_hp.wav"
+	}
+	
+	//	Wind Howls 2
+	"playlooping"
+	{
+		"volume"	"0.3" //0.2
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_howls.wav"
+	}
+	
+	//	Wind Trees
+	"playlooping"
+	{
+		"volume"	"0.6" //0.2
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_trees.wav"
+	}
+	
+	//Leaf rustles 4
+	"playrandom"
+	{
+		"time"		"6,16"
+		"volume"	"0.06,0.18"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_01.ogg"	
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_02.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_03.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_04.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_05.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_06.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_07.ogg"			
+		}
+	} 
+	
+	
+
+	
+		 // Wind Howl
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.2"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_04.ogg"			
+		
+		}
+	} 
+	
+	// Tree Creaking
+	"playrandom"
+	{
+		"time"		"2,8"
+		"volume"	"0.4,0.8"
+		"pitch"		"50,120"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_08.ogg"			
+	
+		
+		}
+	} 
+	
+  	//	Bird Song Background
+	"playlooping"
+	{
+		"volume"	"0.2" //0.3
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\bird_ambience.wav"
+	}
+	
+
+	//ravens
+	"playrandom"
+	{
+		"time"		"10,20" //10/20
+		"volume"	"0.4,1.0" //0.4/1.0
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\birds_raven_01_mono.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_raven_02_mono.ogg"	
+		
+		}
+	} 
+	
+	//bg raven cries 1
+	"playrandom"
+	{
+		"time"		"10,25" //7,14
+		"volume"	"0.4,1.0"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_04.ogg"			
+		}
+	} 	
+	
+	//bg raven cries 2
+	"playrandom"
+	{
+		"time"		"20,35"
+		"volume"	"0.2,0.4"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_06.ogg"	
+		}
+	} 
+	
+	//Crow Distant
+	"playrandom"
+	{
+		"time"		"15,25"
+		"volume"	"0.3,0.7"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\crow_call_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\crow_call_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\crow_call_distant_03.ogg"			
+		}
+	} 
+	
+
+	
+	//Dove calls
+	"playrandom"
+	{
+		"time"		"14,27"
+		"volume"	"0.05,0.1"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dove_call_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_05.ogg"			
+		}
+	} 
+	
+		//bg geese flyby
+	"playrandom"
+	{
+		"time"		"40,70"
+		"volume"	"0.3,0.6"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\geese_flyby.ogg"	
+		}
+	}
+
+//Tanks Approaching Twisted Metal
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.15, 0.2"//"0.4, 0.7"
+		"pitch"		"65"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_08.ogg"			
+		}
+	} 	
+	
+	
+	
+	// positional //
+	
+	// positional //
+	
+
+	// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"0"
+	}
+	
+		// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"1"
+	}
+	
+
+}
+
+"wwii.reichswald_interior_bridge"
+{
+
+	// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "41"
+	"dsp_volume" "0"
+	"fadetime" "0.8"
+
+		// *** looping sounds *** //
+	
+	//	Rain
+	"playlooping"
+	{
+		"volume"	"0.2" //0.9
+		"pitch"		"85"
+		"wave"	"soundscape\ambience\rain_downpour.wav"
+	}
+	
+	//	Rain Puddles
+	"playlooping"
+	{
+		"volume"	"0.4" //0.4
+		"pitch"		"90"
+		"wave"	"soundscape\ambience\rain_puddles.wav"
+	}
+	
+	//	Rain Foliage
+	"playlooping"
+	{
+		"volume"	"0.4" //0.6
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\rain_foliage.wav"
+	}
+	
+	//	Tone
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"60"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"
+	}
+	
+
+	
+	//	Mountain Wind Ambience
+	"playlooping"
+	{
+		"volume"	"0.5" //0.9
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_mountain_ambience.wav"
+	}
+	
+	//	Wind Howls
+	"playlooping"
+	{
+		"volume"	"0.5" //0.9
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_01_hp.wav"
+	}
+	
+	//	Wind Howls 2
+	"playlooping"
+	{
+		"volume"	"0.3" //0.2
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_howls.wav"
+	}
+	
+	//	Wind Trees
+	"playlooping"
+	{
+		"volume"	"0.6" //0.2
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_trees.wav"
+	}
+	
+	//Leaf rustles 4
+	"playrandom"
+	{
+		"time"		"6,16"
+		"volume"	"0.06,0.18"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_01.ogg"	
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_02.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_03.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_04.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_05.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_06.ogg"
+		"wave"	"soundscape\emitters\oneshot\leaf_rustle_07.ogg"			
+		}
+	} 
+	
+	
+
+	
+		 // Wind Howl
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.2"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wind_howl_04.ogg"			
+		
+		}
+	} 
+	
+	// Tree Creaking
+	"playrandom"
+	{
+		"time"		"2,8"
+		"volume"	"0.4,0.8"
+		"pitch"		"50,120"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tree_creak_08.ogg"			
+	
+		
+		}
+	} 
+	
+  	//	Bird Song Background
+	"playlooping"
+	{
+		"volume"	"0.2" //0.3
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\bird_ambience.wav"
+	}
+	
+
+	//ravens
+	"playrandom"
+	{
+		"time"		"10,20" //10/20
+		"volume"	"0.4,1.0" //0.4/1.0
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\birds_raven_01_mono.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\birds_raven_02_mono.ogg"	
+		
+		}
+	} 
+	
+	//bg raven cries 1
+	"playrandom"
+	{
+		"time"		"10,25" //7,14
+		"volume"	"0.4,1.0"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_v2_04.ogg"			
+		}
+	} 	
+	
+	//bg raven cries 2
+	"playrandom"
+	{
+		"time"		"20,35"
+		"volume"	"0.2,0.4"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\raven_cry_06.ogg"	
+		}
+	} 
+	
+	//Crow Distant
+	"playrandom"
+	{
+		"time"		"15,25"
+		"volume"	"0.3,0.7"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\crow_call_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\crow_call_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\crow_call_distant_03.ogg"			
+		}
+	} 
+	
+
+	
+	//Dove calls
+	"playrandom"
+	{
+		"time"		"14,27"
+		"volume"	"0.05,0.1"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dove_call_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dove_call_05.ogg"			
+		}
+	} 
+	
+		//bg geese flyby
+	"playrandom"
+	{
+		"time"		"40,70"
+		"volume"	"0.3,0.6"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\geese_flyby.ogg"	
+		}
+	}
+
+//Tanks Approaching Twisted Metal
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.15, 0.2"//"0.4, 0.7"
+		"pitch"		"65"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_approach_grinding_metal_08.ogg"			
+		}
+	} 	
+	
+	
+	
+	// positional //
+	
+
+
+
+}
+
+"wwii.reichswald_interior_house"
+{
+
+	// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "141"
+	"dsp_volume" "4"
+	"fadetime" "0.8"
+
+	"soundmixer"	"heights_int_small"
+
+	// *** looping sounds *** //
+	
+	
+	//	Rain Inside
+	"playlooping"
+	{
+		"volume"	"0.65" //0.15
+		"pitch"		"85"
+		"wave"	"soundscape\ambience\rain_downpour_indoor.wav"
+	}
+	
+
+	
+	//	Town / Natural Ambience layer
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"60"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"
+	}
+	
+	
+	// positional //
+	
+
+	//lake wave -01
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.6"
+		"pitch"		"90,100"
+		"position"	"0"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+		//lake wave -02
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.6"
+		"pitch"		"90,100"
+		"position"	"1"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+	//lake wave -03
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.6"
+		"pitch"		"90,100"
+		"position"	"2"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+
+}
+
+"wwii.reichswald_interior_huts"
+{
+
+	// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "141"
+	"dsp_volume" "4"
+	"fadetime" "0.8"
+
+	"soundmixer"	"heights_int_small"
+
+	// *** looping sounds *** //
+	
+	
+	//	Rain Inside
+	"playlooping"
+	{
+		"volume"	"0.65" //0.15
+		"pitch"		"85"
+		"wave"	"soundscape\ambience\rain_downpour_indoor.wav"
+	}
+	
+	//	Rain Inside Roof
+	"playlooping"
+	{
+		"volume"	"0.3" //0.15
+		"pitch"		"95"
+		"wave"	"soundscape\ambience\rain_downpour_roof_indoor.wav"
+	}
+	
+	//	Town / Natural Ambience layer
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"60"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"
+	}
+	
+	
+	// positional //
+	
+
+	// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"0"
+	}
+	
+		// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"1"
+	}
+	
+		// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"2"
+	}
+
+}
+
+
+"wwii.reichswald_interior_boathouse"
+{
+
+		// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "141"
+	"dsp_volume" "4"
+	"fadetime" "0.8"
+
+	"soundmixer"	"heights_int_small"
+
+	// *** looping sounds *** //
+	
+	
+	//	Rain Inside
+	"playlooping"
+	{
+		"volume"	"0.35" //0.15
+		"pitch"		"85"
+		"wave"	"soundscape\ambience\rain_downpour_indoor.wav"
+	}
+	
+	//	Rain Inside Roof
+	"playlooping"
+	{
+		"volume"	"0.4" //0.15
+		"pitch"		"95"
+		"wave"	"soundscape\ambience\rain_downpour_roof_indoor.wav"
+	}
+	
+	//Boathouse dock loop
+	"playlooping"
+	{
+		"volume"	"0.35" //0.15
+		"pitch"		"70"
+		"wave"	"soundscape\emitters\loop\boathouse_water_indoor_loop.wav"
+	}
+	
+
+	
+	//	Town / Natural Ambience layer
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"60"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"
+	}
+	
+	
+	// positional //
+	
+
+	// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"0"
+	}
+	
+		// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"1"
+	}
+	
+		// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"2"
+	}
+	
+	//boat house water
+	"playrandom"
+	{
+		"volume"	"0.0"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\boathouse_water_indoor_loop.wav"
+		"soundlevel"  	"SNDLVL_100dB"
+		"position"	"3"
+	}
+	
+		//lake wave -02
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.6"
+		"pitch"		"90,100"
+		"position"	"4"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+	//lake wave -03
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.6"
+		"pitch"		"90,100"
+		"position"	"5"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\lakewave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_09.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\lakewave_10.ogg"			
+		}
+	}
+	
+
+}
+
+"wwii.reichswald_interior_concrete_bunker"
+{
+
+	// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "141"
+	"dsp_volume" "4"
+	"fadetime" "0.8"
+
+	"soundmixer"	"heights_int_small"
+
+	// *** looping sounds *** //
+	
+		//	indoors mid rumble/hum
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"50"
+		"wave"	"soundscape\ambience\rumble_mid_ambience.wav"
+	}
+	
+
+	
+	//	bunker wind buffet
+		"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"wave"	")soundscape\ambience\bunker_wind_buffet.wav"
+	}
+	
+	
+	//	Rain Inside
+	"playlooping"
+	{
+		"volume"	"0.35" //0.15
+		"pitch"		"85"
+		"wave"	"soundscape\ambience\rain_downpour_indoor.wav"
+	}
+	
+		//	Rain Inside
+	"playlooping"
+	{
+		"volume"	"0.2" //0.15
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\rain_interior_bunker.wav"
+	}
+	
+
+	
+	//	Town / Natural Ambience layer
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"60"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"
+	}
+	
+	
+	// positional //
+	
+
+	// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"0"
+	}
+
+}

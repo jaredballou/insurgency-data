@@ -1,0 +1,321 @@
+"cpsetup.txt"
+{
+
+	"nightlighting"		"0"
+
+	"offensive"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		"controlpoint"		"bunker_cap"
+		"controlpoint"		"outer_hq_cap"
+		"controlpoint"		"inner_hq_cap"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_push_a"
+			"1"  "spawnzone_push_b"
+			"2"  "spawnzone_push_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"-2855 1593 837"
+				"angles"		"0 270 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-2855 1593 875"
+				"angles"		"0 270 0"
+				"targetname"	"radiopoint_final"
+			}		
+		}
+	}
+	
+	"liberation"
+	{	
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"controlpoint"		"fisher_house_cap"
+		"controlpoint"		"radio_tower_cap"
+		"controlpoint"		"highground_fort_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+	}
+	
+	"frontline"	
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+		"controlpoint" 		"radiopoint_allied_final"
+		"controlpoint"		"frontline_cap_b"
+		"controlpoint"		"outer_hq_cap"
+		"controlpoint"		"frontline_cap_d"
+		"controlpoint" 		"radiopoint_axis_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_frontline_allied_advance"
+			"1"  "spawnzone_frontline_start"
+			"2"  "spawnzone_frontline_axis_advance"
+		}
+		
+		"entities"
+		{
+			// Allied radio
+			"obj_destructible"
+			{
+				"origin"			"1082.388306 -1057.031250 36.031250"
+				"angles"			"0.000000 -1.212983 -0.000000"
+				"targetname"		"radio_allied_final"
+				"teamnumber"		"2"
+				"ControlPoint"		"radiopoint_allied_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"1082.388306 -1057.031250 108.031250"
+				"angles"			"0.000000 -1.212983 -0.000000"
+				"targetname"		"radiopoint_allied_final"
+			}
+			
+			// Axis radio
+			"obj_destructible"
+			{
+				"origin"			"-1569.031250 1250.640869 658.031250"
+				"angles"			"0.000000 -89.986320 0.000000"
+				"targetname"		"radio_axis_final"
+				"teamnumber"		"3"
+				"ControlPoint"		"radiopoint_axis_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"-1569.031250 1250.640869 730.031250"
+				"angles"			"0.000000 -89.986320 0.000000"
+				"targetname"		"radiopoint_axis_final"
+			}
+		}
+	}
+	
+	"stronghold"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"fisher_house_cap"
+		"controlpoint"		"bunker_cap"
+		"controlpoint"		"frontline_cap_b"
+		"controlpoint"		"radio_tower_cap"
+		"controlpoint"		"outer_hq_cap"
+		"controlpoint"		"highground_fort_cap"
+		"controlpoint"		"frontline_cap_d"
+		"controlpoint"		"inner_hq_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"7090.835449 -2851.721436 -768.426147"
+				"location_axis"						"2645.691895 -809.551392 -80.461731"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				"location_allies"					"7090.835449 -2851.721436 -768.426147"
+				"location_axis"						"-256.705475 1715.639038 242.109894"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				"location_allies"					"4784.915527 -1270.738159 -553.497803"
+				"location_axis"						"-256.705475 1715.639038 242.109894"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				"location_allies"					"4784.915527 -1270.738159 -553.497803"
+				"location_axis"						"273.205475 -1696.425659 240.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				"location_allies"					"2739.610107 -1667.606934 128.031250"
+				"location_axis"						"-417.615448 -198.348679 408.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_allies"					"1446.394775 434.777435 -92.815369"
+				"location_axis"						"-1909.821167 -552.210205 560.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"5"
+				"location_allies"					"-370.265472 1446.642578 229.067627"
+				"location_axis"						"-1909.821167 -552.210205 560.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"6"
+				"location_allies"					"-75.485596 -1756.680664 240.031250"
+				"location_axis"						"-2808.143311 589.211609 572.807190"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"7"
+				"location_allies"					"-1438.835327 -1971.414795 560.031250"
+				"location_axis"						"-3727.599365 1931.384888 645.170471"
+			}
+
+			"fallback_spawns"
+			{
+				"location_allies"					"7090.835449 -2851.721436 -768.426147"
+				"location_axis"						"-3727.599365 1931.384888 645.170471"
+			}
+		}
+	}
+	
+	"entrenchment"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"frontline_cap_b"
+		"controlpoint"		"radio_tower_cap"
+		"controlpoint"		"outer_hq_cap"
+		"controlpoint"		"highground_fort_cap"
+		"controlpoint"		"inner_hq_cap"
+		"controlpoint"		"regroup_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"7090.835449 -2851.721436 -768.426147"
+				"location_axis"						"505.803436 1471.146362 416.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				"location_allies"					"4784.915527 -1270.738159 -553.497803"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				"location_allies"					"4784.915527 -1270.738159 -553.497803"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				"location_allies"					"1552.759399 159.395264 -63.124290"
+				"location_axis"						"-523.115967 -691.971375 408.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				"location_allies"					"1123.308716 117.528313 32.031250"
+				"location_axis"						"-816.171509 -1788.589233 560.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_allies"					"507.497742 90.837029 128.031250"
+				"location_axis"						"-1776.416504 1253.665771 658.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"5"
+				"location_axis"						"-3043.340088 1689.452148 798.031250"
+			}
+
+			"fallback_spawns"
+			{
+				"location_allies"					"7090.835449 -2851.721436 -768.426147"
+				"location_axis"						"-3727.599365 1931.384888 645.170471"
+			}
+		}
+	}
+	
+	"patrol"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"radio_tower_cap"
+		"controlpoint"		"inner_hq_cap"
+		"controlpoint"		"regroup_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"patrol_spawns"
+			{
+				"location_allies"		"826.000916 520.667542 32.031250"
+				"location_allies_02"	"653.935730 1208.850464 224.031250"
+				"location_allies_03"	"932.263733 1526.334106 416.031250"
+				"location_allies_04"	"939.995178 926.362854 -3.199080"
+
+				"location_axis"			"-1832.441284 459.352112 728.031250"
+				"location_axis_02"		"-1228.383179 1227.832275 496.031250"
+				"location_axis_03"		"-1037.685791 -1547.912109 560.031250"
+				"location_axis_04"		"-366.881989 -208.466034 408.031250"
+			}
+			
+			"fallback_spawns"
+			{
+				"location_allies"					"826.000916 520.667542 32.031250"
+				"location_axis"						"-1832.441284 459.352112 728.031250"
+			}
+		}
+	}
+}

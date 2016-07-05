@@ -1,0 +1,22 @@
+"theater"
+{
+	"explosives"
+	{
+		"baseDetonator"
+		{
+			"IsBase"				"1"
+		}
+		"baseGrenade"
+		{
+			"IsBase"				"1"
+			"import"				"baseDetonator"
+			
+			"ImpactDamage"
+			{
+				"0"					"0"
+				"1000"					"20"
+				"4000"					"200"
+			}
+		}
+	}
+}

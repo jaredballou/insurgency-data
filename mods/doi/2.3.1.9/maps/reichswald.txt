@@ -1,0 +1,283 @@
+"cpsetup.txt"
+{
+	"nightlighting"		"0"
+
+	"offensive"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		"controlpoint"		"front_fort_cap"
+		"controlpoint"		"bridge_fort_cap"
+		"controlpoint"		"chateau_cap"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_offensive_1"
+			"1"  "spawnzone_offensive_2"
+			"2"  "spawnzone_offensive_3"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"7872 3776 -246"
+				"angles"		"0.000000 0 0.000000"
+				"targetname"	"radio_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"7872 3776 -200"
+				"angles"		"0.000000 0 0.000000"
+				"targetname"	"radiopoint_final"
+			}		
+		}
+	}
+	
+	"liberation"
+	{	
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"controlpoint"		"left_emplacement_cap"
+		"controlpoint"		"bridge_fort_cap"
+		"controlpoint"		"docks_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_liberation"
+		}
+	}
+	
+	"frontline"	
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+		"controlpoint" 		"radiopoint_allied_final"
+		"controlpoint"		"left_emplacement_cap"
+		"controlpoint"		"bridge_fort_cap"
+		"controlpoint"		"docks_cap"
+		"controlpoint" 		"radiopoint_axis_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_allied_advance"
+			"1"  "spawnzone_neutral"
+			"2"  "spawnzone_axis_advance"
+		}
+		
+		"entities"
+		{
+			// Allied radio
+			"obj_destructible"
+			{
+				"origin"			"-5330 4418 -1142"
+				"angles"			"0 268.5 0"
+				"targetname"		"radio_allied_final"
+				"teamnumber"		"2"
+				"ControlPoint"		"radiopoint_allied_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"-5330 4418 -1100"
+				"angles"			"0 90 0"
+				"targetname"		"radiopoint_allied_final"
+			}
+			
+			// Axis radio
+			"obj_destructible"
+			{
+				"origin"			"4644 3508 -446"
+				"angles"			"0 90 0"
+				"targetname"		"radio_axis_final"
+				"teamnumber"		"3"
+				"ControlPoint"		"radiopoint_axis_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"4644 3508 -400"
+				"angles"			"0.000000 -0.858828 -0.000000"
+				"targetname"		"radiopoint_axis_final"
+			}
+		}		
+	}
+	
+	"stronghold"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"          	"axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"front_fort_cap"
+		"controlpoint"		"left_emplacement_cap"
+		"controlpoint"		"bridge_fort_cap"
+		"controlpoint"		"docks_cap"
+		"controlpoint"		"chateau_cap"
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"-6015.021973 -56.439541 -1616.897705"
+				"location_axis"						"-1938.976318 4074.289551 -756.496216"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				"location_allies"					"-6105.388672 1135.082764 -1738.336304"
+				"location_axis"						"361.164246 2635.037109 -111.968750"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				"location_allies"					"-6105.388672 1135.082764 -1738.336304"
+				"location_axis"						"359.947662 6398.165039 -94.339211"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				"location_allies"					"-4923.134766 4962.609375 -1044.731079"
+				"location_axis"						"2805.018066 3099.032471 -755.691589"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				"location_allies"					"-561.350159 1399.420044 -491.627197"
+				"location_axis"						"4352.981445 3536.257080 -671.968750"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_allies"					"1548.052612 1392.166382 -864.964355"
+				"location_axis"						"7865.315918 3659.177002 -287.968750"
+			}
+
+			"fallback_spawns"
+			{
+				"location_allies"					"-6015.021973 -56.439541 -1616.897705"
+				"location_axis"						"7865.315918 3659.177002 -287.968750"
+			}
+		}
+	}
+	
+	"entrenchment"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"          	"axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"front_fort_cap"
+		"controlpoint"		"left_emplacement_cap"
+		"controlpoint"		"bridge_fort_cap"
+		"controlpoint"		"chateau_cap"
+		"controlpoint"		"regroup_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"-6148.478516 2953.306152 -1674.009155"
+				"location_axis"						"-986.839355 3476.312256 -530.500671"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				"location_allies"					"-6105.388672 1135.082764 -1738.336304"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				"location_allies"					"-6095.320801 3034.419922 -1650.387573"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				"location_allies"					"-3768.217529 1848.737793 -1519.991455"
+				"location_axis"						"512.313232 2681.506836 -111.968750"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				"location_allies"					"356.287262 6301.296387 -97.346321"
+				"location_axis"						"4343.233887 3506.542725 -671.968750"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_axis"						"7865.315918 3659.177002 -287.968750"
+			}
+
+			"fallback_spawns"
+			{
+				"location_allies"					"-6015.021973 -56.439541 -1616.897705"
+				"location_axis"						"7865.315918 3659.177002 -287.968750"
+			}
+		}
+	}	
+	
+	"patrol"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"left_emplacement_cap"
+		"controlpoint"		"chateau_cap"
+		"controlpoint" 		"docks_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"patrol_spawns"
+			{
+				"location_allies"		"-5283.958984 4745.336914 -1149.853882"
+				"location_allies_02"	"-4394.906738 4343.627930 -862.758301"
+				"location_allies_03"	"-6216.404297 4935.731934 -1264.551270"
+				"location_allies_04"	"-5553.147949 3488.106445 -1473.062378"
+
+				"location_axis"			"329.095825 4303.206543 -154.598755"
+				"location_axis_02"		"-326.347626 3044.994873 -152.464661"
+				"location_axis_03"		"4445.894531 3415.173340 -495.968750"
+				"location_axis_04"		"2841.032715 4485.184570 -317.062103"
+			}
+			
+			"fallback_spawns"
+			{
+				"location_allies"					"-4394.906738 4343.627930 -862.758301"
+				"location_axis"						"4445.894531 3415.173340 -495.968750"
+			}
+		}
+	}
+}

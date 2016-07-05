@@ -1,0 +1,1435 @@
+//SEC LEADER UN-SUPPRESSED
+
+"Voice_Response_ins_UnSupp.Lead_AmmoLow"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedOfficerDown_1.ogg"		
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_C4Out"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_7.ogg"
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_C4Planted"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_7.ogg"	
+	}	
+}
+
+
+"Voice_Response_ins_UnSupp.Lead_Contact"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_FlashOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingFlashbang_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingFlashbang_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingFlashbang_3.ogg"		
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_FragOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingSting_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingSting_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingSting_3.ogg"
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_MolotovOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_StartedClearing_3.ogg"	
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_IncendiaryOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_4.ogg"		
+	
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_Reloading"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_0.ogg"	
+    }	
+}
+
+"Voice_Response_ins_UnSupp.Lead_ReloadingSingleShot"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_0.ogg"		
+    }	
+}
+
+"Voice_Response_ins_UnSupp.Lead_SmokeOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_4.ogg"
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_SubDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedR1Down_1.ogg"	
+	}	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_Delay_Responses"
+        }
+	}
+}
+
+"Voice_Response_ins_UnSupp.Lead_EnemyDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectNeutralized_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectNeutralized_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_3.ogg"
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_CheckFire_General"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedFirstShot_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedFirstShot_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedFirstShot_3.ogg"
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_CheckFire_Shot"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedFirstShot_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedFirstShot_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedFirstShot_3.ogg"
+	}	
+}
+
+
+// Shorter wounded grunts that will be played more often
+"Voice_Response_ins_UnSupp.Lead_Wounded_Grunt"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_1.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_2.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_3.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_4.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_5.ogg"			
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Lead_Wounded"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_1.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_2.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_3.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_4.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_5.ogg"			
+	}	
+}
+
+//ins LEADER SUPPRESSED
+
+"Voice_Response_ins_Supp.Lead_AmmoLow"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_CommandGeneralNeedBackup_1.ogg"			
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_C4Out"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_7.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_C4Planted"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingC2_7.ogg"	
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_Contact"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_FlashOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingFlashbang_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingFlashbang_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingFlashbang_3.ogg"	
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_FragOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingSting_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingSting_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingSting_3.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_MolotovOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_StartedClearing_3.ogg"		
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_IncendiaryOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_4.ogg"		
+	
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_Reloading"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_0.ogg"				
+    }	
+}
+
+"Voice_Response_ins_Supp.Lead_ReloadingSingleShot"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_RedOneReported_1.ogg"				
+    }	
+}
+
+
+"Voice_Response_ins_Supp.Lead_SmokeOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedDeployingGas_4.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_SubDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedR1Down_1.ogg"
+	}	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_Delay_Responses"
+        }
+	}
+}
+
+"Voice_Response_ins_Supp.Lead_UnderSuppression"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_1.ogg"			
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_EnemyDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectNeutralized_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectNeutralized_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_3.ogg"		
+	}	
+}
+
+// Shorter wounded grunts that will be played more often
+"Voice_Response_ins_Supp.Lead_Wounded_Grunt"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_1.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_2.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_3.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_4.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_5.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Lead_Wounded"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryIntense_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_1.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_2.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_3.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_4.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedInjuryNormal_5.ogg"
+	}	
+}
+
+//ins SUBORDINATE UN-SUPPRESSED
+
+"Voice_Response_ins_UnSupp.Sub_AmmoLow"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_CommandGeneralNeedBackup_1.ogg"		
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_C4Out"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_7.ogg"		
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_C4Planted"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_7.ogg"		
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_Contact"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_FlashOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingFlashbang_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingFlashbang_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingFlashbang_3.ogg"			
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_FragOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingSting_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingSting_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingSting_3.ogg"
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_MolotovOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_StartedClearing_4.ogg"		
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_IncendiaryOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_4.ogg"	
+	
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_LeaderDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedLeadDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedLeadDown_2.ogg"
+	}	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_Delay_Responses"
+        }
+	}
+}
+
+"Voice_Response_ins_UnSupp.Sub_Reloading"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_0.ogg"				
+    }	
+}
+
+"Voice_Response_ins_UnSupp.Sub_ReloadingSingleShot"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_0.ogg"			
+    }	
+}
+
+"Voice_Response_ins_UnSupp.Sub_SmokeOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_4.ogg"
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_SubDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedR2Down_1.ogg"		
+		
+	}	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_Delay_Responses"
+        }
+	}
+}
+
+"Voice_Response_ins_UnSupp.Sub_EnemyDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectNeutralized_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectNeutralized_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_3.ogg"
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_CheckFire_General"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedFirstShot_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedFirstShot_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedFirstShot_3.ogg"			
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_CheckFire_Shot"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedFirstShot_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedFirstShot_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedFirstShot_3.ogg"			
+	}	
+}
+
+// Shorter wounded grunts that will be played more often
+"Voice_Response_ins_UnSupp.Sub_Wounded_Grunt"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_1.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_2.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_3.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_4.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_5.ogg"				
+	}	
+}
+
+"Voice_Response_ins_UnSupp.Sub_Wounded"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_1.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_2.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_3.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_4.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_5.ogg"				
+	}	
+}
+
+//ins SUBORDINATE SUPPRESSED
+
+"Voice_Response_ins_Supp.Sub_AmmoLow"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_CommandGeneralNeedBackup_1.ogg"			
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_C4Out"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedone\r1_ReportedDeployingC2_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_7.ogg"				
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_C4Planted"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingC2_7.ogg"					
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_Contact"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_FlashOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingFlashbang_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingFlashbang_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingFlashbang_3.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_FragOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingSting_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingSting_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingSting_3.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_MolotovOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_StartedClearing_4.ogg"		
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_IncendiaryOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_4.ogg"		
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_LeaderDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedLeadDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedLeadDown_2.ogg"
+	}	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_Delay_Responses"
+        }
+	}
+}
+
+"Voice_Response_ins_Supp.Sub_Reloading"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_0.ogg"				
+    }	
+}
+
+"Voice_Response_ins_Supp.Sub_ReloadingSingleShot"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_0.ogg"		
+    }	
+}
+
+"Voice_Response_ins_Supp.Sub_SmokeOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedDeployingGas_4.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_SubDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedR2Down_1.ogg"
+	}	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_Delay_Responses"
+        }
+	}
+}
+
+"Voice_Response_ins_Supp.Sub_UnderSuppression"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{			
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_EnemyDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectNeutralized_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectNeutralized_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_3.ogg"		
+	}	
+}
+
+// Shorter wounded grunts that will be played more often
+"Voice_Response_ins_Supp.Sub_Wounded_Grunt"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_1.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_2.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_3.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_4.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_5.ogg"
+	}	
+}
+
+"Voice_Response_ins_Supp.Sub_Wounded"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_4.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_5.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryIntense_6.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_1.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_2.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_3.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_4.ogg"	
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReactedInjuryNormal_5.ogg"
+	}	
+}
+
+
+// DAMAGE ins LEAD
+
+//Molotov Or Incendiary Detonates Directly On Player
+"Voice_Response_ins.Lead_Burn_DetonateClose"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_1.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_2.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_3.ogg"	
+	}	
+}
+
+//Molotov Or Incendiary Detonates Close To Player
+"Voice_Response_ins.Lead_Burn_Detonate"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_1.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_2.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_3.ogg"			
+	}	
+}
+
+//Molotov Or Incendiary Causes Burn Pain (When Too Close)
+"Voice_Response_ins.Lead_Burn_Pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_1.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_2.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_3.ogg"	
+	}	
+}
+
+// DAMAGE ins SUB
+
+//Molotov Or Incendiary Detonates Directly On Player
+"Voice_Response_ins.Sub_Burn_DetonateClose"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_1.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_2.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_3.ogg"			
+	}	
+}
+
+//Molotov Or Incendiary Detonates Close To Player
+"Voice_Response_ins.Sub_Burn_Detonate"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_1.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_2.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_3.ogg"		
+	}	
+}
+
+//Molotov Or Incendiary Causes Burn Pain (When Too Close)
+"Voice_Response_ins.Sub_Burn_Pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_1.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_2.ogg"
+		"wave"		"Swat4Sounds\TeamLead\ld_ReactedGas_3.ogg"	
+	}	
+}
+
+
+// COOP ONLY
+
+//ins LEADER
+
+"Voice_Response_ins.Lead_BotRPG"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/security/leader/coop/rpg1.ogg"
+		"wave"		"player/voice/responses/security/leader/coop/rpg2.ogg"
+		"wave"		"player/voice/responses/security/leader/coop/rpg3.ogg"
+		"wave"		"player/voice/responses/security/leader/coop/rpg4.ogg"
+		"wave"		"player/voice/responses/security/leader/coop/rpg5.ogg"
+		"wave"		"player/voice/responses/security/leader/coop/rpg6.ogg"
+		"wave"		"player/voice/responses/security/leader/coop/rpg7.ogg"
+		"wave"		"player/voice/responses/security/leader/coop/rpg8.ogg"
+		"wave"		"player/voice/responses/security/leader/coop/rpg9.ogg"		
+	
+	}	
+}
+
+//SEC SUB
+
+"Voice_Response_ins.Sub_BotRPG"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/security/subordinate/coop/rpg1.ogg"
+		"wave"		"player/voice/responses/security/subordinate/coop/rpg2.ogg"
+		"wave"		"player/voice/responses/security/subordinate/coop/rpg3.ogg"
+		"wave"		"player/voice/responses/security/subordinate/coop/rpg4.ogg"
+		"wave"		"player/voice/responses/security/subordinate/coop/rpg5.ogg"
+		"wave"		"player/voice/responses/security/subordinate/coop/rpg6.ogg"
+		"wave"		"player/voice/responses/security/subordinate/coop/rpg7.ogg"
+		"wave"		"player/voice/responses/security/subordinate/coop/rpg8.ogg"
+		"wave"		"player/voice/responses/security/subordinate/coop/rpg9.ogg"		
+	
+	}	
+}
+
+//SPECIALS
+
+//SEC LEADER
+
+"Voice_Response_ins.Lead_ExplosiveDetonateNear"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_1.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_2.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_3.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_4.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_5.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_6.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_7.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_8.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_9.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_10.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_11.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_12.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_13.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_14.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_15.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_16.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/explosion_near_17.ogg"	
+	}	
+}
+
+"Voice_Response_Sec.Lead_RocketDetonateNear"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_1.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_2.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_3.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_4.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_5.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_6.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_7.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_8.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_9.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_10.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_11.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_12.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_13.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_14.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_15.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_16.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_17.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_18.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_19.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_explosion_near_20.ogg"		
+	
+	}	
+}
+
+"Voice_Response_Sec.Lead_RocketFlyPast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_1.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_2.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_3.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_4.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_5.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_6.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_7.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_8.ogg"
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_9.ogg"		
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_10.ogg"	
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_11.ogg"	
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_12.ogg"	
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_13.ogg"	
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_14.ogg"	
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_15.ogg"	
+		"wave"		"player/voice/responses/security/leader/suppressed/rocket_fly_past_16.ogg"			
+	}	
+}
+
+
+
+//SEC SUB
+
+"Voice_Response_Sec.Sub_ExplosiveDetonateNear"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_1.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_2.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_3.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_4.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_5.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_6.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_7.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_8.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_9.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_10.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_11.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_12.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_13.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_14.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_15.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_16.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_17.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_18.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_19.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_20.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_21.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_22.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_23.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_24.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_25.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_26.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/explosion_near_27.ogg"			
+	}	
+}
+
+"Voice_Response_Sec.Sub_RocketDetonateNear"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_1.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_2.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_3.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_4.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_5.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_6.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_7.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_8.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_9.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_10.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_11.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_12.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_13.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_14.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_15.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_16.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_17.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_18.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_19.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_20.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_21.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_22.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_23.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_24.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_25.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_26.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_27.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_explosion_near_28.ogg"		
+	}	
+}
+
+"Voice_Response_Sec.Sub_RocketFlyPast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_1.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_2.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_3.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_4.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_5.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_6.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_7.ogg"
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_8.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_9.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_10.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_11.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_12.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_13.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_14.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_15.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_16.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_17.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_18.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_19.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_20.ogg"	
+		"wave"		"player/voice/responses/security/subordinate/suppressed/rocket_fly_past_21.ogg"			
+	}	
+}

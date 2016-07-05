@@ -1,0 +1,154 @@
+{
+	"entities": {
+		"?halloween": [
+		]
+	},
+	"gametypes": {
+		"firefight": {
+			"controlpoint": [
+				"skirmish_cap_c",
+				"push_cap_b",
+				"skirmish_cap_a"
+			],
+			"spawnzones": {
+				"0": "spawnzone_neutral",
+				"disablespawns": "1"
+			}
+		},
+		"occupy": {
+			"controlpoint": [
+				"push_cap_b"
+			],
+			"spawnzones": {
+				"0": "spawnzone_neutral",
+				"disablespawns": "1"
+			}
+		},
+		"push": {
+			"attackingteam": "insurgents",
+			"controlpoint": {
+				"A": {
+					"pos_name": "A",
+					"pos_team": 2
+				},
+				"B": {
+					"pos_name": "B",
+					"pos_team": 2
+				},
+				"C": {
+					"pos_name": "C",
+					"pos_team": 2
+				},
+				"D": {
+					"pos_classname": "obj_destructible",
+					"pos_name": "D",
+					"pos_team": 2,
+					"pos_type": "obj_destructible",
+					"pos_x": 608,
+					"pos_y": 889
+				}
+			},
+			"spawnzones": {
+				"disablespawns": "1",
+				"spawnzone_push_a": [
+				],
+				"spawnzone_push_b": [
+				],
+				"spawnzone_push_c": [
+				]
+			}
+		},
+		"skirmish": {
+			"controlpoint": {
+				"A": {
+					"pos_classname": "obj_destructible",
+					"pos_name": "A",
+					"pos_team": 2,
+					"pos_type": "obj_destructible",
+					"pos_x": 617,
+					"pos_y": 652
+				},
+				"B": {
+					"pos_name": "B",
+					"pos_team": 2
+				},
+				"C": {
+					"pos_name": "C"
+				},
+				"D": {
+					"pos_name": "D",
+					"pos_team": 3
+				},
+				"E": {
+					"pos_classname": "obj_destructible",
+					"pos_name": "E",
+					"pos_team": 3,
+					"pos_type": "obj_destructible",
+					"pos_x": 343,
+					"pos_y": 373
+				}
+			},
+			"spawnzones": {
+				"disablespawns": "1",
+				"spawnzone_neutral": [
+				]
+			}
+		}
+	},
+	"invasion": {
+		"attackingteam": "insurgents",
+		"controlpoint": [
+			"push_cap_a",
+			"push_cap_b",
+			"push_cap_c",
+			"radiopoint_final"
+		],
+		"entities": {
+			"obj_destructible": {
+				"angles": "0 90 0",
+				"controlpoint": "radiopoint_final",
+				"origin": "2537 -6440 180",
+				"targetname": "radio_final",
+				"teamnumber": "2"
+			},
+			"point_controlpoint": {
+				"angles": "0 90 0",
+				"origin": "2537 -6440 230",
+				"targetname": "radiopoint_final"
+			}
+		},
+		"spawnzones": {
+			"disablespawns": "1",
+			"0": "spawnzone_push_a",
+			"1": "spawnzone_push_b",
+			"2": "spawnzone_push_c"
+		}
+	},
+	"navfile": [
+		"doi_bastogne",
+		"doi_bastogne"
+	],
+	"nightlighting": [
+		"0",
+		"1"
+	],
+	"overview": {
+		"grid_dark": 1,
+		"grid_divisions": 10,
+		"material": "overviews\/doi_bastogne",
+		"pos_x": -7796,
+		"pos_y": 8678,
+		"rotate": 0,
+		"scale": 17,
+		"zoom": 1
+	},
+	"source_files": {
+		"CPSetup": "76097e5cec737733a74be628c6f72679",
+		"Overview": "fc4907eff62e6785078120459699a5f6",
+		"VMF Source": "96dd6c16a31e414c798638079a656cb9"
+	},
+	"theater_conditions": {
+		"?nightmap": "1"
+	},
+	"theaterfile": "doi"
+}

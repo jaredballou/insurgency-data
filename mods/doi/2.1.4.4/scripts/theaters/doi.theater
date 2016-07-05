@@ -1,0 +1,647 @@
+"#base" "doi_player.theater"
+
+"#base" "doi_gear.theater"
+"#base" "doi_weapon.theater"
+"#base" "doi_weapon_upgrades.theater"
+
+"theater"
+{
+	"core"
+	{
+		"precache"
+		{
+			// default audio
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			
+			// Voice Over (re-enable later)
+			"sounds"			"scripts/audio/doi_sounds_radial_american.txt"
+			"sounds"			"scripts/audio/doi_sounds_radial_german.txt"
+			
+			// custom audio
+            "sounds"			"scripts/audio/doi_sounds_weapons.txt"
+            "sounds"			"scripts/audio/doi_sounds_world.txt"	
+            "sounds"			"scripts/audio/doi_sounds_cues.txt"		
+            "sounds"			"scripts/audio/doi_sounds_hq.txt"					
+			
+			
+			// localization
+			"localize"       	"resource/doi_%language%.txt"
+			
+			// custom particles
+			"particles"			"particles/doi_weapon_fx.pcf"
+		}
+	}
+	
+	"teams"
+	{
+		"security"
+		{
+			"name"					"#faction_american_army"
+			"logo"					"gameui/faction_american_army"
+		
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"name"					"#faction_german_army"
+			"logo"					"gameui/faction_german_army"
+			
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+				}
+			}
+		}
+	}
+	
+	"player_templates"
+	{
+		// American army class templates
+		
+		"template_american_officer"
+		{
+			"team"						"security"
+			"print_name"				"#class_american_officer"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/american_rifleman.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/american_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_smoke"
+				"weapon"				"weapon_smoke"
+				"gear"					"american_chest_rig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m1carbine"
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_smoke"
+				"weapon_upgrade"		"magazine_extended_pistol"
+				"weapon_upgrade"		"magazine_extended_carbine_30rd"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_smoke"		"-1"
+					"weapon_m1garand"	"1"
+				}
+			}
+		}
+		
+		"template_american_rifleman"
+		{
+			"team"						"security"
+			"print_name"				"#class_american_rifleman"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/american_rifleman.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/american_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_mk2"
+				"gear"					"american_chest_rig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_bar"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_smoke"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_m1911"			"1"
+					"weapon_springfield"	"-1"
+					"weapon_bar"			"1"
+				}
+			}
+		}
+		
+		"template_american_assault"
+		{
+			"team"						"security"
+			"print_name"				"#class_american_assault"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/american_rifleman.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/american_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_mk2"
+				"gear"					"american_ammo_belt"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_m1carbine"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_smoke"
+				"weapon_upgrade"		"ammo_slugs"
+				"weapon_upgrade"		"magazine_extended_carbine_30rd"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_m1911"			"1"
+					"weapon_m1garand"		"1"
+				}
+			}
+		}
+		
+		"template_american_support"
+		{
+			"team"						"security"
+			"print_name"				"#class_american_support"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/american_rifleman.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/american_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_bar"
+				"weapon"				"weapon_m1911"
+				"gear"					"american_chest_rig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_bar"
+				"weapon"				"weapon_m1919"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_smoke"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"gear"
+				{
+					"american_ammo_belt"	"-1"
+					"american_chest_rig"	"-1"
+				}
+			}
+		}
+		
+		"template_american_sniper"
+		{
+			"team"						"security"
+			"print_name"				"#class_american_sniper"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/american_rifleman.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/american_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_springfield"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon"				"weapon_m1911"
+				"gear"					"american_chest_rig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_smoke"
+				"weapon_upgrade"		"magazine_extended_pistol"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_m1911"			"-1"
+					"weapon_springfield"	"-1"
+					"weapon_mk2"			"1"
+					"weapon_m1garand"		"1"
+				}
+				"gear"
+				{
+					"american_chest_rig"	"-1"
+				}
+			}
+		}
+		
+		"template_american_demolitions"
+		{
+			"team"						"security"
+			"print_name"				"#class_american_demolitions"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/american_rifleman.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/american_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m1carbine"
+				"weapon"				"weapon_bazooka"
+				"gear"					"american_ammo_belt"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_thompson"
+				"weapon"				"weapon_m1carbine"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_smoke"
+				"weapon"				"weapon_bazooka"
+				"weapon_upgrade"		"magazine_extended_carbine_30rd"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_mk2"			"-1"
+				}
+			}
+		}
+		
+		// German army class templates
+		
+		"template_german_officer"
+		{
+			"team"					"insurgents"
+			"print_name"			"#class_german_officer"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/german_assault.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ger.mdl"
+				
+				"attachments"
+				{
+					"hat"
+					{
+						"model"			"models/characters/ww2/german_cap.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_luger"
+				"weapon"				"weapon_smoke"
+				"weapon"				"weapon_smoke"
+				"gear"					"german_chest_rig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_stg44"
+				"weapon"				"weapon_luger"
+				"weapon"				"weapon_ppk"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_smoke"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_smoke"		"-1"
+					"weapon_luger"		"-1"
+				}
+			}
+		}
+		
+		"template_german_rifleman"
+		{
+			"team"					"insurgents"
+			"print_name"			"#class_german_rifleman"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/german_assault.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ger.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/german_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_stielhandgranate"
+				"gear"					"german_chest_rig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_smoke"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_p38"			"1"
+					"weapon_g43"			"1"
+				}
+			}
+		}
+		
+		"template_german_assault"
+		{
+			"team"					"insurgents"
+			"print_name"			"#class_german_assault"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/german_assault.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ger.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/german_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_stielhandgranate"
+				"gear"					"german_ammo_belt"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_stg44"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_smoke"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_p38"		"1"
+				}
+			}
+		}
+		
+		"template_german_machinegunner"
+		{
+			"team"					"insurgents"
+			"print_name"			"#class_german_machinegunner"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/german_assault.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ger.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/german_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_mg42"
+				"weapon"				"weapon_p38"
+				"gear"					"german_chest_rig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mg42"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_smoke"
+			}
+			"cost_modifiers"
+			{
+				"gear"
+				{
+					"german_ammo_belt"	"-1"
+					"german_chest_rig"	"-1"
+				}
+			}
+		}
+		
+		"template_german_sniper"
+		{
+			"team"					"insurgents"
+			"print_name"			"#class_german_sniper"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/german_assault.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ger.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/german_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_k98_sniper"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon"				"weapon_p38"
+				"gear"					"german_chest_rig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_k98_sniper"
+				"weapon"				"weapon_g43_sniper"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_smoke"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_p38"				"-1"
+					"weapon_stielhandgranate"	"1"
+				}
+				"gear"
+				{
+					"german_chest_rig"	"-1"
+				}
+			}
+		}
+		
+		"template_german_demolitions"
+		{
+			"team"						"insurgents"
+			"print_name"				"#class_german_demolitions"
+			
+			"models"
+			{
+				"player"				"models/characters/ww2/german_assault.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ger.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ww2/german_helmet.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_panzerfaust"
+				"gear"					"german_ammo_belt"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_smoke"
+				"weapon"				"weapon_panzerfaust"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_stielhandgranate"	"-1"
+				}
+			}
+		}
+	}
+}

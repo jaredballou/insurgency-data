@@ -1,0 +1,383 @@
+"#base" "default.theater"
+
+"theater"
+{
+	"teams"
+	{		
+		"axis"
+		{
+			"?entrenchment_TEAM_TWO_attack"
+			{
+				"squads"
+				{
+					"#squad_german_assault"
+					{
+						"ai_squad"						"0"
+						"human_squad"					"1"
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_german_officer" "1"
+							"template_german_rifleman" "-1"
+							"template_german_assault" "2"
+							"template_german_demolitions" "1"
+							"template_german_support" "1"
+							"template_german_machinegunner" "1"
+							"template_german_sniper" "1"
+						}
+					}
+					
+					"#squad_german_assault"
+					{
+						"ai_squad"						"1"
+						"human_squad"					"0"
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_german_officer" "1"
+							"template_german_rifleman" "-1"
+							"template_german_assault" "2"
+							"template_german_demolitions" "1"
+							"template_german_support" "1"
+							"template_german_machinegunner" "1"
+							"template_german_sniper" "1"
+						}
+					}
+					
+					"#squad_german_assault"
+					{
+						"ai_squad"						"1"
+						"human_squad"					"0"
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_german_officer" "1"
+							"template_german_rifleman" "-1"
+							"template_german_assault" "2"
+							"template_german_demolitions" "1"
+							"template_german_support" "1"
+							"template_german_machinegunner" "1"
+							"template_german_sniper" "1"
+						}
+					}
+				}
+			}
+			
+			"?entrenchment_TEAM_TWO_defend"
+			{
+				"squads"
+				{
+					"#squad_german_rifle"
+					{
+						"size"			"8"
+						
+						"classes"
+						{
+							"template_german_officer" "1"
+							"template_german_rifleman" "-1"
+							"template_german_assault" "1"
+							"template_german_machinegunner" "2"
+							"template_german_support" "1"
+							"template_german_sniper" "2"
+						}
+					}
+					
+					"#squad_german_assault"
+					{
+						"size"			"8"
+						
+						"classes"
+						{
+							"template_german_officer" "1"
+							"template_german_rifleman" "-1"
+							"template_german_assault" "1"
+							"template_german_machinegunner" "2"
+							"template_german_support" "1"
+							"template_german_sniper" "2"
+						}
+					}
+					
+					"#squad_german_support"
+					{
+						"size"			"8"
+						
+						"classes"
+						{
+							"template_german_officer" "1"
+							"template_german_rifleman" "-1"
+							"template_german_assault" "1"
+							"template_german_machinegunner" "2"
+							"template_german_support" "1"
+							"template_german_sniper" "2"
+						}
+					}
+					
+					"#squad_german_support"
+					{
+						"size"			"8"
+						
+						"classes"
+						{
+							"template_german_officer" "1"
+							"template_german_rifleman" "-1"
+							"template_german_assault" "1"
+							"template_german_machinegunner" "2"
+							"template_german_support" "1"
+							"template_german_sniper" "2"
+						}
+					}
+				}
+			}
+		}
+		
+		"americans"
+		{
+			"?entrenchment_TEAM_ONE_attack"
+			{
+				"squads"
+				{
+					"#squad_american_rifle"
+					{
+						"ai_squad"						"0"
+						"human_squad"					"1"
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_american_officer" "1"
+							"template_american_rifleman" "-1"
+							"template_american_assault" "2"
+							"template_american_demolitions" "1"
+							"template_american_support" "1"
+							"template_american_sniper" "1"
+						}
+					}
+					
+					"#squad_american_assault"
+					{
+						"ai_squad"						"1"
+						"human_squad"					"0"
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_american_officer" "1"
+							"template_american_rifleman" "-1"
+							"template_american_assault" "2"
+							"template_american_demolitions" "1"
+							"template_american_support" "1"
+							"template_american_sniper" "1"
+						}
+					}
+					
+					"#squad_american_assault"
+					{
+						"ai_squad"						"1"
+						"human_squad"					"0"
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_american_officer" "1"
+							"template_american_rifleman" "-1"
+							"template_american_assault" "2"
+							"template_american_demolitions" "1"
+							"template_american_support" "1"
+							"template_american_sniper" "1"
+						}
+					}
+				}
+			}
+			
+			"?entrenchment_TEAM_ONE_defend"
+			{
+				"squads"
+				{
+					"#squad_american_rifle"
+					{
+						"size"			"8"
+						
+						"classes"
+						{
+							"template_american_officer" "1"
+							"template_american_rifleman" "-1"
+							"template_american_assault" "1"
+							"template_american_demolitions" "1"
+							"template_american_support" "1"
+							"template_american_machinegunner" "2"
+							"template_american_sniper" "2"
+						}
+					}
+					
+					"#squad_american_assault"
+					{
+						"size"			"8"
+						
+						"classes"
+						{
+							"template_american_officer" "1"
+							"template_american_rifleman" "-1"
+							"template_american_assault" "1"
+							"template_american_demolitions" "1"
+							"template_american_support" "1"
+							"template_american_machinegunner" "2"
+							"template_american_sniper" "2"
+						}
+					}
+					
+					"#squad_american_support"
+					{
+						"size"			"8"
+						
+						"classes"
+						{
+							"template_american_officer" "1"
+							"template_american_rifleman" "-1"
+							"template_american_assault" "1"
+							"template_american_demolitions" "1"
+							"template_american_support" "1"
+							"template_american_machinegunner" "2"
+							"template_american_sniper" "2"
+						}
+					}
+				}
+			}
+		}
+		
+		"commonwealth"
+		{
+			"?entrenchment_TEAM_ONE_attack"
+			{
+				"squads"
+				{
+					"#squad_commonwealth"
+					{
+						"ai_squad"						"0"
+						"human_squad"					"1"
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_british_officer" "1"
+							"template_british_rifleman" "-1"
+							"template_british_assault" "2"
+							"template_british_demolitions" "1"
+							"template_british_support" "1"
+							"template_british_machinegunner" "1"
+							"template_british_sniper" "1"
+						}
+					}
+					
+					"#squad_commonwealth"
+					{
+						"ai_squad"						"1"
+						"human_squad"					"0"
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_british_officer" "1"
+							"template_british_rifleman" "-1"
+							"template_british_assault" "2"
+							"template_british_demolitions" "1"
+							"template_british_support" "1"
+							"template_british_machinegunner" "1"
+							"template_british_sniper" "1"
+						}
+					}
+					
+					"#squad_commonwealth"
+					{
+						"ai_squad"						"1"
+						"human_squad"					"0"
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_british_officer" "1"
+							"template_british_rifleman" "-1"
+							"template_british_assault" "2"
+							"template_british_demolitions" "1"
+							"template_british_support" "1"
+							"template_british_machinegunner" "1"
+							"template_british_sniper" "1"
+						}
+					}
+				}
+			}
+			
+			"?entrenchment_TEAM_ONE_defend"
+			{
+				"squads"
+				{
+					"#squad_commonwealth"
+					{
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_british_officer" "1"
+							"template_british_rifleman" "-1"
+							"template_british_assault" "1"
+							"template_british_demolitions" "1"
+							"template_british_support" "1"
+							"template_british_machinegunner" "2"
+							"template_british_sniper" "2"
+						}
+					}
+					
+					"#squad_commonwealth"
+					{
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_british_officer" "1"
+							"template_british_rifleman" "-1"
+							"template_british_assault" "1"
+							"template_british_demolitions" "1"
+							"template_british_support" "1"
+							"template_british_machinegunner" "2"
+							"template_british_sniper" "2"
+						}
+					}
+					
+					"#squad_commonwealth"
+					{
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_british_officer" "1"
+							"template_british_rifleman" "-1"
+							"template_british_assault" "1"
+							"template_british_demolitions" "1"
+							"template_british_support" "1"
+							"template_british_machinegunner" "2"
+							"template_british_sniper" "2"
+						}
+					}
+					
+					"#squad_commonwealth"
+					{
+						"size"							"8"
+						
+						"classes"
+						{
+							"template_british_officer" "1"
+							"template_british_rifleman" "-1"
+							"template_british_assault" "1"
+							"template_british_demolitions" "1"
+							"template_british_support" "1"
+							"template_british_machinegunner" "2"
+							"template_british_sniper" "2"
+						}
+					}
+				}
+			}
+		}
+	}
+}

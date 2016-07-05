@@ -1,0 +1,92 @@
+"theater"
+{
+	"player_gear"
+	{
+		"american_ammo_belt"
+		{
+			"print_name"				"#gear_american_ammo_belt"
+			"print_desc"				"#gear_american_ammo_belt_desc"
+			"gear_slot"					"vest"
+			"gear_cost"					"1"
+			"gear_weight"				"15"	// 22 (2.2kg) + 24 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"2"
+				"secondary"				"2"
+				"explosive"				"0"
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"security"
+		}
+		
+		"german_ammo_belt"
+		{
+			"print_name"				"#gear_german_ammo_belt"
+			"print_desc"				"#gear_german_ammo_belt_desc"
+			"gear_slot"					"vest"
+			"gear_cost"					"1"
+			"gear_weight"				"15"	// 22 (2.2kg) + 24 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"2"
+				"secondary"				"2"
+				"explosive"				"0"
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"american_chest_rig"
+		{
+			"print_name"				"#gear_american_chest_rig"
+			"print_desc"				"#gear_american_chest_rig_desc"
+			"gear_slot"					"vest"
+			"gear_cost"					"4"
+			"gear_weight"				"50"
+			"extra_ammo"
+			{
+				"primary"				"3"
+				"secondary"				"4"
+				
+				"explosive"
+				{
+					"1"					"1"	// an extra explosive in the second slot only, sub-slots are 0 indexed
+				}
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"security"
+		}
+		
+		"german_chest_rig"
+		{
+			"print_name"				"#gear_german_chest_rig"
+			"print_desc"				"#gear_german_chest_rig_desc"
+			"gear_slot"					"vest"
+			"gear_cost"					"4"
+			"gear_weight"				"50"
+			"extra_ammo"
+			{
+				"primary"				"3"
+				"secondary"				"4"
+				"explosive"
+				{
+					"1"					"1"
+				}
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"insurgent"
+		}
+	}
+}

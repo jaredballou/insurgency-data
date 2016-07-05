@@ -1,0 +1,20 @@
+---
+# Formal name of the mod, like "My New Mod"
+name: The Armory
+# Short description of mod
+desc: Custom theaters
+# Author name
+author: DeltaMike
+# Author Steam ID
+steamid: deltamike90
+# Author or project URL
+url: http://insgamers.com
+# Author Email Address
+email: 
+# List of workshop files that should be used to extract game files
+workshop:
+  files:
+    - 667288497 # The Armory Expanded 12p
+  collections:
+# List of maps that are affiliated with this mod
+maps:

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "overviews/dry_canal_coop"
+	"$translucent" 1
+	"$vertexalpha" 1
+}

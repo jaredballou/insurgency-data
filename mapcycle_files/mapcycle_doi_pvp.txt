@@ -1,0 +1,9 @@
+doi_dog_red invasion
+doi_dog_red push
+doi_dog_red strike
+doi_bastogne invasion
+doi_bastogne push
+doi_bastogne skirmish
+doi_bastogne occupy
+doi_bastogne firefight
+doi_bastogne_night invasion

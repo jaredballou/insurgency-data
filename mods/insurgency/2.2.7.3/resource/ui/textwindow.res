@@ -1,0 +1,98 @@
+"Resource/UI/TextWindow.res"
+{
+	"info"
+	{
+		"ControlName"		"CTextWindow"
+		"fieldName"		"TextWindow"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"f0"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"paintbackground"			"1"
+		"PaintBackgroundType"		"1"
+		"Texture1"					"vgui/backgrounds/background_ingame"
+		"bgcolor_override"			"255 255 255 255"
+		"fgcolor_override"			"255 255 255 255"
+	}
+		
+	"HTMLMessage"
+	{
+		"ControlName"	"HTML"
+		"fieldName"		"HTMLMessage"
+		"xpos"			"10"
+		"ypos"			"45"
+		"wide"			"f20"
+		"tall"			"390"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+	}
+	
+	"TextMessage"
+	{
+		"ControlName"		"TextEntry"
+		"fieldName"		"TextMessage"
+		"xpos"			"10"
+		"ypos"			"45"
+		"wide"			"f20"
+		"tall"			"390"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"editable"		"0"
+		"fgcolor_override" "255 255 255 255"
+		"font"			"HudHintText"
+	}
+	
+	"MessageTitle"
+	{
+		"ControlName"		"Label"
+		"fieldName"		"MessageTitle"
+		"xpos"		"10"
+		"ypos"		"10"
+		"wide"		"f20"
+		"tall"		"25"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"Message Title"
+		
+		"fgcolor_override"	"255 255 255 255"
+		"font"			"FoundationSansBold26"
+		"allcaps"		"1"
+	}
+	
+	"ok"
+	{
+		"ControlName"		"Button"
+		"fieldName"		"ok"
+		"xpos"			"r110"
+		"ypos"			"450"
+		"wide"			"100"
+		"tall"			"20"
+		"autoResize"		"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"#PropertyDialog_OK"
+		"textAlignment"		"center"
+		"command"		"okay"
+		"default"		"1"
+		"font"			"HudLabelTitle"
+		
+		"defaultBgColor_override"	"204 46 25 192"
+		"defaultFgColor_override"	"242 235 216 255"
+		"armedBgColor_override"		"204 46 25 255"
+		"armedFgColor_override"		"242 235 216 255"
+		"depressedBgColor_override"	"27 22 22 255"
+		"depressedFgColor_override"	"242 235 216 255"
+	}
+}

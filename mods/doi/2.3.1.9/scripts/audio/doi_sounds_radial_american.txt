@@ -1,0 +1,84 @@
+// Squad_Lead_American
+
+
+//Request Artillery 
+
+//Unsuppressed
+"Radial_America.SquadLead_UnSupp_RequestArtillery"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/america/squadlead/Unsuppressed/requestartillery1.ogg"	
+		"wave"		"player/voice/radial/america/squadlead/Unsuppressed/requestartillery2.ogg"			
+	}	
+}
+
+//3D Radio Version To Be Played Over All Radios
+"Radial_America.SquadLead_UnSupp_RequestArtillery_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/america/squadlead/Unsuppressed/requestartillery_radio1.ogg"	
+		"wave"		"player/voice/radial/america/squadlead/Unsuppressed/requestartillery_radio2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_America.SquadLead_Supp_RequestArtillery"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/america/squadlead/Suppressed/requestartillery1.ogg"	
+		"wave"		"player/voice/radial/america/squadlead/Suppressed/requestartillery2.ogg"			
+	}	
+}
+
+//3D Radio Version To Be Played Over All Radios
+"Radial_America.SquadLead_Supp_RequestArtillery_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/america/squadlead/Suppressed/requestartillery_radio1.ogg"	
+		"wave"		"player/voice/radial/america/squadlead/Suppressed/requestartillery_radio2.ogg"			
+	}	
+}
+
+//Request Radio 
+
+//Unsuppressed
+"Radial_America.SquadLead_UnSupp_RequestRadio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/america/squadlead/Unsuppressed/requestradio1.ogg"	
+		"wave"		"player/voice/radial/america/squadlead/Unsuppressed/requestradio2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_America.SquadLead_Supp_RequestRadio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/america/squadlead/Suppressed/requestradio1.ogg"	
+		"wave"		"player/voice/radial/america/squadlead/Suppressed/requestradio2.ogg"			
+	}	
+}

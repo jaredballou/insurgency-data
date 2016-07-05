@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/catania_large"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

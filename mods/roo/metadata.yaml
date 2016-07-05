@@ -1,0 +1,20 @@
+---
+# Formal name of the mod, like "My New Mod"
+name: Range of Operations
+# Short description of mod
+desc: 
+# Author name
+author: Unknown
+# Author Steam ID
+steamid: 
+# Author or project URL
+url: 
+# Author Email Address
+email: 
+# List of workshop files that should be used to extract game files
+workshop:
+  files:
+    - 639821011
+  collections:
+# List of maps that are affiliated with this mod
+maps:

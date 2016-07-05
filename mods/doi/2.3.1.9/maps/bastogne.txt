@@ -1,0 +1,335 @@
+"cpsetup.txt"
+{
+
+	"navfile"   		"bastogne"
+	"nightlighting"		"0"
+		
+
+	"offensive"
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"AttackingTeam"		"TEAM_TWO"
+		"controlpoint"		"main_fortification_cap"
+		"controlpoint"		"rear_fortification_cap"
+		"controlpoint"		"push_cap_c"
+		"controlpoint"		"radiopoint_allied_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_push_a"
+			"1"  "spawnzone_push_b"
+			"2"  "spawnzone_push_c"
+		}
+		
+		"entities"
+		{
+			// Allied radio
+			"obj_destructible"
+			{
+				"origin"		"-894 -8247 316"
+				"angles"		"0.000000 270 0.000000"
+				"targetname"	"radio_allied_final"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_allied_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-894 -8247 350"
+				"angles"		"0.000000 270  0.000000"
+				"targetname"	"radiopoint_allied_final"
+			}	
+		}
+	}
+	
+	"liberation"	
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"controlpoint"		"front_entrenchment_cap"
+		"controlpoint"		"main_fortification_cap"
+		"controlpoint"		"rear_fortification_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+	}
+	
+	"frontline"	
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"controlpoint" 		"radiopoint_allied_final"
+		"controlpoint"		"rear_fortification_cap"
+		"controlpoint"		"main_fortification_cap"
+		"controlpoint"		"front_entrenchment_cap"
+		"controlpoint" 		"radiopoint_axis_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_battle_allied_advance"
+			"1"  "spawnzone_battle_start"
+			"2"  "spawnzone_battle_axis_advance"
+		}
+		
+		"entities"
+		{
+			// Allied radio
+			"obj_destructible"
+			{
+				"origin"		"1750.236084 -6069.673340 194.031250"
+				"angles"		"0.000000 -1.380635 0.000000"
+				"targetname"	"radio_allied_final"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_allied_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"1750.236084 -6069.673340 266.031250"
+				"angles"		"0.000000 -1.380635 0.000000"
+				"targetname"	"radiopoint_allied_final"
+			}	
+			
+			// Axis radio
+			"obj_destructible"
+			{
+				"origin"			"1951.141235 4825.871582 121.445313"
+				"angles"			"0.000000 167.081009 0.000000"
+				"targetname"		"radio_axis_final"
+				"teamnumber"		"3"
+				"ControlPoint"		"radiopoint_axis_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"1951.141235 4825.871582 193.445313"
+				"angles"			"0.000000 167.081009 0.000000"
+				"targetname"		"radiopoint_axis_final"
+			}	
+		}
+	}
+	
+	"entrenchment"
+	{
+		"TeamOne"           "americans"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_TWO"
+		
+		"controlpoint" 		"skirmish_cap_c"
+		"controlpoint" 		"rear_fortification_cap"
+		"controlpoint" 		"middle_building_cap"
+		"controlpoint"		"push_cap_c"
+		"controlpoint"		"town_interior_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				// Where the teams should start
+				
+				"location_allies"					"-2004.454224 -3913.883301 14.439396"
+				"location_axis"						"-2353.016113 7548.427734 -108.671814"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is closest to this objective
+				// Defending team can't spawn on this objective
+				
+				"objective_index"					"0"
+				"location_axis"						"-1100.351196 4875.257813 118.227707"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is closest to this objective
+				// Defending team can't spawn on this objective
+				
+				"objective_index"					"1"
+				"location_axis"						"-1100.351196 4875.257813 118.227707"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is closest to this objective
+				// Defending team can regroup on this objective
+				
+				"objective_index"					"2"
+				"location_axis"						"-1811.984009 2456.164063 56.014015"
+				"location_allies"					"659.423279 -5064.433594 292.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is closest to this objective
+				// Defending team can regroup on this objective
+				
+				"objective_index"					"3"
+				"location_axis"						"-1884.708252 1546.095215 66.511948"
+				"location_allies"					"2327.337402 -6693.371094 176.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_allies"					"-1329.175781 -8265.632813 276.031250"
+			}
+
+			"fallback_spawns"
+			{
+				// Fall back spawns represent the furthest a team can be pushed back
+				
+				"location_allies"					"-1329.175781 -8265.632813 276.031250"
+				"location_axis"						"-2353.016113 7548.427734 -108.671814"
+			}
+		}
+	}
+	
+	"stronghold"
+	{
+		"TeamOne"           "americans"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_TWO"
+		
+		"controlpoint"		"front_entrenchment_cap"
+		"controlpoint"		"main_fortification_cap"
+		"controlpoint" 		"rear_fortification_cap"
+		"controlpoint" 		"skirmish_cap_c"
+		"controlpoint" 		"middle_building_cap"
+		"controlpoint"		"push_cap_c"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				// Where the teams should start
+
+				"location_axis"						"1775.816162 6133.287109 16.016495"
+				"location_allies"					"-294.571655 1810.401978 72.593422"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is attacking the point closest to their spawn
+				// Defending team is defending the point closest to their spawn
+				
+				"objective_index"					"0"
+				"location_axis"						"1775.816162 6133.287109 16.016495"
+				"location_allies"					"2039.096558 -2567.150635 148.125656"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is attacking the point closest to their spawn
+				// Defending team is defending the point closest to their spawn
+				
+				"objective_index"					"1"
+				"location_axis"						"-2496.940918 4765.306641 85.736366"
+				"location_allies"					"2039.096558 -2567.150635 148.125656"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is attacking the point closest to their spawn
+				// Defending team is defending the point closest to their spawn
+				
+				"objective_index"					"2"
+				"location_axis"						"1985.232544 2783.608643 132.963745"
+				"location_allies"					"-128.421005 -4662.562500 249.806702"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is attacking the point closest to their spawn
+				// Defending team is defending the point closest to their spawn
+				
+				"objective_index"					"3"
+				"location_axis"						"1985.232544 2783.608643 132.963745"
+				"location_allies"					"-2875.565186 -6509.400391 72.102821"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is attacking the point closest to their spawn
+				// Defending team is defending the point closest to their spawn
+				
+				"objective_index"					"4"
+				"location_axis"						"0.036353 839.948669 60.546986"
+				"location_allies"					"341.993103 -6780.803223 65.202461"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is attacking the point closest to their spawn
+				// Defending team is defending the point closest to their spawn
+				
+				"objective_index"					"5"
+				"location_axis"						"0.036353 839.948669 60.546986"
+				"location_allies"					"-608.342346 -8106.772949 276.031250"
+			}
+
+			"fallback_spawns"
+			{
+				"location_axis"						"1775.816162 6133.287109 16.016495"
+				"location_allies"					"-608.342346 -8106.772949 276.031250"
+			}
+		}
+	}
+	
+	"patrol"
+	{
+		"TeamOne"           "americans"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"push_cap_c"
+		"controlpoint"		"front_entrenchment_cap"
+		"controlpoint" 		"skirmish_cap_a"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+
+		"navspawns"
+		{
+			"patrol_spawns"
+			{
+				"location_allies"		"516.497681 -7162.436523 65.445869"
+				"location_allies_02"	"3980.927734 -4738.873535 66.179489"
+				"location_allies_03"	"175.953735 -5547.636230 85.195770"
+				"location_allies_04"	"-2522.585205 -6628.579102 65.291382"
+
+				"location_axis"			"-3417.438965 4179.302734 24.839331"
+				"location_axis_02"		"-79.214363 3950.993408 124.670525"
+				"location_axis_03"		"2197.368408 3340.980713 141.124268"
+				"location_axis_04"		"3874.948730 1741.025757 35.442245"
+			}
+			
+			"fallback_spawns"
+			{
+				"location_allies"					"-1038.006226 -8074.941406 276.031250"
+				"location_axis"						"-1.650957 6911.640625 14.273113"
+			}
+		}
+	}
+}

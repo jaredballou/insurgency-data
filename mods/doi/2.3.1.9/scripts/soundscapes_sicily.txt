@@ -1,0 +1,2558 @@
+//sicily trailer soundscape
+
+
+"wwii.sicily_exterior_beach"
+{
+
+	// *** dsp settings *** //
+	
+	"dsp"        "41"
+	"dsp_spatial" "41"
+	"dsp_volume" "0"
+	"fadetime" "2.0"
+
+	"soundmixer"	"default_mix"
+	
+	// *** looping sounds *** //
+	
+		//	Seagull Ambience
+	"playlooping"
+	{
+		"volume"	"0.2" //0.2 for beach scene
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\birds_seagull_ambience_02.wav"
+	}
+	//	Seagull Ambience2
+	"playlooping"
+	{
+		"volume"	"0.2" //0.2 for beach scene
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\birds_seagull_ambience_03.wav"
+	}
+	
+		//	Ocean Ambience
+		"playlooping"
+	{
+		"volume"	"0.4" //0.8 for beach scene
+		"pitch"		"100"
+		"wave"	")soundscape\ambience\ocean_ambience_far_01.wav"
+	}
+	
+	//	Small Town Ambience
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\smalltown_ambience_02.wav"
+	}
+	
+	
+	//	Mountain Wind Ambience
+	"playlooping"
+	{
+		"volume"	"0.4" //0.5
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_01.wav"
+	}
+	
+	
+	 //	Insect & Bird
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insect_bird_ambience.wav"
+	}
+	
+		 //	Insects
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insects_night_ambience.wav"
+	}
+	
+	
+	//Windgust Sand
+	"playrandom"
+	{
+		"time"		"2,12"
+		"volume"	"0.2" //0.4
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_150dB"
+
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_03.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_05.ogg"		
+		}
+	}
+	
+	//Windgust Howl
+	"playrandom"
+	{
+		"time"		"2,20"
+		"volume"	"1.0" //0.4
+		"pitch"		"110"
+		"soundlevel"	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_03.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_04.ogg"			
+		}
+	}
+	
+	     // Bird Song
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.1,0.2"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\birds_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_05.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_06.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_09.ogg"				
+		}
+	} 
+	
+	//Single Flies Close
+	"playrandom"
+	{
+		"time"		"6,10"
+		"volume"	"0.1, 0.6"
+		"pitch"		"90,100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\flies_single_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_09.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_10.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_11.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_12.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_13.ogg"				
+		}
+	} 
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+        "volume"	"1.0,1.0"	
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		}
+	}  
+
+	//Dist Explosion single
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.8, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_04.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_03.ogg"		
+		}
+	}
+	
+		//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.3, 0.5"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_05.ogg"
+        "wave"	")soundscape\emitters\Oneshot\dist_gun_st_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		}
+	}
+	
+	//Dist Tank shots
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.9, 0.9"//"0.4, 0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_04.ogg"		
+		}
+	} 
+	
+	
+	// distant single shots & groups
+	"playrandom"
+	{
+		"time"		"4,7"
+		"volume"	"0.6,0.9"
+		"pitch"		"97,103"
+		"soundlevel"  	"SNDLVL_150dB"
+		"position"	"random"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_09.ogg"			
+		}
+	} 
+	
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_02.ogg"	
+		}
+	}
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_03.ogg"			
+		}
+	}
+
+	
+	//	Distant Explosion Bed
+	"playlooping"
+	{
+		"volume"	"1.0"//0.6
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\distant_explosion_bed.wav"
+	}
+	
+	//Dist Guns 2
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"1.0, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_05.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_11.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_12.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_13.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_14.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_15.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_16.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_17.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_18.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_19.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_20.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_21.ogg"
+		
+		}
+	}
+	
+	//Spitfire Flypast
+	"playrandom"
+	{
+		"time"		"10,30"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_03.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_05.ogg"			
+		}
+	}
+	
+	//Mustang Flypast
+	"playrandom"
+	{
+		"time"		"15,35"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_04.ogg"			
+		}
+	}
+	
+	//Mustang Slow Climb
+	"playrandom"
+	{
+		"time"		"20,30"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_distant_02.ogg"				
+		}
+	}
+
+
+		// positional //
+	
+	//wave -00
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"0"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -01
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"1"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -02
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"2"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -03
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"3"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+
+	//wave -04
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"4"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -05
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"5"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -06
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"6"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -07
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"7"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	
+}
+
+
+"wwii.sicily_exterior_town"
+{
+
+	// *** dsp settings *** //
+	
+	"dsp"        "41"
+	"dsp_spatial" "41"
+	"dsp_volume" "0"
+	"fadetime" "2.0"
+
+	"soundmixer"	"default_mix"
+	
+	// *** looping sounds *** //
+	
+	
+	//	Seagull Ambience
+	"playlooping"
+	{
+		"volume"	"0.1" //0.2 for beach scene
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\birds_seagull_ambience_02.wav"
+	}
+	//	Seagull Ambience2
+	"playlooping"
+	{
+		"volume"	"0.1" //0.2 for beach scene
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\birds_seagull_ambience_03.wav"
+	}
+
+	//	Small Town Ambience
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\smalltown_ambience_02.wav"
+	}
+	
+	
+	//	Mountain Wind Ambience
+	"playlooping"
+	{
+		"volume"	"0.4" //0.5
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_01.wav"
+	}
+	
+	
+	 //	Insect & Bird
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insect_bird_ambience.wav"
+	}
+	
+	 //	Insects
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insects_night_ambience.wav"
+	}
+	
+	
+	//Windgust Sand
+	"playrandom"
+	{
+		"time"		"2,12"
+		"volume"	"0.2" //0.4
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_150dB"
+
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_03.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_05.ogg"		
+		}
+	}
+	
+	
+	     // Bird Song
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.1,0.2"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\birds_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_05.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_06.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_09.ogg"				
+		}
+	} 
+	
+	//Single Flies Close
+	"playrandom"
+	{
+		"time"		"6,10"
+		"volume"	"0.1, 0.6"
+		"pitch"		"90,100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\flies_single_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_09.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_10.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_11.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_12.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_13.ogg"				
+		}
+	} 
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+        "volume"	"1.0,1.0"	
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		}
+	}  
+
+	//Dist Explosion single
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.8, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_04.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_03.ogg"		
+		}
+	}
+	
+		//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.3, 0.5"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_05.ogg"
+        "wave"	")soundscape\emitters\Oneshot\dist_gun_st_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		}
+	}
+	
+	//Dist Tank shots
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.9, 0.9"//"0.4, 0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_04.ogg"		
+		}
+	} 
+	
+	
+	// distant single shots & groups
+	"playrandom"
+	{
+		"time"		"4,7"
+		"volume"	"0.6,0.9"
+		"pitch"		"97,103"
+		"soundlevel"  	"SNDLVL_150dB"
+		"position"	"random"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_09.ogg"			
+		}
+	} 
+	
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_02.ogg"	
+		}
+	}
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_03.ogg"			
+		}
+	}
+
+	
+	//	Distant Explosion Bed
+	"playlooping"
+	{
+		"volume"	"1.0"//0.6
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\distant_explosion_bed.wav"
+	}
+	
+	//Dist Guns 2
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"1.0, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_05.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_11.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_12.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_13.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_14.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_15.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_16.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_17.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_18.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_19.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_20.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_21.ogg"
+		
+		}
+	}
+	
+	//Spitfire Flypast
+	"playrandom"
+	{
+		"time"		"10,30"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_03.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_05.ogg"			
+		}
+	}
+	
+	//Mustang Flypast
+	"playrandom"
+	{
+		"time"		"15,35"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_04.ogg"			
+		}
+	}
+	
+	//Mustang Slow Climb
+	"playrandom"
+	{
+		"time"		"20,30"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_distant_02.ogg"				
+		}
+	}
+	
+}
+
+
+"wwii.sicily_interior_small"
+{
+
+	// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "141"
+	"dsp_volume" "4"
+	"fadetime" "1.2"
+
+	"soundmixer"	"heights_int_small"
+	
+   //	Insect & Bird
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insect_bird_ambience_indoor.wav"
+	}
+	
+		 //	Insects
+	"playlooping"
+	{
+		"volume"	"0.025"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insects_night_ambience_indoor.wav"
+	}
+
+	
+	//	Town background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"80"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"	
+	}
+	
+	
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+        "volume"	"0.5,0.5"	
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		}
+	}  
+
+	//Dist Explosion single
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.4, 0.8"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_04.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_03.ogg"		
+		}
+	}
+	
+		//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.15, 0.3"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_05.ogg"
+        "wave"	")soundscape\emitters\Oneshot\dist_gun_st_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		}
+	}
+	
+	//Dist Tank shots
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.45, 0.45"//"0.4, 0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_04.ogg"		
+		}
+	} 
+	
+	
+	// distant single shots & groups
+	"playrandom"
+	{
+		"time"		"4,7"
+		"volume"	"0.3,0.6"
+		"pitch"		"97,103"
+		"soundlevel"  	"SNDLVL_150dB"
+		"position"	"random"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_09.ogg"			
+		}
+	} 
+	
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.3,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_02.ogg"	
+		}
+	}
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.3,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_03.ogg"			
+		}
+	}
+
+	
+	//	Distant Explosion Bed
+	"playlooping"
+	{
+		"volume"	"0.5"//0.6
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\distant_explosion_bed.wav"
+	}
+	
+	//Dist Guns 2
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.5, 0.5"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_05.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_11.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_12.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_13.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_14.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_15.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_16.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_17.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_18.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_19.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_20.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_21.ogg"
+		
+		}
+	}
+	
+	
+}
+
+
+"wwii.sicily_interior_belltower"
+{
+
+	// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "141"
+	"dsp_volume" "4"
+	"fadetime" "1.2"
+
+	"soundmixer"	"heights_int_small"
+	
+	// *** looping sounds *** //
+	
+
+	//	Small Town Ambience
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\smalltown_ambience_02.wav"
+	}
+	
+	
+	//	Mountain Wind Ambience
+	"playlooping"
+	{
+		"volume"	"0.4" //0.5
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_01.wav"
+	}
+	
+	
+	 //	Insect & Bird
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insect_bird_ambience.wav"
+	}
+	
+	 //	Insects
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insects_night_ambience.wav"
+	}
+	
+	
+	//Windgust Sand
+	"playrandom"
+	{
+		"time"		"2,12"
+		"volume"	"0.2" //0.4
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_150dB"
+
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_03.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_05.ogg"		
+		}
+	}
+	
+	//Windgust Howl
+	"playrandom"
+	{
+		"time"		"2,20"
+		"volume"	"1.0" //0.4
+		"pitch"		"110"
+		"soundlevel"	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_03.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_04.ogg"			
+		}
+	}
+	
+	     // Bird Song
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.1,0.2"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\birds_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_05.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_06.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_09.ogg"				
+		}
+	} 
+	
+	//Single Flies Close
+	"playrandom"
+	{
+		"time"		"6,10"
+		"volume"	"0.1, 0.6"
+		"pitch"		"90,100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\flies_single_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_09.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_10.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_11.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_12.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_13.ogg"				
+		}
+	} 
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+        "volume"	"1.0,1.0"	
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		}
+	}  
+
+	//Dist Explosion single
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.8, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_04.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_03.ogg"		
+		}
+	}
+	
+		//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.3, 0.5"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_05.ogg"
+        "wave"	")soundscape\emitters\Oneshot\dist_gun_st_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		}
+	}
+	
+	//Dist Tank shots
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.9, 0.9"//"0.4, 0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_04.ogg"		
+		}
+	} 
+	
+	
+	// distant single shots & groups
+	"playrandom"
+	{
+		"time"		"4,7"
+		"volume"	"0.6,0.9"
+		"pitch"		"97,103"
+		"soundlevel"  	"SNDLVL_150dB"
+		"position"	"random"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_09.ogg"			
+		}
+	} 
+	
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_02.ogg"	
+		}
+	}
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_03.ogg"			
+		}
+	}
+
+	
+	//	Distant Explosion Bed
+	"playlooping"
+	{
+		"volume"	"1.0"//0.6
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\distant_explosion_bed.wav"
+	}
+	
+	//Dist Guns 2
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"1.0, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_05.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_11.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_12.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_13.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_14.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_15.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_16.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_17.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_18.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_19.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_20.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_21.ogg"
+		
+		}
+	}
+	
+	//Spitfire Flypast
+	"playrandom"
+	{
+		"time"		"10,30"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_03.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_05.ogg"			
+		}
+	}
+	
+	//Mustang Flypast
+	"playrandom"
+	{
+		"time"		"15,35"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_04.ogg"			
+		}
+	}
+	
+	//Mustang Slow Climb
+	"playrandom"
+	{
+		"time"		"20,30"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_distant_02.ogg"				
+		}
+	}
+	
+}
+
+
+"wwii.sicily_interior_bombedout"
+{
+
+	// *** dsp settings *** //
+	"dsp"        "41"
+
+	"dsp_spatial" "141"
+	"dsp_volume" "4"
+	"fadetime" "1.2"
+
+	"soundmixer"	"heights_int_small"
+	
+   //	Insect & Bird
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insect_bird_ambience_indoor.wav"
+	}
+	
+		 //	Insects
+	"playlooping"
+	{
+		"volume"	"0.025"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insects_night_ambience_indoor.wav"
+	}
+
+	
+	//	Town background	ambience loop
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"80"
+		"wave"	"soundscape\ambience\town_indoors_ambience_01.wav"	
+	}
+	
+	
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+        "volume"	"0.5,0.5"	
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		}
+	}  
+
+	//Dist Explosion single
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.4, 0.8"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_04.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_03.ogg"		
+		}
+	}
+	
+		//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.15, 0.3"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_05.ogg"
+        "wave"	")soundscape\emitters\Oneshot\dist_gun_st_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		}
+	}
+	
+	//Dist Tank shots
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.45, 0.45"//"0.4, 0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_04.ogg"		
+		}
+	} 
+	
+	
+	// distant single shots & groups
+	"playrandom"
+	{
+		"time"		"4,7"
+		"volume"	"0.3,0.6"
+		"pitch"		"97,103"
+		"soundlevel"  	"SNDLVL_150dB"
+		"position"	"random"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_09.ogg"			
+		}
+	} 
+	
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.3,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_02.ogg"	
+		}
+	}
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.3,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_03.ogg"			
+		}
+	}
+
+	
+	//	Distant Explosion Bed
+	"playlooping"
+	{
+		"volume"	"0.5"//0.6
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\distant_explosion_bed.wav"
+	}
+	
+	//Dist Guns 2
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.5, 0.5"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_05.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_11.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_12.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_13.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_14.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_15.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_16.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_17.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_18.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_19.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_20.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_21.ogg"
+		
+		}
+	}
+	
+	//positional//
+	
+	// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"0"
+	}
+	
+}
+
+
+
+"wwii.sicily_interior_bunker"
+{
+
+	// *** dsp settings *** //
+	"dsp"	"41"
+	"dsp_spatial" "144"
+	"dsp_volume" "4.0"
+
+	"fadetime" "1.0"
+	
+	"soundmixer"	"min_int_garage"
+	
+   //	Insect & Bird
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insect_bird_ambience_indoor.wav"
+	}
+	
+		 //	Insects
+	"playlooping"
+	{
+		"volume"	"0.025"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insects_night_ambience_indoor.wav"
+	}
+	
+	//	indoors mid rumble/hum
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"50"
+		"wave"	"soundscape\ambience\rumble_mid_ambience.wav"
+	}
+	
+	//	bunker room tone
+		"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"	")soundscape\ambience\bunker_interior_roomtone.wav"
+	}
+	
+
+	//	bunker interior ambience
+		"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"	")soundscape\ambience\bunker_interior_ambience_noocean_01.wav"
+	}
+
+	//	bunker wind howling
+		"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"wave"	")soundscape\ambience\bunker_interior_windhowling.wav"
+	}
+
+	
+	//	bunker wind buffet
+		"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"wave"	")soundscape\ambience\bunker_wind_buffet.wav"
+	}
+
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+        "volume"	"0.5,0.5"	
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		}
+	}  
+
+	//Dist Explosion single
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.4, 0.8"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_04.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_03.ogg"		
+		}
+	}
+	
+		//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.15, 0.3"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_05.ogg"
+        "wave"	")soundscape\emitters\Oneshot\dist_gun_st_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		}
+	}
+	
+	//Dist Tank shots
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.45, 0.45"//"0.4, 0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_04.ogg"		
+		}
+	} 
+	
+	
+	// distant single shots & groups
+	"playrandom"
+	{
+		"time"		"4,7"
+		"volume"	"0.3,0.6"
+		"pitch"		"97,103"
+		"soundlevel"  	"SNDLVL_150dB"
+		"position"	"random"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_09.ogg"			
+		}
+	} 
+	
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.3,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_02.ogg"	
+		}
+	}
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.3,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_03.ogg"			
+		}
+	}
+
+	
+	//	Distant Explosion Bed
+	"playlooping"
+	{
+		"volume"	"0.5"//0.6
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\distant_explosion_bed.wav"
+	}
+	
+	//Dist Guns 2
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.5, 0.5"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_05.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_11.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_12.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_13.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_14.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_15.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_16.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_17.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_18.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_19.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_20.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_21.ogg"
+		
+		}
+	}
+	
+			// positional //
+	
+	//wave -01
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"0"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -02
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"1"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -03
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"2"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+
+	//wave -04
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"3"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -05
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"4"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	//wave -05
+	"playrandom"
+	{
+		"time"		"2,6"
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"5"
+		"soundlevel"  	"SNDLVL_110dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\wave_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\wave_05.ogg"	
+		}
+	}
+	
+	// Oil Lamp
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"	"soundscape\emitters\loop\oil_lamp.wav"
+		"soundlevel"  	"SNDLVL_80dB"
+		"position"	"6"
+	}
+	
+	
+}
+
+
+"wwii.sicily_interior_largeopen"
+{
+
+	// *** dsp settings *** //
+	"dsp"	"41"
+	"dsp_spatial" "144"
+	"dsp_volume" "4.0"
+
+	"fadetime" "1.0"
+	
+	"soundmixer"	"min_int_garage"
+	
+	// *** looping sounds *** //
+	
+
+	//	Small Town Ambience
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\smalltown_ambience_02.wav"
+	}
+	
+	
+	//	Mountain Wind Ambience
+	"playlooping"
+	{
+		"volume"	"0.4" //0.5
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\wind_01.wav"
+	}
+	
+	
+	 //	Insect & Bird
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insect_bird_ambience.wav"
+	}
+	
+	 //	Insects
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\insects_night_ambience.wav"
+	}
+	
+	
+	//Windgust Sand
+	"playrandom"
+	{
+		"time"		"2,12"
+		"volume"	"0.2" //0.4
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_150dB"
+
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_03.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\Windgust_sand_05.ogg"		
+		}
+	}
+	
+	//Windgust Howl
+	"playrandom"
+	{
+		"time"		"2,20"
+		"volume"	"1.0" //0.4
+		"pitch"		"110"
+		"soundlevel"	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_03.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\wind_howl_04.ogg"			
+		}
+	}
+	
+	     // Bird Song
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.1,0.2"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\birds_01.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_02.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_03.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_04.ogg"	
+		"wave"	"soundscape\emitters\Oneshot\birds_05.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_06.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\birds_09.ogg"				
+		}
+	} 
+	
+	//Single Flies Close
+	"playrandom"
+	{
+		"time"		"6,10"
+		"volume"	"0.1, 0.6"
+		"pitch"		"90,100"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	"soundscape\emitters\Oneshot\flies_single_07.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_08.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_09.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_10.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_11.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_12.ogg"		
+		"wave"	"soundscape\emitters\Oneshot\flies_single_13.ogg"				
+		}
+	} 
+	
+	//Dist Explosions
+	"playrandom"
+	{
+		"time"		"2,5"
+        "volume"	"1.0,1.0"	
+		"pitch"		"80,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_NORM"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_set_06.ogg"
+		}
+	}  
+
+	//Dist Explosion single
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.8, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_single_04.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_explosion_03.ogg"		
+		}
+	}
+	
+		//Dist Guns 1
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"0.3, 0.5"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_05.ogg"
+        "wave"	")soundscape\emitters\Oneshot\dist_gun_st_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_st_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\dist_gun_05.ogg"
+		}
+	}
+	
+	//Dist Tank shots
+	"playrandom"
+	{
+		"time"		"4,20"
+		"volume"	"0.9, 0.9"//"0.4, 0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\tank_shot_04.ogg"		
+		}
+	} 
+	
+	
+	// distant single shots & groups
+	"playrandom"
+	{
+		"time"		"4,7"
+		"volume"	"0.6,0.9"
+		"pitch"		"97,103"
+		"soundlevel"  	"SNDLVL_150dB"
+		"position"	"random"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_05.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_06.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_07.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_08.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\dist_singleshots_09.ogg"			
+		}
+	} 
+	
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\explosion_huge_distant_02.ogg"	
+		}
+	}
+	
+	//Huge Distant Explosion
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\thunderstorm_distant_03.ogg"			
+		}
+	}
+
+	
+	//	Distant Explosion Bed
+	"playlooping"
+	{
+		"volume"	"1.0"//0.6
+		"pitch"		"100"
+		"wave"	"soundscape\ambience\distant_explosion_bed.wav"
+	}
+	
+	//Dist Guns 2
+	"playrandom"
+	{
+		"time"		"1,5"
+		"volume"	"1.0, 1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_180dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_01.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_02.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_03.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_04.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_05.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_06.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_07.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_08.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_09.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_10.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_11.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_12.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_13.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_14.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_15.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_16.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_17.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_18.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_19.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_20.ogg"
+		"wave"	")soundscape\emitters\Oneshot\ww2_distant_firefight_21.ogg"
+		
+		}
+	}
+	
+	//Spitfire Flypast
+	"playrandom"
+	{
+		"time"		"10,30"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_03.ogg"		
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_04.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\spitfire_flypast_05.ogg"			
+		}
+	}
+	
+	//Mustang Flypast
+	"playrandom"
+	{
+		"time"		"15,35"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_02.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_03.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_04.ogg"			
+		}
+	}
+	
+	//Mustang Slow Climb
+	"playrandom"
+	{
+		"time"		"20,30"
+		"volume"	"0.7,1.0"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"  	"SNDLVL_150dB"
+		
+		"rndwave"	
+		{
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_distant_01.ogg"	
+		"wave"	")soundscape\emitters\Oneshot\mustang_flypast_distant_02.ogg"				
+		}
+	}
+	
+}

@@ -1,0 +1,239 @@
+"theater"
+{
+	"player_gear"
+	{
+		"german_light_kit"
+		{
+			"print_name"				"#gear_light_kit"
+			"print_desc"				"#gear_light_kit_desc"
+			
+			"gear_slot"					"vest"
+			"gear_cost"					"2"
+			"gear_weight"				"15"	// 22 (2.2kg) + 24 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"2"
+				"secondary"				"2"
+				"explosive"				"0"
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"axis"		
+		}
+		
+		"german_heavy_kit"
+		{
+			"print_name"				"#gear_heavy_kit"
+			"print_desc"				"#gear_heavy_kit_desc"
+			
+			"gear_slot"					"vest"
+			"gear_cost"					"4"
+			"gear_weight"				"50"
+			"extra_ammo"
+			{
+				"primary"				"3"
+				"secondary"				"4"
+				
+				"explosive"
+				{
+					"1"					"1"	// an extra explosive in the second slot only, sub-slots are 0 indexed
+				}
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"axis"			
+		}
+		
+		"commonwealth_light_kit"
+		{
+			"print_name"				"#gear_light_kit"
+			"print_desc"				"#gear_light_kit_desc"
+			
+			"gear_slot"					"vest"
+			"gear_cost"					"2"
+			"gear_weight"				"15"	// 22 (2.2kg) + 24 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"2"
+				"secondary"				"2"
+				"explosive"				"0"
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"commonwealth"		
+		
+		}
+		
+		"commonwealth_heavy_kit"
+		{
+			"print_name"				"#gear_heavy_kit"
+			"print_desc"				"#gear_heavy_kit_desc"	
+			
+			"gear_slot"					"vest"
+			"gear_cost"					"4"
+			"gear_weight"				"50"
+			"extra_ammo"
+			{
+				"primary"				"3"
+				"secondary"				"4"
+				
+				"explosive"
+				{
+					"1"					"1"	// an extra explosive in the second slot only, sub-slots are 0 indexed
+				}
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"commonwealth"		
+		}
+		
+		"american_light_kit"
+		{
+			"print_name"				"#gear_light_kit"
+			"print_desc"				"#gear_light_kit_desc"
+			
+			"gear_slot"					"vest"
+			"gear_cost"					"1"
+			"gear_weight"				"15"	// 22 (2.2kg) + 24 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"2"
+				"secondary"				"2"
+				"explosive"				"0"
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"americans"		
+		
+		}
+		
+		"american_heavy_kit"
+		{
+			"print_name"				"#gear_heavy_kit"
+			"print_desc"				"#gear_heavy_kit_desc"	
+			
+			"gear_slot"					"vest"
+			"gear_cost"					"3"
+			"gear_weight"				"50"
+			"extra_ammo"
+			{
+				"primary"				"3"
+				"secondary"				"4"
+				
+				"explosive"
+				{
+					"1"					"1"	// an extra explosive in the second slot only, sub-slots are 0 indexed
+				}
+			}
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			"team_access"				"americans"	
+		}
+		
+		"gear_radio"
+		{
+			"print_name"				"#gear_radio"
+			"print_desc"				"#gear_radio_desc"
+			"gear_slot"					"backpack"
+			"gear_cost"					"4"
+			"gear_weight"				"100"
+			"entity"					"radio"
+			"class_restricted"			"1"
+			
+			"model"						"models/characters/backpack_radio.mdl"
+			"team_access"				"americans"
+			
+			"settings"
+			{
+				"health"				"150"
+				"capture_speedup"		"1.5"
+				"attach_point"			"backpack"
+			}
+		}
+		
+		"gear_radio_commonwealth"
+		{
+			"print_name"				"#gear_radio"
+			"print_desc"				"#gear_radio_desc"
+			"gear_slot"					"backpack"
+			"gear_cost"					"4"
+			"gear_weight"				"100"
+			"entity"					"radio"
+			"class_restricted"			"1"
+			
+			"model"						"models/characters/backpack_radio_brit.mdl"
+			"team_access"				"axis, commonwealth"
+			
+			"settings"
+			{
+				"health"				"150"
+				"capture_speedup"		"1.5"
+				"attach_point"			"backpack"
+			}
+		}
+		
+		"gear_fuel_tank"
+		{
+			"print_name"				"#gear_fuel_tank"
+			"print_desc"				"#gear_fuel_tank_desc"
+			"gear_slot"					"backpack"
+			"gear_cost"					"0"
+			"gear_weight"				"200"
+			"entity"					"fueltank"
+			"model"						"models/characters/lufboy_tank.mdl"
+			"class_restricted"			"1"
+			
+			"team_access"				"axis, americans, commonwealth"
+			
+			"settings"
+			{
+				"health"				"100"
+				"fire_projectile"		"grenade_molotov"
+				"ammo_type"				"flame" // which ammo type to drain when damage is taken
+				
+				"sound_leak"			"Weapon_FlamethrowerNo2.BackpackLeak"
+				"sound_explode"			"Weapon_FlamethrowerNo2.BackpackDetonate"
+				
+				"attach_point"			"backpack"
+			}
+		}
+		
+		"gear_fuel_tank_german"
+		{
+			"print_name"				"#gear_fuel_tank"
+			"print_desc"				"#gear_fuel_tank_desc"
+			"gear_slot"					"backpack"
+			"gear_cost"					"0"
+			"gear_weight"				"200"
+			"entity"					"fueltank"
+			"model"						"models/characters/flammenwerfer_tank.mdl"
+			"class_restricted"			"1"
+			
+			"team_access"				"axis, americans, commonwealth"
+			
+			"settings"
+			{
+				"health"				"100"
+				"fire_projectile"		"grenade_molotov"
+				"ammo_type"				"flame" // which ammo type to drain when damage is taken
+				
+				"sound_leak"			"Weapon_FlamethrowerNo41.BackpackLeak"
+				"sound_explode"			"Weapon_FlamethrowerNo41.BackpackDetonate"
+				
+				"attach_point"			"backpack"
+			}
+		}
+	}
+}

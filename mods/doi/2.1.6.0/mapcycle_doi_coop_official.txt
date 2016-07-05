@@ -1,0 +1,7 @@
+doi_bastogne outpost
+doi_bastogne conquer
+doi_bastogne_night outpost
+doi_bastogne_night conquer
+doi_landfall checkpoint
+doi_landfall conquer
+doi_landfall outpost

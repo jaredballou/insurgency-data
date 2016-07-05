@@ -1,0 +1,7116 @@
+//NEW RADIAL SECURITY
+
+// Leader Security Unsuppressed
+
+//AFFIRMATIVE
+
+"Radial_Security.Leader_UnSupp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseRoger_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_Affirmative_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_Affirmative_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseRoger_1.ogg"	
+	}	
+}
+
+//NEGATIVE
+
+"Radial_Security.Leader_UnSupp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseNegative_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_Negative_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_Negative_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseNegative_1.ogg"		
+	}	
+}
+
+//BACKUP
+
+"Radial_Security.Leader_UnSupp_Backup"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralNeedBackup_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_Backup_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_Backup_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralNeedBackup_1.ogg"		
+	}	
+}
+
+//AREA CLEAR
+
+"Radial_Security.Leader_UnSupp_Clear"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingClear_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_Clear_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_Clear_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingClear_1.ogg"		
+	}	
+}
+
+//COVERING
+
+"Radial_Security.Leader_UnSupp_Covering"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralIllCoverYou_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_Covering_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_Covering_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralIllCoverYou_1.ogg"		
+	}	
+}
+
+//HOSTILES
+
+"Radial_Security.Leader_UnSupp_Hostiles"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingTrailers_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_Hostiles_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_Hostiles_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingTrailers_1.ogg"	
+	}	
+}
+
+//MOVING
+
+"Radial_Security.Leader_UnSupp_Moving"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_Moving_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_Moving_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingTrailers_1.ogg"		
+	}	
+}
+
+//ON THE WAY
+
+"Radial_Security.Leader_UnSupp_OnTheWay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseOnIt_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_OnTheWay_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_OnTheWay_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseOnIt_1.ogg"
+	}	
+}
+
+//TARGET DOWN
+
+"Radial_Security.Leader_UnSupp_TargetDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_3.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_TargetDown_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_TargetDown_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_3.ogg"		
+	}	
+}
+
+//NORTH
+
+"Radial_Security.Leader_UnSupp_North"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_North_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_North_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//NORTH-EAST
+
+"Radial_Security.Leader_UnSupp_NorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_NorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_NorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"	
+	}	
+}
+
+//NORTH-WEST
+
+"Radial_Security.Leader_UnSupp_NorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_NorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_NorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//EAST
+
+"Radial_Security.Leader_UnSupp_East"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_East_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_East_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//SOUTH
+
+"Radial_Security.Leader_UnSupp_South"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_South_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_South_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//SOUTH-EAST
+
+"Radial_Security.Leader_UnSupp_SouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_SouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_SouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//SOUTH-WEST
+
+"Radial_Security.Leader_UnSupp_SouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_SouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_SouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"	
+	}	
+}
+
+//WEST
+
+"Radial_Security.Leader_UnSupp_West"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_West_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_West_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//CEASE FIRE
+
+"Radial_Security.Leader_UnSupp_CeaseFire"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralWatchYourFire_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_CeaseFire_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_CeaseFire_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralWatchYourFire_1.ogg"
+	}	
+}
+
+//FLANK LEFT
+
+"Radial_Security.Leader_UnSupp_FlankLeft"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_FlankLeft_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_FlankLeft_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//FLANK RIGHT
+
+"Radial_Security.Leader_UnSupp_FlankRight"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_FlankRight_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_FlankRight_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//GET READY
+
+"Radial_Security.Leader_UnSupp_GetReady"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralTakePoint_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_GetReady_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_GetReady_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralTakePoint_1.ogg"
+	}	
+}
+
+//GO
+
+"Radial_Security.Leader_UnSupp_Go"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingGoGoGo_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_Go_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_Go_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingGoGoGo_1.ogg"
+	}	
+}
+
+//REPORT STATUS
+
+"Radial_Security.Leader_UnSupp_ReportStatus"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_ReportStatus_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_ReportStatus_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_3.ogg"
+	}	
+}
+
+//MOVE TO EAST
+
+"Radial_Security.Leader_UnSupp_MoveToEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_MoveToEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_MoveToEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO NORTH
+
+"Radial_Security.Leader_UnSupp_MoveToNorth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_MoveToNorth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_MoveToNorth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO NORTH-EAST
+
+"Radial_Security.Leader_UnSupp_MoveToNorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_MoveToNorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_MoveToNorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO NORTH-WEST
+
+"Radial_Security.Leader_UnSupp_MoveToNorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_MoveToNorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_MoveToNorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO SOUTH
+
+"Radial_Security.Leader_UnSupp_MoveToSouth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_MoveToSouth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_MoveToSouth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO SOUTH-EAST
+
+"Radial_Security.Leader_UnSupp_MoveToSouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_MoveToSouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_MoveToSouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO SOUTH-WEST
+
+"Radial_Security.Leader_UnSupp_MoveToSouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_MoveToSouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_MoveToSouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO WEST
+
+"Radial_Security.Leader_UnSupp_MoveToWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_MoveToWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_MoveToWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//OPEN FIRE EAST
+
+"Radial_Security.Leader_UnSupp_OpenFireEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_OpenFireEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_OpenFireEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE NORTH
+
+"Radial_Security.Leader_UnSupp_OpenFireNorth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_OpenFireNorth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_OpenFireNorth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE NORTH-EAST
+
+"Radial_Security.Leader_UnSupp_OpenFireNorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_OpenFireNorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_OpenFireNorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE NORTH-WEST
+
+"Radial_Security.Leader_UnSupp_OpenFireNorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_OpenFireNorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_OpenFireNorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE SOUTH
+
+"Radial_Security.Leader_UnSupp_OpenFireSouth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_OpenFireSouth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_OpenFireSouth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE SOUTH-EAST
+
+"Radial_Security.Leader_UnSupp_OpenFireSouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_OpenFireSouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_OpenFireSouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE SOUTH-WEST
+
+"Radial_Security.Leader_UnSupp_OpenFireSouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_OpenFireSouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_OpenFireSouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE WEST
+
+"Radial_Security.Leader_UnSupp_OpenFireWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_OpenFireWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_OpenFireWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//WATCH EAST
+
+"Radial_Security.Leader_UnSupp_WatchEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_WatchEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_WatchEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH NORTH
+
+"Radial_Security.Leader_UnSupp_WatchNorth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_WatchNorth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_WatchNorth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH NORTH-EAST
+
+"Radial_Security.Leader_UnSupp_WatchNorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_WatchNorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_WatchNorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH NORTH-WEST
+
+"Radial_Security.Leader_UnSupp_WatchNorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_WatchNorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_WatchNorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH SOUTH
+
+"Radial_Security.Leader_UnSupp_WatchSouth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_WatchSouth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_WatchSouth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH SOUTH-EAST
+
+"Radial_Security.Leader_UnSupp_WatchSouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_WatchSouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_WatchSouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH SOUTH-WEST
+
+"Radial_Security.Leader_UnSupp_WatchSouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_WatchSouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_WatchSouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH WEST
+
+"Radial_Security.Leader_UnSupp_WatchWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_WatchWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_WatchWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//HOLD POSITION
+
+"Radial_Security.Leader_UnSupp_HoldPosition"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralSlowDown_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_HoldPosition_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_HoldPosition_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralSlowDown_1.ogg"		
+	}	
+}
+
+//SPREAD OUT
+
+"Radial_Security.Leader_UnSupp_SpreadOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralOutOfTheWay_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_SpreadOut_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_SpreadOut_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralOutOfTheWay_1.ogg"		
+	}	
+}
+
+//STICK TOGETHER
+
+"Radial_Security.Leader_UnSupp_StickTogether"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_4.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_StickTogether_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_StickTogether_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_4.ogg"		
+	}	
+}
+
+// Leader Security Suppressed
+
+//AFFIRMATIVE
+
+"Radial_Security.Leader_Supp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseRoger_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_Affirmative_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_Affirmative_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseRoger_1.ogg"	
+	}	
+}
+
+//NEGATIVE
+
+"Radial_Security.Leader_Supp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseNegative_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_Negative_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_Negative_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseNegative_1.ogg"
+	}	
+}
+
+//BACKUP
+
+"Radial_Security.Leader_Supp_Backup"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralNeedBackup_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_Backup_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_Backup_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralNeedBackup_1.ogg"		
+	}	
+}
+
+//AREA CLEAR
+
+"Radial_Security.Leader_Supp_Clear"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingClear_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_Clear_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_Clear_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingClear_1.ogg"		
+	}	
+}
+
+//COVERING
+
+"Radial_Security.Leader_Supp_Covering"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralIllCoverYou_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_Covering_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_Covering_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralIllCoverYou_1.ogg"		
+	}	
+}
+
+//HOSTILES
+
+"Radial_Security.Leader_Supp_Hostiles"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingTrailers_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_Hostiles_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_Hostiles_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingTrailers_1.ogg"		
+	}	
+}
+
+//MOVING
+
+"Radial_Security.Leader_Supp_Moving"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralNeedBackup_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_Moving_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_Moving_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"		
+	}	
+}
+
+//ON THE WAY
+
+"Radial_Security.Leader_Supp_OnTheWay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseOnIt_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_OnTheWay_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_OnTheWay_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandResponseOnIt_1.ogg"
+	}	
+}
+
+//TARGET DOWN
+
+"Radial_Security.Leader_Supp_TargetDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_3.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_TargetDown_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_TargetDown_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectDown_3.ogg"		
+	}	
+}
+
+//NORTH
+
+"Radial_Security.Leader_Supp_North"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_North_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_North_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//NORTH-EAST
+
+"Radial_Security.Leader_Supp_NorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_NorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_NorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+}
+
+//NORTH-WEST
+
+"Radial_Security.Leader_Supp_NorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_NorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_NorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+}
+
+//EAST
+
+"Radial_Security.Leader_Supp_East"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_East_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_East_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//SOUTH
+
+"Radial_Security.Leader_Supp_South"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_South_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_South_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+}
+
+//SOUTH-EAST
+
+"Radial_Security.Leader_Supp_SouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_SouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_SouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+}
+
+//SOUTH-WEST
+
+"Radial_Security.Leader_Supp_SouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_SouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_SouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+}
+
+//WEST
+
+"Radial_Security.Leader_Supp_West"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_West_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_West_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"			
+	}	
+}
+
+//HOLD POSITION
+
+"Radial_Security.Leader_Supp_HoldPosition"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"				
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_HoldPosition_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_HoldPosition_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReportedSuspectSpotted_4.ogg"				
+	}	
+}
+
+//SPREAD OUT
+
+"Radial_Security.Leader_Supp_SpreadOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralOutOfTheWay_1.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_SpreadOut_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_SpreadOut_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralOutOfTheWay_1.ogg"			
+	}	
+}
+
+//STICK TOGETHER
+
+"Radial_Security.Leader_Supp_StickTogether"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_StickTogether_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_StickTogether_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedFallIn_4.ogg"		
+	}	
+}
+
+// Subordinate Security Unsuppressed
+
+//AFFIRMATIVE
+
+"Radial_Security.Subordinate_UnSupp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseRoger_1.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_Affirmative_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_Affirmative_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseRoger_1.ogg"			
+	}	
+}
+
+//NEGATIVE
+
+"Radial_Security.Subordinate_UnSupp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseNegative_1.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_Negative_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_Negative_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseNegative_1.ogg"		
+	}	
+}
+
+//BACKUP
+
+"Radial_Security.Subordinate_UnSupp_Backup"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandGeneralNeedBackup_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_Backup_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_Backup_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandGeneralNeedBackup_1.ogg"		
+	}	
+}
+
+//AREA CLEAR
+
+"Radial_Security.Subordinate_UnSupp_Clear"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingClear_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_Clear_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_Clear_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingClear_1.ogg"		
+	}	
+}
+
+//COVERING
+
+"Radial_Security.Subordinate_UnSupp_Covering"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandGeneralIllCoverYou_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_Covering_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_Covering_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandGeneralIllCoverYou_1.ogg"		
+	}	
+}
+
+//HOSTILES
+
+"Radial_Security.Subordinate_UnSupp_Hostiles"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingTrailers_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_Hostiles_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_Hostiles_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingTrailers_1.ogg"		
+	}	
+}
+
+//MOVING
+
+"Radial_Security.Subordinate_UnSupp_Moving"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingLetsMove_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_Moving_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_Moving_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//ON THE WAY
+
+"Radial_Security.Subordinate_UnSupp_OnTheWay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseOnIt_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_OnTheWay_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_OnTheWay_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseOnIt_1.ogg"
+	}	
+}
+
+//TARGET DOWN
+
+"Radial_Security.Subordinate_UnSupp_TargetDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_3.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_TargetDown_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_TargetDown_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_3.ogg"		
+	}	
+}
+
+//NORTH
+
+"Radial_Security.Subordinate_UnSupp_North"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_North_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_North_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"	
+	}	
+}
+
+//NORTH-EAST
+
+"Radial_Security.Subordinate_UnSupp_NorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_NorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_NorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//NORTH-WEST
+
+"Radial_Security.Subordinate_UnSupp_NorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_NorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_NorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//EAST
+
+"Radial_Security.Subordinate_UnSupp_East"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_East_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_East_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"	
+	}	
+}
+
+//SOUTH
+
+"Radial_Security.Subordinate_UnSupp_South"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_South_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_South_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"	
+	}	
+}
+
+//SOUTH-EAST
+
+"Radial_Security.Subordinate_UnSupp_SouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_SouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_SouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//SOUTH-WEST
+
+"Radial_Security.Subordinate_UnSupp_SouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_SouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_SouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//WEST
+
+"Radial_Security.Subordinate_UnSupp_West"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_West_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_West_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"	
+	}	
+}
+
+// Subordinate Security Suppressed
+
+//AFFIRMATIVE
+
+"Radial_Security.Subordinate_Supp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseRoger_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_Affirmative_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_Affirmative_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseRoger_1.ogg"			
+	}	
+}
+
+//NEGATIVE
+
+"Radial_Security.Subordinate_Supp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseNegative_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_Negative_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_Negative_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseNegative_1.ogg"	
+	}	
+}
+
+//BACKUP
+
+"Radial_Security.Subordinate_Supp_Backup"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandGeneralNeedBackup_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_Backup_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_Backup_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandGeneralNeedBackup_1.ogg"		
+	}	
+}
+
+//AREA CLEAR
+
+"Radial_Security.Subordinate_Supp_Clear"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingClear_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_Clear_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_Clear_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingClear_1.ogg"		
+	}	
+}
+
+//COVERING
+
+"Radial_Security.Subordinate_Supp_Covering"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandGeneralIllCoverYou_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_Covering_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_Covering_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandGeneralIllCoverYou_1.ogg"		
+	}	
+}
+
+//HOSTILES
+
+"Radial_Security.Subordinate_Supp_Hostiles"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingTrailers_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_Hostiles_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_Hostiles_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingTrailers_1.ogg"		
+	}	
+}
+
+//MOVING
+
+"Radial_Security.Subordinate_Supp_Moving"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingLetsMove_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_Moving_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_Moving_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandRoomClearingLetsMove_1.ogg"		
+	}	
+}
+
+//ON THE WAY
+
+"Radial_Security.Subordinate_Supp_OnTheWay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseOnIt_1.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_OnTheWay_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_OnTheWay_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_CommandResponseOnIt_1.ogg"
+	}	
+}
+
+//TARGET DOWN
+
+"Radial_Security.Subordinate_Supp_TargetDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_3.ogg"			
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_TargetDown_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_TargetDown_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectDown_3.ogg"	
+	}	
+}
+
+//NORTH
+
+"Radial_Security.Subordinate_Supp_North"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_North_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_North_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//NORTH-EAST
+
+"Radial_Security.Subordinate_Supp_NorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_NorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_NorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//NORTH-WEST
+
+"Radial_Security.Subordinate_Supp_NorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_NorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_NorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//EAST
+
+"Radial_Security.Subordinate_Supp_East"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_East_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_East_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//SOUTH
+
+"Radial_Security.Subordinate_Supp_South"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_South_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_South_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//SOUTH-EAST
+
+"Radial_Security.Subordinate_Supp_SouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_SouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_SouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//SOUTH-WEST
+
+"Radial_Security.Subordinate_Supp_SouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_SouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_SouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//WEST
+
+"Radial_Security.Subordinate_Supp_West"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_Supp_West_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_Supp_West_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_3.ogg"
+		"wave"		"Swat4Sounds\OfficerRedOne\r1_ReportedSuspectSpotted_4.ogg"		
+	}	
+}
+
+//CEASE FIRE
+
+"Radial_Security.Leader_Supp_CeaseFire"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralWatchYourFire_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_CeaseFire_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_CeaseFire_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralWatchYourFire_1.ogg"
+	}	
+}
+
+//FLANK LEFT
+
+"Radial_Security.Leader_Supp_FlankLeft"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_FlankLeft_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_FlankLeft_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//FLANK RIGHT
+
+"Radial_Security.Leader_Supp_FlankRight"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_FlankRight_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_FlankRight_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//GET READY
+
+"Radial_Security.Leader_Supp_GetReady"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralTakePoint_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_GetReady_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_GetReady_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandGeneralTakePoint_1.ogg"
+	}	
+}
+
+//GO
+
+"Radial_Security.Leader_Supp_Go"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingGoGoGo_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_Go_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_Go_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingGoGoGo_1.ogg"
+	}	
+}
+
+//REPORT STATUS
+
+"Radial_Security.Leader_Supp_ReportStatus"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_ReportStatus_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_ReportStatus_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_AskedLeadToRestrain_3.ogg"
+	}	
+}
+
+//MOVE TO EAST
+
+"Radial_Security.Leader_Supp_MoveToEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_MoveToEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_MoveToEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO NORTH
+
+"Radial_Security.Leader_Supp_MoveToNorth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_MoveToNorth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_MoveToNorth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO NORTH-EAST
+
+"Radial_Security.Leader_Supp_MoveToNorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_MoveToNorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_MoveToNorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO NORTH-WEST
+
+"Radial_Security.Leader_Supp_MoveToNorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_MoveToNorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_MoveToNorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO SOUTH
+
+"Radial_Security.Leader_Supp_MoveToSouth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_MoveToSouth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_MoveToSouth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO SOUTH-EAST
+
+"Radial_Security.Leader_Supp_MoveToSouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_MoveToSouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_MoveToSouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO SOUTH-WEST
+
+"Radial_Security.Leader_Supp_MoveToSouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_MoveToSouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_MoveToSouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//MOVE TO WEST
+
+"Radial_Security.Leader_Supp_MoveToWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_MoveToWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_MoveToWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_CommandRoomClearingLetsMove_1.ogg"
+	}	
+}
+
+//OPEN FIRE EAST
+
+"Radial_Security.Leader_Supp_OpenFireEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_OpenFireEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_OpenFireEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE NORTH
+
+"Radial_Security.Leader_Supp_OpenFireNorth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_OpenFireNorth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_OpenFireNorth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE NORTH-EAST
+
+"Radial_Security.Leader_Supp_OpenFireNorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_OpenFireNorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_OpenFireNorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE NORTH-WEST
+
+"Radial_Security.Leader_Supp_OpenFireNorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_OpenFireNorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_OpenFireNorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE SOUTH
+
+"Radial_Security.Leader_Supp_OpenFireSouth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_OpenFireSouth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_OpenFireSouth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE SOUTH-EAST
+
+"Radial_Security.Leader_Supp_OpenFireSouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_OpenFireSouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_OpenFireSouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE SOUTH-WEST
+
+"Radial_Security.Leader_Supp_OpenFireSouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_OpenFireSouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_OpenFireSouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//OPEN FIRE WEST
+
+"Radial_Security.Leader_Supp_OpenFireWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_OpenFireWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_OpenFireWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_ReactedThirdShot_2.ogg"
+	}	
+}
+
+//WATCH EAST
+
+"Radial_Security.Leader_Supp_WatchEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_WatchEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_WatchEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH NORTH
+
+"Radial_Security.Leader_Supp_WatchNorth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_WatchNorth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_WatchNorth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH NORTH-EAST
+
+"Radial_Security.Leader_Supp_WatchNorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_WatchNorthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_WatchNorthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH NORTH-WEST
+
+"Radial_Security.Leader_Supp_WatchNorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_WatchNorthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_WatchNorthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH SOUTH
+
+"Radial_Security.Leader_Supp_WatchSouth"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_WatchSouth_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_WatchSouth_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH SOUTH-EAST
+
+"Radial_Security.Leader_Supp_WatchSouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_WatchSouthEast_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_WatchSouthEast_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH SOUTH-WEST
+
+"Radial_Security.Leader_Supp_WatchSouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_WatchSouthWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_WatchSouthWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//WATCH WEST
+
+"Radial_Security.Leader_Supp_WatchWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_Supp_WatchWest_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_Supp_WatchWest_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_1.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_2.ogg"
+		"wave"		"Swat4Sounds\OfficerRedTwo\r2_OrderedCover_3.ogg"
+	}	
+}
+
+//KNIFE KILL SEC LEADER
+
+"Radial_Security.Leader_UnSupp_EnemyDownKnife"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\ScriptedVO\ConvConv4_1_b1.ogg"
+		"wave"		"Swat4Sounds\ScriptedVO\ConvArms5_2_r1.ogg"
+		"wave"		"Swat4Sounds\ScriptedVO\ConvAbomb2_1_r1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Leader_UnSupp_EnemyDownKnife_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Leader_UnSupp_EnemyDownKnife_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\ScriptedVO\ConvConv4_1_b1.ogg"
+		"wave"		"Swat4Sounds\ScriptedVO\ConvArms5_2_r1.ogg"
+		"wave"		"Swat4Sounds\ScriptedVO\ConvAbomb2_1_r1.ogg"
+	}	
+}
+
+//KNIFE KILL SEC SUBORDINATE
+
+"Radial_Security.Subordinate_UnSupp_EnemyDownKnife"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\ScriptedVO\ConvConv4_1_b1.ogg"
+		"wave"		"Swat4Sounds\ScriptedVO\ConvArms5_2_r1.ogg"
+		"wave"		"Swat4Sounds\ScriptedVO\ConvAbomb2_1_r1.ogg"	
+	}	
+
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "1000"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Radial_Security.Subordinate_UnSupp_EnemyDownKnife_Radio"
+			}
+			
+
+        }
+	}
+}
+
+// Distant Radio Version
+
+"Radial_Security.Subordinate_UnSupp_EnemyDownKnife_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"Swat4Sounds\ScriptedVO\ConvConv4_1_b1.ogg"
+		"wave"		"Swat4Sounds\ScriptedVO\ConvArms5_2_r1.ogg"
+		"wave"		"Swat4Sounds\ScriptedVO\ConvAbomb2_1_r1.ogg"
+	}	
+}

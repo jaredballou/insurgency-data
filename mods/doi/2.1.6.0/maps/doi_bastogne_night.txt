@@ -1,0 +1,20 @@
+"#base" "doi_bastogne.txt"
+
+"cpsetup.txt"
+{
+	"theater_conditions"
+	{
+		"?nightmap"		"1"
+	}
+
+	"navfile"   		"doi_bastogne"
+	"nightlighting"		"1"
+	
+	"entities"
+	{
+		"?halloween"
+		{		
+		}
+	
+	}
+}
