@@ -1,0 +1,1387 @@
+// 
+// Squad Leader
+//
+
+// Request Artillery  
+Response German_Radial_RequestArtillery_Lead_UnSupp {
+	speak "Radial_German.SquadLead_UnSupp_RequestArtillery" noscene
+}
+
+Response German_Radial_RequestArtillery_Lead_Supp {
+	speak "Radial_German.SquadLead_Supp_RequestArtillery" noscene
+}
+
+Rule German_Radial_RequestArtillery_Lead_UnSupp {
+	criteria		ConceptRadialRequestArtillery IsSquadLeader IsGerman
+	ApplyContext 	"SuppressPainSound:1:3" // Suppress pain sounds for a second
+	response		German_Radial_RequestArtillery_Lead_UnSupp
+}	
+
+Rule German_Radial_RequestArtillery_Lead_Supp {
+	criteria		ConceptRadialRequestArtillery IsSquadLeader SuppressedRecent  IsGerman
+	ApplyContext 	"SuppressPainSound:1:3" // Suppress pain sounds for a second
+	response		German_Radial_RequestArtillery_Lead_Supp
+}	
+
+Response German_Radial_RequestArtillery_Smoke_Lead_UnSupp {
+	speak "Radial_German.SquadLead_UnSupp_RequestSmokeArtillery" noscene
+}
+
+Response German_Radial_RequestArtillery_Smoke_Lead_Supp {
+	speak "Radial_German.SquadLead_Supp_RequestSmokeArtillery" noscene
+}
+
+Rule German_Radial_RequestArtillery_Smoke_Lead_UnSupp {
+	criteria		ConceptRadialRequestArtillerySmoke IsSquadLeader IsGerman
+	ApplyContext 	"SuppressPainSound:1:3" // Suppress pain sounds for a second
+	response		German_Radial_RequestArtillery_Smoke_Lead_UnSupp
+}	
+
+Rule German_Radial_RequestArtillery_Smoke_Lead_Supp {
+	criteria		ConceptRadialRequestArtillerySmoke IsSquadLeader SuppressedRecent IsGerman
+	ApplyContext 	"SuppressPainSound:1:3" // Suppress pain sounds for a second
+	response		German_Radial_RequestArtillery_Smoke_Lead_Supp
+}	
+
+// Request Radio
+Response German_Radial_RequestRadio_UnSupp {
+	speak "Radial_German.SquadLead_UnSupp_RequestRadio" noscene
+}
+
+Response German_Radial_RequestRadio_Supp {
+	speak "Radial_German.SquadLead_Supp_RequestRadio" noscene
+}
+
+Rule German_Radial_RequestRadio_UnSupp {
+	criteria		ConceptRadialRequestRadio IsSquadLeader IsGerman
+	response		German_Radial_RequestRadio_UnSupp
+}	
+
+Rule German_Radial_RequestRadio_Supp {
+	criteria		ConceptRadialRequestRadio IsSquadLeader SuppressedRecent IsGerman
+	response		German_Radial_RequestRadio_Supp
+}	
+
+// Affirmative
+Response German_Lead_Affirmative
+{
+	speak			"Radial_German.SquadLead_UnSupp_Affirmative" noscene
+}
+Rule German_Lead_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsSquadLeader IsGerman
+	response		German_Lead_Affirmative
+}
+
+Response German_Lead_Affirmative_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Affirmative" noscene
+}
+Rule German_Lead_Affirmative_Supp
+{
+	criteria		ConceptRadialAffirmative IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_Affirmative_Supp
+}
+
+// Negative
+Response German_Lead_Negative
+{
+	speak			"Radial_German.SquadLead_UnSupp_Negative" noscene
+}
+Rule German_Lead_Negative
+{
+	criteria		ConceptRadialNegative IsSquadLeader IsGerman
+	response		German_Lead_Negative
+}
+
+Response German_Lead_Negative_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Negative" noscene
+}
+Rule German_Lead_Negative_Supp
+{
+	criteria		ConceptRadialNegative IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_Negative_Supp
+}
+
+// Enemy Down
+
+Response German_Lead_EnemyDown
+{
+	speak			"Radial_German.SquadLead_UnSupp_EnemyDown" noscene
+}
+Rule German_Lead_EnemyDown
+{
+	criteria		ConceptRadialEnemyDown IsSquadLeader IsGerman
+	response		German_Lead_EnemyDown
+}
+
+Response German_Lead_EnemyDown_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_EnemyDown" noscene
+}
+Rule German_Lead_EnemyDown_Supp
+{
+	criteria		ConceptRadialEnemyDown IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_EnemyDown_Supp
+}
+
+// Enemy Spotted
+
+Response German_Lead_EnemySpotted_N
+{
+	speak			"Radial_German.SquadLead_UnSupp_EnemySpotted_North" noscene
+}
+Response German_Lead_EnemySpotted_NE
+{
+	speak			"Radial_German.SquadLead_UnSupp_EnemySpotted_NorthEast" noscene
+}
+Response German_Lead_EnemySpotted_E
+{
+	speak			"Radial_German.SquadLead_UnSupp_EnemySpotted_East" noscene
+}
+Response German_Lead_EnemySpotted_SE
+{
+	speak			"Radial_German.SquadLead_UnSupp_EnemySpotted_SouthEast" noscene
+}
+Response German_Lead_EnemySpotted_S
+{
+	speak			"Radial_German.SquadLead_UnSupp_EnemySpotted_South" noscene
+}
+Response German_Lead_EnemySpotted_SW
+{
+	speak			"Radial_German.SquadLead_UnSupp_EnemySpotted_SouthWest" noscene
+}
+Response German_Lead_EnemySpotted_W
+{
+	speak			"Radial_German.SquadLead_UnSupp_EnemySpotted_West" noscene
+}
+Response German_Lead_EnemySpotted_NW
+{
+	speak			"Radial_German.SquadLead_UnSupp_EnemySpotted_NorthWest" noscene
+}
+
+Rule German_Lead_EnemySpotted_N
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman IsNorth
+	response		German_Lead_EnemySpotted_N
+}
+Rule German_Lead_EnemySpotted_NE
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman IsNorthEast
+	response		German_Lead_EnemySpotted_NE
+}
+Rule German_Lead_EnemySpotted_E
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman IsEast
+	response		German_Lead_EnemySpotted_E
+}
+Rule German_Lead_EnemySpotted_SE
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman IsSouthEast
+	response		German_Lead_EnemySpotted_SE
+}
+Rule German_Lead_EnemySpotted_S
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman IsSouth
+	response		German_Lead_EnemySpotted_S
+}
+Rule German_Lead_EnemySpotted_SW
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman IsSouthWest
+	response		German_Lead_EnemySpotted_SW
+}
+Rule German_Lead_EnemySpotted_W
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman IsWest
+	response		German_Lead_EnemySpotted_W
+}
+Rule German_Lead_EnemySpotted_NW
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman IsNorthWest
+	response		German_Lead_EnemySpotted_NW
+}
+
+Response German_Lead_EnemySpotted_Supp_N
+{
+	speak			"Radial_German.SquadLead_Supp_EnemySpotted_North" noscene
+}
+Response German_Lead_EnemySpotted_Supp_NE
+{
+	speak			"Radial_German.SquadLead_Supp_EnemySpotted_NorthEast" noscene
+}
+Response German_Lead_EnemySpotted_Supp_E
+{
+	speak			"Radial_German.SquadLead_Supp_EnemySpotted_East" noscene
+}
+Response German_Lead_EnemySpotted_Supp_SE
+{
+	speak			"Radial_German.SquadLead_Supp_EnemySpotted_SouthEast" noscene
+}
+Response German_Lead_EnemySpotted_Supp_S
+{
+	speak			"Radial_German.SquadLead_Supp_EnemySpotted_South" noscene
+}
+Response German_Lead_EnemySpotted_Supp_SW
+{
+	speak			"Radial_German.SquadLead_Supp_EnemySpotted_SouthWest" noscene
+}
+Response German_Lead_EnemySpotted_Supp_W
+{
+	speak			"Radial_German.SquadLead_Supp_EnemySpotted_West" noscene
+}
+Response German_Lead_EnemySpotted_Supp_NW
+{
+	speak			"Radial_German.SquadLead_Supp_EnemySpotted_NorthWest" noscene
+}
+
+Rule German_Lead_EnemySpotted_Supp_N
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman SuppressedRecent IsNorth
+	response		German_Lead_EnemySpotted_Supp_N
+}
+Rule German_Lead_EnemySpotted_Supp_NE
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman SuppressedRecent IsNorthEast
+	response		German_Lead_EnemySpotted_Supp_NE
+}
+Rule German_Lead_EnemySpotted_Supp_E
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman SuppressedRecent IsEast
+	response		German_Lead_EnemySpotted_Supp_E
+}
+Rule German_Lead_EnemySpotted_Supp_SE
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman SuppressedRecent IsSouthEast
+	response		German_Lead_EnemySpotted_Supp_SE
+}
+Rule German_Lead_EnemySpotted_Supp_S
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman SuppressedRecent IsSouth
+	response		German_Lead_EnemySpotted_Supp_S
+}
+Rule German_Lead_EnemySpotted_Supp_SW
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman SuppressedRecent IsSouthWest
+	response		German_Lead_EnemySpotted_Supp_SW
+}
+Rule German_Lead_EnemySpotted_Supp_W
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman SuppressedRecent IsWest
+	response		German_Lead_EnemySpotted_Supp_W
+}
+Rule German_Lead_EnemySpotted_Supp_NW
+{
+	criteria		ConceptRadialEnemy IsSquadLeader IsGerman SuppressedRecent IsNorthWest
+	response		German_Lead_EnemySpotted_Supp_NW
+}
+
+
+// Moving to objective
+
+Response German_Lead_MovingTo_A
+{
+	speak			"Radial_German.SquadLead_UnSupp_MovingToObjective_Able1" noscene
+}
+Rule German_Lead_MovingTo_A
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsAlpha
+	response		German_Lead_MovingTo_A
+}
+
+Response German_Lead_MovingTo_A_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MovingToObjective_Able1" noscene
+}
+Rule German_Lead_MovingTo_A_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsAlpha SuppressedRecent
+	response		German_Lead_MovingTo_A_Supp
+}
+
+Response German_Lead_MovingTo_B
+{
+	speak			"Radial_German.SquadLead_UnSupp_MovingToObjective_Baker1" noscene
+}
+Rule German_Lead_MovingTo_B
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsBravo
+	response		German_Lead_MovingTo_B
+}
+
+Response German_Lead_MovingTo_B_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MovingToObjective_Baker1" noscene
+}
+Rule German_Lead_MovingTo_B_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsBravo SuppressedRecent
+	response		German_Lead_MovingTo_B_Supp
+}
+
+Response German_Lead_MovingTo_C
+{
+	speak			"Radial_German.SquadLead_UnSupp_MovingToObjective_Charlie1" noscene
+}
+Rule German_Lead_MovingTo_C
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsCharlie
+	response		German_Lead_MovingTo_C
+}
+
+Response German_Lead_MovingTo_C_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MovingToObjective_Charlie1" noscene
+}
+Rule German_Lead_MovingTo_C_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsCharlie SuppressedRecent
+	response		German_Lead_MovingTo_C_Supp
+}
+
+Response German_Lead_MovingTo_D
+{
+	speak			"Radial_German.SquadLead_UnSupp_MovingToObjective_Dog1" noscene
+}
+Rule German_Lead_MovingTo_D
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsDelta
+	response		German_Lead_MovingTo_D
+}
+
+Response German_Lead_MovingTo_D_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MovingToObjective_Dog1" noscene
+}
+Rule German_Lead_MovingTo_D_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsDelta SuppressedRecent
+	response		German_Lead_MovingTo_D_Supp
+}
+
+Response German_Lead_MovingTo_E
+{
+	speak			"Radial_German.SquadLead_UnSupp_MovingToObjective_Easy1" noscene
+}
+Rule German_Lead_MovingTo_E
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsEcho
+	response		German_Lead_MovingTo_E
+}
+
+Response German_Lead_MovingTo_E_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MovingToObjective_Easy1" noscene
+}
+Rule German_Lead_MovingTo_E_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsEcho SuppressedRecent
+	response		German_Lead_MovingTo_E_Supp
+}
+
+Response German_Lead_MovingTo_F
+{
+	speak			"Radial_German.SquadLead_UnSupp_MovingToObjective_Fox1" noscene
+}
+Rule German_Lead_MovingTo_F
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsFoxtrot
+	response		German_Lead_MovingTo_F
+}
+
+Response German_Lead_MovingTo_F_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MovingToObjective_Fox1" noscene
+}
+Rule German_Lead_MovingTo_F_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsFoxtrot SuppressedRecent
+	response		German_Lead_MovingTo_F_Supp
+}
+
+Response German_Lead_MovingTo_G
+{
+	speak			"Radial_German.SquadLead_UnSupp_MovingToObjective_George1" noscene
+}
+Rule German_Lead_MovingTo_G
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsGolf
+	response		German_Lead_MovingTo_G
+}
+
+Response German_Lead_MovingTo_G_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MovingToObjective_George1" noscene
+}
+Rule German_Lead_MovingTo_G_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsSquadLeader IsGolf SuppressedRecent
+	response		German_Lead_MovingTo_G_Supp
+}
+
+// Flank Left
+
+Response German_Lead_FlankLeft { 
+	speak "Radial_German.SquadLead_UnSupp_Flank_Left" noscene 
+}
+Rule German_Lead_FlankLeft {
+	criteria		ConceptRadialFlankLeft IsSquadLeader IsGerman
+	response		German_Lead_FlankLeft
+}
+
+Response German_Lead_FlankLeft_Supp { 
+	speak "Radial_German.SquadLead_Supp_Flank_Left" noscene 
+}
+Rule German_Lead_FlankLeft_Supp {
+	criteria		ConceptRadialFlankLeft IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_FlankLeft_Supp
+}
+
+// Flank Right
+
+Response German_Lead_FlankRight { 
+	speak "Radial_German.SquadLead_UnSupp_Flank_Right" noscene 
+}
+Rule German_Lead_FlankRight {
+	criteria		ConceptRadialFlankRight IsSquadLeader IsGerman
+	response		German_Lead_FlankRight
+}
+
+Response German_Lead_FlankRight_Supp { 
+	speak "Radial_German.SquadLead_Supp_Flank_Right" noscene 
+}
+Rule German_Lead_FlankRight_Supp {
+	criteria		ConceptRadialFlankRight IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_FlankRight_Supp
+}
+
+// Go
+
+Response German_Lead_Go { 
+	speak "Radial_German.SquadLead_UnSupp_Go" noscene 
+}
+
+Rule German_Lead_Go {
+	criteria		ConceptRadialGo IsSquadLeader IsGerman 
+	response		German_Lead_Go
+}
+
+Response German_Lead_Go_Supp { 
+	speak "Radial_German.SquadLead_Supp_Go" noscene 
+}
+
+Rule German_Lead_Go_Supp {
+	criteria		ConceptRadialGo IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_Go_Supp
+}
+
+// Hold Position
+
+Response German_Lead_HoldPosition { 
+	speak "Radial_German.SquadLead_UnSupp_HoldPosition" noscene 
+}
+
+Rule German_Lead_HoldPosition {
+	criteria		ConceptRadialHoldPosition IsSquadLeader IsGerman 
+	response		German_Lead_HoldPosition
+}
+
+Response German_Lead_HoldPosition_Supp { 
+	speak "Radial_German.SquadLead_Supp_HoldPosition" noscene 
+}
+
+Rule German_Lead_HoldPosition_Supp {
+	criteria		ConceptRadialHoldPosition IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_HoldPosition_Supp
+}
+
+// Move Direction
+
+Response German_Lead_Move_N
+{
+	speak			"Radial_German.SquadLead_UnSupp_Move_North" noscene
+}
+Response German_Lead_Move_NE
+{
+	speak			"Radial_German.SquadLead_UnSupp_Move_NorthEast" noscene
+}
+Response German_Lead_Move_E
+{
+	speak			"Radial_German.SquadLead_UnSupp_Move_East" noscene
+}
+Response German_Lead_Move_SE
+{
+	speak			"Radial_German.SquadLead_UnSupp_Move_SouthEast" noscene
+}
+Response German_Lead_Move_S
+{
+	speak			"Radial_German.SquadLead_UnSupp_Move_South" noscene
+}
+Response German_Lead_Move_SW
+{
+	speak			"Radial_German.SquadLead_UnSupp_Move_SouthWest" noscene
+}
+Response German_Lead_Move_W
+{
+	speak			"Radial_German.SquadLead_UnSupp_Move_West" noscene
+}
+Response German_Lead_Move_NW
+{
+	speak			"Radial_German.SquadLead_UnSupp_Move_NorthWest" noscene
+}
+
+Rule German_Lead_Move_N
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsNorth
+	response		German_Lead_Move_N
+}
+Rule German_Lead_Move_NE
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsNorthEast
+	response		German_Lead_Move_NE
+}
+Rule German_Lead_Move_E
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsEast
+	response		German_Lead_Move_E
+}
+Rule German_Lead_Move_SE
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsSouthEast
+	response		German_Lead_Move_SE
+}
+Rule German_Lead_Move_S
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsSouth
+	response		German_Lead_Move_S
+}
+Rule German_Lead_Move_SW
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsSouthWest
+	response		German_Lead_Move_SW
+}
+Rule German_Lead_Move_W
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsWest
+	response		German_Lead_Move_W
+}
+Rule German_Lead_Move_NW
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsNorthWest
+	response		German_Lead_Move_NW
+}
+
+Response German_Lead_Move_N_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Move_North" noscene
+}
+Response German_Lead_Move_NE_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Move_NorthEast" noscene
+}
+Response German_Lead_Move_E_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Move_East" noscene
+}
+Response German_Lead_Move_SE_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Move_SouthEast" noscene
+}
+Response German_Lead_Move_S_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Move_South" noscene
+}
+Response German_Lead_Move_SW_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Move_SouthWest" noscene
+}
+Response German_Lead_Move_W_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Move_West" noscene
+}
+Response German_Lead_Move_NW_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_Move_NorthWest" noscene
+}
+
+Rule German_Lead_Move_N_Supp
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsNorth SuppressedRecent
+	response		German_Lead_Move_N_Supp
+}
+Rule German_Lead_Move_NE_Supp
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsNorthEast SuppressedRecent
+	response		German_Lead_Move_NE_Supp
+}
+Rule German_Lead_Move_E_Supp
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsEast SuppressedRecent
+	response		German_Lead_Move_E_Supp
+}
+Rule German_Lead_Move_SE_Supp
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsSouthEast SuppressedRecent
+	response		German_Lead_Move_SE_Supp
+}
+Rule German_Lead_Move_S_Supp
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsSouth SuppressedRecent
+	response		German_Lead_Move_S_Supp
+}
+Rule German_Lead_Move_SW_Supp
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsSouthWest SuppressedRecent
+	response		German_Lead_Move_SW_Supp
+}
+Rule German_Lead_Move_W_Supp
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsWest SuppressedRecent
+	response		German_Lead_Move_W_Supp
+}
+Rule German_Lead_Move_NW_Supp
+{
+	criteria		ConceptRadialMoving IsSquadLeader IsGerman IsNorthWest SuppressedRecent
+	response		German_Lead_Move_NW_Supp
+}
+
+// Move to objective
+
+Response German_Lead_MoveTo_A
+{
+	speak			"Radial_German.SquadLead_UnSupp_MoveToObjective_Able" noscene
+}
+Rule German_Lead_MoveTo_A
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsAlpha
+	response		German_Lead_MoveTo_A
+}
+
+Response German_Lead_MoveTo_A_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MoveToObjective_Able" noscene
+}
+Rule German_Lead_MoveTo_A_Supp
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsAlpha SuppressedRecent
+	response		German_Lead_MoveTo_A_Supp
+}
+
+Response German_Lead_MoveTo_B
+{
+	speak			"Radial_German.SquadLead_UnSupp_MoveToObjective_Baker" noscene
+}
+Rule German_Lead_MoveTo_B
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsBravo
+	response		German_Lead_MoveTo_B
+}
+
+Response German_Lead_MoveTo_B_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MoveToObjective_Baker" noscene
+}
+Rule German_Lead_MoveTo_B_Supp
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsBravo SuppressedRecent
+	response		German_Lead_MoveTo_B_Supp
+}
+
+Response German_Lead_MoveTo_C
+{
+	speak			"Radial_German.SquadLead_UnSupp_MoveToObjective_Charlie" noscene
+}
+Rule German_Lead_MoveTo_C
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsCharlie
+	response		German_Lead_MoveTo_C
+}
+
+Response German_Lead_MoveTo_C_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MoveToObjective_Charlie" noscene
+}
+Rule German_Lead_MoveTo_C_Supp
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsCharlie SuppressedRecent
+	response		German_Lead_MoveTo_C_Supp
+}
+
+Response German_Lead_MoveTo_D
+{
+	speak			"Radial_German.SquadLead_UnSupp_MoveToObjective_Dog" noscene
+}
+Rule German_Lead_MoveTo_D
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsDelta
+	response		German_Lead_MoveTo_D
+}
+
+Response German_Lead_MoveTo_D_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MoveToObjective_Dog" noscene
+}
+Rule German_Lead_MoveTo_D_Supp
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsDelta SuppressedRecent
+	response		German_Lead_MoveTo_D_Supp
+}
+
+Response German_Lead_MoveTo_E
+{
+	speak			"Radial_German.SquadLead_UnSupp_MoveToObjective_Easy" noscene
+}
+Rule German_Lead_MoveTo_E
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsEcho
+	response		German_Lead_MoveTo_E
+}
+
+Response German_Lead_MoveTo_E_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MoveToObjective_Easy" noscene
+}
+Rule German_Lead_MoveTo_E_Supp
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsEcho SuppressedRecent
+	response		German_Lead_MoveTo_E_Supp
+}
+
+Response German_Lead_MoveTo_F
+{
+	speak			"Radial_German.SquadLead_UnSupp_MoveToObjective_Fox" noscene
+}
+Rule German_Lead_MoveTo_F
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsFoxtrot
+	response		German_Lead_MoveTo_F
+}
+
+Response German_Lead_MoveTo_F_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MoveToObjective_Fox" noscene
+}
+Rule German_Lead_MoveTo_F_Supp
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsFoxtrot SuppressedRecent
+	response		German_Lead_MoveTo_F_Supp
+}
+
+Response German_Lead_MoveTo_G
+{
+	speak			"Radial_German.SquadLead_UnSupp_MoveToObjective_George" noscene
+}
+Rule German_Lead_MoveTo_G
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsGolf
+	response		German_Lead_MoveTo_G
+}
+
+Response German_Lead_MoveTo_G_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_MoveToObjective_George" noscene
+}
+Rule German_Lead_MoveTo_G_Supp
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGerman IsGolf SuppressedRecent
+	response		German_Lead_MoveTo_G_Supp
+}
+
+// Need Ammo
+
+Response German_Lead_NeedAmmo { 
+	speak "Radial_German.SquadLead_UnSupp_NeedAmmo" noscene 
+}
+Rule German_Lead_NeedAmmo {
+	criteria		ConceptRadialRequestAmmo IsSquadLeader IsGerman
+	response		German_Lead_NeedAmmo
+}
+
+Response German_Lead_NeedAmmo_Supp { 
+	speak "Radial_German.SquadLead_Supp_NeedAmmo" noscene 
+}
+Rule German_Lead_NeedAmmo_Supp {
+	criteria		ConceptRadialRequestAmmo IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_NeedAmmo_Supp
+}
+
+// Need Backup
+
+Response German_Lead_NeedBackup { 
+	speak "Radial_German.SquadLead_UnSupp_NeedBackup" noscene 
+}
+Rule German_Lead_NeedBackup {
+	criteria		ConceptRadialBackup IsSquadLeader IsGerman
+	response		German_Lead_NeedBackup
+}
+
+Response German_Lead_NeedBackup_Supp { 
+	speak "Radial_German.SquadLead_Supp_NeedBackup" noscene 
+}
+Rule German_Lead_NeedBackup_Supp {
+	criteria		ConceptRadialBackup IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_NeedBackup_Supp
+}
+
+// Need Smoke
+
+Response German_Lead_NeedSmoke { 
+	speak "Radial_German.SquadLead_UnSupp_NeedSmoke" noscene 
+}
+Rule German_Lead_NeedSmoke {
+	criteria		ConceptRadialRequestSmoke IsSquadLeader IsGerman
+	response		German_Lead_NeedSmoke
+}
+
+Response German_Lead_NeedSmoke_Supp { 
+	speak "Radial_German.SquadLead_Supp_NeedSmoke" noscene 
+}
+Rule German_Lead_NeedSmoke_Supp {
+	criteria		ConceptRadialRequestSmoke IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_NeedSmoke_Supp
+}
+
+// On The Way
+
+Response German_Lead_OnTheWay
+{
+	speak			"Radial_German.SquadLead_UnSupp_OnTheWay" noscene
+}
+Rule German_Lead_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsSquadLeader IsGerman
+	response		German_Lead_OnTheWay
+}
+
+Response German_Lead_OnTheWay_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_OnTheWay" noscene
+}
+Rule German_Lead_OnTheWay_Supp
+{
+	criteria		ConceptRadialOnTheWay IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_OnTheWay_Supp
+}
+
+// Spread out
+
+Response German_Lead_SpreadOut
+{
+	speak			"Radial_German.SquadLead_UnSupp_SpreadOut" noscene
+}
+Rule German_Lead_SpreadOut
+{
+	criteria		ConceptRadialSpreadOut IsSquadLeader IsGerman
+	response		German_Lead_SpreadOut
+}
+
+Response German_Lead_SpreadOut_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_SpreadOut" noscene
+}
+Rule German_Lead_SpreadOut_Supp
+{
+	criteria		ConceptRadialSpreadOut IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_SpreadOut_Supp
+}
+
+// Request Status
+
+Response German_Lead_ReportStatus
+{
+	speak			"Radial_German.SquadLead_UnSupp_RequestStatus" noscene
+}
+Rule German_Lead_ReportStatus
+{
+	criteria		ConceptRadialReportStatus IsSquadLeader IsGerman
+	response		German_Lead_ReportStatus
+}
+
+Response German_Lead_ReportStatus_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_RequestStatus" noscene
+}
+Rule German_Lead_ReportStatus_Supp
+{
+	criteria		ConceptRadialReportStatus IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_ReportStatus_Supp
+}
+
+// Stick Together
+
+Response German_Lead_StickTogether
+{
+	speak			"Radial_German.SquadLead_UnSupp_StickTogether" noscene
+}
+Rule German_Lead_StickTogether
+{
+	criteria		ConceptRadialStickTogether IsSquadLeader IsGerman
+	response		German_Lead_StickTogether
+}
+
+Response German_Lead_StickTogether_Supp
+{
+	speak			"Radial_German.SquadLead_Supp_StickTogether" noscene
+}
+Rule German_Lead_StickTogether_Supp
+{
+	criteria		ConceptRadialStickTogether IsSquadLeader IsGerman SuppressedRecent
+	response		German_Lead_StickTogether_Supp
+}
+
+
+
+
+// 
+// Subordinate
+//
+
+
+
+
+
+// Affirmative
+Response German_Sub_Affirmative
+{
+	speak			"Radial_German.Subordinate_UnSupp_Affirmative1" noscene
+	speak			"Radial_German.Subordinate_UnSupp_Affirmative2" noscene
+}
+Rule German_Sub_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsGerman IsNotSquadLeader
+	response		German_Sub_Affirmative
+}
+
+Response German_Sub_Affirmative_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_Affirmative1" noscene
+	speak			"Radial_German.Subordinate_Supp_Affirmative2" noscene
+}
+Rule German_Sub_Affirmative_Supp
+{
+	criteria		ConceptRadialAffirmative IsGerman IsNotSquadLeader SuppressedRecent
+	response		German_Sub_Affirmative_Supp
+}
+
+// Negative
+Response German_Sub_Negative
+{
+	speak			"Radial_German.Subordinate_UnSupp_Negative1" noscene
+	speak			"Radial_German.Subordinate_UnSupp_Negative2" noscene
+}
+Rule German_Sub_Negative
+{
+	criteria		ConceptRadialNegative IsGerman IsNotSquadLeader
+	response		German_Sub_Negative
+}
+
+Response German_Sub_Negative_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_Negative1" noscene
+	speak			"Radial_German.Subordinate_Supp_Negative2" noscene
+}
+Rule German_Sub_Negative_Supp
+{
+	criteria		ConceptRadialNegative IsGerman IsNotSquadLeader SuppressedRecent
+	response		German_Sub_Negative_Supp
+}
+
+// Enemy Down
+
+Response German_Sub_EnemyDown
+{
+	speak			"Radial_German.Subordinate_UnSupp_EnemyDown1" noscene
+	speak			"Radial_German.Subordinate_UnSupp_EnemyDown2" noscene
+}
+Rule German_Sub_EnemyDown
+{
+	criteria		ConceptRadialEnemyDown IsGerman IsNotSquadLeader
+	response		German_Sub_EnemyDown
+}
+
+Response German_Sub_EnemyDown_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_EnemyDown1" noscene
+	speak			"Radial_German.Subordinate_Supp_EnemyDown2" noscene
+}
+Rule German_Sub_EnemyDown_Supp
+{
+	criteria		ConceptRadialEnemyDown IsGerman IsNotSquadLeader SuppressedRecent
+	response		German_Sub_EnemyDown_Supp
+}
+
+// Enemy Spotted
+
+Response German_Sub_EnemySpotted_N
+{
+	speak			"Radial_German.Subordinate_UnSupp_EnemySpotted_North1" noscene
+}
+Response German_Sub_EnemySpotted_NE
+{
+	speak			"Radial_German.Subordinate_UnSupp_EnemySpotted_NorthEast1" noscene
+}
+Response German_Sub_EnemySpotted_E
+{
+	speak			"Radial_German.Subordinate_UnSupp_EnemySpotted_East1" noscene
+}
+Response German_Sub_EnemySpotted_SE
+{
+	speak			"Radial_German.Subordinate_UnSupp_EnemySpotted_SouthEast1" noscene
+}
+Response German_Sub_EnemySpotted_S
+{
+	speak			"Radial_German.Subordinate_UnSupp_EnemySpotted_South1" noscene
+}
+Response German_Sub_EnemySpotted_SW
+{
+	speak			"Radial_German.Subordinate_UnSupp_EnemySpotted_SouthWest1" noscene
+}
+Response German_Sub_EnemySpotted_W
+{
+	speak			"Radial_German.Subordinate_UnSupp_EnemySpotted_West1" noscene
+}
+Response German_Sub_EnemySpotted_NW
+{
+	speak			"Radial_German.Subordinate_UnSupp_EnemySpotted_NorthWest1" noscene
+}
+
+Rule German_Sub_EnemySpotted_N
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader IsNorth
+	response		German_Sub_EnemySpotted_N
+}
+Rule German_Sub_EnemySpotted_NE
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader IsNorthEast
+	response		German_Sub_EnemySpotted_NE
+}
+Rule German_Sub_EnemySpotted_E
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader IsEast
+	response		German_Sub_EnemySpotted_E
+}
+Rule German_Sub_EnemySpotted_SE
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader IsSouthEast
+	response		German_Sub_EnemySpotted_SE
+}
+Rule German_Sub_EnemySpotted_S
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader IsSouth
+	response		German_Sub_EnemySpotted_S
+}
+Rule German_Sub_EnemySpotted_SW
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader IsSouthWest
+	response		German_Sub_EnemySpotted_SW
+}
+Rule German_Sub_EnemySpotted_W
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader IsWest
+	response		German_Sub_EnemySpotted_W
+}
+Rule German_Sub_EnemySpotted_NW
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader IsNorthWest
+	response		German_Sub_EnemySpotted_NW
+}
+
+Response German_Sub_EnemySpotted_Supp_N
+{
+	speak			"Radial_German.Subordinate_Supp_EnemySpotted_North1" noscene
+}
+Response German_Sub_EnemySpotted_Supp_NE
+{
+	speak			"Radial_German.Subordinate_Supp_EnemySpotted_NorthEast1" noscene
+}
+Response German_Sub_EnemySpotted_Supp_E
+{
+	speak			"Radial_German.Subordinate_Supp_EnemySpotted_East1" noscene
+}
+Response German_Sub_EnemySpotted_Supp_SE
+{
+	speak			"Radial_German.Subordinate_Supp_EnemySpotted_SouthEast1" noscene
+}
+Response German_Sub_EnemySpotted_Supp_S
+{
+	speak			"Radial_German.Subordinate_Supp_EnemySpotted_South1" noscene
+}
+Response German_Sub_EnemySpotted_Supp_SW
+{
+	speak			"Radial_German.Subordinate_Supp_EnemySpotted_SouthWest1" noscene
+}
+Response German_Sub_EnemySpotted_Supp_W
+{
+	speak			"Radial_German.Subordinate_Supp_EnemySpotted_West1" noscene
+}
+Response German_Sub_EnemySpotted_Supp_NW
+{
+	speak			"Radial_German.Subordinate_Supp_EnemySpotted_NorthWest1" noscene
+}
+
+Rule German_Sub_EnemySpotted_Supp_N
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader SuppressedRecent IsNorth
+	response		German_Sub_EnemySpotted_Supp_N
+}
+Rule German_Sub_EnemySpotted_Supp_NE
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader SuppressedRecent IsNorthEast
+	response		German_Sub_EnemySpotted_Supp_NE
+}
+Rule German_Sub_EnemySpotted_Supp_E
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader SuppressedRecent IsEast
+	response		German_Sub_EnemySpotted_Supp_E
+}
+Rule German_Sub_EnemySpotted_Supp_SE
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader SuppressedRecent IsSouthEast
+	response		German_Sub_EnemySpotted_Supp_SE
+}
+Rule German_Sub_EnemySpotted_Supp_S
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader SuppressedRecent IsSouth
+	response		German_Sub_EnemySpotted_Supp_S
+}
+Rule German_Sub_EnemySpotted_Supp_SW
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader SuppressedRecent IsSouthWest
+	response		German_Sub_EnemySpotted_Supp_SW
+}
+Rule German_Sub_EnemySpotted_Supp_W
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader SuppressedRecent IsWest
+	response		German_Sub_EnemySpotted_Supp_W
+}
+Rule German_Sub_EnemySpotted_Supp_NW
+{
+	criteria		ConceptRadialEnemy IsGerman IsNotSquadLeader SuppressedRecent IsNorthWest
+	response		German_Sub_EnemySpotted_Supp_NW
+}
+
+// Moving to objective
+
+Response German_Sub_MovingTo_A
+{
+	speak			"Radial_German.Subordinate_UnSupp_MovingToObjective_Able1" noscene
+}
+Rule German_Sub_MovingTo_A
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsAlpha
+	response		German_Sub_MovingTo_A
+}
+
+Response German_Sub_MovingTo_A_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_MovingToObjective_Able1" noscene
+}
+Rule German_Sub_MovingTo_A_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsAlpha SuppressedRecent
+	response		German_Sub_MovingTo_A_Supp
+}
+
+Response German_Sub_MovingTo_B
+{
+	speak			"Radial_German.Subordinate_UnSupp_MovingToObjective_Baker1" noscene
+}
+Rule German_Sub_MovingTo_B
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsBravo
+	response		German_Sub_MovingTo_B
+}
+
+Response German_Sub_MovingTo_B_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_MovingToObjective_Baker1" noscene
+}
+Rule German_Sub_MovingTo_B_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsBravo SuppressedRecent
+	response		German_Sub_MovingTo_B_Supp
+}
+
+Response German_Sub_MovingTo_C
+{
+	speak			"Radial_German.Subordinate_UnSupp_MovingToObjective_Charlie1" noscene
+}
+Rule German_Sub_MovingTo_C
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsCharlie
+	response		German_Sub_MovingTo_C
+}
+
+Response German_Sub_MovingTo_C_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_MovingToObjective_Charlie1" noscene
+}
+Rule German_Sub_MovingTo_C_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsCharlie SuppressedRecent
+	response		German_Sub_MovingTo_C_Supp
+}
+
+Response German_Sub_MovingTo_D
+{
+	speak			"Radial_German.Subordinate_UnSupp_MovingToObjective_Dog1" noscene
+}
+Rule German_Sub_MovingTo_D
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsDelta
+	response		German_Sub_MovingTo_D
+}
+
+Response German_Sub_MovingTo_D_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_MovingToObjective_Dog1" noscene
+}
+Rule German_Sub_MovingTo_D_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsDelta SuppressedRecent
+	response		German_Sub_MovingTo_D_Supp
+}
+
+Response German_Sub_MovingTo_E
+{
+	speak			"Radial_German.Subordinate_UnSupp_MovingToObjective_Easy1" noscene
+}
+Rule German_Sub_MovingTo_E
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsEcho
+	response		German_Sub_MovingTo_E
+}
+
+Response German_Sub_MovingTo_E_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_MovingToObjective_Easy1" noscene
+}
+Rule German_Sub_MovingTo_E_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsEcho SuppressedRecent
+	response		German_Sub_MovingTo_E_Supp
+}
+
+Response German_Sub_MovingTo_F
+{
+	speak			"Radial_German.Subordinate_UnSupp_MovingToObjective_Fox1" noscene
+}
+Rule German_Sub_MovingTo_F
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsFoxtrot
+	response		German_Sub_MovingTo_F
+}
+
+Response German_Sub_MovingTo_F_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_MovingToObjective_Fox1" noscene
+}
+Rule German_Sub_MovingTo_F_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsFoxtrot SuppressedRecent
+	response		German_Sub_MovingTo_F_Supp
+}
+
+Response German_Sub_MovingTo_G
+{
+	speak			"Radial_German.Subordinate_UnSupp_MovingToObjective_George1" noscene
+}
+Rule German_Sub_MovingTo_G
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsGolf
+	response		German_Sub_MovingTo_G
+}
+
+Response German_Sub_MovingTo_G_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_MovingToObjective_George1" noscene
+}
+Rule German_Sub_MovingTo_G_Supp
+{
+	criteria		ConceptRadialMovingToObjective IsGerman IsNotSquadLeader IsGolf SuppressedRecent
+	response		German_Sub_MovingTo_G_Supp
+}
+
+// Need Ammo
+
+Response German_Sub_NeedAmmo { 
+	speak "Radial_German.Subordinate_UnSupp_NeedAmmo1" noscene 
+	speak "Radial_German.Subordinate_UnSupp_NeedAmmo2" noscene 
+}
+Rule German_Sub_NeedAmmo {
+	criteria		ConceptRadialRequestAmmo IsGerman IsNotSquadLeader
+	response		German_Sub_NeedAmmo
+}
+
+Response German_Sub_NeedAmmo_Supp { 
+	speak "Radial_German.Subordinate_Supp_NeedAmmo1" noscene 
+	speak "Radial_German.Subordinate_Supp_NeedAmmo2" noscene 
+}
+Rule German_Sub_NeedAmmo_Supp {
+	criteria		ConceptRadialRequestAmmo IsGerman IsNotSquadLeader SuppressedRecent
+	response		German_Sub_NeedAmmo_Supp
+}
+
+// Need Backup
+
+Response German_Sub_NeedBackup { 
+	speak "Radial_German.Subordinate_UnSupp_NeedBackup1" noscene 
+	speak "Radial_German.Subordinate_UnSupp_NeedBackup2" noscene 
+}
+Rule German_Sub_NeedBackup {
+	criteria		ConceptRadialBackup IsGerman IsNotSquadLeader
+	response		German_Sub_NeedBackup
+}
+
+Response German_Sub_NeedBackup_Supp { 
+	speak "Radial_German.Subordinate_Supp_NeedBackup1" noscene 
+	speak "Radial_German.Subordinate_Supp_NeedBackup2" noscene 
+}
+Rule German_Sub_NeedBackup_Supp {
+	criteria		ConceptRadialBackup IsGerman IsNotSquadLeader SuppressedRecent
+	response		German_Sub_NeedBackup_Supp
+}
+
+// Need Smoke
+
+Response German_Sub_NeedSmoke { 
+	speak "Radial_German.Subordinate_UnSupp_NeedSmoke1" noscene 
+	speak "Radial_German.Subordinate_UnSupp_NeedSmoke2" noscene 
+}
+Rule German_Sub_NeedSmoke {
+	criteria		ConceptRadialRequestSmoke IsGerman IsNotSquadLeader
+	response		German_Sub_NeedSmoke
+}
+
+Response German_Sub_NeedSmoke_Supp { 
+	speak "Radial_German.Subordinate_Supp_NeedSmoke1" noscene 
+	speak "Radial_German.Subordinate_Supp_NeedSmoke2" noscene 
+}
+Rule German_Sub_NeedSmoke_Supp {
+	criteria		ConceptRadialRequestSmoke IsGerman IsNotSquadLeader SuppressedRecent
+	response		German_Sub_NeedSmoke_Supp
+}
+
+// On The Way
+
+Response German_Sub_OnTheWay
+{
+	speak			"Radial_German.Subordinate_UnSupp_OnTheWay1" noscene
+	speak			"Radial_German.Subordinate_UnSupp_OnTheWay2" noscene
+}
+Rule German_Sub_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsGerman IsNotSquadLeader
+	response		German_Sub_OnTheWay
+}
+
+Response German_Sub_OnTheWay_Supp
+{
+	speak			"Radial_German.Subordinate_Supp_OnTheWay1" noscene
+	speak			"Radial_German.Subordinate_Supp_OnTheWay2" noscene
+}
+Rule German_Sub_OnTheWay_Supp
+{
+	criteria		ConceptRadialOnTheWay IsGerman IsNotSquadLeader SuppressedRecent
+	response		German_Sub_OnTheWay_Supp
+}

@@ -1,0 +1,680 @@
+// Enemy spotted
+Response BotInsurgentCoop_Enemy
+{
+	PermitRepeats
+	speak			"Bot.PH_I.OpenFire" noscene predelay "0.0,0.5" odds 60
+}
+
+Rule BotInsurgentCoop_Enemy
+{
+	criteria		ConceptRadialEnemy OnTeamTwo IsCoopEnemyWeight HasNearbyTeammates
+	response		BotInsurgentCoop_Enemy
+}	
+
+// Idle
+Response BotInsurgentCoop_Idle
+{
+	PermitRepeats
+	speak			"Bot.PH_I.Idle" noscene odds 25
+}
+
+Rule BotInsurgentCoop_Idle
+{
+	criteria		ConceptPlayerIdle OnTeamTwo IsCoopEnemyWeight HasNearbyTeammates
+	response		BotInsurgentCoop_Idle
+}	
+
+// Flashed
+Response BotInsurgentCoop_Flashed
+{
+	PermitRepeats
+	speak			"Bot.PH_I.Blinded" noscene predelay "0.5,1.0" odds 80 respeakdelay "3.0"
+}
+
+Rule BotInsurgentCoop_Flashed
+{
+	criteria		ConceptFlashed OnTeamTwo IsCoopEnemyWeight
+	response		BotInsurgentCoop_Flashed
+}	
+
+// LostSight
+Response BotInsurgentCoop_LostSight
+{
+	PermitRepeats
+	speak			"Bot.PH_I.InvestigateAggressive" noscene predelay "0.0,0.75" odds 20 respeakdelay "8.0"
+}
+
+Rule BotInsurgentCoop_LostSight
+{
+	criteria		ConceptCoopBotLostSight OnTeamTwo IsCoopEnemyWeight
+	response		BotInsurgentCoop_LostSight
+}	
+
+
+
+// Flashed - TLK_FLASHED
+Response BotSecurityCoop_Flashed_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.Blinded" noscene predelay "0.5,1.0" odds 80 respeakdelay "3.0"
+}
+
+Rule BotSecurityCoop_Flashed_Lead
+{
+	criteria		ConceptFlashed OnTeamOne IsSquadLeader
+	response		BotSecurityCoop_Flashed_Lead
+}
+
+Response BotSecurityCoop_Flashed_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.Blinded" noscene predelay "0.5,1.0" odds 80 respeakdelay "3.0"
+}
+Rule BotSecurityCoop_Flashed_Sub
+{
+	criteria		ConceptFlashed OnTeamOne IsNotSquadLeader
+	response		BotSecurityCoop_Flashed_Sub
+}
+
+// HeardSomething - TLK_HEARD_SOMETHING
+Response BotSecurityCoop_HeardSomething_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.HeardSomething" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 40
+}
+
+Rule BotSecurityCoop_HeardSomething_Lead
+{
+	criteria		ConceptHeardSomething OnTeamOne IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_HeardSomething_Lead
+}
+
+Response BotSecurityCoop_HeardSomething_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.HeardSomething" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 30
+}
+Rule BotSecurityCoop_HeardSomething_Sub
+{
+	criteria		ConceptHeardSomething OnTeamOne IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_HeardSomething_Sub
+}
+
+
+//InvestigateAggressive TLK_INVESTIGATE_AGGRESSIVE
+Response BotSecurityCoop_InvestigateAggressive_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.AggressiveInvestigation" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 20
+}
+
+Rule BotSecurityCoop_InvestigateAggressive_Lead
+{
+	criteria		ConceptInvestigateAggressive OnTeamOne IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_InvestigateAggressive_Lead
+}
+
+Response BotSecurityCoop_InvestigateAggressive_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.AggressiveInvestigation" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 20
+}
+Rule BotSecurityCoop_InvestigateAggressive_Sub
+{
+	criteria		ConceptInvestigateAggressive OnTeamOne IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_InvestigateAggressive_Sub
+}
+
+
+//FlashlightSpotted TLK_FLASHLIGHT_SPOTTED
+Response BotSecurityCoop_FlashlightSpotted_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.FlashLightSpotted" noscene predelay "0.5,2.0" respeakdelay "5.0,6.0" odds 50
+}
+
+Rule BotSecurityCoop_FlashlightSpotted_Lead
+{
+	criteria		ConceptFlashlightSpotted OnTeamOne IsSquadLeader
+	response		BotSecurityCoop_FlashlightSpotted_Lead
+}
+
+Response BotSecurityCoop_FlashlightSpotted_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.FlashLightSpotted" noscene predelay "0.5,2.0" respeakdelay "5.0,6.0" odds 50
+}
+Rule BotSecurityCoop_FlashlightSpotted_Sub
+{
+	criteria		ConceptFlashlightSpotted OnTeamOne IsNotSquadLeader
+	response		BotSecurityCoop_FlashlightSpotted_Sub
+}
+
+//Investigate TLK_INVESTIGATE
+Response BotSecurityCoop_Investigate_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.BeginInvestigate" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 20
+}
+
+Rule BotSecurityCoop_Investigate_Lead
+{
+	criteria		ConceptInvestigate OnTeamOne IsSquadLeader
+	response		BotSecurityCoop_Investigate_Lead
+}
+
+Response BotSecurityCoop_Investigate_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.BeginInvestigate" noscene predelay "1.5,3.0" respeakdelay "5.0,10.0" odds 20
+}
+Rule BotSecurityCoop_Investigate_Sub
+{
+	criteria		ConceptInvestigate OnTeamOne IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_Investigate_Sub
+}
+
+//idle TLK_PLAYER_IDLE
+Response BotSecurityCoop_Idle_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.Idle" noscene predelay "1.5,3.0" respeakdelay "10.0,30.0" odds 20
+}
+
+Rule BotSecurityCoop_Idle_Lead
+{
+	criteria		ConceptPlayerIdle OnTeamOne IsSquadLeader
+	response		BotSecurityCoop_Idle_Lead
+}
+
+Response BotSecurityCoop_Idle_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.Idle" noscene predelay "1.5,3.0" respeakdelay "10.0,30.0" odds 20
+}
+Rule BotSecurityCoop_Idle_Sub
+{
+	criteria		ConceptPlayerIdle OnTeamOne IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_Idle_Sub
+}
+
+
+//Enemy Sight TLK_FIREWEAPON
+Response BotSecurityCoop_FireWeapon_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.FireWeapon" noscene predelay "1.5,3.0" odds 20
+}
+
+Rule BotSecurityCoop_FireWeapon_Lead
+{
+	criteria		ConceptFireWeapon OnTeamOne IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_FireWeapon_Lead
+}
+
+Response BotSecurityCoop_FireWeapon_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.FireWeapon" noscene predelay "1.5,3.0" odds 20
+}
+Rule BotSecurityCoop_FireWeapon_Sub
+{
+	criteria		ConceptFireWeapon OnTeamOne IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_FireWeapon_Sub
+}
+
+//Suppress Enemy TLK_FIREWEAPON_SUPPRESSION
+Response BotSecurityCoop_FireWeaponSuppression_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.SuppressEnemy" noscene predelay "1.5,3.0" odds 25
+}
+
+Rule BotSecurityCoop_FireWeaponSuppression_Lead
+{
+	criteria		ConceptFireWeaponSuppression OnTeamOne IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_FireWeaponSuppression_Lead
+}
+
+Response BotSecurityCoop_FireWeaponSuppression_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.SuppressEnemy" noscene predelay "1.5,3.0" odds 25
+}
+Rule BotSecurityCoop_FireWeaponSuppression_Sub
+{
+	criteria		ConceptFireWeaponSuppression OnTeamOne IsNotSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_FireWeaponSuppression_Sub
+}
+
+// KilledPlayer TLK_KILLED_PLAYER
+Response BotSecurityCoop_KilledPlayer_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.TargetDown" noscene predelay "1.5,3.0" 
+}
+
+Rule BotSecurityCoop_KilledPlayer_Lead
+{
+	criteria		ConceptKilledPlayer OnTeamOne IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_KilledPlayer_Lead
+}
+
+Response BotSecurityCoop_KilledPlayer_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.TargetDown" noscene predelay "1.5,3.0"
+}
+Rule BotSecurityCoop_KilledPlayer_Sub
+{
+	criteria		ConceptKilledPlayer OnTeamOne IsNotSquadLeader
+	response		BotSecurityCoop_KilledPlayer_Sub
+}
+
+// Incoming Grenade TLK_INCOMING_GRENADE
+Response BotSecurityCoop_IncomingGrenade_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Lead.IncomingGrenade" noscene predelay "0.5,1.0" odds 50
+}
+
+Rule BotSecurityCoop_IncomingGrenade_Lead
+{
+	criteria		ConceptIncomingGrenade OnTeamOne IsSquadLeader HasNearbyTeammates
+	response		BotSecurityCoop_IncomingGrenade_Lead
+}
+
+Response BotSecurityCoop_IncomingGrenade_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_S_Sub.IncomingGrenade" noscene predelay "0.5,1.0" odds 50
+}
+Rule BotSecurityCoop_IncomingGrenade_Sub
+{
+	criteria		ConceptIncomingGrenade OnTeamOne IsNotSquadLeader
+	response		BotSecurityCoop_IncomingGrenade_Sub
+}
+
+
+// insurgents
+Response BotInsurgentCoop_IncomingGrenade_Lead
+{
+	PermitRepeats
+	speak			"Bot.PH_I_Lead.IncomingGrenade" noscene predelay "0.5,1.0" odds 50
+}
+
+Rule BotInsurgentCoop_IncomingGrenade_Lead
+{
+	criteria		ConceptIncomingGrenade OnTeamTwo IsSquadLeader HasNearbyTeammates
+	response		BotInsurgentCoop_IncomingGrenade_Lead
+}
+
+Response BotInsurgentCoop_IncomingGrenade_Sub
+{
+	PermitRepeats
+	speak			"Bot.PH_I_Sub.IncomingGrenade" noscene predelay "0.5,1.0" odds 50
+}
+Rule BotInsurgentCoop_IncomingGrenade_Sub
+{
+	criteria		ConceptIncomingGrenade OnTeamTwo IsNotSquadLeader
+	response		BotInsurgentCoop_IncomingGrenade_Sub
+}
+
+
+// insert more VO here
+
+Response BotDOICoop_Melee
+{
+	PermitRepeats
+	speak			"Bot.Generic.Melee" noscene delay "5" respeakdelay "7" 
+}
+
+Rule BotDOICoop_Melee
+{
+	criteria		ConceptMeleeing
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response		BotDOICoop_Melee
+}
+
+Response BotDOICoop_Flee
+{
+	PermitRepeats
+	speak			"Bot.Generic.Retreat" noscene delay "5" respeakdelay "7" 
+}
+
+Rule BotDOICoop_Flee
+{
+	criteria		ConceptFleeing
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response		BotDOICoop_Flee
+}
+
+//
+// British
+// Alert / Engaging
+//
+
+Response British_Alert_Lead{
+	PermitRepeats
+	speak 			"Bot.British_SquadLead.Alert" noscene respeakdelay "60"
+}
+Rule British_Alert_Lead{
+	criteria		ConceptAlert IsSquadLeader IsBritish HasNearbyTeammates
+	response 		British_Alert_Lead
+}
+
+Response British_Engaging_Lead{
+	PermitRepeats
+	speak			"Bot.British_SquadLead.Engaging" noscene respeakdelay "15" odds 50
+}
+Rule British_Engaging_Lead{
+	criteria		ConceptEngaging IsSquadLeader IsBritish HasNearbyTeammates
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		British_Engaging_Lead
+}
+
+Response British_Alert_Sub{
+	PermitRepeats
+	speak 			"Bot.British_Subordinate.Alert" noscene respeakdelay "60" odds 10
+}
+Rule British_Alert_Sub{
+	criteria		ConceptAlert IsBritish HasNearbyTeammates IsNotSquadLeader
+	response 		British_Alert_Sub
+}
+
+Response British_Engaging_Sub{
+	PermitRepeats
+	speak			"Bot.British_Subordinate.Engaging" noscene respeakdelay "60" odds 10
+}
+Rule British_Engaging_Sub{
+	criteria		ConceptEngaging IsBritish HasNearbyTeammates IsNotSquadLeader
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		British_Engaging_Sub
+}
+
+//
+// British
+// Covering / Moving
+//
+
+Response British_Covering_Lead{
+	PermitRepeats
+	speak 			"Bot.British_SquadLead.Covering" noscene predelay "1.0, 2.0"
+}
+Rule British_Covering_Lead{
+	criteria		ConceptCovering IsSquadLeader IsBritish HasNearbyTeammates
+	response 		British_Covering_Lead
+}
+
+Response British_Moving_Lead{
+	PermitRepeats
+	speak			"Bot.British_SquadLead.Moving" noscene delay "0" 
+}
+Rule British_Moving_Lead{
+	criteria		ConceptMoving IsSquadLeader IsBritish HasNearbyTeammates
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		British_Moving_Lead
+}
+
+Response British_Covering_Sub{
+	PermitRepeats
+	speak 			"Bot.British_Subordinate.Covering" noscene predelay "1.0, 2.0"
+}
+Rule British_Covering_Sub{
+	criteria		ConceptCovering IsBritish HasNearbyTeammates IsNotSquadLeader
+	response 		British_Covering_Sub
+}
+
+Response British_Moving_Sub{
+	PermitRepeats
+	speak			"Bot.British_Subordinate.Moving" noscene delay "0"
+}
+Rule British_Moving_Sub{
+	criteria		ConceptMoving IsBritish HasNearbyTeammates IsNotSquadLeader
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		British_Moving_Sub
+}
+
+// Incoming RPG
+Response British_Lead_IncomingRocket{
+	speak			"Voice_Response_British.Lead_RocketIncomingCoop1" noscene
+	speak			"Voice_Response_British.Lead_RocketIncomingCoop2" noscene
+	speak			"Voice_Response_British.Lead_RocketIncomingCoop3" noscene
+	speak			"Voice_Response_British.Lead_RocketIncomingCoop4" noscene
+	speak			"Voice_Response_British.Lead_RocketIncomingCoop5" noscene
+}
+Rule British_Lead_IncomingRocket{
+	criteria		ConceptCoopSpottedRPG IsBritish IsSquadLeader
+	response 		British_Lead_IncomingRocket
+}
+
+Response British_Sub_IncomingRocket{
+	speak			"Voice_Response_British.Subordinate_RocketIncomingCoop1" noscene
+	speak			"Voice_Response_British.Subordinate_RocketIncomingCoop2" noscene
+	speak			"Voice_Response_British.Subordinate_RocketIncomingCoop3" noscene
+	speak			"Voice_Response_British.Subordinate_RocketIncomingCoop4" noscene
+	speak			"Voice_Response_British.Subordinate_RocketIncomingCoop5" noscene
+}
+Rule British_Sub_IncomingRocket{
+	criteria		ConceptCoopSpottedRPG IsBritish IsNotSquadLeader
+	response 		British_Sub_IncomingRocket
+}
+
+
+//
+// American
+// Alert / Engaging
+//
+
+Response American_Alert_Lead{
+	PermitRepeats
+	speak 			"Bot.America_SquadLead.Alert" noscene respeakdelay "60"
+}
+Rule American_Alert_Lead{
+	criteria		ConceptAlert IsSquadLeader IsAmerican HasNearbyTeammates
+	response 		American_Alert_Lead
+}
+
+Response American_Engaging_Lead{
+	PermitRepeats
+	speak			"Bot.America_SquadLead.Engaging" noscene respeakdelay "15" odds 50
+}
+Rule American_Engaging_Lead{
+	criteria		ConceptEngaging IsSquadLeader IsAmerican HasNearbyTeammates
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Engaging_Lead
+}
+
+Response American_Alert_Sub{
+	PermitRepeats
+	speak 			"Bot.America_Subordinate.Alert" noscene respeakdelay "60" odds 10
+}
+Rule American_Alert_Sub{
+	criteria		ConceptAlert IsAmerican HasNearbyTeammates IsNotSquadLeader
+	response 		American_Alert_Sub
+}
+
+Response American_Engaging_Sub{
+	PermitRepeats
+	speak			"Bot.America_Subordinate.Engaging" noscene respeakdelay "60" odds 10
+}
+Rule American_Engaging_Sub{
+	criteria		ConceptEngaging IsAmerican HasNearbyTeammates IsNotSquadLeader
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Engaging_Sub
+}
+
+
+//
+// American
+// Covering / Moving
+//
+
+Response American_Covering_Lead{
+	PermitRepeats
+	speak 			"Bot.American_SquadLead.Covering" noscene predelay "1.0, 2.0"
+}
+Rule American_Covering_Lead{
+	criteria		ConceptCovering IsSquadLeader IsAmerican HasNearbyTeammates
+	response 		American_Covering_Lead
+}
+
+Response American_Moving_Lead{
+	PermitRepeats
+	speak			"Bot.American_SquadLead.Moving" noscene delay "0" respeakdelay "5"
+}
+Rule American_Moving_Lead{
+	criteria		ConceptMoving IsSquadLeader IsAmerican HasNearbyTeammates
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Moving_Lead
+}
+
+Response American_Covering_Sub{
+	PermitRepeats
+	speak 			"Bot.American_Subordinate.Covering" noscene predelay "1.0, 2.0"
+}
+Rule American_Covering_Sub{
+	criteria		ConceptCovering IsAmerican HasNearbyTeammates IsNotSquadLeader
+	response 		American_Covering_Sub
+}
+
+Response American_Moving_Sub{
+	PermitRepeats
+	speak			"Bot.American_Subordinate.Moving" noscene delay "0" respeakdelay "5"
+}
+Rule American_Moving_Sub{
+	criteria		ConceptMoving IsAmerican HasNearbyTeammates IsNotSquadLeader
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Moving_Sub
+}
+
+// Incoming RPG
+Response American_Lead_IncomingRocket{
+	speak			"Voice_Response_America.Lead_RocketIncomingCoop" noscene
+}
+Rule American_Lead_IncomingRocket{
+	criteria		ConceptCoopSpottedRPG IsAmerican IsSquadLeader
+	response 		American_Lead_IncomingRocket
+}
+
+Response American_Sub_IncomingRocket{
+	speak			"Voice_Response_America.Subordinate_RocketIncomingCoop1" noscene
+	speak			"Voice_Response_America.Subordinate_RocketIncomingCoop2" noscene
+	speak			"Voice_Response_America.Subordinate_RocketIncomingCoop3" noscene
+	speak			"Voice_Response_America.Subordinate_RocketIncomingCoop4" noscene
+	speak			"Voice_Response_America.Subordinate_RocketIncomingCoop5" noscene
+}
+Rule American_Sub_IncomingRocket{
+	criteria		ConceptCoopSpottedRPG IsAmerican IsNotSquadLeader
+	response 		American_Sub_IncomingRocket
+}
+
+//
+// German
+// Alert / Engaging
+//
+
+Response German_Alert_Lead{
+	PermitRepeats
+	speak 			"Bot.German_SquadLead.Alert" noscene respeakdelay "60"
+}
+Rule German_Alert_Lead{
+	criteria		ConceptAlert IsSquadLeader IsGerman HasNearbyTeammates
+	response 		German_Alert_Lead
+}
+
+Response German_Engaging_Lead{
+	PermitRepeats
+	speak			"Bot.German_SquadLead.Engaging" noscene respeakdelay "15" odds 50
+}
+Rule German_Engaging_Lead{
+	criteria		ConceptEngaging IsSquadLeader IsGerman HasNearbyTeammates
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		German_Engaging_Lead
+}
+
+Response German_Alert_Sub{
+	PermitRepeats
+	speak 			"Bot.German_Subordinate.Alert" noscene respeakdelay "60" odds 10
+}
+Rule German_Alert_Sub{
+	criteria		ConceptAlert IsGerman HasNearbyTeammates IsNotSquadLeader
+	response 		German_Alert_Sub
+}
+
+Response German_Engaging_Sub{
+	PermitRepeats
+	speak			"Bot.German_Subordinate.Engaging" noscene respeakdelay "60" odds 10
+}
+Rule German_Engaging_Sub{
+	criteria		ConceptEngaging IsGerman HasNearbyTeammates IsNotSquadLeader
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		German_Engaging_Sub
+}
+
+
+//
+// German
+// Covering / Moving
+//
+
+Response German_Covering_Lead{
+	PermitRepeats
+	speak 			"Bot.German_SquadLead.Covering" noscene predelay "1.0, 2.0"
+}
+Rule German_Covering_Lead{
+	criteria		ConceptCovering IsSquadLeader IsGerman HasNearbyTeammates
+	response 		German_Covering_Lead
+}
+
+Response German_Moving_Lead{
+	PermitRepeats
+	speak			"Bot.German_SquadLead.Moving" noscene delay "0" respeakdelay "5"
+}
+Rule German_Moving_Lead{
+	criteria		ConceptMoving IsSquadLeader IsGerman HasNearbyTeammates
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		German_Moving_Lead
+}
+
+Response German_Covering_Sub{
+	PermitRepeats
+	speak 			"Bot.German_Subordinate.Covering" noscene predelay "1.0, 2.0"
+}
+Rule German_Covering_Sub{
+	criteria		ConceptCovering IsGerman HasNearbyTeammates IsNotSquadLeader
+	response 		German_Covering_Sub
+}
+
+Response German_Moving_Sub{
+	PermitRepeats
+	speak			"Bot.German_Subordinate.Moving" noscene delay "0" respeakdelay "5"
+}
+Rule German_Moving_Sub{
+	criteria		ConceptMoving IsGerman HasNearbyTeammates IsNotSquadLeader
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		German_Moving_Sub
+}
+
+
+
+// Incoming RPG
+Response German_Lead_IncomingRocket{
+	speak			"Voice_Response_German.Lead_RocketIncomingCoop" noscene
+}
+Rule German_Lead_IncomingRocket{
+	criteria		ConceptCoopSpottedRPG IsGerman IsSquadLeader
+	response 		German_Lead_IncomingRocket
+}
+
+Response German_Sub_IncomingRocket{
+	speak			"Voice_Response_German.Subordinate_RocketIncomingCoop1" noscene
+	speak			"Voice_Response_German.Subordinate_RocketIncomingCoop2" noscene
+	speak			"Voice_Response_German.Subordinate_RocketIncomingCoop3" noscene
+	speak			"Voice_Response_German.Subordinate_RocketIncomingCoop4" noscene
+	speak			"Voice_Response_German.Subordinate_RocketIncomingCoop5" noscene
+}
+Rule German_Sub_IncomingRocket{
+	criteria		ConceptCoopSpottedRPG IsGerman IsNotSquadLeader
+	response 		German_Sub_IncomingRocket
+}

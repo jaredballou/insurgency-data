@@ -1,0 +1,529 @@
+Criterion AmericanCanAnnounceIncomingArtillery "WorldAmericanArtilleryExplosionAnnounce" "!=1" required
+
+// 
+// Leader
+//
+
+
+
+
+
+
+Response American_Reload_Lead{
+	speak 			"Voice_Response_America.Lead_Reloading" noscene delay "5" respeakdelay "30"
+}
+Rule American_Reload_Lead{
+	criteria		ConceptReloading IsSquadLeader IsAmerican NotRecentlySaidRadial HasNearbyTeammates
+	response 		American_Reload_Lead
+}
+
+Response American_Suppressed_Lead{
+	speak			"Voice_Response_America.Lead_UnderSuppression" noscene delay "5" respeakdelay "7"
+}
+Rule American_Suppressed_Lead{
+	criteria		ConceptBeingSuppressed IsSquadLeader IsAmerican NotRecentlySaidRadial
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Suppressed_Lead
+}
+
+// Entrenchment - Regroup
+Response American_Lead_Entrenchment_Regroup
+{
+	speak			"HQ_America.Entrenchment_SquadLead_RegroupPointAvaliable1" noscene
+	speak			"HQ_America.Entrenchment_SquadLead_RegroupPointAvaliable2" noscene
+	speak			"HQ_America.Entrenchment_SquadLead_RegroupPointAvaliable3" noscene
+	speak			"HQ_America.Entrenchment_SquadLead_RegroupPointAvaliable4" noscene
+	speak			"HQ_America.Entrenchment_SquadLead_RegroupPointAvaliable5" noscene
+}
+Rule American_Lead_Entrenchment_Regroup
+{
+	criteria		C_EntrenchmentRegroup IsAmerican IsSquadLeader
+	response		American_Lead_Entrenchment_Regroup
+}
+
+// Entrenchment - Respawn
+Response American_Lead_Entrenchment_Respawn
+{
+	speak			"HQ_America.Entrenchment_SquadLead_RespawnedTeam1" noscene
+	speak			"HQ_America.Entrenchment_SquadLead_RespawnedTeam2" noscene
+	speak			"HQ_America.Entrenchment_SquadLead_RespawnedTeam3" noscene
+	speak			"HQ_America.Entrenchment_SquadLead_RespawnedTeam4" noscene
+	speak			"HQ_America.Entrenchment_SquadLead_RespawnedTeam5" noscene
+}
+Rule American_Lead_Entrenchment_Respawn
+{
+	criteria		C_EntrenchmentRespawn IsAmerican IsSquadLeader
+	response		American_Lead_Entrenchment_Respawn
+}
+
+
+
+
+
+// 
+// Subordinate
+//
+
+
+Response American_Reload_Sub{
+	speak 			"Voice_Response_America.Sub_Reloading" noscene delay "5" respeakdelay "30"
+}
+Rule American_Reload_Sub{
+	criteria		ConceptReloading IsAmerican NotRecentlySaidRadial HasNearbyTeammates
+	response 		American_Reload_Sub
+}
+
+Response American_Suppressed_Sub{
+	speak			"Voice_Response_America.Sub_UnderSuppression" noscene delay "5" respeakdelay "7"
+}
+Rule American_Suppressed_Sub{
+	criteria		ConceptBeingSuppressed IsAmerican NotRecentlySaidRadial
+	ApplyContext 	"SuppressPainSound:1:2.5" // Suppress other pain
+	response 		American_Suppressed_Sub
+}
+
+
+
+
+// 
+// Subordinate
+//
+
+
+// Reloading
+Response American_Sub_Reload{
+	speak 			"Voice_Response_America.Subordinate_Reloading1" noscene
+	speak 			"Voice_Response_America.Subordinate_Reloading2" noscene
+	speak 			"Voice_Response_America.Subordinate_Reloading3" noscene
+	speak 			"Voice_Response_America.Subordinate_Reloading4" noscene
+	speak 			"Voice_Response_America.Subordinate_Reloading5" noscene
+	speak 			"Voice_Response_America.Subordinate_Reloading6" noscene
+	speak 			"Voice_Response_America.Subordinate_Reloading7" noscene
+	speak 			"Voice_Response_America.Subordinate_Reloading8" noscene
+	speak 			"Voice_Response_America.Subordinate_Reloading9" noscene
+	speak 			"Voice_Response_America.Subordinate_Reloading10" noscene
+}
+Rule American_Sub_Reload{
+	criteria		ConceptReloading IsNotSquadLeader IsAmerican NotRecentlySaidRadial HasNearbyTeammates
+	response 		American_Sub_Reload
+}
+
+// Damaged - Burn
+Response American_Sub_Burn
+{
+	PermitRepeats
+	speak			"Voice_Response_America.Subordinate_BurnPainSmall1" noscene
+	speak			"Voice_Response_America.Subordinate_BurnPainSmall2" noscene
+	speak			"Voice_Response_America.Subordinate_BurnPainSmall3" noscene
+	speak			"Voice_Response_America.Subordinate_BurnPainSmall4" noscene
+	speak			"Voice_Response_America.Subordinate_BurnPainSmall5" noscene
+}
+Rule American_Sub_Burn
+{
+	criteria		ConceptHurt IsBurn IsNotSquadLeader IsAmerican CanMakePainSound NoRecentBurnPain
+	ApplyContext 	"SaidBurnPain:1:1.5" // Delay between each concept
+	response 		American_Sub_Burn
+}
+
+// Damaged - Friendly Fire
+Response American_Sub_FriendlyFire
+{
+	PermitRepeats
+	speak			"Voice_Response_America.Subordinate_FriendlyFire1" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyFire2" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyFire3" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyFire4" noscene
+}
+Rule American_Sub_FriendlyFire
+{
+	criteria		ConceptFriendlyFire IsNotSquadLeader IsAmerican
+	response 		American_Sub_FriendlyFire
+}
+
+// Flamethrower firing
+Response American_Sub_FlamethrowerFiring
+{
+	PermitRepeats
+	speak			"Voice_Response_America.Subordinate_FlameThrowerExtend1" noscene
+	speak			"Voice_Response_America.Subordinate_FlameThrowerExtend2" noscene
+	speak			"Voice_Response_America.Subordinate_FlameThrowerExtend3" noscene
+	speak			"Voice_Response_America.Subordinate_FlameThrowerExtend4" noscene
+	speak			"Voice_Response_America.Subordinate_FlameThrowerExtend5" noscene
+}
+Rule American_Sub_FlamethrowerFiring
+{
+	criteria		C_FlamethrowerFiring IsAmerican IsNotSquadLeader
+	response 		American_Sub_FlamethrowerFiring
+}
+
+// Throwing Frag near friendlies
+Response American_Sub_ThrowingFrag
+{
+	PermitRepeats
+	speak			"Voice_Response_America.Subordinate_FragGrenadeOut1" noscene
+	speak			"Voice_Response_America.Subordinate_FragGrenadeOut2" noscene
+	speak			"Voice_Response_America.Subordinate_FragGrenadeOut3" noscene
+	speak			"Voice_Response_America.Subordinate_FragGrenadeOut4" noscene
+}
+Rule American_Sub_ThrowingFrag
+{
+	criteria		ConceptThrowingGrenade IsAmerican IsNotSquadLeader IsFrag HasNearbyTeammates
+	response 		American_Sub_ThrowingFrag
+}
+
+// Throwing smoke near friendlies
+Response American_Sub_ThrowingSmoke
+{
+	PermitRepeats
+	speak			"Voice_Response_America.Subordinate_SmokeGrenadeOut1" noscene
+	speak			"Voice_Response_America.Subordinate_SmokeGrenadeOut2" noscene
+	speak			"Voice_Response_America.Subordinate_SmokeGrenadeOut3" noscene
+	speak			"Voice_Response_America.Subordinate_SmokeGrenadeOut4" noscene
+}
+Rule American_Sub_ThrowingSmoke
+{
+	criteria		ConceptThrowingGrenade IsAmerican IsNotSquadLeader IsSmoke HasNearbyTeammates
+	response 		American_Sub_ThrowingSmoke
+}
+
+// Throwing back grenade
+Response American_Sub_Throwback
+{
+	PermitRepeats
+	speak			"Voice_Response_America.Subordinate_GrenadeTossBack1" noscene
+	speak			"Voice_Response_America.Subordinate_GrenadeTossBack2" noscene
+	speak			"Voice_Response_America.Subordinate_GrenadeTossBack3" noscene
+	speak			"Voice_Response_America.Subordinate_GrenadeTossBack4" noscene
+	speak			"Voice_Response_America.Subordinate_GrenadeTossBack5" noscene
+}
+Rule American_Sub_Throwback
+{
+	criteria		ConceptThrowingGrenade IsNotSquadLeader IsAmerican IsFrag IsGrenadeThrowback // TODO : Make Leader only
+	response 		American_Sub_Throwback
+}
+
+// Suppressed (Generic)
+Response American_Sub_Supp{
+	speak			"Voice_Response_America.Subordinate_UnderSuppression1"
+	speak			"Voice_Response_America.Subordinate_UnderSuppression2"
+	speak			"Voice_Response_America.Subordinate_UnderSuppression3"
+	speak			"Voice_Response_America.Subordinate_UnderSuppression4"
+	speak			"Voice_Response_America.Subordinate_UnderSuppression5"
+	speak			"Voice_Response_America.Subordinate_UnderSuppression6"
+	speak			"Voice_Response_America.Subordinate_UnderSuppression7"
+	speak			"Voice_Response_America.Subordinate_UnderSuppression8"
+	speak			"Voice_Response_America.Subordinate_UnderSuppression9"
+	speak			"Voice_Response_America.Subordinate_UnderSuppression10"
+}
+Rule American_Sub_Supp{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsAmerican NotRecentlySaidRadial
+	response 		American_Sub_Supp
+}
+
+// Suppressed by grenade
+Response American_Sub_Suppressed_Grenade
+{
+	speak			"Voice_Response_America.Subordinate_GrenadeExplodeClose1" noscene
+	speak			"Voice_Response_America.Subordinate_GrenadeExplodeClose2" noscene
+	speak			"Voice_Response_America.Subordinate_GrenadeExplodeClose3" noscene
+	speak			"Voice_Response_America.Subordinate_GrenadeExplodeClose4" noscene
+	speak			"Voice_Response_America.Subordinate_GrenadeExplodeClose5" noscene
+}
+Rule American_Sub_Suppressed_Grenade
+{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsAmerican NotRecentlySaidRadial SuppressionContextExplosion
+	response 		American_Sub_Suppressed_Grenade
+}
+
+// Suppressed by rocket flying
+Response American_Sub_Suppressed_Rocket_Passing
+{
+	speak			"Voice_Response_America.Subordinate_RocketFlyPastClose1" noscene
+	speak			"Voice_Response_America.Subordinate_RocketFlyPastClose2" noscene
+	speak			"Voice_Response_America.Subordinate_RocketFlyPastClose3" noscene
+	speak			"Voice_Response_America.Subordinate_RocketFlyPastClose4" noscene
+	speak			"Voice_Response_America.Subordinate_RocketFlyPastClose5" noscene
+}
+Rule American_Sub_Suppressed_Rocket_Passing
+{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsAmerican NotRecentlySaidRadial SuppressionContextRocketPass
+	response 		American_Sub_Suppressed_Rocket_Passing
+}
+
+// Suppressed by rocket explsion
+Response American_Sub_Suppressed_Rocket_Explosion
+{
+	speak			"Voice_Response_America.Subordinate_RocketDetonateClose1" noscene
+	speak			"Voice_Response_America.Subordinate_RocketDetonateClose2" noscene
+	speak			"Voice_Response_America.Subordinate_RocketDetonateClose3" noscene
+	speak			"Voice_Response_America.Subordinate_RocketDetonateClose4" noscene
+	speak			"Voice_Response_America.Subordinate_RocketDetonateClose5" noscene
+}
+Rule American_Sub_Suppressed_Rocket_Explosion
+{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsAmerican NotRecentlySaidRadial SuppressionContextRocketDet
+	response 		American_Sub_Suppressed_Rocket_Explosion
+}
+
+// Suppressed by MG fire
+Response American_Sub_Suppressed_MG
+{
+	speak			"Voice_Response_America.Subordinate_SuppressedByMachineGun1" noscene
+	speak			"Voice_Response_America.Subordinate_SuppressedByMachineGun2" noscene
+	speak			"Voice_Response_America.Subordinate_SuppressedByMachineGun3" noscene
+	speak			"Voice_Response_America.Subordinate_SuppressedByMachineGun4" noscene
+	speak			"Voice_Response_America.Subordinate_SuppressedByMachineGun5" noscene
+}
+Rule American_Sub_Suppressed_MG
+{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsAmerican NotRecentlySaidRadial SuppressionContextBulletMG
+	response 		American_Sub_Suppressed_MG
+}
+
+// Suppressed by sniper
+Response American_Sub_Suppressed_Sniper
+{
+	speak			"Voice_Response_America.Subordinate_SuppressedBySniper1" noscene
+	speak			"Voice_Response_America.Subordinate_SuppressedBySniper2" noscene
+	speak			"Voice_Response_America.Subordinate_SuppressedBySniper3" noscene
+	speak			"Voice_Response_America.Subordinate_SuppressedBySniper4" noscene
+	speak			"Voice_Response_America.Subordinate_SuppressedBySniper5" noscene
+	speak			"Voice_Response_America.Subordinate_SuppressedBySniper6" noscene
+}
+Rule American_Sub_Suppressed_Sniper
+{
+	criteria		ConceptBeingSuppressed IsAmerican IsNotSquadLeader NotRecentlySaidRadial SuppressionContextBulletSniper SuppressionIsDistantShooter SuppressionShooterHasScope
+	response 		American_Sub_Suppressed_Sniper
+}
+
+// Coughing after entering smoke nade 
+Response American_Sub_Coughing
+{
+	speak			"Voice_Response_America.Subordinate_SmokeCough1" noscene odds 60
+	speak			"Voice_Response_America.Subordinate_SmokeCough2" noscene odds 60
+	speak			"Voice_Response_America.Subordinate_SmokeCough3" noscene odds 60
+	speak			"Voice_Response_America.Subordinate_SmokeCough4" noscene odds 60
+	speak			"Voice_Response_America.Subordinate_SmokeCough5" noscene odds 60
+}
+Rule American_Sub_Coughing
+{
+	criteria		C_Coughing IsNotSquadLeader IsAmerican NotRecentlySaidRadial CanDoSmokeCough
+	ApplyContext 	"SuppressCoughing:1:12" // Delay between each concept
+	response 		American_Sub_Coughing
+}
+
+// Seen friendly die nearby
+Response American_Sub_Friendly_Died
+{
+	speak			"Voice_Response_America.Subordinate_FriendlyKilled1" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyKilled2" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyKilled3" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyKilled4" noscene
+}
+Rule American_Sub_Friendly_Died
+{
+	criteria		ConceptFriendlyDown IsNotSquadLeader IsAmerican NotRecentlySaidRadial
+	response 		American_Sub_Friendly_Died
+}
+
+// Seen player die nearby from flamethrower
+Response American_Sub_Nearby_Flamethrower_Death
+{
+	speak			"Voice_Response_America.Subordinate_FuelTankExplodeClose1" noscene
+	speak			"Voice_Response_America.Subordinate_FuelTankExplodeClose2" noscene
+	speak			"Voice_Response_America.Subordinate_FuelTankExplodeClose3" noscene
+	speak			"Voice_Response_America.Subordinate_FuelTankExplodeClose4" noscene
+	speak			"Voice_Response_America.Subordinate_FuelTankExplodeClose5" noscene
+}
+Rule American_Sub_Nearby_Flamethrower_Death
+{
+	criteria		ConceptFriendlyDown IsNotSquadLeader IsAmerican NotRecentlySaidRadial HadFuelTank
+	response 		American_Sub_Nearby_Flamethrower_Death
+}
+
+// Report Status Response
+Response American_Sub_StatusResponse
+{
+	speak			"Voice_Response_America.Subordinate_StatusReportImFine1" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportImFine2" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportImFine3" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportImFine4" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportImFine5" noscene
+}
+Rule American_Sub_StatusResponse
+{
+	criteria		C_StatusReport IsNotSquadLeader IsAmerican
+	response 		American_Sub_StatusResponse
+}
+
+Response American_Sub_StatusResponse_Suppressed
+{
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlySuppressed1" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlySuppressed2" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlySuppressed3" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlySuppressed4" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlySuppressed5" noscene
+}
+Rule American_Sub_StatusResponse_Suppressed
+{
+	criteria		C_StatusReport IsAmerican IsNotSquadLeader StatusRecentlySuppressed
+	response 		American_Sub_StatusResponse_Suppressed
+}
+
+Response American_Sub_StatusResponse_Shot
+{
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlyWounded1" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlyWounded2" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlyWounded3" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlyWounded4" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportRecentlyWounded5" noscene
+}
+Rule American_Sub_StatusResponse_Shot
+{
+	criteria		C_StatusReport IsAmerican IsNotSquadLeader StatusRecentlyShot 
+	response 		American_Sub_StatusResponse_Shot
+}
+
+Response American_Sub_StatusResponse_Burned
+{
+	speak			"Voice_Response_America.Subordinate_StatusReportBurnedByFlamethrower1" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportBurnedByFlamethrower2" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportBurnedByFlamethrower3" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportBurnedByFlamethrower4" noscene
+	speak			"Voice_Response_America.Subordinate_StatusReportBurnedByFlamethrower5" noscene
+}
+Rule American_Sub_StatusResponse_Burned
+{
+	criteria		C_StatusReport IsAmerican IsNotSquadLeader StatusRecentlyBurned  
+	response 		American_Sub_StatusResponse_Burned
+}
+
+// Heard artillery firing
+
+Response American_Sub_HeardArtillery_Enemy
+{
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming1" noscene
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming2" noscene
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming3" noscene
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming4" noscene
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming5" noscene
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming6" noscene
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming7" noscene
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming8" noscene
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming9" noscene
+	speak			"Voice_Response_America.Subordinate_EnemyArtilleryIncoming10" noscene
+}
+Rule American_Sub_HeardArtillery_Enemy
+{
+	criteria		C_HeardArtillery IsAmerican IsNotSquadLeader NotRecentlySaidRadial
+	response 		American_Sub_HeardArtillery_Enemy
+}
+
+
+Response American_Sub_HeardArtillery_Friendly
+{
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring1" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring2" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring3" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring4" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring5" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring6" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring7" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring8" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring9" noscene
+	speak			"Voice_Response_America.Subordinate_FriendlyArtilleryFiring10" noscene
+}
+Rule American_Sub_HeardArtillery_Friendly
+{
+	criteria		C_HeardArtillery IsAmerican IsNotSquadLeader NotRecentlySaidRadial IsFriendlyArtillery
+	response 		American_Sub_HeardArtillery_Friendly
+}
+
+// Near artillery explosions
+Response American_Sub_Suppressed_Artillery
+{
+	speak			"Voice_Response_America.Subordinate_ArtilleryExplodingNearMe1" noscene
+	speak			"Voice_Response_America.Subordinate_ArtilleryExplodingNearMe2" noscene
+	speak			"Voice_Response_America.Subordinate_ArtilleryExplodingNearMe3" noscene
+	speak			"Voice_Response_America.Subordinate_ArtilleryExplodingNearMe4" noscene
+}
+Rule American_Sub_Suppressed_Artillery
+{
+	criteria		C_IncomingArtillery IsAmerican IsNotSquadLeader NotRecentlySaidRadial AmericanCanAnnounceIncomingArtillery 
+	ApplyContext 	"AmericanArtilleryExplosionAnnounce:1:15"
+	applycontexttoworld
+	response 		American_Sub_Suppressed_Artillery
+}
+
+// Captured objective
+Response American_Sub_CapturedObjective
+{
+	speak			"Voice_Response_America.Subordinate_ObjectiveClear1" noscene
+	speak			"Voice_Response_America.Subordinate_ObjectiveClear2" noscene
+	speak			"Voice_Response_America.Subordinate_ObjectiveClear3" noscene
+	speak			"Voice_Response_America.Subordinate_ObjectiveClear4" noscene
+	speak			"Voice_Response_America.Subordinate_ObjectiveClear5" noscene
+}
+Rule American_Sub_CapturedObjective
+{
+	criteria		C_CapturedPoint IsAmerican IsNotSquadLeader NotRecentlySaidRadial 
+	response 		American_Sub_CapturedObjective
+}
+
+// Received ammo
+Response American_Sub_ReceiveAmmo
+{
+	speak			"Voice_Response_America.Subordinate_ReceiveAmmo1" noscene
+	speak			"Voice_Response_America.Subordinate_ReceiveAmmo2" noscene
+	speak			"Voice_Response_America.Subordinate_ReceiveAmmo3" noscene
+	speak			"Voice_Response_America.Subordinate_ReceiveAmmo4" noscene
+}
+Rule American_Sub_ReceiveAmmo
+{
+	criteria		C_ReceivedAmmo IsAmerican IsNotSquadLeader NotRecentlySaidRadial
+	response		American_Sub_ReceiveAmmo
+}
+
+// Low ammo
+Response American_Sub_LowAmmo
+{
+	speak			"Voice_Response_America.Subordinate_LowAmmo1" noscene
+	speak			"Voice_Response_America.Subordinate_LowAmmo2" noscene
+	speak			"Voice_Response_America.Subordinate_LowAmmo3" noscene
+	speak			"Voice_Response_America.Subordinate_LowAmmo4" noscene
+}
+Rule American_Sub_LowAmmo
+{
+	criteria		C_LowAmmo IsAmerican IsNotSquadLeader NotRecentlySaidRadial
+	response		American_Sub_LowAmmo
+}
+
+// Entrenchment - Regroup
+Response American_Sub_Entrenchment_Regroup
+{
+	speak			"HQ_America.Entrenchment_Subordinate_RegroupPointAvaliable1" noscene
+	speak			"HQ_America.Entrenchment_Subordinate_RegroupPointAvaliable2" noscene
+	speak			"HQ_America.Entrenchment_Subordinate_RegroupPointAvaliable3" noscene
+	speak			"HQ_America.Entrenchment_Subordinate_RegroupPointAvaliable4" noscene
+	speak			"HQ_America.Entrenchment_Subordinate_RegroupPointAvaliable5" noscene
+}
+Rule American_Sub_Entrenchment_Regroup
+{
+	criteria		C_EntrenchmentRegroup IsAmerican IsNotSquadLeader
+	response		American_Sub_Entrenchment_Regroup
+}
+
+// Entrenchment - Respawn
+Response American_Sub_Entrenchment_Respawn
+{
+	speak			"HQ_America.Entrenchment_Subordinate_RespawnedTeam1" noscene
+	speak			"HQ_America.Entrenchment_Subordinate_RespawnedTeam2" noscene
+	speak			"HQ_America.Entrenchment_Subordinate_RespawnedTeam3" noscene
+	speak			"HQ_America.Entrenchment_Subordinate_RespawnedTeam4" noscene
+	speak			"HQ_America.Entrenchment_Subordinate_RespawnedTeam5" noscene
+}
+Rule American_Sub_Entrenchment_Respawn
+{
+	criteria		C_EntrenchmentRespawn IsAmerican IsNotSquadLeader
+	response		American_Sub_Entrenchment_Respawn
+}

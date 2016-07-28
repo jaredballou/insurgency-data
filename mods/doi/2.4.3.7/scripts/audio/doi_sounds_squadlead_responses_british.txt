@@ -1,0 +1,1072 @@
+// Squad_Lead_British
+
+//Reloading
+
+"Voice_Response_British.Lead_Reloading1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading1.ogg"
+}
+
+"Voice_Response_British.Lead_Reloading2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading2.ogg"
+}
+
+"Voice_Response_British.Lead_Reloading3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading3.ogg"
+}
+
+"Voice_Response_British.Lead_Reloading4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading4.ogg"
+}
+
+"Voice_Response_British.Lead_Reloading5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading5.ogg"
+}
+
+"Voice_Response_British.Lead_Reloading6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading6.ogg"
+}
+
+"Voice_Response_British.Lead_Reloading7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading7.ogg"
+}
+
+"Voice_Response_British.Lead_Reloading8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading8.ogg"
+}
+
+"Voice_Response_British.Lead_Reloading9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading9.ogg"
+}
+
+"Voice_Response_British.Lead_Reloading10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/reloading10.ogg"
+}
+
+//Being Suppressed
+
+"Voice_Response_British.Lead_UnderSuppression1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression1.ogg"		
+}
+
+"Voice_Response_British.Lead_UnderSuppression2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression2.ogg"		
+}
+
+"Voice_Response_British.Lead_UnderSuppression3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression3.ogg"		
+}
+
+"Voice_Response_British.Lead_UnderSuppression4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression4.ogg"		
+}
+
+"Voice_Response_British.Lead_UnderSuppression5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression5.ogg"		
+}
+
+"Voice_Response_British.Lead_UnderSuppression6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression6.ogg"		
+}
+
+"Voice_Response_British.Lead_UnderSuppression7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression7.ogg"		
+}
+
+"Voice_Response_British.Lead_UnderSuppression8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression8.ogg"		
+}
+
+"Voice_Response_British.Lead_UnderSuppression9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression9.ogg"		
+}
+
+"Voice_Response_British.Lead_UnderSuppression10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/generalsuppression10.ogg"		
+}
+
+//Being Burned By Fire On The Ground
+
+"Voice_Response_British.Lead_BurnPainSmall1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/burnpain1.ogg"	
+}
+
+"Voice_Response_British.Lead_BurnPainSmall2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/burnpain2.ogg"	
+}
+
+"Voice_Response_British.Lead_BurnPainSmall3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/burnpain3.ogg"	
+}
+
+"Voice_Response_British.Lead_BurnPainSmall4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/burnpain4.ogg"	
+}
+
+"Voice_Response_British.Lead_BurnPainSmall5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/burnpain5.ogg"	
+}
+
+//Explosive Planted
+
+//Holding Down Trigger On Flamethrower
+
+"Voice_Response_British.Lead_FlameThrowerExtend1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/flamethrowerextended1.ogg"	
+}
+
+"Voice_Response_British.Lead_FlameThrowerExtend2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/flamethrowerextended2.ogg"	
+}
+
+"Voice_Response_British.Lead_FlameThrowerExtend3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/flamethrowerextended3.ogg"	
+}
+
+"Voice_Response_British.Lead_FlameThrowerExtend4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/flamethrowerextended4.ogg"	
+}
+
+"Voice_Response_British.Lead_FlameThrowerExtend5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/flamethrowerextended5.ogg"	
+}
+
+"Voice_Response_British.Lead_FlameThrowerExtend6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/flamethrowerextended6.ogg"	
+}
+
+//Throwing Frag Grenade
+
+"Voice_Response_British.Lead_FragGrenadeOut1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/fraggrenadeout1.ogg"			
+}
+
+"Voice_Response_British.Lead_FragGrenadeOut2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/fraggrenadeout2.ogg"			
+}
+
+"Voice_Response_British.Lead_FragGrenadeOut3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/fraggrenadeout3.ogg"			
+}
+
+"Voice_Response_British.Lead_FragGrenadeOut4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/fraggrenadeout4.ogg"			
+}
+
+//Artillery Incomming 
+
+"Voice_Response_British.Lead_ArtilleryExplodingNearMe1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/artilleryexplodingnearme1.ogg"	
+}
+
+"Voice_Response_British.Lead_ArtilleryExplodingNearMe2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/artilleryexplodingnearme2.ogg"	
+}
+
+"Voice_Response_British.Lead_ArtilleryExplodingNearMe3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/artilleryexplodingnearme3.ogg"	
+}
+
+"Voice_Response_British.Lead_ArtilleryExplodingNearMe4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/artilleryexplodingnearme4.ogg"	
+}
+
+//Friendly Fire
+
+//Friendly Killed Infront Of You
+
+"Voice_Response_British.Lead_FriendlyKilled1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/friendlykilled1.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyKilled2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/friendlykilled2.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyKilled3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/friendlykilled3.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyKilled4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/friendlykilled4.ogg"	
+}
+
+//FuelTank Explode Close By
+
+"Voice_Response_British.Lead_FuelTankExplodeClose1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/fueltankexplodesclose1.ogg"	
+}
+
+"Voice_Response_British.Lead_FuelTankExplodeClose2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/fueltankexplodesclose2.ogg"	
+}
+
+"Voice_Response_British.Lead_FuelTankExplodeClose3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/fueltankexplodesclose3.ogg"	
+}
+
+"Voice_Response_British.Lead_FuelTankExplodeClose4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/fueltankexplodesclose4.ogg"	
+}
+
+"Voice_Response_British.Lead_FuelTankExplodeClose5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/fueltankexplodesclose5.ogg"	
+}
+
+//Grenade Explode Near
+
+"Voice_Response_British.Lead_GrenadeExplodeClose1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/grenadeexplodenear1.ogg"	
+}
+
+"Voice_Response_British.Lead_GrenadeExplodeClose2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/grenadeexplodenear2.ogg"	
+}
+
+"Voice_Response_British.Lead_GrenadeExplodeClose3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/grenadeexplodenear3.ogg"	
+}
+
+"Voice_Response_British.Lead_GrenadeExplodeClose4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/grenadeexplodenear4.ogg"	
+}
+
+"Voice_Response_British.Lead_GrenadeExplodeClose5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/grenadeexplodenear5.ogg"	
+}
+
+//Grenade Spotted
+
+//Grenade Toss Back
+
+
+//Enemy Artillery Incoming
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery1.ogg"	
+}
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery2.ogg"	
+}
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery3.ogg"	
+}
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery4.ogg"	
+}
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery5.ogg"	
+}
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery6.ogg"	
+}
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery7.ogg"	
+}
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery8.ogg"	
+}
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery9.ogg"	
+}
+
+"Voice_Response_British.Lead_EnemyArtilleryIncoming10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/incomingartillery10.ogg"	
+}
+
+//Low Ammo
+
+//Objective Clear
+
+"Voice_Response_British.Lead_ObjectiveClear1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/objectiveclear1.ogg"	
+}
+
+"Voice_Response_British.Lead_ObjectiveClear2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/objectiveclear2.ogg"	
+}
+
+"Voice_Response_British.Lead_ObjectiveClear3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/objectiveclear3.ogg"	
+}
+
+"Voice_Response_British.Lead_ObjectiveClear4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/objectiveclear4.ogg"	
+}
+
+"Voice_Response_British.Lead_ObjectiveClear5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/objectiveclear5.ogg"	
+}
+
+//Friendly Artillery Firing
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery1.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery2.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery3.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery4.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery5.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery6.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery7.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery8.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery9.ogg"	
+}
+
+"Voice_Response_British.Lead_FriendlyArtilleryFiring10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/outgoingartillery10.ogg"	
+}
+
+//Receive Ammo
+
+//Rocket Detonate Close
+
+//Rocket FlyPast Close
+
+//Rocket Incoming Coop
+
+"Voice_Response_British.Lead_RocketIncomingCoop1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/rocketincommingcoop1.ogg"	
+}
+
+"Voice_Response_British.Lead_RocketIncomingCoop2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/rocketincommingcoop2.ogg"	
+}
+
+"Voice_Response_British.Lead_RocketIncomingCoop3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/rocketincommingcoop3.ogg"	
+}
+
+"Voice_Response_British.Lead_RocketIncomingCoop4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/rocketincommingcoop4.ogg"	
+}
+
+"Voice_Response_British.Lead_RocketIncomingCoop5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/rocketincommingcoop5.ogg"	
+}
+
+//Cough When Passing Through Smoke (grenade or barrage)
+
+"Voice_Response_British.Lead_SmokeCough1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/smokecough1.ogg"	
+}
+
+"Voice_Response_British.Lead_SmokeCough2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/smokecough2.ogg"	
+}
+
+"Voice_Response_British.Lead_SmokeCough3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/smokecough3.ogg"	
+}
+
+"Voice_Response_British.Lead_SmokeCough4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/smokecough4.ogg"	
+}
+
+"Voice_Response_British.Lead_SmokeCough5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/smokecough5.ogg"	
+}
+
+//Throwing Smoke Grenade
+
+"Voice_Response_British.Lead_SmokeGrenadeOut1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/smokegrenadeout1.ogg"			
+
+}
+
+"Voice_Response_British.Lead_SmokeGrenadeOut2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/smokegrenadeout2.ogg"			
+
+}
+
+"Voice_Response_British.Lead_SmokeGrenadeOut3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/smokegrenadeout3.ogg"			
+
+}
+
+"Voice_Response_British.Lead_SmokeGrenadeOut4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/smokegrenadeout4.ogg"			
+
+}
+
+//Status Response If Burned By Flamethrower
+
+"Voice_Response_British.Lead_StatusReportBurnedByFlamethrower1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_burnedbyflamethrower1.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportBurnedByFlamethrower2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_burnedbyflamethrower2.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportBurnedByFlamethrower3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_burnedbyflamethrower3.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportBurnedByFlamethrower4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_burnedbyflamethrower4.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportBurnedByFlamethrower5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_burnedbyflamethrower5.ogg"	
+}
+
+//Status Response If Fine
+
+"Voice_Response_British.Lead_StatusReportImFine1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_fine1.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportImFine2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_fine2.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportImFine3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_fine3.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportImFine4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_fine4.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportImFine5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_fine5.ogg"	
+}
+
+//Status Response If Recently Suppressed
+
+"Voice_Response_British.Lead_StatusReportRecentlySuppressed1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_recentlybeensuppressed1.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportRecentlySuppressed2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_recentlybeensuppressed2.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportRecentlySuppressed3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_recentlybeensuppressed3.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportRecentlySuppressed4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_recentlybeensuppressed4.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportRecentlySuppressed5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_recentlybeensuppressed5.ogg"	
+}
+
+//Status Response If Wounded
+
+"Voice_Response_British.Lead_StatusReportRecentlyWounded1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_wounded1.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportRecentlyWounded2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_wounded2.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportRecentlyWounded3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_wounded3.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportRecentlyWounded4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_wounded4.ogg"	
+}
+
+"Voice_Response_British.Lead_StatusReportRecentlyWounded5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/british/squadlead/statusreport_wounded5.ogg"	
+}
+
+//Suppressed By A Machine Gun
+
+//Suppressed By A Sniper

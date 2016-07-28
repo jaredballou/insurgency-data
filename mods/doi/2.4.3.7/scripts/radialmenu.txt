@@ -1,0 +1,189 @@
+// Radial menu setup, REQUIRES leader & subordinate subkeys.
+
+"RadialMenu"
+{
+	"default"
+	{
+		"center"
+		{
+			"leader"
+			{
+				"token"		"#radial_switch_leader"
+				"command"	"switch leader"
+			}
+		}
+
+		"North"
+		{
+			"token"		"#radial_enemy"
+			"command"	"enemy"
+		}
+
+		"NorthWest"
+		{
+			"token"		"#radial_ontheway"
+			"command"	"ontheway"
+			
+			"objective"
+			{
+				"token"		"#radial_moving_to_objective"
+				"command"	"moving_to_objective"
+			}
+		}
+		
+		"NorthEast"
+		{
+			"token"		"#radial_need_backup"
+			"command"	"need_backup"
+		}
+
+		"West"
+		{
+			"token"		"#radial_affirmative"
+			"command"	"affirmative"
+		}
+
+		"East"
+		{
+			"token"		"#radial_negative"
+			"command"	"negative"
+		}
+
+		"SouthWest"
+		{
+			"token"		"#radial_request_smoke"
+			"command"	"request_smoke"
+		}
+
+		"SouthEast"
+		{
+			"token"		"#radial_request_ammo"
+			"command"	"request_ammo"
+		}
+
+		"South"
+		{
+			"token"		"#radial_enemy_down"
+			"command"	"enemy_down"
+		}
+	}
+
+	"leader"
+	{
+		"center"
+		{
+			"leader"
+			{
+				"token"		"#radial_switch_artillery"
+				"command"	"switch artillery"
+			}
+		}
+
+		"North"
+		{
+			"token"		"#radial_moving"
+			"command"	"moving"
+
+			"objective"
+			{
+				"token"		"#radial_move_to_objective"
+				"command"	"mark_objective"
+			}
+		}
+
+		"NorthWest"
+		{
+			"token"		"#radial_go"
+			"command"	"go"
+		}
+
+		"NorthEast"
+		{
+			"token"		"#radial_hold_position"
+			"command"	"hold_position"
+		}
+
+		"West"
+		{
+			"token"		"#radial_flank_left"
+			"command"	"flank_left"
+		}
+
+		"East"
+		{
+			"token"		"#radial_flank_right"
+			"command"	"flank_right"
+		}
+
+		"SouthWest"
+		{
+			"token"		"#radial_stick_together"
+			"command"	"stick_together"
+		}
+
+		"SouthEast"
+		{
+			"token"		"#radial_spread_out"
+			"command"	"spread_out"
+		}
+
+		"South"
+		{
+			"token"		"#radial_report_status"
+			"command"	"report_status"
+		}
+	}
+
+	"artillery"
+	{
+		"NorthWest"
+		{
+			"token"		"#radial_request_artillery"
+			"command"	"request_artillery"
+		}
+		"NorthEast"
+		{
+			"token"		"#radial_request_artillery_smoke"
+			"command"	"request_artillery_smoke"
+		}
+		"South"
+		{
+			"token"		"#radial_request_radio"
+			"command"	"request_radio"
+		}
+	}
+
+	"OLD"
+	{
+		"left3"
+		{
+			"token"		"#radial_area_hostile"
+			"command"	"area_hostile"
+		}
+		"left4"
+		{
+			"token"		"#radial_need_backup"
+			"command"	"need_backup"
+		}
+		"right1"
+		{
+			"token"		"#radial_enemy_down"
+			"command"	"enemy_down"
+		}
+		"right2"
+		{
+			"token"		"#radial_covering"
+			"command"	"covering"
+		}
+		"right3"
+		{
+			"token"		"#radial_area_clear"
+			"command"	"area_clear"
+		}
+		"right4"
+		{
+			"token"		"#radial_ontheway"
+			"command"	"ontheway"
+		}
+	}
+}

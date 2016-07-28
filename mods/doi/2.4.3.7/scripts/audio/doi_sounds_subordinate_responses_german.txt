@@ -1,0 +1,1481 @@
+// Subordinate_German
+
+//Reloading
+
+"Voice_Response_German.Subordinate_Reloading1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading1.ogg"
+}
+
+"Voice_Response_German.Subordinate_Reloading2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading2.ogg"
+}
+
+"Voice_Response_German.Subordinate_Reloading3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading3.ogg"
+}
+
+"Voice_Response_German.Subordinate_Reloading4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading4.ogg"
+}
+
+"Voice_Response_German.Subordinate_Reloading5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading5.ogg"
+}
+
+"Voice_Response_German.Subordinate_Reloading6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading6.ogg"
+}
+
+"Voice_Response_German.Subordinate_Reloading7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading7.ogg"
+}
+
+"Voice_Response_German.Subordinate_Reloading8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading8.ogg"
+}
+
+"Voice_Response_German.Subordinate_Reloading9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading9.ogg"
+}
+
+"Voice_Response_German.Subordinate_Reloading10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/reloading10.ogg"
+}
+
+//Being Suppressed
+
+"Voice_Response_German.Subordinate_UnderSuppression1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression1.ogg"		
+}
+
+"Voice_Response_German.Subordinate_UnderSuppression2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression2.ogg"		
+}
+
+"Voice_Response_German.Subordinate_UnderSuppression3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression3.ogg"		
+}
+
+"Voice_Response_German.Subordinate_UnderSuppression4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression4.ogg"		
+}
+
+"Voice_Response_German.Subordinate_UnderSuppression5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression5.ogg"		
+}
+
+"Voice_Response_German.Subordinate_UnderSuppression6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression6.ogg"		
+}
+
+"Voice_Response_German.Subordinate_UnderSuppression7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression7.ogg"		
+}
+
+"Voice_Response_German.Subordinate_UnderSuppression8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression8.ogg"		
+}
+
+"Voice_Response_German.Subordinate_UnderSuppression9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression9.ogg"		
+}
+
+"Voice_Response_German.Subordinate_UnderSuppression10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/generalsuppression10.ogg"		
+}
+
+//Being Burned By Fire On The Ground
+
+"Voice_Response_German.Subordinate_BurnPainSmall1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/burnpain1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_BurnPainSmall2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/burnpain2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_BurnPainSmall3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/burnpain3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_BurnPainSmall4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/burnpain4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_BurnPainSmall5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/burnpain5.ogg"	
+}
+
+//Explosive Planted
+
+"Voice_Response_German.Subordinate_ExplosivePlanted1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/explosiveplanted1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ExplosivePlanted2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/explosiveplanted2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ExplosivePlanted3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/explosiveplanted3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ExplosivePlanted4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/explosiveplanted4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ExplosivePlanted5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/explosiveplanted5.ogg"	
+}
+
+//Holding Down Trigger On Flamethrower
+
+"Voice_Response_German.Subordinate_FlameThrowerExtend1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/flamethrowerextended1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FlameThrowerExtend2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/flamethrowerextended2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FlameThrowerExtend3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/flamethrowerextended3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FlameThrowerExtend4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/flamethrowerextended4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FlameThrowerExtend5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/flamethrowerextended5.ogg"	
+}
+
+//Throwing Frag Grenade
+
+"Voice_Response_German.Subordinate_FragGrenadeOut1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/fraggrenadeout1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FragGrenadeOut2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/fraggrenadeout2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FragGrenadeOut3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/fraggrenadeout3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FragGrenadeOut4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/fraggrenadeout4.ogg"	
+}
+
+//Artillery Incomming 
+
+"Voice_Response_German.Subordinate_ArtilleryExplodingNearMe1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/artilleryexplodingnearme1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ArtilleryExplodingNearMe2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/artilleryexplodingnearme2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ArtilleryExplodingNearMe3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/artilleryexplodingnearme3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ArtilleryExplodingNearMe4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/artilleryexplodingnearme4.ogg"	
+}
+
+//Friendly Fire
+
+"Voice_Response_German.Subordinate_FriendlyFire1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/friendlyfire1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyFire2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/friendlyfire2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyFire3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/friendlyfire3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyFire4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/friendlyfire4.ogg"	
+}
+
+//Friendly Killed Infront Of You
+
+"Voice_Response_German.Subordinate_FriendlyKilled1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/friendlykilled1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyKilled2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/friendlykilled2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyKilled3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/friendlykilled3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyKilled4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/friendlykilled4.ogg"	
+}
+
+//FuelTank Explode Close By
+
+"Voice_Response_German.Subordinate_FuelTankExplodeClose1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/fueltankexplodesclose1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FuelTankExplodeClose2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/fueltankexplodesclose2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FuelTankExplodeClose3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/fueltankexplodesclose3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FuelTankExplodeClose4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/fueltankexplodesclose4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FuelTankExplodeClose5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/fueltankexplodesclose5.ogg"	
+}
+
+//Grenade Explode Near
+
+"Voice_Response_German.Subordinate_GrenadeExplodeClose1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadeexplodenear1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeExplodeClose2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadeexplodenear2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeExplodeClose3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadeexplodenear3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeExplodeClose4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadeexplodenear4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeExplodeClose5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadeexplodenear5.ogg"	
+}
+
+//Grenade Spotted
+
+"Voice_Response_German.Subordinate_GrenadeSpotted1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadespotted1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeSpotted2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadespotted2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeSpotted3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadespotted3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeSpotted4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadespotted4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeSpotted5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadespotted5.ogg"	
+}
+
+//Grenade Toss Back
+
+"Voice_Response_German.Subordinate_GrenadeTossBack1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadetossback1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeTossBack2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadetossback2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeTossBack3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadetossback3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeTossBack4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadetossback4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_GrenadeTossBack5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/grenadetossback5.ogg"	
+}
+
+//Enemy Artillery Incoming
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery5.ogg"	
+}
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery6.ogg"	
+}
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery7.ogg"	
+}
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery8.ogg"	
+}
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery9.ogg"	
+}
+
+"Voice_Response_German.Subordinate_EnemyArtilleryIncoming10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/incomingartillery10.ogg"	
+}
+
+//Low Ammo
+
+"Voice_Response_German.Subordinate_LowAmmo1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/lowammo1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_LowAmmo2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/lowammo2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_LowAmmo3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/lowammo3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_LowAmmo4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/lowammo4.ogg"	
+}
+
+//Objective Clear
+
+"Voice_Response_German.Subordinate_ObjectiveClear1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/objectiveclear1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ObjectiveClear2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/objectiveclear2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ObjectiveClear3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/objectiveclear3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ObjectiveClear4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/objectiveclear4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ObjectiveClear5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/objectiveclear5.ogg"	
+}
+
+//Friendly Artillery Firing
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery5.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery6.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery7.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery8.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery9.ogg"	
+}
+
+"Voice_Response_German.Subordinate_FriendlyArtilleryFiring10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/outgoingartillery10.ogg"	
+}
+
+//Receive Ammo
+
+"Voice_Response_German.Subordinate_ReceiveAmmo1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/receiveammo1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ReceiveAmmo2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/receiveammo2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ReceiveAmmo3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/receiveammo3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_ReceiveAmmo4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/receiveammo4.ogg"	
+}
+
+//Rocket Detonate Close
+
+"Voice_Response_German.Subordinate_RocketDetonateClose1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketdetonatesclose1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketDetonateClose2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketdetonatesclose2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketDetonateClose3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketdetonatesclose3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketDetonateClose4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketdetonatesclose4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketDetonateClose5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketdetonatesclose5.ogg"	
+}
+
+//Rocket FlyPast Close
+
+"Voice_Response_German.Subordinate_RocketFlyPastClose1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketflypastclose1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketFlyPastClose2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketflypastclose2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketFlyPastClose3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketflypastclose3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketFlyPastClose4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketflypastclose4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketFlyPastClose5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketflypastclose5.ogg"	
+}
+
+//Rocket Incoming Coop
+
+"Voice_Response_German.Subordinate_RocketIncomingCoop1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketincommingcoop1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketIncomingCoop2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketincommingcoop2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketIncomingCoop3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketincommingcoop3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketIncomingCoop4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketincommingcoop4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_RocketIncomingCoop5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/rocketincommingcoop5.ogg"	
+}
+
+//Cough When Passing Through Smoke (grenade or barrage)
+
+"Voice_Response_German.Subordinate_SmokeCough1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/smokecough1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SmokeCough2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/smokecough2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SmokeCough3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/smokecough3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SmokeCough4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/smokecough4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SmokeCough5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/smokecough5.ogg"	
+}
+
+//Throwing Smoke Grenade
+
+"Voice_Response_German.Subordinate_SmokeGrenadeOut1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/smokegrenadeout1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SmokeGrenadeOut2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/smokegrenadeout2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SmokeGrenadeOut3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/smokegrenadeout3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SmokeGrenadeOut4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/smokegrenadeout4.ogg"	
+}
+
+//Status Response If Burned By Flamethrower
+
+"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_burnedbyflamethrower1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_burnedbyflamethrower2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_burnedbyflamethrower3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_burnedbyflamethrower4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_burnedbyflamethrower5.ogg"	
+}
+
+//Status Response If Fine
+
+"Voice_Response_German.Subordinate_StatusReportImFine1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_fine1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportImFine2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_fine2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportImFine3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_fine3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportImFine4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_fine4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportImFine5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_fine5.ogg"	
+}
+
+//Status Response If Recently Suppressed
+
+"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_recentlybeensuppressed1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_recentlybeensuppressed2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_recentlybeensuppressed3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_recentlybeensuppressed4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_recentlybeensuppressed5.ogg"	
+}
+
+//Status Response If Wounded
+
+"Voice_Response_German.Subordinate_StatusReportRecentlyWounded1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_wounded1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportRecentlyWounded2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_wounded2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportRecentlyWounded3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_wounded3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportRecentlyWounded4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_wounded4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_StatusReportRecentlyWounded5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/statusreport_wounded5.ogg"	
+}
+
+//Suppressed By A Machine Gun
+
+"Voice_Response_German.Subordinate_SuppressedByMachineGun1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbymachinegun1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SuppressedByMachineGun2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbymachinegun2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SuppressedByMachineGun3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbymachinegun3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SuppressedByMachineGun4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbymachinegun4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SuppressedByMachineGun5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbymachinegun5.ogg"	
+}
+
+//Suppressed By A Sniper
+
+"Voice_Response_German.Subordinate_SuppressedBySniper1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbysniper1.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SuppressedBySniper2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbysniper2.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SuppressedBySniper3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbysniper3.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SuppressedBySniper4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbysniper4.ogg"	
+}
+
+"Voice_Response_German.Subordinate_SuppressedBySniper5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/voice/responses/german/subordinate/suppressedbysniper5.ogg"	
+}

@@ -1,0 +1,2193 @@
+
+// 
+// Squad Leader Specific Radial Commands
+//
+// OpenFire
+Response Placeholder_Leader_OpenFire_UnSupp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_UnSupp_NE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_UnSupp_E {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_UnSupp_SE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_UnSupp_S {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_UnSupp_SW {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_UnSupp_W {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_UnSupp_NW {
+	print "Placeholder VO"
+}
+
+Response Placeholder_Leader_OpenFire_Supp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_Supp_NE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_Supp_E {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_Supp_SE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_Supp_S {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_Supp_SW {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_Supp_W {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_OpenFire_Supp_NW {
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_OpenFire_UnSupp_N {
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsNorth
+	response		Placeholder_Leader_OpenFire_UnSupp_N
+}	
+Rule Placeholder_Leader_OpenFire_UnSupp_NE {
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsNorthEast
+	response		Placeholder_Leader_OpenFire_UnSupp_NE
+}	
+Rule Placeholder_Leader_OpenFire_UnSupp_E {
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsEast
+	response		Placeholder_Leader_OpenFire_UnSupp_E
+}	
+Rule Placeholder_Leader_OpenFire_UnSupp_SE {
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsSouthEast
+	response		Placeholder_Leader_OpenFire_UnSupp_SE
+}	
+Rule Placeholder_Leader_OpenFire_UnSupp_S {
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsSouth
+	response		Placeholder_Leader_OpenFire_UnSupp_S
+}	
+Rule Placeholder_Leader_OpenFire_UnSupp_SW {
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsSouthWest
+	response		Placeholder_Leader_OpenFire_UnSupp_SW
+}	
+Rule Placeholder_Leader_OpenFire_UnSupp_W {
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsWest
+	response		Placeholder_Leader_OpenFire_UnSupp_W
+}	
+Rule Placeholder_Leader_OpenFire_UnSupp_NW {
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsNorthWest
+	response		Placeholder_Leader_OpenFire_UnSupp_NW
+}	
+
+Rule Placeholder_Leader_OpenFire_Supp_N {
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsNorth
+	response		Placeholder_Leader_OpenFire_Supp_N
+}	
+Rule Placeholder_Leader_OpenFire_Supp_NE {
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsNorthEast
+	response		Placeholder_Leader_OpenFire_Supp_NE
+}	
+Rule Placeholder_Leader_OpenFire_Supp_E {
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsEast
+	response		Placeholder_Leader_OpenFire_Supp_E
+}	
+Rule Placeholder_Leader_OpenFire_Supp_SE {
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsSouthEast
+	response		Placeholder_Leader_OpenFire_Supp_SE
+}	
+Rule Placeholder_Leader_OpenFire_Supp_S {
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsSouth
+	response		Placeholder_Leader_OpenFire_Supp_S
+}	
+Rule Placeholder_Leader_OpenFire_Supp_SW {
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsSouthWest
+	response		Placeholder_Leader_OpenFire_Supp_SW
+}	
+Rule Placeholder_Leader_OpenFire_Supp_W {
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsWest
+	response		Placeholder_Leader_OpenFire_Supp_W
+}	
+Rule Placeholder_Leader_OpenFire_Supp_NW {
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsNorthWest
+	response		Placeholder_Leader_OpenFire_Supp_NW
+}	
+
+Response Placeholder_Leader_MoveDirection_UnSupp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_UnSupp_NE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_UnSupp_E {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_UnSupp_SE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_UnSupp_S {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_UnSupp_SW {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_UnSupp_W {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_UnSupp_NW {
+	print "Placeholder VO"
+}
+
+Response Placeholder_Leader_MoveDirection_Supp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_Supp_NE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_Supp_E {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_Supp_SE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_Supp_S {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_Supp_SW {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_Supp_W {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_MoveDirection_Supp_NW {
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_MoveDirection_UnSupp_N {
+	criteria		ConceptRadialMoving IsSquadLeader NotSuppressedRecent IsNorth
+	response		Placeholder_Leader_MoveDirection_UnSupp_N
+}	
+Rule Placeholder_Leader_MoveDirection_UnSupp_NE {
+	criteria		ConceptRadialMoving IsSquadLeader NotSuppressedRecent IsNorthEast
+	response		Placeholder_Leader_MoveDirection_UnSupp_NE
+}	
+Rule Placeholder_Leader_MoveDirection_UnSupp_E {
+	criteria		ConceptRadialMoving IsSquadLeader NotSuppressedRecent IsEast
+	response		Placeholder_Leader_MoveDirection_UnSupp_E
+}	
+Rule Placeholder_Leader_MoveDirection_UnSupp_SE {
+	criteria		ConceptRadialMoving IsSquadLeader NotSuppressedRecent IsSouthEast
+	response		Placeholder_Leader_MoveDirection_UnSupp_SE
+}	
+Rule Placeholder_Leader_MoveDirection_UnSupp_S {
+	criteria		ConceptRadialMoving IsSquadLeader NotSuppressedRecent IsSouth
+	response		Placeholder_Leader_MoveDirection_UnSupp_S
+}	
+Rule Placeholder_Leader_MoveDirection_UnSupp_SW {
+	criteria		ConceptRadialMoving IsSquadLeader NotSuppressedRecent IsSouthWest
+	response		Placeholder_Leader_MoveDirection_UnSupp_SW
+}	
+Rule Placeholder_Leader_MoveDirection_UnSupp_W {
+	criteria		ConceptRadialMoving IsSquadLeader NotSuppressedRecent IsWest
+	response		Placeholder_Leader_MoveDirection_UnSupp_W
+}	
+Rule Placeholder_Leader_MoveDirection_UnSupp_NW {
+	criteria		ConceptRadialMoving IsSquadLeader NotSuppressedRecent IsNorthWest
+	response		Placeholder_Leader_MoveDirection_UnSupp_NW
+}	
+
+Rule Placeholder_Leader_MoveDirection_Supp_N {
+	criteria		ConceptRadialMoving IsSquadLeader SuppressedRecent IsNorth
+	response		Placeholder_Leader_MoveDirection_Supp_N
+}	
+Rule Placeholder_Leader_MoveDirection_Supp_NE {
+	criteria		ConceptRadialMoving IsSquadLeader SuppressedRecent IsNorthEast
+	response		Placeholder_Leader_MoveDirection_Supp_NE
+}	
+Rule Placeholder_Leader_MoveDirection_Supp_E {
+	criteria		ConceptRadialMoving IsSquadLeader SuppressedRecent IsEast
+	response		Placeholder_Leader_MoveDirection_Supp_E
+}	
+Rule Placeholder_Leader_MoveDirection_Supp_SE {
+	criteria		ConceptRadialMoving IsSquadLeader SuppressedRecent IsSouthEast
+	response		Placeholder_Leader_MoveDirection_Supp_SE
+}	
+Rule Placeholder_Leader_MoveDirection_Supp_S {
+	criteria		ConceptRadialMoving IsSquadLeader SuppressedRecent IsSouth
+	response		Placeholder_Leader_MoveDirection_Supp_S
+}	
+Rule Placeholder_Leader_MoveDirection_Supp_SW {
+	criteria		ConceptRadialMoving IsSquadLeader SuppressedRecent IsSouthWest
+	response		Placeholder_Leader_MoveDirection_Supp_SW
+}	
+Rule Placeholder_Leader_MoveDirection_Supp_W {
+	criteria		ConceptRadialMoving IsSquadLeader SuppressedRecent IsWest
+	response		Placeholder_Leader_MoveDirection_Supp_W
+}	
+Rule Placeholder_Leader_MoveDirection_Supp_NW {
+	criteria		ConceptRadialMoving IsSquadLeader SuppressedRecent IsNorthWest
+	response		Placeholder_Leader_MoveDirection_Supp_NW
+}	
+
+Response Placeholder_Leader_WatchArea_UnSupp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_UnSupp_NE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_UnSupp_E {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_UnSupp_SE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_UnSupp_S {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_UnSupp_SW {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_UnSupp_W {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_UnSupp_NW {
+	print "Placeholder VO"
+}
+
+Response Placeholder_Leader_WatchArea_Supp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_Supp_NE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_Supp_E {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_Supp_SE {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_Supp_S {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_Supp_SW {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_Supp_W {
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_WatchArea_Supp_NW {
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_WatchArea_UnSupp_N {
+	criteria		ConceptRadialWatchArea IsSquadLeader NotSuppressedRecent IsNorth
+	response		Placeholder_Leader_WatchArea_UnSupp_N
+}	
+Rule Placeholder_Leader_WatchArea_UnSupp_NE {
+	criteria		ConceptRadialWatchArea IsSquadLeader NotSuppressedRecent IsNorthEast
+	response		Placeholder_Leader_WatchArea_UnSupp_NE
+}	
+Rule Placeholder_Leader_WatchArea_UnSupp_E {
+	criteria		ConceptRadialWatchArea IsSquadLeader NotSuppressedRecent IsEast
+	response		Placeholder_Leader_WatchArea_UnSupp_E
+}	
+Rule Placeholder_Leader_WatchArea_UnSupp_SE {
+	criteria		ConceptRadialWatchArea IsSquadLeader NotSuppressedRecent IsSouthEast
+	response		Placeholder_Leader_WatchArea_UnSupp_SE
+}	
+Rule Placeholder_Leader_WatchArea_UnSupp_S {
+	criteria		ConceptRadialWatchArea IsSquadLeader NotSuppressedRecent IsSouth
+	response		Placeholder_Leader_WatchArea_UnSupp_S
+}	
+Rule Placeholder_Leader_WatchArea_UnSupp_SW {
+	criteria		ConceptRadialWatchArea IsSquadLeader NotSuppressedRecent IsSouthWest
+	response		Placeholder_Leader_WatchArea_UnSupp_SW
+}	
+Rule Placeholder_Leader_WatchArea_UnSupp_W {
+	criteria		ConceptRadialWatchArea IsSquadLeader NotSuppressedRecent IsWest
+	response		Placeholder_Leader_WatchArea_UnSupp_W
+}	
+Rule Placeholder_Leader_WatchArea_UnSupp_NW {
+	criteria		ConceptRadialWatchArea IsSquadLeader NotSuppressedRecent IsNorthWest
+	response		Placeholder_Leader_WatchArea_UnSupp_NW
+}	
+
+Rule Placeholder_Leader_WatchArea_Supp_N {
+	criteria		ConceptRadialWatchArea IsSquadLeader SuppressedRecent IsNorth
+	response		Placeholder_Leader_WatchArea_Supp_N
+}	
+Rule Placeholder_Leader_WatchArea_Supp_NE {
+	criteria		ConceptRadialWatchArea IsSquadLeader SuppressedRecent IsNorthEast
+	response		Placeholder_Leader_WatchArea_Supp_NE
+}	
+Rule Placeholder_Leader_WatchArea_Supp_E {
+	criteria		ConceptRadialWatchArea IsSquadLeader SuppressedRecent IsEast
+	response		Placeholder_Leader_WatchArea_Supp_E
+}	
+Rule Placeholder_Leader_WatchArea_Supp_SE {
+	criteria		ConceptRadialWatchArea IsSquadLeader SuppressedRecent IsSouthEast
+	response		Placeholder_Leader_WatchArea_Supp_SE
+}	
+Rule Placeholder_Leader_WatchArea_Supp_S {
+	criteria		ConceptRadialWatchArea IsSquadLeader SuppressedRecent IsSouth
+	response		Placeholder_Leader_WatchArea_Supp_S
+}	
+Rule Placeholder_Leader_WatchArea_Supp_SW {
+	criteria		ConceptRadialWatchArea IsSquadLeader SuppressedRecent IsSouthWest
+	response		Placeholder_Leader_WatchArea_Supp_SW
+}	
+Rule Placeholder_Leader_WatchArea_Supp_W {
+	criteria		ConceptRadialWatchArea IsSquadLeader SuppressedRecent IsWest
+	response		Placeholder_Leader_WatchArea_Supp_W
+}	
+Rule Placeholder_Leader_WatchArea_Supp_NW {
+	criteria		ConceptRadialWatchArea IsSquadLeader SuppressedRecent IsNorthWest
+	response		Placeholder_Leader_WatchArea_Supp_NW
+}	
+
+Response Placeholder_Leader_FlankLeft_UnSupp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_FlankLeft_Supp_N { 
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_FlankLeft_UnSupp_N {
+	criteria		ConceptRadialFlankLeft IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Leader_FlankLeft_UnSupp_N
+}
+Rule Placeholder_Leader_FlankLeft_Supp_N {
+	criteria		ConceptRadialFlankLeft IsSquadLeader SuppressedRecent
+	response		Placeholder_Leader_FlankLeft_Supp_N
+}
+
+Response Placeholder_Leader_FlankRight_UnSupp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_FlankRight_Supp_N { 
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_FlankRight_UnSupp_N {
+	criteria		ConceptRadialFlankRight IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Leader_FlankRight_UnSupp_N
+}
+Rule Placeholder_Leader_FlankRight_Supp_N {
+	criteria		ConceptRadialFlankRight IsSquadLeader SuppressedRecent
+	response		Placeholder_Leader_FlankRight_Supp_N
+}
+
+// Response Placeholder_Leader_GetReady_UnSupp_N { 
+// 	print "Placeholder VO" }
+// Response Placeholder_Leader_GetReady_Supp_N { 
+// 	print "Placeholder VO" }
+
+// Rule Placeholder_Leader_GetReady_UnSupp_N {
+// 	criteria		ConceptRadialGetReady IsSquadLeader NotSuppressedRecent
+// 	response		Placeholder_Leader_GetReady_UnSupp_N
+// }
+// Rule Placeholder_Leader_GetReady_Supp_N {
+// 	criteria		ConceptRadialGetReady IsSquadLeader SuppressedRecent
+// 	response		Placeholder_Leader_GetReady_Supp_N
+// }
+
+Response Placeholder_Leader_CeaseFire_UnSupp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_CeaseFire_Supp_N { 
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_CeaseFire_UnSupp_N {
+	criteria		ConceptRadialCeaseFire IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Leader_CeaseFire_UnSupp_N
+}
+Rule Placeholder_Leader_CeaseFire_Supp_N {
+	criteria		ConceptRadialCeaseFire IsSquadLeader SuppressedRecent
+	response		Placeholder_Leader_CeaseFire_Supp_N
+}
+
+Response Placeholder_Leader_Go_UnSupp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_Go_Supp_N { 
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_Go_UnSupp_N {
+	criteria		ConceptRadialGo IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Leader_Go_UnSupp_N
+}
+Rule Placeholder_Leader_Go_Supp_N {
+	criteria		ConceptRadialGo IsSquadLeader SuppressedRecent
+	response		Placeholder_Leader_Go_Supp_N
+}
+
+Response Placeholder_Leader_ReportStatus_UnSupp_N { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_ReportStatus_Supp_N { 
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_ReportStatus_UnSupp_N {
+	criteria		ConceptRadialReportStatus IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Leader_ReportStatus_UnSupp_N
+}
+Rule Placeholder_Leader_ReportStatus_Supp_N {
+	criteria		ConceptRadialReportStatus IsSquadLeader SuppressedRecent
+	response		Placeholder_Leader_ReportStatus_Supp_N
+}
+
+Response Placeholder_Leader_StickTogether_UnSupp { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_StickTogether_Supp { 
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_StickTogether_UnSupp {
+	criteria		ConceptRadialStickTogether IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Leader_StickTogether_UnSupp
+}
+Rule Placeholder_Leader_StickTogether_Supp {
+	criteria		ConceptRadialStickTogether IsSquadLeader SuppressedRecent
+	response		Placeholder_Leader_StickTogether_Supp
+}
+
+Response Placeholder_Leader_SpreadOut_UnSupp { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_SpreadOut_Supp { 
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_SpreadOut_UnSupp {
+	criteria		ConceptRadialSpreadOut IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Leader_SpreadOut_UnSupp
+}
+Rule Placeholder_Leader_SpreadOut_Supp {
+	criteria		ConceptRadialSpreadOut IsSquadLeader SuppressedRecent
+	response		Placeholder_Leader_SpreadOut_Supp
+}
+
+Response Placeholder_Leader_HoldPosition_UnSupp { 
+	print "Placeholder VO"
+}
+Response Placeholder_Leader_HoldPosition_Supp { 
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Leader_HoldPosition_UnSupp {
+	criteria		ConceptRadialHoldPosition IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Leader_HoldPosition_UnSupp
+}
+Rule Placeholder_Leader_HoldPosition_Supp {
+	criteria		ConceptRadialHoldPosition IsSquadLeader SuppressedRecent
+	response		Placeholder_Leader_HoldPosition_Supp
+}
+
+
+// 
+// Squad Leader Radial Commands
+//
+
+// Enemy Directions
+Response Placeholder_Lead_Supp_Enemy_North
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Enemy_NorthEast
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Enemy_East
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Enemy_SouthEast
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Enemy_South
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Enemy_SouthWest
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Enemy_West
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Enemy_NorthWest
+{
+	print "Placeholder VO"
+}
+
+Response Placeholder_Lead_UnSupp_Enemy_North
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_UnSupp_Enemy_NorthEast
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_UnSupp_Enemy_East
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_UnSupp_Enemy_SouthEast
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_UnSupp_Enemy_South
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_UnSupp_Enemy_SouthWest
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_UnSupp_Enemy_West
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_UnSupp_Enemy_NorthWest
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_UnSupp_Enemy_Confirm
+{
+	print "Placeholder VO"
+}
+
+// Suppressed
+Rule Placeholder_Lead_Supp_Enemy_North
+{
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsNorth
+	response		Placeholder_Lead_Supp_Enemy_North
+}
+Rule Placeholder_Lead_Supp_Enemy_NorthEast
+{
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsNorthEast
+	response		Placeholder_Lead_Supp_Enemy_NorthEast
+}
+Rule Placeholder_Lead_Supp_Enemy_East
+{
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsEast
+	response		Placeholder_Lead_Supp_Enemy_East
+}
+Rule Placeholder_Lead_Supp_Enemy_SouthEast
+{
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsSouthEast
+	response		Placeholder_Lead_Supp_Enemy_SouthEast
+}
+Rule Placeholder_Lead_Supp_Enemy_South
+{
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsSouth
+	response		Placeholder_Lead_Supp_Enemy_South
+}
+Rule Placeholder_Lead_Supp_Enemy_SouthWest
+{
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsSouthWest
+	response		Placeholder_Lead_Supp_Enemy_SouthWest
+}
+Rule Placeholder_Lead_Supp_Enemy_West
+{
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsWest
+	response		Placeholder_Lead_Supp_Enemy_West
+}
+Rule Placeholder_Lead_Supp_Enemy_NorthWest
+{
+	criteria		ConceptRadialEnemy IsSquadLeader SuppressedRecent IsNorthWest
+	response		Placeholder_Lead_Supp_Enemy_NorthWest
+}
+
+// Unsuppressed
+Rule Placeholder_Lead_UnSupp_Enemy_North
+{
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsNorth
+	response		Placeholder_Lead_UnSupp_Enemy_North
+}
+Rule Placeholder_Lead_UnSupp_Enemy_NorthEast
+{
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsNorthEast
+	response		Placeholder_Lead_UnSupp_Enemy_NorthEast
+}
+Rule Placeholder_Lead_UnSupp_Enemy_East
+{
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsEast
+	response		Placeholder_Lead_UnSupp_Enemy_East
+}
+Rule Placeholder_Lead_UnSupp_Enemy_SouthEast
+{
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsSouthEast
+	response		Placeholder_Lead_UnSupp_Enemy_SouthEast
+}
+Rule Placeholder_Lead_UnSupp_Enemy_South
+{
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsSouth
+	response		Placeholder_Lead_UnSupp_Enemy_South
+}
+Rule Placeholder_Lead_UnSupp_Enemy_SouthWest
+{
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsSouthWest
+	response		Placeholder_Lead_UnSupp_Enemy_SouthWest
+}
+Rule Placeholder_Lead_UnSupp_Enemy_West
+{
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsWest
+	response		Placeholder_Lead_UnSupp_Enemy_West
+}
+Rule Placeholder_Lead_UnSupp_Enemy_NorthWest
+{
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsNorthWest
+	response		Placeholder_Lead_UnSupp_Enemy_NorthWest
+}
+Rule Placeholder_Lead_UnSupp_Enemy_Confirm
+{
+	criteria		ConceptRadialEnemy IsSquadLeader NotSuppressedRecent IsEnemySpotRepeat
+	response		Placeholder_Lead_UnSupp_Enemy_Confirm
+}
+
+// Moving
+// Response Placeholder_Lead_UnSupp_Moving
+// {
+// 	print "Placeholder VO" }
+// Response Placeholder_Lead_Supp_Moving
+// {
+// 	print "Placeholder VO" }
+
+// Rule Placeholder_Lead_UnSupp_Moving
+// {
+// 	criteria		ConceptRadialMoving IsSquadLeader NotSuppressedRecent
+// 	response		Placeholder_Lead_UnSupp_Moving
+// }
+// Rule Placeholder_Lead_Supp_Moving
+// {
+// 	criteria		ConceptRadialMoving IsSquadLeader SuppressedRecent
+// 	response		Placeholder_Lead_Supp_Moving
+// }
+
+// Hostiles
+Response Placeholder_Lead_UnSupp_Hostile
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Hostile
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Lead_UnSupp_Hostile
+{
+	criteria		ConceptRadialHostile IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Lead_UnSupp_Hostile
+}
+Rule Placeholder_Lead_Supp_Hostile
+{
+	criteria		ConceptRadialHostile IsSquadLeader SuppressedRecent
+	response		Placeholder_Lead_Supp_Hostile
+}
+
+// Need Backup
+Response Placeholder_Lead_UnSupp_Backup
+{
+	print "Placeholder VO"
+}
+Rule Placeholder_Lead_UnSupp_Backup
+{
+	criteria		ConceptRadialBackup IsSquadLeader
+	response		Placeholder_Lead_UnSupp_Backup
+}	
+
+Response Placeholder_Lead_Supp_Backup
+{
+	print "Placeholder VO"
+}
+Rule Placeholder_Lead_Supp_Backup
+{
+	criteria		ConceptRadialBackup IsSquadLeader SuppressedRecent
+	response		Placeholder_Lead_Supp_Backup
+}	
+
+
+Response Security_Leader_NeedBackup_Alpha
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Alpha
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsAlpha
+	response		Security_Leader_NeedBackup_Alpha
+}	
+
+Response Security_Leader_NeedBackup_Bravo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Bravo
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsBravo
+	response		Security_Leader_NeedBackup_Bravo
+}	
+
+Response Security_Leader_NeedBackup_Charlie
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Charlie
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsCharlie
+	response		Security_Leader_NeedBackup_Charlie
+}	
+
+Response Security_Leader_NeedBackup_Delta
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Delta
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsDelta
+	response		Security_Leader_NeedBackup_Delta
+}	
+
+Response Security_Leader_NeedBackup_Echo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Echo
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsEcho
+	response		Security_Leader_NeedBackup_Echo
+}	
+
+Response Security_Leader_NeedBackup_Foxtrot
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Foxtrot
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsFoxtrot
+	response		Security_Leader_NeedBackup_Foxtrot
+}	
+
+Response Security_Leader_NeedBackup_Golf
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Golf
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsGolf
+	response		Security_Leader_NeedBackup_Golf
+}	
+
+Response Security_Leader_NeedBackup_Hotel
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Hotel
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsHotel
+	response		Security_Leader_NeedBackup_Hotel
+}	
+
+Response Security_Leader_NeedBackup_India
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_India
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsIndia
+	response		Security_Leader_NeedBackup_India
+}	
+
+Response Security_Leader_NeedBackup_Juliet
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Juliet
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsJuliet
+	response		Security_Leader_NeedBackup_Juliet
+}	
+
+Response Security_Leader_NeedBackup_Kilo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_NeedBackup_Kilo
+{
+	criteria		ConceptRadialBackup IsSquadLeader IsKilo
+	response		Security_Leader_NeedBackup_Kilo
+}	
+
+// Enemy Down
+Response Placeholder_Lead_UnSupp_TargetDown
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_TargetDown
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Lead_UnSupp_TargetDown
+{
+	criteria		ConceptRadialEnemyDown IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Lead_UnSupp_TargetDown
+}
+Rule Placeholder_Lead_Supp_TargetDown
+{
+	criteria		ConceptRadialEnemyDown IsSquadLeader SuppressedRecent
+	response		Placeholder_Lead_Supp_TargetDown
+}
+
+// Enemy down (knife)
+Response Placeholder_Lead_UnSupp_TargetDown_Knife
+{
+	print "Placeholder VO"
+}
+Rule Placeholder_Lead_UnSupp_TargetDown_Knife
+{
+	criteria		ConceptRadialEnemyDown IsSquadLeader RecentKnifeKill NotRecentlySaidKnifeKill
+	applycontext 	"SaidKnifeKill:1:8"
+	response		Placeholder_Lead_UnSupp_TargetDown_Knife
+}
+
+// Covering
+Response Placeholder_Lead_UnSupp_Covering
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Covering
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Lead_UnSupp_Covering
+{
+	criteria		ConceptRadialCovering IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Lead_UnSupp_Covering
+}
+Rule Placeholder_Lead_Supp_Covering
+{
+	criteria		ConceptRadialCovering IsSquadLeader SuppressedRecent
+	response		Placeholder_Lead_Supp_Covering
+}
+
+// Area Clear
+Response Placeholder_Lead_UnSupp_AreaClear
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_AreaClear
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Lead_UnSupp_AreaClear
+{
+	criteria		ConceptRadialClear IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Lead_UnSupp_AreaClear
+}
+Rule Placeholder_Lead_Supp_AreaClear
+{
+	criteria		ConceptRadialClear IsSquadLeader SuppressedRecent
+	response		Placeholder_Lead_Supp_AreaClear
+}	
+
+Response Security_Leader_AreaClear_Alpha
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Alpha
+{
+	criteria		ConceptRadialClear IsSquadLeader IsAlpha
+	response		Security_Leader_AreaClear_Alpha
+}	
+
+Response Security_Leader_AreaClear_Bravo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Bravo
+{
+	criteria		ConceptRadialClear IsSquadLeader IsBravo
+	response		Security_Leader_AreaClear_Bravo
+}	
+
+Response Security_Leader_AreaClear_Charlie
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Charlie
+{
+	criteria		ConceptRadialClear IsSquadLeader IsCharlie
+	response		Security_Leader_AreaClear_Charlie
+}	
+
+Response Security_Leader_AreaClear_Delta
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Delta
+{
+	criteria		ConceptRadialClear IsSquadLeader IsDelta
+	response		Security_Leader_AreaClear_Delta
+}	
+
+Response Security_Leader_AreaClear_Echo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Echo
+{
+	criteria		ConceptRadialClear IsSquadLeader IsEcho
+	response		Security_Leader_AreaClear_Echo
+}	
+
+Response Security_Leader_AreaClear_Foxtrot
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Foxtrot
+{
+	criteria		ConceptRadialClear IsSquadLeader IsFoxtrot
+	response		Security_Leader_AreaClear_Foxtrot
+}	
+
+Response Security_Leader_AreaClear_Golf
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Golf
+{
+	criteria		ConceptRadialClear IsSquadLeader IsGolf
+	response		Security_Leader_AreaClear_Golf
+}	
+
+Response Security_Leader_AreaClear_Hotel
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Hotel
+{
+	criteria		ConceptRadialClear IsSquadLeader IsHotel
+	response		Security_Leader_AreaClear_Hotel
+}	
+
+Response Security_Leader_AreaClear_India
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_India
+{
+	criteria		ConceptRadialClear IsSquadLeader IsIndia
+	response		Security_Leader_AreaClear_India
+}	
+
+Response Security_Leader_AreaClear_Juliet
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Juliet
+{
+	criteria		ConceptRadialClear IsSquadLeader IsJuliet
+	response		Security_Leader_AreaClear_Juliet
+}	
+
+Response Security_Leader_AreaClear_Kilo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AreaClear_Kilo
+{
+	criteria		ConceptRadialClear IsSquadLeader IsKilo
+	response		Security_Leader_AreaClear_Kilo
+}	
+
+Response Security_Leader_Discovered
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_Discovered
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsDiscovery IsNotDecoy
+	response 		Security_Leader_Discovered
+}
+
+Response Security_Leader_ObjDecoy
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_ObjDecoy
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsDiscovery IsDecoy
+	response 		Security_Leader_ObjDecoy
+}
+
+Response Security_Leader_AttackAlpha
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackAlpha
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsAlpha IsAttacking
+	response		Security_Leader_AttackAlpha
+}	
+
+Response Security_Leader_AttackBravo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackBravo
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsBravo IsAttacking
+	response		Security_Leader_AttackBravo
+}	
+
+Response Security_Leader_AttackCharlie
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackCharlie
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsCharlie IsAttacking
+	response		Security_Leader_AttackCharlie
+}	
+
+Response Security_Leader_AttackDelta
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackDelta
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsDelta IsAttacking
+	response		Security_Leader_AttackDelta
+}	
+
+Response Security_Leader_AttackEcho
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackEcho
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsEcho IsAttacking
+	response		Security_Leader_AttackEcho
+}
+
+Response Security_Leader_AttackFoxtrot
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackFoxtrot
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsFoxtrot IsAttacking
+	response		Security_Leader_AttackFoxtrot
+}
+
+Response Security_Leader_AttackGolf
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackGolf
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGolf IsAttacking
+	response		Security_Leader_AttackGolf
+}
+
+Response Security_Leader_AttackHotel
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackHotel
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsHotel IsAttacking
+	response		Security_Leader_AttackHotel
+}
+
+Response Security_Leader_AttackIndia
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackIndia
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsIndia IsAttacking
+	response		Security_Leader_AttackIndia
+}
+
+Response Security_Leader_AttackJuliet
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_AttackJuliet
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsJuliet IsAttacking
+	response		Security_Leader_AttackJuliet
+}
+
+Response Security_Leader_DefendAlpha
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendAlpha
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsAlpha IsDefending
+	response		Security_Leader_DefendAlpha
+}	
+
+Response Security_Leader_DefendBravo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendBravo
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsBravo IsDefending
+	response		Security_Leader_DefendBravo
+}	
+
+Response Security_Leader_DefendCharlie
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendCharlie
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsCharlie IsDefending
+	response		Security_Leader_DefendCharlie
+}	
+
+Response Security_Leader_DefendDelta
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendDelta
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsDelta IsDefending
+	response		Security_Leader_DefendDelta
+}	
+
+Response Security_Leader_DefendEcho
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendEcho
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsEcho IsDefending
+	response		Security_Leader_DefendEcho
+}	
+
+Response Security_Leader_DefendFoxtrot
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendFoxtrot
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsFoxtrot IsDefending
+	response		Security_Leader_DefendFoxtrot
+}	
+
+Response Security_Leader_DefendGolf
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendGolf
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGolf IsDefending
+	response		Security_Leader_DefendGolf
+}	
+
+Response Security_Leader_DefendHotel
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendHotel
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsHotel IsDefending
+	response		Security_Leader_DefendHotel
+}	
+
+Response Security_Leader_DefendIndia
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendIndia
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsIndia IsDefending
+	response		Security_Leader_DefendIndia
+}	
+
+Response Security_Leader_DefendJuliet
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DefendJuliet
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsJuliet IsDefending
+	response		Security_Leader_DefendJuliet
+}	
+
+// Destroy Vo
+
+Response Security_Leader_DestroyAlpha
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyAlpha
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsAlpha IsAttacking IsDestructible
+	response		Security_Leader_DestroyAlpha
+}	
+
+Response Security_Leader_DestroyBravo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyBravo
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsBravo IsAttacking IsDestructible
+	response		Security_Leader_DestroyBravo
+}	
+
+Response Security_Leader_DestroyCharlie
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyCharlie
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsCharlie IsAttacking IsDestructible
+	response		Security_Leader_DestroyCharlie
+}	
+
+Response Security_Leader_DestroyDelta
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyDelta
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsDelta IsAttacking IsDestructible
+	response		Security_Leader_DestroyDelta
+}	
+
+Response Security_Leader_DestroyEcho
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyEcho
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsEcho IsAttacking IsDestructible
+	response		Security_Leader_DestroyEcho
+}
+
+Response Security_Leader_DestroyFoxtrot
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyFoxtrot
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsFoxtrot IsAttacking IsDestructible
+	response		Security_Leader_DestroyFoxtrot
+}
+
+Response Security_Leader_DestroyGolf
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyGolf
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsGolf IsAttacking IsDestructible
+	response		Security_Leader_DestroyGolf
+}
+
+Response Security_Leader_DestroyHotel
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyHotel
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsHotel IsAttacking IsDestructible
+	response		Security_Leader_DestroyHotel
+}
+
+Response Security_Leader_DestroyIndia
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyIndia
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsIndia IsAttacking IsDestructible
+	response		Security_Leader_DestroyIndia
+}
+
+Response Security_Leader_DestroyJuliet
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Leader_DestroyJuliet
+{
+	criteria		ConceptRadialObjective IsSquadLeader IsJuliet IsAttacking IsDestructible
+	response		Security_Leader_DestroyJuliet
+}
+
+// On The Way
+Response Placeholder_Lead_UnSupp_OnTheWay
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_OnTheWay
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Lead_UnSupp_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Lead_UnSupp_OnTheWay
+}
+Rule Placeholder_Lead_Supp_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsSquadLeader SuppressedRecent
+	response		Placeholder_Lead_Supp_OnTheWay
+}
+
+// Affirmative
+Response Placeholder_Lead_UnSupp_Affirmative
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Affirmative
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Lead_UnSupp_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Lead_UnSupp_Affirmative
+}
+Rule Placeholder_Lead_Supp_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsSquadLeader SuppressedRecent
+	response		Placeholder_Lead_Supp_Affirmative
+}
+
+// Negative
+Response Placeholder_Lead_UnSupp_Negative
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Lead_Supp_Negative
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Lead_UnSupp_Negative
+{
+	criteria		ConceptRadialNegative IsSquadLeader NotSuppressedRecent
+	response		Placeholder_Lead_UnSupp_Negative
+}
+Rule Placeholder_Lead_Supp_Negative
+{
+	criteria		ConceptRadialNegative IsSquadLeader SuppressedRecent
+	response		Placeholder_Lead_Supp_Negative
+}
+
+// 
+// Squad Member Radial Commands
+//
+
+// Enemy Directions
+Response Placeholder_Sub_Supp_Enemy_North
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Enemy_NorthEast
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Enemy_East
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Enemy_SouthEast
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Enemy_South
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Enemy_SouthWest
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Enemy_West
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Enemy_NorthWest
+{
+	print "Placeholder VO"
+}
+
+Response Placeholder_Sub_UnSupp_Enemy_North
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_UnSupp_Enemy_NorthEast
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_UnSupp_Enemy_East
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_UnSupp_Enemy_SouthEast
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_UnSupp_Enemy_South
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_UnSupp_Enemy_SouthWest
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_UnSupp_Enemy_West
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_UnSupp_Enemy_NorthWest
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_UnSupp_Enemy_Confirm
+{
+	print "Placeholder VO"
+}
+
+// Suppressed
+Rule Placeholder_Sub_Supp_Enemy_North
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader SuppressedRecent IsNorth
+	response		Placeholder_Sub_Supp_Enemy_North
+}
+Rule Placeholder_Sub_Supp_Enemy_NorthEast
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader SuppressedRecent IsNorthEast
+	response		Placeholder_Sub_Supp_Enemy_NorthEast
+}
+Rule Placeholder_Sub_Supp_Enemy_East
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader SuppressedRecent IsEast
+	response		Placeholder_Sub_Supp_Enemy_East
+}
+Rule Placeholder_Sub_Supp_Enemy_SouthEast
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader SuppressedRecent IsSouthEast
+	response		Placeholder_Sub_Supp_Enemy_SouthEast
+}
+Rule Placeholder_Sub_Supp_Enemy_South
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader SuppressedRecent IsSouth
+	response		Placeholder_Sub_Supp_Enemy_South
+}
+Rule Placeholder_Sub_Supp_Enemy_SouthWest
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader SuppressedRecent IsSouthWest
+	response		Placeholder_Sub_Supp_Enemy_SouthWest
+}
+Rule Placeholder_Sub_Supp_Enemy_West
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader SuppressedRecent IsWest
+	response		Placeholder_Sub_Supp_Enemy_West
+}
+Rule Placeholder_Sub_Supp_Enemy_NorthWest
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader SuppressedRecent IsNorthWest
+	response		Placeholder_Sub_Supp_Enemy_NorthWest
+}
+
+// Unsuppressed
+Rule Placeholder_Sub_UnSupp_Enemy_North
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader NotSuppressedRecent IsNorth
+	response		Placeholder_Sub_UnSupp_Enemy_North
+}
+Rule Placeholder_Sub_UnSupp_Enemy_NorthEast
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader NotSuppressedRecent IsNorthEast
+	response		Placeholder_Sub_UnSupp_Enemy_NorthEast
+}
+Rule Placeholder_Sub_UnSupp_Enemy_East
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader NotSuppressedRecent IsEast
+	response		Placeholder_Sub_UnSupp_Enemy_East
+}
+Rule Placeholder_Sub_UnSupp_Enemy_SouthEast
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader NotSuppressedRecent IsSouthEast
+	response		Placeholder_Sub_UnSupp_Enemy_SouthEast
+}
+Rule Placeholder_Sub_UnSupp_Enemy_South
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader NotSuppressedRecent IsSouth
+	response		Placeholder_Sub_UnSupp_Enemy_South
+}
+Rule Placeholder_Sub_UnSupp_Enemy_SouthWest
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader NotSuppressedRecent IsSouthWest
+	response		Placeholder_Sub_UnSupp_Enemy_SouthWest
+}
+Rule Placeholder_Sub_UnSupp_Enemy_West
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader NotSuppressedRecent IsWest
+	response		Placeholder_Sub_UnSupp_Enemy_West
+}
+Rule Placeholder_Sub_UnSupp_Enemy_NorthWest
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader NotSuppressedRecent IsNorthWest
+	response		Placeholder_Sub_UnSupp_Enemy_NorthWest
+}
+Rule Placeholder_Sub_UnSupp_Enemy_Confirm
+{
+	criteria		ConceptRadialEnemy IsNotSquadLeader NotSuppressedRecent IsEnemySpotRepeat
+	response		Placeholder_Sub_UnSupp_Enemy_Confirm
+}
+
+// Moving
+Response Placeholder_Sub_UnSupp_Moving
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Moving
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Sub_UnSupp_Moving
+{
+	criteria		ConceptRadialMoving IsNotSquadLeader NotSuppressedRecent
+	response		Placeholder_Sub_UnSupp_Moving
+}
+Rule Placeholder_Sub_Supp_Moving
+{
+	criteria		ConceptRadialMoving IsNotSquadLeader SuppressedRecent
+	response		Placeholder_Sub_Supp_Moving
+}
+
+// Hostiles
+Response Placeholder_Sub_UnSupp_Hostile
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Hostile
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Sub_UnSupp_Hostile
+{
+	criteria		ConceptRadialHostile IsNotSquadLeader NotSuppressedRecent
+	response		Placeholder_Sub_UnSupp_Hostile
+}
+Rule Placeholder_Sub_Supp_Hostile
+{
+	criteria		ConceptRadialHostile IsNotSquadLeader SuppressedRecent
+	response		Placeholder_Sub_Supp_Hostile
+}
+
+// Need Backup
+Response Placeholder_Sub_UnSupp_Backup
+{
+	print "Placeholder VO"
+}
+Rule Placeholder_Sub_UnSupp_Backup
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader
+	response		Placeholder_Sub_UnSupp_Backup
+}	
+
+Response Placeholder_Sub_Supp_Backup
+{
+	print "Placeholder VO"
+}
+Rule Placeholder_Sub_Supp_Backup
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader SuppressedRecent
+	response		Placeholder_Sub_Supp_Backup
+}	
+
+Response Security_Subordinate_NeedBackup_Alpha
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Alpha
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsAlpha
+	response		Security_Subordinate_NeedBackup_Alpha
+}	
+
+Response Security_Subordinate_NeedBackup_Bravo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Bravo
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsBravo
+	response		Security_Subordinate_NeedBackup_Bravo
+}	
+
+Response Security_Subordinate_NeedBackup_Charlie
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Charlie
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsCharlie
+	response		Security_Subordinate_NeedBackup_Charlie
+}	
+
+Response Security_Subordinate_NeedBackup_Delta
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Delta
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsDelta
+	response		Security_Subordinate_NeedBackup_Delta
+}	
+
+Response Security_Subordinate_NeedBackup_Echo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Echo
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsEcho
+	response		Security_Subordinate_NeedBackup_Echo
+}	
+
+Response Security_Subordinate_NeedBackup_Foxtrot
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Foxtrot
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsFoxtrot
+	response		Security_Subordinate_NeedBackup_Foxtrot
+}	
+
+Response Security_Subordinate_NeedBackup_Golf
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Golf
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsGolf
+	response		Security_Subordinate_NeedBackup_Golf
+}	
+
+Response Security_Subordinate_NeedBackup_Hotel
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Hotel
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsHotel
+	response		Security_Subordinate_NeedBackup_Hotel
+}	
+
+Response Security_Subordinate_NeedBackup_India
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_India
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsIndia
+	response		Security_Subordinate_NeedBackup_India
+}	
+
+Response Security_Subordinate_NeedBackup_Juliet
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Juliet
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsJuliet
+	response		Security_Subordinate_NeedBackup_Juliet
+}	
+
+Response Security_Subordinate_NeedBackup_Kilo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_NeedBackup_Kilo
+{
+	criteria		ConceptRadialBackup IsNotSquadLeader IsKilo
+	response		Security_Subordinate_NeedBackup_Kilo
+}	
+
+// Enemy Down
+Response Placeholder_Sub_UnSupp_TargetDown
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_TargetDown
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Sub_UnSupp_TargetDown
+{
+	criteria		ConceptRadialEnemyDown IsNotSquadLeader NotSuppressedRecent
+	response		Placeholder_Sub_UnSupp_TargetDown
+}
+Rule Placeholder_Sub_Supp_TargetDown
+{
+	criteria		ConceptRadialEnemyDown IsNotSquadLeader SuppressedRecent
+	response		Placeholder_Sub_Supp_TargetDown
+}
+
+Response Placeholder_Sub_UnSupp_TargetDown_Knife
+{
+	print "Placeholder VO"
+}
+Rule Placeholder_Sub_UnSupp_TargetDown_Knife
+{
+	criteria		ConceptRadialEnemyDown IsNotSquadLeader RecentKnifeKill NotRecentlySaidKnifeKill
+	applycontext 	"SaidKnifeKill:1:8"
+	response		Placeholder_Sub_UnSupp_TargetDown_Knife
+}
+
+// Covering
+Response Placeholder_Sub_UnSupp_Covering
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Covering
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Sub_UnSupp_Covering
+{
+	criteria		ConceptRadialCovering IsNotSquadLeader NotSuppressedRecent
+	response		Placeholder_Sub_UnSupp_Covering
+}
+Rule Placeholder_Sub_Supp_Covering
+{
+	criteria		ConceptRadialCovering IsNotSquadLeader SuppressedRecent
+	response		Placeholder_Sub_Supp_Covering
+}
+
+// Area Clear
+Response Placeholder_Sub_UnSupp_AreaClear
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_AreaClear
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Sub_UnSupp_AreaClear
+{
+	criteria		ConceptRadialClear IsNotSquadLeader NotSuppressedRecent
+	response		Placeholder_Sub_UnSupp_AreaClear
+}
+Rule Placeholder_Sub_Supp_AreaClear
+{
+	criteria		ConceptRadialClear IsNotSquadLeader SuppressedRecent
+	response		Placeholder_Sub_Supp_AreaClear
+}
+
+Response Security_Subordinate_AreaClear_Alpha
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Alpha
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsAlpha
+	response		Security_Subordinate_AreaClear_Alpha
+}	
+
+Response Security_Subordinate_AreaClear_Bravo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Bravo
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsBravo
+	response		Security_Subordinate_AreaClear_Bravo
+}	
+
+Response Security_Subordinate_AreaClear_Charlie
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Charlie
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsCharlie
+	response		Security_Subordinate_AreaClear_Charlie
+}	
+
+Response Security_Subordinate_AreaClear_Delta
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Delta
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsDelta
+	response		Security_Subordinate_AreaClear_Delta
+}	
+
+Response Security_Subordinate_AreaClear_Echo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Echo
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsEcho
+	response		Security_Subordinate_AreaClear_Echo
+}	
+
+Response Security_Subordinate_AreaClear_Foxtrot
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Foxtrot
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsFoxtrot
+	response		Security_Subordinate_AreaClear_Foxtrot
+}	
+
+Response Security_Subordinate_AreaClear_Golf
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Golf
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsGolf
+	response		Security_Subordinate_AreaClear_Golf
+}	
+
+Response Security_Subordinate_AreaClear_Hotel
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Hotel
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsHotel
+	response		Security_Subordinate_AreaClear_Hotel
+}	
+
+Response Security_Subordinate_AreaClear_India
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_India
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsIndia
+	response		Security_Subordinate_AreaClear_India
+}	
+
+Response Security_Subordinate_AreaClear_Juliet
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Juliet
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsJuliet
+	response		Security_Subordinate_AreaClear_Juliet
+}	
+
+Response Security_Subordinate_AreaClear_Kilo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AreaClear_Kilo
+{
+	criteria		ConceptRadialClear IsNotSquadLeader IsKilo
+	response		Security_Subordinate_AreaClear_Kilo
+}	
+
+Response Security_Subordinate_Discovered
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_Discovered
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsDiscovery IsNotDecoy
+	response 		Security_Subordinate_Discovered
+}
+
+Response Security_Subordinate_ObjDecoy
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_ObjDecoy
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsDiscovery IsDecoy
+	response 		Security_Subordinate_ObjDecoy
+}
+
+Response Security_Subordinate_AttackAlpha
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackAlpha
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsAlpha
+	response		Security_Subordinate_AttackAlpha
+}	
+
+Response Security_Subordinate_AttackBravo
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackBravo
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsBravo
+	response		Security_Subordinate_AttackBravo
+}	
+
+Response Security_Subordinate_AttackCharlie
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackCharlie
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsCharlie
+	response		Security_Subordinate_AttackCharlie
+}	
+
+Response Security_Subordinate_AttackDelta
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackDelta
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsDelta
+	response		Security_Subordinate_AttackDelta
+}	
+
+Response Security_Subordinate_AttackEcho
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackEcho
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsEcho
+	response		Security_Subordinate_AttackEcho
+}
+
+Response Security_Subordinate_AttackFoxtrot
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackFoxtrot
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsFoxtrot
+	response		Security_Subordinate_AttackFoxtrot
+}
+
+Response Security_Subordinate_AttackGolf
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackGolf
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsGolf
+	response		Security_Subordinate_AttackGolf
+}
+
+Response Security_Subordinate_AttackHotel
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackHotel
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsHotel
+	response		Security_Subordinate_AttackHotel
+}
+
+Response Security_Subordinate_AttackIndia
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackIndia
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsIndia
+	response		Security_Subordinate_AttackIndia
+}
+
+Response Security_Subordinate_AttackJuliet
+{
+	PermitRepeats
+	print "Placeholder VO"
+}
+Rule Security_Subordinate_AttackJuliet
+{
+	criteria		ConceptRadialObjective IsNotSquadLeader IsJuliet
+	response		Security_Subordinate_AttackJuliet
+}
+
+// On The Way
+Response Placeholder_Sub_UnSupp_OnTheWay
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_OnTheWay
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Sub_UnSupp_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsNotSquadLeader NotSuppressedRecent
+	response		Placeholder_Sub_UnSupp_OnTheWay
+}
+Rule Placeholder_Sub_Supp_OnTheWay
+{
+	criteria		ConceptRadialOnTheWay IsNotSquadLeader SuppressedRecent
+	response		Placeholder_Sub_Supp_OnTheWay
+}
+
+// Affirmative
+Response Placeholder_Sub_UnSupp_Affirmative
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Affirmative
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Sub_UnSupp_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsNotSquadLeader NotSuppressedRecent
+	response		Placeholder_Sub_UnSupp_Affirmative
+}
+Rule Placeholder_Sub_Supp_Affirmative
+{
+	criteria		ConceptRadialAffirmative IsNotSquadLeader SuppressedRecent
+	response		Placeholder_Sub_Supp_Affirmative
+}
+
+// Negative
+Response Placeholder_Sub_UnSupp_Negative
+{
+	print "Placeholder VO"
+}
+Response Placeholder_Sub_Supp_Negative
+{
+	print "Placeholder VO"
+}
+
+Rule Placeholder_Sub_UnSupp_Negative
+{
+	criteria		ConceptRadialNegative IsNotSquadLeader NotSuppressedRecent
+	response		Placeholder_Sub_UnSupp_Negative
+}
+Rule Placeholder_Sub_Supp_Negative
+{
+	criteria		ConceptRadialNegative IsNotSquadLeader SuppressedRecent
+	response		Placeholder_Sub_Supp_Negative
+}

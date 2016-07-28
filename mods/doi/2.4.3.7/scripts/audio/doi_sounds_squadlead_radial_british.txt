@@ -1,0 +1,1257 @@
+// Squad_Lead_British
+
+
+//Request Artillery 
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_RequestArtillery"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestartillery1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestartillery2.ogg"			
+	}	
+}
+
+//3D Radio Version To Be Played Over All Radios
+"Radial_British.SquadLead_UnSupp_RequestArtillery_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestartillery_radio1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestartillery_radio2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_RequestArtillery"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestartillery1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestartillery2.ogg"			
+	}	
+}
+
+//3D Radio Version To Be Played Over All Radios
+"Radial_British.SquadLead_Supp_RequestArtillery_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestartillery_radio1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestartillery_radio2.ogg"			
+	}	
+}
+
+//Request Smoke Artillery 
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_RequestSmokeArtillery"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestsmokeartillery1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestsmokeartillery2.ogg"			
+	}	
+}
+
+//3D Radio Version To Be Played Over All Radios
+"Radial_British.SquadLead_UnSupp_RequestSmokeArtillery_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestsmokeartillery_radio1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestsmokeartillery_radio2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_RequestSmokeArtillery"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestsmokeartillery1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestsmokeartillery2.ogg"			
+	}	
+}
+
+//3D Radio Version To Be Played Over All Radios
+"Radial_British.SquadLead_Supp_RequestSmokeArtillery_Radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestsmokeartillery_radio1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestsmokeartillery_radio2.ogg"			
+	}	
+}
+
+//Request Radio 
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_RequestRadio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestradio1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/requestradio2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_RequestRadio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestradio1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/requestradio2.ogg"			
+	}	
+}
+
+
+//Affirmative
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/affirmative1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/affirmative2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/affirmative1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/affirmative2.ogg"			
+	}	
+}
+
+//Negative
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/negative1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/negative2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/negative1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/negative2.ogg"			
+	}	
+}
+
+//Enemy Down
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_EnemyDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemydown1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemydown2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_EnemyDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemydown1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemydown2.ogg"			
+	}	
+}
+
+//Enemy Spotted
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_EnemySpotted_North"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemyspotted_north.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_EnemySpotted_North"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemyspotted_north.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_EnemySpotted_East"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemyspotted_east.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_EnemySpotted_East"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemyspotted_east.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_EnemySpotted_South"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemyspotted_south.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_EnemySpotted_South"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemyspotted_south.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_EnemySpotted_West"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemyspotted_west.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_EnemySpotted_West"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemyspotted_west.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_EnemySpotted_NorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemyspotted_northeast.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_EnemySpotted_NorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemyspotted_northeast.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_EnemySpotted_NorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemyspotted_northwest.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_EnemySpotted_NorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemyspotted_northwest.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_EnemySpotted_SouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemyspotted_southeast.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_EnemySpotted_SouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemyspotted_southeast.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_EnemySpotted_SouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/enemyspotted_southwest.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_EnemySpotted_SouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/enemyspotted_southwest.ogg"	
+	}	
+}
+
+// Flank Left & Right
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Flank_Left"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/flankleft1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/flankleft2.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Flank_Left"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/flankleft1.ogg"
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/flankleft2.ogg"		
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Flank_Right"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/flankright1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/flankright2.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Flank_Right"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/flankright1.ogg"
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/flankright2.ogg"	
+	}	
+}
+
+// Go
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Go"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/go1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/go2.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Go"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/go1.ogg"
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/go2.ogg"		
+	}	
+}
+
+// Go
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_HoldPosition"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/holdposition1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/holdposition2.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_HoldPosition"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/holdposition1.ogg"
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/holdposition2.ogg"		
+	}	
+}
+
+//Move Direction
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Move_North"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/move_north.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Move_North"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/move_north.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Move_East"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/move_east.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Move_East"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/move_east.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Move_South"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/move_south.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Move_South"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/move_south.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Move_West"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/move_west.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Move_West"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/move_west.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Move_NorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/move_northeast.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Move_NorthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/move_northeast.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Move_NorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/move_northwest.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Move_NorthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/move_northwest.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Move_SouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/move_southeast.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Move_SouthEast"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/move_southeast.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_Move_SouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/move_southwest.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_Move_SouthWest"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/move_southwest.ogg"	
+	}	
+}
+
+// Move To Objective
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MoveToObjective_Able"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/moveto_able.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MoveToObjective_Able"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/moveto_able.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MoveToObjective_Baker"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/moveto_baker.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MoveToObjective_Baker"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/moveto_baker.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MoveToObjective_Charlie"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/moveto_charlie.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MoveToObjective_Charlie"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/moveto_charlie.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MoveToObjective_Dog"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/moveto_dog.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MoveToObjective_Dog"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/moveto_dog.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MoveToObjective_Easy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/moveto_easy.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MoveToObjective_Easy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/moveto_easy.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MoveToObjective_Fox"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/moveto_fox.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MoveToObjective_Fox"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/moveto_fox.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MoveToObjective_George"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/moveto_george.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MoveToObjective_George"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/moveto_george.ogg"	
+	}	
+}
+
+// Moving To Objective
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MovingToObjective_Able"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/movingto_able.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MovingToObjective_Able"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/movingto_able.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MovingToObjective_Baker"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/movingto_baker.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MovingToObjective_Baker"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/movingto_baker.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MovingToObjective_Charlie"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/movingto_charlie.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MovingToObjective_Charlie"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/movingto_charlie.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MovingToObjective_Dog"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/movingto_dog.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MovingToObjective_Dog"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/movingto_dog.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MovingToObjective_Easy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/movingto_easy.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MovingToObjective_Easy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/movingto_easy.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MovingToObjective_Fox"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/movingto_fox.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MovingToObjective_Fox"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/movingto_fox.ogg"	
+	}	
+}
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_MovingToObjective_George"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/movingto_george.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_MovingToObjective_George"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/movingto_george.ogg"	
+	}	
+}
+
+// Need Ammo
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_NeedAmmo"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/needammo1.ogg"		
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/needammo2.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_NeedAmmo"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/needammo1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/needammo2.ogg"			
+	}	
+}
+
+// Need Backup
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_NeedBackup"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/needbackup1.ogg"		
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/needbackup2.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_NeedBackup"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/needbackup1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/needbackup2.ogg"			
+	}	
+}
+
+// Need Smoke
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_NeedSmoke"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/needsmoke1.ogg"		
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/needsmoke2.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_NeedSmoke"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/needsmoke1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/needsmoke2.ogg"			
+	}	
+}
+
+//On The Way
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_OnTheWay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/ontheway1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/ontheway2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_OnTheWay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/ontheway1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/ontheway2.ogg"			
+	}	
+}
+
+//Spread Out
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_SpreadOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/spreadout1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/spreadout2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_SpreadOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/spreadout1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/spreadout2.ogg"			
+	}	
+}
+
+//Request Status Of Team Mates
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_RequestStatus"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/statusreport1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/statusreport2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_RequestStatus"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/statusreport1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/statusreport2.ogg"			
+	}	
+}
+
+//Stick Together
+
+//Unsuppressed
+"Radial_British.SquadLead_UnSupp_StickTogether"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/sticktogether1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Unsuppressed/sticktogether2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_British.SquadLead_Supp_StickTogether"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/sticktogether1.ogg"	
+		"wave"		"player/voice/radial/british/squadlead/Suppressed/sticktogether2.ogg"			
+	}	
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Loading</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="css/doi-theme.css">
+	<link rel="stylesheet" type="text/css" href="js/coherent.mock.style.css">
+</head>
+
+<body class="main-menu">
+	
+	<div class="container-fluid">
+	
+		<div class="map-info" data-bind="if: mapName().length">
+			
+			<h1>
+				<span id="map-name" data-bind="text: mapName">Map Name</span>
+				<span class="header-detail location" data-bind="text: mapSubtext">1944, Italy</span>
+			</h1>
+			<hr>
+			
+			<h5 data-bind="text: gamemodeName">Mode</h5>
+			
+			<p data-bind="text: gamemodeDescription">In this mission-based cooperative game mode, you will team up with your friends to take on challenging AI opponents.</p>
+		
+		</div>
+		
+		<div class="right-info">
+			<div class="server-info">
+				<h4 data-bind="text: serverName">Server Name</h4>
+				<p data-bind="html: serverMotd">Hope you like this awesome server message. We're glad to have you playing on our servers, enjoy. !!Maintenance: Every tuesday!!</p>
+			</div>
+			
+			<div class="loading-progress pull-right progress" data-bind="progress: loadingProgress">
+			</div>
+		</div>
+	</div>
+	
+	<style type="text/css">
+		.map-info { width: 40%; margin-left: 50px; }
+		.right-info { position: fixed; right: 50px; bottom: 50px; width: 35%; text-align: right; }
+		.loading-progress { width: 350px; }
+	</style>
+	
+	<script type="text/javascript" src="js/coherent.js"></script>
+	<script type="text/javascript" src="js/coherent.mock.js"></script>
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/knockout-3.4.0.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/knockstrap.min.js"></script>
+	
+	<script type="text/javascript">
+	
+		function LoadingScreenModel() {
+		
+			this.mapFilename = ko.observable("");
+			this.mapName = ko.observable("");
+			this.mapSubtext = ko.observable("");
+			this.gamemodeName = ko.observable("");
+			this.gamemodeDescription = ko.observable("");
+			this.mapImages = ko.observableArray();
+			
+			this.serverName = ko.observable("");
+			this.serverMotd = ko.observable("");
+			
+			this.loadingProgress = ko.observable(0.0);
+			this.customProgressLabel = ko.observable();
+			
+			this.updateBackground = function() {
+				if(this.mapImages().length <= 0)
+					return;
+				
+				var index = Math.min(Math.floor(this.loadingProgress() * this.mapImages().length), this.mapImages().length - 1);
+				$("body").css("background-image", "url('images/maps/" + this.mapImages()[index] + "')");
+			}
+			
+		}
+		
+		var model = new LoadingScreenModel();
+		
+		// view/model bindings
+		ko.applyBindings(model);
+			
+		engine.on('Ready', function() {
+			
+		});
+		
+		engine.on('ServerSpawn', function(serverName) {
+			model.serverName(serverName);
+		});
+		
+		engine.on('ServerDetails', function(mapName, gamemodeName, images) {
+			model.mapFilename(mapName);
+			model.mapName(engine.translate(mapName));
+			
+			// map subtext (location, year)
+			var subtextKey = "#" + mapName + "_subtext";
+			var subtext = engine.translate(subtextKey);
+			
+			if(subtext == subtextKey) {
+				model.mapSubtext('');
+			}
+			else {
+				model.mapSubtext(subtext);
+			}
+			
+			model.gamemodeName(engine.translate("#game_gm_" + gamemodeName));
+			
+			// find gamemode description
+			var descriptionKey = "#game_description_" + gamemodeName;
+			var description = engine.translate(descriptionKey);
+			
+			if(description == descriptionKey) {
+				model.gamemodeDescription('');
+			}
+			else {
+				model.gamemodeDescription(description);
+			}
+			
+			model.mapImages(images);
+			model.updateBackground();
+		});
+		
+		engine.on('ServerMotd', function(motd) {
+			model.serverMotd(motd);
+		});
+		
+		engine.on('SetLoadingProgress', function(progress) {
+			model.loadingProgress(progress * 100);
+			model.updateBackground();
+		});
+		
+		engine.on('SetLoadingLabel', function(label) {
+			if(typeof(label) != 'undefined') {
+				model.customProgressLabel(label);
+				return;
+			}
+			
+			model.customProgressLabel(undefined);
+		});
+			
+	
+	</script>
+		
+		
+</body>
+
+</html>

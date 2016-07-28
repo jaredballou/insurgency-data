@@ -1,0 +1,8 @@
+"UnlitGeneric" 
+{ 	
+	"$baseTexture" "vgui\bg_diag.vtf"
+	"$vertexalpha" "1" 	
+	"$ignorez"     "1" 	
+	"$no_fullbright" "1"	 	
+	"$vertexcolor" "1" 
+} 

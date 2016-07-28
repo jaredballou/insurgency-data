@@ -1,0 +1,771 @@
+Criterion GermanCanAnnounceIncomingArtillery "WorldGermanArtilleryExplosionAnnounce" "!=1" required
+
+//
+// Leader
+//
+
+// Reloading
+Response German_Lead_Reload{
+	speak 			"Voice_Response_German.Lead_Reloading" noscene delay "5" respeakdelay "30"
+}
+Rule German_Lead_Reload{
+	criteria		ConceptReloading IsSquadLeader IsGerman NotRecentlySaidRadial HasNearbyTeammates
+	response 		German_Lead_Reload
+}
+
+// Damaged - Burn
+Response German_Lead_Burn
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Lead_BurnPainSmall" noscene
+}
+Rule German_Lead_Burn
+{
+	criteria		ConceptHurt IsBurn IsSquadLeader IsGerman CanMakePainSound NoRecentBurnPain
+	ApplyContext 	"SaidBurnPain:1:1.5" // Delay between each concept
+	response 		German_Lead_Burn
+}
+
+// Damaged - Friendly Fire
+Response German_Lead_FriendlyFire
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Lead_FriendlyFire" noscene
+}
+Rule German_Lead_FriendlyFire
+{
+	criteria		ConceptFriendlyFire IsSquadLeader IsGerman
+	response 		German_Lead_FriendlyFire
+}
+
+// Flamethrower firing
+Response German_Lead_FlamethrowerFiring
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Lead_FlameThrowerExtend" noscene
+}
+Rule German_Lead_FlamethrowerFiring
+{
+	criteria		C_FlamethrowerFiring IsGerman IsSquadLeader
+	response 		German_Lead_FlamethrowerFiring
+}
+
+// Throwing Frag near friendlies
+Response German_Lead_ThrowingFrag
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Lead_FragGrenadeOut" noscene
+}
+Rule German_Lead_ThrowingFrag
+{
+	criteria		ConceptThrowingGrenade IsGerman IsSquadLeader IsFrag HasNearbyTeammates
+	response 		German_Lead_ThrowingFrag
+}
+
+// Throwing smoke near friendlies
+Response German_Lead_ThrowingSmoke
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Lead_SmokeGrenadeOut" noscene
+}
+Rule German_Lead_ThrowingSmoke
+{
+	criteria		ConceptThrowingGrenade IsGerman IsSquadLeader IsSmoke HasNearbyTeammates
+	response 		German_Lead_ThrowingSmoke
+}
+
+// Throwing back grenade
+Response German_Lead_Throwback
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Lead_GrenadeTossBack" noscene
+}
+Rule German_Lead_Throwback
+{
+	criteria		ConceptThrowingGrenade IsSquadLeader IsGerman IsFrag IsGrenadeThrowback
+	response 		German_Lead_Throwback
+}
+
+// Suppressed (Generic)
+Response German_Lead_Supp{
+	speak			"Voice_Response_German.Lead_UnderSuppression"
+}
+Rule German_Lead_Supp{
+	criteria		ConceptBeingSuppressed IsSquadLeader IsGerman NotRecentlySaidRadial
+	response 		German_Lead_Supp
+}
+
+// Suppressed by grenade
+Response German_Lead_Suppressed_Grenade
+{
+	speak			"Voice_Response_German.Lead_GrenadeExplodeClose" noscene
+}
+Rule German_Lead_Suppressed_Grenade
+{
+	criteria		ConceptBeingSuppressed IsGerman IsSquadLeader NotRecentlySaidRadial SuppressionContextExplosion
+	response 		German_Lead_Suppressed_Grenade
+}
+
+// Suppressed by rocket flying
+Response German_Lead_Suppressed_Rocket_Passing
+{
+	speak			"Voice_Response_German.Lead_RocketFlyPastClose" noscene
+}
+Rule German_Lead_Suppressed_Rocket_Passing
+{
+	criteria		ConceptBeingSuppressed IsGerman IsSquadLeader NotRecentlySaidRadial SuppressionContextRocketPass
+	response 		German_Lead_Suppressed_Rocket_Passing
+}
+
+// Suppressed by rocket explsion
+Response German_Lead_Suppressed_Rocket_Explosion
+{
+	speak			"Voice_Response_German.Lead_RocketDetonateClose" noscene
+}
+Rule German_Lead_Suppressed_Rocket_Explosion
+{
+	criteria		ConceptBeingSuppressed IsGerman IsSquadLeader NotRecentlySaidRadial SuppressionContextRocketDet
+	response 		German_Lead_Suppressed_Rocket_Explosion
+}
+
+// Suppressed by MG fire
+Response German_Lead_Suppressed_MG
+{
+	speak			"Voice_Response_German.Lead_SuppressedByMachineGun" noscene
+}
+Rule German_Lead_Suppressed_MG
+{
+	criteria		ConceptBeingSuppressed IsGerman IsSquadLeader NotRecentlySaidRadial SuppressionContextBulletMG
+	response 		German_Lead_Suppressed_MG
+}
+
+// Suppressed by sniper
+Response German_Lead_Suppressed_Sniper
+{
+	speak			"Voice_Response_German.Lead_SuppressedBySniper" noscene
+}
+Rule German_Lead_Suppressed_Sniper
+{
+	criteria		ConceptBeingSuppressed IsGerman IsSquadLeader NotRecentlySaidRadial SuppressionContextBulletSniper SuppressionIsDistantShooter SuppressionShooterHasScope
+	response 		German_Lead_Suppressed_Sniper
+}
+
+// Coughing after entering smoke nade 
+Response German_Lead_Coughing
+{
+	speak			"Voice_Response_German.Lead_SmokeCough" noscene odds 60
+}
+Rule German_Lead_Coughing
+{
+	criteria		C_Coughing IsSquadLeader IsGerman NotRecentlySaidRadial CanDoSmokeCough
+	ApplyContext 	"SuppressCoughing:1:12" // Delay between each concept
+	response 		German_Lead_Coughing
+}
+
+// Seen friendly die nearby
+Response German_Lead_Friendly_Died
+{
+	speak			"Voice_Response_German.Lead_FriendlyKilled" noscene
+}
+Rule German_Lead_Friendly_Died
+{
+	criteria		ConceptFriendlyDown IsSquadLeader IsGerman NotRecentlySaidRadial
+	response 		German_Lead_Friendly_Died
+}
+
+// Seen player die nearby from flamethrower
+Response German_Lead_Nearby_Flamethrower_Death
+{
+	speak			"Voice_Response_German.Lead_FuelTankExplodeClose" noscene
+}
+Rule German_Lead_Nearby_Flamethrower_Death
+{
+	criteria		ConceptFriendlyDown IsSquadLeader IsGerman NotRecentlySaidRadial HadFuelTank
+	response 		German_Lead_Nearby_Flamethrower_Death
+}
+
+// Report Status Response
+Response German_Lead_StatusResponse
+{
+	speak			"Voice_Response_German.Lead_StatusReportImFine" noscene
+}
+Rule German_Lead_StatusResponse
+{
+	criteria		C_StatusReport IsGerman IsSquadLeader  // TODO: Add leader requirement once we get sub
+	response 		German_Lead_StatusResponse
+}
+
+Response German_Lead_StatusResponse_Suppressed
+{
+	speak			"Voice_Response_German.Lead_StatusReportRecentlySuppressed" noscene
+}
+Rule German_Lead_StatusResponse_Suppressed
+{
+	criteria		C_StatusReport IsGerman IsSquadLeader StatusRecentlySuppressed  
+	response 		German_Lead_StatusResponse_Suppressed
+}
+
+Response German_Lead_StatusResponse_Shot
+{
+	speak			"Voice_Response_German.Lead_StatusReportRecentlyWounded" noscene
+}
+Rule German_Lead_StatusResponse_Shot
+{
+	criteria		C_StatusReport IsGerman StatusRecentlyShot IsSquadLeader
+	response 		German_Lead_StatusResponse_Shot
+}
+
+Response German_Lead_StatusResponse_Burned
+{
+	speak			"Voice_Response_German.Lead_StatusReportBurnedByFlamethrower" noscene
+}
+Rule German_Lead_StatusResponse_Burned
+{
+	criteria		C_StatusReport IsGerman StatusRecentlyBurned IsSquadLeader
+	response 		German_Lead_StatusResponse_Burned
+}
+
+// Heard artillery firing
+
+Response German_Lead_HeardArtillery_Enemy
+{
+	speak			"Voice_Response_German.Lead_EnemyArtilleryIncoming" noscene
+}
+Rule German_Lead_HeardArtillery_Enemy
+{
+	criteria		C_HeardArtillery IsGerman NotRecentlySaidRadial IsSquadLeader
+	response 		German_Lead_HeardArtillery_Enemy
+}
+
+
+Response German_Lead_HeardArtillery_Friendly
+{
+	speak			"Voice_Response_German.Lead_FriendlyArtilleryFiring" noscene
+}
+Rule German_Lead_HeardArtillery_Friendly
+{
+	criteria		C_HeardArtillery IsGerman NotRecentlySaidRadial IsFriendlyArtillery IsSquadLeader
+	response 		German_Lead_HeardArtillery_Friendly
+}
+
+// Near artillery explosions
+Response German_Lead_Suppressed_Artillery
+{
+	speak			"Voice_Response_German.Lead_ArtilleryExplodingNearMe" noscene
+}
+Rule German_Lead_Suppressed_Artillery
+{
+	criteria		C_IncomingArtillery IsGerman NotRecentlySaidRadial GermanCanAnnounceIncomingArtillery IsSquadLeader
+	ApplyContext 	"GermanArtilleryExplosionAnnounce:1:40"
+	applycontexttoworld
+	response 		German_Lead_Suppressed_Artillery
+}
+
+// Captured objective
+Response German_Lead_CapturedObjective
+{
+	speak			"Voice_Response_German.Lead_ObjectiveClear" noscene
+}
+Rule German_Lead_CapturedObjective
+{
+	criteria		C_CapturedPoint IsGerman NotRecentlySaidRadial IsSquadLeader
+	response 		German_Lead_CapturedObjective
+}
+
+// Received ammo
+Response German_Lead_ReceiveAmmo
+{
+	speak			"Voice_Response_German.Lead_ReceiveAmmo" noscene
+}
+Rule German_Lead_ReceiveAmmo
+{
+	criteria		C_ReceivedAmmo IsGerman IsSquadLeader NotRecentlySaidRadial
+	response		German_Lead_ReceiveAmmo
+}
+
+// Low ammo
+Response German_Lead_LowAmmo
+{
+	speak			"Voice_Response_German.Lead_LowAmmo" noscene
+}
+Rule German_Lead_LowAmmo
+{
+	criteria		C_LowAmmo IsGerman IsSquadLeader NotRecentlySaidRadial
+	response		German_Lead_LowAmmo
+}
+
+// Entrenchment - Regroup
+Response German_Lead_Entrenchment_Regroup
+{
+	speak			"HQ_German.Entrenchment_SquadLead_RegroupPointAvaliable1" noscene
+	speak			"HQ_German.Entrenchment_SquadLead_RegroupPointAvaliable2" noscene
+	speak			"HQ_German.Entrenchment_SquadLead_RegroupPointAvaliable3" noscene
+	speak			"HQ_German.Entrenchment_SquadLead_RegroupPointAvaliable4" noscene
+	speak			"HQ_German.Entrenchment_SquadLead_RegroupPointAvaliable5" noscene
+}
+Rule German_Lead_Entrenchment_Regroup
+{
+	criteria		C_EntrenchmentRegroup IsGerman IsSquadLeader
+	response		German_Lead_Entrenchment_Regroup
+}
+
+// Entrenchment - Respawn
+Response German_Lead_Entrenchment_Respawn
+{
+	speak			"HQ_German.Entrenchment_SquadLead_RespawnedTeam1" noscene
+	speak			"HQ_German.Entrenchment_SquadLead_RespawnedTeam2" noscene
+	speak			"HQ_German.Entrenchment_SquadLead_RespawnedTeam3" noscene
+	speak			"HQ_German.Entrenchment_SquadLead_RespawnedTeam4" noscene
+	speak			"HQ_German.Entrenchment_SquadLead_RespawnedTeam5" noscene
+}
+Rule German_Lead_Entrenchment_Respawn
+{
+	criteria		C_EntrenchmentRespawn IsGerman IsSquadLeader
+	response		German_Lead_Entrenchment_Respawn
+}
+
+
+
+
+// 
+// Subordinate
+//
+
+
+// Reloading
+Response German_Sub_Reload{
+	speak 			"Voice_Response_German.Subordinate_Reloading1" noscene
+	speak 			"Voice_Response_German.Subordinate_Reloading2" noscene
+	speak 			"Voice_Response_German.Subordinate_Reloading3" noscene
+	speak 			"Voice_Response_German.Subordinate_Reloading4" noscene
+	speak 			"Voice_Response_German.Subordinate_Reloading5" noscene
+	speak 			"Voice_Response_German.Subordinate_Reloading6" noscene
+	speak 			"Voice_Response_German.Subordinate_Reloading7" noscene
+	speak 			"Voice_Response_German.Subordinate_Reloading8" noscene
+	speak 			"Voice_Response_German.Subordinate_Reloading9" noscene
+	speak 			"Voice_Response_German.Subordinate_Reloading10" noscene
+}
+Rule German_Sub_Reload{
+	criteria		ConceptReloading IsNotSquadLeader IsGerman NotRecentlySaidRadial HasNearbyTeammates
+	response 		German_Sub_Reload
+}
+
+// Damaged - Burn
+Response German_Sub_Burn
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Subordinate_BurnPainSmall1" noscene
+	speak			"Voice_Response_German.Subordinate_BurnPainSmall2" noscene
+	speak			"Voice_Response_German.Subordinate_BurnPainSmall3" noscene
+	speak			"Voice_Response_German.Subordinate_BurnPainSmall4" noscene
+	speak			"Voice_Response_German.Subordinate_BurnPainSmall5" noscene
+}
+Rule German_Sub_Burn
+{
+	criteria		ConceptHurt IsBurn IsNotSquadLeader IsGerman CanMakePainSound NoRecentBurnPain
+	ApplyContext 	"SaidBurnPain:1:1.5" // Delay between each concept
+	response 		German_Sub_Burn
+}
+
+// Damaged - Friendly Fire
+Response German_Sub_FriendlyFire
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Subordinate_FriendlyFire1" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyFire2" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyFire3" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyFire4" noscene
+}
+Rule German_Sub_FriendlyFire
+{
+	criteria		ConceptFriendlyFire IsNotSquadLeader IsGerman
+	response 		German_Sub_FriendlyFire
+}
+
+// Flamethrower firing
+Response German_Sub_FlamethrowerFiring
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Subordinate_FlameThrowerExtend1" noscene
+	speak			"Voice_Response_German.Subordinate_FlameThrowerExtend2" noscene
+	speak			"Voice_Response_German.Subordinate_FlameThrowerExtend3" noscene
+	speak			"Voice_Response_German.Subordinate_FlameThrowerExtend4" noscene
+	speak			"Voice_Response_German.Subordinate_FlameThrowerExtend5" noscene
+}
+Rule German_Sub_FlamethrowerFiring
+{
+	criteria		C_FlamethrowerFiring IsGerman IsNotSquadLeader
+	response 		German_Sub_FlamethrowerFiring
+}
+
+// Throwing Frag near friendlies
+Response German_Sub_ThrowingFrag
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Subordinate_FragGrenadeOut1" noscene
+	speak			"Voice_Response_German.Subordinate_FragGrenadeOut2" noscene
+	speak			"Voice_Response_German.Subordinate_FragGrenadeOut3" noscene
+	speak			"Voice_Response_German.Subordinate_FragGrenadeOut4" noscene
+}
+Rule German_Sub_ThrowingFrag
+{
+	criteria		ConceptThrowingGrenade IsGerman IsNotSquadLeader IsFrag HasNearbyTeammates
+	response 		German_Sub_ThrowingFrag
+}
+
+// Throwing smoke near friendlies
+Response German_Sub_ThrowingSmoke
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Subordinate_SmokeGrenadeOut1" noscene
+	speak			"Voice_Response_German.Subordinate_SmokeGrenadeOut2" noscene
+	speak			"Voice_Response_German.Subordinate_SmokeGrenadeOut3" noscene
+	speak			"Voice_Response_German.Subordinate_SmokeGrenadeOut4" noscene
+}
+Rule German_Sub_ThrowingSmoke
+{
+	criteria		ConceptThrowingGrenade IsGerman IsNotSquadLeader IsSmoke HasNearbyTeammates
+	response 		German_Sub_ThrowingSmoke
+}
+
+// Throwing back grenade
+Response German_Sub_Throwback
+{
+	PermitRepeats
+	speak			"Voice_Response_German.Subordinate_GrenadeTossBack1" noscene
+	speak			"Voice_Response_German.Subordinate_GrenadeTossBack2" noscene
+	speak			"Voice_Response_German.Subordinate_GrenadeTossBack3" noscene
+	speak			"Voice_Response_German.Subordinate_GrenadeTossBack4" noscene
+	speak			"Voice_Response_German.Subordinate_GrenadeTossBack5" noscene
+}
+Rule German_Sub_Throwback
+{
+	criteria		ConceptThrowingGrenade IsNotSquadLeader IsGerman IsFrag IsGrenadeThrowback // TODO : Make Leader only
+	response 		German_Sub_Throwback
+}
+
+// Suppressed (Generic)
+Response German_Sub_Supp{
+	speak			"Voice_Response_German.Subordinate_UnderSuppression1"
+	speak			"Voice_Response_German.Subordinate_UnderSuppression2"
+	speak			"Voice_Response_German.Subordinate_UnderSuppression3"
+	speak			"Voice_Response_German.Subordinate_UnderSuppression4"
+	speak			"Voice_Response_German.Subordinate_UnderSuppression5"
+	speak			"Voice_Response_German.Subordinate_UnderSuppression6"
+	speak			"Voice_Response_German.Subordinate_UnderSuppression7"
+	speak			"Voice_Response_German.Subordinate_UnderSuppression8"
+	speak			"Voice_Response_German.Subordinate_UnderSuppression9"
+	speak			"Voice_Response_German.Subordinate_UnderSuppression10"
+}
+Rule German_Sub_Supp{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsGerman NotRecentlySaidRadial
+	response 		German_Sub_Supp
+}
+
+// Suppressed by grenade
+Response German_Sub_Suppressed_Grenade
+{
+	speak			"Voice_Response_German.Subordinate_GrenadeExplodeClose1" noscene
+	speak			"Voice_Response_German.Subordinate_GrenadeExplodeClose2" noscene
+	speak			"Voice_Response_German.Subordinate_GrenadeExplodeClose3" noscene
+	speak			"Voice_Response_German.Subordinate_GrenadeExplodeClose4" noscene
+	speak			"Voice_Response_German.Subordinate_GrenadeExplodeClose5" noscene
+}
+Rule German_Sub_Suppressed_Grenade
+{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsGerman NotRecentlySaidRadial SuppressionContextExplosion
+	response 		German_Sub_Suppressed_Grenade
+}
+
+// Suppressed by rocket flying
+Response German_Sub_Suppressed_Rocket_Passing
+{
+	speak			"Voice_Response_German.Subordinate_RocketFlyPastClose1" noscene
+	speak			"Voice_Response_German.Subordinate_RocketFlyPastClose2" noscene
+	speak			"Voice_Response_German.Subordinate_RocketFlyPastClose3" noscene
+	speak			"Voice_Response_German.Subordinate_RocketFlyPastClose4" noscene
+	speak			"Voice_Response_German.Subordinate_RocketFlyPastClose5" noscene
+}
+Rule German_Sub_Suppressed_Rocket_Passing
+{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsGerman NotRecentlySaidRadial SuppressionContextRocketPass
+	response 		German_Sub_Suppressed_Rocket_Passing
+}
+
+// Suppressed by rocket explsion
+Response German_Sub_Suppressed_Rocket_Explosion
+{
+	speak			"Voice_Response_German.Subordinate_RocketDetonateClose1" noscene
+	speak			"Voice_Response_German.Subordinate_RocketDetonateClose2" noscene
+	speak			"Voice_Response_German.Subordinate_RocketDetonateClose3" noscene
+	speak			"Voice_Response_German.Subordinate_RocketDetonateClose4" noscene
+	speak			"Voice_Response_German.Subordinate_RocketDetonateClose5" noscene
+}
+Rule German_Sub_Suppressed_Rocket_Explosion
+{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsGerman NotRecentlySaidRadial SuppressionContextRocketDet
+	response 		German_Sub_Suppressed_Rocket_Explosion
+}
+
+// Suppressed by MG fire
+Response German_Sub_Suppressed_MG
+{
+	speak			"Voice_Response_German.Subordinate_SuppressedByMachineGun1" noscene
+	speak			"Voice_Response_German.Subordinate_SuppressedByMachineGun2" noscene
+	speak			"Voice_Response_German.Subordinate_SuppressedByMachineGun3" noscene
+	speak			"Voice_Response_German.Subordinate_SuppressedByMachineGun4" noscene
+	speak			"Voice_Response_German.Subordinate_SuppressedByMachineGun5" noscene
+}
+Rule German_Sub_Suppressed_MG
+{
+	criteria		ConceptBeingSuppressed IsNotSquadLeader IsGerman NotRecentlySaidRadial SuppressionContextBulletMG
+	response 		German_Sub_Suppressed_MG
+}
+
+// Suppressed by sniper
+Response German_Sub_Suppressed_Sniper
+{
+	speak			"Voice_Response_German.Subordinate_SuppressedBySniper1" noscene
+	speak			"Voice_Response_German.Subordinate_SuppressedBySniper2" noscene
+	speak			"Voice_Response_German.Subordinate_SuppressedBySniper3" noscene
+	speak			"Voice_Response_German.Subordinate_SuppressedBySniper4" noscene
+	speak			"Voice_Response_German.Subordinate_SuppressedBySniper5" noscene
+	speak			"Voice_Response_German.Subordinate_SuppressedBySniper6" noscene
+}
+Rule German_Sub_Suppressed_Sniper
+{
+	criteria		ConceptBeingSuppressed IsGerman IsNotSquadLeader NotRecentlySaidRadial SuppressionContextBulletSniper SuppressionIsDistantShooter SuppressionShooterHasScope
+	response 		German_Sub_Suppressed_Sniper
+}
+
+// Coughing after entering smoke nade 
+Response German_Sub_Coughing
+{
+	speak			"Voice_Response_German.Subordinate_SmokeCough1" noscene odds 60
+	speak			"Voice_Response_German.Subordinate_SmokeCough2" noscene odds 60
+	speak			"Voice_Response_German.Subordinate_SmokeCough3" noscene odds 60
+	speak			"Voice_Response_German.Subordinate_SmokeCough4" noscene odds 60
+	speak			"Voice_Response_German.Subordinate_SmokeCough5" noscene odds 60
+}
+Rule German_Sub_Coughing
+{
+	criteria		C_Coughing IsNotSquadLeader IsGerman NotRecentlySaidRadial CanDoSmokeCough
+	ApplyContext 	"SuppressCoughing:1:12" // Delay between each concept
+	response 		German_Sub_Coughing
+}
+
+// Seen friendly die nearby
+Response German_Sub_Friendly_Died
+{
+	speak			"Voice_Response_German.Subordinate_FriendlyKilled1" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyKilled2" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyKilled3" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyKilled4" noscene
+}
+Rule German_Sub_Friendly_Died
+{
+	criteria		ConceptFriendlyDown IsNotSquadLeader IsGerman NotRecentlySaidRadial
+	response 		German_Sub_Friendly_Died
+}
+
+// Seen player die nearby from flamethrower
+Response German_Sub_Nearby_Flamethrower_Death
+{
+	speak			"Voice_Response_German.Subordinate_FuelTankExplodeClose1" noscene
+	speak			"Voice_Response_German.Subordinate_FuelTankExplodeClose2" noscene
+	speak			"Voice_Response_German.Subordinate_FuelTankExplodeClose3" noscene
+	speak			"Voice_Response_German.Subordinate_FuelTankExplodeClose4" noscene
+	speak			"Voice_Response_German.Subordinate_FuelTankExplodeClose5" noscene
+}
+Rule German_Sub_Nearby_Flamethrower_Death
+{
+	criteria		ConceptFriendlyDown IsNotSquadLeader IsGerman NotRecentlySaidRadial HadFuelTank
+	response 		German_Sub_Nearby_Flamethrower_Death
+}
+
+// Report Status Response
+Response German_Sub_StatusResponse
+{
+	speak			"Voice_Response_German.Subordinate_StatusReportImFine1" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportImFine2" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportImFine3" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportImFine4" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportImFine5" noscene
+}
+Rule German_Sub_StatusResponse
+{
+	criteria		C_StatusReport IsNotSquadLeader IsGerman
+	response 		German_Sub_StatusResponse
+}
+
+Response German_Sub_StatusResponse_Suppressed
+{
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed1" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed2" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed3" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed4" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlySuppressed5" noscene
+}
+Rule German_Sub_StatusResponse_Suppressed
+{
+	criteria		C_StatusReport IsGerman IsNotSquadLeader StatusRecentlySuppressed
+	response 		German_Sub_StatusResponse_Suppressed
+}
+
+Response German_Sub_StatusResponse_Shot
+{
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlyWounded1" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlyWounded2" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlyWounded3" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlyWounded4" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportRecentlyWounded5" noscene
+}
+Rule German_Sub_StatusResponse_Shot
+{
+	criteria		C_StatusReport IsGerman IsNotSquadLeader StatusRecentlyShot 
+	response 		German_Sub_StatusResponse_Shot
+}
+
+Response German_Sub_StatusResponse_Burned
+{
+	speak			"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower1" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower2" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower3" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower4" noscene
+	speak			"Voice_Response_German.Subordinate_StatusReportBurnedByFlamethrower5" noscene
+}
+Rule German_Sub_StatusResponse_Burned
+{
+	criteria		C_StatusReport IsGerman IsNotSquadLeader StatusRecentlyBurned  
+	response 		German_Sub_StatusResponse_Burned
+}
+
+// Heard artillery firing
+
+Response German_Sub_HeardArtillery_Enemy
+{
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming1" noscene
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming2" noscene
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming3" noscene
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming4" noscene
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming5" noscene
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming6" noscene
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming7" noscene
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming8" noscene
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming9" noscene
+	speak			"Voice_Response_German.Subordinate_EnemyArtilleryIncoming10" noscene
+}
+Rule German_Sub_HeardArtillery_Enemy
+{
+	criteria		C_HeardArtillery IsGerman IsNotSquadLeader NotRecentlySaidRadial
+	response 		German_Sub_HeardArtillery_Enemy
+}
+
+
+Response German_Sub_HeardArtillery_Friendly
+{
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring1" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring2" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring3" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring4" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring5" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring6" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring7" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring8" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring9" noscene
+	speak			"Voice_Response_German.Subordinate_FriendlyArtilleryFiring10" noscene
+}
+Rule German_Sub_HeardArtillery_Friendly
+{
+	criteria		C_HeardArtillery IsGerman IsNotSquadLeader NotRecentlySaidRadial IsFriendlyArtillery
+	response 		German_Sub_HeardArtillery_Friendly
+}
+
+// Near artillery explosions
+Response German_Sub_Suppressed_Artillery
+{
+	speak			"Voice_Response_German.Subordinate_ArtilleryExplodingNearMe1" noscene
+	speak			"Voice_Response_German.Subordinate_ArtilleryExplodingNearMe2" noscene
+	speak			"Voice_Response_German.Subordinate_ArtilleryExplodingNearMe3" noscene
+	speak			"Voice_Response_German.Subordinate_ArtilleryExplodingNearMe4" noscene
+}
+Rule German_Sub_Suppressed_Artillery
+{
+	criteria		C_IncomingArtillery IsGerman IsNotSquadLeader NotRecentlySaidRadial GermanCanAnnounceIncomingArtillery 
+	ApplyContext 	"GermanArtilleryExplosionAnnounce:1:15"
+	applycontexttoworld
+	response 		German_Sub_Suppressed_Artillery
+}
+
+// Captured objective
+Response German_Sub_CapturedObjective
+{
+	speak			"Voice_Response_German.Subordinate_ObjectiveClear1" noscene
+	speak			"Voice_Response_German.Subordinate_ObjectiveClear2" noscene
+	speak			"Voice_Response_German.Subordinate_ObjectiveClear3" noscene
+	speak			"Voice_Response_German.Subordinate_ObjectiveClear4" noscene
+	speak			"Voice_Response_German.Subordinate_ObjectiveClear5" noscene
+}
+Rule German_Sub_CapturedObjective
+{
+	criteria		C_CapturedPoint IsGerman IsNotSquadLeader NotRecentlySaidRadial 
+	response 		German_Sub_CapturedObjective
+}
+
+// Received ammo
+Response German_Sub_ReceiveAmmo
+{
+	speak			"Voice_Response_German.Subordinate_ReceiveAmmo1" noscene
+	speak			"Voice_Response_German.Subordinate_ReceiveAmmo2" noscene
+	speak			"Voice_Response_German.Subordinate_ReceiveAmmo3" noscene
+	speak			"Voice_Response_German.Subordinate_ReceiveAmmo4" noscene
+}
+Rule German_Sub_ReceiveAmmo
+{
+	criteria		C_ReceivedAmmo IsGerman IsNotSquadLeader NotRecentlySaidRadial
+	response		German_Sub_ReceiveAmmo
+}
+
+// Low ammo
+Response German_Sub_LowAmmo
+{
+	speak			"Voice_Response_German.Subordinate_LowAmmo1" noscene
+	speak			"Voice_Response_German.Subordinate_LowAmmo2" noscene
+	speak			"Voice_Response_German.Subordinate_LowAmmo3" noscene
+	speak			"Voice_Response_German.Subordinate_LowAmmo4" noscene
+}
+Rule German_Sub_LowAmmo
+{
+	criteria		C_LowAmmo IsGerman IsNotSquadLeader NotRecentlySaidRadial
+	response		German_Sub_LowAmmo
+}
+
+// Entrenchment - Regroup
+Response German_Sub_Entrenchment_Regroup
+{
+	speak			"HQ_German.Entrenchment_Subordinate_RegroupPointAvaliable1" noscene
+	speak			"HQ_German.Entrenchment_Subordinate_RegroupPointAvaliable2" noscene
+	speak			"HQ_German.Entrenchment_Subordinate_RegroupPointAvaliable3" noscene
+	speak			"HQ_German.Entrenchment_Subordinate_RegroupPointAvaliable4" noscene
+	speak			"HQ_German.Entrenchment_Subordinate_RegroupPointAvaliable5" noscene
+}
+Rule German_Sub_Entrenchment_Regroup
+{
+	criteria		C_EntrenchmentRegroup IsGerman IsNotSquadLeader
+	response		German_Sub_Entrenchment_Regroup
+}
+
+// Entrenchment - Respawn
+Response German_Sub_Entrenchment_Respawn
+{
+	speak			"HQ_German.Entrenchment_Subordinate_RespawnedTeam1" noscene
+	speak			"HQ_German.Entrenchment_Subordinate_RespawnedTeam2" noscene
+	speak			"HQ_German.Entrenchment_Subordinate_RespawnedTeam3" noscene
+	speak			"HQ_German.Entrenchment_Subordinate_RespawnedTeam4" noscene
+	speak			"HQ_German.Entrenchment_Subordinate_RespawnedTeam5" noscene
+}
+Rule German_Sub_Entrenchment_Respawn
+{
+	criteria		C_EntrenchmentRespawn IsGerman IsNotSquadLeader
+	response		German_Sub_Entrenchment_Respawn
+}
