@@ -1,0 +1,14 @@
+"loadinghints"
+{
+	"0"			"#GameUI_LoadingHint_Coop_Suppression"
+	"1"			"#GameUI_LoadingHint_Coop_SmokeSuppression"
+	"2"			"#GameUI_LoadingHint_Coop_Stealth"
+	"3"			"#GameUI_LoadingHint_Coop_Overwatch"
+	"4"			"#GameUI_LoadingHint_Coop_RadioOfficer"
+	"5"			"#GameUI_LoadingHint_Coop_Flamethrower"
+	"6"			"#GameUI_LoadingHint_Coop_Stronghold"
+	"7"			"#GameUI_LoadingHint_Coop_Entrenchment"
+	"8"			"#GameUI_LoadingHint_Coop_Commander"
+	"9"			"#GameUI_LoadingHint_Coop_CornerCheck"
+	"10"		"#GameUI_LoadingHint_Coop_Capture"
+}
