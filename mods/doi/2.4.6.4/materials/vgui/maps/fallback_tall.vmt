@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/fallback_tall"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

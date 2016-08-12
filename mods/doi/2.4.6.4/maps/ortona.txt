@@ -1,0 +1,522 @@
+"cpsetup.txt"
+{
+
+	"navfile"   		"ortona"
+	"nightlighting"		"0"
+		
+	"offensive"
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		"controlpoint"		"apartments_cap"
+		"controlpoint"		"cathedral_cap"
+		"controlpoint"		"snipernest_cap"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_offensive_a"
+			"1"  "spawnzone_offensive_b"
+			"2"  "spawnzone_offensive_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"-4206 5631 210"
+				"angles"		"0 270 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-4206 5631 250"
+				"angles"		"0 270 0"
+				"targetname"	"radiopoint_final"
+				"printname"		"#CP_AxisRadio"
+			}		
+		}
+	}
+	
+	"liberation"
+	{	
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+	    "controlpoint"		"fountain_cap"
+		"controlpoint"		"cathedral_cap"
+		"controlpoint"		"house_cap" 
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+	}
+	
+	"frontline"	
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+		"controlpoint" 		"radiopoint_allied_final"
+	    "controlpoint"		"fountain_cap"
+		"controlpoint"		"cathedral_cap"
+		"controlpoint"		"snipernest_cap" 
+		"controlpoint" 		"radiopoint_axis_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_battle_allied_advance"
+			"1"  "spawnzone_battle_start"
+			"2"  "spawnzone_battle_axis_advance"
+		}
+		
+		"entities"
+		{
+			// Allied radio
+			"obj_destructible"
+			{
+				"origin"			"966.321777 -1969.299805 56.031250"
+				"angles"			"0.000000 88.612068 0.000000"
+				"targetname"		"radio_allied_final"
+				"teamnumber"		"2"
+				"ControlPoint"		"radiopoint_allied_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"966.321777 -1969.299805 128.031250"
+				"angles"			"0.000000 88.612068 0.000000"
+				"targetname"		"radiopoint_allied_final"
+				"printname"			"#CP_AlliedRadio"
+			}	
+			
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"			"-4206 5631 210"
+				"angles"			"0.000000 270 0.000000"
+				"targetname"		"radio_axis_final"
+				"teamnumber"		"3"
+				"ControlPoint"		"radiopoint_axis_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"-4206 5631 250"
+				"angles"			"0.000000 270 0.000000"
+				"targetname"		"radiopoint_axis_final"
+				"printname"			"#CP_AxisRadio"
+			}	
+		}
+	}
+	
+	"stronghold"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"rooftop_cap"
+	    "controlpoint"		"hallway_cap"
+		"controlpoint"		"cathedral_coop_cap"
+		"controlpoint"		"cathedral_top_cap"
+		"controlpoint"		"storage_room_cap" 
+		"controlpoint"		"upperfloor_cap"
+		"controlpoint"		"forward_hq_cap" 
+		"controlpoint"		"radiopoint_final"
+		
+		"entities"
+		{
+		
+			"obj_ammo_crate"
+			{
+				"origin"			"1086 -2224 8"
+				"angles"			"0 0 0"
+				"targetname"		"ammocrate_01_allies"
+				"teamnumber"		"2"
+				"ResupplyProximity"	"500"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"176 -2316 72"
+				"angles"			"0 0 0"
+				"targetname"		"ammocrate_02_allies"
+				"teamnumber"		"2"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"840 -974 152"
+				"angles"			"0 0 0"
+				"targetname"		"ammocrate_03_allies"
+				"teamnumber"		"2"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_destructible"
+			{
+				"origin"		"-4258 5279 210"
+				"angles"		"0 180 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-4258 5279 282"
+				"angles"		"0 180 0"
+				"targetname"	"radiopoint_final"
+				"printname"		"#CP_AxisRadio"
+			}		
+		}
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"ai"
+		{
+			"allied_count_minimum_players_base"	"7"
+			"enemy_count_minimum_players_base"	"14"
+			
+			"allied_count_maximum_players_base"	"0"
+			"enemy_count_maximum_players_base"	"18"
+			
+			"friendly_count_solo_base"			"7"
+			"enemy_count_solo_base"				"14"
+
+			"objectives"
+			{
+				"objective_index"				"0"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"1"
+			}
+		}
+		
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"1338.827881 -1598.830200 -21.479345"
+				"location_axis"						"-1134.897705 -1733.864746 72.031250"				
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				"location_allies"					"1338.827881 -1598.830200 -21.479345"
+				"location_axis"						"-2400.815674 -1614.465698 96.031250"
+
+				"fortify_radius"					"1500"
+				"fortify_overwatch_stay_back"		"0"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				"location_allies"					"-591.011230 -2267.167969 440.031250"
+				"location_axis"						"-3556.883789 187.957413 88.031250"
+
+				"fortify_radius"					"2500"
+				"fortify_overwatch_stay_back"		"0"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				"location_allies"					"-2354.386719 -1685.530151 280.031250"
+				"location_axis"						"-4463.715820 573.212097 264.031250"
+
+				"fortify_radius"					"1500"
+				"fortify_overwatch_stay_back"		"0"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				"location_allies"					"-1911.897339 -1048.172729 72.031250"
+				"location_axis"						"-4972.774414 1905.953979 440.031250"
+				
+				"fortify_radius"					"800"
+				"fortify_overwatch_stay_back"		"0"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_allies"					"-2470.726807 202.869553 102.308685"
+				"location_axis"						"-5236.584961 1854.180664 72.031250"
+				
+				"fortify_radius"					"500"
+				"fortify_overwatch_stay_back"		"0"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"5"
+				"location_allies"					"-3505.705566 207.733093 88.031250"
+				"location_axis"						"-6289.040527 2604.592285 58.139217"
+				
+				"fortify_radius"					"500"
+				"fortify_overwatch_stay_back"		"0"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"6"
+				"location_allies"					"-4482.045898 1237.344238 440.031250"
+				"location_axis"						"-6439.896484 4408.591309 -7.968750"
+				
+				"fortify_radius"					"500"
+				"fortify_overwatch_stay_back"		"0"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"7"
+				"location_allies"					"-4701.483887 1826.045776 264.031250"
+				"location_axis"						"-6777.416016 5398.587402 -23.968750"
+				
+				"fortify_radius"					"500"
+				"fortify_overwatch_stay_back"		"0"
+			}
+
+			"fallback_spawns"
+			{
+				"location_allies"					"1338.827881 -1598.830200 -21.479345"
+				"location_axis"						"-6777.416016 5398.587402 -23.968750"
+			}
+		}
+	}
+	
+	"patrol"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"fountain_cap"
+		"controlpoint"		"storage_room_cap"
+		"controlpoint"		"snipernest_cap" 
+		"controlpoint"		"forward_hq_cap" 
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"ai"
+		{
+			"allied_count_minimum_players_base"	"0"
+			"enemy_count_minimum_players_base"	"12"
+			
+			"allied_count_maximum_players_base"	"0"
+			"enemy_count_maximum_players_base"	"24"
+			
+			"friendly_count_solo_base"			"6"
+			"enemy_count_solo_base"				"18"
+		}
+
+		"navspawns"
+		{
+			"patrol_spawns"
+			{
+				"location_allies"		"-497.296631 -4142.776855 8.031250"
+				"location_allies_02"	"1111.009644 -3262.472656 0.031250"
+				"location_allies_03"	"1139.282593 -2107.734619 8.031250"
+				"location_allies_04"	"765.693359 -3921.006348 8.031250"
+
+				"location_axis"			"-640.823792 -817.831055 486.384888"
+				"location_axis_02"		"-478.597778 1834.398804 72.031258"
+				"location_axis_03"		"-3022.296143 -253.510468 296.031250"
+				"location_axis_04"		"-3699.537109 1856.117065 264.031250"
+			}
+			
+			"fallback_spawns"
+			{
+				"location_allies"		"1111.009644 -3262.472656 0.031250"
+				"location_axis"			"-1773.445313 1115.680664 72.031250"
+			}
+		}
+	}
+	
+	"entrenchment"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"rooftop_cap"						// 0 - A
+		"controlpoint"		"apartments_cap"					// 1 - B
+		"controlpoint"		"cathedral_cap"						// 2 - C
+		"controlpoint"		"upperfloor_cap"					// 3 - D
+		"controlpoint"		"forward_hq_cap"					// 4 - E
+		"controlpoint"		"regroup_cap"						// 5 - F
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"entities"
+		{			
+			"obj_ammo_crate"
+			{
+				"origin"			"-2522 1636 72"
+				"angles"			"0 0 0"
+				"targetname"		"ammocrate_01_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"500"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"-4536 1632 72"
+				"angles"			"0 0 0"
+				"targetname"		"ammocrate_02_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"-4106 2736 72"
+				"angles"			"0 0 0"
+				"targetname"		"ammocrate_03_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"-4500 3452 69"
+				"angles"			"0 0 0"
+				"targetname"		"ammocrate_04_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"250"
+			}			
+		}		
+		
+		"ai"
+		{
+			"allied_count_minimum_players_base"	"5"
+			"enemy_count_minimum_players_base"	"16"
+			
+			"allied_count_maximum_players_base"	"0"
+			"enemy_count_maximum_players_base"	"18"
+			
+			"friendly_count_solo_base"			"5"
+			"enemy_count_solo_base"				"16"
+			
+			"objectives"
+			{
+				"objective_id"					"1"
+				
+				"enemy_count_solo"				"20"
+				"enemy_count_maximum_players"	"20"
+				"enemy_count_minimum_players"	"18"
+			}
+		}
+		
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				// Where the teams should start				
+				"location_allies"					"1181.304565 -3206.447754 0.031250"
+				"location_axis"						"-257.105438 -338.105225 64.031250"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is closest to this objective
+				// Defending team can't spawn on this objective
+				
+				"objective_index"					"0"
+				"location_allies"					"1181.304565 -3206.447754 0.031250"
+				
+				"fortify_ranking_amount"			"300"
+				"fortify_ranking_radius"			"500"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is closest to this objective
+				// Defending team can't spawn on this objective
+				
+				"objective_index"					"1"
+				"location_allies"					"384.196228 -2340.931396 72.031250"
+				
+				"fortify_ranking_amount"			"200"
+				"fortify_ranking_radius"			"700"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is closest to this objective
+				// Defending team can regroup on this objective
+				
+				"objective_index"					"2"
+				"location_allies"					"-642.992737 -2358.572998 440.031250"
+				"location_axis"						"-2649.384766 1798.284424 92.665665"
+				
+				"fortify_ranking_amount"			"400"
+				"fortify_ranking_radius"			"1600"
+			}
+			
+			"objective_based_spawns"
+			{
+				// Attacking team is closest to this objective
+				// Defending team can regroup on this objective
+				
+				"objective_index"					"3"
+				"location_allies"					"-1968.109863 -1412.895996 72.031250"
+				"location_axis"						"-4980.110840 1914.495728 440.031250"
+				
+				"fortify_ranking_amount"			"100"
+				"fortify_ranking_radius"			"900"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+				"location_allies"					"-1857.866455 -489.704224 72.031250"
+				"location_axis"						"-3965.239990 2931.292236 280.031250"
+				
+				"fortify_ranking_amount"			"200"
+				"fortify_ranking_radius"			"800"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"5"
+				"location_axis"						"-5056.866699 5494.316406 168.031250"
+			}
+
+			"fallback_spawns"
+			{
+				// Fall back spawns represent the furthest a team can be pushed back
+				
+				"location_allies"					"1181.304565 -3206.447754 0.031250"
+				"location_axis"						"-5056.866699 5494.316406 168.031250"
+			}
+		}
+	}
+}

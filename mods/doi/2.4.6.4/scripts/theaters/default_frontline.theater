@@ -1,0 +1,121 @@
+"#base" "default.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"axis"
+		{
+			"squads"
+			{
+				"#squad_german_assault"
+				{
+					"size"									"8"
+				
+					"classes"
+					{
+						"template_german_officer"			"1"
+						"template_german_rifleman"			"-1"
+						"template_german_assault"			"-1"
+						"template_german_engineer"			"2"
+						"template_german_support"			"2"
+						"template_german_machinegunner"		"2"
+						"template_german_sniper"			"2"
+					}
+				}
+				
+				"#squad_german_support"
+				{
+					"size"									"8"
+					
+					"classes"
+					{
+						"template_german_officer"			"1"
+						"template_german_rifleman"			"-1"
+						"template_german_assault"			"3"
+						"template_german_engineer"			"1"
+						"template_german_support"			"3"
+						"template_german_machinegunner"		"2"
+						"template_german_sniper"			"2"
+					}
+				}
+			}
+		}
+		
+		"americans"
+		{
+			"squads"
+			{
+				"#squad_american_assault"
+				{
+					"size"									"8"
+					
+					"classes"
+					{
+						"template_american_officer"			"1"
+						"template_american_rifleman"		"-1"
+						"template_american_assault"			"-1"
+						"template_american_engineer"		"2"
+						"template_american_support"			"2"
+						"template_american_machinegunner"	"2"
+						"template_american_sniper"			"2"
+					}
+				}
+				
+				"#squad_american_support"
+				{
+					"size"									"8"
+					
+					"classes"
+					{
+						"template_american_officer"			"1"
+						"template_american_rifleman"		"-1"
+						"template_american_assault"			"3"
+						"template_american_engineer"		"1"
+						"template_american_support"			"3"
+						"template_american_machinegunner"	"2"		
+						"template_american_sniper"			"2"		
+					}
+				}
+			}
+		}
+		
+		"commonwealth"
+		{
+			"squads"
+			{
+				"#squad_commonwealth_assault"
+				{
+					"size"									"8"
+					
+					"classes"
+					{
+						"template_british_officer"			"1"
+						"template_british_rifleman"			"-1"
+						"template_british_assault"			"-1"
+						"template_british_engineer"			"2"
+						"template_british_support"			"2"
+						"template_british_machinegunner"	"2"
+						"template_british_sniper"			"2"					
+					}
+				}
+				
+				"#squad_commonwealth_support"
+				{
+					"size"									"8"
+					
+					"classes"
+					{
+						"template_british_officer"			"1"
+						"template_british_rifleman"			"-1"
+						"template_british_assault"			"3"
+						"template_british_engineer"			"1"
+						"template_british_support"			"3"
+						"template_british_machinegunner"	"2"
+						"template_british_sniper"			"2"
+					}
+				}
+			}
+		}
+	}
+}
