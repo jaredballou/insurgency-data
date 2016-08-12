@@ -1,9 +1,0 @@
-"desertglory"
-{
-	material	overviews/desertglory
-	pos_x		-3585
-	pos_y		3978
-	scale		5.0
-	rotate		0
-	zoom		1
-}

@@ -1,9 +1,0 @@
-"theruins"
-{
-	material	overviews/theruins
-	pos_x		-5295
-	pos_y		4765
-	scale		7.5
-	rotate		0
-	zoom		1
-}

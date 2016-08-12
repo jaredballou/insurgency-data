@@ -1,9 +1,0 @@
-"fishhook"
-{
-	material	overviews/fishhook
-	pos_x		-2574
-	pos_y		7729
-	scale		7.0
-	rotate		0
-	zoom		1
-}

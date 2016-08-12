@@ -1,9 +1,0 @@
-"blizzard"
-{
-	material	overviews/blizzard
-	pos_x		-5861
-	pos_y		6542
-	scale		11.5
-	rotate		0
-	zoom		1
-}

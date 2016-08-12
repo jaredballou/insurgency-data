@@ -1,9 +1,0 @@
-"crossroads"
-{
-	material	overviews/crossroads
-	pos_x		-5512
-	pos_y		5828
-	scale		8.0
-	rotate		0
-	zoom		1
-}

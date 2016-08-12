@@ -1,9 +1,0 @@
-"requiem"
-{
-	material	overviews/requiem
-	pos_x		-9883
-	pos_y		11222
-	scale		10
-	rotate		0
-	zoom		1
-}

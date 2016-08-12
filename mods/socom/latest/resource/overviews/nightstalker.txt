@@ -1,9 +1,0 @@
-"nightstalker"
-{
-	material	overviews/nightstalker
-	pos_x		-2708
-	pos_y		3671
-	scale		8.5
-	rotate		0
-	zoom		1
-}

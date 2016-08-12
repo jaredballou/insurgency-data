@@ -1,9 +1,0 @@
-"sandstorm"
-{
-	material	overviews/sandstorm
-	pos_x		-6640
-	pos_y		6224
-	scale		10.0
-	rotate		0
-	zoom		1
-}
