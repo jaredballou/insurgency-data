@@ -1,0 +1,848 @@
+"cpsetup.txt"
+{
+
+	"navfile"   		"ministry"
+	"nightlighting"		"0"
+		
+	// Ministry supported modes:	
+	// - Skirmish
+	// - Firefight
+	// - Infiltrate
+	// - Occupy
+	
+	"skirmish"
+	{
+		"controlpoint"	"cachepoint_a"
+		"controlpoint"	"cap2"
+		"controlpoint"	"cap4"
+		"controlpoint"  "cap3"
+		"controlpoint"	"cachepoint_e"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_skirmish"
+		}
+		
+		"entities"
+		{	
+			// Cache A
+			"obj_weapon_cache"
+			{
+				"origin"		"2264.121582 -1006.681885 32.031250"
+				"angles"		"0.000000 92.265541 0.000000"
+				"targetname"	"cache_a"
+				"teamnumber"	"2"
+				"ControlPoint"	"cachepoint_a"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"2264.121582 -1006.681885 104.031250"
+				"angles"		"0.000000 92.265541 0.000000"
+				"targetname"	"cachepoint_a"
+			}	
+			
+			// Cache E
+			"obj_weapon_cache"
+			{
+				"origin"		"-2459.721191 -1095.478149 32.031250"
+				"angles"		"0.000000 1.678212 0.000000"
+				"targetname"	"cache_e"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_e"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-2459.721191 -1095.478149 104.031250"
+				"angles"		"0.000000 1.678212 0.000000"
+				"targetname"	"cachepoint_e"
+			}
+
+			// Spawn Prop Caches
+
+			// Security Spawn
+
+			"obj_weapon_cache"
+			{
+				"origin"		"4081 -1428 6"
+				"angles"		"-0.507519 120.496 0.861652"
+				"teamnumber"	"2"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"4009 -1247 7"
+				"angles"		"-0.362685 133.501 -0.344182"
+				"teamnumber"	"2"
+				"TakeDamageBullets" "0"
+			}
+
+
+
+			// Insurgent Spawn
+			"obj_weapon_cache"
+			{
+				"origin"		"-4220 -764 0"
+				"angles"		"0 202 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-3856 -1208 9"
+				"angles"		"0 270 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-4011 -1311 0"
+				"angles"		"0 72.5 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-4152 -1715 0"
+				"angles"		"1.17386 38.5096 0.933903"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+		}
+	}
+	
+	"firefight"
+	{
+		"controlpoint"	"cap2"
+		"controlpoint"	"cap4"
+		"controlpoint"  "cap3"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_skirmish"
+		}
+
+		"entities"
+		{	
+
+			// Spawn Prop Caches
+
+			// Security Spawn
+
+			"obj_weapon_cache"
+			{
+				"origin"		"4081 -1428 6"
+				"angles"		"-0.507519 120.496 0.861652"
+				"teamnumber"	"2"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"4009 -1247 7"
+				"angles"		"-0.362685 133.501 -0.344182"
+				"teamnumber"	"2"
+				"TakeDamageBullets" "0"
+			}
+
+
+
+			// Insurgent Spawn
+			"obj_weapon_cache"
+			{
+				"origin"		"-4220 -764 0"
+				"angles"		"0 202 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-3856 -1208 9"
+				"angles"		"0 270 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-4011 -1311 0"
+				"angles"		"0 72.5 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-4152 -1715 0"
+				"angles"		"1.17386 38.5096 0.933903"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+		}
+	}
+	
+	"infiltrate"
+	{		
+		"controlpoint"		"terminalpoint_a"
+		"controlpoint"		"terminalpoint_b"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_skirmish"
+		}
+		
+		"entities"
+		{	
+			// Terminal A
+			"obj_terminal"
+			{
+				"origin"		"2327.014648 -1139.164917 72.495476"
+				"angles"		"0.000000 2.255866 0.000000"
+				"targetname"	"terminal_a"
+				"teamnumber"	"2"
+				"ControlPoint"	"terminalpoint_a"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"2327.014648 -1139.164917 144.495476"
+				"angles"		"0.000000 2.255866 0.000000"
+				"targetname"	"terminalpoint_a"
+			}	
+			
+			// Terminal B
+			"obj_terminal"
+			{
+				"origin"		"-2725.647949 -1103.459473 32.031250"
+				"angles"		"0.000000 88.456772 0.000000"
+				"targetname"	"terminal_b"
+				"teamnumber"	"3"
+				"ControlPoint"	"terminalpoint_b"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-2725.647949 -1103.459473 104.031250"
+				"angles"		"0.000000 88.456772 0.000000"
+				"targetname"	"terminalpoint_b"
+			}
+
+			// Spawn Prop Caches
+
+			// Security Spawn
+
+			"obj_weapon_cache"
+			{
+				"origin"		"4081 -1428 6"
+				"angles"		"-0.507519 120.496 0.861652"
+				"teamnumber"	"2"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"4009 -1247 7"
+				"angles"		"-0.362685 133.501 -0.344182"
+				"teamnumber"	"2"
+				"TakeDamageBullets" "0"
+			}
+
+
+
+			// Insurgent Spawn
+			"obj_weapon_cache"
+			{
+				"origin"		"-4220 -764 0"
+				"angles"		"0 202 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-3856 -1208 9"
+				"angles"		"0 270 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-4011 -1311 0"
+				"angles"		"0 72.5 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-4152 -1715 0"
+				"angles"		"1.17386 38.5096 0.933903"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}	
+		}
+	}
+	
+	"occupy"
+	{
+		"controlpoint"	"cap4"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_skirmish"
+		}
+
+		"entities"
+		{	
+
+			// Spawn Prop Caches
+
+			// Security Spawn
+
+			"obj_weapon_cache"
+			{
+				"origin"		"4081 -1428 6"
+				"angles"		"-0.507519 120.496 0.861652"
+				"teamnumber"	"2"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"4009 -1247 7"
+				"angles"		"-0.362685 133.501 -0.344182"
+				"teamnumber"	"2"
+				"TakeDamageBullets" "0"
+			}
+
+
+
+			// Insurgent Spawn
+			"obj_weapon_cache"
+			{
+				"origin"		"-4220 -764 0"
+				"angles"		"0 202 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-3856 -1208 9"
+				"angles"		"0 270 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-4011 -1311 0"
+				"angles"		"0 72.5 0"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-4152 -1715 0"
+				"angles"		"1.17386 38.5096 0.933903"
+				"teamnumber"	"3"
+				"TakeDamageBullets" "0"
+			}
+		}
+	}
+	
+	"survival"
+	{
+		"AttackingTeam"		"security"		
+		
+		"controlpoint"	"cachepoint_a"
+		"controlpoint"	"cachepoint_b"
+		"controlpoint"	"cachepoint_c"
+		"controlpoint"	"cachepoint_d"
+		"controlpoint"	"cachepoint_e"
+		"controlpoint"	"cachepoint_f"
+		"controlpoint"	"cachepoint_g"
+		
+		"cvars"
+		{
+			"mp_survival_nav_spawning"	"1"
+		}
+		"entities"
+		{
+			// Cache A
+			"obj_weapon_cache"
+			{
+				"origin"		"-3279.00 -1232.00 32.00"
+				"angles"		"0.00 0.00 0.00"
+				"targetname"	"cache_a"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_a"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-3279.00 -1232.00 106.00"
+				"angles"		"0.00 0.00 0.00"
+				"targetname"	"cachepoint_a"
+			}	
+			
+			// Cache B
+			"obj_weapon_cache"
+			{
+				"origin"		"-5.00 -153.00 178.00"
+				"angles"		"0.00 0.00 0.00"
+				"targetname"	"cache_b"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_b"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-5.00 -153.00 240.00"
+				"angles"		"0.00 0.00 0.00"
+				"targetname"	"cachepoint_b"
+			}
+			
+			// Cache C
+			"obj_weapon_cache"
+			{
+				"origin"		"17.00 -475.00 -48.00"
+				"angles"		"0.00 180.00 0.00"
+				"targetname"	"cache_c"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_c"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"17.00 -475.00 38.00"
+				"angles"		"0.00 0.00 0.00"
+				"targetname"	"cachepoint_c"
+			}
+			
+			// Cache D
+			"obj_weapon_cache"
+			{
+				"origin"		"75.00 -462.00 -320.00"
+				"angles"		"0.00 270.00 0.00"
+				"targetname"	"cache_d"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_d"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"75.00 -462.00 -250.00"
+				"angles"		"0.00 0.00 0.00"
+				"targetname"	"cachepoint_d"
+			}
+			
+			// Cache E
+			"obj_weapon_cache"
+			{
+				"origin"		"-219.00 -3112.00 -272.00"
+				"angles"		"0.00 180.00 0.00"
+				"targetname"	"cache_e"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_e"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-219.00 -3112.00 -202.00"
+				"angles"		"0.00 0.00 0.00"
+				"targetname"	"cachepoint_e"
+			}
+			
+			// Cache F
+			"obj_weapon_cache"
+			{
+				"origin"		"2137.00 -1749.00 32.00"
+				"angles"		"0.00 90.00 0.00"
+				"targetname"	"cache_f"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_f"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"2137.00 -1749.00 102.00"
+				"angles"		"0.00 0.00 0.00"
+				"targetname"	"cachepoint_f"
+			}
+			
+			// Cache G
+			"obj_weapon_cache"
+			{
+				"origin"		"4826.00 5.00 5.00"
+				"angles"		"0.00 0.00 8.00"
+				"targetname"	"cache_g"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_g"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"4826.00 5.00 75.00"
+				"angles"		"0.00 0.00 0.00"
+				"targetname"	"cachepoint_g"
+			}
+		}
+	}
+	
+	"hunt"
+	{
+		"AttackingTeam"		"security"
+		
+		"controlpoint"		"cachepoint_a"
+		"controlpoint"		"cachepoint_b"
+		"controlpoint"		"cachepoint_c"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"cvars"
+		{
+			"mp_hunt_nav_spawning"	"1"
+		}
+		
+		"navspawns"
+		{
+			"navspawn"
+			{
+				"origin"		"40.00 -4000.00 -25.0"
+				"teamnumber"	"2"
+				"bonus" 		"0"
+				"expandtype"	"box"
+				"expandradius"	"1000.0"
+				"playerspread"	"32"
+			}
+		}
+		
+		"entities"
+		{
+			// Cache A
+			"obj_weapon_cache"
+			{
+				"origin"		"-53.619030 -646.782288 176.031250"
+				"angles"		"0.000000 -1.498455 0.000000"
+				"targetname"	"cache_a"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_a"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-53.619030 -646.782288 248.031250"
+				"angles"		"0.000000 -1.498455 0.000000"
+				"targetname"	"cachepoint_a"
+			}	
+			
+			// Cache B
+			"obj_weapon_cache"
+			{
+				"origin"		"84.704102 -422.010986 -319.968750"
+				"angles"		"0.000000 -91.079430 0.000000"
+				"targetname"	"cache_b"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_b"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"84.704102 -422.010986 -247.968750"
+				"angles"		"0.000000 -91.079430 0.000000"
+				"targetname"	"cachepoint_b"
+			}	
+			
+			// Cache C
+			"obj_weapon_cache"
+			{
+				"origin"		"-4639 -1249 1"
+				"angles"		"0.000000 270 0.000000"
+				"targetname"	"cache_c"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_c"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-4639 -1249 73"
+				"angles"		"0.000000 270 0.000000"
+				"targetname"	"cachepoint_c"
+			}	
+		}
+	}
+	
+	"outpost"
+	{
+		"AttackingTeam"		"insurgents"
+		"controlpoint"		"cachepoint_a"
+		"controlpoint"		"cachepoint_b"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+				
+		"entities"
+		{			
+			// Cache A
+			"obj_weapon_cache"
+			{
+				"origin"		"-3 -475 -48"
+				"angles"		"0 0 0"
+				"targetname"	"cache_a"
+				"teamnumber"	"2"
+				"ControlPoint"	"cachepoint_a"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"-3 -475 24"
+				"angles"		"0 0 0"
+				"targetname"	"cachepoint_a"
+			}
+			
+			// Cache B
+			"obj_weapon_cache"
+			{
+				"origin"		"75 -462 -320"
+				"angles"		"0 270 0"
+				"targetname"	"cache_b"
+				"teamnumber"	"2"
+				"ControlPoint"	"cachepoint_b"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"75 -462 -248"
+				"angles"		"0 270 0"
+				"targetname"	"cachepoint_b"
+			}
+		}
+	}
+	
+	"conquer"
+	{
+		"AttackingTeam"		"security"
+		"controlpoint"  "cap3"
+		"controlpoint"  "cap4"
+		"controlpoint"  "cap2"
+		"controlpoint"	"cachepoint_a"
+		"controlpoint"	"cachepoint_b"
+		"controlpoint"	"cachepoint_c"
+		"controlpoint"	"cachepoint_d"
+		"controlpoint"	"cachepoint_e"
+		"controlpoint"	"cachepoint_f"
+		"controlpoint"	"cachepoint_g"
+		"controlpoint"	"cachepoint_h"
+		"controlpoint"	"cachepoint_i"
+		"controlpoint"	"cachepoint_j"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"navspawns"
+		{
+			"navspawn"
+			{
+				"origin"		"1647.201538 -1958.381592 -319.968750"
+				"teamnumber"	"2"
+				"bonus" 		"0"
+				"expandtype"	"box"
+				"expandradius"	"1000.0"
+				"playerspread"	"32"
+			}
+		}
+		
+		"entities"
+		{			
+			// Cache A
+			"obj_weapon_cache"
+			{
+				"origin"		"-1555.455444 145.215912 -319.968750"
+				"angles"		"0.000000 -90.224373 0.000000"
+				"targetname"	"cache_a"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_a"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"-1555.455444 145.215912 -247.968750"
+				"angles"		"0.000000 -90.224373 0.000000"
+				"targetname"	"cachepoint_a"
+			}
+			
+			// Cache B
+			"obj_weapon_cache"
+			{
+				"origin"		"-1842.670044 -2428.412354 16.031250"
+				"angles"		"0.000000 0.768353 0.000000"
+				"targetname"	"cache_b"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_b"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"-1842.670044 -2428.412354 88.031250"
+				"angles"		"0.000000 0.768353 0.000000"
+				"targetname"	"cachepoint_b"
+			}
+			
+			// Cache C
+			"obj_weapon_cache"
+			{
+				"origin"		"-2744.322754 -872.854126 32.031250"
+				"angles"		"0.000000 -89.386848 0.000000"
+				"targetname"	"cache_c"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_c"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"-2744.322754 -872.854126 104.031250"
+				"angles"		"0.000000 -89.386848 0.000000"
+				"targetname"	"cachepoint_c"
+			}
+			
+			// Cache D
+			"obj_weapon_cache"
+			{
+				"origin"		"35.836853 -3277.288574 -271.968750"
+				"angles"		"0.000000 90.077385 0.000000"
+				"targetname"	"cache_d"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_d"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"35.836853 -3277.288574 -199.968750"
+				"angles"		"0.000000 90.077385 0.000000"
+				"targetname"	"cachepoint_d"
+			}
+			
+			// Cache E
+			"obj_weapon_cache"
+			{
+				"origin"		"1876.608032 -644.531982 256.031250"
+				"angles"		"0.000000 1.320374 0.000000"
+				"targetname"	"cache_e"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_e"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"1876.608032 -644.531982 328.031250"
+				"angles"		"0.000000 1.320374 0.000000"
+				"targetname"	"cachepoint_e"
+			}
+			
+			// Cache F
+			"obj_weapon_cache"
+			{
+				"origin"		"-1825 -2441 16"
+				"angles"		"0 0 0"
+				"targetname"	"cache_f"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_f"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"-1825 -2441 88"
+				"angles"		"0 0 0"
+				"targetname"	"cachepoint_f"
+			}
+			
+			// Cache G
+			"obj_weapon_cache"
+			{
+				"origin"		"-3291 -1233 32"
+				"angles"		"0 0 0"
+				"targetname"	"cache_g"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_g"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"-3291 -1233 104"
+				"angles"		"0 0 0"
+				"targetname"	"cachepoint_g"
+			}
+			
+			// Cache H
+			"obj_weapon_cache"
+			{
+				"origin"		"-8 -90 -48"
+				"angles"		"0 0 0"
+				"targetname"	"cache_h"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_h"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"-8 -90 24"
+				"angles"		"0 0 0"
+				"targetname"	"cachepoint_h"
+			}
+			
+			// Cache I
+			"obj_weapon_cache"
+			{
+				"origin"		"1909 -2452 16"
+				"angles"		"0 270 0"
+				"targetname"	"cache_i"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_i"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"1909 -2452 88"
+				"angles"		"0 270 0"
+				"targetname"	"cachepoint_i"
+			}
+			
+			// Cache J
+			"obj_weapon_cache"
+			{
+				"origin"		"2887 -1142 32"
+				"angles"		"0 180 0"
+				"targetname"	"cache_j"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_j"
+				"TakeDamageBullets" "0"
+			}	
+			"point_controlpoint"
+			{
+				"origin"		"2887 -1142 104"
+				"angles"		"0 180 0"
+				"targetname"	"cachepoint_j"
+			}
+		}
+	}
+}

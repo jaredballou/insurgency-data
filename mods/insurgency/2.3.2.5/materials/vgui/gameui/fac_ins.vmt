@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/gameui/fac_ins"
+	"$translucent" 1
+	"$vertexalpha" 1
+}

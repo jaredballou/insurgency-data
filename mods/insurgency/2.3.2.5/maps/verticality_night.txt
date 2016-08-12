@@ -1,0 +1,231 @@
+"#base" "verticality.txt"
+
+"cpsetup.txt"
+{
+	"theater_conditions"
+	{
+		"?nightmap"		"1"
+	}
+
+	"navfile"   		"verticality"
+	"nightlighting"		"1"
+
+	"entities"
+	{
+		"?halloween"
+		{
+			"prop_pumpkin"
+			{
+					"origin"		"4038 680 -19"
+					"angles"		"0 270 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"2675 -1912 221"
+					"angles"		"0 60 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"2288 1445 359"
+					"angles"		"0 330 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"54 939 458"
+					"angles"		"0 315 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-721 1965 385"
+					"angles"		"0 270 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-421 -556 452"
+					"angles"		"0 210 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1411 1008 372"
+					"angles"		"0 225 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"283 -1349 275"
+					"angles"		"0 225 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1389 195 727"
+					"angles"		"0 45 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1278 -1154 460"
+					"angles"		"0 0 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-804 -1887 444"
+					"angles"		"0 135 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1646 -1957 444"
+					"angles"		"0 300 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-5435 -1235 135"
+					"angles"		"0 150 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-5464 -385 59"
+					"angles"		"0 270 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-3654 -277 89"
+					"angles"		"0 120 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-2776 -467 205"
+					"angles"		"0 60 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-2204 -632 159"
+					"angles"		"0 210 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1289 -1633 579"
+					"angles"		"0 30 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-401 680 408"
+					"angles"		"0 0 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1503 1208 550"
+					"angles"		"0 330 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1363 -220 449"
+					"angles"		"0 30 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1860 229 453"
+					"angles"		"0 60 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1219 1176 355"
+					"angles"		"0 0 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-2511 1674 261"
+					"angles"		"0 300 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-3100 1425 164"
+					"angles"		"0 105 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-3794 607 -28"
+					"angles"		"0 0 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-6538 -1201 91"
+					"angles"		"0 45 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-3106 189 231"
+					"angles"		"0 240 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1979 -1013 419"
+					"angles"		"0 150 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-795 -1497 453"
+					"angles"		"0 165 0"
+					"randomizeappearance"		"1"
+			}
+				
+		}
+	
+	}
+}
+
