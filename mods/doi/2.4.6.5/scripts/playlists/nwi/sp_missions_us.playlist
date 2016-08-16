@@ -1,0 +1,194 @@
+// Official NWI playlist
+// See example.playlist for documentation/format guide
+
+"playlist"
+{
+	"name"							"#GameUI_mm_difficulty_grunt"
+	"description"					"#GameUI_mm_difficulty_desc_sp_grunt"
+	"category"						"solo" // Required: Menu category, should be "pvp" or "coop"
+	
+	"require_maxplayers_min"		"32"	// Min player slots required for this playlist
+
+	"sv_pure"
+	{
+		"default"                   "-1"
+	}
+	
+	"allowed_maps"
+	{
+		"sicily"		"stronghold"
+		"ortona"		"patrol"
+		"comacchio"		"entrenchment"
+		"dog_red"		"stronghold"
+		"bastogne"		"patrol"
+		"bastogne"		"entrenchment"
+		"reichswald"	"patrol"
+	}
+
+	"solo_info"
+	{
+		"campaign_details"
+		{
+			// Map name, mode name
+			"sicily,stronghold"
+			{
+				"name"				"#sp_mission_us_01_name"
+				"location"			"#sp_mission_us_01_location"
+				"date"				"#sp_mission_us_01_date"
+				"description"		"#sp_mission_us_01_desc"
+			}
+
+			"ortona,patrol"
+			{
+				"name"				"#sp_mission_us_02_name"
+				"location"			"#sp_mission_us_02_location"
+				"date"				"#sp_mission_us_02_date"
+				"description"		"#sp_mission_us_02_desc"
+			}
+
+			"comacchio,entrenchment"
+			{
+				"name"				"#sp_mission_us_03_name"
+				"location"			"#sp_mission_us_03_location"
+				"date"				"#sp_mission_us_03_date"
+				"description"		"#sp_mission_us_03_desc"	
+			}
+
+			"dog_red,stronghold"
+			{
+				"name"				"#sp_mission_us_04_name"
+				"location"			"#sp_mission_us_04_location"
+				"date"				"#sp_mission_us_04_date"
+				"description"		"#sp_mission_us_04_desc"
+			}
+
+			"bastogne,patrol"
+			{
+				"name"				"#sp_mission_us_05_name"
+				"location"			"#sp_mission_us_05_location"
+				"date"				"#sp_mission_us_05_date"
+				"description"		"#sp_mission_us_05_desc"
+			}
+
+			"bastogne,entrenchment"
+			{
+				"name"				"#sp_mission_us_06_name"
+				"location"			"#sp_mission_us_06_location"
+				"date"				"#sp_mission_us_06_date"
+				"description"		"#sp_mission_us_06_desc"	
+			}
+
+			"reichswald,patrol"
+			{
+				"name"				"#sp_mission_us_07_name"
+				"location"			"#sp_mission_us_07_location"
+				"date"				"#sp_mission_us_07_date"
+				"description"		"#sp_mission_us_07_desc"
+			}
+		}
+	}
+	
+	"cvars"
+	{
+		"mp_minteamplayers"					"1"	// min players on each team to start the match		
+		"mp_coop_lobbysize"					"8"	// lobby size
+		"mp_timer_preround"					"15"	// timer for the pre-round (before the round starts, usually after a previous round ends or on mp_restartround 1)
+		"mp_timer_postround"				"15"	// timer for the post-round (after the round starts)
+		"mp_timer_postgame"					"10"	// timer for the post-game (at the end of a game / map rotation)
+		"mp_timer_pregame"					"10"	// timer for the pre-game (before the game starts, usually after map change or on mp_restartgame 1)
+		"bot_damage"						"0.6"	// the amount of damage bots give off compared to normal players
+		"sv_vote_issue_changegamemode_allowed"	"0"	// no changegamemode
+	}
+	
+	"forced_cvars"
+	{
+		// Grunt specific cvars
+		"ins_bot_difficulty"				"1"	// Bot difficulty
+		"mp_friendlyfire"					"1"	// friendly fire
+		"mp_tkpunish"						"1"	// How to punish team killing ( 0 = none, 1 = warning, 2 = kill )
+		"sv_hud_deathmessages"				"0"	// death messages
+		"sv_hud_targetindicator"			"1"	// show friendly player names when looking at them
+		"sv_deadvoice"						"0"	// enabling this will allow the dead and living to VOIP each other
+		"sv_deadtalk"						"0"	// enabling this will allow the dead and living to chat text each other
+		"sv_deadtalk_team"					"1"	// is deadchat limited to just your team?
+		
+		// Local audio only for DOI
+		"mp_voice_use_3d_voip"				"1"
+		"mp_voice_squad_radio"				"0"
+		"mp_voice_max_distance_friendly"	"1800"
+		"mp_voice_max_distance_enemy"		"1000"
+		
+		// From Insurgency
+		"sv_nwi_banlist"					"1"	// global ban list
+		"host_timescale"					"1.0"
+	}
+	
+	"solo_cvars"
+	{
+		"ins_bot_quota"							"0"
+		"mp_teams_auto_join" 					"1"	
+	}
+	
+	"filters"
+	{
+		"official_servers"			"1"
+			
+		// Minimum player count filter, removing this key will remove this filter.
+		"players"
+		{
+			"min"					"0"	// Minimum slider value
+			"max"					"8"	// Maximum slider value
+		}
+	}
+
+	// Localization files, loaded before anything in this file is referenced by UI, ideal
+	// for strings like map and gamemode names that will be displayed in the menu
+	"localization"
+	{
+		"file"		"resource/doi_menu_%language%.txt"
+	}
+
+	// Playlist "rulesets", allows you to merge/overwrite specific KV blocks when loaded with "sv_ruleset [ruleset]"
+	"rulesets"
+	{
+		"default"
+		{
+			"ruleset_name"				"#GameUI_mm_difficulty_grunt"
+			
+			"team_override_merge_method" "overwrite"
+			"team_override"
+			{
+				"TEAM_ONE"			"americans"
+				"TEAM_TWO"			"axis"
+			}
+			
+			"forced_cvars_merge_method" "merge"
+            "forced_cvars"
+            {
+                "ins_bot_difficulty"	"1"			
+				"mp_friendlyfire"		"1"
+				"mp_tkpunish"			"0"	
+			}
+		}
+		
+		"recruit"
+		{
+			"ruleset_name"				"#GameUI_mm_difficulty_recruit"
+			
+			"team_override_merge_method" "overwrite"
+			"team_override"
+			{
+				"TEAM_ONE"			"americans"
+				"TEAM_TWO"			"axis"
+			}
+			
+			"forced_cvars_merge_method" "merge"
+            "forced_cvars"
+            {
+                "ins_bot_difficulty"	"0"				
+				"mp_friendlyfire"		"0"
+				"mp_tkpunish"			"0"
+            }
+		}
+	}
+}

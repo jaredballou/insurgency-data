@@ -1,0 +1,136 @@
+// Example playlist demonstrating the format and default values.
+
+"playlist"
+{
+	"name"					"Example Playlist"
+	"description"			"An example of an Insurgency playlist file."
+	"category"				"pvp" // Required: Menu category, should be "pvp", "coop", "solo" or "hidden"
+	
+	// Optional: Maxplayer requirements.
+	// Servers running this playlist must have a maxplayers value between
+	// require_maxplayers_min and require_maxplayers_max to operate.
+	"require_maxplayers_min"		"1"
+	"require_maxplayers_max"		"49"
+
+	// Optional: sv_pure settings
+	"sv_pure"
+	{	
+		// This value will be used for sv_pure unless it has been defined serverside in a config or launch parameter.
+		"default"                       "1"
+	}
+	
+	// A list of maps that this playlist must be played on.
+	// If no maps are included, this playlist will have no map restrictions.
+	"allowed_maps"
+	{
+		// "mapname" "gamemode"
+		// eg: "station" "push"
+	}
+
+	// Localization files, loaded before anything in this file is referenced by UI, ideal
+	// for strings like map and gamemode names that will be displayed in the menu
+	"localization"
+	{
+		//"file" 	"<localization path>"
+	}
+	
+	// Recommended convars, will be applied but are not enforced and
+	// can be changed by server operators.
+	"cvars"
+	{
+		// "CVAR"										"VALUE"
+		
+		"ambush"	// Gamemode specific cvars
+		{
+			// "CVAR"									"VALUE"
+		}
+	}
+	
+	// Enforced convars, these will be unchangable.
+	"forced_cvars"
+	{
+		// "CVAR"										"VALUE"
+		
+		"ambush"	// Gamemode specific cvars
+		{
+			// "CVAR"									"VALUE"
+		}
+	}
+
+	// Defines the filters available to players searching for a game.
+	"filters"
+	{
+		// Passworded server handling, by default this is 0 and hides _all_ passworded servers from the server results.
+		// Setting this to 1 will allow passworded servers to appear in the list and will prompt for a password on connection,
+		// this may be desired behaviour for playlists with a small server count or players who expect passworded servers.
+		"show_passworded_servers"	"0" 
+
+		// Minimum player count filter, removing this key will remove this filter.
+		"players"
+		{
+			"min"					"0"	// Minimum slider value, defaults to 0
+			"max"					"64"	// Maximum slider value, defaults to require_maxplayers_max value
+		}
+
+		// Mod support, if enabled a filter is added allowing people to include/exclude servers which have sv_pure -1 or 0
+		// and support workshop items
+		"mod_support"				"1"
+		
+		// Per-tag filtering, each filter is given a 3-state button to require/exclude specific tags
+		// Example tags: no3dvoip, notargetindicator, deathmsgs, nofriendlyfire, deadchat, deadvoice, teamtalk (alltalk disabled), fullscoreboard (kd on scoreboard)
+		// Values: 0 = Exclude, 1 = Include, 2 = Ignore
+		"tags"
+		{
+			// "tag name"
+			// {
+			// "default"	"value" // Value (0-2): Default state of this button
+			// "ignorable"	"1" // Boolean, can this filter opt out of tag filtering. Default 1
+			// "invert"	"0" // Boolean, an inverted filter will REQUIRE a tag when crossed out and EXCLUDE a tag when ticked. Default 0
+			// }
+		}
+	}
+
+	// 
+	// Solo menu specific info
+	//
+
+	// Solo mode specific recommended convars, applied but not enforced
+	"solo_cvars"
+	{
+		// "CVAR"										"VALUE"
+		
+		"ambush"	// Gamemode specific cvars
+		{
+			// "CVAR"									"VALUE"
+		}
+	}
+
+	// Recommended mapcycle, this is the default cycle if they haven't loaded it before and resetting the mapcycle will use this.
+	"solo_mapcycle"
+	{
+		// "mapname" "gamemode"
+		// eg: "station" "push"
+	}
+
+	// Playlist "rulesets", allows you to merge/overwrite specific KV blocks when loaded with "sv_playlist <playlist> [ruleset]"
+	"rulesets"
+	{
+		// Default ruleset, applied if not using any other ruleset
+		"default"
+		{
+		}
+
+		// Additional rulesets
+		"name"
+		{
+			// Supported ruleset options
+
+			// How should we merge this ruleset with the playlist? Valid options: merge, overwrite. Default: merge. Merge appends/updates, overwrite replaces.
+			"allowed_maps_merge_method" "merge" 
+			"allowed_maps"
+			{
+			}
+		}
+	}
+	
+}

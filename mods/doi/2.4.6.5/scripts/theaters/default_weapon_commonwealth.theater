@@ -1384,7 +1384,7 @@
 		// ============================
 		// Grenade launchers
 		// ============================
-		"weapon_rifle_grenade"
+		"weapon_rifle_grenade_no4"
 		{
 			"import"				"weapon_base"
 			"weapon_class"			"launcher"
@@ -1426,7 +1426,7 @@
 			}
 			"explosives"
 			{
-				"entity"					"grenade_rifle"
+				"entity"					"grenade_rifle_no4"
 				"remove_on_deplete"			"1"
 				"reload_on_deploy"			"1"
 			}
@@ -1578,7 +1578,7 @@
 			}
 		}
 		
-		"grenade_rifle"
+		"grenade_rifle_no4"
 		{
 			"import"					"baseGrenade"
 			"entity_class"				"grenade_frag"
