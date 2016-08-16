@@ -19,8 +19,8 @@ maps:
   - district
   - district_coop
   - district_night
-  - dry_canal
-  - dry_canal_coop
+  - drycanal
+  - drycanal_coop
   - embassy
   - embassy_coop
   - embassy_night
