@@ -1,0 +1,43 @@
+{
+    "mapdata_version": 1, 
+    "map": {}, 
+    "cpsetup_txt": {
+        "checkpoint": {
+            "AttackingTeam": "security", 
+            "controlpoint": "cp_1", 
+            "controlpoint": "cp_2", 
+            "controlpoint": "cachepoint_c", 
+            "controlpoint": "cachepoint_d", 
+            "controlpoint": "cp_5", 
+            "controlpoint": "cachepoint_f", 
+            "controlpoint": "cp_7", 
+            "spawnzones": {
+                "disablespawns": "1", 
+                "0": "spawnzone_1", 
+                "1": "spawnzone_2", 
+                "2": "spawnzone_3", 
+                "3": "spawnzone_4", 
+                "4": "spawnzone_5", 
+                "5": "spawnzone_6", 
+                "6": "spawnzone_7"
+            }
+        }
+    }, 
+    "map_files_checksums": {
+        "overview_txt": "3ed609330fb5bb2c2a6a08cf54a380e7", 
+        "nav": "87084029f26f1c5ed3de701580d5fb16", 
+        "cpsetup_txt": "ebaf20ac385a5ffcb1e059a04d424032", 
+        "bsp": "c723c962df161b081f4d5d559bd428e6", 
+        "vmf": "91c8c99869f5237435e70a2fca68c500"
+    }, 
+    "overview_txt": {
+        "material": "overviews/sinjar", 
+        "pos_x": "-7351", 
+        "pos_y": "8007", 
+        "scale": "13.5", 
+        "rotate": "0", 
+        "zoom": "1", 
+        "grid_divisions": "12", 
+        "grid_dark": "1"
+    }
+}

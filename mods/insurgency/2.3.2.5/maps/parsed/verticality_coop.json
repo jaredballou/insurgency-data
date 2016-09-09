@@ -1,0 +1,92 @@
+{
+    "mapdata_version": 1, 
+    "map": {}, 
+    "cpsetup_txt": {
+        "compassOffset": "180", 
+        "navfile": "verticality", 
+        "nightlighting": "0", 
+        "checkpoint": {
+            "AttackingTeam": "security", 
+            "controlpoint": "cp1", 
+            "controlpoint": "cp2", 
+            "controlpoint": "cachepoint_c", 
+            "controlpoint": "cp4", 
+            "controlpoint": "cachepoint_e", 
+            "controlpoint": "cp6", 
+            "controlpoint": "cp7", 
+            "controlpoint": "cachepoint_h", 
+            "spawnzones": {
+                "disablespawns": "1", 
+                "0": "spawnzone_1", 
+                "1": "spawnzone_2", 
+                "2": "spawnzone_3", 
+                "3": "spawnzone_4", 
+                "4": "spawnzone_5", 
+                "5": "spawnzone_6", 
+                "6": "spawnzone_7", 
+                "7": "spawnzone_8"
+            }, 
+            "settings": {
+                "counterattack_chance": {
+                    "7": "1.0"
+                }
+            }, 
+            "entities": {
+                "obj_weapon_cache": {
+                    "origin": "-826 -1846 560", 
+                    "angles": "0 90 0", 
+                    "targetname": "cache_c", 
+                    "teamnumber": "3", 
+                    "ControlPoint": "cachepoint_c", 
+                    "TakeDamageBullets": "0"
+                }, 
+                "point_controlpoint": {
+                    "origin": "-826 -1846 632", 
+                    "angles": "0 90 0", 
+                    "targetname": "cachepoint_c"
+                }, 
+                "obj_weapon_cache": {
+                    "origin": "-1480 1510 496", 
+                    "angles": "0 270 0", 
+                    "targetname": "cache_e", 
+                    "teamnumber": "3", 
+                    "ControlPoint": "cachepoint_e", 
+                    "TakeDamageBullets": "0"
+                }, 
+                "point_controlpoint": {
+                    "origin": "-1480 1510 568", 
+                    "angles": "0 270 0", 
+                    "targetname": "cachepoint_e"
+                }, 
+                "obj_weapon_cache": {
+                    "origin": "-6404 -976 226", 
+                    "angles": "0 0 0", 
+                    "targetname": "cache_h", 
+                    "teamnumber": "3", 
+                    "ControlPoint": "cachepoint_h", 
+                    "TakeDamageBullets": "0"
+                }, 
+                "point_controlpoint": {
+                    "origin": "-6404 -976 298", 
+                    "angles": "0 0 0", 
+                    "targetname": "cachepoint_h"
+                }
+            }
+        }
+    }, 
+    "map_files_checksums": {
+        "overview_txt": "45ea566a67388b35c66eed39220ba964", 
+        "vmf": "57f0abb72f0690192a998447147616cc", 
+        "cpsetup_txt": "2fe2b9ed1b728aa4620fea55df931397", 
+        "bsp": "ff1ed4867a276b1465874c8226437cde"
+    }, 
+    "overview_txt": {
+        "material": "overviews/verticality", 
+        "pos_x": "-7124", 
+        "pos_y": "6169", 
+        "scale": "12.0", 
+        "rotate": "0", 
+        "zoom": "1", 
+        "grid_dark": "1"
+    }
+}

@@ -1,14 +1,20 @@
 {
-    "mapdata_version": 2, 
+    "mapdata_version": 1, 
     "map": {}, 
+    "cpsetup_txt": {
+        "missing": true
+    }, 
     "map_files_checksums": {
-        "vmf": "aeda4b650dd473d27af6f17351542a68", 
+        "vmf": "9ca07d755fdbebe6e746a331019a185b", 
         "bsp": "b8a72ed7dd5103ca5894cd955100ecfc", 
-        "overview_png": "4a91eaf1dad41485f245938c11dcfb8e", 
-        "overview_txt": "091581209eca12d64364922242005860", 
         "cpsetup_txt": "798d26d4ead3c4844fe34a0bd4afd96b", 
+        "overview_txt": "091581209eca12d64364922242005860", 
+        "json": "7e19d3485fda74ccabc8d5d87cd23cc5", 
         "nav": "73bf83cc1705ab7f91bb7c5d794934a0", 
         "overview_vmt": "19950ab7fda98ba73af8bdf958c33782", 
         "overview_vtf": "517bca19b2603bf5e495022228a75322"
+    }, 
+    "overview_txt": {
+        "missing": true
     }
 }

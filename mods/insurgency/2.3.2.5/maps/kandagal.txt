@@ -495,9 +495,8 @@
 			}
 		}
 	}
-	
-		"survival"
-		{
+	"survival"
+	{
 		"AttackingTeam"		"security"		
 		
 		"controlpoint"	"cachepoint_a"
