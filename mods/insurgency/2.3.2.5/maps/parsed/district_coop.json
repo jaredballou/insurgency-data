@@ -1,0 +1,11 @@
+{
+    "mapdata_version": 2, 
+    "map": {}, 
+    "map_files_checksums": {
+        "vmf": "07abfc0442a4862862b14ad770a06082", 
+        "overview_txt": "23eabe9c5e8f742f240bb1c966f0a4c2", 
+        "cpsetup_txt": "038c09e64fc6ae5794a6f848da9a4d95", 
+        "nav": "d7dbbb2172e53b0352369be67dc47c01", 
+        "bsp": "5201a20b67f68f95ade8150a4d5777a2"
+    }
+}
