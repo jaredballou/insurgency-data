@@ -2,73 +2,17 @@
     "mapdata_version": 1, 
     "map": {}, 
     "cpsetup_txt": {
-        "checkpoint": {
-            "AttackingTeam": "security", 
-            "controlpoint": "cp_1", 
-            "controlpoint": "cp_2", 
-            "controlpoint": "cp_3", 
-            "controlpoint": "cachepoint_d", 
-            "controlpoint": "cp_5", 
-            "controlpoint": "cachepoint_f", 
-            "controlpoint": "cp_7", 
-            "controlpoint": "cp_8", 
-            "controlpoint": "cp_9", 
-            "entities": {
-                "obj_weapon_cache": {
-                    "origin": "1088 -1720 0", 
-                    "angles": "0 90 0", 
-                    "targetname": "cache_d", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "cachepoint_d", 
-                    "TakeDamageBullets": "0"
-                }, 
-                "point_controlpoint": {
-                    "origin": "1088 -1720 72", 
-                    "angles": "0 90 0", 
-                    "targetname": "cachepoint_d"
-                }, 
-                "obj_weapon_cache": {
-                    "origin": "840 -8 16", 
-                    "angles": "0 90 0", 
-                    "targetname": "cache_f", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "cachepoint_f", 
-                    "TakeDamageBullets": "0"
-                }, 
-                "point_controlpoint": {
-                    "origin": "840 -8 88", 
-                    "angles": "0 90 0", 
-                    "targetname": "cachepoint_f"
-                }
-            }, 
-            "spawnzones": {
-                "disablespawns": "1", 
-                "0": "spawnzone_1", 
-                "1": "spawnzone_2", 
-                "2": "spawnzone_3", 
-                "3": "spawnzone_4", 
-                "4": "spawnzone_5", 
-                "5": "spawnzone_6", 
-                "6": "spawnzone_7", 
-                "7": "spawnzone_8", 
-                "8": "spawnzone_9"
-            }
-        }
+        "missing": true
     }, 
     "map_files_checksums": {
-        "overview_txt": "7257c6aac52771ab360bbcb7f2f3a23a", 
-        "nav": "a9e253051980923890e019f6a1246528", 
-        "cpsetup_txt": "06c0e93748852b7dbadbe866d189cce6", 
+        "vmf": "8a11e1eb525a6ea0b830f8531499afa3", 
         "bsp": "b23d5c3d3651e669c53e9d94106a53df", 
-        "vmf": "8a11e1eb525a6ea0b830f8531499afa3"
+        "cpsetup_txt": "06c0e93748852b7dbadbe866d189cce6", 
+        "overview_txt": "7257c6aac52771ab360bbcb7f2f3a23a", 
+        "json": "819c2835ba8f88414b14e8225d837fa5", 
+        "nav": "a9e253051980923890e019f6a1246528"
     }, 
     "overview_txt": {
-        "material": "overviews/siege", 
-        "pos_x": "-5400", 
-        "pos_y": "4110", 
-        "scale": "8.0", 
-        "rotate": "0", 
-        "zoom": "1", 
-        "grid_dark": "1"
+        "missing": true
     }
 }

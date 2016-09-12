@@ -2,85 +2,17 @@
     "mapdata_version": 1, 
     "map": {}, 
     "cpsetup_txt": {
-        "compassOffset": "180", 
-        "checkpoint": {
-            "AttackingTeam": "security", 
-            "controlpoint": "cachepoint_a", 
-            "controlpoint": "cachepoint_b", 
-            "controlpoint": "cp_c", 
-            "controlpoint": "cp_d", 
-            "controlpoint": "cachepoint_e", 
-            "controlpoint": "cp_f", 
-            "controlpoint": "cp_g", 
-            "controlpoint": "cp_h", 
-            "spawnzones": {
-                "disablespawns": "1", 
-                "0": "sz_a", 
-                "1": "sz_b", 
-                "2": "sz_c", 
-                "3": "sz_d", 
-                "4": "sz_e", 
-                "5": "sz_f", 
-                "6": "sz_g", 
-                "7": "sz_h"
-            }, 
-            "entities": {
-                "obj_weapon_cache": {
-                    "origin": "2349.106689 -2383.254395 80.031250", 
-                    "angles": "0.000000 -89.005104 0", 
-                    "targetname": "cache_a", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "cachepoint_a", 
-                    "TakeDamageBullets": "0"
-                }, 
-                "point_controlpoint": {
-                    "origin": "2349.106689 -2383.254395 152", 
-                    "angles": "0 0 0", 
-                    "targetname": "cachepoint_a"
-                }, 
-                "obj_weapon_cache": {
-                    "origin": "323 -2720 244", 
-                    "angles": "0 285 0", 
-                    "targetname": "cache_b", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "cachepoint_b", 
-                    "TakeDamageBullets": "0"
-                }, 
-                "point_controlpoint": {
-                    "origin": "323 -2720 316", 
-                    "angles": "0 0 0", 
-                    "targetname": "cachepoint_b"
-                }, 
-                "obj_weapon_cache": {
-                    "origin": "3643.817139 -227.373764 192.031250", 
-                    "angles": "0 285 0", 
-                    "targetname": "cache_e", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "cachepoint_e", 
-                    "TakeDamageBullets": "0"
-                }, 
-                "point_controlpoint": {
-                    "origin": "3643.817139 -227.373764 260", 
-                    "angles": "0 0 0", 
-                    "targetname": "cachepoint_e"
-                }
-            }
-        }
+        "missing": true
     }, 
     "map_files_checksums": {
-        "overview_txt": "bccf6e2a07f6a2a86582e8e2d399d80d", 
-        "nav": "afdb0deeef0a31d474309bcdf18544e6", 
-        "cpsetup_txt": "fb4805247a302f9a4838e58ad8b9abbd", 
+        "vmf": "095bfba9cf86c383008b6464b38b4050", 
         "bsp": "da95d1322a205294b0fb605a679dc69e", 
-        "vmf": "095bfba9cf86c383008b6464b38b4050"
+        "cpsetup_txt": "fb4805247a302f9a4838e58ad8b9abbd", 
+        "overview_txt": "bccf6e2a07f6a2a86582e8e2d399d80d", 
+        "json": "43c489fd077d1e1b7c00c1f206b03ed1", 
+        "nav": "afdb0deeef0a31d474309bcdf18544e6"
     }, 
     "overview_txt": {
-        "material": "overviews/market", 
-        "pos_x": "-6386", 
-        "pos_y": "5390", 
-        "scale": "12.0", 
-        "rotate": "0", 
-        "zoom": "1", 
-        "grid_dark": "1"
+        "missing": true
     }
 }

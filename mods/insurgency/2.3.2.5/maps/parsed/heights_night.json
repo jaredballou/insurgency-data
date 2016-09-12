@@ -6,11 +6,12 @@
     }, 
     "map_files_checksums": {
         "bsp": "aea8a09466998abd4d0170945de244c0", 
-        "cpsetup_txt": "f10f84625507de0c7010b6d93b9517d6", 
+        "overview_png": "4cc887958d88f3f6c4c1041d11d652d5", 
         "overview_txt": "0bd5ef82402fe1be6c195f3f3436d453", 
-        "json": "cf8f1ed96ddb329e3602c656667b851b", 
+        "json": "b11329f8caf0bf2430b17f91b287492d", 
         "overview_vmt": "a61a552f7af408a40023c1f8678f2c73", 
-        "overview_vtf": "416733c6fe52cd0b6bc1edca2cb82522"
+        "overview_vtf": "416733c6fe52cd0b6bc1edca2cb82522", 
+        "cpsetup_txt": "f10f84625507de0c7010b6d93b9517d6"
     }, 
     "overview_txt": {
         "missing": true

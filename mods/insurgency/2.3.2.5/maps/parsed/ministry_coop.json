@@ -2,79 +2,17 @@
     "mapdata_version": 1, 
     "map": {}, 
     "cpsetup_txt": {
-        "checkpoint": {
-            "AttackingTeam": "security", 
-            "controlpoint": "cachepoint_a", 
-            "controlpoint": "cachepoint_b", 
-            "controlpoint": "cp3", 
-            "controlpoint": "cp4", 
-            "controlpoint": "cachepoint_e", 
-            "controlpoint": "cp6", 
-            "spawnzones": {
-                "disablespawns": "1", 
-                "0": "spawnzone_1", 
-                "1": "spawnzone_2", 
-                "2": "spawnzone_3", 
-                "3": "spawnzone_4", 
-                "4": "spawnzone_5", 
-                "5": "spawnzone_6"
-            }, 
-            "entities": {
-                "obj_weapon_cache": {
-                    "origin": "2457 -1057 32", 
-                    "angles": "0.0 90.0 0.0", 
-                    "targetname": "cache_a", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "cachepoint_a", 
-                    "TakeDamageBullets": "0"
-                }, 
-                "point_controlpoint": {
-                    "origin": "2457 -1057 104", 
-                    "angles": "0.0 90.0 0.0", 
-                    "targetname": "cachepoint_a"
-                }, 
-                "obj_weapon_cache": {
-                    "origin": "-2648 -1308 32", 
-                    "angles": "0.0 0.0 0.0", 
-                    "targetname": "cache_b", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "cachepoint_b", 
-                    "TakeDamageBullets": "0"
-                }, 
-                "point_controlpoint": {
-                    "origin": "-2648 -1308 104", 
-                    "angles": "0.0 0.0 0.0", 
-                    "targetname": "cachepoint_b"
-                }, 
-                "obj_weapon_cache": {
-                    "origin": "-134.721619 -3306.582764 -271.968750", 
-                    "angles": "0.000000 1.368856 0.000000", 
-                    "targetname": "cache_e", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "cachepoint_e", 
-                    "TakeDamageBullets": "0"
-                }, 
-                "point_controlpoint": {
-                    "origin": "-134.721619 -3306.582764 -199.968750", 
-                    "angles": "0.000000 1.368856 0.000000", 
-                    "targetname": "cachepoint_e"
-                }
-            }
-        }
+        "missing": true
     }, 
     "map_files_checksums": {
-        "overview_txt": "6ff77cd12936c6a5555aa94a8c85d277", 
-        "nav": "0a3f26f6eca8c0800cf3476fc53d9470", 
-        "cpsetup_txt": "fbcd5022a1defd6e1b8f85b0c80d9cd1", 
+        "vmf": "f714f591429d03ecd70efc4be95dce9a", 
         "bsp": "da1abd836e588a222c2f08c984d45810", 
-        "vmf": "f714f591429d03ecd70efc4be95dce9a"
+        "cpsetup_txt": "fbcd5022a1defd6e1b8f85b0c80d9cd1", 
+        "overview_txt": "6ff77cd12936c6a5555aa94a8c85d277", 
+        "json": "469707558167a55e721176c91a40d0be", 
+        "nav": "0a3f26f6eca8c0800cf3476fc53d9470"
     }, 
     "overview_txt": {
-        "material": "overviews/ministry", 
-        "pos_x": "-7000", 
-        "pos_y": "4650", 
-        "scale": "13.0", 
-        "rotate": "0", 
-        "zoom": "1"
+        "missing": true
     }
 }

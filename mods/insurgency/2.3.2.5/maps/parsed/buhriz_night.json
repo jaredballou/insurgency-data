@@ -7,11 +7,12 @@
     "map_files_checksums": {
         "vmf": "f351698fae2fc66932164de7914daf2f", 
         "bsp": "2ec0b6255e0b0edfcdbaa5d95b3ae86d", 
-        "cpsetup_txt": "6ac4500f60d5c798d518a69f3b7c78ab", 
+        "overview_png": "85323f4253cb9c85853fe1d179ec5f16", 
         "overview_txt": "edb21b1cdb8d34fc3c982e193de419b5", 
-        "json": "9f450974ce20d29b1d9c5dd9270f206e", 
+        "json": "87da1cdf06128101c87e68990a6e43b3", 
         "overview_vmt": "55b3d8ff6c3cdc8fa9bc3437aa57ee8e", 
-        "overview_vtf": "cf130171f0ec0cffeff2a5a6b2a1706c"
+        "overview_vtf": "cf130171f0ec0cffeff2a5a6b2a1706c", 
+        "cpsetup_txt": "6ac4500f60d5c798d518a69f3b7c78ab"
     }, 
     "overview_txt": {
         "missing": true
