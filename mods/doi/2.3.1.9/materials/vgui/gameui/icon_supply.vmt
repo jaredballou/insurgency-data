@@ -1,6 +1,0 @@
-"UnlitGeneric"
-{
-	"$basetexture" "vgui/gameui/icon_supply"
-	"$translucent" 1
-	"$vertexalpha" 1
-}
