@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/gameui/tooltip_difficulty_01"
+	"$translucent" 1
+}
