@@ -1,0 +1,40 @@
+ "cpsetup.txt"
+{	
+	"compassOffset" "83"
+
+		"theater_conditions"
+	{
+		"?nightmap"		"1"
+	}
+	"theaterFile"			"default_singleplayer"
+	
+	"training"
+	{
+		"controlpoint"		"checkpoint_01"
+		"controlpoint"		"checkpoint_02"
+		"controlpoint"		"checkpoint_03"
+		"controlpoint"		"checkpoint_03_rt"
+		"controlpoint"		"checkpoint_04"
+		"controlpoint"		"checkpoint_05"
+		"controlpoint"		"checkpoint_06"
+		"controlpoint"		"checkpoint_07"
+		"controlpoint"		"checkpoint_08"
+		"controlpoint"		"controlpoint_01"
+		"controlpoint"		"controlpoint_02"
+		"controlpoint"		"checkpoint_09"
+		"controlpoint"		"checkpoint_10"
+		"controlpoint"		"checkpoint_online"
+		"controlpoint"		"checkpoint_offline"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_start"
+			"1"  "spawnzone_VIP"
+			"2"  "spawnzone_1"
+			"3"  "spawnzone_2"
+			"4"  "spawnzone_humvee_actor"
+			"5"  "spawnzone_humvees"
+		}
+	}
+} 

@@ -1,0 +1,20 @@
+"UnlitGeneric"
+{
+	"$translucent" 1
+	"$basetexture" "vgui/hud/obj_defend"
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	
+	"Proxies" 
+	{ 
+		"AnimatedTexture" 
+		{ 
+			"animatedTextureVar" "$basetexture" 
+			"animatedTextureFrameNumVar" "$frame" 
+			"animatedTextureFrameRate" "12" 
+		}
+	}
+}
+

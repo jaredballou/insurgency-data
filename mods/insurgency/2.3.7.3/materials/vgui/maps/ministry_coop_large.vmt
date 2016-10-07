@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/ministry_large"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

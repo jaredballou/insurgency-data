@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/kandagal_night_small"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

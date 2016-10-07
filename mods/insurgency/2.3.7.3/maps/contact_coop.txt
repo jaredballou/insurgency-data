@@ -1,0 +1,64 @@
+"cpsetup.txt"
+{
+
+	"navfile"   		"contact"
+	"checkpoint"
+	{
+		"AttackingTeam"		"security"
+		"controlpoint"		"cp1"
+		"controlpoint"		"cp2"
+		"controlpoint"		"cp3"
+		"controlpoint"		"cachepoint_d"
+		"controlpoint"		"cachepoint_e"
+		"controlpoint"		"cp6"
+		"controlpoint"		"cp7"
+
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_1"
+			"1"  "spawnzone_2"
+			"2"  "spawnzone_3"
+			"3"  "spawnzone_4"
+			"4"  "spawnzone_5"
+			"5"  "spawnzone_6"
+			"6"  "spawnzone_7"
+		}
+		"entities"
+		{
+			// Cache d
+			"obj_weapon_cache"
+			{
+				"origin"		"-2010 102 -64"
+				"angles"		"0 270 0"
+				"targetname"	"cache_d"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_d"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-2010 102 8"
+				"angles"		"0 270 0"
+				"targetname"	"cachepoint_d" 
+			}
+
+			// Cache e
+			"obj_weapon_cache"
+			{
+				"origin"		"-1080 -1644 0"
+				"angles"		"0 90 0"
+				"targetname"	"cache_e"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_e"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-1080 -1644 72"
+				"angles"		"0 90 0"
+				"targetname"	"cachepoint_e" 
+			}	
+		}
+	}
+}

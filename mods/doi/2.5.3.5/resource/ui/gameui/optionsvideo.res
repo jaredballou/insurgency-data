@@ -1,0 +1,77 @@
+"Resource/UI/GameUI/OptionsVideo.res"
+{
+	"OptionsVideo"
+	{	
+		"ControlName"			"Frame"
+		"fieldName"				"OptionsVideo"
+		"xpos"					"650"
+		"ypos"					"c-120"
+		"wide"					"300"
+		"tall"					"236"
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"PaintBackgroundType"	"0"
+		proportionalToParent	1
+	}
+
+	"LblTitle"
+	{	
+		"ControlName"			"Label"
+		"fieldName"				"LblTitle"
+		"xpos"					"0"
+		"ypos"					"0"
+		"wide"					"300"
+		"tall"					"36"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"paintbackground"		"0"
+		"labelText"				"#GameUI_VideoSettings"
+		"textAlignment"			"center"
+		"font"					"MainMenuTitle"
+	}
+
+	"BtnGamma"
+	{	
+		"ControlName"			"MainMenuButton"
+		"fieldName"				"BtnGamma"
+		"xpos"					"0"
+		"ypos"					"50"
+		"wide"					"300"
+		"tall"					"28"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"paintbackground"		"0"
+		"font"					"MainMenuOptions"
+		"fontblur"				"MainMenuOptionsBlur"
+		"labelText"				"#GameUI_Gamma"
+		"textAlignment"			"center"
+		"command"				"BtnGamma"
+	}
+
+	"BtnBack"
+	{	
+		"ControlName"			"BitmapButton"
+		"fieldName"				"BtnBack"
+		"xpos"					"0"
+		"ypos"					"6"
+		"zpos"					"10"
+		"wide"					"32"
+		"tall"					"32"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"paintbackground"		"0"
+		"labelText"				""
+		"command"				"BtnBack"
+		"defaultFgColor_override"		"128 128 128 255"
+		"armedFgColor_override"			"248 248 248 255"
+		"depressedFgColor_override"		"96 200 255 255"
+		"keyboardFocusColor_override"	"255 96 96 255"
+		"defaultBgColor_override"		"0 0 0 255"
+	}
+}
