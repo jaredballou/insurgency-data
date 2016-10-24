@@ -1,0 +1,555 @@
+"#base" "theater_thearmoryprivatev31_base_player.theater"
+
+"#base" "theater_thearmoryprivatev31_default_gear.theater"
+"#base" "theater_thearmoryprivatev31_default_weapon.theater"
+"#base" "theater_thearmoryprivatev31_custom_weapon.theater"
+"#base" "theater_thearmoryprivatev31_default_weapon_upgrades.theater"
+
+"theater"
+{
+	"core"
+	{
+
+		"precache"
+		{
+			// default theater specific sounds
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			"sounds"			"scripts/ins_sounds_cues.txt"
+			"sounds"			"scripts/ins_sounds_voice.txt"
+			"sounds"			"scripts/ins_sounds_radial_security.txt"				
+			"sounds"			"scripts/ins_sounds_radial_insurgent.txt"			
+			"sounds"			"scripts/ins_sounds_responses_security.txt"
+			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
+			"sounds"			"scripts/ins_sounds_hq.txt"
+			"sounds"			"scripts/armoryprivate_soundsv31.txt"
+			"localize"			"resource/ui/armoryprivate_v31.txt"
+		}
+		
+		// use this to register any acts not registered by the game DLL
+		// "activities"
+		// {
+		// "act"                "ACT_VM_SOMETHING"
+		// }
+	}
+	
+	"teams"
+	{
+		"security"
+		{
+			"name"					"#Team_Security"
+			"logo"					"gameui/fac_sec"
+		}
+		
+		"insurgents"
+		{
+			"name"					"#Team_Insurgent"
+			"logo"					"gameui/fac_ins"
+		}
+	}
+	
+	
+	"player_templates"
+	{
+		"template_rifleman_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Rifleman"
+			
+			"models"
+			{
+				"player"				"models/characters/security_heavy.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_sec_h.mdl"
+
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+		"buy_order"
+			{
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"        "underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"optic_aimpoint"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{	
+				"gear"                      "sec_nightvision"  
+			}
+		}
+		"template_specialist_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Specialist"
+			
+			"models"
+			{
+				"player"				"models/characters/security_specialist.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_sec_l.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+		"buy_order"
+			{
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"        "underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"optic_aimpoint"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{	
+				"gear"                      "sec_nightvision"  
+			}
+		}
+		"template_recon_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Recon"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_sec_l.mdl"
+				
+				"attachments"
+				{
+					"cap"
+					{
+						"model"			"models/characters/us_cap_specialist.mdl"
+					}
+				}
+			}
+			
+		"buy_order"
+			{
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"        "underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"optic_aimpoint"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{	
+				"gear"                      "sec_nightvision"  
+			}
+		}
+		"template_designated_marksman_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Designated_Marksman"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_sec_l.mdl"
+
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+		"buy_order"
+			{
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"        "underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"optic_aimpoint"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{	
+				"gear"                      "sec_nightvision"  
+			}
+		}
+		"template_breacher_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Breacher"
+			
+			"models"
+			{
+				"player"				"models/characters/security_standard.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_sec_m.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+		"buy_order"
+			{
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"        "underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"optic_aimpoint"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{	
+				"gear"                      "sec_nightvision"  
+			}
+		}
+		"template_support_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Support"
+			
+			"models"
+			{
+				"player"				"models/characters/security_standard.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_sec_m.mdl"
+
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+		"buy_order"
+			{
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"        "underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"optic_aimpoint"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{	
+				"gear"                      "sec_nightvision"  
+			}
+		}
+		"template_sniper_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Sniper"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_sec_l.mdl"
+
+				"attachments"
+				{
+					"cap"
+					{
+						"model"			"models/characters/us_cap_specialist.mdl"
+					}
+				}
+			}
+			
+		"buy_order"
+			{
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"        "underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"optic_aimpoint"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{	
+				"gear"                      "sec_nightvision"  
+			}
+		}
+		"template_demolitions_security_coop"
+		{
+			"team"					"security"
+			"print_name"				"#Squad_Fireteam_Demolitions"
+			
+			"models"
+			{
+				"player"				"models/characters/security_specialist.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_sec_l.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+		"buy_order"
+			{
+				"gear"					"sec_heavy_armor"
+				"gear"					"sec_tactical_carrier"
+				"gear"					"sec_nightvision"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"        "underbarrel_foregrip_sec1"
+				"weapon_upgrade"		"optic_aimpoint"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{	
+				"gear"                      "sec_nightvision"  
+			}
+		}
+		
+		// 
+		// BEGIN BOT CLASS TEMPLATES
+		// 
+		"template_coop_specialist"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Specialist"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_sapper.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_1.mdl"
+			}
+			
+			"buy_order"
+			{
+				"gear"					"ins_heavy_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_aks74u"
+				"weapon_upgrade"		"ammo_tracer_aks74u"
+				"weapon_upgrade"		"ins_flashlight"
+				"weapon_upgrade"		"ins_foregrip"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_anm14"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_anm14"
+			}
+		}
+		"template_coop_fighter"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Fighter"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_1.mdl"
+				
+				"attachments"	
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"ins_heavy_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_ak74"
+				"weapon_upgrade"		"ins_flashlight"
+				"weapon_upgrade"		"ammo_ap_ak74"
+				"weapon"				"weapon_f1"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"template_coop_machinegunner"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_MachineGunner"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_1.mdl"
+				
+				"attachments"	
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"ins_heavy_armor"
+				"gear"					"ins_chest_rig"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_rpk"
+				"weapon_upgrade"		"ammo_ap_rpk"
+				"weapon"				"weapon_m18"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_molotov"
+			}
+		}
+		"template_coop_sapper"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Sapper"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_sapper.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_1.mdl"
+				
+				"attachments"	
+				{
+					"helmet"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"ins_heavy_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_aks74u"
+				"weapon_upgrade"		"ins_flashlight"
+				"weapon"				"weapon_1911"
+				"weapon"				"weapon_rpg7"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_makarov"
+				"weapon"				"weapon_rpg7"
+				"weapon"				"weapon_kabar"
+			}
+		}
+		"template_coop_sharpshooter"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Sharpshooter"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_fighter.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_m.mdl"
+			}
+			
+			"buy_order"
+			{
+				"gear"					"ins_light_armor"
+				"gear"					"ins_chest_rig"
+				"weapon"				"weapon_sks"
+				"weapon_upgrade"		"ammo_ap_sks"
+				"weapon_upgrade"		"7xscope_sks"
+				"weapon_upgrade"		"ins_flashlight"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_1911"
+				"weapon"				"weapon_molotov"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_1911"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		
+		"template_coop_juggernaut"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Juggernaut"
+			
+			"models"
+			{
+				"player"				"models/characters/security_hjugg.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_ins_1.mdl"
+			}
+			
+			"buy_order"
+			{
+				"gear"					"ins_juggernaut_armor"
+				"gear"					"ins_chest_carrier"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m240"
+				"weapon_upgrade"		"ammo_ap_m14"
+				"weapon"				"weapon_f1"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m240"
+				"weapon"				"weapon_f1"
+			}
+		}		
+		
+				
+
+	}	
+}
