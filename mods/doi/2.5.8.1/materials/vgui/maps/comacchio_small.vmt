@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/comacchio_small"
+	"$vertexalpha" 1
+	"$translucent" 1
+}
