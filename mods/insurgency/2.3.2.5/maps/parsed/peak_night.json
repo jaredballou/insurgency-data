@@ -1,20 +1,1012 @@
 {
-    "mapdata_version": 1, 
-    "map": {}, 
-    "cpsetup_txt": {
-        "missing": true
-    }, 
-    "map_files_checksums": {
-        "vmf": "446aadcfcef5a146c472615f9886d17e", 
-        "bsp": "6bd0d535eaf610cd982922275e7a5e73", 
-        "overview_png": "575ad955e743b6c05afe00b80459899b", 
-        "overview_txt": "521da1e74997c74004ecebf008265b2a", 
-        "json": "80fbb095643262495c785e74aa4070dc", 
-        "overview_vmt": "8e1b1fa70b47ea2df85a6365319be731", 
-        "overview_vtf": "2e4755f17d9700e5f5c88d92f587a704", 
-        "cpsetup_txt": "8d157f233aeac759b10c2e79498db03e"
-    }, 
-    "overview_txt": {
-        "missing": true
-    }
+	"CPSetup": {
+		"compassOffset": 270,
+		"entities": {
+			"prop_pumpkin?halloween": [
+				{
+					"angles": "0 240 0",
+					"origin": "4869 3793 1112",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 240 0",
+					"origin": "3215 2761 799",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 270 0",
+					"origin": "2270 4486 1195",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 30 0",
+					"origin": "649 -390 853",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 30 0",
+					"origin": "394 -155 855",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 45 0",
+					"origin": "-235 -656 925",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 315 0",
+					"origin": "-218 107 865",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 285 0",
+					"origin": "-1051 3958 632",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 330 0",
+					"origin": "-3821 3015 879",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 345 0",
+					"origin": "-4594 1338 751",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 270 0",
+					"origin": "-6247 538 475",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 90 0",
+					"origin": "-6094 -2391 271",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 165 0",
+					"origin": "-3114 -2401 498",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 195 0",
+					"origin": "-2586 -2756 492",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 30 0",
+					"origin": "1217 -3444 890",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 135 0",
+					"origin": "-20 -830 813",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 0 0",
+					"origin": "1109 -499 737",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 330 0",
+					"origin": "-3347 -258 106",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 255 0",
+					"origin": "-3111 813 92",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 60 0",
+					"origin": "-3399 278 99",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 225 0",
+					"origin": "239 208 859",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 15 0",
+					"origin": "-3839 -881 514",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 300 0",
+					"origin": "-2633 -2951 507",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 75 0",
+					"origin": "-3124 1028 70",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 45 0",
+					"origin": "-2675 715 196",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 195 0",
+					"origin": "304 -35 937",
+					"randomizeappearance": 1
+				},
+				{
+					"angles": "0 15 0",
+					"origin": "-297 -520 845",
+					"randomizeappearance": 1
+				}
+			]
+		},
+		"navfile": [
+			"peak",
+			"peak"
+		],
+		"nightlighting": [
+			0,
+			1
+		],
+		"theater_conditions": {
+			"?nightmap": 1
+		}
+	},
+	"gametypes": {
+		"conquer": {
+			"AttackingTeam": "security",
+			"controlpoint": [
+				"push_final_cap",
+				"occupy_cap",
+				"conquer_cap_c",
+				"cachepoint_a",
+				"cachepoint_b",
+				"cachepoint_c",
+				"cachepoint_d",
+				"cachepoint_e",
+				"cachepoint_f",
+				"cachepoint_g",
+				"cachepoint_h",
+				"cachepoint_i",
+				"cachepoint_j"
+			],
+			"cvars": {
+				"nav_spawn_enemy_minimum_distance_frac_conquer_start": 4
+			},
+			"entities": {
+				"obj_weapon_cache": [
+					{
+						"ControlPoint": "cachepoint_a",
+						"TakeDamageBullets": 0,
+						"angles": "-2 45 9",
+						"origin": "-6376 319 348",
+						"targetname": "cache_a",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_b",
+						"TakeDamageBullets": 0,
+						"angles": "0 87 0",
+						"origin": "-329 2907 864",
+						"targetname": "cache_b",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_c",
+						"TakeDamageBullets": 0,
+						"angles": "0 -25 0",
+						"origin": "-558 -3965 1104",
+						"targetname": "cache_c",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_d",
+						"TakeDamageBullets": 0,
+						"angles": "0 270 0",
+						"origin": "-369 11 814",
+						"targetname": "cache_d",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_e",
+						"TakeDamageBullets": 0,
+						"angles": "0 2 0",
+						"origin": "-6057 -2251 -8",
+						"targetname": "cache_e",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_f",
+						"TakeDamageBullets": 0,
+						"angles": "-3 120 0",
+						"origin": "-2558 -2941 450",
+						"targetname": "cache_f",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_g",
+						"TakeDamageBullets": 0,
+						"angles": "0 0 0",
+						"origin": "2327 3914 1052",
+						"targetname": "cache_g",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_h",
+						"TakeDamageBullets": 0,
+						"angles": "0 270 -8",
+						"origin": "1269 -3357 846",
+						"targetname": "cache_h",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_i",
+						"TakeDamageBullets": 0,
+						"angles": "1 270 -10",
+						"origin": "-7998 -1976 316",
+						"targetname": "cache_i",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_j",
+						"TakeDamageBullets": 0,
+						"angles": "-1 255 0",
+						"origin": "3291 183 27",
+						"targetname": "cache_j",
+						"teamnumber": 3
+					}
+				],
+				"point_controlpoint": [
+					{
+						"angles": "-2 45 9",
+						"origin": "-6376 319 420",
+						"targetname": "cachepoint_a"
+					},
+					{
+						"angles": "0 87 0",
+						"origin": "-329 2907 936",
+						"targetname": "cachepoint_b"
+					},
+					{
+						"angles": "0 -25 0",
+						"origin": "-558 -3965 1176",
+						"targetname": "cachepoint_c"
+					},
+					{
+						"angles": "0 270 0",
+						"origin": "-369 11 886",
+						"targetname": "cachepoint_d"
+					},
+					{
+						"angles": "0 2 0",
+						"origin": "-6057 -2251 64",
+						"targetname": "cachepoint_e"
+					},
+					{
+						"angles": "-3 120 0",
+						"origin": "-2558 -2941 522",
+						"targetname": "cachepoint_f"
+					},
+					{
+						"angles": "0 0 0",
+						"origin": "2327 3914 1124",
+						"targetname": "cachepoint_g"
+					},
+					{
+						"angles": "0 0 0",
+						"origin": "1269 -3357 918",
+						"targetname": "cachepoint_h"
+					},
+					{
+						"angles": "0 0 0",
+						"origin": "-7998 -1976 388",
+						"targetname": "cachepoint_i"
+					},
+					{
+						"angles": "0 0 0",
+						"origin": "3291 183 99",
+						"targetname": "cachepoint_j"
+					}
+				]
+			},
+			"navspawns": {
+				"navspawn": {
+					"bonus": 0,
+					"expandradius": 600,
+					"expandtype": "box",
+					"origin": "6637 1699 -71",
+					"playerspread": 48,
+					"teamnumber": 2
+				}
+			},
+			"spawnzones": {
+				"disablespawns": 1
+			}
+		},
+		"elimination": {
+			"AttackingTeam": "insurgents",
+			"controlpoint": [
+				"cachepoint_a",
+				"cachepoint_b"
+			],
+			"entities": {
+				"obj_weapon_cache": [
+					{
+						"ControlPoint": "cachepoint_a",
+						"TakeDamageBullets": 0,
+						"angles": "0 -79.193344 0",
+						"origin": "4111.532715 818.605042 326.474030",
+						"targetname": "cache_a",
+						"teamnumber": 2
+					},
+					{
+						"ControlPoint": "cachepoint_b",
+						"TakeDamageBullets": 0,
+						"angles": "0 -48.812649 0",
+						"origin": "3380.867920 2920.383789 775.941895",
+						"targetname": "cache_b",
+						"teamnumber": 2
+					}
+				],
+				"point_controlpoint": [
+					{
+						"angles": "0 -79.193344 0",
+						"origin": "4111.532715 818.605042 398.474030",
+						"targetname": "cachepoint_a"
+					},
+					{
+						"angles": "0 -48.812649 0",
+						"origin": "3380.867920 2920.383789 847.941895",
+						"targetname": "cachepoint_b"
+					}
+				]
+			},
+			"spawnzones": {
+				"0": "spawnzone_skirmish",
+				"disablespawns": 1
+			}
+		},
+		"firefight": {
+			"controlpoint": [
+				"ff_cap4",
+				"occupy_cap",
+				"ff_cap5"
+			],
+			"spawnzones": {
+				"0": "spawnzone_skirmish",
+				"disablespawns": 1
+			}
+		},
+		"flashpoint": {
+			"controlpoint": [
+				"cachepoint_a",
+				"cachepoint_b",
+				"occupy_cap",
+				"cachepoint_d",
+				"cachepoint_e"
+			],
+			"entities": {
+				"obj_weapon_cache": [
+					{
+						"ControlPoint": "cachepoint_a",
+						"TakeDamageBullets": 0,
+						"angles": "0 -48.812649 0",
+						"origin": "3380.867920 2920.383789 775.941895",
+						"targetname": "cache_a",
+						"teamnumber": 2
+					},
+					{
+						"ControlPoint": "cachepoint_b",
+						"TakeDamageBullets": 0,
+						"angles": "0 -71.893448 0",
+						"origin": "1279.500854 -3180.787354 832.315491",
+						"targetname": "cache_b",
+						"teamnumber": 2
+					},
+					{
+						"ControlPoint": "cachepoint_d",
+						"TakeDamageBullets": 0,
+						"angles": "0 87.444565 0",
+						"origin": "-345.325104 2906.037842 863.624390",
+						"targetname": "cache_d",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_e",
+						"TakeDamageBullets": 0,
+						"angles": "0 119.169243 0",
+						"origin": "-3076.870605 -2611.940918 453.414154",
+						"targetname": "cache_e",
+						"teamnumber": 3
+					}
+				],
+				"point_controlpoint": [
+					{
+						"angles": "0 -48.812649 0",
+						"origin": "3380.867920 2920.383789 847.941895",
+						"targetname": "cachepoint_a"
+					},
+					{
+						"angles": "0 -71.893448 0",
+						"origin": "1279.500854 -3180.787354 904.315491",
+						"targetname": "cachepoint_b"
+					},
+					{
+						"angles": "0 87.444565 0",
+						"origin": "-345.325104 2906.037842 935.624390",
+						"targetname": "cachepoint_d"
+					},
+					{
+						"angles": "0 119.169243 0",
+						"origin": "-3076.870605 -2611.940918 525.414154",
+						"targetname": "cachepoint_e"
+					}
+				]
+			},
+			"spawnzones": {
+				"0": "spawnzone_skirmish",
+				"disablespawns": 1
+			}
+		},
+		"hunt": {
+			"AttackingTeam": "security",
+			"controlpoint": [
+				"cachepoint_a",
+				"cachepoint_b",
+				"cachepoint_c"
+			],
+			"cvars": {
+				"mp_hunt_nav_spawning": 1
+			},
+			"entities": {
+				"obj_weapon_cache": [
+					{
+						"ControlPoint": "cachepoint_a",
+						"TakeDamageBullets": 0,
+						"angles": "0 0 0",
+						"origin": "4390 760 408",
+						"targetname": "cache_a",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_b",
+						"TakeDamageBullets": 0,
+						"angles": "0 0 0",
+						"origin": "1718 -3380 824",
+						"targetname": "cache_b",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_c",
+						"TakeDamageBullets": 0,
+						"angles": "0 330 0",
+						"origin": "-3930 188 56",
+						"targetname": "cache_c",
+						"teamnumber": 3
+					}
+				],
+				"point_controlpoint": [
+					{
+						"angles": "0 0 0",
+						"origin": "4390 760 460",
+						"targetname": "cachepoint_a"
+					},
+					{
+						"angles": "0 0 0",
+						"origin": "1718 -3380 870",
+						"targetname": "cachepoint_b"
+					},
+					{
+						"angles": "0 330 0",
+						"origin": "-3930 188 100",
+						"targetname": "cachepoint_c"
+					}
+				]
+			},
+			"navspawns": {
+				"navspawn": {
+					"bonus": 0,
+					"expandradius": 1000,
+					"expandtype": "box",
+					"origin": "58 -330 683",
+					"playerspread": 32,
+					"teamnumber": 2
+				}
+			},
+			"spawnzones": {
+				"disablespawns": 1
+			}
+		},
+		"occupy": {
+			"controlpoint": [
+				"occupy_cap"
+			],
+			"spawnzones": {
+				"0": "spawnzone_skirmish",
+				"disablespawns": 1
+			}
+		},
+		"outpost": {
+			"AttackingTeam": "insurgents",
+			"controlpoint": [
+				"cachepoint_a",
+				"cachepoint_b"
+			],
+			"entities": {
+				"obj_weapon_cache": [
+					{
+						"ControlPoint": "cachepoint_a",
+						"TakeDamageBullets": 0,
+						"angles": "0 90 0",
+						"origin": "-2 -427 820",
+						"targetname": "cache_a",
+						"teamnumber": 2
+					},
+					{
+						"ControlPoint": "cachepoint_b",
+						"TakeDamageBullets": 0,
+						"angles": "0 0 0",
+						"origin": "2327 3914 1052",
+						"targetname": "cache_b",
+						"teamnumber": 2
+					}
+				],
+				"point_controlpoint": [
+					{
+						"angles": "0 90 0",
+						"origin": "-2 -427 892",
+						"targetname": "cachepoint_a"
+					},
+					{
+						"angles": "0 0 0",
+						"origin": "2327 3914 1124",
+						"targetname": "cachepoint_b"
+					}
+				]
+			},
+			"spawnzones": {
+				"disablespawns": 1
+			}
+		},
+		"push": {
+			"AttackingTeam": "insurgents",
+			"controlpoint": [
+				"ff_cap4",
+				"cap_b",
+				"push_final_cap",
+				"cachepoint_final"
+			],
+			"entities": {
+				"obj_weapon_cache": {
+					"ControlPoint": "cachepoint_final",
+					"DestructibleWhenActiveOnly": 1,
+					"TakeDamageBullets": 0,
+					"angles": "-5 -59.041580 -15",
+					"origin": "6355.609863 1182.408691 -5.548798",
+					"targetname": "cache_final",
+					"teamnumber": 2
+				},
+				"point_controlpoint": {
+					"angles": "0 -59.041580 0",
+					"origin": "6355.609863 1182.408691 67.548798",
+					"targetname": "cachepoint_final"
+				}
+			},
+			"points": {
+				"cache_final": {
+					"pos_classname": "obj_weapon_cache",
+					"pos_name": "cache_final",
+					"pos_targetname": "cache_final",
+					"pos_team": 2,
+					"pos_type": "obj_weapon_cache",
+					"pos_x": 892,
+					"pos_y": 432
+				},
+				"cachepoint_final": {
+					"pos_classname": "point_controlpoint",
+					"pos_name": "cachepoint_final",
+					"pos_targetname": "cachepoint_final",
+					"pos_team": 0,
+					"pos_type": "point_controlpoint",
+					"pos_x": 892,
+					"pos_y": 432
+				}
+			},
+			"spawnzones": [
+				"spawnzone_push_a",
+				"spawnzone_push_b",
+				"spawnzone_push_c"
+			]
+		},
+		"skirmish": {
+			"controlpoint": {
+				"B": {
+					"pos_team": 2
+				},
+				"D": {
+					"pos_team": 3
+				},
+				"0": "cachepoint_a",
+				"1": "ff_cap4",
+				"2": "occupy_cap",
+				"3": "ff_cap5",
+				"4": "cachepoint_e"
+			},
+			"entities": {
+				"obj_weapon_cache": [
+					{
+						"ControlPoint": "cachepoint_a",
+						"TakeDamageBullets": 0,
+						"angles": "0 -79.193344 0",
+						"origin": "4111.532715 818.605042 326.474030",
+						"targetname": "cache_a",
+						"teamnumber": 2
+					},
+					{
+						"ControlPoint": "cachepoint_e",
+						"TakeDamageBullets": 0,
+						"angles": "0 63.182098 0",
+						"origin": "-3640.765869 -266.053802 243.263458",
+						"targetname": "cache_e",
+						"teamnumber": 3
+					}
+				],
+				"point_controlpoint": [
+					{
+						"angles": "0 -79.193344 0",
+						"origin": "4111.532715 818.605042 398.474030",
+						"targetname": "cachepoint_a"
+					},
+					{
+						"angles": "0 63.182098 0",
+						"origin": "-3640.765869 -266.053802 315.263458",
+						"targetname": "cachepoint_e"
+					}
+				]
+			},
+			"spawnzones": {
+				"0": "spawnzone_skirmish",
+				"disablespawns": 1
+			}
+		}
+	},
+	"mapdata_version": 1,
+	"overview": {
+		"material": "overviews\/peak_night",
+		"pos_x": -8812,
+		"pos_y": 8534,
+		"rotate": 0,
+		"scale": 17,
+		"zoom": 1
+	},
+	"points": {
+		"cap_b": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1205422,
+			"pos_name": "cap_b",
+			"pos_targetname": "cap_b",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 692,
+			"pos_y": 329
+		},
+		"cap_d": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1205439,
+			"pos_name": "cap_d",
+			"pos_targetname": "cap_d",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 371,
+			"pos_y": 670
+		},
+		"conquer_cap_c": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1265560,
+			"pos_name": "conquer_cap_c",
+			"pos_targetname": "conquer_cap_c",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 335,
+			"pos_y": 471
+		},
+		"ff_cap4": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1205437,
+			"pos_name": "ff_cap4",
+			"pos_targetname": "ff_cap4",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 604,
+			"pos_y": 697
+		},
+		"ff_cap5": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1205435,
+			"pos_name": "ff_cap5",
+			"pos_targetname": "ff_cap5",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 489,
+			"pos_y": 325
+		},
+		"occupy_cap": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1205441,
+			"pos_name": "occupy_cap",
+			"pos_targetname": "occupy_cap",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 522,
+			"pos_y": 518
+		},
+		"push_final_cap": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1205424,
+			"pos_name": "push_final_cap",
+			"pos_targetname": "push_final_cap",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 764,
+			"pos_y": 453
+		},
+		"1205416": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "ff_cap4",
+			"pos_height": 48,
+			"pos_id": 1205416,
+			"pos_name": 1205416,
+			"pos_shape": "rect",
+			"pos_targetname": "ff_cap4_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 37,
+			"pos_x": 586,
+			"pos_y": 666
+		},
+		"1205419": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "ff_cap5",
+			"pos_height": 47,
+			"pos_id": 1205419,
+			"pos_name": 1205419,
+			"pos_shape": "rect",
+			"pos_targetname": "ff_cap5_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 43,
+			"pos_x": 464,
+			"pos_y": 302
+		},
+		"1205426": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "push_final_cap",
+			"pos_height": 48,
+			"pos_id": 1205426,
+			"pos_name": 1205426,
+			"pos_shape": "rect",
+			"pos_targetname": "push_final_cap_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 50,
+			"pos_x": 742,
+			"pos_y": 424
+		},
+		"1205429": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_d",
+			"pos_height": 36,
+			"pos_id": 1205429,
+			"pos_name": 1205429,
+			"pos_shape": "rect",
+			"pos_targetname": "cap_d_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 46,
+			"pos_x": 345,
+			"pos_y": 658
+		},
+		"1205432": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_b",
+			"pos_height": 63,
+			"pos_id": 1205432,
+			"pos_name": 1205432,
+			"pos_shape": "rect",
+			"pos_targetname": "cap_b_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 80,
+			"pos_x": 655,
+			"pos_y": 294
+		},
+		"1205443": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "occupy_cap",
+			"pos_id": 1205443,
+			"pos_name": 1205443,
+			"pos_targetname": "occupy_cap_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_x": 533,
+			"pos_y": 500
+		},
+		"1265557": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "conquer_cap_c",
+			"pos_height": 57,
+			"pos_id": 1265557,
+			"pos_name": 1265557,
+			"pos_shape": "rect",
+			"pos_targetname": "conquer_cap_c_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 52,
+			"pos_x": 309,
+			"pos_y": 444
+		},
+		"1271964": {
+			"pos_blockzone": "blockzone_insurgents",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 31,
+			"pos_id": 1271964,
+			"pos_name": 1271964,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_push_a",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 52,
+			"pos_x": 52,
+			"pos_y": 607
+		},
+		"1271966": {
+			"pos_blockzone": "blockzone_security",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 61,
+			"pos_id": 1271966,
+			"pos_name": 1271966,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_skirmish",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 45,
+			"pos_x": 880,
+			"pos_y": 366
+		},
+		"1271968": {
+			"pos_blockzone": "blockzone_insurgents",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 31,
+			"pos_id": 1271968,
+			"pos_name": 1271968,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_skirmish",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 52,
+			"pos_x": 52,
+			"pos_y": 607
+		},
+		"1272110": {
+			"pos_blockzone": "blockzone_security",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 61,
+			"pos_id": 1272110,
+			"pos_name": 1272110,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_push_a",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 45,
+			"pos_x": 880,
+			"pos_y": 366
+		},
+		"1272112": {
+			"pos_blockzone": "blockzone_security",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 59,
+			"pos_id": 1272112,
+			"pos_name": 1272112,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_push_b",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 45,
+			"pos_x": 880,
+			"pos_y": 368
+		},
+		"1272114": {
+			"pos_blockzone": "blockzone_security",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 59,
+			"pos_id": 1272114,
+			"pos_name": 1272114,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_push_c",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 45,
+			"pos_x": 880,
+			"pos_y": 368
+		},
+		"1272116": {
+			"pos_blockzone": "blockzone_insurgents_push_b",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 60,
+			"pos_id": 1272116,
+			"pos_name": 1272116,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_push_b",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 53,
+			"pos_x": 257,
+			"pos_y": 470
+		},
+		"1272118": {
+			"pos_blockzone": "blockzone_insurgents_push_c",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 36,
+			"pos_id": 1272118,
+			"pos_name": 1272118,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_push_c",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 31,
+			"pos_x": 489,
+			"pos_y": 491
+		},
+		"1272120": {
+			"pos_classname": "ins_blockzone",
+			"pos_id": 1272120,
+			"pos_name": 1272120,
+			"pos_targetname": "blockzone_security",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_x": 0,
+			"pos_y": 0
+		},
+		"1272123": {
+			"pos_classname": "ins_blockzone",
+			"pos_id": 1272123,
+			"pos_name": 1272123,
+			"pos_targetname": "blockzone_insurgents",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_x": 0,
+			"pos_y": 0
+		},
+		"1272130": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 542,
+			"pos_id": 1272130,
+			"pos_name": 1272130,
+			"pos_shape": "rect",
+			"pos_targetname": "blockzone_insurgents_push_b",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 386,
+			"pos_x": 27,
+			"pos_y": 231
+		},
+		"1272132": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 542,
+			"pos_id": 1272132,
+			"pos_name": 1272132,
+			"pos_shape": "rect",
+			"pos_targetname": "blockzone_insurgents_push_c",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 582,
+			"pos_x": 27,
+			"pos_y": 231
+		}
+	},
+	"source_files": {
+		"CPSetup": "8d157f233aeac759b10c2e79498db03e",
+		"Overview": "521da1e74997c74004ecebf008265b2a",
+		"VMF Source": "446aadcfcef5a146c472615f9886d17e"
+	}
 }

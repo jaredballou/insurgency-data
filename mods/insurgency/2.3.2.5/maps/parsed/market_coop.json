@@ -1,18 +1,587 @@
 {
-    "mapdata_version": 1, 
-    "map": {}, 
-    "cpsetup_txt": {
-        "missing": true
-    }, 
-    "map_files_checksums": {
-        "vmf": "095bfba9cf86c383008b6464b38b4050", 
-        "bsp": "da95d1322a205294b0fb605a679dc69e", 
-        "cpsetup_txt": "fb4805247a302f9a4838e58ad8b9abbd", 
-        "overview_txt": "bccf6e2a07f6a2a86582e8e2d399d80d", 
-        "json": "2ab936ad9ffa2194c959130645dac6db", 
-        "nav": "afdb0deeef0a31d474309bcdf18544e6"
-    }, 
-    "overview_txt": {
-        "missing": true
-    }
+	"CPSetup": {
+		"compassOffset": 180
+	},
+	"gametypes": {
+		"checkpoint": {
+			"AttackingTeam": "security",
+			"controlpoint": [
+				"cachepoint_a",
+				"cachepoint_b",
+				"cp_c",
+				"cp_d",
+				"cachepoint_e",
+				"cp_f",
+				"cp_g",
+				"cp_h"
+			],
+			"entities": {
+				"obj_weapon_cache": [
+					{
+						"ControlPoint": "cachepoint_a",
+						"TakeDamageBullets": 0,
+						"angles": "0.000000 -89.005104 0",
+						"origin": "2349.106689 -2383.254395 80.031250",
+						"targetname": "cache_a",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_b",
+						"TakeDamageBullets": 0,
+						"angles": "0 285 0",
+						"origin": "323 -2720 244",
+						"targetname": "cache_b",
+						"teamnumber": 3
+					},
+					{
+						"ControlPoint": "cachepoint_e",
+						"TakeDamageBullets": 0,
+						"angles": "0 285 0",
+						"origin": "3643.817139 -227.373764 192.031250",
+						"targetname": "cache_e",
+						"teamnumber": 3
+					}
+				],
+				"point_controlpoint": [
+					{
+						"angles": "0 0 0",
+						"origin": "2349.106689 -2383.254395 152",
+						"targetname": "cachepoint_a"
+					},
+					{
+						"angles": "0 0 0",
+						"origin": "323 -2720 316",
+						"targetname": "cachepoint_b"
+					},
+					{
+						"angles": "0 0 0",
+						"origin": "3643.817139 -227.373764 260",
+						"targetname": "cachepoint_e"
+					}
+				]
+			},
+			"spawnzones": {
+				"disablespawns": 1,
+				"0": "sz_a",
+				"1": "sz_b",
+				"2": "sz_c",
+				"3": "sz_d",
+				"4": "sz_e",
+				"5": "sz_f",
+				"6": "sz_g",
+				"7": "sz_h"
+			}
+		}
+	},
+	"mapdata_version": 1,
+	"overview": {
+		"grid_dark": 1,
+		"material": "overviews\/market",
+		"pos_x": -6386,
+		"pos_y": 5390,
+		"rotate": 0,
+		"scale": 12,
+		"zoom": 1
+	},
+	"points": {
+		"cp_c": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 6267726,
+			"pos_name": "cp_c",
+			"pos_targetname": "cp_c",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 277,
+			"pos_y": 452
+		},
+		"cp_d": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 6267736,
+			"pos_name": "cp_d",
+			"pos_targetname": "cp_d",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 540,
+			"pos_y": 447
+		},
+		"cp_f": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 6267741,
+			"pos_name": "cp_f",
+			"pos_targetname": "cp_f",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 568,
+			"pos_y": 257
+		},
+		"cp_g": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 6267731,
+			"pos_name": "cp_g",
+			"pos_targetname": "cp_g",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 406,
+			"pos_y": 324
+		},
+		"cp_h": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 6267549,
+			"pos_name": "cp_h",
+			"pos_targetname": "cp_h",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 116,
+			"pos_y": 287
+		},
+		"6267551": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 90,
+			"pos_id": 6267551,
+			"pos_name": 6267551,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_d",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 81,
+			"pos_x": 242,
+			"pos_y": 423
+		},
+		"6267554": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp_h",
+			"pos_height": 123,
+			"pos_id": 6267554,
+			"pos_name": 6267554,
+			"pos_shape": "rect",
+			"pos_targetname": "cz_h",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 80,
+			"pos_x": 52,
+			"pos_y": 218
+		},
+		"6267557": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 21,
+			"pos_id": 6267557,
+			"pos_name": 6267557,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_d",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 27,
+			"pos_x": 386,
+			"pos_y": 556
+		},
+		"6267560": {
+			"pos_blockzone": "bz_c",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 82,
+			"pos_id": 6267560,
+			"pos_name": 6267560,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_c",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 79,
+			"pos_x": 384,
+			"pos_y": 407
+		},
+		"6267563": {
+			"pos_blockzone": "bz_c",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 92,
+			"pos_id": 6267563,
+			"pos_name": 6267563,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_c",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 142,
+			"pos_x": 242,
+			"pos_y": 421
+		},
+		"6267582": {
+			"pos_blockzone": "bz_a",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 57,
+			"pos_id": 6267582,
+			"pos_name": 6267582,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_a",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 80,
+			"pos_x": 750,
+			"pos_y": 499
+		},
+		"6267585": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 101,
+			"pos_id": 6267585,
+			"pos_name": 6267585,
+			"pos_shape": "rect",
+			"pos_targetname": "bz_b",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 100,
+			"pos_x": 320,
+			"pos_y": 491
+		},
+		"6267588": {
+			"pos_blockzone": "bz_e",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 115,
+			"pos_id": 6267588,
+			"pos_name": 6267588,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_e",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 222,
+			"pos_x": 628,
+			"pos_y": 377
+		},
+		"6267591": {
+			"pos_blockzone": "bz_e",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 32,
+			"pos_id": 6267591,
+			"pos_name": 6267591,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_e",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 64,
+			"pos_x": 618,
+			"pos_y": 492
+		},
+		"6267594": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 128,
+			"pos_id": 6267594,
+			"pos_name": 6267594,
+			"pos_shape": "rect",
+			"pos_targetname": "bz_e",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 120,
+			"pos_x": 703,
+			"pos_y": 279
+		},
+		"6267603": {
+			"pos_blockzone": "bz_g",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 203,
+			"pos_id": 6267603,
+			"pos_name": 6267603,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_g",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 286,
+			"pos_x": 142,
+			"pos_y": 217
+		},
+		"6267606": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 225,
+			"pos_id": 6267606,
+			"pos_name": 6267606,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_h",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 186,
+			"pos_x": 136,
+			"pos_y": 195
+		},
+		"6267609": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 46,
+			"pos_id": 6267609,
+			"pos_name": 6267609,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_c",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 50,
+			"pos_x": 558,
+			"pos_y": 716
+		},
+		"6267612": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 36,
+			"pos_id": 6267612,
+			"pos_name": 6267612,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_a",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 27,
+			"pos_x": 911,
+			"pos_y": 692
+		},
+		"6267615": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 56,
+			"pos_id": 6267615,
+			"pos_name": 6267615,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_g",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 128,
+			"pos_x": 530,
+			"pos_y": 235
+		},
+		"6267618": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 71,
+			"pos_id": 6267618,
+			"pos_name": 6267618,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_h",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 60,
+			"pos_x": 386,
+			"pos_y": 289
+		},
+		"6267653": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 106,
+			"pos_id": 6267653,
+			"pos_name": 6267653,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_e",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 158,
+			"pos_x": 428,
+			"pos_y": 407
+		},
+		"6267656": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 92,
+			"pos_id": 6267656,
+			"pos_name": 6267656,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_f",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 39,
+			"pos_x": 811,
+			"pos_y": 408
+		},
+		"6267659": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 36,
+			"pos_id": 6267659,
+			"pos_name": 6267659,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_b",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 64,
+			"pos_x": 720,
+			"pos_y": 641
+		},
+		"6267662": {
+			"pos_blockzone": "bz_a",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 203,
+			"pos_id": 6267662,
+			"pos_name": 6267662,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_a",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 257,
+			"pos_x": 554,
+			"pos_y": 556
+		},
+		"6267665": {
+			"pos_blockzone": "bz_b",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 149,
+			"pos_id": 6267665,
+			"pos_name": 6267665,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_b",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 208,
+			"pos_x": 447,
+			"pos_y": 535
+		},
+		"6267668": {
+			"pos_blockzone": "bz_d",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 154,
+			"pos_id": 6267668,
+			"pos_name": 6267668,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_d",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 282,
+			"pos_x": 426,
+			"pos_y": 380
+		},
+		"6267671": {
+			"pos_blockzone": "bz_f",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 163,
+			"pos_id": 6267671,
+			"pos_name": 6267671,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_f",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 302,
+			"pos_x": 428,
+			"pos_y": 217
+		},
+		"6267674": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 171,
+			"pos_id": 6267674,
+			"pos_name": 6267674,
+			"pos_shape": "rect",
+			"pos_targetname": "bz_f",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 304,
+			"pos_x": 180,
+			"pos_y": 193
+		},
+		"6267677": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 224,
+			"pos_id": 6267677,
+			"pos_name": 6267677,
+			"pos_shape": "rect",
+			"pos_targetname": "bz_g",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 243,
+			"pos_x": 140,
+			"pos_y": 196
+		},
+		"6267680": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 171,
+			"pos_id": 6267680,
+			"pos_name": 6267680,
+			"pos_shape": "rect",
+			"pos_targetname": "bz_c",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 250,
+			"pos_x": 384,
+			"pos_y": 364
+		},
+		"6267683": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 171,
+			"pos_id": 6267683,
+			"pos_name": 6267683,
+			"pos_shape": "rect",
+			"pos_targetname": "bz_d",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 208,
+			"pos_x": 586,
+			"pos_y": 364
+		},
+		"6267686": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 230,
+			"pos_id": 6267686,
+			"pos_name": 6267686,
+			"pos_shape": "rect",
+			"pos_targetname": "bz_a",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 285,
+			"pos_x": 434,
+			"pos_y": 537
+		},
+		"6267723": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp_c",
+			"pos_height": 90,
+			"pos_id": 6267723,
+			"pos_name": 6267723,
+			"pos_shape": "rect",
+			"pos_targetname": "cz_c",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 81,
+			"pos_x": 242,
+			"pos_y": 423
+		},
+		"6267728": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp_g",
+			"pos_height": 77,
+			"pos_id": 6267728,
+			"pos_name": 6267728,
+			"pos_shape": "rect",
+			"pos_targetname": "cz_g",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 61,
+			"pos_x": 367,
+			"pos_y": 287
+		},
+		"6267733": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp_d",
+			"pos_height": 85,
+			"pos_id": 6267733,
+			"pos_name": 6267733,
+			"pos_shape": "rect",
+			"pos_targetname": "cz_d",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 96,
+			"pos_x": 490,
+			"pos_y": 407
+		},
+		"6267738": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cp_f",
+			"pos_height": 73,
+			"pos_id": 6267738,
+			"pos_name": 6267738,
+			"pos_shape": "rect",
+			"pos_targetname": "cz_f",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 86,
+			"pos_x": 528,
+			"pos_y": 219
+		},
+		"6293407": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 45,
+			"pos_id": 6293407,
+			"pos_name": 6293407,
+			"pos_shape": "rect",
+			"pos_targetname": "sz_c",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 40,
+			"pos_x": 554,
+			"pos_y": 658
+		}
+	},
+	"source_files": {
+		"CPSetup": "fb4805247a302f9a4838e58ad8b9abbd",
+		"Overview": "bccf6e2a07f6a2a86582e8e2d399d80d",
+		"VMF Source": "095bfba9cf86c383008b6464b38b4050"
+	}
 }

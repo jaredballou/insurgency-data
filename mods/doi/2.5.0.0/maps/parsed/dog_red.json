@@ -1,373 +1,1008 @@
 {
-    "mapdata_version": 1, 
-    "map": {}, 
-    "cpsetup_txt": {
-        "compassOffset": "180", 
-        "navfile": "dog_red", 
-        "nightlighting": "0", 
-        "offensive": {
-            "TeamOne": "americans", 
-            "TeamTwo": "axis", 
-            "AttackingTeam": "TEAM_ONE", 
-            "controlpoint": "cap_bunker_1_point", 
-            "controlpoint": "cap_bunker_entrance", 
-            "controlpoint": "cap_03", 
-            "controlpoint": "radiopoint_final", 
-            "spawnzones": {
-                "disablespawns": "1", 
-                "0": "offensive_spawn_A", 
-                "1": "offensive_spawn_B", 
-                "2": "offensive_spawn_C"
-            }, 
-            "entities": {
-                "obj_destructible": {
-                    "origin": "-2763 11019 730", 
-                    "angles": "0 90 0", 
-                    "targetname": "radio_final", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "radiopoint_final"
-                }, 
-                "point_controlpoint": {
-                    "origin": "-2763 11019 780", 
-                    "angles": "0 90 0", 
-                    "targetname": "radiopoint_final", 
-                    "printname": "#CP_AxisRadio"
-                }
-            }
-        }, 
-        "stronghold": {
-            "TeamOne": "americans", 
-            "TeamTwo": "axis", 
-            "AttackingTeam": "TEAM_ONE", 
-            "controlpoint": "cap_stronghold_01", 
-            "controlpoint": "cap_02", 
-            "controlpoint": "cap_bunker_2_point", 
-            "controlpoint": "cap_middle_bunker", 
-            "controlpoint": "pushpoint_03", 
-            "controlpoint": "cap_stronghold_03", 
-            "controlpoint": "radiopoint_final", 
-            "spawnzones": {
-                "disablespawns": "1"
-            }, 
-            "entities": {
-                "obj_ammo_crate": {
-                    "origin": "2165 -1407 -241", 
-                    "angles": "0 0 0", 
-                    "targetname": "ammocrate_01_allies", 
-                    "teamnumber": "2", 
-                    "ResupplyProximity": "500"
-                }, 
-                "obj_ammo_crate": {
-                    "origin": "212 -1132 -237", 
-                    "angles": "0 0 0", 
-                    "targetname": "ammocrate_02_allies", 
-                    "teamnumber": "2", 
-                    "ResupplyProximity": "250"
-                }, 
-                "obj_ammo_crate": {
-                    "origin": "-1728 -1340 -221", 
-                    "angles": "0 0 0", 
-                    "targetname": "ammocrate_03_allies", 
-                    "teamnumber": "2", 
-                    "ResupplyProximity": "250"
-                }, 
-                "obj_destructible": {
-                    "origin": "-2763 11019 730", 
-                    "angles": "0 90 0", 
-                    "targetname": "radio_final", 
-                    "teamnumber": "3", 
-                    "ControlPoint": "radiopoint_final"
-                }, 
-                "point_controlpoint": {
-                    "origin": "-2763 11019 780", 
-                    "angles": "0 90 0", 
-                    "targetname": "radiopoint_final", 
-                    "printname": "#CP_AxisRadio"
-                }
-            }, 
-            "ai": {
-                "allied_count_minimum_players_base": "10", 
-                "enemy_count_minimum_players_base": "14", 
-                "allied_count_maximum_players_base": "4", 
-                "enemy_count_maximum_players_base": "16", 
-                "friendly_count_solo_base": "12", 
-                "enemy_count_solo_base": "16", 
-                "objectives": {
-                    "objective_index": "0", 
-                    "friendly_respawn_coop": "1", 
-                    "enemy_count_minimum_players": "16", 
-                    "enemy_count_maximum_players": "20", 
-                    "fortify_overwatch_stay_back": "0"
-                }, 
-                "objectives": {
-                    "objective_index": "1", 
-                    "friendly_respawn_coop": "1", 
-                    "enemy_count_minimum_players": "16", 
-                    "enemy_count_maximum_players": "20", 
-                    "fortify_overwatch_stay_back": "0"
-                }, 
-                "objectives": {
-                    "objective_index": "2", 
-                    "enemy_count_minimum_players": "16", 
-                    "enemy_count_maximum_players": "20", 
-                    "friendly_count_solo": "6", 
-                    "enemy_count_solo": "10"
-                }, 
-                "objectives": {
-                    "objective_index": "3", 
-                    "allied_count_minimum_players": "0", 
-                    "allied_count_maximum_players": "0", 
-                    "friendly_count_solo": "4", 
-                    "enemy_count_solo": "14"
-                }, 
-                "objectives": {
-                    "objective_index": "4", 
-                    "allied_count_minimum_players": "0", 
-                    "allied_count_maximum_players": "0", 
-                    "friendly_count_solo": "4", 
-                    "enemy_count_solo": "10"
-                }, 
-                "objectives": {
-                    "objective_index": "5", 
-                    "allied_count_minimum_players": "0", 
-                    "allied_count_maximum_players": "0", 
-                    "friendly_count_solo": "2", 
-                    "enemy_count_solo": "10"
-                }, 
-                "objectives": {
-                    "objective_index": "6", 
-                    "allied_count_minimum_players": "0", 
-                    "allied_count_maximum_players": "0", 
-                    "enemy_count_minimum_players": "12", 
-                    "enemy_count_maximum_players": "12", 
-                    "friendly_count_solo": "2", 
-                    "enemy_count_solo": "10"
-                }
-            }, 
-            "navspawns": {
-                "start_spawns": {
-                    "location_allies": "-1357.530151 -3629.001709 -285.960541", 
-                    "location_axis": "-1898.050781 3962.984131 442.609131"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "0", 
-                    "location_allies": "-1357.530151 -3629.001709 -285.960541", 
-                    "location_axis": "-162.364197 4906.028809 304.031250", 
-                    "fortify_radius": "3500", 
-                    "fortify_overwatch_stay_back": "0", 
-                    "fortify_ranking_center": "-1910.200806 2301.712158 406.321259", 
-                    "fortify_ranking_amount": "200", 
-                    "fortify_ranking_radius": "200"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "1", 
-                    "location_allies": "-3716.419678 -14.772186 -217.922043", 
-                    "location_axis": "906.222717 6182.777344 384.031250", 
-                    "fortify_radius": "3500", 
-                    "fortify_overwatch_stay_back": "0", 
-                    "fortify_ranking_center": "-146.477859 2389.121338 589.031250", 
-                    "fortify_ranking_amount": "200", 
-                    "fortify_ranking_radius": "256"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "2", 
-                    "location_allies": "2672.240234 1588.419067 -62.471920", 
-                    "location_axis": "-922.532043 8037.377441 472.031250", 
-                    "fortify_radius": "2500", 
-                    "fortify_ranking_amount": "200", 
-                    "fortify_ranking_radius": "500"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "3", 
-                    "location_allies": "2672.240234 1588.419067 -62.471920", 
-                    "location_axis": "-922.532043 8037.377441 472.031250", 
-                    "fortify_radius": "2000", 
-                    "fortify_ranking_amount": "200", 
-                    "fortify_ranking_radius": "500"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "4", 
-                    "location_allies": "353.788086 3297.889404 256.031250", 
-                    "location_axis": "-2265.443604 10943.594727 688.031250", 
-                    "fortify_radius": "2000"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "5", 
-                    "location_allies": "-150.036987 5391.320801 304.031250", 
-                    "location_axis": "-2265.443604 10943.594727 688.031250", 
-                    "fortify_radius": "2000"
-                }, 
-                "fallback_spawns": {
-                    "location_allies": "-1357.530151 -3629.001709 -285.960541", 
-                    "location_axis": "-2265.443604 10943.594727 688.031250"
-                }
-            }
-        }, 
-        "entrenchment": {
-            "TeamOne": "americans", 
-            "TeamTwo": "axis", 
-            "AttackingTeam": "TEAM_ONE", 
-            "controlpoint": "cap_stronghold_01", 
-            "controlpoint": "cap_stronghold_02", 
-            "controlpoint": "cap_bunker_entrance", 
-            "controlpoint": "cap_middle_bunker", 
-            "controlpoint": "pushpoint_03", 
-            "controlpoint": "cap_stronghold_03", 
-            "controlpoint": "cap_regroup", 
-            "roundtimer_frac": "0.8", 
-            "spawnzones": {
-                "disablespawns": "1"
-            }, 
-            "entities": {
-                "obj_ammo_crate": {
-                    "origin": "23 3633 508", 
-                    "angles": "0 0 0", 
-                    "targetname": "ammocrate_01_axis", 
-                    "teamnumber": "3", 
-                    "ResupplyProximity": "500"
-                }, 
-                "obj_ammo_crate": {
-                    "origin": "2028 4049 704", 
-                    "angles": "0 0 0", 
-                    "targetname": "ammocrate_02_axis", 
-                    "teamnumber": "3", 
-                    "ResupplyProximity": "250"
-                }, 
-                "obj_ammo_crate": {
-                    "origin": "-291 6148 304", 
-                    "angles": "0 0 0", 
-                    "targetname": "ammocrate_03_axis", 
-                    "teamnumber": "3", 
-                    "ResupplyProximity": "250"
-                }, 
-                "obj_ammo_crate": {
-                    "origin": "-1825 9432 640", 
-                    "angles": "0 0 0", 
-                    "targetname": "ammocrate_04_axis", 
-                    "teamnumber": "3", 
-                    "ResupplyProximity": "250"
-                }, 
-                "obj_ammo_crate": {
-                    "origin": "505 7241 424", 
-                    "angles": "0 0 0", 
-                    "targetname": "ammocrate_05_axis", 
-                    "teamnumber": "3", 
-                    "ResupplyProximity": "250"
-                }, 
-                "obj_ammo_crate": {
-                    "origin": "-2155 4326 408", 
-                    "angles": "0 0 0", 
-                    "targetname": "ammocrate_06_axis", 
-                    "teamnumber": "3", 
-                    "ResupplyProximity": "250"
-                }
-            }, 
-            "ai": {
-                "allied_count_minimum_players_base": "7", 
-                "enemy_count_minimum_players_base": "18", 
-                "allied_count_maximum_players_base": "0", 
-                "enemy_count_maximum_players_base": "18", 
-                "friendly_count_solo_base": "7", 
-                "enemy_count_solo_base": "16", 
-                "objectives": {
-                    "objective_index": "0", 
-                    "respawn_time": "10", 
-                    "flank_points": {
-                        "location": "-3751.715576 605.526306 -90.886459"
-                    }
-                }, 
-                "objectives": {
-                    "objective_index": "1", 
-                    "respawn_time": "10", 
-                    "flank_points": {
-                        "location": "2911.561523 470.400482 -106.916107"
-                    }
-                }, 
-                "objectives": {
-                    "objective_index": "4", 
-                    "flank_points": {
-                        "location": "-1755.907349 5633.997559 510.569305", 
-                        "location": "1712.657837 6266.104004 540.899048"
-                    }
-                }, 
-                "objectives": {
-                    "objective_index": "5", 
-                    "flank_points": {
-                        "location": "-921.393433 9139.249023 700.587524", 
-                        "location": "-3262.751709 7443.952637 428.774414"
-                    }
-                }
-            }, 
-            "navspawns": {
-                "start_spawns": {
-                    "location_allies": "-269.624268 -3293.623779 -289.451599", 
-                    "location_axis": "-182.200974 3932.636475 498.930054"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "0", 
-                    "location_allies": "-2137.491211 -3170.633301 -276.152832", 
-                    "fortify_radius": "2500", 
-                    "fortify_overwatch_stay_back": "0"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "1", 
-                    "location_allies": "1591.023926 -3107.254883 -280.874664", 
-                    "fortify_radius": "2500", 
-                    "fortify_overwatch_stay_back": "0"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "2", 
-                    "location_allies": "-147.860397 1619.225830 -9.365326", 
-                    "location_axis": "-166.817566 4939.986816 304.031250", 
-                    "fortify_radius": "1500"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "3", 
-                    "location_allies": "-168.165985 2714.813232 232.031250", 
-                    "location_axis": "-895.849915 8017.527344 472.031250", 
-                    "fortify_radius": "1500"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "4", 
-                    "location_allies": "-168.165985 2714.813232 232.031250", 
-                    "location_axis": "-895.849915 8017.527344 472.031250", 
-                    "fortify_radius": "1500"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "5", 
-                    "location_allies": "110.025017 5992.814941 304.031250", 
-                    "location_axis": "-2075.942383 9373.388672 640.031250", 
-                    "fortify_radius": "1000"
-                }, 
-                "objective_based_spawns": {
-                    "objective_index": "6", 
-                    "location_axis": "-2234.360107 10963.854492 688.031250", 
-                    "fortify_radius": "1000"
-                }, 
-                "fallback_spawns": {
-                    "location_allies": "-269.624268 -3293.623779 -289.451599", 
-                    "location_axis": "-2234.360107 10963.854492 688.031250"
-                }
-            }
-        }
-    }, 
-    "map_files_checksums": {
-        "vmf": "def45930d2eb49c81b9da49976598038", 
-        "bsp": "dae2deaa35bcb4717d2105ede709aacc", 
-        "overview_txt": "87ba007fc6383e299dcd54dcff172875", 
-        "cpsetup_txt": "37b20a1ade3e17619444ce055e878534", 
-        "nav": "76be9e1db4af2ea9b49734b834c9c3ad", 
-        "overview_vmt": "bb713068422273a7504b094e2db3cf08", 
-        "overview_vtf": "4ea8dc17e4609954c1481a0999c427d1"
-    }, 
-    "overview_txt": {
-        "material": "overviews/dog_red", 
-        "pos_x": "-7559", 
-        "pos_y": "10496", 
-        "scale": "14", 
-        "rotate": "0", 
-        "zoom": "1", 
-        "grid_divisions": "10", 
-        "grid_dark": "1"
-    }
+	"CPSetup": {
+		"compassOffset": 180,
+		"entrenchment": {
+			"AttackingTeam": "TEAM_ONE",
+			"TeamOne": "americans",
+			"TeamTwo": "axis",
+			"ai": {
+				"allied_count_maximum_players_base": 0,
+				"allied_count_minimum_players_base": 7,
+				"enemy_count_maximum_players_base": 18,
+				"enemy_count_minimum_players_base": 18,
+				"enemy_count_solo_base": 16,
+				"friendly_count_solo_base": 7,
+				"max_vision_range": 3200,
+				"objectives": [
+					{
+						"flank_points": {
+							"location": "-3751.715576 605.526306 -90.886459"
+						},
+						"objective_index": 0,
+						"respawn_time": 10
+					},
+					{
+						"flank_points": {
+							"location": "2911.561523 470.400482 -106.916107"
+						},
+						"objective_index": 1,
+						"respawn_time": 10
+					},
+					{
+						"flank_points": {
+							"location": [
+								"-1755.907349 5633.997559 510.569305",
+								"1712.657837 6266.104004 540.899048"
+							]
+						},
+						"objective_index": 4
+					},
+					{
+						"flank_points": {
+							"location": [
+								"-921.393433 9139.249023 700.587524",
+								"-3262.751709 7443.952637 428.774414"
+							]
+						},
+						"objective_index": 5
+					}
+				]
+			},
+			"controlpoint": [
+				"cap_stronghold_01",
+				"cap_stronghold_02",
+				"cap_bunker_entrance",
+				"cap_middle_bunker",
+				"pushpoint_03",
+				"cap_stronghold_03",
+				"cap_regroup"
+			],
+			"entities": {
+				"obj_ammo_crate": [
+					{
+						"ResupplyProximity": 500,
+						"angles": "0 0 0",
+						"origin": "23 3633 508",
+						"targetname": "ammocrate_01_axis",
+						"teamnumber": 3
+					},
+					{
+						"ResupplyProximity": 250,
+						"angles": "0 0 0",
+						"origin": "2028 4049 704",
+						"targetname": "ammocrate_02_axis",
+						"teamnumber": 3
+					},
+					{
+						"ResupplyProximity": 250,
+						"angles": "0 0 0",
+						"origin": "-291 6148 304",
+						"targetname": "ammocrate_03_axis",
+						"teamnumber": 3
+					},
+					{
+						"ResupplyProximity": 250,
+						"angles": "0 0 0",
+						"origin": "-1825 9432 640",
+						"targetname": "ammocrate_04_axis",
+						"teamnumber": 3
+					},
+					{
+						"ResupplyProximity": 250,
+						"angles": "0 0 0",
+						"origin": "505 7241 424",
+						"targetname": "ammocrate_05_axis",
+						"teamnumber": 3
+					},
+					{
+						"ResupplyProximity": 250,
+						"angles": "0 0 0",
+						"origin": "-2155 4326 408",
+						"targetname": "ammocrate_06_axis",
+						"teamnumber": 3
+					}
+				]
+			},
+			"navspawns": {
+				"fallback_spawns": {
+					"location_allies": "-269.624268 -3293.623779 -289.451599",
+					"location_axis": "-2234.360107 10963.854492 688.031250"
+				},
+				"objective_based_spawns": [
+					{
+						"fortify_overwatch_stay_back": 0,
+						"fortify_radius": 2500,
+						"location_allies": "-2137.491211 -3170.633301 -276.152832",
+						"objective_index": 0
+					},
+					{
+						"fortify_overwatch_stay_back": 0,
+						"fortify_radius": 2500,
+						"location_allies": "1591.023926 -3107.254883 -280.874664",
+						"objective_index": 1
+					},
+					{
+						"fortify_radius": 1500,
+						"location_allies": "-147.860397 1619.225830 -9.365326",
+						"location_axis": "-166.817566 4939.986816 304.031250",
+						"objective_index": 2
+					},
+					{
+						"fortify_radius": 1500,
+						"location_allies": "-168.165985 2714.813232 232.031250",
+						"location_axis": "-895.849915 8017.527344 472.031250",
+						"objective_index": 3
+					},
+					{
+						"fortify_radius": 1500,
+						"location_allies": "-168.165985 2714.813232 232.031250",
+						"location_axis": "-895.849915 8017.527344 472.031250",
+						"objective_index": 4
+					},
+					{
+						"fortify_radius": 1000,
+						"location_allies": "110.025017 5992.814941 304.031250",
+						"location_axis": "-2075.942383 9373.388672 640.031250",
+						"objective_index": 5
+					},
+					{
+						"fortify_radius": 1000,
+						"location_axis": "-2234.360107 10963.854492 688.031250",
+						"objective_index": 6
+					}
+				],
+				"start_spawns": {
+					"location_allies": "-269.624268 -3293.623779 -289.451599",
+					"location_axis": "-182.200974 3932.636475 498.930054"
+				}
+			},
+			"roundtimer_frac": 0.8,
+			"spawnzones": {
+				"disablespawns": 1
+			}
+		},
+		"navfile": "dog_red",
+		"nightlighting": 0,
+		"offensive": {
+			"AttackingTeam": "TEAM_ONE",
+			"TeamOne": "americans",
+			"TeamTwo": "axis",
+			"controlpoint": [
+				"cap_bunker_1_point",
+				"cap_bunker_entrance",
+				"cap_03",
+				"radiopoint_final"
+			],
+			"entities": {
+				"obj_destructible": {
+					"ControlPoint": "radiopoint_final",
+					"angles": "0 90 0",
+					"origin": "-2763 11019 730",
+					"targetname": "radio_final",
+					"teamnumber": 3
+				},
+				"point_controlpoint": {
+					"angles": "0 90 0",
+					"origin": "-2763 11019 780",
+					"printname": "#CP_AxisRadio",
+					"targetname": "radiopoint_final"
+				}
+			},
+			"spawnzones": {
+				"disablespawns": 1,
+				"0": "offensive_spawn_A",
+				"1": "offensive_spawn_B",
+				"2": "offensive_spawn_C"
+			}
+		},
+		"stronghold": {
+			"AttackingTeam": "TEAM_ONE",
+			"TeamOne": "americans",
+			"TeamTwo": "axis",
+			"ai": {
+				"allied_count_maximum_players_base": 4,
+				"allied_count_minimum_players_base": 10,
+				"enemy_count_maximum_players_base": 16,
+				"enemy_count_minimum_players_base": 14,
+				"enemy_count_solo_base": 16,
+				"friendly_count_solo_base": 12,
+				"max_vision_range": 4100,
+				"objectives": [
+					{
+						"enemy_count_maximum_players": 20,
+						"enemy_count_minimum_players": 16,
+						"fortify_overwatch_stay_back": 0,
+						"friendly_respawn_coop": 1,
+						"objective_index": 0
+					},
+					{
+						"enemy_count_maximum_players": 20,
+						"enemy_count_minimum_players": 16,
+						"fortify_overwatch_stay_back": 0,
+						"friendly_respawn_coop": 1,
+						"objective_index": 1
+					},
+					{
+						"enemy_count_maximum_players": 20,
+						"enemy_count_minimum_players": 16,
+						"enemy_count_solo": 10,
+						"friendly_count_solo": 6,
+						"objective_index": 2
+					},
+					{
+						"allied_count_maximum_players": 0,
+						"allied_count_minimum_players": 0,
+						"enemy_count_solo": 14,
+						"friendly_count_solo": 4,
+						"objective_index": 3
+					},
+					{
+						"allied_count_maximum_players": 0,
+						"allied_count_minimum_players": 0,
+						"enemy_count_solo": 10,
+						"friendly_count_solo": 4,
+						"objective_index": 4
+					},
+					{
+						"allied_count_maximum_players": 0,
+						"allied_count_minimum_players": 0,
+						"enemy_count_solo": 10,
+						"friendly_count_solo": 4,
+						"objective_index": 5,
+						"respawn_time": 30
+					},
+					{
+						"allied_count_maximum_players": 0,
+						"allied_count_minimum_players": 0,
+						"enemy_count_maximum_players": 12,
+						"enemy_count_minimum_players": 12,
+						"enemy_count_solo": 10,
+						"friendly_count_solo": 4,
+						"objective_index": 6
+					}
+				]
+			},
+			"controlpoint": [
+				"cap_stronghold_01",
+				"cap_02",
+				"cap_bunker_2_point",
+				"cap_middle_bunker",
+				"pushpoint_03",
+				"cap_stronghold_03",
+				"radiopoint_final"
+			],
+			"entities": {
+				"obj_ammo_crate": [
+					{
+						"ResupplyProximity": 500,
+						"angles": "0 0 0",
+						"origin": "2165 -1407 -241",
+						"targetname": "ammocrate_01_allies",
+						"teamnumber": 2
+					},
+					{
+						"ResupplyProximity": 250,
+						"angles": "0 0 0",
+						"origin": "212 -1132 -237",
+						"targetname": "ammocrate_02_allies",
+						"teamnumber": 2
+					},
+					{
+						"ResupplyProximity": 250,
+						"angles": "0 0 0",
+						"origin": "-1728 -1340 -221",
+						"targetname": "ammocrate_03_allies",
+						"teamnumber": 2
+					}
+				],
+				"obj_destructible": {
+					"ControlPoint": "radiopoint_final",
+					"angles": "0 90 0",
+					"origin": "-2763 11019 730",
+					"targetname": "radio_final",
+					"teamnumber": 3
+				},
+				"point_controlpoint": {
+					"angles": "0 90 0",
+					"origin": "-2763 11019 780",
+					"printname": "#CP_AxisRadio",
+					"targetname": "radiopoint_final"
+				}
+			},
+			"navspawns": {
+				"fallback_spawns": {
+					"location_allies": "-1357.530151 -3629.001709 -285.960541",
+					"location_axis": "-2265.443604 10943.594727 688.031250"
+				},
+				"objective_based_spawns": [
+					{
+						"fortify_overwatch_stay_back": 0,
+						"fortify_radius": 3500,
+						"fortify_ranking_amount": 200,
+						"fortify_ranking_center": "-1910.200806 2301.712158 406.321259",
+						"fortify_ranking_radius": 200,
+						"location_allies": "316.908020 -3612.504639 -223.178253",
+						"location_axis": "-162.364197 4906.028809 304.031250",
+						"objective_index": 0
+					},
+					{
+						"fortify_overwatch_stay_back": 0,
+						"fortify_radius": 3500,
+						"fortify_ranking_amount": 200,
+						"fortify_ranking_center": "-146.477859 2389.121338 589.031250",
+						"fortify_ranking_radius": 256,
+						"location_allies": "-3716.419678 -14.772186 -217.922043",
+						"location_axis": "906.222717 6182.777344 384.031250",
+						"objective_index": 1
+					},
+					{
+						"fortify_radius": 2500,
+						"fortify_ranking_amount": 200,
+						"fortify_ranking_radius": 500,
+						"location_allies": "2672.240234 1588.419067 -62.471920",
+						"location_axis": "-922.532043 8037.377441 472.031250",
+						"objective_index": 2
+					},
+					{
+						"fortify_radius": 2000,
+						"fortify_ranking_amount": 200,
+						"fortify_ranking_radius": 500,
+						"location_allies": "2672.240234 1588.419067 -62.471920",
+						"location_axis": "-922.532043 8037.377441 472.031250",
+						"objective_index": 3
+					},
+					{
+						"fortify_radius": 2000,
+						"location_allies": "353.788086 3297.889404 256.031250",
+						"location_axis": "-2265.443604 10943.594727 688.031250",
+						"objective_index": 4
+					},
+					{
+						"fortify_radius": 2000,
+						"location_allies": "-150.036987 5391.320801 304.031250",
+						"location_axis": "-2265.443604 10943.594727 688.031250",
+						"objective_index": 5
+					},
+					{
+						"fortify_radius": 2000,
+						"location_allies": "-1641 8293 525",
+						"location_axis": "-2265.443604 10943.594727 688.031250",
+						"objective_index": 6
+					}
+				],
+				"start_spawns": {
+					"location_allies": "316.908020 -3612.504639 -223.178253",
+					"location_axis": "-1898.050781 3962.984131 442.609131"
+				}
+			},
+			"spawnzones": {
+				"disablespawns": 1
+			}
+		}
+	},
+	"mapdata_version": 1,
+	"overview": {
+		"grid_dark": 1,
+		"grid_divisions": 10,
+		"material": "overviews\/dog_red",
+		"pos_x": -7559,
+		"pos_y": 10496,
+		"rotate": 0,
+		"scale": 14,
+		"zoom": 1
+	},
+	"points": {
+		"cap_01": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 854219,
+			"pos_name": "cap_01",
+			"pos_targetname": "cap_01",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 531,
+			"pos_y": 321
+		},
+		"cap_02": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 919320,
+			"pos_name": "cap_02",
+			"pos_targetname": "cap_02",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 708,
+			"pos_y": 457
+		},
+		"cap_03": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 854291,
+			"pos_name": "cap_03",
+			"pos_targetname": "cap_03",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 426,
+			"pos_y": 151
+		},
+		"cap_bunker_1_point": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1625991,
+			"pos_name": "cap_bunker_1_point",
+			"pos_targetname": "cap_bunker_1_point",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 529,
+			"pos_y": 562
+		},
+		"cap_bunker_2_point": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1637499,
+			"pos_name": "cap_bunker_2_point",
+			"pos_targetname": "cap_bunker_2_point",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 532,
+			"pos_y": 388
+		},
+		"cap_bunker_entrance": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 2715883,
+			"pos_name": "cap_bunker_entrance",
+			"pos_targetname": "cap_bunker_entrance",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 529,
+			"pos_y": 431
+		},
+		"cap_middle_bunker": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 2857183,
+			"pos_name": "cap_middle_bunker",
+			"pos_targetname": "cap_middle_bunker",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 591,
+			"pos_y": 228
+		},
+		"cap_regroup": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 2715956,
+			"pos_name": "cap_regroup",
+			"pos_targetname": "cap_regroup",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 365,
+			"pos_y": 14
+		},
+		"cap_stronghold_01": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1456514,
+			"pos_name": "cap_stronghold_01",
+			"pos_targetname": "cap_stronghold_01",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 433,
+			"pos_y": 558
+		},
+		"cap_stronghold_02": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1456565,
+			"pos_name": "cap_stronghold_02",
+			"pos_targetname": "cap_stronghold_02",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 615,
+			"pos_y": 560
+		},
+		"cap_stronghold_03": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 1456750,
+			"pos_name": "cap_stronghold_03",
+			"pos_targetname": "cap_stronghold_03",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 394,
+			"pos_y": 97
+		},
+		"cap_support_bunker": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 2716031,
+			"pos_name": "cap_support_bunker",
+			"pos_targetname": "cap_support_bunker",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 300,
+			"pos_y": 85
+		},
+		"pushpoint_01": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 263934,
+			"pos_name": "pushpoint_01",
+			"pos_targetname": "pushpoint_01",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 531,
+			"pos_y": 661
+		},
+		"pushpoint_02": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 263980,
+			"pos_name": "pushpoint_02",
+			"pos_targetname": "pushpoint_02",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 529,
+			"pos_y": 505
+		},
+		"pushpoint_03": {
+			"pos_classname": "point_controlpoint",
+			"pos_id": 264028,
+			"pos_name": "pushpoint_03",
+			"pos_targetname": "pushpoint_03",
+			"pos_team": 0,
+			"pos_type": "point_controlpoint",
+			"pos_x": 489,
+			"pos_y": 272
+		},
+		"103707": {
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 217,
+			"pos_id": 103707,
+			"pos_name": 103707,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_1",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 566,
+			"pos_x": 241,
+			"pos_y": 832
+		},
+		"251640": {
+			"pos_blockzone": "bz_attackers_2",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 77,
+			"pos_id": 251640,
+			"pos_name": 251640,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_2",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 316,
+			"pos_x": 314,
+			"pos_y": 688
+		},
+		"258507": {
+			"pos_blockzone": "bz_defenders_1",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 64,
+			"pos_id": 258507,
+			"pos_name": 258507,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_1",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 420,
+			"pos_x": 314,
+			"pos_y": 461
+		},
+		"259039": {
+			"pos_blockzone": "bz_defenders_3",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 70,
+			"pos_id": 259039,
+			"pos_name": 259039,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_3",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 73,
+			"pos_x": 362,
+			"pos_y": 57
+		},
+		"263931": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "pushpoint_01",
+			"pos_id": 263931,
+			"pos_name": 263931,
+			"pos_points": "543,643 504,690 575,690 517,643 504,656",
+			"pos_shape": "poly",
+			"pos_targetname": "pushzone_01",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_x": 540,
+			"pos_y": 663
+		},
+		"263977": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "pushpoint_02",
+			"pos_height": 51,
+			"pos_id": 263977,
+			"pos_name": 263977,
+			"pos_shape": "rect",
+			"pos_targetname": "pushzone_02",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 41,
+			"pos_x": 506,
+			"pos_y": 483
+		},
+		"273108": {
+			"pos_blockzone": "bz_attackers_3",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 52,
+			"pos_id": 273108,
+			"pos_name": 273108,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_3",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 318,
+			"pos_x": 358,
+			"pos_y": 601
+		},
+		"304249": {
+			"pos_classname": "ins_blockzone",
+			"pos_id": 304249,
+			"pos_name": 304249,
+			"pos_targetname": "bz_attackers_1",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_x": 524,
+			"pos_y": 851
+		},
+		"304380": {
+			"pos_classname": "ins_blockzone",
+			"pos_id": 304380,
+			"pos_name": 304380,
+			"pos_targetname": "bz_defenders_1",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_x": 524,
+			"pos_y": 343
+		},
+		"669786": {
+			"pos_classname": "ins_blockzone",
+			"pos_id": 669786,
+			"pos_name": 669786,
+			"pos_targetname": "bz_defenders_2",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_x": 524,
+			"pos_y": 252
+		},
+		"672738": {
+			"pos_blockzone": "bz_defenders_2",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 41,
+			"pos_id": 672738,
+			"pos_name": 672738,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_2",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 51,
+			"pos_x": 503,
+			"pos_y": 294
+		},
+		"833729": {
+			"pos_classname": "ins_blockzone",
+			"pos_id": 833729,
+			"pos_name": 833729,
+			"pos_targetname": "bz_attackers_2",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_x": 524,
+			"pos_y": 761
+		},
+		"833821": {
+			"pos_classname": "ins_blockzone",
+			"pos_id": 833821,
+			"pos_name": 833821,
+			"pos_targetname": "bz_defenders_3",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_x": 524,
+			"pos_y": 105
+		},
+		"854228": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_01",
+			"pos_height": 28,
+			"pos_id": 854228,
+			"pos_name": 854228,
+			"pos_shape": "rect",
+			"pos_targetname": "cz_01",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 29,
+			"pos_x": 514,
+			"pos_y": 307
+		},
+		"854256": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_03",
+			"pos_id": 854256,
+			"pos_name": 854256,
+			"pos_targetname": "cz_03",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_x": 425,
+			"pos_y": 151
+		},
+		"919317": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_02",
+			"pos_height": 26,
+			"pos_id": 919317,
+			"pos_name": 919317,
+			"pos_shape": "rect",
+			"pos_targetname": "cz_02",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 64,
+			"pos_x": 684,
+			"pos_y": 440
+		},
+		"1134063": {
+			"pos_classname": "ins_blockzone",
+			"pos_id": 1134063,
+			"pos_name": 1134063,
+			"pos_targetname": "bz_attackers_3",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_x": 724,
+			"pos_y": 1068
+		},
+		"1456511": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_stronghold_01",
+			"pos_height": 38,
+			"pos_id": 1456511,
+			"pos_name": 1456511,
+			"pos_shape": "rect",
+			"pos_targetname": "cz_stronghold_01",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 149,
+			"pos_x": 357,
+			"pos_y": 541
+		},
+		"1456562": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_stronghold_02",
+			"pos_id": 1456562,
+			"pos_name": 1456562,
+			"pos_targetname": "cz_stronghold_02",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_x": 620,
+			"pos_y": 561
+		},
+		"1456747": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_stronghold_03",
+			"pos_height": 73,
+			"pos_id": 1456747,
+			"pos_name": 1456747,
+			"pos_shape": "rect",
+			"pos_targetname": "cz_stronghold_03",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 91,
+			"pos_x": 345,
+			"pos_y": 55
+		},
+		"1569346": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_bunker_2_point",
+			"pos_id": 1569346,
+			"pos_name": 1569346,
+			"pos_targetname": "cap_bunker_2",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_x": 528,
+			"pos_y": 391
+		},
+		"1597825": {
+			"pos_blockzone": "bz_attackers_3",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 52,
+			"pos_id": 1597825,
+			"pos_name": 1597825,
+			"pos_shape": "rect",
+			"pos_targetname": "spawnzone_3",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 318,
+			"pos_x": 439,
+			"pos_y": 682
+		},
+		"1625981": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_bunker_1_point",
+			"pos_height": 45,
+			"pos_id": 1625981,
+			"pos_name": 1625981,
+			"pos_shape": "rect",
+			"pos_targetname": "cap_bunker_1",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 38,
+			"pos_x": 509,
+			"pos_y": 544
+		},
+		"1640150": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "pushpoint_03",
+			"pos_height": 37,
+			"pos_id": 1640150,
+			"pos_name": 1640150,
+			"pos_shape": "rect",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 33,
+			"pos_x": 470,
+			"pos_y": 251
+		},
+		"1640601": {
+			"pos_blockzone": "bz_attackers_2",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 51,
+			"pos_id": 1640601,
+			"pos_name": 1640601,
+			"pos_shape": "rect",
+			"pos_targetname": "offensive_spawn_b",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 318,
+			"pos_x": 357,
+			"pos_y": 600
+		},
+		"1640722": {
+			"pos_blockzone": "bz_attackers_3",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 67,
+			"pos_id": 1640722,
+			"pos_name": 1640722,
+			"pos_shape": "rect",
+			"pos_targetname": "offensive_spawn_c",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 39,
+			"pos_x": 510,
+			"pos_y": 477
+		},
+		"1640829": {
+			"pos_blockzone": "offensive_bz_ger_a",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 63,
+			"pos_id": 1640829,
+			"pos_name": 1640829,
+			"pos_shape": "rect",
+			"pos_targetname": "offensive_spawn_a",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 52,
+			"pos_x": 517,
+			"pos_y": 229
+		},
+		"1640845": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 454,
+			"pos_id": 1640845,
+			"pos_name": 1640845,
+			"pos_shape": "rect",
+			"pos_targetname": "offensive_bz_ger_a",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 604,
+			"pos_x": 203,
+			"pos_y": 44
+		},
+		"1640861": {
+			"pos_blockzone": "bz_attackers_1",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 217,
+			"pos_id": 1640861,
+			"pos_name": 1640861,
+			"pos_shape": "rect",
+			"pos_targetname": "offensive_spawn_a",
+			"pos_team": 2,
+			"pos_type": "area",
+			"pos_width": 567,
+			"pos_x": 239,
+			"pos_y": 831
+		},
+		"1641152": {
+			"pos_blockzone": "offensive_bz_ger_b",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 49,
+			"pos_id": 1641152,
+			"pos_name": 1641152,
+			"pos_shape": "rect",
+			"pos_targetname": "offensive_spawn_b",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 38,
+			"pos_x": 569,
+			"pos_y": 206
+		},
+		"1641168": {
+			"pos_classname": "ins_blockzone",
+			"pos_height": 310,
+			"pos_id": 1641168,
+			"pos_name": 1641168,
+			"pos_shape": "rect",
+			"pos_targetname": "offensive_bz_ger_b",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 572,
+			"pos_x": 238,
+			"pos_y": 44
+		},
+		"1641198": {
+			"pos_blockzone": "bz_defenders_3",
+			"pos_classname": "ins_spawnzone",
+			"pos_height": 37,
+			"pos_id": 1641198,
+			"pos_name": 1641198,
+			"pos_shape": "rect",
+			"pos_targetname": "offensive_spawn_c",
+			"pos_team": 3,
+			"pos_type": "area",
+			"pos_width": 69,
+			"pos_x": 332,
+			"pos_y": 6
+		},
+		"2715856": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_bunker_entrance",
+			"pos_id": 2715856,
+			"pos_name": 2715856,
+			"pos_targetname": "cap_bunker_entrance_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_x": 528,
+			"pos_y": 439
+		},
+		"2715909": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_regroup",
+			"pos_id": 2715909,
+			"pos_name": 2715909,
+			"pos_targetname": "cap_regroup_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_x": 367,
+			"pos_y": 21
+		},
+		"2715996": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_support_bunker",
+			"pos_height": 30,
+			"pos_id": 2715996,
+			"pos_name": 2715996,
+			"pos_shape": "rect",
+			"pos_targetname": "cap_support_bunker_t",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_width": 40,
+			"pos_x": 280,
+			"pos_y": 73
+		},
+		"2857180": {
+			"pos_classname": "trigger_capture_zone",
+			"pos_controlpoint": "cap_middle_bunker",
+			"pos_id": 2857180,
+			"pos_name": 2857180,
+			"pos_targetname": "cz_middle_bunker",
+			"pos_team": 0,
+			"pos_type": "area",
+			"pos_x": 590,
+			"pos_y": 230
+		}
+	},
+	"source_files": {
+		"CPSetup": "a6cf0dc5941ba25e1fc55aaca1e288e5",
+		"Overview": "87ba007fc6383e299dcd54dcff172875",
+		"VMF Source": "def45930d2eb49c81b9da49976598038"
+	}
 }
