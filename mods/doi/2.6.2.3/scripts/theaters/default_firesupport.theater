@@ -1,0 +1,275 @@
+"theater"
+{
+	"firesupport"
+	{
+		// =============================
+		// HIGH EXPLOSIVE ARTILLERY
+		// =============================
+		
+		"firesupport_artillery_he_axis"
+		{
+			"Params"
+			{
+				"SupportType"			"artillery"
+				"Cooldown"				"45"
+				
+				"Weapons"
+				{
+					"Entity"				"grenade_mortar_german"
+				}
+			}
+			
+			"Radial"
+			{
+				"direction"				"NorthEast"
+				"token"					"radial_request_artillery_he"
+			}
+			
+			"team_access"				"axis"
+		}
+		
+		"firesupport_artillery_he_allies"
+		{
+			"Params"
+			{
+				"SupportType"			"artillery"
+				"Cooldown"				"45"
+				
+				"Weapons"
+				{
+					"Entity"				"grenade_mortar"
+				}
+			}
+	
+			"Radial"
+			{
+				"direction"				"NorthEast"
+				"token"					"radial_request_artillery_he"
+			}
+			
+			"team_access"				"americans, commonwealth"
+		}
+		
+		// =============================
+		// SMOKE ARTILLERY
+		// =============================
+		
+		"firesupport_artillery_smoke_axis"
+		{
+			"Params"
+			{
+				"SupportType"			"artillery"	
+				"Cooldown"				"45"
+				
+				"Weapons"
+				{
+					"Entity"				"grenade_mortarsmoke_german"
+				}
+			}
+			
+			"Radial"
+			{
+				"direction"				"NorthWest"
+				"token"					"radial_request_artillery_smoke"
+			}
+			
+			"team_access"				"axis"
+		}
+		
+		"firesupport_artillery_smoke_allies"
+		{
+			"Params"
+			{
+				"SupportType"			"artillery"
+				"Cooldown"				"45"
+				
+				"Weapons"
+				{
+					"Entity"				"grenade_mortarsmoke"
+				}
+			}
+			
+			"Radial"
+			{
+				"direction"				"NorthWest"
+				"token"					"radial_request_artillery_smoke"
+			}
+			
+			"team_access"				"americans, commonwealth"
+		}
+		
+		// =============================
+		// FACTION SPECIFIC
+		// =============================
+		
+		// Special faction stuff
+		"firesupport_artillery_incendiary"
+		{
+			"Params"
+			{
+				"SupportType"			"artillery"
+				"Cooldown"				"45"
+				
+				"Weapons"
+				{
+					"Entity"				"grenade_mortarincendiary"
+				}
+			}
+			
+			"Radial"
+			{
+				"direction"				"North"
+				"token"					"radial_request_artillery_incendiary"
+			}
+			
+			"team_access"				"commonwealth"
+		}
+		
+		"firesupport_strafe"
+		{
+			"CAS"
+			{
+				"HeightFrac"		"-0.5"
+				"Speed"				"150"
+				"AttackDelay"		"3.0"
+				"TimeToArrive"		"7.0"
+				"FlyBySound"		"Mustang.FlyOver"
+				"FireSound"			"Mustang.FireGuns"
+			}
+			
+			"Params"
+			{
+				"Weapons"
+				{
+					"NumProjectiles"		"20"
+					"TimeBetweenShots"		"0.1"
+					"Entity"				"bullet_cas"
+				}
+
+				"SupportType"			"cas"
+				"Cooldown"				"30"
+				
+			}
+
+			"team_access"				"americans"
+		}
+		
+		"firesupport_stuka"
+		{
+			"CAS"
+			{
+				"HeightFrac"		"-0.5"
+				"Speed"				"100"
+				"TimeToArrive"		"16.0"
+				"FlyBySound"		"Stuka.FlyOver"
+			}
+			
+			"Params"
+			{
+				"Weapons"
+				{
+					"NumProjectiles"		"1"
+					"Entity"				"grenade_stuka"
+				}
+
+				"SupportType"			"cas"
+				"Cooldown"				"30"
+				
+			}
+
+			"team_access"				"axis"
+		}
+	}
+	
+	"explosives"
+	{
+		"rocket_cas"
+		{
+			"entity_class"				"rocket"
+			"Model"						"models/weapons/w_bazooka_projectile.mdl"
+			"DetonateDamage"			"170"
+			"DetonateDamageRadius"		"800"
+			"DetonatePenetrationRadius"	"120"
+			
+			"RocketTopSpeed"			"3000"
+			"RocketStartSpeed"			"200"
+			"RocketAcceleration"		"400"
+			"RocketWobble"				"1"
+			"RocketWobbleFrequency"		"0.25"
+
+			"Particles"
+			{
+				"DetonateParticle"		"doi_mortar_explosion"
+				"DetonateWaterParticle" "ins_water_explosion"
+				"TrailParticle"			"rockettrail"
+				"BackblastParticle"		"ins_weapon_rpg_backblast"
+			}
+			"Sounds"
+			{
+				"BounceSound"			"Mustang.FireRockets"
+				"DetonateSound"			"MustangRockets.Explode"
+				"DetonateWaterSound"	"MustangRockets.ExplodeWater"			
+				"LaunchSound"			"Weapon_Bazooka.Loop"
+			}
+		}
+		
+		"bullet_cas"
+		{
+			"entity_class"				"rocket"
+			"Model"						"models/weapons/w_bazooka_projectile.mdl"
+			"DetonateDamage"			"80"
+			"DetonateDamageRadius"		"300"
+			"DetonatePenetrationRadius"	"0"
+			
+			"RocketTopSpeed"			"3000"
+			"RocketStartSpeed"			"3000"
+			"RocketWobble"				"0"
+			"RocketWobbleFrequency"		"0"
+		
+			"Particles"
+			{
+				"DetonateParticle"			"doi_grenade_explosion"
+				"DetonateWaterParticle"		"ins_water_explosion"
+				"TrailParticle"				""
+			}
+			"Sounds"
+			{
+				"DetonateSound"			"Weapon_mk2.Explode"
+				"DetonateWaterSound"	"Weapon_mk2.ExplodeWater"
+			}
+		}
+		
+		
+		// Base artillery shell
+		"grenade_stuka" 
+		{
+			"import"					"artillery_base"
+			"entity_class"				"grenade_mortar"
+			"Model"						"models/weapons/shells/artillery_shell.mdl"
+			
+			"DetonateDamage"			"240"
+			"DetonateDamageRadius"		"900"
+			"DetonatePenetrationRadius"	"240"
+			"FuseTime"					"0"
+			"ImpactDetonation"			"1"
+			"ArmDelay"					"0.0"
+			
+			"Health"					"50"
+			"ReactExplosions"			"1"
+			"ReactBullets"				"0"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"doi_artillery_explosion"
+				"DetonateWaterParticle"		"ins_water_explosion"
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"Artillery.Explode"
+				"DetonateWaterSound"		"Artillery.ExplodeWater"
+				"BounceSound"				"Stuka.BombDoors"
+			}
+		}
+	}
+}

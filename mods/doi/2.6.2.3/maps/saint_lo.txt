@@ -1,0 +1,122 @@
+"cpsetup.txt"
+{
+
+	"navfile"   		"saint_lo"
+	"nightlighting"		"0"
+		
+
+	"offensive"
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		"controlpoint"		"Destroyed_homes"
+		"controlpoint"		"hotel_cap"
+		"controlpoint"		"Cafe_cap"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "Spawn_off_1"
+			"1"  "Spawn_off_2"
+			"2"  "Spawn_off_3"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"-4865 1888 42"
+				"angles"		"0 270 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-4865 1888 100"
+				"angles"		"0 270 0"
+				"targetname"	"radiopoint_final"
+				"printname"		"#CP_AxisRadio"
+			}		
+		}
+	}
+	
+	"liberation"	
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"controlpoint"		"Destroyed_homes"
+		"controlpoint"		"hotel_cap"
+		"controlpoint"		"Cafe_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "Spawn_neutral"
+		}
+	}
+
+	"frontline"	
+	{
+		"TeamOne"            "americans"
+        "TeamTwo"            "axis"
+		
+		"controlpoint" 		"radiopoint_allied_final"
+	    "controlpoint"		"Destroyed_homes"
+		"controlpoint"		"hotel_cap"
+		"controlpoint"		"Cafe_cap" 
+		"controlpoint" 		"radiopoint_axis_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "Spawn_frontline_allied_advance"
+			"1"  "Spawn_neutral"
+			"2"  "Spawn_frontline_axis_advance"
+		}
+		
+		"entities"
+		{
+			// Allied radio
+			"obj_destructible"
+			{
+				"origin"			"3393 -1572 49"
+				"angles"			"0 180 0"
+				"targetname"		"radio_allied_final"
+				"teamnumber"		"2"
+				"ControlPoint"		"radiopoint_allied_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"3393 -1572 100"
+				"angles"			"0 180 0"
+				"targetname"		"radiopoint_allied_final"
+				"printname"			"#CP_AlliedRadio"
+			}	
+			
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"			"-4865 1888 42"
+				"angles"			"0.000000 270 0.000000"
+				"targetname"		"radio_axis_final"
+				"teamnumber"		"3"
+				"ControlPoint"		"radiopoint_axis_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"			"-4865 1888 100"
+				"angles"			"0.000000 270 0.000000"
+				"targetname"		"radiopoint_axis_final"
+				"printname"			"#CP_AxisRadio"
+			}	
+		}
+	}
+		
+	
+}

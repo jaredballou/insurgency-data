@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/dog_red_large"
+	"$vertexalpha" 1
+	"$translucent" 1
+}
