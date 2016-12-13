@@ -1,0 +1,192 @@
+"theater"
+{
+	"unlocks"
+	{	
+		"unit_canadians"
+		{
+			"printname"			"#unit_canadian"
+			"team_access"		"commonwealth"
+			
+			"ItemDefId"		"1"
+			
+			"Character"
+			{
+				"Voice"			"canadian"
+				"Model"			"models\characters\british\player_canadian.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"1"
+					"helmet"	"2"
+				}
+				
+				"officer_bodygroups"
+				{
+					"helmet"	"1"
+				}
+			}
+
+		}
+
+		"unit_buffalo"
+		{
+			"printname"		"#unit_buffalo"
+			"team_access"	"americans"
+			
+			"ItemDefId"		"1005"
+			
+			"Character"
+			{
+				"voice"			"africanamerican"
+				"model"			"models\characters\american\player_american_buffalo.mdl"
+			}
+		}
+		
+		//Airborne
+		"unit_airborne"
+		{
+			"printname"		"#unit_airborne"
+			"team_access"	"americans"
+			
+			"ItemDefId"		"1006"
+			
+			"Character"
+			{
+				"voice"			"american01"
+				"model"			"models\characters\american\player_american_airborne.mdl"
+				
+				"viewmodel_hands"	"models\weapons\v_hands_us_glove_airborne.mdl"
+				"viewmodel_gloves"	"models\weapons\v_hands_us_glove_airborne.mdl"
+				
+				"bodygroups"
+				{
+					"helmet"	"2"
+					"patch"		"1"
+					"decals"	"10"	//spade
+					"hands"		"1"
+				}
+				
+				"officer_bodygroups"
+				{
+					"decals"	"8"		//lion
+				}
+			}
+		}
+		
+		"unit_sikh"
+		{
+			"printname"		"#unit_indian"
+			"team_access"	"commonwealth"
+			
+			"ItemDefId"		"2001"
+			
+			"Character"
+			{
+				"voice"			"indian"
+				"model"			"models\characters\british\player_british_indian.mdl"
+			}
+		}
+		
+		//Highlanders
+		"unit_highlander"
+		{
+			"printname"		"#unit_highlanders"
+			"team_access"	"commonwealth"
+			
+			"ItemDefId"		"2002"
+				
+			"Character"
+			{
+				"voice"			"scottish"
+				"model"			"models/characters/british/player_scottish.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"1"
+					"helmet"	"2"
+				}
+
+				"officer_bodygroups"
+				{
+					"helmet"	"1"
+				}
+			}
+		}
+		
+		//Rangers
+		"unit_ranger"
+		{
+			"printname"		"#unit_rangers"
+			"team_access"	"americans"
+			
+			"ItemDefId"		"3005"
+			
+			"Character"
+			{
+				"voice"			"american01"
+				"model"			"models/characters/american/player_american_ranger.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"1"
+					"helmet"	"1"
+				}
+			}
+		}
+		
+		//1st Infantry
+		"unit_1stinfantry"
+		{
+			"printname"		"#unit_1stinfantry"
+			"team_access"	"axis"
+			
+			"ItemDefId"		"4005"
+				
+			"Character"
+			{
+				"voice"			"german01"
+				"model"			"models/characters/german/player_german_wehrmacht.mdl"
+				
+				"bodygroups"
+				{
+					"helmet"	"1"
+				}
+
+				"officer_bodygroups"
+				{
+					"helmet"	"1"
+				}
+			}
+		}
+		
+		//1st Infantry
+		"unit_fallschirmjager"
+		{
+			"printname"		"#unit_fallschirmjager"
+			"team_access"	"axis"
+			
+			"ItemDefId"		"4006"
+			
+			"Character"
+			{
+				"voice"			"german01"
+				"model"			"models/characters/german/player_german_wehrmacht.mdl"
+				
+				"viewmodel_hands"	"models\weapons\v_hands_ger_gloves_paratrooper.mdl"
+				"viewmodel_gloves"	"models\weapons\v_hands_ger_gloves_paratrooper.mdl"
+				
+				"bodygroups"
+				{
+					"helmet"	"1"
+					"hands"		"1"
+				}
+
+				"officer_bodygroups"
+				{
+					"helmet"	"1"
+					"hands"		"1"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+"unlocks"
+{
+	//Default American
+	"-1"
+	{
+		"printname"		"#unit_american"
+		"team_access"	"americans, commonwealth"
+	}
+	
+	//Default German
+	"-1"
+	{
+		"printname"		"#unit_german"
+		"team_access"	"axis"
+	}
+	
+	//O Canada
+	"1"
+	{
+		"printname"		"#unit_canadian"
+		"team_access"		"commonwealth"
+		"voice"			"canadian"
+		"model"			"models\characters\british\player_canadian.mdl"
+	}
+	
+	//Buffalo Soldiers
+	"2"
+	{
+		"printname"		"#unit_buffalo"
+		"team_access"	"americans"
+		"voice"			"africanamerican"
+		"model"			"models\characters\american\player_american_buffalo.mdl"
+	}
+	
+	//Airborne
+	"3"
+	{
+		"printname"		"#unit_airborne"
+		"team_access"	"americans"
+		"voice"			"america"
+		"model"			"models\characters\american\player_american_airborne.mdl"
+	}
+	
+	//Gurkhas
+	"5"
+	{
+		"printname"		"#unit_indian"
+		"team_access"	"commonwealth"
+		"voice"			"indian"
+		"model"			"models\characters\british\player_british_indian.mdl"
+	}
+}

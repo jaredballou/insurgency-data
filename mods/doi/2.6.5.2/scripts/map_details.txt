@@ -1,0 +1,56 @@
+"MapModeDetails"
+{
+	"sicily"
+	{
+		"entrenchment"
+		{
+			"faction_1_icon"	"gameui/faction_american_army"
+			"faction_2_icon"	"gameui/faction_german_army"
+		}
+	}
+
+	"bastogne"
+	{
+		"entrenchment"
+		{
+			"faction_1_icon"	"gameui/faction_american_army"
+			"faction_2_icon"	"gameui/faction_german_army"
+		}
+	}
+
+	"ortona"
+	{
+		"entrenchment"
+		{
+			"faction_1_icon"	"gameui/faction_american_army"
+			"faction_2_icon"	"gameui/faction_german_army"
+		}
+	}
+
+	"comacchio"
+	{
+		"entrenchment"
+		{
+			"faction_1_icon"	"gameui/faction_american_army"
+			"faction_2_icon"	"gameui/faction_german_army"
+		}
+	}
+
+	"dog_red"
+	{
+		"entrenchment"
+		{
+			"faction_1_icon"	"gameui/faction_american_army"
+			"faction_2_icon"	"gameui/faction_german_army"
+		}
+	}
+
+	"reichswald"
+	{
+		"entrenchment"
+		{
+			"faction_1_icon"	"gameui/faction_american_army"
+			"faction_2_icon"	"gameui/faction_german_army"
+		}
+	}
+}
