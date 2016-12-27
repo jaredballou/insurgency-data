@@ -1,0 +1,149 @@
+"#base" "nam.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"?push_security_attack"
+			{
+				"squads"
+				{
+					
+					"#Fireteam_Alpha"
+
+					{
+						"#sergeant"	"template_sergeant_usmc"
+						"#pointman"	"template_pointman_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#engineer"	"template_engineer_usmc"
+						"#engineer"	"template_engineer_usmc"
+						"#gunner"	    "template_gunner_usmc"
+						"#gunner"	    "template_gunner_usmc"
+					}
+					
+					"#Fireteam_Bravo"	
+					{
+						"#captain"	"template_captain_usmc"
+						"#pointman"	"template_pointman_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#demolitions"	"template_demolitions_usmc"
+						"#marksman"	    "template_marksman_usmc"
+						"#marksman"	    "template_marksman_usmc"
+						
+					}
+				}
+			}
+			
+			"?push_security_defend"
+			{
+				"squads"
+				{
+					
+					"#Fireteam_Alpha"
+
+					{
+						"#sergeant"	"template_sergeant_usmc"
+						"#pointman"	"template_pointman_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#engineer"	"template_engineer_usmc"
+						"#engineer"	"template_engineer_usmc"
+						"#gunner"	    "template_gunner_usmc"
+						"#gunner"	    "template_gunner_usmc"
+					}
+					
+					"#Fireteam_Bravo"	
+					{
+						"#captain"	"template_captain_usmc"
+						"#pointman"	"template_pointman_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#grunt"	    "template_grunt_usmc"
+						"#demolitions"	"template_demolitions_usmc"
+						"#marksman"	    "template_marksman_usmc"
+						"#marksman"	    "template_marksman_usmc"
+						
+					}
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"?push_insurgents_attack"
+			{
+				"squads"
+				{
+					
+					"#nva_assault"
+					{
+						"#nco" 	"template_nva_nco"
+						"#scout" 	"template_nva_scout"
+						"#guerilla" 	"template_nva_guerilla"
+						"#guerilla" 	"template_nva_guerilla"
+						"#sapper" 	"template_nva_sapper"
+						"#sapper" 	"template_nva_sapper"
+						"#machinegunner" 	"template_nva_machinegunner"
+						"#machinegunner" 	"template_nva_machinegunner"
+						
+					}
+					
+					"#nva_scout"
+					{
+						"#officer" 	"template_nva_officer"
+						"#militant" 	"template_nva_militant"
+						"#guerilla" 	"template_nva_guerilla"
+						"#guerilla" 	"template_nva_guerilla"
+						"#striker" 	"template_nva_striker"
+						"#striker" 	"template_nva_striker"
+						"#sharpshooter" 	"template_nva_sharpshooter"
+						"#sharpshooter" 	"template_nva_sharpshooter"
+						
+						
+					}
+					
+				}
+			}
+			
+			"?push_insurgents_defend"
+			{
+				"squads"
+				{
+					
+					"#nva_assault"
+					{
+						"#nco" 	"template_nva_nco"
+						"#scout" 	"template_nva_scout"
+						"#guerilla" 	"template_nva_guerilla"
+						"#guerilla" 	"template_nva_guerilla"
+						"#sapper" 	"template_nva_sapper"
+						"#sapper" 	"template_nva_sapper"
+						"#machinegunner" 	"template_nva_machinegunner"
+						"#machinegunner" 	"template_nva_machinegunner"
+						
+					}
+					
+					"#nva_scout"
+					{
+						"#officer" 	"template_nva_officer"
+						"#militant" 	"template_nva_militant"
+						"#guerilla" 	"template_nva_guerilla"
+						"#guerilla" 	"template_nva_guerilla"
+						"#striker" 	"template_nva_striker"
+						"#striker" 	"template_nva_striker"
+						"#sharpshooter" 	"template_nva_sharpshooter"
+						"#sharpshooter" 	"template_nva_sharpshooter"
+						
+						
+					}
+					
+				}
+			}
+		}
+	}
+}

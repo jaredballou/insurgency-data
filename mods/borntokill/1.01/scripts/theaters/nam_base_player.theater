@@ -1,0 +1,219 @@
+"theater"
+{
+	"player_settings"
+	{
+		"scoring"
+		{
+			"kill"					"10"
+			"kill_offensive"			"40"
+			"kill_defensive"			"40"
+			"kill_headshot_bonus"			"20"
+			"kill_savior"				"20"
+			"kill_bonus_domination"			"30"
+			"kill_bonus_revenge"			"20"
+			"assist"				"10"
+			
+			"obj_captured"				"150"	// points given when capture zone changes ownership
+			"obj_neutralized"			"20"	// not actually used by any built-in modes
+			"obj_reset"				"20"	// points given when defenders reset the progress to 0% (if progress got to at least 50%)
+			"obj_capture_tick"			"10"	// attacking points given every 10%
+			"obj_reset_tick"			"10"	// defending points given every 10%
+			"cache_destroyed"			"100"
+			"intel_captured"			"100"
+			"vip_killed"				"100"
+			"safehouse_secured"			"100"
+			"wave_complete"				"100"
+		}
+		// Weight is in lb
+		"weight"
+		{
+			"frac_jump_force"			"1"
+			"min_weight"				"5"
+			"max_weight"				"200"
+		}
+		"speed"
+		{
+			"frac_side_move"			"0.90"
+			"frac_back_move"			"0.65"
+			"frac_side_step"			"1"
+			"frac_speed_water"			"0.72"
+			"speed_prone"				"44"
+			"speed_crouch_walk"			"36"
+			"speed_crouch_run"			"108"
+			"speed_walk"				"130"
+			"speed_run"					"160"
+			"speed_sprint"				"280"
+			"AccelerationByWeight"
+			{
+				"5"					"5.80"
+				"20"					"4.30"
+				"200"					"3.70"
+			}
+			
+			"DecelerationByWeight"
+			{
+				"5"					"210.0"	// these are much higher than acceleration values because it's loss in velocity per second
+				"20"					"280"
+				"200"					"460.0"
+			}
+			
+			"FrictionByWeight"
+			{
+				"5"					"3.80"
+				"20"					"4.00"
+				"100"					"4.50"
+				"200"					"5.30"
+			}
+		}
+		"turning"
+		{
+			"frac_turn_sprint"			"0.85"
+			"frac_turn_lean"			"0.95"
+			"frac_turn_crawl"			"0.6"
+			"frac_turn_prone_limit"		"0.0"
+			"prone_yaw_limit_amount"	"80"
+			"prone_yaw_limit_approach"	"20"
+		}
+		"stamina"
+		{
+			"StaminaMaxByWeight"
+			{
+				"5"					"140"
+				"30"					"120"
+				"100"					"70"
+				"200"					"40"
+			}
+			"stamina_regain"			"2.60"
+			"stamina_sprint_take"			"2.50"
+			"stamina_jump_take"			"15"
+			"stamina_dmg_take"			"0.25"
+			
+			"land_viewpunch_minvel"			"150"
+			"land_viewpunch_basepitch"		"0.75"
+			"land_viewpunch_jumppitch"		"0.05"
+			"land_viewpunch_landpitch"		"0.01"
+			"land_viewpunch_maxangle"		"50.0"
+			"land_viewpunch_freeaim"		"1.0"
+			"land_viewpunch_viewkick"		"1.0"
+			
+		}
+		"focus"
+		{
+			"FocusTimeStamina"
+			{
+				"5"					"2.0"
+				"200"					"9.0"
+			}
+			
+			"FocusCooldownStamina"
+			{
+				"5"					"2.5"
+				"200"					"1.5"
+			}
+			
+			"FocusEffectivenessStamina"
+			{
+				"0"					"0.3"
+				"30"					"0.5"
+				"75"					"1.0"
+			}
+		}
+		"slide"
+		{
+			"min_sprint_time"			"1.2"
+			"post_sprint_grace"			"0.08"
+			
+			"DistanceByWeight"
+			{
+				"5"					"0.8"
+				"50"					"0.65"
+				"200"					"0.45"
+			}
+			
+			"SpeedByWeight"
+			{
+				"5"					"310"
+				"30"					"260"
+				"200"					"170"
+			}
+		}
+		"lean"
+		{
+			"lean_left_offset_stance"		"14 11 8"
+			"lean_right_offset_stance"		"27 25 8"
+			"lean_left_moving_offset_stance"	"8 5 4"
+			"lean_right_moving_offset_stance"	"12 8 6"
+			"lean_roll_offset_stance"		"10"
+			"lean_down_offset_stance"		"11"
+			"lean_down_offset_stance_crouch"	"2"
+			
+			"LeanSpeedByWeight"
+			{
+				"0"					"6"
+			}
+			"LeanViewModelSpeedByWeight"
+			{
+				"5"					"7"
+				"200"					"2"
+			}
+		}
+		"suppression"
+		{
+			"suppression_resistance"		"0.08"
+			"suppression_recovery_rate"		"14"
+		}
+		"damage"
+		{
+			"damage_decay_rate"			"20"
+			"explosion_deafen_radius_factor"	"0.2"
+			"default_penetration_power"		"10"
+			"max_penetration_distance"		"300"
+			
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"6"	// death
+				"HITGROUP_CHEST"			"1.10"
+				"HITGROUP_STOMACH"			"0.9"
+				"HITGROUP_LEFTARM"			"0.70"
+				"HITGROUP_RIGHTARM"			"0.75"
+				"HITGROUP_LEFTLEG"			"0.6"
+				"HITGROUP_RIGHTLEG"			"0.6"
+			}
+			"VelocityHitgroups"
+			{
+				"HITGROUP_LEFTLEG"			"0.30"
+				"HITGROUP_RIGHTLEG"			"0.30"
+				"HITGROUP_CHEST"			"0.70"
+				"HITGROUP_STOMACH"			"0.70"
+			}
+			"BulletPenetrationPower"
+			{
+				"CHAR_TEX_CONCRETE"			"50"
+				"CHAR_TEX_BRICK"			"50"
+				"CHAR_TEX_PLASTER"			"50"
+				"CHAR_TEX_DIRT"				"40"
+				"CHAR_TEX_FLESH"			"35"
+				"CHAR_TEX_GRASS"			"60"
+				"CHAR_TEX_PLASTIC"			"10"
+				"CHAR_TEX_METAL"			"60"
+				"CHAR_TEX_SAND"				"60"
+				"CHAR_TEX_FOLIAGE"			"30"
+				"CHAR_TEX_COMPUTER"			"20"
+				"CHAR_TEX_ASPHALT"			"18"
+				"CHAR_TEX_SLOSH"			"12"
+				"CHAR_TEX_TILE"				"13"
+				"CHAR_TEX_CARDBOARD"			"5"
+				"CHAR_TEX_VENT"				"8"
+				"CHAR_TEX_WOOD"				"30"
+				"CHAR_TEX_GLASS"			"2"
+				"CHAR_TEX_ROCK"				"60"
+				"CHAR_TEX_RUBBER"			"8"
+				"CHAR_TEX_SHEETROCK"			"5"
+				"CHAR_TEX_CARPET"			"15"
+			}
+		}
+		"health"
+		{
+		}
+	}
+}

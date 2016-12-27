@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/pow_raid_large"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

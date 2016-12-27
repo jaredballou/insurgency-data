@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/ho_bo_woods_small"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

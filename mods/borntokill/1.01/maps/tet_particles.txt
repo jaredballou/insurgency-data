@@ -1,0 +1,14 @@
+"tet"
+{
+	"file"		"!particles/particles/doi_destructible_fx.pcf
+	"file"		"!particles/particles/doi_explosion_fx.pcf
+	"file"		"!particles/particles/doi_explosion_fx_b.pcf
+	"file"		"!particles/particles/doi_explosion_fx_grenade.pcf
+	"file"		"!particles/particles/doi_explosion_fx_new.pcf
+	"file"		"!particles/particles/doi_explosions_smoke.pcf
+	"file"		"!particles/particles/doi_impact_fx.pcf
+	"file"		"!particles/particles/doi_weapon_fx.pcf
+	"file"		"!particles/particles/grenade_wp.pcf
+	"file"		"!particles/particles/napalm.pcf
+	
+}

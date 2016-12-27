@@ -1,0 +1,932 @@
+"theater"
+{
+	"player_gear"
+	{
+		"ins_ammopouch"
+		{
+			"print_name"				"#ins_ammopouch"
+			"print_desc"				"#ins_ammopouch_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"1"
+			"gear_weight"				"5"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"1"
+				"secondary"				"1"
+				
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"1"
+				"backpack"					"0"
+				
+			}
+			"team_access"				"insurgent"
+		}
+		
+		
+		"nva2"
+		{
+			"print_name"				"#nva2"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			"player_model_override"		"models/characters/nam/nva_player2.mdl"	
+			
+			
+			"team_access"				"insurgent"
+		}
+		
+        "nva3"
+		{
+			"print_name"				"#nva3"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			"player_model_override"		"models/characters/nam/nva_player3.mdl"	
+			
+			
+			"team_access"				"insurgent"
+		}
+		
+		"nva4"
+		{
+			"print_name"				"#nva4"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			"player_model_override"		"models/characters/nam/nva_player4.mdl"	
+			
+			
+			"team_access"				"insurgent"
+		}
+		
+		"ins_chestrig"
+		{
+			"print_name"				"#ins_chestrig"
+			"print_desc"				"#ins_chestrig_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"3"
+			"gear_weight"				"15"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"2"
+				"secondary"				"3"
+				
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"2"
+				"rig"					"1"
+				"backpack"					"0"
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"ins_lightkit"
+		{
+			"print_name"				"#ins_lightkit"
+			"print_desc"				"#ins_lightkit_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"6"
+			"gear_weight"				"40"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"4"
+				"secondary"				"4"
+				
+			}
+			
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"3"
+				"rig"					"1"
+				"backpack"					"0"
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"ins_heavykit"
+		{
+			"print_name"				"#ins_heavykit"
+			"print_desc"				"#ins_heavykit_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"8"
+			
+            
+			"gear_weight"				"70"	
+			"extra_ammo"
+			{
+				"primary"				"5"
+				"secondary"				"5"
+				"explosive"
+				{
+					"1"					"1"
+				}
+			}
+			
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"4"
+				"rig"					"1"
+				"backpack"					"1"
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"hand_bandage"
+		{
+			"print_name"				"#hand_bandage"
+			"print_desc"				"#gear_chest_rig_desc"
+			"gear_slot"				"accessory"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			"entity"					"model"
+			"model"					"models/characters/nam/nva_handbandage.mdl"
+			
+			
+			"team_access"				"insurgent"
+		}
+		
+		"nva_foliage"
+		{
+			"print_name"				"#nva_foliage"
+			"print_desc"				"#nva_foliage_desc"
+			"gear_slot"				"accessory"
+			"gear_cost"				"1"
+			"gear_weight"				"2"
+            "entity"					"model"			
+			"model"					"models/characters/nam/nva_backfoliage.mdl"
+			
+		
+			
+			"team_access"				"insurgent"
+		}
+		
+		"nva_sandals"
+		{
+			"print_name"				"#nva_sandals"
+			"print_desc"				"#nva_sandals_desc"
+			"gear_slot"				"accessory"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"shoes"					"0"
+				
+			}
+			
+			
+			"team_access"				"insurgent"
+		}
+		
+
+		
+		
+		"nva_helmet_green"
+		{
+			"print_name"				"#nva_helmet_green"
+			"print_desc"				"#nva_helmet_green_desc"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"4"	
+
+			
+			"player_model_bodygroups"
+			{
+				"headgear"					"2"
+				
+			}
+			
+			
+			
+			
+			"team_access"				"insurgent"
+		}
+		
+		"nva_helmet_etan"
+		{
+			"print_name"				"#nva_helmet_tan"
+			"print_desc"				"#nva_helmet_tan_desc"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"4"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"headgear"					"1"
+				
+			}
+			
+			
+			
+			"team_access"				"insurgent"
+		}
+		
+		"nva_helmet_camo"
+		{
+			"print_name"				"#nva_helmet_camo"
+			"print_desc"				"#nva_helmet_camo_desc"
+			"gear_slot"				"armor"
+			"gear_cost"				"2"
+
+			"gear_weight"				"5"	
+			"entity"					"model"
+			"model"						"models/characters/nam/nva_helmet_camo.mdl"	
+			
+			"player_model_bodygroups"
+			{
+				"headgear"					"0"
+				
+			}
+			
+			
+			
+			"team_access"				"insurgent"
+		}
+		
+		"nva_boonie"
+		{
+			"print_name"				"#nva_boonie"
+			"print_desc"				"#nva_boonie_desc"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"2"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"headgear"					"3"
+				
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"nva_cap"
+		{
+			"print_name"				"#nva_cap"
+			"print_desc"				"#nva_cap_desc"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"2"	
+			"class_restricted"          "1"
+			
+			"player_model_bodygroups"
+			{
+				"headgear"					"4"
+				
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"nva_headband"
+		{
+			"print_name"				"#nva_headband"
+			"print_desc"				"#nva_headband_desc"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"headgear"					"5"
+				
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"nva_jacket_green"
+		{
+			"print_name"				"#nva_jacket_green"
+			"print_desc"				"#nva_jacket_green_desc"
+			"gear_slot"				"backpack"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"body"				"2"
+				
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"nva_jacket_black"
+		{
+			"print_name"				"#nva_jacket_black"
+			"print_desc"				"#nva_jacket_black_desc"
+			"gear_slot"				"backpack"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"body"				"1"
+				
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"nva_pants_green"
+		{
+			"print_name"				"#nva_pants_green"
+			"print_desc"				"#nva_pants_green_desc"
+			"gear_slot"				"misc1"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"legs"				"1"
+				
+			}
+			"team_access"				"insurgent"
+		}
+		
+		"nva_pants_black"
+		{
+			"print_name"				"#nva_pants_black"
+			"print_desc"				"#nva_pants_black_desc"
+			"gear_slot"				"misc1"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"legs"				"2"
+				
+			}
+			"team_access"				"insurgent"
+		}
+		
+		
+		//==================================================================================================================================================================================
+		//================================================= MURICA ==========================================================================================================================
+		
+		"us_ammopouch"
+		{
+			"print_name"				"#ins_ammopouch"
+			"print_desc"				"#ins_ammopouch_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"1"
+			"gear_weight"				"5"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"1"
+				"secondary"				"1"
+				
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"1"
+				
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"us_chestrig"
+		{
+			"print_name"				"#ins_chestrig"
+			"print_desc"				"#ins_chestrig_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"3"
+			"gear_weight"				"15"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"2"
+				"secondary"				"3"
+				
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"2"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"us_lightkit"
+		{
+			"print_name"				"#ins_lightkit"
+			"print_desc"				"#ins_lightkit_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"6"
+			"gear_weight"				"35"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"4"
+				"secondary"				"4"
+				
+			}
+			
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"3"
+				"back"					"2"
+			}
+			"team_access"				"security"
+		}
+		
+		"us_heavykit"
+		{
+			"print_name"				"#ins_heavykit"
+			"print_desc"				"#ins_heavykit_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"8"
+			
+            
+			"gear_weight"				"65"	
+			"extra_ammo"
+			{
+				"primary"				"5"
+				"secondary"				"6"
+				"explosive"
+				{
+					"1"					"1"
+				}
+			}
+			
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"4"
+				"back"					"1"
+			}
+			"team_access"				"security"
+		}
+		
+		
+		"jeans_ins"
+		{
+			"print_name"				"#jeans_ins"
+			"print_desc"				"#empty"
+			"gear_slot"				"misc1"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"legs"				"1"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"jeans_sec"
+		{
+			"print_name"				"#jeans_sec"
+			"print_desc"				"#empty"
+			"gear_slot"				"misc1"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"legs"				"2"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		//====================================== CHARACTERS
+		
+		"sleeves_medium"
+		{
+			"print_name"				"#sleeves_medium"
+			"print_desc"				"#empty"
+			"gear_slot"				"backpack"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			"player_model_override"		"models/characters/nam/us_player_medium.mdl"	
+			"viewmodel_hands_override"	"models/weapons/v_hands_short_us_nam.mdl"
+			
+			"team_access"				"security"
+		}
+		
+		"sleeves_short"
+		{
+			"print_name"				"#sleeves_short"
+			"print_desc"				"#empty"
+			"gear_slot"				"backpack"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			"player_model_override"		"models/characters/nam/us_player_short.mdl"	
+			"viewmodel_hands_override"	"models/weapons/v_hands_short_us_nam.mdl"
+			
+			"team_access"				"security"
+		}
+		
+		"american2"
+		{
+			"print_name"				"#american2"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"1"
+				"skin"					"1"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"american4"
+		{
+			"print_name"				"#american4"
+			"print_desc"				"#american4_desc"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"2"
+				"skin"					"1"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"american6"
+		{
+			"print_name"				"#american6"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"3"
+				"skin"					"0"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"american8"
+		{
+			"print_name"				"#american8"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"4"
+				"skin"					"4"
+				
+			}
+			"viewmodel_hands_override"	"models/weapons/v_hands_short_us_black.mdl"
+			"team_access"				"security"
+		}
+		
+		"british1"
+		{
+			"print_name"				"#british1"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"5"
+				"skin"					"1"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"british5"
+		{
+			"print_name"				"#british5"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"6"
+				"skin"					"1"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"british6"
+		{
+			"print_name"				"#british6"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"7"
+				"skin"					"1"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"british7"
+		{
+			"print_name"				"#british7"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"8"
+				"skin"					"0"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		
+		"british8"
+		{
+			"print_name"				"#british8"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"9"
+				"skin"					"1"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"british9"
+		{
+			"print_name"				"#british9"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"10"
+				"skin"					"1"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		"german5"
+		{
+			"print_name"				"#german5"
+			"print_desc"				"#empty"
+			"gear_slot"				"head"
+			"gear_cost"				"0"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"head"					"11"
+				"skin"					"1"
+				
+			}
+			"team_access"				"security"
+		}
+		
+		
+		//====================================== HEADGEAR
+		
+		"helmet_plane"
+		{
+			"print_name"				"#helmet_plane"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"3"	
+			"entity"					"model"
+			"model"					"models/characters/nam/helmet_plane.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"helmet_mitchell"
+		{
+			"print_name"				"#helmet_mitchell"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"3"	
+			"entity"					"model"
+			"model"					"models/characters/nam/helmet_mitchell.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"helmet1"
+		{
+			"print_name"				"#helmet1"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"3"	
+			"entity"					"model"
+			"model"					"models/characters/nam/helmet1.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"helmet2"
+		{
+			"print_name"				"#helmet2"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"3"	
+			"entity"					"model"
+			"model"					"models/characters/nam/helmet2.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"helmet3"
+		{
+			"print_name"				"#helmet3"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"3"	
+			"entity"					"model"
+			"model"					"models/characters/nam/helmet3.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"helmet4"
+		{
+			"print_name"				"#helmet4"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"3"	
+			"entity"					"model"
+			"model"					"models/characters/nam/helmet4.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"helmet5"
+		{
+			"print_name"				"#helmet5"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"3"	
+			"entity"					"model"
+			"model"					"models/characters/nam/helmet5.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		
+		"us_boonie"
+		{
+			"print_name"				"#us_boonie"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			"entity"					"model"
+			"model"					"models/characters/nam/boonie.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"us_headband_green"
+		{
+			"print_name"				"#headband_green"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			"entity"					"model"
+			"model"					"models/characters/nam/headband_green.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"us_headband_red"
+		{
+			"print_name"				"#headband_red"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			"entity"					"model"
+			"model"					"models/characters/nam/headband_red.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"sunglasses"
+		{
+			"print_name"				"#sunglasses"
+			"print_desc"				"#empty"
+			"gear_slot"				"accessory"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			"entity"					"model"
+			"model"					"models/characters/nam/sunglasses.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+		"us_helmet_camo"
+		{
+			"print_name"				"#us_helmet_camo"
+			"print_desc"				"#empty"
+			"gear_slot"				"armor"
+			"gear_cost"				"1"
+			"class_restricted"      "1"
+			"gear_weight"				"4"	
+			"entity"					"model"
+			"model"					"models/characters/nam/helmetcamo.mdl"
+			
+			
+			"team_access"				"security"
+		}
+		
+	}
+}

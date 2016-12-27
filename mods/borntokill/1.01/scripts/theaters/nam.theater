@@ -1,0 +1,1073 @@
+"#base" "nam_base_player.theater"
+"#base" "nam_base_common_ammo.theater"
+
+"#base" "nam_gear.theater"
+"#base" "nam_weapon.theater"
+"#base" "nam_weapon_upgrades.theater"
+
+
+
+"theater"
+{
+
+
+    "core"
+	{
+		
+
+		"precache"
+		{
+			// default theater specific sounds
+			
+			"sounds"			"scripts/nam_sounds_weapons.txt"
+			"sounds"			"scripts/nam_sounds_cues.txt"
+			"sounds"			"scripts/nam_sounds_voice.txt"
+			
+			"sounds"			"scripts/nam_sounds_radial_usa.txt"				
+			"sounds"			"scripts/nam_sounds_radial_nva.txt"
+			
+			"sounds"			"scripts/nam_sounds_radial_security.txt"
+			"sounds"			"scripts/nam_sounds_radial_insurgent.txt"
+			
+			"sounds"			"scripts/nam_sounds_responses_usa.txt"
+			"sounds"			"scripts/nam_sounds_responses_nva.txt"
+			"sounds"			"scripts/nam_sounds_hq.txt"
+			
+			
+			"particles"    "particles/doi_destructible_fx.pcf"
+			"particles"    "particles/doi_explosion_fx.pcf"
+			"particles"    "particles/doi_explosion_fx_b.pcf"
+			"particles"    "particles/doi_explosion_fx_grenade.pcf"
+			"particles"    "particles/doi_explosion_fx_new.pcf"
+			"particles"    "particles/doi_explosions_smoke.pcf"
+			"particles"    "particles/doi_impact_fx.pcf"
+			"particles"			"particles/doi_weapon_fx.pcf"
+			"particles"			"particles/grenade_wp.pcf"
+			"particles"			"particles/napalm.pcf"
+			
+			"localize"       	"resource/nam_%language%.txt"
+			"localize"       	"resource/nam_menu_%language%.txt"
+
+			
+		}
+		
+		
+	}
+	
+	"teams"
+	{
+		"security"
+		{
+			"name"					"#us"
+			"logo"					"gameui/fac_us"
+		
+			
+		}
+		
+		"insurgents"
+		{
+			"name"					"#nva"
+			"logo"					"gameui/fac_nva"
+			
+			
+		}
+	}
+	
+	
+	"player_templates"
+	{
+		// security class templates  ========================================================================================================================================================================
+		
+		"template_captain_usmc"
+		{
+			"team"						"security"
+			"print_name"				"#captain"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_player_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+			
+				"bodygroups"
+				{
+					"head"					"0"
+					"kit"				"0"
+					"skin"				"1"
+					"legs"				"0"
+					"back"				"0"
+				}
+				
+				
+			}
+			
+			"buy_order"
+			{
+				
+				
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_nam_m607"  
+				"weapon"				"weapon_nam_python"  
+				
+				"weapon_upgrade"        "python_speedloader"
+				
+				
+				"gear"        "us_boonie"
+				"gear"                 "sleeves_short"
+				"gear"                "british7"
+				"gear"           "jeans_sec"
+				
+				"gear"            "us_heavykit"
+				
+				
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m16a1"   
+				"weapon"				"weapon_nam_m67"  
+				"weapon"				"weapon_nam_m26a2"
+				"weapon"                "weapon_nam_python"
+				"weapon"                "weapon_nam_mac10"
+				"weapon"                "weapon_nam_m14"
+				"weapon"                "weapon_nam_m607"
+				"weapon"               "weapon_nam_m34"
+				"weapon"                "weapon_nam_sw39"
+				
+				"weapon_upgrade"      "underbarrel_m203_nam_he"
+				"weapon_upgrade"       "underbarrel_m203_nam_smoke"
+				
+
+				
+				
+			}
+			
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_nam_m14"	"-2"
+					"weapon_nam_m16a1"	"-2"
+					"weapon_nam_m607"	"-2"
+				}
+				"weapon_upgrade"
+				{
+					
+				}
+			}
+			
+		}
+		
+		"template_sergeant_usmc"
+		{
+			"team"						"security"
+			"print_name"				"#sergeant"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_player_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+			
+				"bodygroups"
+				{
+					"head"					"0"
+					"kit"				"0"
+					"skin"				"1"
+					"legs"				"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_nam_thompson_m1a1"  
+				"weapon"				"weapon_nam_python" 
+				
+				
+				"gear"             "helmet_mitchell"
+				"gear"            "us_heavykit"
+				"gear"             "sleeves_medium"
+				
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m16a1"   
+			    "weapon"                "weapon_nam_python"
+				"weapon"                "weapon_nam_m3greasegun"
+				"weapon"               "weapon_nam_thompson_m1a1"
+				"weapon"              "weapon_nam_sw39"
+			
+				"weapon"                "weapon_nam_ithaca37"
+				"weapon"             "weapon_thompson_m1928a1"
+				"weapon_upgrade"      "underbarrel_m203_nam_he"
+				"weapon_upgrade"       "underbarrel_m203_nam_smoke"
+				
+			}
+			
+		}
+		
+		
+		"template_pointman_usmc"
+		{
+			"team"						"security"
+			"print_name"				"#pointman"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_player_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+			
+				"bodygroups"
+				{
+					"head"					"0"
+					"kit"				"0"
+					"skin"				"1"
+					"legs"				"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_nam_m14"  
+				"weapon_upgrade"           "optic_scope_m84"
+				"weapon"				"weapon_nam_m1911" 
+				
+				"gear"              "american2"
+				"gear"             "helmet_mitchell"
+				"gear"            "us_heavykit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m16a1"   
+		        "weapon"                 "weapon_nam_m1garand"
+				"weapon"                    "weapon_nam_m14"
+				
+				
+				"weapon_upgrade"        "optic_scope_m84"
+				"gear"          "us_helmet_camo"
+				
+			}
+			
+		}
+		
+		"template_grunt_usmc"
+		{
+			"team"						"security"
+			"print_name"				"#grunt"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_player_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+			
+				"bodygroups"
+				{
+					"head"					"0"
+					"kit"				"0"
+					"skin"				"1"
+					"legs"				"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				
+				"weapon"				"weapon_kabar"
+				"weapon"				 "weapon_nam_m16a1"
+				"weapon"				"weapon_nam_browninghp"
+				"weapon"          "weapon_nam_m18"
+				
+				"gear"             "british5"
+				"gear"             "helmet_mitchell"
+				"gear"            "us_heavykit"
+				
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m16a1"   
+				"weapon"                 "weapon_nam_m1garand"
+				"weapon"               "weapon_nam_m14"
+			}
+			
+			"cost_modifiers"
+			{
+				
+				"gear"
+				{
+					"jeans_ins"	"1"
+					"jeans_sec"	"1"
+					
+				}
+			}
+			
+		}
+		
+		"template_demolitions_usmc"
+		{
+			"team"						"security"
+			"print_name"				"#demolitions"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_player_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+			
+				"bodygroups"
+				{
+					"head"					"0"
+					"kit"				"0"
+					"skin"				"1"
+					"legs"				"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				
+				"weapon"				"weapon_brassknuckles"
+				"weapon"				"weapon_nam_m3greasegun" 
+				"weapon"				"weapon_nam_m79" 
+				
+				
+				"gear"             "helmet_mitchell"
+				"gear"            "sleeves_medium"
+				"gear"           "american8"
+				"gear"            "us_heavykit"
+				
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m16a1"   
+			    "weapon"                "weapon_nam_python"
+				"weapon"                "weapon_nam_m3greasegun"
+				"weapon"               "weapon_nam_thompson_m1a1"
+				"weapon"                 "weapon_nam_m1carbine"
+				"weapon"                 "weapon_nam_m79"
+				"weapon"                 "weapon_nam_m79_napalm"
+				"weapon"                 "weapon_nam_m79_smoke"
+				"weapon"            "weapon_law"
+				"weapon"         "weapon_nam_bazooka"
+				 "weapon"             "weapon_thompson_m1928a1"
+				
+				
+			}   
+			
+		}
+		
+		"template_marksman_usmc"
+		{
+			"team"						"security"
+			"print_name"				"#marksman"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_player_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+			
+				"bodygroups"
+				{
+					"head"					"0"
+					"kit"				"0"
+					"skin"				"1"
+					"legs"				"0"
+					"back"				"0"
+				}
+				
+				
+			}
+			
+			"buy_order"
+			{
+				
+				
+				"weapon"				"weapon_kabar"
+				"weapon"               "weapon_nam_m40a1" 
+                "weapon_upgrade"       "optic_scope_9x"
+				"weapon"                 "weapon_nam_python"
+				
+				"gear"              "british1"
+				"gear"              "us_helmet_camo"
+				"gear"                "sleeves_medium"
+				"gear"      "us_lightkit"
+			}
+			"allowed_items"
+			{
+				
+                "weapon"                "weapon_nam_python"
+				"weapon"                "weapon_nam_mac10"
+				//"weapon"                "weapon_nam_springfield"
+				"weapon"                "weapon_nam_m40a1"
+				"weapon"                 "weapon_nam_m1garand"
+				"weapon"               "weapon_nam_m14"
+				
+				"weapon_upgrade"       "optic_scope_9x"
+				"weapon_upgrade"        "optic_scope_m84"
+				
+				
+				"gear"          "us_helmet_camo"
+				
+			}
+			
+			"cost_modifiers"
+			{
+				"gear"
+				{
+					"us_helmet_camo"	"-1"
+			
+				}
+				
+			}
+		}
+		
+		"template_engineer_usmc"
+		{
+			"team"						"security"
+			"print_name"				"#engineer"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_player_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+			
+				"bodygroups"
+				{
+					"head"					"0"
+					"kit"				"0"
+					"skin"				"1"
+					"legs"				"0"
+					"back"				"3"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				
+				"weapon"				"weapon_kabar"
+				"weapon"                "weapon_nam_thompson_m1a1"
+				"weapon"				"weapon_nam_m1911" 
+				"weapon"            "weapon_tnt"
+			
+				
+				"gear"           "helmet_plane"
+				"gear"        "sleeves_medium"
+				"gear"        "american4"
+				"gear"            "us_chestrig"
+				
+			}
+			"allowed_items"
+			{
+			
+				"weapon"                "weapon_nam_m3greasegun"
+				"weapon"                 "weapon_nam_thompson_m1a1"
+				"weapon"                "weapon_nam_m1carbine"
+				"weapon"                "weapon_nam_ithaca37"
+				"weapon"                "weapon_nam_m1912"
+				"weapon"                  "weapon_nam_stevens620"
+				"weapon"                 "weapon_tnt"
+			    "weapon"             "weapon_thompson_m1928a1"
+  
+				
+				
+			}
+			
+		}
+		
+		
+		"template_gunner_usmc"
+		{
+			"team"						"security"
+			"print_name"				"#gunner"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_player_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+			    "attachments"
+				{
+					"belt"
+					{
+						"model"                 "models/characters/nam/mgbelt.mdl"
+						
+					}
+					
+				}
+				"bodygroups"
+				{
+					"head"					"0"
+					"kit"				"0"
+					"skin"				"1"
+					"legs"				"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_nam_m60"
+				"weapon"				"weapon_nam_python"
+				"gear"           "us_lightkit"
+				
+				"gear"                 "british6"
+				"gear"              "us_headband_green" 
+				"gear"         "sleeves_short"
+				"gear"            "us_lightkit"
+				
+				
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m60"
+				"weapon"				"weapon_nam_m1919"
+				"weapon"				"weapon_nam_bar"
+				"weapon"            "weapon_nam_m14"
+				"weapon"          "weapon_nam_python"
+				
+				
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		// insurgent class templates ===============================================================================================================================================
+		
+		"template_nva_officer"
+		{
+			"team"					"insurgents"
+			"print_name"			"#officer"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+			
+				"bodygroups"
+				{
+					"headgear"					"0"
+					"body"				"0"
+					"legs"				"0"
+					"shoes"				"1"
+					"belt"				"0"
+					"kit"				"0"
+					"rig"				"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_vz58"
+				"weapon"				"weapon_tokarev"
+                "weapon"          "weapon_nam_rdg1"
+				
+				"gear"                "ins_lightkit"
+				
+				"gear"                  "nva_cap"
+				"gear"                  "nva_pants_green"
+				"gear"                  "nva_jacket_green"
+	
+				
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_akm"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_rgd5"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				"weapon"                "weapon_nam_p38"
+				"weapon"                "weapon_nam_luger"
+				"weapon"                "weapon_c96"
+				"weapon"                "weapon_nam_vz61"
+				"weapon"               "weapon_nam_svt40"
+				"weapon"                "weapon_nam_stg44"
+				"weapon"                "weapon_nam_akms"
+			    "weapon"                "weapon_molotov"
+				"weapon"             "weapon_nam_vz58"
+				
+				"gear"                  "nva_cap"
+				
+			}
+		}
+		
+		"template_nva_nco"
+		{
+			"team"					"insurgents"
+			"print_name"			"#nco"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+			
+				"bodygroups"
+				{
+					"headgear"					"0"
+					"body"				"0"
+					"legs"				"0"
+					"shoes"				"1"
+					"belt"				"0"
+					"kit"				"0"
+					"rig"				"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_akms"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				
+				"gear"                  "nva_cap"
+				"gear"                  "nva_pants_green"
+				"gear"                  "nva_jacket_green"
+				
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_akm"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_rgd5"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				"weapon"                "weapon_nam_p38"
+				"weapon"                "weapon_nam_mat49"
+				"weapon"                "weapon_nam_stg44"
+				"weapon"                "weapon_nam_akms"
+				"weapon"           "weapon_nam_sks"
+				"weapon"                "weapon_molotov"
+				
+				"gear"                  "nva_cap"
+				
+			}   
+
+
+		}
+		
+		"template_nva_militant"
+		{
+			"team"					"insurgents"
+			"print_name"			"#militant"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+			
+				"bodygroups"
+				{
+					"headgear"					"0"
+					"body"				"0"
+					"legs"				"0"
+					"shoes"				"1"
+					"belt"				"0"
+					"kit"				"0"
+					"rig"				"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_vz58"
+				"weapon"				"weapon_tokarev"
+                "weapon"          "weapon_nam_rdg1"
+				
+				"gear"                "ins_lightkit"
+				
+				"gear"                 "nva_helmet_etan"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_akm"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_rgd5"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				"weapon"               "weapon_nam_svt40"
+				"weapon"                 "weapon_nam_g43"
+				"weapon"                "weapon_nam_stg44"
+				"weapon"                "weapon_nam_akms"
+				"weapon"           "weapon_nam_sks"
+				"weapon"                "weapon_molotov"
+				"weapon"				"weapon_nam_vz58"
+				"weapon_upgrade"        "optic_scope_pu"
+				"weapon_upgrade"		"optic_scope_zf4"
+			}
+		}
+		
+		
+		"template_nva_guerilla"
+		{
+			"team"					"insurgents"
+			"print_name"			"#guerilla"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+			
+				"bodygroups"
+				{
+					"headgear"					"0"
+					"body"				"0"
+					"legs"				"0"
+					"shoes"				"1"
+					"belt"				"0"
+					"kit"				"0"
+					"rig"				"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_sks"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"               "weapon_nam_rdg1"
+				
+				"gear"         "ins_heavykit"
+				
+				"gear"                 "nva_helmet_etan"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_akm"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"               "weapon_nam_svt40"
+				"weapon"           "weapon_nam_sks"
+			}
+		}
+		
+		"template_nva_striker"
+		{
+			"team"					"insurgents"
+			"print_name"			"#striker"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+			
+				"bodygroups"
+				{
+					"headgear"					"0"
+					"body"				"0"
+					"legs"				"0"
+					"shoes"				"1"
+					"belt"				"0"
+					"kit"				"0"
+					"rig"				"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_mat49"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_rpg7"
+				"gear"         "ins_chestrig"
+				"gear"                 "nva_helmet_etan"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_akm"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"				"weapon_geballteladung"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				"weapon"                "weapon_nam_mat49"
+				"weapon"                "weapon_nam_stg44"
+				"weapon"                "weapon_nam_mp40"
+				 "weapon"                "weapon_molotov"
+				 "weapon"               "weapon_nam_rpg7"
+			}
+		}
+		
+		
+		"template_nva_sharpshooter"
+		{
+			"team"					"insurgents"
+			"print_name"			"#sharpshooter"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+			
+				"bodygroups"
+				{
+					"headgear"					"0"
+					"body"				"0"
+					"legs"				"0"
+					"shoes"				"1"
+					"belt"				"0"
+					"kit"				"0"
+					"rig"				"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				"weapon"				"weapon_akbayonet"
+				"weapon"               "weapon_nam_sks"
+				"weapon_upgrade"		"optic_scope_pu"
+				"weapon"				"weapon_nam_vz61"
+				"weapon"				"weapon_nam_rdg1"
+				"gear"           "ins_chestrig"
+
+				"gear"             "nva_helmet_camo"
+				"gear"                  "nva_foliage"
+			}
+			"allowed_items"
+			{
+				
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				"weapon"                "weapon_nam_p38"
+				"weapon"                "weapon_nam_vz61"
+				"weapon"               "weapon_nam_svt40"
+				"weapon"              "weapon_nam_g43"
+				"weapon"               "weapon_nam_mosin"
+				"weapon"               "weapon_nam_k98"
+				"weapon"             "weapon_nam_svd"
+				"weapon"           "weapon_nam_sks"
+				
+				"weapon_upgrade"		"optic_scope_pu"
+				"weapon_upgrade"		"optic_scope_zf39"
+				"weapon_upgrade"		"optic_scope_zf4"
+				"weapon_upgrade"		"optic_scope_pe"
+				
+			
+			}
+			
+			"cost_modifiers"
+			{
+				
+				"gear"
+				{
+					"nva_foliage"	"-1"
+					"nva_helmet_camo"	"-2"
+				}
+			}
+			
+		}
+		
+		
+		"template_nva_scout"
+		{
+			"team"					"insurgents"
+			"print_name"			"#scout"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+			
+				"bodygroups"
+				{
+					"headgear"					"0"
+					"body"				"0"
+					"legs"				"0"
+					"shoes"				"1"
+					"belt"				"0"
+					"kit"				"0"
+					"rig"				"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				"weapon"				"weapon_akbayonet"
+				"weapon"               "weapon_nam_ppsh41"
+				"weapon_upgrade"           "magazine_extended_ppsh41"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_rdg1"
+				
+				"gear"         "ins_ammopouch"
+				"gear"       "nva_jacket_green"
+				"gear"       "nva_pants_black"
+				"gear"           "nva_headband"
+				"gear"      "hand_bandage"
+				
+				
+				
+			}
+			"allowed_items"
+			{
+				
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"				"weapon_nam_rgd5"
+				"weapon"                "weapon_nambu"
+				"weapon"                "weapon_nam_mat49"
+				"weapon"                "weapon_nam_mp40"
+				"weapon"                 "weapon_nam_ppsh41"
+				"weapon"                  "weapon_nam_m1carbine_nva"   
+				"weapon"                   "weapon_nam_bar_nva"
+				 "weapon"                "weapon_molotov"
+				 "weapon"            "weapon_nam_ithaca37nva"
+				 "weapon"            "weapon_nam_thompson_m1a1"
+			}
+		}
+		
+		
+		"template_nva_sapper"
+		{
+			"team"					"insurgents"
+			"print_name"			"#sapper"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+			
+				"bodygroups"
+				{
+					"headgear"					"0"
+					"body"				"0"
+					"legs"				"0"
+					"shoes"				"1"
+					"belt"				"0"
+					"kit"				"0"
+					"rig"				"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				"weapon"				"weapon_akbayonet"
+				"weapon"                "weapon_nam_mat49"
+				"weapon"				"weapon_nam_makarov"
+				"weapon"				"weapon_geballteladung"
+				"gear"        "ins_lightkit"
+				
+				"gear"                 "nva_helmet_etan"
+			}
+			"allowed_items"
+			{
+				
+				"weapon"				"weapon_tokarev"
+				
+				"weapon"				"weapon_geballteladung"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				"weapon"                "weapon_nam_p38"
+				"weapon"                "weapon_nam_mat49"
+				"weapon"                "weapon_nam_mp40"
+				"weapon"                 "weapon_nam_ppsh41"
+				"weapon"               "weapon_hafthohlladung"
+				"weapon"               "weapon_nam_ithaca37nva"
+				
+			}
+		}
+		
+		
+		"template_nva_machinegunner"
+		{
+			"team"					"insurgents"
+			"print_name"			"#machinegunner"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+			
+				"bodygroups"
+				{
+					"headgear"					"0"
+					"body"				"0"
+					"legs"				"0"
+					"shoes"				"1"
+					"belt"				"0"
+					"kit"				"0"
+					"rig"				"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_rpk"
+				"weapon"				"weapon_nam_makarov"
+				"weapon"				"weapon_nam_rgd5"
+				"gear"   "ins_lightkit"
+				
+				"gear"                 "nva_helmet_etan"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_rpk"
+				"weapon"				"nam_weapon_mg34"
+				"weapon"				"weapon_nam_mg42"
+				"weapon"				"weapon_nam_bren_mk2"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				"weapon"                "weapon_nam_p38"
+				//"weapon"                "weapon_nam_fg42"
+			}
+		}
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+	}
+}
