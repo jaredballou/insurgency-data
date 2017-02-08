@@ -1,0 +1,53 @@
+"cpsetup.txt"
+{
+
+	"compassOffset" "180"
+
+	"checkpoint"
+	{
+		"AttackingTeam"		"security"
+		"controlpoint"		"cp_1"
+		"controlpoint"		"cp_2"
+		"controlpoint"		"cachepoint_c"
+		"controlpoint"		"cp_4"
+		"controlpoint"		"cp_5"
+		"controlpoint"		"cp_6"
+		"controlpoint"		"cp_7"
+		"controlpoint"		"cachepoint_h"
+		"controlpoint"		"cp_9"
+	
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_1"
+			"1"  "spawnzone_2"
+			"2"  "spawnzone_3"
+			"3"  "spawnzone_4"
+			"4"  "spawnzone_5"
+			"5"  "spawnzone_6"
+			"6"  "spawnzone_7"
+			"7"  "spawnzone_8"
+			"8"  "spawnzone_9"
+		}
+		
+		"entities"
+		{
+			// Cache H
+			"obj_weapon_cache"
+			{
+				"origin"		"-133 -1967 320"
+				"angles"		"0 0 0"
+				"targetname"	"cache_h"
+				"teamnumber"	"3"
+				"ControlPoint"	"cachepoint_h"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"-133 -1967 392"
+				"angles"		"0 0 0"
+				"targetname"	"cachepoint_h" 
+			}	
+		}
+	}
+}

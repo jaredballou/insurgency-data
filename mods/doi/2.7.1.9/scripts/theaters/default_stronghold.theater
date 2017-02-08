@@ -1,0 +1,374 @@
+"#base" "default.theater"
+
+"theater"
+{
+	"player_templates"
+	{
+		"template_american_sniper"
+		{
+			"allowed_items"
+			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_smoke"
+				"weapon"				"weapon_binoculars_american"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon_upgrade"		"optic_scope_4x"
+			}
+		}	
+
+		"template_british_officer"
+		{
+			"allowed_items"
+			{
+				"weapon"				"weapon_sten_mk5"
+				"weapon"				"weapon_thompson_m1928a1"
+				"weapon"				"weapon_welrod"
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no77"
+				"weapon"				"weapon_no36"
+				"weapon"				"weapon_binoculars_british"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"barrel_silencer"
+			}
+		}
+		"template_british_assault"
+		{
+			"allowed_items"
+			{
+				"weapon"				"weapon_ithaca"
+				"weapon"				"weapon_sten_mk2"
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no77"
+				"weapon"				"weapon_no69"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_speedloader"
+				"gear"					"gear_radio_commonwealth"
+				"weapon_upgrade"		"barrel_silencer"
+			}
+		}
+	}
+	
+	"teams"
+	{
+		"axis"
+		{
+			"?stronghold_TEAM_TWO_attack"
+			{			
+				"squads"
+				{
+					"#squad_german"
+					{
+						"size"									"16"
+						"ai_squad"								"0"
+						"human_squad"							"1"
+				
+						"classes"
+						{
+							"template_german_officer"			"1"
+							"template_german_rifleman"			"-1"
+							"template_german_assault"			"3"
+							"template_german_support"			"2"
+							"template_german_flamethrower"		"1"
+							"template_german_communications"	"3"
+							"template_german_engineer"			"2"
+							"template_german_machinegunner"		"3"
+							"template_german_sniper"			"3"
+						}
+					}
+					
+					"#squad_german"
+					{
+						"size"									"16"
+						"ai_squad"								"1"
+						"human_squad"							"0"
+				
+						"classes"
+						{
+							"template_german_officer"			"1"
+							"template_german_rifleman_coop"		"-1"
+							"template_german_assault"			"2"
+							"template_german_support"			"1"
+							"template_german_flamethrower"		"1"
+							"template_german_communications"	"2"
+							"template_german_engineer_coop"		"1"
+							"template_german_machinegunner"		"2"
+							"template_german_sniper"			"1"
+							
+							"template_german_elite_1"			"-1"
+							"template_german_elite_2"			"-1"
+						}
+					}
+				}
+			}
+			
+			"?stronghold_TEAM_TWO_defend"
+			{			
+				"squads"
+				{
+					"#squad_german"
+					{
+						"size"									"16"
+						"ai_squad"								"1"
+						"human_squad"							"0"
+					
+						"classes"
+						{
+							"template_german_officer"			"1"
+							"template_german_rifleman_coop"		"-1"
+							"template_german_assault"			"2"
+							"template_german_support"			"1"
+							"template_german_flamethrower"		"1"
+							"template_german_communications"	"2"
+							"template_german_engineer_coop"		"1"
+							"template_german_machinegunner_coop""2"
+							"template_german_sniper"			"1"
+							
+							"template_german_elite_1"			"-1"
+							"template_german_elite_2"			"-1"
+						}
+					}
+					
+					"#squad_german"
+					{
+						"size"									"16"
+						"ai_squad"								"1"
+						"human_squad"							"0"
+					
+						"classes"
+						{
+							"template_german_officer"			"1"
+							"template_german_rifleman_coop"		"-1"
+							"template_german_assault"			"2"
+							"template_german_support"			"1"
+							"template_german_flamethrower"		"1"
+							"template_german_communications"	"2"
+							"template_german_engineer_coop"		"1"
+							"template_german_machinegunner_coop""2"
+							"template_german_sniper"			"1"
+							
+							"template_german_elite_1"			"-1"
+							"template_german_elite_2"			"-1"
+						}
+					}
+				}
+			}
+		}
+		
+		"americans"
+		{
+			"?stronghold_TEAM_ONE_attack"
+			{
+				"squads"
+				{
+					"#squad_american"
+					{
+						"size"									"16"
+						"ai_squad"								"0"
+						"human_squad"							"1"
+					
+						"classes"
+						{
+							"template_american_officer"			"1"
+							"template_american_rifleman"		"-1"
+							"template_american_assault"			"3"
+							"template_american_support"			"2"
+							"template_american_flamethrower"	"1"
+							"template_american_communications"	"3"
+							"template_american_engineer"		"2"
+							"template_american_machinegunner"	"3"
+							"template_american_sniper"			"3"	
+						}
+					}
+					
+					"#squad_american"
+					{
+						"size"									"16"
+						"ai_squad"								"1"
+						"human_squad"							"0"
+					
+						"classes"
+						{
+							"template_american_officer"			"1"
+							"template_american_rifleman"		"-1"
+							"template_american_assault"			"2"
+							"template_american_support"			"1"
+							"template_american_flamethrower"	"1"
+							"template_american_communications"	"2"
+							"template_american_engineer_coop"	"1"
+							"template_american_machinegunner"	"2"
+							"template_american_sniper"			"1"	
+							
+							"template_american_elite_1"			"-1"
+							"template_american_elite_2"			"-1"
+							"template_american_elite_3"			"-1"
+						}
+					}
+				}
+			}
+			
+			"?stronghold_TEAM_ONE_defend"
+			{
+				"squads"
+				{
+					"#squad_american"
+					{
+						"size"									"16"
+						"ai_squad"								"1"
+						"human_squad"							"0"
+					
+						"classes"
+						{
+							"template_american_officer"			"1"
+							"template_american_rifleman"		"-1"
+							"template_american_assault"			"2"
+							"template_american_support"			"1"
+							"template_american_flamethrower"	"1"
+							"template_american_communications"	"2"
+							"template_american_engineer_coop"	"1"
+							"template_american_machinegunner"	"2"
+							"template_american_sniper"			"1"	
+	
+							"template_american_elite_1"			"-1"
+							"template_american_elite_2"			"-1"
+							"template_american_elite_3"			"-1"
+						}
+					}
+					
+					"#squad_american"
+					{
+						"size"									"16"
+						"ai_squad"								"1"
+						"human_squad"							"0"
+					
+						"classes"
+						{
+							"template_american_officer"			"1"
+							"template_american_rifleman"		"-1"
+							"template_american_assault"			"2"
+							"template_american_support"			"1"
+							"template_american_flamethrower"	"1"
+							"template_american_communications"	"2"
+							"template_american_engineer_coop"	"2"
+							"template_american_machinegunner"	"2"
+							"template_american_sniper"			"1"	
+	
+							"template_american_elite_1"			"-1"
+							"template_american_elite_2"			"-1"
+							"template_american_elite_3"			"-1"
+						}
+					}
+				}
+			}
+		}
+		
+		"commonwealth"
+		{
+			"?stronghold_TEAM_ONE_attack"
+			{
+				"squads"
+				{
+					"#squad_commonwealth"
+					{
+						"size"									"16"
+						"ai_squad"								"0"
+						"human_squad"							"1"
+					
+						"classes"
+						{
+							"template_british_officer"			"1"
+							"template_british_rifleman"			"-1"
+							"template_british_assault"			"3"
+							"template_british_support"			"2"
+							"template_british_flamethrower"		"1"
+							"template_british_communications"	"3"
+							"template_british_engineer"			"2"
+							"template_british_machinegunner"	"3"
+							"template_british_sniper"			"3"						
+						}
+					}
+
+					"#squad_commonwealth"
+					{
+						"size"									"16"
+						"ai_squad"								"1"
+						"human_squad"							"0"
+					
+						"classes"
+						{
+							"template_british_officer"			"1"
+							"template_british_rifleman"			"-1"
+							"template_british_assault"			"2"
+							"template_british_support"			"1"
+							"template_british_flamethrower"		"1"
+							"template_british_communications"	"2"
+							"template_british_engineer_coop"	"1"
+							"template_british_machinegunner"	"2"
+							"template_british_sniper"			"1"				
+
+							"template_british_elite_1"			"-1"
+							"template_british_elite_2"			"-1"		
+						}
+					}
+				}
+			}
+			
+			"?stronghold_TEAM_ONE_defend"
+			{
+				"squads"
+				{
+					"#squad_commonwealth"
+					{
+						"size"									"16"
+						"ai_squad"								"1"
+						"human_squad"							"0"
+					
+						"classes"
+						{
+							"template_british_officer"			"1"
+							"template_british_rifleman"			"-1"
+							"template_british_assault"			"2"
+							"template_british_support"			"1"
+							"template_british_flamethrower"		"1"
+							"template_british_communications"	"2"
+							"template_british_engineer_coop"	"1"
+							"template_british_machinegunner_coop"	"2"
+							"template_british_sniper"			"1"			
+
+							"template_british_elite_1"			"-1"
+							"template_british_elite_2"			"-1"							
+						}
+					}
+
+					"#squad_commonwealth"
+					{
+						"size"									"16"
+						"ai_squad"								"1"
+						"human_squad"							"0"
+					
+						"classes"
+						{
+							"template_british_officer"			"1"
+							"template_british_rifleman"			"-1"
+							"template_british_assault"			"2"
+							"template_british_support"			"1"
+							"template_british_flamethrower"		"1"
+							"template_british_communications"	"2"
+							"template_british_engineer_coop"	"1"
+							"template_british_machinegunner_coop"	"2"
+							"template_british_sniper"			"1"		
+							
+							"template_british_elite_1"			"-1"
+							"template_british_elite_2"			"-1"							
+						}
+					}
+				}
+			}
+		}
+	}
+}

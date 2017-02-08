@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/training_large"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

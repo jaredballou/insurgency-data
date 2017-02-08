@@ -1,0 +1,168 @@
+"theater"
+{
+	"weapon_upgrades"
+	{
+		"base_ammo_hp"
+		{
+			"IsBase"				"1"
+			"upgrade_slot"				"ammo"
+			"print_name"				"#weapon_upgrade_hp"
+			"print_desc"				"#weapon_upgrade_hp_desc"
+		}
+		"base_ammo_ap"
+		{
+			"IsBase"				"1"
+			"upgrade_slot"				"ammo"
+			"print_name"				"#weapon_upgrade_ap"
+			"print_desc"				"#weapon_upgrade_ap_desc"
+		}
+		"base_ammo_tracer"
+		{
+			"IsBase"				"1"
+			"upgrade_slot"				"ammo"
+			"print_name"				"#weapon_upgrade_tracer"
+			"print_desc"				"#weapon_upgrade_tracer_desc"
+		}
+		"base_ammo_slugs"
+		{
+			"upgrade_slot"				"ammo"
+			"upgrade_cost"				"2"
+			"print_name"				"#weapon_upgrade_slugs"
+			"print_desc"				"#weapon_upgrade_slugs_desc"
+			"ammo_type_override"			"slugs"
+			"spread_frac"				"0.02"
+			
+			"optics_fov_override"
+			{
+				"fov_plr_focus"				"-20"
+			}
+		}
+		"base_standard"
+		{
+			"upgrade_slot"				"underbarrel"
+			"upgrade_cost"				"0"
+			"print_name"				"#weapon_upgrade_foregrip"
+			"print_desc"				"#weapon_upgrade_foregrip_desc"
+		}
+		"base_scope"
+		{
+			"IsBase"				"1"
+			"upgrade_cost"				"4"
+			"upgrade_slot"				"optics"
+			"print_name"				"#weapon_upgrade_scope"
+			"print_desc"				"#weapon_upgrade_scope_desc"
+		}
+		"base_foregrip"
+		{
+			"IsBase"				"1"
+			"upgrade_cost"				"2"
+			"upgrade_slot"				"underbarrel"
+			"print_name"				"#weapon_upgrade_foregrip"
+			"print_desc"				"#weapon_upgrade_foregrip_desc"
+			"weapon_abilities"			"foregrip"
+			
+			"freeaim"
+			{
+				"freeaim_distance_frac"			"0.80"
+			}
+			
+			"recoil"
+			{
+				"recoil_lateral_frac"			"0.70"
+				"recoil_vertical_frac"			"0.85"
+			}
+			
+			"sway"
+			{
+				"sway_radius_frac"			"0.8"
+				"sway_speed"				"1.20"
+			}
+			
+			"world_attachments"
+			{
+				"gesture"					"ACT_GESTURE_FOREGRIP"
+			}
+		}
+		"base_heavybarrel"
+		{
+			"upgrade_slot"				"barrel"
+			"upgrade_cost"				"1"
+			"print_name"				"#weapon_upgrade_heavybarrel"
+			"print_desc"				"#weapon_upgrade_heavybarrel_desc"
+			
+			"recoil"
+			{
+				"recoil_lateral_frac"			"1.0"
+				"recoil_vertical_frac"			"0.9"
+			}
+			
+			"sway"
+			{
+				"sway_speed_frac"			"0.4"
+			}
+		}
+		"base_silencer"
+		{
+			"upgrade_slot"				"barrel"
+			"print_name"				"#weapon_upgrade_silencer"
+			"print_desc"				"#weapon_upgrade_silencer_desc"
+			"weapon_abilities"			"silencer"
+			"particle_1p"				"muzzleflash_suppressed_1p"
+			"particle_3p"				"muzzleflash_suppressed_1p"
+			"particle_attach"			"muzzle_supp"
+		}
+		"base_flashlight"
+		{
+			"upgrade_slot"				"siderail"
+			"print_name"				"#weapon_upgrade_flashlight"
+			"print_desc"				"#weapon_upgrade_flashlight_desc"
+			"weapon_abilities"			"flashlight"
+			"particle_attach"			"Laser"
+			
+			"world_attachments"
+			{
+				"Flashlight"
+				{
+					"model"					"models/weapons/upgrades/w_laser_sec.mdl"
+				}
+			}
+		}
+		"base_flashlight_pistol"
+		{
+			"import"				"base_flashlight"
+			"print_name"				"#weapon_upgrade_flashlight"
+			"print_desc"				"#weapon_upgrade_flashlight_desc"
+			
+		}
+		"base_lasersight"
+		{
+			"upgrade_slot"				"siderail"
+			"print_name"				"#weapon_upgrade_lasersight"
+			"print_desc"				"#weapon_upgrade_lasersight_desc"
+			"weapon_abilities"			"lasersights"
+			"particle_attach"			"Laser"
+			
+			"world_attachments"
+			{
+				"Laser"
+				{
+					"model"					"models/weapons/upgrades/w_laser_sec.mdl"
+				}
+			}
+		}
+		"base_lasersight_pistol"
+		{
+			"import"				"base_lasersight"
+			"print_name"				"#weapon_upgrade_lasersight"
+			"print_desc"				"#weapon_upgrade_lasersight_desc"
+			
+		}
+		"base_bipod"
+		{
+			"upgrade_slot"				"underbarrel"
+			"print_name"				"#weapon_upgrade_bipod"
+			"print_desc"				"#weapon_upgrade_bipod_desc"
+			"weapon_abilities"			"bipod"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/district_small"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

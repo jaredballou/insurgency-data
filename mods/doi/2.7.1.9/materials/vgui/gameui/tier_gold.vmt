@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/gameui/tier_gold"
+	"$translucent" 1
+}
