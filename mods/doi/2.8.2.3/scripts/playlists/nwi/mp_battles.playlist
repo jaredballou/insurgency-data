@@ -1,0 +1,268 @@
+// Official NWI playlist
+// See example.playlist for documentation/format guide
+
+"playlist"
+{
+	"name"							"#GameUI_mm_playlist_battles"
+	"description"					"#GameUI_mm_playlist_desc_battles"
+	"image"							"gameui/tooltip_difficulty_02"
+	"category"						"pvp" // Required: Menu category, should be "pvp" or "coop"
+	"difficulty"					"2"
+	
+	"require_maxplayers_min"		"32"
+	"require_maxplayers_max"		"32"
+	
+	"allowed_maps"
+	{
+		"bastogne"				"offensive"
+		"comacchio"				"offensive"
+		"crete"					"offensive"
+		"dog_red"				"offensive"
+        "foy"	                "offensive"
+		"ortona"				"offensive"
+		"reichswald"			"offensive"
+		"saint_lo"              "offensive"
+		"salerno"				"offensive"
+		"sicily"				"offensive"
+		"bastogne"				"frontline"
+		"comacchio"				"frontline"
+		"crete"					"frontline"
+		"foy"                   "frontline"
+		"ortona"				"frontline"
+		"reichswald"			"frontline"
+		"saint_lo"              "frontline"
+		"salerno"				"frontline"
+		"sicily"				"frontline"
+		"bastogne"				"liberation"
+		"comacchio"				"liberation"
+		"crete"					"liberation"
+		"foy"                   "liberation"
+		"ortona"				"liberation"
+		"reichswald"			"liberation"
+		"saint_lo"              "liberation"
+		"salerno"				"liberation"
+		"sicily"				"liberation"
+	}
+	
+	// recommended settings but can be changed
+	"cvars"
+	{
+		"mp_minteamplayers"				"1"		// min players on each team to start the match
+		"mp_timer_postround"			"15"	// timer for the post-round (after the round starts)
+		"mp_timer_postgame"				"10"	// timer for the post-game (at the end of a game / map rotation)
+		"ins_bot_quota"					"0"		// if set higher than 0, the server will add this many bots to each team
+		"mp_tkpunish"					"1"
+
+		"liberation"
+		{
+			"mp_timer_pregame"				"15"	// timer for the pre-game
+			"mp_timer_preround"				"20"	// timer for the pre-round
+		}
+
+		"frontline"
+		{
+			"mp_timer_pregame"				"10"	// timer for the pre-game
+			"mp_timer_preround"				"15"	// timer for the pre-round
+		}
+
+		"offensive"
+		{
+			"mp_timer_pregame"				"10"	// timer for the pre-game
+			"mp_timer_preround"				"15"	// timer for the pre-round
+		}
+	}
+	
+	// forced settings
+	"forced_cvars"
+	{		
+		"sv_hud_targetindicator"			"1"
+		"sv_hud_enemy_wave_display"			"1"
+		
+		// Local audio only for DOI
+		"mp_voice_use_3d_voip"				"1"
+		"mp_voice_squad_radio"				"0"
+		"mp_voice_max_distance_friendly"	"1800"
+		"mp_voice_max_distance_enemy"		"1000"
+		
+		// From Insurgency
+		"mp_teams_auto_join"				"1"		// when enabled, players are automatically assigned to a team on join
+		"mp_teams_unbalance_limit"			"1"		// the amount of player difference between each team the server considers to be imbalanced
+		"mp_autoteambalance"				"1"		// should the server auto balance the teams if they are imbalanced?
+		"sv_deadtalk"						"0"		// enabling this will allow the dead and living to chat text each other
+		"sv_deadtalk_team"					"1"		// is deadchat limited to just your team?
+		"sv_deadvoice"						"0"		// enabling this will allow the dead and living to VOIP each other
+		"sv_vote_issue_changegamemode_allowed"	"0"	// no changegamemode
+		"sv_nwi_banlist"					"1"		// global ban list
+		"mp_supply_token_base"				"10"	// force to 10 starting supply, too many are changing this
+		"host_timescale"					"1.0"
+		"sv_allow_jumpshot"					"0"
+		"mp_theater_override"				""
+		"sv_workshop_enabled"				"0"
+
+		// Stats
+		"stats_enabled"						"1"		// this only has any effect in official playlist as the stats server rejects non-official playlists
+
+		// Anti cheat
+		"sv_battleye"						"1"		// battleye support
+
+		"frontline"
+		{
+			"mp_supply_gain_obj_cap"				"2"
+		}
+
+		"offensive"
+		{
+			"mp_supply_gain_obj_cap"				"2"
+		}
+		
+		"plugins"
+		{
+			// no damage modifying plugins are allowed in official playlists
+			"doi_uberbolt_enabled"				"0"
+			
+			// use sv_hud_deathmessages 1 instead!
+			"doi_deathnotices_enabled"			"0"
+		}
+	}
+	
+	"solo_cvars"
+	{
+		"ins_bot_quota"							"12"
+		"mp_teams_unbalance_limit"				"0"
+		"mp_teams_auto_join" 					"0"
+	}
+	
+	"filters"
+	{
+		"official_servers"			"1"
+			
+		// Minimum player count filter, removing this key will remove this filter.
+		"players"
+		{
+			// Default min/max values are 0 to require_maxplayers_max-1
+		}
+		
+		"tags"
+		{
+			"deathmsgs"
+			{
+				"default"				"2"
+			}
+
+			"nofriendlyfire"
+			{
+				"default"				"2"	
+				"invert"				"1"		
+			}
+		}
+	}
+        
+    // Placeholder solo menu info
+    "solo_info"
+    {
+            "line_1"                ""
+            "line_2"                "Team: Allied Forces"
+            "line_3"                ""
+            "line_4"                ""
+            "line_5"                ""
+            "line_6"                "Team: Axis Forces"
+            "line_7"                ""
+            "line_8"                ""
+    }    
+
+	// Playlist "rulesets", allows you to merge/overwrite specific KV blocks when loaded with "sv_ruleset [ruleset]"
+	"rulesets"
+	{
+		"default"
+		{
+			"ruleset_name"				"#GameUI_mm_ruleset_default"
+			"ruleset_image"				"gameui/rulesets/tooltip_ruleset_standard"
+		}
+
+		// Liberation only
+		"liberation"
+		{
+			"ruleset_name"				"#GameUI_mm_ruleset_liberation_only"
+			"ruleset_image"				"gameui/rulesets/tooltip_ruleset_liberation"
+			
+			"allowed_maps_merge_method" "overwrite"
+			"allowed_maps"
+			{
+				"salerno"				"liberation"
+				"sicily"				"liberation"
+				"comacchio"				"liberation"
+				"ortona"				"liberation"
+				"bastogne"				"liberation"
+				"reichswald"			"liberation"
+				"saint_lo"				"liberation"
+			}
+		}
+
+		// Frontline only
+		"frontline"
+		{
+			"ruleset_name"				"#GameUI_mm_ruleset_frontline_only"
+			"ruleset_image"				"gameui/rulesets/tooltip_ruleset_frontline"
+
+			"allowed_maps_merge_method" "overwrite"
+			"allowed_maps"
+			{
+				"salerno"				"frontline"
+				"sicily"				"frontline"
+				"comacchio"				"frontline"
+				"ortona"				"frontline"
+				"bastogne"				"frontline"
+				"reichswald"			"frontline"
+				"saint_lo"				"frontline"
+			}
+		}
+
+		// Offensive only
+		"offensive"
+		{
+			"ruleset_name"				"#GameUI_mm_ruleset_offensive_only"
+			"ruleset_image"				"gameui/rulesets/tooltip_ruleset_offensive"
+			
+			"allowed_maps_merge_method" "overwrite"
+			"allowed_maps"
+			{
+				"salerno"				"offensive"
+				"sicily"				"offensive"
+				"comacchio"				"offensive"
+				"ortona"				"offensive"
+				"dog_red"				"offensive"
+				"bastogne"				"offensive"
+				"reichswald"			"offensive"
+				"saint_lo"				"offensive"
+			}
+		}
+
+		// commonwealth forces vs. axis only (team override)
+		"commonwealth_only"
+		{
+			"ruleset_name"				"#GameUI_mm_ruleset_commonwealth_only"
+			"ruleset_image"				"gameui/rulesets/tooltip_ruleset_commonwealthOnly"
+			
+			"team_override_merge_method" "overwrite"
+			"team_override"
+			{
+				"TEAM_ONE"			"commonwealth"
+				"TEAM_TWO"			"axis"
+			}
+		}
+		
+		// u.s. forces vs. axis only (team override)
+		"americans_only"
+		{
+			"ruleset_name"				"#GameUI_mm_ruleset_american_only"
+			"ruleset_image"				"gameui/rulesets/tooltip_ruleset_usArmyOnly"
+			
+			"team_override_merge_method" "overwrite"
+			"team_override"
+			{
+				"TEAM_ONE"			"americans"
+				"TEAM_TWO"			"axis"
+			}
+		}
+	}
+}
