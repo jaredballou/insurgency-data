@@ -1,0 +1,9 @@
+"district"
+{
+	material	overviews/district     	// texture file
+	pos_x		-9976			// X coordinate
+	pos_y		10261			// Y coordinate
+	scale		12.0 			// scale used when taking the screenshot
+	rotate		0			// map was rotated by 90 degrees in image editor
+	zoom		1			// optimal zoom factor if map is shown in full size
+}

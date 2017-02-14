@@ -1,0 +1,489 @@
+"cpsetup.txt"
+{
+
+	"nightlighting"		"0"
+
+	"invasion"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		"controlpoint"		"cp_d"								//cp_d - Warehouse
+		"controlpoint"		"cp_g"								//cp_g - Epicerie
+		"controlpoint"		"cp_h"								//cp_h - Church
+		"controlpoint"		"radiopoint_axis_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_offensive_a"
+			"1"  "spawnzone_offensive_b"
+			"2"  "spawnzone_offensive_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"-3587 2127 216"
+				"angles"		"0 225 0"
+				"targetname"	"radio_axis_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_axis_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-3587 2127 256"
+				"angles"		"0 225 0"
+				"targetname"	"radiopoint_axis_final"
+				"printname"		"#CP_AxisRadio"
+			}		
+		}
+	}
+	
+	"liberation"	
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+		"controlpoint"		"cp_c"						//cp_c - Destroyed House	
+		"controlpoint"		"cp_g"						//cp_g - Epicerie	
+		"controlpoint"		"cp_i"						//cp_i - Office
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_neutral"
+		}
+	}
+	
+	"frontline"	
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+		"controlpoint" 		"radiopoint_allied_final"
+		"controlpoint"		"cp_d"						//cp_d - Warehouse
+		"controlpoint"		"cp_g"						//cp_g - Epicerie
+		"controlpoint"		"cp_i"						//cp_i - Office
+		"controlpoint" 		"radiopoint_axis_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "spawnzone_battle_allied_advance"
+			"1"  "spawnzone_battle_start"
+			"2"  "spawnzone_battle_axis_advance"
+		}
+		
+		"entities"
+		{
+			// Allied radio
+			"obj_destructible"
+			{
+				"origin"		"11100 -128 218"
+				"angles"		"0 90 0"
+				"targetname"	"radio_allied_final"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_allied_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"11100 -128 258"
+				"angles"		"0 90 0"
+				"targetname"	"radiopoint_allied_final"
+				"printname"		"#CP_AlliedRadio"
+			}	
+			
+			// Axis radio
+			"obj_destructible"
+			{
+				"origin"		"-3587 2127 216"
+				"angles"		"0 225 0"
+				"targetname"	"radio_axis_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_axis_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-3587 2127 256"
+				"angles"		"0 225 0"
+				"targetname"	"radiopoint_axis_final"
+				"printname"		"#CP_AxisRadio"
+			}		
+		}
+	}
+	
+	"stronghold"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"           "axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"cp_c"					//0 - cp_c - Destroyed House
+		"controlpoint"		"cp_d"					//1 - cp_d - Warehouse
+		"controlpoint" 		"cp_g"					//2 - cp_g - Epicerie
+		"controlpoint" 		"cp_e"					//3 - cp_e - Garage
+		"controlpoint" 		"cp_i"					//4 - cp_i - Office
+		"controlpoint" 		"cp_j"					//5 - cp_j - Destroyed Store
+		"controlpoint" 		"cp_h"					//6 - cp_h - Church
+		"controlpoint"		"radiopoint_final"		//7 - Final Radio
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"entities"
+		{
+			"obj_ammo_crate"
+			{
+				"origin"			"11548 -485 174"
+				"angles"			"0 90 0"
+				"targetname"		"ammocrate_01_allied"
+				"teamnumber"		"2"
+				"ResupplyProximity"	"400"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"7543 47 188"
+				"angles"			"0 270 0"
+				"targetname"		"ammocrate_02_allied"
+				"teamnumber"		"2"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"4043 -461 164"
+				"angles"			"0 204 0"
+				"targetname"		"ammocrate_03_allied"
+				"teamnumber"		"2"
+				"ResupplyProximity"	"250"
+			}
+			
+			// Axis radio
+			"obj_destructible"
+			{
+				"origin"		"-3587 2127 216"
+				"angles"		"0 225 0"
+				"targetname"	"radio_axis_final"
+				"teamnumber"	"3"
+				"ControlPoint"	"radiopoint_axis_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-3587 2127 256"
+				"angles"		"0 225 0"
+				"targetname"	"radiopoint_axis_final"
+				"printname"		"#CP_AxisRadio"
+			}		
+		}
+		
+		"ai"
+		{
+			"allied_count_minimum_players_base"	"7"
+			"enemy_count_minimum_players_base"	"14"
+			
+			"allied_count_maximum_players_base"	"0"
+			"enemy_count_maximum_players_base"	"18"
+			
+			"friendly_count_solo_base"			"7"
+			"enemy_count_solo_base"				"18"
+			
+			"objectives"
+			{
+				"objective_index"				"5"
+				"respawn_time"					"25"
+			}
+		}
+		
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"11361 -130 174"
+				"location_axis"						"5432 -890 181"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"						//cp_d - Warehouse 
+				"location_allies"					"11361 -130 174"
+				"location_axis"						"4017 -2532 172"
+
+				"fortify_radius"					"2500"
+				"fortify_overwatch_stay_back"		"0"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"						//cp_c - Destroyed House
+				"location_allies"					"10035 -327 183"
+				"location_axis"						"4017 -2532 172"
+
+				"fortify_radius"					"2500"
+				"fortify_overwatch_stay_back"		"0"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"						// cp_g - Epicerie
+				"location_allies"					"9218 -916 206"
+				"location_axis"						"2516 -146 169"
+
+				"fortify_radius"					"2300"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"						//cp_e - Garage 
+				"location_allies"					"9218 -916 206"
+				"location_axis"						"2516 -146 169"
+
+				"fortify_radius"					"2000"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"						//cp_i - Office
+				"location_allies"					"6515 -1465 180"
+				"location_axis"						"-910 144 191"
+
+				"fortify_radius"					"1500"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"5"						// cp_j - Destroyed Business
+				"location_allies"					"5471 -1855 209"
+				"location_axis"						"-910 144 191"
+
+				"fortify_radius"					"1500"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"6"						// cp_h - Church
+				"location_allies"					"-1095 -384 461"
+				"location_axis"						"-3733 2162 183"
+
+				"fortify_radius"					"1500"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"7"						// Final Radio
+				"location_allies"					"-1095 -384 461"
+				"location_axis"						"-3733 2162 183"
+
+				"fortify_radius"					"1000"
+			}
+
+			"fallback_spawns"
+			{
+				"location_allies"					"11361 -130 174"
+				"location_axis"						"-3733 2162 183"
+			}
+		}
+	}
+	"entrenchment"
+	{
+		"TeamOne"           "commonwealth"
+        "TeamTwo"          	"axis"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"controlpoint"		"cp_c"					//0 - cp_c - Destroyed House
+		"controlpoint"		"cp_d"					//1 - cp_d - Warehouse
+		"controlpoint"		"cp_f"					//2 - cp_f - House
+		"controlpoint"		"cp_g"					//3 - cp_e - Garage
+		"controlpoint"		"cp_i"					//4 - cp_i - Office
+		"controlpoint"		"cp_j"					//5 - cp_j - Destroyed Store
+		"controlpoint"		"cp_h"					//6 - cp_h - Church	
+		
+		"roundtimer_frac"	"0.8"	
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"entities"
+		{
+			"obj_ammo_crate"
+			{
+				"origin"			"4392 -2276 172"
+				"angles"			"0 180 0"
+				"targetname"		"ammocrate_01_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"4656 982 172"
+				"angles"			"0 0 0"
+				"targetname"		"ammocrate_02_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"3076 -264 172"
+				"angles"			"0 180 0"
+				"targetname"		"ammocrate_03_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"801 -597 174"
+				"angles"			"0 354 0"
+				"targetname"		"ammocrate_04_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"-1045 1226 172"
+				"angles"			"0 219 0"
+				"targetname"		"ammocrate_05_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"250"
+			}
+			
+			"obj_ammo_crate"
+			{
+				"origin"			"-3178 2018 174"
+				"angles"			"0 315 0"
+				"targetname"		"ammocrate_06_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"250"
+			}
+		}
+		
+		"ai"
+		{
+			"allied_count_minimum_players_base"	"3"
+			"enemy_count_minimum_players_base"	"12"
+			
+			"allied_count_maximum_players_base"	"0"
+			"enemy_count_maximum_players_base"	"14"
+			
+			"friendly_count_solo_base"			"9"
+			"enemy_count_solo_base"				"14"
+			
+			"objectives"
+			{
+				"objective_index"				"0"
+				"respawn_time"					"20"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"1"
+				"respawn_time"					"20"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"2"
+				"respawn_time"					"20"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"3"
+				"respawn_time"					"20"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"4"
+				"respawn_time"					"30"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"5"
+				"respawn_time"					"30"
+			}
+			
+			"objectives"
+			{
+				//last stand
+				"objective_index"				"6"
+				"respawn_time"					"20"
+			}
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"11315 -210 182"
+				"location_axis"						"4084 -2500 180"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"						//cp_c - Destroyed House
+				"location_allies"					"11315 -210 182"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"						//cp_d - Warehouse	
+				"location_allies"					"11315 -210 182"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"						//cp_f - House
+				"location_allies"					"11315 -210 182"
+				"location_axis"						"2648 183 186"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"						//cp_e - Garage
+				"location_allies"					"11315 -210 182"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"						//cp_i - Office
+				"location_allies"					"6505 -1525 180"
+				"location_axis"						"546 -1332 182"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"5"						//cp_j - Destroyed Store
+				"location_allies"					"6505 -1525 180"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"6"						//cp_h - Church	
+				"location_axis"						"-3050 1318 179"
+				"location_allies"					"5402 -1393 203"
+			}
+
+			"fallback_spawns"
+			{
+				"location_allies"					"11315 -210 182"
+				"location_axis"						"-3050 1318 179"
+			}
+		}
+	}	
+}	
+
