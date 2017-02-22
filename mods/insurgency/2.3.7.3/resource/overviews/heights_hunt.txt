@@ -1,9 +1,0 @@
-"heights_hunt"
-{
-	material	overviews/heights_night	// texture file
-	pos_x		-7352			// X coordinate
-	pos_y		7918			// Y coordinate
-	scale		16 			// scale used when taking the screenshot
-	rotate		0			// map was rotated by 90 degrees in image editor
-	zoom		1			// optimal zoom factor if map is shown in full size
-}

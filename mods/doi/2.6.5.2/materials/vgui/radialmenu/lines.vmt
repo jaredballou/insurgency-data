@@ -1,8 +1,0 @@
-"UnlitGeneric"
-{
-	"$basetexture" "vgui/radialmenu/lines"
-	"$vertexcolor" "1"
-	"$vertexalpha" "1"
-	"$ignorez"     "1"
-	"$translucent" "1"
-}
