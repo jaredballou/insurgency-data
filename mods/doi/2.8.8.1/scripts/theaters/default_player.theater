@@ -1,0 +1,103 @@
+"#base" "base_player.theater"
+
+"theater"
+{
+	"player_settings"
+	{		
+		"weight"
+		{
+			"min_weight"				"30"
+			"max_weight"				"360"
+		}
+		
+		"speed"
+		{
+			"frac_side_move"			"0.70"
+			"frac_back_move"			"0.75"
+			"frac_side_step"			"0.70"
+			"frac_speed_water"			"0.85"
+
+			"speed_prone"				"58"
+			"speed_crouch_walk"			"50"
+			"speed_crouch_run"			"115"
+			"speed_walk"				"90"
+			"speed_run"					"180"
+			"speed_sprint"				"285"
+			
+			"AccelerationByWeight"
+			{
+				"30"					"4.30"
+				"360"					"4.15"
+			}
+			
+			"DecelerationByWeight"
+			{
+				"30"					"280.0"	// these are much higher than acceleration values because it's loss in velocity per second
+				"360"					"420.0"
+			}
+			
+			"FrictionByWeight"
+			{
+				"30"					"4.20"
+				"360"					"4.80"
+			}
+		}
+		
+		"stamina"
+		{
+			"StaminaMaxByWeight"
+			{
+				"30"					"120"
+				"300"					"40"
+			}
+
+			"stamina_regain"				"2.50"
+			"stamina_regain_crouched"		"5.00"
+			"stamina_regain_prone"			"7.50"
+			"stamina_sprint_take"			"2.50"
+		}
+		
+		"slide"
+		{
+			"DistanceByWeight"
+			{
+				"30"					"0.6"
+				"360"					"0.5"
+			}
+			
+			"SpeedByWeight"
+			{
+				"30"					"240"
+				"360"					"180"
+			}
+		}
+		
+		"lean"
+		{
+			"LeanViewModelSpeedByWeight"
+			{
+				"30"					"7"
+				"360"					"2"
+			}
+		}
+		
+		"suppression"
+		{
+			"suppression_resistance"		"0.15"
+		}
+		
+		"damage"
+		{
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"4.00"
+				"HITGROUP_CHEST"			"2.00"
+				"HITGROUP_STOMACH"			"1.50"
+				"HITGROUP_LEFTARM"			"1.20"
+				"HITGROUP_RIGHTARM"			"1.25"
+				"HITGROUP_LEFTLEG"			"0.50"
+				"HITGROUP_RIGHTLEG"			"0.55"
+			}
+		}
+	}
+}

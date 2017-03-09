@@ -1,0 +1,649 @@
+"theater"
+{
+	"unlocks"
+	{		
+		//British Army Default
+		"unit_commonwealth_british"
+		{
+			"printname"				"#unit_default_commonwealth"
+			"print_description" 	"#unit_default_commonwealth_desc"
+
+			"team_access"	"commonwealth"
+			
+			"ItemDefId"		"901"		
+			
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"english"
+				"model"					"models/characters/british/player_british_02.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_short_brit.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_brit_gloves.mdl"
+				"helmet"				"models/characters/british/british_helmet.mdl"
+				
+				"bodygroups"
+				{
+					"helmet"	"0"
+				}
+				
+				"class_replacements"
+				{
+					"template_british_officer"
+					{
+						"model"			"models/characters/british/player_british_08.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_08.mdl"	
+						"helmet"		"models/characters/british/british_beret.mdl"
+					}
+					
+					"template_british_rifleman"
+					{
+						"model"			"models/characters/british/player_british_05.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_05.mdl"	
+					}
+					
+					"template_british_assault"
+					{
+						"model"			"models/characters/british/player_british_04.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_04.mdl"	
+					}
+					
+					"template_british_support"
+					{
+						"model"			"models/characters/british/player_british_07.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_07.mdl"	
+					}
+					
+					"template_british_engineer"
+					{
+						"model"			"models/characters/british/player_british_03.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_03.mdl"	
+					}
+									
+					"template_british_flamethrower"
+					{
+						"model"			"models/characters/british/player_british_06.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_06.mdl"	
+					}
+					
+					"template_british_communications"
+					{
+						"model"			"models/characters/british/player_british_02.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_02.mdl"	
+					}
+					
+					"template_british_machinegunner"
+					{
+						"model"			"models/characters/british/player_british_09.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_09.mdl"	
+					}
+					
+					"template_british_sniper"
+					{
+						"model"			"models/characters/british/player_british_01.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_01.mdl"	
+					}
+				}
+			}
+		}
+		
+		//Canada
+		"unit_commonwealth_canada"
+		{
+			"printname"			"#unit_default_canadian"
+			"print_description" "#unit_default_canadian_desc"
+			"team_access"		"commonwealth"
+			
+			"ItemDefId"		"905"
+			
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"canadian"
+				"model"					"models/characters/british/units/player_canadian.mdl"
+				"model_cold"			"models/characters/british/units/player_canadian_alt.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_short_brit.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_brit_gloves.mdl"
+				
+				"helmet"				"models/characters/british/british_helmet_net_01.mdl"
+						
+				"bodygroups"
+				{
+					"helmet"	"0"
+					"patch"		"1"
+				}
+				
+				"class_replacements"
+				{
+					"template_british_officer"
+					{
+						"model"			"models/characters/british/units/player_canadian.mdl"
+						"model_cold"	"models/characters/british/units/player_canadian_alt.mdl"		
+						
+						"helmet"		"models/characters/british/british_beret_canadian.mdl"
+					}
+					
+					"template_british_rifleman"
+					{
+						"model"			"models/characters/british/player_british_07.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_07.mdl"	
+					}
+					
+					"template_british_assault"
+					{
+						"model"			"models/characters/british/player_british_05.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_05.mdl"	
+					}
+					
+					"template_british_support"
+					{
+						"model"			"models/characters/british/player_british_02.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_02.mdl"	
+					}
+					
+					"template_british_engineer"
+					{
+						"model"			"models/characters/british/player_british_01.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_01.mdl"	
+					}
+					
+					"template_british_flamethrower"
+					{
+						"model"			"models/characters/british/player_british_06.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_06.mdl"	
+					}
+					
+					"template_british_communications"
+					{
+						"model"			"models/characters/british/player_british_03.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_03.mdl"	
+					}
+					
+					"template_british_machinegunner"
+					{
+						"model"			"models/characters/british/player_british_04.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_04.mdl"	
+					}
+					
+					"template_british_sniper"
+					{
+						"model"			"models/characters/british/player_british_08.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_08.mdl"	
+					}
+				}
+			}
+		}
+		
+		//Highlanders
+		"unit_commonwealth_highlander"
+		{
+			"printname"		"#unit_commonwealth_highlanders"
+			"print_description" "#unit_commonwealth_highlanders_desc"
+
+			"team_access"	"commonwealth"
+			
+			"ItemDefId"		"2006"
+			
+			"Character"
+			{
+				"voice"					"scottish"
+				"model"					"models/characters/british/player_british_02.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_short_brit.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_brit_gloves.mdl"
+				
+				"helmet"				"models/characters/british/british_helmet.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"5"
+					"helmet"	"0"
+				}
+
+				"class_replacements"
+				{
+					"template_british_officer"
+					{
+						"model"			"models/characters/british/player_british_02.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_02.mdl"
+				
+						"helmet"		"models/characters/british/british_glengarry.mdl"
+						
+						"bodygroups"
+						{
+							"helmet"	"0"
+						}
+					}
+					
+					"template_british_rifleman"
+					{
+						"model"			"models/characters/british/player_british_05.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_05.mdl"	
+					}
+					
+					"template_british_assault"
+					{
+						"model"			"models/characters/british/player_british_04.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_04.mdl"	
+					}
+					
+					"template_british_support"
+					{
+						"model"			"models/characters/british/player_british_07.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_07.mdl"	
+					}
+					
+					"template_british_engineer"
+					{
+						"model"			"models/characters/british/player_british_01.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_01.mdl"	
+					}
+									
+					"template_british_flamethrower"
+					{
+						"model"			"models/characters/british/player_british_06.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_06.mdl"	
+					}
+					
+					"template_british_communications"
+					{
+						"model"			"models/characters/british/player_british_08.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_08.mdl"	
+					}
+					
+					"template_british_machinegunner"
+					{
+						"model"			"models/characters/british/player_british_09.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_09.mdl"	
+					}
+					
+					"template_british_sniper"
+					{
+						"model"			"models/characters/british/player_british_05.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_05.mdl"	
+					}
+				}
+			}
+		}
+	
+		//Sikh
+		"unit_commonwealth_12thfrontier"
+		{
+			"printname"		"#unit_commonwealth_12thfrontier"
+			"print_description" "#unit_commonwealth_12thfrontier_desc"
+			"team_access"	"commonwealth"
+			
+			"ItemDefId"		"3"
+			
+			"visible"			"0"
+			
+			"Character"
+			{
+				"voice"			"indian"
+				"model"			"models/characters/british/units/player_indian.mdl"
+				"model_cold"	"models/characters/british/units/player_indian_alt.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_short_brit_indian.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_brit_gloves.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"1"
+				}		
+			}
+		}
+		
+		//Canadian Argyll
+		"unit_commonwealth_argyll"
+		{
+			"printname"		"#unit_commonwealth_argyll"
+			"print_description" "#unit_commonwealth_argyll_desc"
+			"team_access"	"commonwealth"
+			
+			"ItemDefId"		"36"
+			
+			"visible"			"0"
+			
+			"Character"
+			{
+				"voice"					"canadian"
+				"model"					"models/characters/british/units/player_canadian.mdl"
+				"model_cold"			"models/characters/british/units/player_canadian_alt.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_short_brit.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_brit_gloves.mdl"
+				
+				"helmet"				"models/characters/british/british_helmet_net_01.mdl"
+						
+				"bodygroups"
+				{
+					"helmet"	"0"
+					"patch"		"2"
+				}
+				
+				"class_replacements"
+				{
+					"template_british_officer"
+					{
+						"model"			"models/characters/british/units/player_canadian.mdl"
+						"model_cold"	"models/characters/british/units/player_canadian_alt.mdl"		
+						
+						"helmet"		"models/characters/british/british_canadian_glengarry.mdl"
+					}
+					
+					"template_british_rifleman"
+					{
+						"model"			"models/characters/british/player_british_07.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_07.mdl"	
+					}
+					
+					"template_british_assault"
+					{
+						"model"			"models/characters/british/player_british_05.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_05.mdl"	
+					}
+					
+					"template_british_support"
+					{
+						"model"			"models/characters/british/player_british_02.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_02.mdl"	
+					}
+					
+					"template_british_engineer"
+					{
+						"model"			"models/characters/british/player_british_01.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_01.mdl"	
+					}
+					
+					"template_british_flamethrower"
+					{
+						"model"			"models/characters/british/player_british_06.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_06.mdl"	
+					}
+					
+					"template_british_communications"
+					{
+						"model"			"models/characters/british/player_british_03.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_03.mdl"	
+					}
+					
+					"template_british_machinegunner"
+					{
+						"model"			"models/characters/british/player_british_04.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_04.mdl"	
+					}
+					
+					"template_british_sniper"
+					{
+						"model"			"models/characters/british/player_british_08.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_08.mdl"	
+					}
+				}
+			}
+		}
+		
+		//Canadian Seaforth
+		"unit_commonwealth_seaforth"
+		{
+			"printname"		"#unit_commonwealth_seaforth"
+			"print_description" "#unit_commonwealth_seaforth_desc"
+			"team_access"	"commonwealth"
+			
+			"ItemDefId"		"37"
+			
+			"visible"			"0"
+			
+			"Character"
+			{
+				"voice"				"canadian"
+				"model"				"models/characters/british/units/player_canadian.mdl"
+				"helmet"			"models/characters/british/british_helmet_net_01.mdl"
+
+				"viewmodel_hands"		"models/weapons/v_hands_short_brit.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_brit_gloves.mdl"
+				
+				"bodygroups"
+				{
+					"helmet"	"0"
+					"patch"		"3"
+				}
+				
+				"class_replacements"
+				{
+					"template_british_officer"
+					{
+						"model"			"models/characters/british/units/player_canadian.mdl"
+						"model_cold"	"models/characters/british/units/player_canadian_alt.mdl"		
+						
+						"helmet"		"models/characters/british/british_balmoral_seaforth.mdl"
+					}
+					
+					"template_british_rifleman"
+					{
+						"model"			"models/characters/british/player_british_07.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_07.mdl"	
+					}
+					
+					"template_british_assault"
+					{
+						"model"			"models/characters/british/player_british_05.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_05.mdl"	
+					}
+					
+					"template_british_support"
+					{
+						"model"			"models/characters/british/player_british_02.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_02.mdl"	
+					}
+					
+					"template_british_engineer"
+					{
+						"model"			"models/characters/british/player_british_01.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_01.mdl"	
+					}
+					
+					"template_british_flamethrower"
+					{
+						"model"			"models/characters/british/player_british_06.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_06.mdl"	
+					}
+					
+					"template_british_communications"
+					{
+						"model"			"models/characters/british/player_british_03.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_03.mdl"	
+					}
+					
+					"template_british_machinegunner"
+					{
+						"model"			"models/characters/british/player_british_04.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_04.mdl"	
+					}
+					
+					"template_british_sniper"
+					{
+						"model"			"models/characters/british/player_british_08.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_08.mdl"	
+					}
+				}
+			}
+		}
+		
+		//Canadian Princess Patricia
+		"unit_commonwealth_princess_patricia"
+		{
+			"printname"					"#unit_commonwealth_princess_patricia"
+			"print_description" 		"#unit_commonwealth_princess_patricia_desc"
+			"team_access"				"commonwealth"
+			
+			"ItemDefId"					"36"
+			
+			"visible"					"0"
+						
+			"Character"
+			{
+				"voice"					"canadian"
+				"model"					"models/characters/british/units/player_canadian.mdl"
+				"model_cold"			"models/characters/british/units/player_canadian_alt.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_short_brit.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_brit_gloves.mdl"
+				
+				"helmet"				"models/characters/british/british_helmet_net_01.mdl"
+						
+				"bodygroups"
+				{
+					"helmet"	"0"
+					"patch"		"4"
+					"decals"	"2"
+				}
+				
+				"class_replacements"
+				{
+					"template_british_officer"
+					{
+						"model"			"models/characters/british/units/player_canadian.mdl"
+						"model_cold"	"models/characters/british/units/player_canadian_alt.mdl"		
+						
+						"helmet"		"models/characters/british/british_beret_canadian_princess.mdl"
+						
+						"bodygroups"
+						{
+							"decals" "0"
+						}
+					}
+					
+					"template_british_rifleman"
+					{
+						"model"			"models/characters/british/player_british_07.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_07.mdl"	
+					}
+					
+					"template_british_assault"
+					{
+						"model"			"models/characters/british/player_british_05.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_05.mdl"	
+					}
+					
+					"template_british_support"
+					{
+						"model"			"models/characters/british/player_british_02.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_02.mdl"	
+					}
+					
+					"template_british_engineer"
+					{
+						"model"			"models/characters/british/player_british_01.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_01.mdl"	
+					}
+					
+					"template_british_flamethrower"
+					{
+						"model"			"models/characters/british/player_british_06.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_06.mdl"	
+					}
+					
+					"template_british_communications"
+					{
+						"model"			"models/characters/british/player_british_03.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_03.mdl"	
+					}
+					
+					"template_british_machinegunner"
+					{
+						"model"			"models/characters/british/player_british_04.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_04.mdl"	
+					}
+					
+					"template_british_sniper"
+					{
+						"model"			"models/characters/british/player_british_08.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_08.mdl"	
+					}
+				}
+			}
+		}
+		
+		"unit_commonwealth_royal_hamilton"
+		{
+			"printname"			"#unit_commonwealth_royal_hamilton"
+			"print_description" "#unit_commonwealth_royal_hamilton_desc"
+			"team_access"		"commonwealth"
+			
+			"ItemDefId"		"908"
+			
+			"visible"			"0"
+			
+			"Character"
+			{
+				"voice"					"canadian"
+				"model"					"models/characters/british/units/player_canadian.mdl"
+				"model_cold"			"models/characters/british/units/player_canadian_alt.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_short_brit.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_brit_gloves.mdl"
+				
+				"helmet"				"models/characters/british/british_beret_canadian_hamilton.mdl"
+						
+				"bodygroups"
+				{
+					"helmet"	"0"
+					"patch"		"6"
+				}
+				
+				"class_replacements"
+				{
+					"template_british_officer"
+					{
+						"model"			"models/characters/british/units/player_canadian.mdl"
+						"model_cold"	"models/characters/british/units/player_canadian_alt.mdl"							
+					}
+					
+					"template_british_rifleman"
+					{
+						"model"			"models/characters/british/player_british_07.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_07.mdl"	
+					}
+					
+					"template_british_assault"
+					{
+						"model"			"models/characters/british/player_british_05.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_05.mdl"	
+					}
+					
+					"template_british_support"
+					{
+						"model"			"models/characters/british/player_british_02.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_02.mdl"	
+					}
+					
+					"template_british_engineer"
+					{
+						"model"			"models/characters/british/player_british_01.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_01.mdl"	
+					}
+					
+					"template_british_flamethrower"
+					{
+						"model"			"models/characters/british/player_british_06.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_06.mdl"	
+					}
+					
+					"template_british_communications"
+					{
+						"model"			"models/characters/british/player_british_03.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_03.mdl"	
+					}
+					
+					"template_british_machinegunner"
+					{
+						"model"			"models/characters/british/player_british_04.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_04.mdl"	
+					}
+					
+					"template_british_sniper"
+					{
+						"model"			"models/characters/british/player_british_08.mdl"
+						"model_cold"	"models/characters/british/player_british_alt_08.mdl"	
+					}
+				}
+			}
+		}
+	}
+}

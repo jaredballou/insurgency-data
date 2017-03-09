@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/saint_lo_tall"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

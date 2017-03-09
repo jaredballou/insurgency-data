@@ -1,0 +1,42 @@
+"#base" "default_comp.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"squads"
+			{
+				"#Comp_Squad_Security"
+				{
+					"#Squad_Fireteam_Specialist"			"template_comp_security_specialist"
+					"#Squad_Fireteam_Rifleman"				"template_comp_security_rifleman"
+					"#Squad_Fireteam_Rifleman"				"template_comp_security_rifleman"
+					"#Squad_Fireteam_Rifleman"				"template_comp_security_rifleman"
+					"#Squad_Fireteam_Breacher"				"template_comp_security_breacher"
+					"#Squad_Fireteam_Demolitions"			"template_comp_security_demolitions"
+					"#Squad_Fireteam_Support"				"template_comp_security_support"
+					"#Squad_Fireteam_Designated_Marksman" 	"template_comp_security_marksman"
+				}
+			}
+		}
+		"insurgents"
+		{
+			"squads"
+			{
+				"#Comp_Squad_Insurgents"
+				{
+					"#Squad_Cell_Specialist"		"template_comp_insurgent_specialist"
+					"#Squad_Cell_Fighter"			"template_comp_insurgent_fighter"
+					"#Squad_Cell_Fighter"			"template_comp_insurgent_fighter"
+					"#Squad_Cell_Fighter"			"template_comp_insurgent_fighter"
+					"#Squad_Cell_Sapper"			"template_comp_insurgent_sapper"
+					"#Squad_Cell_Striker"			"template_comp_insurgent_striker"
+					"#Squad_Cell_Machinegunner"		"template_comp_insurgent_machinegunner"
+					"#Squad_Cell_Sharpshooter"		"template_comp_insurgent_sharpshooter"
+				}
+			}
+		}
+	}
+}
