@@ -1,0 +1,818 @@
+"theater"
+{
+	"firesupport"
+	{
+		// =============================
+		// HIGH EXPLOSIVE ARTILLERY
+		// =============================
+		
+		"firesupport_artillery_he_axis"
+		{
+			"Params"
+			{
+				"ResponseModifiers"		"artillery:1"
+				"SupportType"			"artillery"
+				"Cooldown"				"1"
+				"MinRoundTime"			"1"
+				
+				"Weapons"
+				{
+					"Entity"				"grenade_mortar_german"
+				}
+			}
+			
+			"Radial"
+			{
+				"direction"				"NorthEast"
+				"token"					"radial_request_artillery_he"
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"Artillery_Begin"
+				"EndSound"					"Artillery_End"
+				"ReadySound"				"Artillery_Ready"
+			}
+			
+			"print_description"			"#firesupport_artillery_description"
+			"team_access"				"axis"
+		}
+		
+		"firesupport_artillery_he_allies"
+		{
+			"Params"
+			{
+				"ResponseModifiers"		"artillery:1"
+				"SupportType"			"artillery"
+				"Cooldown"				"1"
+				"MinRoundTime"			"30"
+				
+				"Weapons"
+				{
+					"Entity"				"grenade_mortar"
+				}
+			}
+	
+			"Radial"
+			{
+				"direction"				"NorthEast"
+				"token"					"radial_request_artillery_he"
+			}
+
+			"Sounds"
+			{
+				"BeginSound"				"Artillery_Begin"
+				"EndSound"					"Artillery_End"
+				"ReadySound"				"Artillery_Ready"
+			}
+			
+			"print_description"			"#firesupport_artillery_description"
+			"team_access"				"americans, commonwealth"
+		}
+		
+		// =============================
+		// SMOKE ARTILLERY
+		// =============================
+		
+		"firesupport_artillery_smoke_axis"
+		{
+			"Params"
+			{
+				"ResponseModifiers"		"smoke_artillery:1"
+				"SupportType"			"artillery"	
+				"Cooldown"				"1"
+				"MinRoundTime"			"1"
+				"MinRoundTimeAttacker"	"0"
+				
+				"Lethal"				"0"
+				
+				"Weapons"
+				{
+					"Entity"				"grenade_mortarsmoke_german"
+				}
+			}
+			
+			"Radial"
+			{
+				"direction"				"NorthWest"
+				"token"					"radial_request_artillery_smoke"
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"Artillery_BeginSmoke"
+				"EndSound"					"Artillery_EndSmoke"
+				"ReadySound"				"Artillery_Ready"
+			}
+			
+			"print_description"			"#firesupport_smokeartillery_description"
+			"team_access"				"axis"
+		}
+		
+		"firesupport_artillery_smoke_allies"
+		{
+			"Params"
+			{
+				"ResponseModifiers"		"smoke_artillery:1"
+				"SupportType"			"artillery"
+				"Cooldown"				"1"
+				"MinRoundTime"			"1"
+				"MinRoundTimeAttacker"	"0"
+				
+				"Lethal"				"0"
+									
+				"Weapons"
+				{
+					"Entity"				"grenade_mortarsmoke"
+				}
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"Artillery_BeginSmoke"
+				"EndSound"					"Artillery_EndSmoke"
+				"ReadySound"				"Artillery_Ready"
+			}
+			
+			"Radial"
+			{
+				"direction"				"NorthWest"
+				"token"					"radial_request_artillery_smoke"
+			}
+			
+			"print_description"			"#firesupport_smokeartillery_description"
+			"team_access"				"americans, commonwealth"
+		}
+		
+		// =============================
+		// GENERIC SUPPORT
+		// =============================
+
+		"firesupport_ammo_drop"
+		{
+			"CAS"
+			{
+				"SupplyPlane"
+				{
+					"Model"				"models/vehicles/aircraft_mustang.mdl"		
+					"SpawnHeight"		"400"
+					"Speed"				"150"
+					"TimeToArrive"		"8.0"
+					"FlyBySound"		"SupplyDrop.FlyOver"
+					"FireSound"			"Stuka.BombDoors"
+					"SwoopTarget"		"1"
+				}
+			}
+			
+			"Params"
+			{
+				"SupportType"			"ammo_drop"
+				"Cooldown"				"1"
+				"MinRoundTime"			"0"
+				"ResponseModifiers"		"supplydrop:1"
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"SupplyDrop_Begin"
+				"EndSound"					"SupplyDrop_End"
+				"ReadySound"				"SupplyDrop_Ready"
+			}
+			
+			"Radial"
+			{
+				"direction"				"SouthWest"
+				"token"					"radial_request_supplydrop"
+			}
+
+			"print_description"			"#firesupport_supplydrop_description"
+			"team_access"				"axis, americans, commonwealth"
+		}
+		
+		"firesupport_carpet_bomb_axis"
+		{
+			"CAS"
+			{
+				"CarpetBomber"
+				{
+					"Model"				"models/vehicles/aircraft_f4.mdl"		
+					"SpawnHeight"		"20"
+					"Speed"				"290"
+					"TimeToArrive"		"6.0"
+					"AttackDelay"		"3"
+					"FlyBySound"		"Bomber.FlyOver"
+					"FireSound"			"Bombs.Incoming"
+					"SwoopTarget"		"1"
+					
+					
+					
+					"Weapons"
+					{
+						"Bomb"
+						{
+							"NumProjectiles"		"2"
+							"Entity"				"rocket2"
+							"Spread"				"60"
+							"TimeBetweenShots"		"0.07"
+							"DistanceBetweenShots"	"440"
+						}
+					}
+				}
+				
+				
+			}
+			
+			"Params"
+			{
+				"SupportType"			"carpetbomb"
+				"Cooldown"				"1"
+				"MinRoundTime"			"1"
+				"ResponseModifiers"		"carpetbomb:1"
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"CarpetBomb_Begin"
+				"EndSound"					"CarpetBomb_End"
+				"ReadySound"				"CarpetBomb_Ready"
+			}
+			
+			"Radial"
+			{
+				"direction"				"SouthEast"
+				"token"					"radial_request_carpetbomb"
+			}
+
+			"print_description"			"#firesupport_carpetbomb_description"
+			"team_access"				"axis"
+		}
+		
+		"firesupport_napalm_bomb"
+		{
+			"CAS"
+			{
+				"CarpetBomber"
+				{
+					"Model"				"models/vehicles/aircraft_f4.mdl"		
+					"SpawnHeight"		"20"
+					"Speed"				"290"
+					"TimeToArrive"		"6.0"
+					"AttackDelay"		"3"
+					"FlyBySound"		"Bomber.FlyOver"
+					"FireSound"			"Bombs.Incoming"
+					"SwoopTarget"		"1"
+					
+					
+					
+					"Weapons"
+					{
+						"Bomb"
+						{
+							"NumProjectiles"		"2"
+							"Entity"				"bomb_napalm"
+							"Spread"				"60"
+							"TimeBetweenShots"		"0.03"
+							"DistanceBetweenShots"	"380"
+						}
+					}
+				}
+				
+				
+			}
+			
+			"Params"
+			{
+				"SupportType"			"carpetbomb"
+				"Cooldown"				"1"
+				"MinRoundTime"			"1"
+				"ResponseModifiers"		"carpetbomb:1"
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"CarpetBomb_Begin"
+				"EndSound"					"CarpetBomb_End"
+				"ReadySound"				"CarpetBomb_Ready"
+			}
+			
+			"Radial"
+			{
+				"direction"				"North"
+				"token"					"radial_request_carpetbomb"
+			}
+
+			"print_description"			"#firesupport_carpetbomb_description"
+			"team_access"				"americans, commonwealth"
+		}
+		
+		// =============================
+		// FACTION SPECIFIC
+		// =============================
+		
+		// Special faction stuff
+		"firesupport_artillery_incendiary"
+		{
+			"Params"
+			{
+				"ResponseModifiers"		"incendiary:1"
+				"SupportType"			"artillery"
+				"Cooldown"				"1"
+				"MinRoundTime"			"1"
+				
+				"Weapons"
+				{
+					"Entity"				"grenade_mortarincendiary"
+				}
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"IncendiaryArtillery_Begin"
+				"EndSound"					"IncendiaryArtillery_End"
+				"ReadySound"				"IncendiaryArtillery_Ready"
+			}
+			
+			"Radial"
+			{
+				"direction"				"North"
+				"token"					"radial_request_artillery_incendiary"
+			}
+			
+			"print_description"			"#firesupport_wpartillery_description"
+			"team_access"				"commonwealth"
+		}
+		
+		"firesupport_strafe"
+		{
+			"CAS"
+			{
+				"Mustang"
+				{
+					"Model"				"models/vehicles/aircraft_f4.mdl"
+			
+					"SpawnHeight"		"600"
+					"Speed"				"350"
+					"AttackDelay"		"2.0"
+					"TimeToArrive"		"7.5"
+					"FlyBySound"		"Mustang.FlyOver"
+					"FireSound"			"Mustang.FireGuns"
+					"MaxDotProduct"		"0.85"
+					
+					
+					
+					
+					
+					"Weapons"
+					{
+						"MachineGuns"
+						{
+							"Spread"				"200"
+							"NumProjectiles"		"140"
+							"TimeBetweenShots"		"0.02"
+							"DistanceBetweenShots"	"20"
+							"Bullet"				"bullet_strafe"			//we add a bullet to do the tracer effect
+							
+						}
+					}
+				}
+			}
+			
+			"Params"
+			{
+				"SupportType"			"cas"
+				"Cooldown"				"1"
+				"MinRoundTime"			"1"
+				"ResponseModifiers"		"cas:1"
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"StrafeRun_Begin"
+				"EndSound"					"StrafeRun_End"
+				"ReadySound"				"StrafeRun_Ready"
+			}
+
+			"Radial"
+			{
+				"direction"				"North"
+				"token"					"radial_request_strafe"
+			}
+			
+			"print_description"			"#firesupport_strafingrun_description"
+			"team_access"				"americans"
+		}
+		
+		
+		
+		"firesupport_strafe2"
+		{
+			"CAS"
+			{
+				"Mustang"
+				{
+					"Model"				"models/vehicles/aircraft_f4.mdl"
+			
+					"SpawnHeight"		"230"
+					"Speed"				"670"
+					"AttackDelay"		"6.5"
+					"TimeToArrive"		"7.5"
+					"FlyBySound"		"Mustang.FlyOver"
+					"FireSound"			"Mustang.FireGuns"
+					"MaxDotProduct"		"0.85"
+								
+					
+					
+					
+					
+					"Weapons"
+					{
+						"Bomb"
+						{
+							"NumProjectiles"		"2"
+							"Entity"				"rocket2"
+							"Spread"				"60"
+							"TimeBetweenShots"		"0.30"
+							"DistanceBetweenShots"	"150"
+							
+						}
+					}
+				}
+			}
+			
+			"Params"
+			{
+				"SupportType"			"cas"
+				"Cooldown"				"1"
+				"MinRoundTime"			"1"
+				"ResponseModifiers"		"cas:1"
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"StrafeRun_Begin"
+				"EndSound"					"StrafeRun_End"
+				"ReadySound"				"StrafeRun_Ready"
+			}
+
+			"Radial"
+			{
+				"direction"				"East"
+				"token"					"radial_request_strafe"
+			}
+			
+			"print_description"			"test"
+			"team_access"				"americans"
+		}
+		
+		
+		"firesupport_napalm_f1"
+		{
+			"CAS"
+			{
+				"Mustang"
+				{
+					"Model"				"models/vehicles/aircraft_f4.mdl"
+			
+					"SpawnHeight"		"250"
+					"Speed"				"420"
+					"AttackDelay"		"6.5"
+					"TimeToArrive"		"7.5"
+					"FlyBySound"		"Mustang.FlyOver"
+					"FireSound"			"Mustang.FireGuns"
+					"MaxDotProduct"		"0.85"
+								
+					
+					
+					
+					
+					"Weapons"
+					{
+						"Bomb"
+						{
+							"NumProjectiles"		"2"
+							"Entity"				"rocket"
+							"Spread"				"60"
+							"TimeBetweenShots"		"0.30"
+							"DistanceBetweenShots"	"150"
+							
+						}
+					}
+				}
+			}
+			
+			"Params"
+			{
+				"SupportType"			"cas"
+				"Cooldown"				"1"
+				"MinRoundTime"			"1"
+				"ResponseModifiers"		"cas:1"
+			}
+			
+			"Sounds"
+			{
+				"BeginSound"				"StrafeRun_Begin"
+				"EndSound"					"StrafeRun_End"
+				"ReadySound"				"StrafeRun_Ready"
+			}
+
+			"Radial"
+			{
+				"direction"				"West"
+				"token"					"radial_request_strafe"
+			}
+			
+			"print_description"			"test"
+			"team_access"				"americans"
+		}
+		"firesupport_stuka"
+		{
+			"CAS"
+			{
+				"Stuka"
+				{
+					"Model"				"models/vehicles/aircraft_f4.mdl"
+							
+					"SpawnHeight"		"3400"
+					"Speed"				"350"
+					"TimeToArrive"		"16.0"
+					"AttackDelay"		"15.0"
+					"FlyBySound"		"Stuka.FlyOver"
+					"FireSound"			"Stuka.BombDoors"
+					
+					"Weapons"
+					{
+						"Bomb"
+						{
+							"NumProjectiles"		"2"
+							"Entity"				"rocket2"
+							"Spread"				"60"
+							"TimeBetweenShots"		"0.30"
+							"DistanceBetweenShots"	"150"
+						}
+					}
+				}
+			}
+			
+			"Params"
+			{
+				"SupportType"			"cas"
+				"MinRoundTime"			"1"
+				"Cooldown"				"1"
+				"ResponseModifiers"		"cas:1"
+			}
+			
+			"Radial"
+			{
+				"direction"				"North"
+				"token"					"radial_request_stuka"
+			}
+
+			"Sounds"
+			{
+				"BeginSound"				"StukaDiveBomb_Begin"
+				"EndSound"					"StukaDiveBomb_End"
+				"ReadySound"				"StukaDiveBomb_Ready"
+			}
+			
+			"print_description"			"#firesupport_stuka_description"
+			"team_access"				"axis"
+		}
+		
+	}
+	
+	"ammo"
+	{
+		"bullet_strafe"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"200"
+				"8000"					"200"
+			}
+			"PenetrationPower"
+			{
+				"10"					"1900"
+				"8000"					"1300"
+			}
+
+		
+			"splash_radius"				"420"
+			"splash_damage"				"0.55" // modifier of bullet (line) damage
+
+			"custom_impact"				"ImpactAircraftMG"
+			
+			"damageType"				"DMG_BLAST"
+		}
+	}
+	
+	"explosives"
+	{
+		"rocket_strafe" 
+		{
+			"entity_class"				"rocket"
+			"Model"					"models/vehicles/plane_bomb.mdl"
+			"DetonateDamage"			"500"
+			"DetonateDamageRadius"		"1600"
+			"DetonatePenetrationRadius"	"500"
+			
+			"RocketTopSpeed"			"4400"
+			"RocketStartSpeed"			"500"
+			"RocketAcceleration"		"400"
+			"RocketWobble"				"0"
+			"RocketWobbleFrequency"		"1.0"
+			
+			"Health"					"50"
+			"ReactExplosions"			"1"
+			"ReactBullets"				"0"
+			"ImpactDetonation"				"1"
+			"ShakeAmplitude"			"2200"
+			"ShakeFrequency"			"140"
+			"ShakeDuration"				"2"
+			"ShakeRadius"				"3000"
+			
+			
+			"Particles"
+			{
+				"DetonateParticle"			"aaa_napalm"
+				"DetonateWaterParticle"		"ins_water_explosion"
+				"TrailParticle"				"grenadetrail"
+			}
+			"Sounds"
+			{
+				"DetonateSound"			"Weapon_Bazooka.Explode"
+				"DetonateWaterSound"	"Weapon_Bazooka.ExplodeWater"			
+				"LaunchSound"			"Weapon_Bazooka.Loop"
+			}
+		}
+		
+		
+		
+			
+		// Actually a rocket!
+		
+		"bomb_napalm" 
+		{
+			"import"				"baseGrenade"
+			"entity_class"				"grenade_aoe"
+			"Model"					"models/vehicles/plane_bomb.mdl"
+			"DetonateDamage"			"250"
+			"DetonatePenetrationRadius"		"90"
+			"DetonateDamageRadius"			"1500"
+			"FuseTime"				"0"
+			"ImpactDetonation"			"1"
+			
+			"RocketStartSpeed"			"2000"
+			"ShakeAmplitude"			"0"
+			"UseVPhysics"				"0"
+			
+			"Elasticity"				"0.0"
+			
+			
+			"AreaDamageTime"			"28"
+			"AreaDamageFrequency"			"0.44"
+			"AreaDamageMinRadius"			"240"
+			"AreaDamageMaxRadius"			"260"
+			"AreaDamageGrowSpeed"			"9"
+			"AreaDamageAmount"			"17"
+			
+			"Health"				"50"
+			"ReactExplosions"			"1"
+			"ReactBullets"				"1"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"a_napalm_bomb"
+				"DetonateWaterParticle"			"a_napalm_bomb"
+				"FollowOrigin"				"1"
+				"BroadcastAll"				"1"
+				
+			}
+			
+			
+			"Sounds"
+			{
+				"DetonateSound"				"Napalm.Burn"
+				"BounceSound"				"Weapon_M67.Bounce"
+			}
+		}
+		
+		"rocket" 
+		{
+			"entity_class"				"rocket"
+			"Model"					"models/vehicles/plane_bomb.mdl"
+			"DetonateDamage"			"500"
+			"DetonateDamageRadius"		"1600"
+			"DetonatePenetrationRadius"	"500"
+			
+			"RocketTopSpeed"			"4400"
+			"RocketStartSpeed"			"1200"
+			"RocketAcceleration"		"400"
+			"RocketWobble"				"0"
+			"RocketWobbleFrequency"		"1.0"
+			
+			"Health"					"50"
+			"ReactExplosions"			"1"
+			"ReactBullets"				"0"
+			"ImpactDetonation"				"1"
+			"ShakeAmplitude"			"2200"
+			"ShakeFrequency"			"140"
+			"ShakeDuration"				"2"
+			"ShakeRadius"				"3000"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"aaa_napalm"
+				"DetonateWaterParticle" "ins_water_explosion"
+				"TrailParticle"			"rockettrail"
+				"BackblastParticle"		"ins_weapon_rpg_backblast"
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"StukaBomb.Explode"
+				"DetonateWaterSound"		"StukaBomb.ExplodeWater"
+				"BounceSound"				"Stuka.BombDoors"
+			}
+		}
+		
+		"bomb_stuka" 
+		{
+			"entity_class"				"rocket"
+			"Model"						"models/vehicles/plane_bomb.mdl"
+			"DetonateDamage"			"500"
+			"DetonateDamageRadius"		"1600"
+			"DetonatePenetrationRadius"	"500"
+			
+			"RocketTopSpeed"			"2400"
+			"RocketStartSpeed"			"1200"
+			"RocketAcceleration"		"400"
+			"RocketWobble"				"0"
+			"RocketWobbleFrequency"		"1.0"
+			
+			"Health"					"50"
+			"ReactExplosions"			"1"
+			"ReactBullets"				"0"
+			"ImpactDetonation"				"1"
+			"ShakeAmplitude"			"2200"
+			"ShakeFrequency"			"140"
+			"ShakeDuration"				"2"
+			"ShakeRadius"				"3000"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"aaa_napalm"
+				"DetonateWaterParticle"		"ins_water_explosion"
+				"TrailParticle"				"grenadetrail"
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"StukaBomb.Explode"
+				"DetonateWaterSound"		"StukaBomb.ExplodeWater"
+				"BounceSound"				"Stuka.BombDoors"
+			}
+		}
+		
+		// 
+		"bomb_carpetbomb" 
+		{
+			"import"					"artillery_base"
+			"entity_class"				"grenade_mortar"
+			"Model"						"models/vehicles/plane_cbomb.mdl"
+			
+			"DetonateDamage"			"180"
+			"DetonateDamageRadius"		"800"
+			"DetonatePenetrationRadius"	"240"
+			"FuseTime"					"0"
+			"ImpactDetonation"			"1"
+			"ArmDelay"					"0.0"
+			
+			"Health"					"50"
+			"ReactExplosions"			"1"
+			"ReactBullets"				"0"
+
+			"ShakeAmplitude"			"250"
+			"ShakeFrequency"			"120"
+			"ShakeDuration"				"2"
+			"ShakeRadius"				"1600"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"doi_artillery_explosion"
+				"DetonateWaterParticle"		"ins_water_explosion"
+				"TrailParticle"				"grenadetrail"
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"Carpetbomb.Explode"
+				"DetonateWaterSound"		"Artillery.ExplodeWater"
+				"LaunchSound"				""
+				"BounceSound"				""
+			}
+		}
+
+	}
+}

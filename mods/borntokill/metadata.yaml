@@ -1,0 +1,15 @@
+---
+name: Born to Kill
+desc: Vietnam Mod
+author: Spycer42 and Komissar
+base: doi
+steamid: 
+url: 
+email: 
+workshop:
+  files:
+    - 881437908
+  collections:
+# List of maps that are affiliated with this mod
+maps:
+  - khe_sanh

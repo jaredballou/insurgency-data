@@ -1,0 +1,1230 @@
+"#base" "nam_player.theater"
+"#base" "nam_gear.theater"
+"#base" "nam_weapon.theater"
+"#base" "nam_weapon_upgrades.theater"
+"#base"	"nam_firesupport.theater"
+"#base"	"nam_unlocks.theater"
+"#base" "nam_weapon_american.theater"
+"#base" "nam_weapon_german.theater"
+"#base" "nam_weapon_commonwealth.theater"
+
+"theater"
+{
+	"core"
+	{
+		"precache"
+		{
+			// default audio
+			"sounds"			"scripts/ins_sounds_weapons.txt"		
+			
+			// HQ SUPPORT
+			"sounds"			"scripts/audio/doi_sounds_hq_american_support.txt"		
+			"sounds"			"scripts/audio/doi_sounds_hq_commonwealth_support.txt"	
+		
+			
+			// Co-op
+			"sounds"			"scripts/audio/doi_sounds_voice_coop.txt"	
+
+			// Units		
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_canadian.txt"		
+			"sounds"         "scripts/audio/doi_sounds_unit_responses_canadian.txt"		
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_canadian.txt"
+			
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_africanamerican.txt"		
+			"sounds"         "scripts/audio/doi_sounds_unit_responses_africanamerican.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_africanamerican.txt"	
+			
+			"sounds"			"scripts/nam_sounds_unit_radial_indian.txt"		
+			"sounds"         "scripts/nam_sounds_unit_responses_indian.txt"	
+			"sounds"			"scripts/nam_sounds_unit_hq_indian.txt"	
+			
+			
+
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_scottish.txt"		
+			"sounds"         "scripts/audio/doi_sounds_unit_responses_scottish.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_scottish.txt"		
+
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_english.txt"		
+			"sounds"         "scripts/audio/doi_sounds_unit_responses_english.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_english.txt"		
+
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_american_01.txt"		
+			"sounds"         "scripts/audio/doi_sounds_unit_responses_american_01.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_american_01.txt"			
+			
+			// custom audio
+            "sounds"			"scripts/audio/doi_sounds_weapons.txt"
+            "sounds"			"scripts/audio/doi_sounds_world.txt"	
+            "sounds"			"scripts/audio/doi_sounds_cues.txt"							
+			
+			
+			// localization
+			"localize"       	"resource/doi_%language%.txt"
+			"localize"       	"resource/doi_menu_%language%.txt"
+			
+			// custom particles
+			"particles"			"particles/doi_weapon_fx.pcf"
+			"particles"			"particles/doi_explosion_fx.pcf"
+			"particles"			"particles/doi_explosion_fx_c.pcf"
+			"particles"			"particles/doi_explosions_smoke.pcf"
+			"particles"			"particles/doi_explosion_fx_b.pcf"
+			"particles"			"particles/doi_destructible_fx.pcf"
+			"particles"			"particles/doi_explosion_fx_new.pcf"
+			"particles"			"particles/doi_explosion_fx_grenade.pcf"
+			
+			
+			
+
+			//btk==============================================================================
+			
+			"sounds"			"scripts/nam_sounds_weapons.txt"
+			"sounds"			"scripts/nam_sounds_cues.txt"
+			"sounds"			"scripts/nam_sounds_voice.txt"
+			
+			
+			
+			"particles"			"particles/grenade_wp.pcf"
+			"particles"			"particles/napalm.pcf"
+			"particles"			"particles/napalm_bomb.pcf"
+			"localize"       	"resource/nam_%language%.txt"
+			"localize"       	"resource/nam_menu_%language%.txt"
+		}
+	}
+	
+	"teams"
+	{		
+		"axis"
+		{
+			"name"					"#nva"
+			"logo"					"gameui/fac_nva"
+			
+			"music"
+			{
+				"round_victory"		"Music.WonRound_Nva"
+				"round_defeat"		"Music.LostRound_Nva"
+				"game_victory"		"Music.WonRound_Nva"
+				"game_defeat"		"Music.LostRound_Nva"
+			}
+			
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+				}
+			}
+		}
+		
+		"americans"
+		{
+			
+			"name"					"#us"
+			"logo"					"gameui/fac_us"
+			
+			"music"
+			{
+				"round_victory"		"Music.WonRound_Usa"
+				"round_defeat"		"Music.LostRound_Usa"
+				"game_victory"		"Music.WonRound_Usa"
+				"game_defeat"		"Music.LostRound_Usa"
+			}
+		
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+				}
+			}
+		}
+		
+		"commonwealth"
+		{
+			"name"					"#faction_commonwealth"
+			"logo"					"gameui/faction_commonwealth_army"
+		
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+				}
+			}
+		}
+	}
+	
+	"player_templates"
+	{		
+		"template_american_officer"
+		{
+			"print_name"				"#officer"
+			"print_attribute"			"#class_officer_attribute"
+			"print_description"			"#class_officer_description"
+			"response_rules_key"		"american01"
+			"squad_leader"				"1"
+			"icon"						"officer_americans"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_standard_long.mdl"
+				
+				
+			}
+			
+			"buy_order"
+			{
+				
+				
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_nam_m607"  
+				"weapon"				"weapon_nam_python"  
+				"weapon_upgrade"       "magazine_extended_m607_30rd"
+				"gear" "us_lightkit"
+			
+				
+				
+				"weapon"				"weapon_binoculars_american"
+				
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m16a1"   
+				"weapon"				"weapon_nam_m67"  
+				"weapon"				"weapon_nam_m26a2"
+				"weapon"                "weapon_nam_python"
+				"weapon"                "weapon_nam_mac10"
+				"weapon"                "weapon_nam_m14"
+				"weapon"                "weapon_nam_m607"
+				"weapon"               "weapon_nam_m34"
+				"weapon"                "weapon_nam_sw39"
+				
+			
+				
+				"weapon_upgrade"   "optic_scope_m16a1"
+				"weapon_upgrade"      "underbarrel_m203_nam_he"
+				"weapon_upgrade"       "underbarrel_m203_nam_smoke"
+				"weapon"				"weapon_binoculars_american"
+			}
+			
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_nam_m14"	"-2"
+					"weapon_nam_m16a1"	"-2"
+					"weapon_nam_m607"	"-2"
+					"weapon_nam_m1911"	"-2"
+					
+					"weapon_nam_browninghp"	"-2"
+				}
+				
+				"gear"
+				{
+				        "jeans_sec" "-1"
+						"jeans_ins" "-1"
+						"sunglasses" "-1"
+				}
+			}
+			
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					
+					"speed_sprint"				"275"
+				}
+			}
+			
+		}
+		
+		
+	
+		"template_german_officer"
+		{
+			"print_name"			"#officer"
+			"print_attribute"		"#class_officer_attribute"
+			"print_description"		"#class_officer_description"
+			"response_rules_key"	"german01"
+			"squad_leader"			"1"
+			"icon"					"officer_germans"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player_tan.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+					"pouches"				"1"
+				}	
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_akm"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_binoculars_german"
+				"weapon"     "weapon_nam_rgd5"
+				"gear"  "ins_lightkit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_akm"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_rgd5"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nambu"
+				
+				
+	
+				"weapon"				"weapon_nam_makarov"
+				"weapon"                "weapon_nam_vz61"
+				"weapon"                "weapon_nam_vz58"
+				"weapon"               "weapon_nam_svt40"
+				"weapon"                "weapon_nam_stg44"
+				"weapon"                "weapon_nam_akms"
+			    "weapon"                "weapon_molotov"
+				"weapon"           "weapon_nam_sks"
+				"weapon_upgrade"		"optic_scope_pu"
+				"weapon"				"weapon_binoculars_german"
+				
+				
+				
+			}
+			
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_nam_akm"	"-2"
+					"weapon_nam_vz58"	"-2"
+					 "weapon_nam_svt40"	"-2"
+					"weapon_nam_stg44"	"-2"
+					"weapon_nam_makarov" "-1"
+					"weapon_tokarev" "-1"
+					 "weapon_nam_akms"	"-2"
+					  "weapon_nam_sks" "-2"
+				}
+				
+			}
+			
+		}
+		
+		"template_american_communications"
+		{
+			"print_name"				"#us_radio"
+			"print_attribute"			"#class_communications_attribute"
+			"print_description"			"#class_communications_description"
+			"response_rules_key"		"american01"
+			"icon"						"communications"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_standard_long.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"                "weapon_nam_m14"
+				"weapon"    "weapon_nam_m18"
+				"weapon"    "weapon_nam_m18"
+				"weapon" "weapon_nam_m1911"
+				"gear"					"gear_radio"
+				"gear"                "us_heavykit"
+				
+			
+			}
+			"locked_gear_slots"			"backpack"
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m16a1"   
+				"weapon"				"weapon_nam_m67"  
+				"weapon"                "weapon_nam_m14"
+				"weapon"				"weapon_nam_m1garand"  
+
+				"weapon"				"weapon_binoculars_american"
+				"gear"					"gear_radio"
+			}
+			
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					
+					"speed_sprint"				"275"
+				}
+			}
+			
+		}
+
+		
+
+		"template_german_communications"
+		{
+			"print_name"			"#nva_radio"
+			"print_attribute"		"#class_communications_attribute"
+			"print_description"		"#class_communications_description"
+			"response_rules_key"	"german01"
+			"icon"					"communications"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player_tan.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+					"pouches"				"1"
+				}	
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_akm"
+				"gear"					"gear_radio_german"
+				"gear"     "ins_heavykit"
+			}
+			"locked_gear_slots"			"backpack"
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_akm"
+				"weapon"				"weapon_nam_svt40"
+				"weapon"				"weapon_nam_sks"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_makarov"
+				"weapon"				"weapon_nam_rdg1"
+				"weapon"				"weapon_nam_f1"
+				"weapon"				"weapon_nam_m24"
+				"weapon"				"weapon_binoculars_german"
+				"gear"					"gear_radio_german"
+			}
+			
+		}
+		
+		"template_american_rifleman"
+		{
+			"print_name"				"#grunt"
+			"print_attribute"			"#class_rifleman_attribute"
+			"print_description"			"#class_rifleman_description"
+			"response_rules_key"		"american01"
+			"icon"						"rifleman"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_standard_long.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				 "weapon_nam_m16a1"
+				"weapon"				"weapon_nam_m1911"
+				"weapon"          "weapon_nam_m26"
+				
+				
+				"gear"            "us_heavykit"
+
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m16a1"   
+				"weapon"                 "weapon_nam_m1garand"
+				"weapon"               "weapon_nam_m14"
+				"gear"					"gear_radio"
+			}
+			
+
+			"player_settings_mods"
+			{
+				"stamina"
+				{
+					"StaminaMaxByWeight"
+					{
+						"30"					"140"
+						"200"					"60"
+					}
+
+					"stamina_regain"				"2.75"
+					"stamina_regain_crouched"		"5.50"
+					"stamina_regain_prone"			"8.00"
+					
+				}
+				
+				"speed"
+				{
+					
+					"speed_sprint"				"270"
+				}
+				
+				
+			}
+			
+			"cost_modifiers"
+			{
+				"gear"
+				{
+				        "nva_foliage" "1"
+				}
+			}
+		}
+		
+		
+		
+		"template_german_rifleman"
+		{
+			"print_name"			"#guerilla"
+			"print_attribute"		"#class_rifleman_attribute"
+			"print_description"		"#class_rifleman_description"
+			"response_rules_key"	"german01"
+			"icon"					"rifleman"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player_tan.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+					"pouches"				"0"
+				}			
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_akbayonet"
+				"weapon"        "weapon_nam_sks"
+				"weapon" "weapon_nam_f1"
+				"weapon" "weapon_nam_f1"
+				"gear"  "ins_heavykit"
+				"weapon" "weapon_tokarev"
+
+			}
+			"allowed_items"
+			{
+				
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"               "weapon_nam_svt40"
+				"weapon"     "weapon_nam_akm"
+				"weapon"               "weapon_nam_mosin"
+				"weapon"           "weapon_nam_sks"
+				"gear"					"gear_radio_german"
+			}
+			
+
+			"player_settings_mods"
+			{
+				"stamina"
+				{
+					"StaminaMaxByWeight"
+					{
+						"30"					"140"
+						"200"					"60"
+					}
+
+					"stamina_regain"				"2.75"
+					"stamina_regain_crouched"		"5.50"
+					"stamina_regain_prone"			"8.00"
+				}
+			}
+		}
+		
+		"template_american_assault"
+		{
+			"print_name"				"#pointman"
+			"print_attribute"			"#class_assault_attribute"
+			"print_description"			"#class_pointman_description"
+			"response_rules_key"		"american01"
+			"icon"						"assault"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_standard_long.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_nam_m14"  
+				"weapon_upgrade"           "optic_scope_m84"
+				"weapon"				"weapon_nam_m1911" 
+				"weapon"   "weapon_nam_m67"
+				
+				"gear"            "us_chestrig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m16a1"   
+		        "weapon"                 "weapon_nam_m1garand"
+				"weapon"                    "weapon_nam_m14"
+				"weapon"          "weapon_nam_python"
+				
+				"weapon_upgrade"        "optic_scope_m84"
+				"gear"          "us_helmet_camo"
+				"weapon_upgrade"   "optic_scope_m16a1"
+				"weapon_upgrade"         "barrel_silencer_m16"
+				"gear"					"gear_radio"
+			}
+			
+
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					"frac_side_move"			"0.85"
+					"frac_side_step"			"0.85"
+					"speed_crouch_run"			"120"
+					"speed_run"					"185"
+					"speed_sprint"				"300"
+				}
+			}
+		}
+		
+		
+		
+		"template_german_assault"
+		{
+			"print_name"			"#scout"
+			"print_attribute"		"#class_assault_attribute"
+			"print_description"		"#class_assault_description"
+			"response_rules_key"	"german01"
+			"icon"						"assault"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player_tan.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+					"pouches"				"1"
+				}							
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_akbayonet"
+				"weapon"               "weapon_nam_ppsh41"
+				"weapon_upgrade"           "magazine_extended_ppsh41"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"gear"   "ins_chestrig"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"				"weapon_nam_rgd5"
+				"weapon"                "weapon_nambu"
+				"weapon"                "weapon_nam_mat49"
+				"weapon"                 "weapon_nam_ppsh41"
+				"weapon"                 "weapon_nam_vz61"
+				"weapon"                  "weapon_nam_m1carbine_nva"   
+				
+				 "weapon"                "weapon_molotov"
+				 "weapon"           "weapon_nam_izh43"    
+				 "weapon"            "weapon_nam_thompson_m1a1"
+				"gear"					"gear_radio_german"
+			}
+			
+
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					"frac_side_move"			"0.95"
+					"frac_side_step"			"0.95"
+					"speed_crouch_run"			"130"
+					"speed_run"					"195"
+					"speed_sprint"				"330"
+				}
+			}
+		}
+		
+		"template_american_support"
+		{
+			"print_name"				"#us_support"
+			"print_attribute"			"#class_support_attribute"
+			"print_description"			"#class_support_description"
+			"response_rules_key"		"american01"
+			"icon"						"support"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_standard_long.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"               "weapon_nam_bar"
+				"weapon"           "weapon_nam_mac10"
+				"gear"         "us_lightkit"
+				
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_bar"
+			"weapon"				"weapon_binoculars_american"
+				"weapon"				"weapon_nam_m14"
+				"weapon"				"weapon_nam_python"
+				"weapon"				"weapon_nam_mac10"
+				
+			}
+			
+			"cost_modifiers"
+			{
+				
+				"gear"
+				{
+					"us_ammopouch"			"-1"
+					"us_chestrig"			"-1"
+					"us_lightkit"			"-2"
+					"us_heavykit"			"-2"
+				}
+			}
+			
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					
+					"speed_sprint"				"275"
+				}
+			}
+			
+			
+
+			
+		}
+		
+		
+		
+		"template_german_support"
+		{
+			"print_name"				"#nva_support"
+			"print_attribute"			"#class_support_attribute"
+			"print_description"			"#class_support_description"
+			"response_rules_key"		"german01"
+			"icon"						"support"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player_tan.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+					"pouches"				"1"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_rpk"
+				"weapon"       "weapon_tokarev"
+				"weapon"       "weapon_nam_f1"
+				"weapon"       "weapon_nam_rdg1"
+				"gear"          "ins_heavykit"
+		
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_rpk"	
+				"weapon"				"weapon_nam_bren_mk2"
+				"weapon"				"weapon_nam_akm"	
+				"weapon"				"weapon_nam_vz58"
+				"weapon"				"weapon_nam_bar"
+				"weapon"				"weapon_binoculars_german"
+			}
+			
+			"cost_modifiers"
+			{
+				
+				"gear"
+				{
+					"ins_ammopouch"			"-1"
+					"ins_chestrig"			"-1"
+					"ins_lightkit"			"-2"
+					"ins_heavykit"			"-2"
+				}
+			}
+		
+
+			
+		}
+		
+		"template_american_machinegunner"
+		{
+			"print_name"				"#gunner"
+			"print_attribute"			"#class_machinegunner_attribute"
+			"print_description"			"#class_machinegunner_description"
+			"response_rules_key"		"american01"
+			"icon"						"machinegunner"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_standard_long.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_nam_m60"
+				"weapon"       "weapon_nam_m1911"
+				"gear"  "us_heavykit"
+				
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_m60"
+				"weapon"				"weapon_nam_m1919"
+				"weapon"          "weapon_nam_python"
+				"weapon"                "weapon_binoculars_american"
+			}
+			
+			
+			"player_settings_mods"
+			{				
+				"suppression"
+				{
+					"suppression_resistance"		"0.35"
+					"suppression_recovery_rate"		"40"
+					"speed_sprint"				"275"
+				}
+				
+				"speed"
+				{
+					
+					"speed_sprint"				"275"
+				}
+			}
+			
+		}
+		
+		
+		
+		"template_german_machinegunner"
+		{
+			"print_name"			"#machinegunner"
+			"print_attribute"		"#class_machinegunner_attribute"
+			"print_description"		"#class_machinegunner_description"
+			"response_rules_key"	"german01"
+			"icon"					"machinegunner"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player_tan.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+					"pouches"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_rpk"
+				"gear" "ins_heavykit"
+
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_rpk"
+				"weapon"				"nam_weapon_mg34"
+				"weapon"				"weapon_nam_mg42"
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				
+			}
+			
+			"player_settings_mods"
+			{				
+				"suppression"
+				{
+					"suppression_resistance"		"0.35"
+					"suppression_recovery_rate"		"40"
+				}
+			}
+			
+		}
+		
+		"template_american_sniper"
+		{
+			"print_name"				"#marksman"
+			"print_attribute"			"#class_sniper_attribute"
+			"print_description"			"#class_sniper_description"
+			"response_rules_key"		"american01"
+			"icon"						"sniper"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_standard_long.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"                "weapon_nam_m40a1"
+				"weapon_upgrade"       "optic_scope_9x"
+				"weapon"                "weapon_nam_python"
+				
+				"gear"      "us_lightkit"
+				
+			}
+			"allowed_items"
+			{
+				"weapon"                "weapon_nam_python"
+				"weapon"                "weapon_nam_mac10"
+				"weapon"                "weapon_nam_springfield"
+				"weapon"                "weapon_nam_m40a1"
+				"weapon"                 "weapon_nam_m1garand"
+				"weapon"               "weapon_nam_m14"
+				"weapon_upgrade"       "optic_scope_9x"
+				"weapon_upgrade"        "optic_scope_m84"
+			}
+			
+
+			"player_settings_mods"
+			{
+				"focus"
+				{
+					"FocusTimeStamina"
+					{
+						"0"					"3.0"
+						"100"				"8.0"
+					}
+				}
+			}
+		}
+		
+		
+		
+		"template_german_sniper"
+		{
+			"print_name"			"#sharpshooter"
+			"print_attribute"		"#class_sniper_attribute"
+			"print_description"		"#class_sniper_description"
+			"response_rules_key"	"german01"
+			"icon"					"sniper"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player_tan.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+					"pouches"				"1"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_akbayonet"
+				"weapon"               "weapon_nam_mosin"
+				"weapon_upgrade"		"optic_scope_pe"
+			
+			}
+			"allowed_items"
+			{
+
+		
+				"weapon"				"weapon_tokarev"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				
+				"weapon"                "weapon_nam_vz61"
+				"weapon"               "weapon_nam_svt40"
+				"weapon"              "weapon_nam_g43"
+				"weapon"               "weapon_nam_mosin"
+				"weapon"             "weapon_nam_svd"
+				"weapon"           "weapon_nam_sks"
+				
+				"weapon_upgrade"		"optic_scope_pu"
+				"weapon_upgrade"		"optic_scope_zf39"
+				"weapon_upgrade"		"optic_scope_zf4"
+				"weapon_upgrade"		"optic_scope_pe"
+			}
+			
+
+			"player_settings_mods"
+			{
+				"focus"
+				{
+					"FocusTimeStamina"
+					{
+						"0"					"3.0"
+						"100"				"7.0"
+					}
+				}
+			}
+			
+			"cost_modifiers"
+			{
+				"gear"
+				{
+				        "nva_foliage" "-2"
+				}
+			}
+		}
+		
+		"template_american_engineer"
+		{
+			"print_name"				"#engineer"
+			"print_attribute"			"#class_engineer_attribute"
+			"print_description"			"#class_engineer_description"
+			"response_rules_key"		"american01"
+			"icon"						"engineer"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_standard_long.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+				}				
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"                "weapon_nam_m3greasegun"
+				"weapon"       "weapon_nam_m79"
+				"gear"         "us_heavykit"
+				
+			}
+			"allowed_items"
+			{
+				"weapon"                "weapon_nam_m3greasegun"
+				"weapon"         "weapon_nam_m79"
+					"weapon"         "weapon_nam_m79_smoke"
+				"weapon"                 "weapon_nam_thompson_m1928a1"
+				"weapon"                "weapon_nam_m1carbine"
+				"weapon"                "weapon_nam_ithaca37"
+				"weapon"                "weapon_nam_m1912"
+				"weapon"                  "weapon_nam_stevens620"
+				"weapon"                 "weapon_tnt"
+				"weapon"                 "weapon_law"
+			
+				"weapon"         "weapon_nam_python"
+			    "weapon"             "weapon_thompson_m1928a1"
+			}
+			
+
+			"player_settings_mods"
+			{
+				"weight"
+				{
+					"min_weight"				"60"
+					"max_weight"				"420"
+				}
+				
+				"speed"
+				{
+					
+					"speed_sprint"				"275"
+				}
+			}
+		}
+		
+		
+		
+		"template_german_engineer"
+		{
+			"print_name"				"#sapper"
+			"print_attribute"			"#class_engineer_attribute"
+			"print_description"			"#class_engineer_description"
+			"response_rules_key"		"german01"
+			"icon"						"engineer"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player_tan.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+					
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_akbayonet"
+				"weapon"                "weapon_nam_mat49"
+				"weapon"				"weapon_nam_f1"
+				"gear"         "ins_heavykit"
+				
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_tokarev"
+				
+				"weapon"				"weapon_geballteladung"
+				"weapon"				"weapon_nam_f1"
+				"weapon"                "weapon_nam_model10nva"
+				"weapon"                "weapon_nambu"
+				"weapon"          "weapon_nam_rpg7"
+				
+				
+				"weapon"                "weapon_nam_mat49"
+				"weapon"                 "weapon_nam_ppsh41"
+				"weapon"               "weapon_hafthohlladung"
+				"weapon"               "weapon_nam_izh43"    
+			}
+			
+
+			"player_settings_mods"
+			{
+				"weight"
+				{
+					"min_weight"				"60"
+					"max_weight"				"420"
+				}
+			}
+		}
+		
+		"template_american_flamethrower"
+		{
+			"print_name"				"#class_american_flamethrower"
+			"print_attribute"			"#class_flamethrower_attribute"
+			"print_description"			"#class_flamethrower_description"
+			"response_rules_key"		"american01"
+			"icon"						"flamethrower"
+			
+			"models"
+			{
+				"player"				"models/characters/nam/us_standard_long.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+				}				
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_flamethrower_american"
+				"gear"					"gear_fuel_tank_american"
+				"gear"      "us_lightkit"
+				"weapon"   "weapon_nam_m1911"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_flamethrower_american"
+				"weapon"				"weapon_nam_python"
+				"gear"					"gear_fuel_tank_american"
+			}
+			
+
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					"frac_side_move"			"0.75"
+					"frac_side_step"			"0.75"
+					"speed_crouch_run"			"100"
+					"speed_run"					"160"
+					"speed_sprint"				"220"
+				}
+			}
+		}
+
+		
+
+	
+		
+		"template_german_general"
+		{
+			"print_name"			"#officer"
+			"response_rules_key"	"german01"
+			"squad_leader"			"1"
+			"icon"					"officer_german"	
+			
+			"models"
+			{
+				"player"				"models/characters/nam/nva_player_tan.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"back"				"0"
+					"pouches"				"1"
+				}	
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_akbayonet"
+				"weapon"				"weapon_nam_makarov"
+				"weapon"				"weapon_nam_f1"
+				"weapon"				"weapon_binoculars_german"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_nam_makarov"
+				"weapon"				"weapon_binoculars_german"
+			}
+			
+		}
+	}
+}
+
+"#base"	"default_coop_classes.theater"

@@ -1,0 +1,797 @@
+"theater"
+{
+	"unlocks"
+	{		
+		"unlock_cosmetic_m1carbine_para"
+		{
+			"type"			"cosmetic_weapon"
+			
+			"inventory"
+			{
+				"replacements"
+				{
+					"weapon_m1carbine"		"cosmetic_m1carbine_para"
+				}
+			}
+		}
+		
+		"unlock_cosmetic_m1garand_worn"
+		{
+			"type"			"cosmetic_weapon"
+			
+			"inventory"
+			{
+				"replacements"
+				{
+					"weapon_m1garand"		"cosmetic_m1garand_worn"
+				}
+			}
+		}
+	
+		
+		
+		
+		//NVA Default
+		"unit_nva"
+		{
+			"printname"				"#unit_nva"
+			"print_description"		"#unit_nva_desc"
+
+			"team_access"	"axis"
+			
+			"ItemDefId"		"902"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"indian"
+				"model"					"models/characters/nam/nva_player_tan.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_ger_gloves.mdl"
+				"helmet"				"models/characters/nam/nva_helmet_tan.mdl"
+
+				"bodygroups"
+				{
+					"helmet"	"1"
+				}
+				
+				"class_replacements"
+				{
+					//COOP
+					"template_german_general"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+						"helmet"				"models/characters/nam/nva_cap.mdl"
+						
+						"bodygroups"
+						{
+							"helmet"	"3"
+						}
+					}
+				
+					//MP
+					"template_german_officer"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+						"helmet"				"models/characters/nam/nva_cap.mdl"
+						
+						"bodygroups"
+						{
+							"helmet"	"3"
+						}
+					}
+					
+					"template_german_rifleman"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+					}
+					
+					"template_german_assault"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+					}
+					
+					"template_german_support"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+					}
+					
+					"template_german_engineer"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+					}
+									
+					"template_german_flamethrower"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+					}
+					
+					"template_german_communications"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+					}
+					
+					"template_german_machinegunner"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+					}
+					
+					"template_german_sniper"
+					{
+						"model"			"models/characters/nam/nva_player_tan.mdl"
+						"helmet"				"models/characters/nam/blank.mdl"
+						"bodygroups"
+						{
+							"helmet"	"6"
+						}
+					}
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		"unit_nva_vietcong"
+		{
+			"printname"				"#unit_vietcong"
+			"print_description"		"#unit_vietcong_desc"
+
+			"team_access"	"axis"
+			
+			"ItemDefId"		"2006"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"indian"
+				"model"					"models/characters/nam/nva_player_black.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_ger_gloves.mdl"
+				"helmet"				"models/characters/nam/nva_ricehat.mdl"
+
+				"bodygroups"
+				{
+					"helmet"	"5"
+				}
+				
+				"class_replacements"
+				{
+					//COOP
+					"template_german_general"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+						"helmet"				"models/characters/nam/nva_boonie.mdl"
+						"bodygroups"
+						{
+							"helmet"	"2"
+						}
+					}
+				
+					//MP
+					"template_german_officer"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+						"helmet"				"models/characters/nam/nva_boonie.mdl"
+						"bodygroups"
+						{
+							"helmet"	"2"
+						}
+					}
+					
+					"template_german_rifleman"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+					}
+					
+					"template_german_assault"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+						"helmet"				"models/characters/nam/blank.mdl"
+						"bodygroups"
+						{
+							"helmet"	"4"
+						}
+					}
+					
+					"template_german_support"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+						"helmet"				"models/characters/nam/nva_boonie.mdl"
+						"bodygroups"
+						{
+							"helmet"	"2"
+						}
+						
+					}
+					
+					"template_german_engineer"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+					}
+									
+					"template_german_flamethrower"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+					}
+					
+					"template_german_communications"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+					}
+					
+					"template_german_machinegunner"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+					}
+					
+					"template_german_sniper"
+					{
+						"model"			"models/characters/nam/nva_player_black.mdl"
+						"helmet"				"models/characters/nam/blank.mdl"
+						"bodygroups"
+						{
+							"helmet"	"4"
+						}
+					}
+				}
+			}
+		}
+		
+		
+	
+		
+		
+		
+		"unit_nva_324"
+		{
+			"printname"				"#unit_nva_324"
+			"print_description"		"#unit_nva_324_desc"
+
+			"team_access"	"axis"
+			
+			"ItemDefId"		"3001"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"indian"
+				"model"					"models/characters/nam/nva_player_green.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_nva.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_ger_gloves.mdl"
+				"helmet"				"models/characters/nam/nva_helmet_green.mdl"
+
+				"bodygroups"
+				{
+					"helmet"	"1"
+				}
+				
+				"class_replacements"
+				{
+					//COOP
+					"template_german_general"
+					{
+						"model"			"models/characters/nam/nva_player_green.mdl"
+						
+						"bodygroups"
+						{
+							"helmet"	"3"
+						}
+					}
+				
+					//MP
+					"template_german_officer"
+					{
+						"model"			"models/characters/nam/nva_player_green.mdl"
+						
+						"bodygroups"
+						{
+							"helmet"	"3"
+						}
+					}
+					
+					"template_german_rifleman"
+					{
+						"model"			"models/characters/nam/nva_player_green.mdl"
+					}
+					
+					"template_german_assault"
+					{
+						"model"			"models/characters/nam/nva_player_green.mdl"
+						"helmet"				"models/characters/nam/blank.mdl"
+						
+					}
+					
+					"template_german_support"
+					{
+						"model"			"models/characters/nam/nva_player_green.mdl"
+						
+						"bodygroups"
+						{
+							"helmet"	"2"
+						}
+						
+					}
+					
+					"template_german_engineer"
+					{
+						"model"			"models/characters/nam/nva_player_green.mdl"
+					}
+									
+					"template_german_flamethrower"
+					{
+						"model"		"models/characters/nam/nva_player_green.mdl"
+					}
+					
+					"template_german_communications"
+					{
+						"model"			"models/characters/nam/nva_player_green.mdl"
+					}
+					
+					"template_german_machinegunner"
+					{
+						"model"			"models/characters/nam/nva_player_green.mdl"
+					}
+					
+					"template_german_sniper"
+					{
+						"model"			"models/characters/nam/nva_player_green.mdl"
+						"helmet"				"models/characters/nam/blank.mdl"
+						"bodygroups"
+						{
+							"helmet"	"6"
+						}
+					}
+				}
+			}
+		}
+		
+		
+		
+		
+		//American Army Default
+		"unit_usa"
+		{
+			"printname"				"#unit_default_americans"
+			"print_description" 	"#us_default_desc"
+
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"american01"
+				"model"					"models/characters/nam/us_standard_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+				"viewmodel_gloves"		"models/weapons/v_nam_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet.mdl"
+					
+				"bodygroups"
+				{
+					"helmet"	"2"
+	
+					"head" "1"
+				}
+				
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/nam/us_standard_long.mdl"
+						
+						
+						"bodygroups"
+						{
+							"head"	"1"
+							
+						}
+						
+						
+						
+						
+						
+					}
+					
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/nam/us_standard_long.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"0"
+						}
+						
+						
+						
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/nam/us_standard_long.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"3"
+						}
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/nam/us_standard_long.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"5"
+							"helmet"	"1"
+						}
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/nam/us_standard_long.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"7"
+							
+						}
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/nam/us_standard_long.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"2"
+						}
+						
+						
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/nam/us_standard_long.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"4"
+							"helmet"	"1"
+						}
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/nam/us_standard_medium_02.mdl"
+						"viewmodel_hands"		"models/weapons/v_hands_short_us_black.mdl"
+						"bodygroups"
+						{
+							"head"	"4"
+							
+						}
+						
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/nam/us_standard_long.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"1"
+							
+						}
+					}
+				}
+				
+				
+			}
+		}
+		
+		"unit_1stcavalry"
+		{
+			"printname"				"#unit_1stcavalry"
+			"print_description" 	"#unit_1stcavalry_desc"
+
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"american01"
+				"model"					"models/characters/nam/us_standard_long.mdl"
+				"viewmodel_hands"		"models/weapons/v_nam_hands_us.mdl"
+				"viewmodel_gloves"		"models/weapons/v_nam_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet.mdl"
+					
+				"bodygroups"
+				{
+					"helmet"	"8"
+					"1stair" "1"
+					"head" "2"
+				}
+				
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/nam/us_kilgore.mdl"
+						
+						
+						
+						
+						
+						
+						
+						
+					}
+					
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/nam/us_standard_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"0"
+							"helmet"	"6"
+						}
+						
+						
+						
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/nam/us_standard_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"3"
+							"helmet"	"5"
+						}
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/nam/us_standard_long.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"5"
+							"helmet"	"7"
+							
+						}
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/nam/us_standard_medium_02.mdl"
+						"viewmodel_hands"			"models/weapons/v_hands_short_us_black.mdl"
+						"bodygroups"
+						{
+							"head"	"4"
+							"helmet"	"8"
+							
+						}
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/nam/us_standard_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"2"
+							"helmet"	"4"
+						}
+						
+						
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/nam/us_standard_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"2"
+							"helmet"	"8"
+						}
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/nam/us_standard_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"5"
+							"helmet"	"7"
+							
+						}
+						
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/nam/us_standard_short.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"3"
+							"helmet"	"3"
+							
+						}
+					}
+				}
+				
+				
+			}
+		}
+		
+		"unit_75ranger"
+		{
+			"printname"				"#unit_75ranger"
+			"print_description" 	"#unit_75ranger_desc"
+
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"canadian"
+				"model"					"models/characters/nam/us_ranger_medium.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_short_us_nam.mdl"
+				"viewmodel_gloves"		"models/weapons/v_nam_hands_us_glove.mdl"
+				
+					
+				"bodygroups"
+				{
+					"helmet"	"12"
+					"head" "1"
+				}
+				
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/nam/us_ranger_medium.mdl"
+						"response_rules_key"		"scottish"
+						
+						"bodygroups"
+						{
+							"head"	"8"
+							
+						}
+						
+						
+						
+						
+						
+					}
+					
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/nam/us_ranger_medium.mdl"
+						
+						
+						"bodygroups"
+						{
+							"head"	"4"
+						}
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/nam/us_ranger_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"1"
+						}
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/nam/us_ranger_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"3"
+							
+						}
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/nam/us_ranger_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"9"
+							"helmet" "9"
+							
+						}
+						
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/nam/us_ranger_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"2"
+							"helmet" "10"
+						}
+						
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/nam/us_ranger_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"0"
+							"helmet"	"9"
+						}
+						
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/nam/us_ranger_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"4"
+							"helmet" "11"
+							
+						}
+						
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/nam/us_ranger_medium.mdl"
+						
+						"bodygroups"
+						{
+							"head"	"7"
+							
+						}
+						
+					}
+				}
+				
+				
+			}
+		}
+		
+		
+		
+		
+		
+	}
+}

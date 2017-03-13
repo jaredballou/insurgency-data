@@ -1,0 +1,7 @@
+"ho_bo_woods"
+{
+	"file"		"!particles/particles/grenade_wp.pcf
+	"file"		"!particles/particles/napalm.pcf
+	"file"		"!particles/particles/napalm_bomb.pcf
+	
+}

@@ -1,0 +1,1970 @@
+"#base" "nam_base_weapon_upgrades.theater"
+
+"theater"
+{
+	"weapon_upgrades"
+	{
+		
+		
+		
+		// ========================================
+		// SHARED OPTIC ATTACHMENTS
+		// ========================================
+		"base_optic_rail"
+		{
+			"IsBase"				"1"
+			"upgrade_slot"				"optics"
+			
+			
+			
+			
+		}
+		
+		"ammo_hp_m1911"
+		{
+			"import"				"base_ammo_hp"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m1911"
+				"weapon"				"weapon_nam_sw39"
+			}
+			"ammo_type_override"			"45acp_hp_nam"
+		}
+		
+		
+		"ammo_hp_model10"
+		{
+			"import"					"base_ammo_hp"
+			"upgrade_cost"				"2"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_model10"
+			}
+			"ammo_type_override"		"38special_hp"
+		}
+		
+		
+		"ammo_slugs"
+		{
+			"import"					"base_ammo_slugs"
+			"team_access"				"americans, axis"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_stevens620"
+				"weapon"				"weapon_nam_ithaca37"
+				"weapon"				"weapon_nam_m1912"
+			}
+		}
+		
+		"ammo_flechette"
+		{
+			"import"					"base_ammo_flechette"
+			"team_access"				"americans"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_stevens620"
+				"weapon"				"weapon_nam_ithaca37"
+				"weapon"				"weapon_nam_m1912"
+			}
+		}
+		
+		"barrel_silencer_m16"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"4"
+			"class_restricted"			"1"
+			"length"					"12"
+			"team_access"				"americans"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m16a1"
+				
+			}
+			"viewmodel_attachments"
+			{
+				"Suppressor"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_m16.mdl"
+					
+					
+				}
+			}
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_suppressor_m16.mdl"
+				}
+			}
+		}
+		
+		"barrel_silencer_mac10"
+		{
+			"import"					"base_silencer"
+			"upgrade_cost"				"4"
+			"class_restricted"			"0"
+			"length"					"12"
+			"team_access"				"americans"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_mac10"
+				
+			}
+			"viewmodel_attachments"
+			{
+				"Suppressor"
+				{
+					"model"					"models/weapons/upgrades/a_suppressor_mac10.mdl"
+					
+					
+				}
+			}
+			"world_attachments"
+			{
+				"Silencer"
+				{
+					"model"					"models/weapons/upgrades/w_suppressor_mac10.mdl"
+				}
+			}
+		}
+		"optic_scope_pe"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#optic_scope_pe"
+			"print_desc"				"#optic_scope_pe_desc"
+			"class_restricted"			"5"
+			"upgrade_cost"				"4"
+			"team_access"				"axis"
+			"class_restricted"     "1"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_mosin"
+			
+			}
+			"viewmodel_attachments"
+			{
+				"scope_mosin"
+				{
+					"model"					"models/weapons/upgrades/a_optic_mosin_pe.mdl"
+					"AnimIronSights"			"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_mosin"
+					}
+				}
+				
+				
+			}
+			
+			"world_attachments"
+			{
+				"Scope"
+				{
+					"model"					"models/weapons/upgrades/w_scope_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_mosin"
+						
+					}
+				}
+			}
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"10"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				"weapon_nam_mosin"
+				{
+					"fov_wpn_scope"				"21"
+					"fov_wpn_ironsight"			"53"
+					"fov_wpn_focus"				"56"
+				}
+				
+			}
+		}
+		
+		
+		
+		
+		
+		"optic_pso1"
+		{
+			"import"					"base_optic_rail"
+			"upgrade_cost"				"5"
+			"print_name"				"#optic_pso1"
+			"print_desc"				"#optic_pso1_desc"
+			"team_access"				"axis"
+			"class_restricted"			"0"
+			
+			"allowed_weapons"
+			{
+				// axis weapons
+				"weapon"				"weapon_nam_svd"
+				
+			}
+			
+			"viewmodel_attachments"
+			{
+				"POScope_Small"
+				{
+					"model"					"models/weapons/upgrades/a_pso1.mdl"
+					"AnimIronSights"			"po_zoom"
+					"AnimIdle"				"po_idle"
+					"Gesture"				"delta_po"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_svd"
+						
+					}
+				}
+				
+			}
+			
+			"world_attachments"
+			{
+				"PO"
+				{
+					"model"					"models/weapons/upgrades/w_pso1.mdl"
+				}
+			}
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"20"
+				"fov_wpn_ironsight"			"39"
+				"fov_wpn_focus"				"39"
+				
+				
+				
+				"weapon_nam_svd"
+				{
+					"fov_wpn_ironsight"			"60"
+					"fov_wpn_focus"				"63"
+				}
+
+				
+			}
+		}
+		
+		
+		"optic_scope_9x"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#optic_scope_9x"
+			"print_desc"				"#optic_scope_9x_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"8"
+			"team_access"				"americans"
+			
+			
+			"sway"
+			{
+				"sway_radius_frac"		"2.3"
+				"sway_speed_frac"		"2.4"
+			}
+			
+			
+			"allowed_weapons"
+			{
+				
+				
+				"weapon"				"weapon_nam_m14"
+				"weapon"				"weapon_nam_m40a1"
+				
+			}
+			"viewmodel_attachments"
+			{
+				"scope_m14"
+				{
+					"model"					"models/weapons/upgrades/a_redfield_scope.mdl"
+					"AnimIronSights"			"elcan_zoom"
+					"AnimIdle"				"elcan_idle"
+					"Gesture"				"delta_elcan"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_m14"
+					}
+				}
+				
+				
+				"scope_m40_nam"
+				{
+					"model"					"models/weapons/upgrades/a_redfield_m40.mdl"
+					"AnimIronSights"			"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_m40a1"
+					}
+				}
+				
+				
+				
+			}
+			
+			"world_attachments"
+			{
+				"Scope"
+				{
+					"model"					"models/weapons/upgrades/w_nam_redfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_m14"
+						
+					}
+				}
+				
+				"scope_m40_nam_w"
+				{
+					"model"					"models/weapons/upgrades/w_redfield_m40.mdl"
+					
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_m40a1"
+					}
+				}
+				
+			}
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"10"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				
+				
+				
+				
+				
+				
+				"weapon_nam_m14"
+				{
+					"fov_wpn_scope"				"17"
+					"fov_wpn_ironsight"			"50"
+					"fov_wpn_focus"				"56"
+				}
+				
+				"weapon_nam_m40a1"
+				{
+					"fov_wpn_scope"				"24"
+					"fov_wpn_ironsight"			"35"
+					"fov_wpn_focus"				"40"
+				}
+				
+			}
+		}
+		
+		
+		"optic_scope_pu"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#optic_scope_pu"
+			"print_desc"				"#optic_scope_pu_desc"
+			"upgrade_cost"				"4"
+			"team_access"				"americans, axis"
+			"class_restricted"			"1"
+			
+			"sway"
+			{
+				"sway_radius_frac"		"1.8"
+				"sway_speed_frac"		"1.9"
+			}
+			
+			"weapon_mods"
+			{
+				
+				
+				
+				
+				"weapon_nam_svt40"
+				{
+					"sway"
+					{
+						"sway_amount_focus_frac"		"0.25"
+						"sway_speed_focus_frac"			"0.20"
+						"sway_radius_crouch_frac"		"0.75"
+						"sway_radius_prone_frac"		"0.50"
+					}
+				}
+				
+				
+				
+				
+
+			}
+			
+			"allowed_weapons"
+			{
+				
+				"weapon"				"weapon_nam_svt40"
+				"weapon"				"weapon_nam_sks"
+				
+				
+			}
+			
+			
+			
+			"viewmodel_attachments"
+			{
+				
+				
+				"7xscope_svt"
+				{
+					"model"					"models/weapons/upgrades/a_optic_svt40_m.mdl"
+					"AnimIronSights"			"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_svt40"
+					}
+				}
+				
+				
+				"pu_sks"
+				{
+					"model"					"models/weapons/upgrades/a_optic_pu_sks.mdl"
+					"AnimIronSights"			"po_zoom"
+					"AnimIdle"				"po_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						
+						"weapon"				"weapon_nam_sks"
+						
+					}
+				}
+				
+				
+			}
+			
+			"world_attachments"
+			{				
+			
+				
+				
+				"Scope_svt40"
+				{
+					"model"					"models/weapons/upgrades/w_scope_svt.mdl"
+					
+					"weapons"
+					{
+						
+						"weapon"				"weapon_nam_svt40"
+					}
+				}
+				
+				"Scope_sks"
+				{
+					"model"					"models/weapons/upgrades/w_optic_pu_sks.mdl"
+					
+					"weapons"
+					{
+						
+						"weapon"				"weapon_nam_sks"
+					}
+				}
+				
+			}
+			
+			
+			
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"10"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				
+				
+				
+				
+				"weapon_nam_svt40"
+				{
+					"fov_wpn_scope"				"18"
+					"fov_wpn_ironsight"			"45"
+					"fov_wpn_focus"				"47"
+				}
+				
+				"weapon_nam_sks"
+				{
+					"fov_wpn_scope"				"21"
+					"fov_wpn_ironsight"			"76"
+					"fov_wpn_focus"				"77"
+				}
+				
+				
+				
+			}
+		}
+		
+		
+		"optic_scope_m73"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#optic_scope_m73"
+			"print_desc"				"#optic_scope_m73_desc"
+			"upgrade_cost"				"4"
+			"team_access"				"americans, axis"
+			"class_restricted"			"0"
+			
+			"sway"
+			{
+				"sway_radius_frac"		"1.8"
+				"sway_speed_frac"		"1.9"
+			}
+			
+			"weapon_mods"
+			{
+				"weapon_nam_springfield"
+				{
+					"sway"
+					{
+						"sway_amount_focus_frac"		"0.25"
+						"sway_speed_focus_frac"			"0.20"
+						"sway_radius_crouch_frac"		"0.75"
+						"sway_radius_prone_frac"		"0.50"
+					}
+				}
+				
+				
+				
+				
+
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_springfield"
+			
+				
+				
+				
+			}
+			
+			
+			
+			"viewmodel_attachments"
+			{
+				
+				
+				"7xscope_springfield"
+				{
+					"model"					"models/weapons/upgrades/a_nam_optic_springfield.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_nam_springfield"
+					}
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			}
+			
+			"world_attachments"
+			{	
+				
+				
+				
+				"Scope_springfield"
+				{
+					"model"					"models/weapons/upgrades/w_nam_optic_springfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_springfield"
+					}
+				}
+				
+				
+				
+				
+			}
+			
+			
+			
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"10"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				"weapon_nam_springfield"
+				{
+					"fov_wpn_scope"				"23"
+					"fov_wpn_ironsight"			"49"
+					"fov_wpn_focus"				"45"
+				}
+				
+				
+				
+			}
+		}
+		
+		"optic_scope_m16a1"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#optic_scope_colt"
+			"print_desc"				"#optic_scope_colt_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"4"
+			"team_access"				"americans, axis"
+			
+			"sway"
+			{
+				"sway_radius_frac"		"1.2"
+				"sway_speed_frac"		"1.2"
+			}
+			
+			"excluded_upgrades"
+			{
+				"0"						"underbarrel_m203_nam_he"
+				"0"                        "underbarrel_m203_nam_smoke"
+			}
+			
+			
+			"weapon_mods"
+			{
+				
+				
+				"weapon_nam_m16a1"
+				{
+					"sway"
+					{
+						"sway_amount_focus_frac"		"0.25"
+						"sway_speed_focus_frac"			"0.20"
+						"sway_radius_crouch_frac"		"0.75"
+						"sway_radius_prone_frac"		"0.50"
+					}
+				}
+				
+				
+				
+				
+				
+				
+				
+
+			}
+			
+			"allowed_weapons"
+			{
+				
+				"weapon"				"weapon_nam_m16a1"
+				
+				
+				
+				
+			}
+			
+			
+			
+			"viewmodel_attachments"
+			{
+				"xscope_m16a1"
+				{
+					"model"					"models/weapons/upgrades/a_optics_m16a1.mdl"
+					"AnimIronSights"			"elcan_zoom"
+					"AnimIdle"				"elcan_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_nam_m16a1"
+					}
+				}
+				
+				
+				
+				
+			}
+			
+			"world_attachments"
+			{				
+				"Scope_m16a1"
+				{
+					"model"					"models/weapons/upgrades/w_optics_m16a1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_m16a1"
+					}
+				}
+				
+				
+				
+			}
+			
+			
+			
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"20"
+				"fov_wpn_ironsight"			"49"
+				"fov_wpn_focus"				"45"
+				
+				
+				
+				"weapon_nam_m16a1"
+				{
+					"fov_wpn_scope"				"20"
+				    "fov_wpn_ironsight"			"46"
+				    "fov_wpn_focus"				"49"
+				}
+				
+				
+				
+			}
+		}
+		
+		"optic_scope_zf39"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#optic_scope_zf39"
+			"print_desc"				"#optic_scope_zf39_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"5"
+			"team_access"				"americans, axis"
+			
+			"sway"
+			{
+				"sway_radius_frac"		"1.8"
+				"sway_speed_frac"		"1.9"
+			}
+			
+			"weapon_mods"
+			{
+				
+				
+				"weapon_nam_k98"
+				{
+					"sway"
+					{
+						"sway_amount_focus_frac"		"0.25"
+						"sway_speed_focus_frac"			"0.20"
+						"sway_radius_crouch_frac"		"0.75"
+						"sway_radius_prone_frac"		"0.50"
+					}
+				}
+				
+				
+				
+				
+				
+				
+				
+
+			}
+			
+			"allowed_weapons"
+			{
+				
+				"weapon"				"weapon_nam_k98"
+				
+				
+				
+				
+			}
+			
+			
+			
+			"viewmodel_attachments"
+			{
+				"7xscope_k98"
+				{
+					"model"					"models/weapons/upgrades/a_optic_kar98k.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_nam_k98"
+					}
+				}
+				
+				
+				
+				
+			}
+			
+			"world_attachments"
+			{				
+				"Scope_kar98"
+				{
+					"model"					"models/weapons/upgrades/w_nam_optic_kar98k.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_k98"
+					}
+				}
+				
+				
+				
+			}
+			
+			
+			
+			
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"10"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				
+				
+				"weapon_nam_k98"
+				{
+					"fov_wpn_scope"				"20"
+					"fov_wpn_ironsight"			"53"
+					"fov_wpn_focus"				"56"
+				}
+				
+				
+				
+			}
+		}
+		
+		
+		
+		"optic_scope_m84"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#optic_scope_m84"
+			"print_desc"				"#optic_scope_m84_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"4"
+			"team_access"				"americans"
+			"sway"
+			{
+				"sway_radius_frac"		"1.8"
+				"sway_speed_frac"		"1.9"
+			}
+			
+			
+			
+			"allowed_weapons"
+			{
+				
+				"weapon"				"weapon_nam_m1garand"
+				"weapon"				"weapon_nam_m14"
+				
+			}
+			
+			
+			
+			"viewmodel_attachments"
+			{
+				
+
+				"4xscope_garand"
+				{
+					"model"					"models/weapons/upgrades/a_nam_optic_garand.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_nam_m1garand"
+					}
+				}
+				
+				"scope_m14_garand"
+				{
+					"model"					"models/weapons/upgrades/a_m14_scope.mdl"
+					"AnimIronSights"			"elcan_zoom"
+					"AnimIdle"				"elcan_idle"
+					"Gesture"				"delta_elcan"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_m14"
+					}
+				}
+				
+				
+				
+				
+			}
+			
+			"world_attachments"
+			{
+				
+				
+				"Scope_Garand"
+				{
+					"model"					"models/weapons/upgrades/w_nam_scope_garand.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_nam_m1garand"
+					}
+				}
+				
+				"Scope_m14"
+				{
+					"model"					"models/weapons/upgrades/w_m14_scope.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_nam_m14"
+					}
+				}
+			}
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"18"
+				"fov_wpn_ironsight"			"49"
+				"fov_wpn_focus"				"54"
+				
+				"weapon_nam_m14"
+				{
+					"fov_wpn_scope"				"20"
+				    "fov_wpn_ironsight"			"56"
+				    "fov_wpn_focus"				"59"
+				}
+			}
+		}
+		
+		
+		
+		"optic_scope_zf4"
+		{
+			"import"					"base_optic_rail"
+			"print_name"				"#optic_scope_zf4"
+			"print_desc"				"#optic_scope_zf4_desc"
+			"class_restricted"			"1"
+			"upgrade_cost"				"5"
+			"team_access"				"americans, axis"
+			
+			"sway"
+			{
+				"sway_radius_frac"		"1.8"
+				"sway_speed_frac"		"1.9"
+			}
+			
+			"weapon_mods"
+			{
+				"weapon_g43"
+				{
+					"sway"
+					{
+						"sway_amount_focus_frac"		"0.25"
+						"sway_speed_focus_frac"			"0.20"
+						"sway_radius_crouch_frac"		"0.75"
+						"sway_radius_prone_frac"		"0.50"
+					}
+				}
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_g43"
+				
+			}
+			
+			
+			
+			"viewmodel_attachments"
+			{
+				"4xscope_g43"
+				{
+					"model"					"models/weapons/upgrades/a_nam_optic_zf4.mdl"
+					"AnimIronSights"		"scope_zoom"
+					"AnimIdle"				"scope_idle"
+					"Gesture"				"delta_scope"
+					"Main"					"1"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_nam_g43"
+					}
+				}
+
+				
+				
+				
+				
+				
+			}
+			
+			"world_attachments"
+			{
+				"Scope_G43"
+				{
+					"model"					"models/weapons/upgrades/w_nam_scope_g43.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_nam_g43"
+					}
+				}
+				
+				
+			}
+			"optics_fov_override"
+			{
+				"fov_wpn_scope"				"15"
+				"fov_wpn_ironsight"			"37"
+				"fov_wpn_focus"				"43"
+				
+				"weapon_nam_g43"
+				{
+					"fov_wpn_scope"				"20"
+					"fov_wpn_ironsight"			"53"
+					"fov_wpn_focus"				"56"
+				}
+			}
+		}
+		
+		
+		
+		// =============================================== SLINGS =====================================================================================================
+		
+		
+		
+		
+		"m16a1_sling"
+		{
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"stock"
+			"print_name"				"#sling"
+			"print_desc"				"#weapon_upgrade_sling_desc"
+			
+			"class_restricted"			"0" 
+			"team_access"				"americans, axis"
+			
+			"draw_speed"				"1.2"
+			"holster_speed"				"1.445"
+			"draw_speed_next_weapon"	"1.45"
+			"holster_speed_prev_weapon"	"1.45"
+			
+			"excluded_upgrades"
+			{
+				"0"						"underbarrel_m203_nam_he"
+				"0"						"underbarrel_m203_nam_smoke"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Sling"
+				{
+					"model"					"models/weapons/upgrades/a_m16a1_sling.mdl" 
+					
+					
+					
+				}
+				
+				
+			}
+			
+			
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m16a1" 
+			
+			}
+		}
+		
+		
+		"m79_sling"
+		{
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"stock"
+			"print_name"				"#sling"
+			"print_desc"				"#weapon_upgrade_sling_desc"
+			
+			"class_restricted"			"0" /// ================================ set this to 0 so all classes have it. i will edit it in main nam theater ==========
+			"team_access"				"americans, axis"
+			
+			"draw_speed"				"1.2"
+			"holster_speed"				"1.2"
+			"draw_speed_next_weapon"	"1.35"
+			"holster_speed_prev_weapon"	"1.35"
+			
+			"viewmodel_attachments"
+			{
+				"Sling"
+				{
+					"model"					"models/weapons/upgrades/a_m79_sling.mdl" // NAME OF SLING MODEL IT MUST SHARE SAME BONE AS M16A1 MODEL YA KNOW
+					
+					
+					
+				}
+				
+				
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m79" 
+				"weapon"                   "weapon_nam_m79_smoke"    
+				"weapon"                   "weapon_nam_m79_napalm"    
+			
+			}
+		}
+		
+		
+		"ppsh41_sling"
+		{
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"stock"
+			"print_name"				"#sling"
+			"print_desc"				"#weapon_upgrade_sling_desc"
+			
+			"class_restricted"			"0" 
+			"team_access"				"americans, axis"
+			
+			"draw_speed"				"1.2"
+			"holster_speed"				"1.3"
+			"draw_speed_next_weapon"	"1.3"
+			"holster_speed_prev_weapon"	"1.3"
+			
+			"viewmodel_attachments"
+			{
+				"Sling"
+				{
+					"model"					"models/weapons/upgrades/v_ppshsling.mdl" 
+					
+					
+					
+				}
+				
+				
+			}
+			
+			
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_ppsh41" 
+			
+			}
+		}
+		
+		
+		//================================================== OTHER ======================================
+		
+		"siderail_flashlight_pistol"
+		{
+			"import"					"base_flashlight_pistol"
+			"upgrade_cost"				"2"
+			"team_access"				"americans, axis"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m1911"
+				"weapon"				"weapon_nam_makarov"
+				"weapon"        "weapon_nam_model10"
+				"weapon"        "weapon_nam_model10nva"
+				"weapon"       "weapon_nam_python"
+				"weapon"       "weapon_nam_sw39"
+				
+			}
+			
+		}
+		
+		"barrel_heavybarrel"
+		{
+			"import"					"base_heavybarrel"
+			"weight"					"5"
+			"team_access"				"americans"
+			
+			"allowed_weapons"
+			{
+				
+				"weapon"				"weapon_nam_m14"
+				"weapon"				"weapon_nam_m60"
+				"weapon"				"weapon_nam_m40a1"
+				"weapon"				"weapon_nam_m607"
+			}
+		}
+		
+		
+		"underbarrel_bipod_m16"
+		{
+			"import"				"base_bipod"
+			"upgrade_cost"				"1"
+			"class_restricted"			"0"
+			
+			"allowed_weapons"
+			{
+			
+				
+				"weapon"				"weapon_nam_m16a1"
+			}
+			
+			"viewmodel_attachments"
+			{
+				
+				
+				"Bipod_M16A1"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_m16a1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_m16a1"
+					}
+				}
+				
+				
+				
+			}
+			
+			"world_attachments"
+			{
+				
+				
+				"Bipod_m16a1_w"
+				{
+					"model"					"models/weapons/upgrades/w_bipod_m16a1.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_m16a1"
+					}
+					
+				}
+			}
+			
+			
+		}
+		
+		"python_speedloader"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"2"
+			"team_access"				"americans, axis"
+
+			"print_name"				"#weapon_upgrade_speedloader"
+			"print_desc"				"#weapon_upgrade_speedloader_desc"
+
+			// some magic to disable single reload
+			"weapon_abilities"			"speedreload"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_python"
+			}
+
+			"viewmodel_attachments"
+			{
+				"speedloader_python"
+				{
+					"ActSuffix"			"_SPEED"
+					"model"				"models/weapons/upgrades/a_speedloader_python.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_nam_python"
+					}
+				}
+			}
+			
+			
+		}
+		
+		
+		"python_longbarrel"
+		{
+			"upgrade_slot"				"barrel"
+			"upgrade_cost"				"1"
+			"team_access"				"americans, axis"
+			
+			"print_name"				"#python_longbarrel"
+			"print_desc"				"#python_longbarrel_desc"
+
+			"spread_frac"  "0.1"
+			"maxrange_frac"				"2"
+			
+			
+          
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_python"
+			}
+
+			"viewmodel_attachments"
+			{
+				"python_longbarrel"
+				{
+				    
+					"model"				"models/weapons/upgrades/a_python_long.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_nam_python"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"python_longbarrel_w"
+				{
+				    
+					"model"				"models/weapons/upgrades/w_python_long.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_nam_python"
+					}
+				}
+			}
+			
+			
+			
+		}
+		
+		"python_shortbarrel"
+		{
+			"upgrade_slot"				"barrel"
+			"upgrade_cost"				"2"
+			"team_access"				"americans, axis"
+			
+			"print_name"				"#python_shortbarrel"
+			"print_desc"				"#python_shortbarrel_desc"
+			
+			"spread_frac"  "1.8"
+
+			"draw_speed"				"1.5"
+			"holster_speed"				"1.5"
+			"draw_speed_next_weapon"	"1.5"
+			"holster_speed_prev_weapon"	"1.5"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_python"
+			}
+
+			"viewmodel_attachments"
+			{
+				"python_shortbarrel"
+				{
+				    
+					"model"				"models/weapons/upgrades/a_python_short.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_nam_python"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"python_shortbarrel_w"
+				{
+				    
+					"model"				"models/weapons/upgrades/w_python_short.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_nam_python"
+					}
+				}
+			}
+			
+		}
+		
+	
+		"magazine_extended_ppsh41"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"4"
+			"team_access"				"americans, axis"
+			
+			"print_name"				"#magazine_extended_ppsh41"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+
+			"magsize_override"			"71"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_ppsh41"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_ppsh41_drum"
+				{
+				    "ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/v_ppshdrum.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_nam_ppsh41"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_drum"
+				{
+					"model"				"models/weapons/upgrades/w_ppshdrum.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_nam_ppsh41"
+					}
+				}
+			}
+			
+			
+			
+			
+		}
+		
+		
+		"magazine_extended_m16a1"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"2"
+			"team_access"				"americans, axis"
+			
+			"print_name"				"#magazine_extended_m16a1"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+
+			"magsize_override"			"30"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m16a1"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_ppsh41_drum"
+				{
+				    "ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_m16_30.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_nam_m16a1"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_drum"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_m16_30.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_nam_m16a1"
+					}
+				}
+			}
+			
+			
+			
+			
+		}
+		
+		
+		"magazine_extended_ithaca"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"3"
+			"team_access"				"americans, axis"
+			
+			"print_name"				"#magazine_extended_ithaca"
+			"print_desc"				"#magazine_extended_ithaca_desc"
+
+			"magsize_override"			"7"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_ithaca37"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_ithaca"
+				{
+				    
+					"model"				"models/weapons/upgrades/a_ithaca_mag.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_nam_ithaca37"
+					}
+				}
+			}
+			
+			
+			
+		}
+		
+		
+		"magazine_extended_m607_30rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"4"
+			"team_access"				"americans, axis"
+
+			"print_name"				"#weapon_upgrade_magazine_extended"
+			"print_desc"				"#weapon_upgrade_magazine_extended_desc"
+
+			"magsize_override"			"30"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m607"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_m607"
+				{
+					"Act_Suffix"		"_MAG1"
+					"model"				"models/weapons/upgrades/a_magazine_m607_30.mdl"
+					"Main"				"1"
+
+					"weapons"
+					{
+						"weapon"		"weapon_m1a1"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"magazine_m607"
+				{
+					"model"				"models/weapons/upgrades/w_magazine_m607_30.mdl"
+				}
+			}
+		}
+		
+		
+		"underbarrel_gl_base"
+		{
+			"IsBase"				"1"
+			"upgrade_slot"				"underbarrel"
+			"class_restricted"			"1"
+		}
+		
+		"underbarrel_m203_base"
+		{
+			"IsBase"				"1"
+			"import"				"underbarrel_gl_base"
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"model"					"models/weapons/upgrades/a_m16a1_m203.mdl"
+					"Gesture"				"delta_gl"
+					"ActSuffix"				"_GL"
+					"Main"					"1"
+				}
+				
+				
+			}
+			
+			"world_attachments"
+			{
+				"gesture"					"ACT_GESTURE_GL"
+				
+				"Launcher"
+				{
+					"model"					"models/weapons/upgrades/w_m16a1_m203.mdl"
+				}
+			}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m16a1"
+				
+			}
+		}
+		
+		"underbarrel_m203_nam_he"
+		{
+			"import"				"underbarrel_m203_base"
+			"upgrade_cost"				"8"
+			"print_name"				"#weapon_m203_he"
+			"print_desc"				"#weapon_m203_he_desc"
+			"attach_weapon"				"weapon_nam_m203_he"
+			
+			"excluded_upgrades"
+			{
+				"0"						"m16a1_sling"
+				"0"                         "optic_scope_m16a1"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"skin"					"0"
+				}
+			}
+		}
+		
+		"underbarrel_m203_nam_smoke"
+		{
+			"import"				"underbarrel_m203_base"
+			"upgrade_cost"				"4"
+			"print_name"				"#weapon_m203_smoke"
+			"print_desc"				"#weapon_m203_smoke_desc"
+			"attach_weapon"				"weapon_nam_m203_smoke"
+			
+			"excluded_upgrades"
+			{
+				"0"						"m16a1_sling"
+				"0"                         "optic_scope_m16a1"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Launcher"
+				{
+					"Skin"					"1"
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		"ithaca_bayonet"
+		{
+			"upgrade_cost"				"2"
+			"upgrade_slot"				"barrel"
+			"print_name"				"#weapon_upgrade_bayonet"
+			"print_desc"				"#weapon_upgrade_bayonet_desc"
+			"weapon_abilities"			"bayonet"
+			"class_restricted"			"0"
+			"team_access"				"axis, americans"
+			"lock_slot"					"melee"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_ithaca37"
+				
+			}
+			
+			
+			
+			
+			"viewmodel_attachments"
+			{
+				"bayonet_ithaca"
+				{
+					"model"				"models/weapons/upgrades/a_nam_ithaca_bayonet.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_nam_ithaca37"
+						
+					}
+				}
+				
+				
+			}
+			
+			"world_attachments"
+			{
+				"bayo_ithaca"
+				{
+					"model"				"models/weapons/upgrades/w_nam_ithaca_bayonet.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_nam_ithaca37"
+					}
+				}
+			}
+		}
+		
+		
+		
+		//"ammo_tracer_m16a1"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m16a1"
+			}
+			"ammo_type_override"			"556_tracer_stanag"
+		}
+		
+		//"ammo_tracer_m60"
+		{
+			"import"				"base_ammo_tracer"
+			"upgrade_cost"				"1"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m60"
+			}
+			"ammo_type_override"			"762x51_tracer"
+		}
+		
+		//"ammo_hp_python"
+		{
+			"import"					"base_ammo_hp"
+			"upgrade_cost"				"3"
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_python"
+			}
+			"ammo_type_override"		"357magnum_hp"
+		}
+		
+		//================================================================= DAY OF INFAMY =============================================================================
+		
+		
+		
+		
+		
+		
+		"default_optics"
+		{
+			"upgrade_slot"				"optics"
+			"print_name"				"#ironsight"
+			"print_desc"				"#ironsight_desc"
+			
+			"class_restricted"			"0"
+			
+			"upgrade_cost"				"0"
+			"team_access"				"americans, axis"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_nam_m1carbine"
+				"weapon"				"weapon_nam_thompson_m1a1"
+				"weapon"				"weapon_nam_browninghp"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"default_irons_m1a1"
+				{
+					"model"				"models/weapons/upgrades/a_nam_iron_m1a1_l.mdl"
+					"Gesture"			"delta_iron_2"
+					"Main"				"1"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_nam_m1carbine"
+					}
+				}
+				
+				"default_irons_thompson_m1a1"
+				{
+					"model"				"models/weapons/upgrades/a_nam_iron_thompson_m1a1_2.mdl"
+					"Main"				"1"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_nam_thompson_m1a1"
+					}
+				}
+				
+				"default_slide_browninghp"
+				{
+					"model"				"models/weapons/upgrades/a_nam_slide_base_browninghp.mdl"
+					"Gesture"			"delta_iron_alt"
+					"Main"				"1"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_nam_browninghp"
+					}
+				}
+			}
+			"world_attachments"
+			{
+				"default_irons_m1a1"
+				{
+					"model"				"models/weapons/upgrades/w_nam_iron_m1a1_l.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_nam_m1carbine"
+					}
+				}			
+			}
+		}
+		
+		"foregrip_thompson"
+		{
+			"import"					"base_foregrip"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson_m1928a1"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"foregrip_thompson"
+				{
+					"model"					"models/weapons/upgrades/a_nam_thompson_foregrip.mdl"
+					"Gesture"				"delta_foregrip"
+					"ActSuffix"				"_FOREGRIP"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_thompson_m1928a1"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"foregrip_thompson"
+				{
+					"model"				"models/weapons/upgrades/w_nam_thompson_foregrip.mdl"
+				}
+			}
+		}
+		
+		
+		"magazine_extended_thompson_30rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"2"
+			"team_access"				"axis, americans, commonwealth"
+			
+			"print_name"				"#weapon_upgrade_magazine_extended_thompson_30"
+			"print_desc"				"#weapon_upgrade_magazine_extended_thompson_30_desc"
+
+			"magsize_override"			"30"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson_m1928a1"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_thompson"
+				{
+					"model"				"models/weapons/upgrades/a_nam_thompson_mag_30.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_thompson_m1928a1"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_thompson_30"
+				{
+					"model"				"models/weapons/upgrades/w_nam_thompson_mag_30.mdl"
+				}
+			}
+		}
+			
+		"magazine_extended_thompson_50rd"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"4"
+			"team_access"				"commonwealth"
+			
+			"print_name"				"#weapon_upgrade_magazine_extended_thompson_50"
+			"print_desc"				"#weapon_upgrade_magazine_extended_thompson_50_desc"
+
+			
+			"magsize_override"			"50"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_thompson_m1928a1"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_thompson"
+				{
+					"ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/a_nam_thompson_mag_50.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_thompson_m1928a1"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_thompson_50"
+				{
+					"model"				"models/weapons/upgrades/w_nam_thompson_mag_50.mdl"
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

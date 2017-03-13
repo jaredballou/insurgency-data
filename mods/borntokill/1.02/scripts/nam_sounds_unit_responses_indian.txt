@@ -1,0 +1,242 @@
+// Unit_Indian
+
+//Reloading
+
+"Voice_Response_Indian.Reloading1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading1.ogg"
+}
+
+"Voice_Response_Indian.Reloading2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading2.ogg"
+}
+
+"Voice_Response_Indian.Reloading3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading3.ogg"
+}
+
+"Voice_Response_Indian.Reloading4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading4.ogg"
+}
+
+"Voice_Response_Indian.Reloading5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading5.ogg"
+}
+
+"Voice_Response_Indian.Reloading6"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading6.ogg"
+}
+
+"Voice_Response_Indian.Reloading7"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading7.ogg"
+}
+
+"Voice_Response_Indian.Reloading8"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading8.ogg"
+}
+
+"Voice_Response_Indian.Reloading9"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading9.ogg"
+}
+
+"Voice_Response_Indian.Reloading10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/reloading10.ogg"
+}
+
+//Being Suppressed
+
+
+
+
+
+"Voice_Response_Indian.BurnDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.4"
+	"pitch"			"100,103"
+	"soundlevel"  	"SNDLVL_80db"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/special/indian/burnttodeath1.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath2.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath3.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath4.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath5.ogg"			
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "20"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Voice_Response_Indian.BurnDeath3p"
+			}
+			
+
+        }
+	}
+}
+
+"Voice_Response_Indian.BurnDeath3p"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.75"
+	"pitch"			"100,103"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/special/indian/burnttodeath1.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath2.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath3.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath4.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath5.ogg"		
+	}
+	
+		"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap2" 
+			
+			"Swap_trigger2"
+			{
+			"input2" "500"
+			}
+			
+			"voice_play_entry2"
+			{
+				"entry_name" "Voice_Response_Indian.BurnDeathDistant"
+			}
+			
+
+        }
+	}
+}
+
+"Voice_Response_Indian.BurnDeathDistant"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.75"
+	"pitch"			"100,103"
+	"soundlevel"  	"SNDLVL_80dB"
+	"rndwave"
+	{
+		"wave"		"player/voice/responses/special/indian/burnttodeath_distant1.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath_distant2.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath_distant3.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath_distant4.ogg"
+		"wave"		"player/voice/responses/special/indian/burnttodeath_distant5.ogg"	
+	}
+}
+
+
+
+
+//Being Burned By Fire On The Ground
+
+"Voice_Response_Indian.BurnPainSmall1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/burnpain1.ogg"	
+}
+
+"Voice_Response_Indian.BurnPainSmall2"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/burnpain2.ogg"	
+}
+
+"Voice_Response_Indian.BurnPainSmall3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/burnpain3.ogg"	
+}
+
+"Voice_Response_Indian.BurnPainSmall4"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/burnpain4.ogg"	
+}
+
+"Voice_Response_Indian.BurnPainSmall5"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_TALKING"
+	"wave"		"player/nam/voice/responses/german_01/burnpain5.ogg"	
+}
+

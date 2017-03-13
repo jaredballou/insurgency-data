@@ -1,0 +1,184 @@
+
+//Affirmative
+
+//Unsuppressed
+"Radial_Indian.UnSupp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/affirmative1.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/affirmative2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_Indian.Supp_Affirmative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/affirmative1.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/affirmative2.ogg"			
+	}	
+}
+
+//Negative
+
+//Unsuppressed
+"Radial_Indian.UnSupp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/negative1.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/negative2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_Indian.Supp_Negative"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/negative1.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/negative2.ogg"			
+	}	
+}
+
+// Need Backup
+
+//Unsuppressed
+"Radial_Indian.UnSupp_NeedBackup"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/needbackup1.ogg"		
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/needbackup2.ogg"				
+	}	
+}
+
+//Suppressed
+"Radial_Indian.Supp_NeedBackup"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/needbackup1.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/needbackup2.ogg"			
+	}	
+}
+
+//Request Radio 
+
+//Unsuppressed
+"Radial_Indian.UnSupp_RequestRadio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/watch_south3.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/watch_south2.ogg"			
+	}	
+}
+
+//On The Way
+
+//Unsuppressed
+"Radial_Indian.UnSupp_OnTheWay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/ontheway1.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/ontheway2.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_Indian.Supp_OnTheWay"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/ontheway1.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/ontheway2.ogg"			
+	}	
+}
+
+
+// Need Ammo
+
+//Unsuppressed
+"Radial_Indian.UnSupp_NeedAmmo"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/watch_east3.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/watch_east3.ogg"					
+	}	
+}
+
+//Suppressed
+"Radial_Indian.Supp_NeedAmmo"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/watch_east3.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Suppressed/watch_east3.ogg"				
+	}	
+}
+
+//Enemy Down
+
+//Unsuppressed
+"Radial_Indian.UnSupp_EnemyDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/target2.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/target1.ogg"			
+	}	
+}
+
+//Suppressed
+"Radial_Indian.Supp_EnemyDown"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/target6.ogg"	
+		"wave"		"player/nam/voice/radial/german_01/Unsuppressed/target1.ogg"			
+	}	
+}

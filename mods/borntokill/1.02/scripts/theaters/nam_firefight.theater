@@ -1,0 +1,79 @@
+"#base" "nam.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"axis"
+		{
+			"squads"
+			{
+				"#squad_german"
+				{
+					"size"				"16"
+						
+					"classes"
+					{
+						"template_german_officer"		"1"	
+						"template_german_communications" "1"
+						"template_german_rifleman"		"-1"
+						"template_german_assault"		"2"
+						"template_german_support"		"1"
+						"template_german_flamethrower"	"1"
+						"template_german_engineer"		"1"
+						"template_german_machinegunner"	"1"
+						"template_german_sniper"		"1"
+					}
+				}
+			}
+		}
+		
+		"americans"
+		{
+			"squads"
+			{			
+				"#squad_american"
+				{
+					"size"				"16"
+						
+					"classes"
+					{
+						"template_american_officer"			"1"	
+						"template_american_communications"	"1"
+						"template_american_rifleman"		"-1"
+						"template_american_assault"			"2"
+						"template_american_support"			"1"
+						"template_american_flamethrower"	"1"
+						"template_american_engineer"		"1"
+						"template_american_machinegunner"	"1"
+						"template_american_sniper"			"1"
+					}
+				}
+			}
+		}
+		
+		"commonwealth"
+		{
+			"squads"
+			{
+				"#squad_commonwealth"
+				{
+					"size"				"20"
+						
+					"classes"
+					{
+						"template_british_officer"			"1"	
+						"template_british_communications"	"1"
+						"template_british_rifleman"			"-1"
+						"template_british_assault"			"2"
+						"template_british_support"			"1"
+						"template_british_flamethrower"		"1"
+						"template_british_engineer"			"1"
+						"template_british_machinegunner"	"1"
+						"template_british_sniper"			"1"
+					}
+				}
+			}
+		}
+	}
+}

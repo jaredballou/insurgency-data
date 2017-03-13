@@ -1,0 +1,7 @@
+"vietnam_b5_night"
+{
+	"file"		"!particles/particles/grenade_wp.pcf
+	"file"		"!particles/particles/napalm.pcf
+	"file"		"!particles/particles/napalm_bomb.pcf
+	
+}

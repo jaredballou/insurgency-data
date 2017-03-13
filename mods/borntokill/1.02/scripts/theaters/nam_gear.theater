@@ -1,0 +1,557 @@
+"theater"
+{
+	"player_gear"
+	{
+		
+		"ins_ammopouch"
+		{
+			"print_name"				"#ins_ammopouch"
+			"print_desc"				"#ins_ammopouch_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"1"
+			"gear_weight"				"5"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"1"
+				"secondary"				"1"
+				
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"1"
+				
+				
+			}
+			"team_access"				"axis"
+		}
+		
+		
+		
+		
+		"ins_chestrig"
+		{
+			"print_name"				"#ins_chestrig"
+			"print_desc"				"#ins_chestrig_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"3"
+			"gear_weight"				"15"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"2"
+				"secondary"				"3"
+				
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"2"
+				"rig"					"1"
+				
+			}
+			"team_access"				"axis"
+		}
+		
+		"ins_lightkit"
+		{
+			"print_name"				"#ins_lightkit"
+			"print_desc"				"#ins_lightkit_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"6"
+			"gear_weight"				"40"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"4"
+				"secondary"				"4"
+				
+			}
+			
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"3"
+				"rig"					"1"
+				
+			}
+			"team_access"				"axis"
+		}
+		
+		"ins_heavykit"
+		{
+			"print_name"				"#ins_heavykit"
+			"print_desc"				"#ins_heavykit_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"8"
+			
+            
+			"gear_weight"				"70"	
+			"extra_ammo"
+			{
+				"primary"				"5"
+				"secondary"				"5"
+				"explosive"
+				{
+					"0"					"1"
+				}
+			}
+			
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"4"
+				"rig"					"1"
+				
+			}
+			"team_access"				"axis"
+		}
+		
+		"hand_bandage"
+		{
+			"print_name"				"#hand_bandage"
+			"print_desc"				"#gear_chest_rig_desc"
+			"gear_slot"				"accessory"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			"entity"					"model"
+			"model"					"models/characters/nam/nva_handbandage.mdl"
+			
+			
+			"team_access"				"axis"
+		}
+		
+		
+		
+		
+		"sunglasses"
+		{
+			"print_name"				"#sunglasses"
+			"print_desc"				"#sunglasses_desc"
+			"gear_slot"				"accessory"
+			"gear_cost"				"1"
+			"gear_weight"				"1"	
+			"entity"					"model"
+			"model"					"models/characters/nam/sunglasses.mdl"
+			
+			
+			"team_access"				"americans"
+		}
+		
+		"glasses"
+		{
+			"print_name"				"#glasses"
+			"print_desc"				"#empty"
+			"gear_slot"				"accessory"
+			"gear_cost"				"1"
+			"gear_weight"				"1"	
+			"entity"					"model"
+			"model"					"models/characters/nam/glasses.mdl"
+			
+			
+			"team_access"				"americans"
+		}
+		
+		"nva_foliage"
+		{
+			"print_name"				"#nva_foliage"
+			"print_desc"				"#nva_foliage_desc"
+			"gear_slot"				"accessory"
+			"gear_cost"				"2"
+			"gear_weight"				"2"
+            "entity"					"model"			
+			"model"					"models/characters/nam/nva_backfoliage.mdl"
+			
+		
+			
+			"team_access"				"axis"
+		}
+
+		
+		"jeans_ins"
+		{
+			"print_name"				"#jeans_ins"
+			"print_desc"				"#75"  
+			"gear_slot"				"misc1"
+			"gear_cost"				"1"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"legs"				"1"
+				
+			}
+			"team_access"				"americans"
+		}
+		
+		"jeans_sec"
+		{
+			"print_name"				"#jeans_sec"
+			"print_desc"				"#75" 
+			"gear_slot"				"misc1"
+			"gear_cost"				"1"
+			"gear_weight"				"0"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"legs"				"2"
+				
+			}
+			"team_access"				"americans"
+		}
+		
+		"helmet_mitchell"
+		{
+			"print_name"				"#helmet_mitchell"
+			"print_desc"				"#75" 
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"3"	
+			
+			"player_model_bodygroups"
+			{
+				"helmet"				"9"
+				
+			}
+			
+			"team_access"				"americans"
+		}
+		
+		"us_boonie"
+		{
+			"print_name"				"#us_boonie"
+			"print_desc"				"#75" 
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			
+			
+			"player_model_bodygroups"
+			{
+				"helmet"				"12"
+				
+			}
+			"team_access"				"americans"
+		}
+		
+		"us_headband_green"
+		{
+			"print_name"				"#headband_green"
+			"print_desc"				"#75" 
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			
+			"player_model_bodygroups"
+			{
+				"helmet"				"11"
+				
+			}
+			
+			"team_access"				"americans"
+		}
+		
+		"us_headband_red"
+		{
+			"print_name"				"#headband_red"
+			"print_desc"				"#75" 
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			
+			"player_model_bodygroups"
+			{
+				"helmet"				"10"
+				
+			}
+			
+			"team_access"				"americans"
+		}
+		
+		"us_cap"
+		{
+			"print_name"				"#us_cap"
+			"print_desc"				"#75" 
+			"gear_slot"				"armor"
+			"gear_cost"				"0"
+			"gear_weight"				"1"	
+			
+			"player_model_bodygroups"
+			{
+				"helmet"				"13"
+				
+			}
+			
+			"team_access"				"americans"
+		}
+		
+		//==================================================================================================================================================================================
+		//================================================= MURICA ==========================================================================================================================
+		
+		"us_ammopouch"
+		{
+			"print_name"				"#ins_ammopouch"
+			"print_desc"				"#ins_ammopouch_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"1"
+			"gear_weight"				"5"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"1"
+				"secondary"				"1"
+				
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"1"
+				
+				
+			}
+			"team_access"				"americans"
+		}
+		
+		"us_chestrig"
+		{
+			"print_name"				"#ins_chestrig"
+			"print_desc"				"#ins_chestrig_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"3"
+			"gear_weight"				"15"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"2"
+				"secondary"				"3"
+				
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"2"
+				
+			}
+			"team_access"				"americans"
+		}
+		
+		"us_lightkit"
+		{
+			"print_name"				"#ins_lightkit"
+			"print_desc"				"#ins_lightkit_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"6"
+			"gear_weight"				"35"	// 50 (5.0kg) + 50 encumbrance
+			"extra_ammo"
+			{
+				"primary"				"4"
+				"secondary"				"4"
+				
+			}
+			
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"3"
+				"backpack"					"2"
+				
+			}
+			"team_access"				"americans"
+		}
+		
+		"us_heavykit"
+		{
+			"print_name"				"#ins_heavykit"
+			"print_desc"				"#ins_heavykit_desc"
+			"gear_slot"				"vest"
+			"gear_cost"				"8"
+			
+            
+			"gear_weight"				"65"	
+			"extra_ammo"
+			{
+				"primary"				"5"
+				"secondary"				"6"
+				"explosive"
+				{
+					"0"					"1"
+				}
+			}
+			
+			"weapon_slots"
+			{
+				"explosive"				"1"
+			}
+			
+			"player_model_bodygroups"
+			{
+				"kit"					"4"
+				"backpack"					"1"
+			}
+			"team_access"				"americans"
+		}
+		
+		
+		
+		
+		//====================================== CHARACTERS
+		
+		
+		
+		//====================================================================================== RADIO AND FLAMETHROWER
+		
+		
+		"gear_radio"
+		{
+			"print_name"				"#gear_radio"
+			"print_desc"				"#gear_radio_desc"
+			"gear_slot"					"backpack"
+			"gear_cost"					"0"
+			"gear_weight"				"40"
+			"entity"					"radio"
+			"class_restricted"			"1"
+			
+	
+			"model"					"models/characters/nam/us_radio.mdl"
+			"team_access"				"americans"
+			
+			"settings"
+			{
+				"health"				"150"
+				"capture_speedup"		"1.5"
+				"attach_point"			"backpack"
+			}
+			"player_model_bodygroups"
+			{
+				"backpack"				"0"
+			}
+		}
+		
+		
+		
+		"gear_radio_german"
+		{
+			"print_name"				"#gear_radio"
+			"print_desc"				"#gear_radio_desc"
+			"gear_slot"					"backpack"
+			"gear_cost"					"0"
+			"gear_weight"				"40"
+			"entity"					"radio"
+			"class_restricted"			"1"
+			
+			"model"						"models/characters/backpack_radio.mdl"
+			"team_access"				"axis, commonwealth"
+			
+			"settings"
+			{
+				"health"				"150"
+				"capture_speedup"		"1.5"
+				"attach_point"			"backpack"
+			}
+			"player_model_bodygroups"
+			{
+				"backpack"				"0"
+			}
+		}
+		
+		"gear_fuel_tank"
+		{
+			"print_name"				"#gear_fuel_tank"
+			"print_desc"				"#gear_fuel_tank_desc"
+			"gear_slot"					"backpack"
+			"gear_cost"					"0"
+			"gear_weight"				"50"
+			"entity"					"fueltank"
+			"model"						"models/characters/lufboy_tank.mdl"
+			"class_restricted"			"1"
+			
+			"team_access"				"axis, americans, commonwealth"
+			
+			"settings"
+			{
+				"health"				"100"
+				"fire_projectile"		"grenade_ignited_fuel_tank"
+				"ammo_type"				"flame" // which ammo type to drain when damage is taken
+				
+				"sound_leak"			"Weapon_FlamethrowerNo2.BackpackLeak"
+				"sound_explode"			"Weapon_FlamethrowerNo2.BackpackDetonate"
+				
+				"attach_point"			"backpack"
+			}
+			"player_model_bodygroups"
+			{
+				"backpack"				"0"
+			}
+		}
+		
+		"gear_fuel_tank_german"
+		{
+			"print_name"				"#gear_fuel_tank"
+			"print_desc"				"#gear_fuel_tank_desc"
+			"gear_slot"					"backpack"
+			"gear_cost"					"0"
+			"gear_weight"				"120"
+			"entity"					"fueltank"
+			"model"						"models/characters/flammenwerfer_tank.mdl"
+			"class_restricted"			"1"
+			
+			"team_access"				"axis, americans, commonwealth"
+			
+			"settings"
+			{
+				"health"				"100"
+				"fire_projectile"		"grenade_ignited_fuel_tank"
+				"ammo_type"				"flame" // which ammo type to drain when damage is taken
+				
+				"sound_leak"			"Weapon_FlamethrowerNo41.BackpackLeak"
+				"sound_explode"			"Weapon_FlamethrowerNo41.BackpackDetonate"
+				
+				"attach_point"			"backpack"
+			}
+			"player_model_bodygroups"
+			{
+				"backpack"				"0"
+			}
+		}
+		
+		"gear_fuel_tank_american"
+		{
+			"print_name"				"#gear_fuel_tank"
+			"print_desc"				"#gear_fuel_tank_desc"
+			"gear_slot"					"backpack"
+			"gear_cost"					"0"
+			"gear_weight"				"50"
+			"entity"					"fueltank"
+			"model"						"models/characters/m2_tank.mdl"
+			"class_restricted"			"1"
+			
+			"team_access"				"axis, americans, commonwealth"
+			
+			"settings"
+			{
+				"health"				"100"
+				"fire_projectile"		"grenade_ignited_fuel_tank"
+				"ammo_type"				"flame" // which ammo type to drain when damage is taken
+				
+				"sound_leak"			"Weapon_FlamethrowerNo41.BackpackLeak"
+				"sound_explode"			"Weapon_FlamethrowerNo41.BackpackDetonate"
+				
+				"attach_point"			"backpack"
+			}
+			"player_model_bodygroups"
+			{
+				"backpack"				"0"
+			}
+		}
+	}
+}

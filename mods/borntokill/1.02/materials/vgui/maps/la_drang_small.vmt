@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/la_drang"
+	"$vertexalpha" 1
+	"$translucent" 1
+}
