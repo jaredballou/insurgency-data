@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/gameui/header_sustained"
+	"$translucent" 1
+}

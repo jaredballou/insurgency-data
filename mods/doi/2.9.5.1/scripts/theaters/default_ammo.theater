@@ -1,0 +1,867 @@
+"theater"
+{
+	"ammo"
+	{
+		"no_carry"	// dummy ammo type for weapons that have no backup ammo (at4)
+		{
+			"carry"					"0"
+		}
+
+		// ========================================
+		// Grenades
+		// ========================================
+		
+		"grenade_mk2"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_stielhandgranate"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_splintering"
+		{
+			"carry"					"2"
+		}
+		
+		"grenade_compb"
+		{
+			"carry"					"1"
+		}
+
+		"grenade_smoke"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_no69"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_no79"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_no77"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_no36"
+		{
+			"carry"					"3"
+		}
+		
+		"grenade_rifle"
+		{
+			"carry"					"3"
+		}
+		
+		// ========================================
+		// ROCKETS
+		// ========================================
+		
+		"rocket_bazooka"
+		{
+			"carry"					"1"
+		}
+		
+		"rocket_panzerfaust"
+		{
+			"carry"					"1"
+		}
+		
+		"rocket_panzerschreck"
+		{
+			"carry"					"1"
+		}
+		
+		"mortar_piat"
+		{
+			"carry"					"2"
+		}	
+		
+		"flame"
+		{
+			"carry"					"500"
+		}
+		
+		"flame46"
+		{
+			"carry"					"15"
+		}
+		
+		// ========================================
+		// M1 Garand (7.62×63mm)
+		// ========================================
+		
+		"762x63mm"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"100"
+				"12000"					"70"
+			}
+			
+			"PenetrationPower"
+			{
+				"10"					"1000"
+				"20000"					"500"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1000"					"0.25"
+			}
+		}
+		
+		"762x63_clip"
+		{
+			"import"		"762x63mm"
+			"carry"			"12"
+			"magsize"		"8"
+		}
+		
+		// ========================================
+		// M1 Carbine (.30 carbine)
+		// ========================================
+		
+		"30_m1carbine"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"80"
+				"12000"					"40"
+			}
+
+			"PenetrationPower"
+			{
+				"100"					"800"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+		"30_m1carbine_mag"
+		{
+			"import"				"30_m1carbine"
+			"carry"					"12"
+			"magsize"				"15"
+		}
+		
+		// ========================================
+		// G-43 (7.92×57mm)
+		// ========================================
+		
+		"792x57_clip"
+		{
+			"import"		"762x38mm_clip"
+			"carry"			"12"
+			"magsize"		"10"
+			
+			"PenetrationPower"
+			{
+				"10"					"1000"
+				"20000"					"500"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1000"					"0.25"
+			}
+		}
+		
+		// ========================================
+		// MP 40
+		// ========================================
+		
+		"9x19mm_mp40"
+		{
+			"import"				"9x19mm_smg"
+
+			"Damage"
+			{
+				"1000"					"42"
+				"2500"					"34"
+				"10000"					"18"
+			}
+			
+			"PenetrationPower"
+			{
+				"100"					"800"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+		// Thompson	M1928a1	(20 by default)
+		"45acp_thompson"
+		{
+			"import"				"45acp"
+			"magsize"				"20"
+			
+			"Damage"
+			{
+				"1000"					"48"
+				"2000"					"30"
+				"10000"					"18"
+			}
+
+			"PenetrationPower"
+			{
+				"100"					"800"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+		// Thompson M1a1 (30 by default)
+		"45acp_thompson_m1a1"
+		{
+			"import"				"45acp"
+			"magsize"				"30"
+			
+			"Damage"
+			{
+				"1000"					"48"
+				"2000"					"30"
+				"10000"					"18"
+			}
+
+			"PenetrationPower"
+			{
+				"100"					"800"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+		"45acp_r"
+		{
+			"import"				"45acp"
+			"magsize"				"6"
+			
+			"Damage"
+			{
+				"1"						"76"
+				"100"					"76"
+				"5000"					"32"
+			}
+			
+			"PenetrationPower"
+			{
+				"100"					"500"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+		// ========================================
+		// K98
+		// ========================================
+
+		"792x57mm"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x54.mdl"
+			"carry"						"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"SuppressionIncrement"		"60"
+
+			"Damage"
+			{
+				"10"					"160"
+				"20000"					"100"
+			}
+
+			"PenetrationPower"
+			{
+				"10"					"1200"
+				"1500"					"800"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1500"					"0.35"
+			}
+		}
+		
+		// ========================================
+		// .30-06 Springfield
+		// ========================================
+		
+		"30-06"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x54.mdl"
+			"carry"						"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"SuppressionIncrement"		"60"
+
+			"Damage"
+			{
+				"10"					"160"
+				"20000"					"100"
+			}
+
+			"PenetrationPower"
+			{
+				"10"					"1200"
+				"1500"					"800"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1500"					"0.35"
+			}
+		}
+		
+		"30-06_belt"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/30-06_link.mdl"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"5"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"15"
+			"SuppressionIncrement"		"60"
+			
+			"PenetrationPower"
+			{
+				"10"					"1500"
+				"15000"					"500"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1000"					"0.3"
+			}			
+		}
+		
+		// ========================================
+		// StG44
+		// ========================================
+		"792x33"	// 122gr  730.3m/s 2,108J
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+
+			"Damage"
+			{
+				"10"					"70"
+				"3000"					"30"
+			}
+
+			"PenetrationPower"
+			{
+				"100"					"1200"
+				"600"					"400"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1000"					"0.25"
+			}
+		}
+		
+		// ========================================
+		// MG-34 and MG-42
+		// ========================================
+		
+		"792x57"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			
+			"Damage"
+			{
+				"10"					"75"
+				"8000"					"35"
+			}
+
+			"PenetrationPower"
+			{
+				"10"					"1500"
+				"1200"					"500"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1000"					"0.25"
+			}
+		}
+		
+		"792x57_drum"
+		{
+			"import"					"792x57"
+			"carry"						"4"
+			"magsize"					"50"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"10"
+		}
+		
+		"792x57_belt"
+		{
+			"import"					"792x57"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20"
+		}
+		
+		// ========================================
+		// Shotgun Ammo
+		// ========================================
+				
+		"buckshot"
+		{
+			"import"				"00buck"
+			"carry"					"72"
+			"flags_clear"			"AMMO_USE_MAGAZINES"			
+			
+			"PenetrationPower"
+			{
+				"100"					"1200"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+		// ========================================
+		// Browning .50cal HMG
+		// ========================================
+		
+		"50cal_us"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+			"Damage"
+			{
+				"10"					"100"
+				"8000"					"50"
+			}
+			"PenetrationPower"
+			{
+				"10"					"800"
+				"8000"					"300"
+			}
+		}
+		"50cal_us_belt"
+		{
+			"import"					"50cal_us"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20"
+		}
+		
+		// ========================================
+		// Vickers and VGO LMG
+		// ========================================
+		
+		"303_brit"
+		{
+			"import"					"default"
+			"brass_model"				"models/weapons/shells/762x39.mdl"
+		}
+		
+		"303_brit_box_30rnd"
+		{
+			"import"					"303_brit"
+			"carry"						"8"
+			"magsize"					"30"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"5"
+
+			"Damage"
+			{
+				"1000"					"85"
+				"8000"					"40"
+			}
+
+			"PenetrationPower"
+			{
+				"10"					"1500"
+				"15000"					"500"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1000"					"0.3"
+			}
+		}
+		
+		"303_brit_pan_47rnd"
+		{
+			"import"					"303_brit"
+			"carry"						"4"
+			"magsize"					"47"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"10"
+			
+			"Damage"
+			{
+				"1000"					"75"
+				"8000"					"25"
+			}			
+
+			"PenetrationPower"
+			{
+				"10"					"1000"
+				"15000"					"400"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1000"					"0.25"
+			}
+		}
+		
+		"303_brit_belt"
+		{
+			"import"					"303_brit"
+			"carry"						"2"
+			"magsize"					"250"
+			"tracer_frequency"			"10"
+			"tracer_type"				"whiz_with_line"
+			"tracer_lowammo"			"20" 
+			
+			"Damage"
+			{
+				"1000"					"75"
+				"8000"					"40"
+			}
+
+			"PenetrationPower"
+			{
+				"10"					"1500"
+				"15000"					"500"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1000"					"0.3"
+			}
+		}
+		
+		"303_clip_enfield"
+		{
+			"import"					"303_brit"
+			"carry"						"60"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+			"SuppressionIncrement"		"90"
+
+			"Damage"
+			{
+				"10"					"160"
+				"20000"					"100"
+			}
+
+			"PenetrationPower"
+			{
+				"10"					"1200"
+				"1500"					"800"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"1500"					"0.35"
+			}
+		}
+		
+		// ========================================
+		// PISTOLS
+		// ========================================
+
+		//default
+		"9x19mm_b"
+		{
+			"import"				"9x19"
+			"carry"					"10"
+			"magsize"				"8"
+			
+			"PenetrationPower"
+			{
+				"100"					"500"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+		
+		"32acp"	// 	7.65×17mm Browning SR (.32 ACP) 73 gr (5 g) FMJ[4] 	1,043 ft/s (318 m/s) 	177 ft·lbf (240 J) (these are 9x19 values)
+		{
+			"import"				"9x19" 
+			"SuppressionIncrement"			"20"
+			"brass_model"				"models/weapons/shells/9x19.mdl"
+			//(these are 9x19 values)
+			"Damage"
+			{
+				"1"						"60"
+				"100"					"60"
+				"5000"					"32"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"0.60"
+				"HITGROUP_STOMACH"			"0.60"
+				"HITGROUP_LEFTARM"			"1.30"
+				"HITGROUP_RIGHTARM"			"1.30"
+				"HITGROUP_LEFTLEG"			"1.30"
+				"HITGROUP_RIGHTLEG"			"1.30"
+			}
+		}	
+		
+		//default .32acp
+		"32_acp"
+		{
+			"import"				"32acp"
+			"carry"					"10"
+			"magsize"				"8"
+			
+			"PenetrationPower"
+			{
+				"100"					"500"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+			
+		// webley		
+		"9x19_r"
+		{
+			"import"				"9x19"
+			"magsize"				"6"
+			"carry"					"36"
+			"flags_clear"			"AMMO_USE_MAGAZINES"
+			
+			"Damage"
+			{
+				"1"						"70"
+				"500"					"70"
+				"2000"					"35"
+			}
+			
+			"PenetrationPower"
+			{
+				"100"					"500"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+			
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"2.00"
+				"HITGROUP_CHEST"			"1.50"
+				"HITGROUP_STOMACH"			"1.25"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"1.00"
+				"HITGROUP_RIGHTLEG"			"1.00"
+			}
+		}
+		// browninghp
+		"9x19_hp"
+		{
+			"import"					"9x19"
+			"magsize"					"13"
+			"brass_model"				"models/weapons/shells/9x19.mdl"
+			
+			"Damage"
+			{
+				"1000"					"35"
+				"2500"					"25"
+				"10000"					"10"
+			}
+			
+			"PenetrationPower"
+			{
+				"100"					"500"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+		// C96
+		"9x19mm_c96"
+		{
+			"import"					"9x19mm_smg"
+			"magsize"					"20"
+			"brass_model"				"models/weapons/shells/9x19.mdl"
+			
+			"Damage"
+			{
+				"1000"					"35"
+				"2500"					"25"
+				"10000"					"10"
+			}			
+			
+			"PenetrationPower"
+			{
+				"100"					"500"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		// C96 clip
+		"9x19mm_c96_clip"
+		{
+			"import"					"9x19"
+			"magsize"					"10"
+			"brass_model"				"models/weapons/shells/9x19.mdl"	
+			
+			"PenetrationPower"
+			{
+				"100"					"500"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		
+		// ========================================
+		// Sten
+		// ========================================
+		"9x19mm_sten"
+		{
+			"import"				"9x19mm_smg"
+			"magsize"				"32"
+			"brass_model"				"models/weapons/shells/9x19.mdl"
+			
+			"Damage"
+			{
+				"1000"					"46"
+				"2500"					"38"
+				"10000"					"18"
+			}
+			
+			"PenetrationPower"
+			{
+				"100"					"800"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.25"
+			}
+		}
+		// welrod
+		"9x19mm_w"
+		{
+			"import"				"9x19mm_smg"
+			"magsize"				"8"		
+
+			"Damage"
+			{
+				"1"					"75"
+				"500"				"75"
+				"2000"				"25"
+			}	
+			
+			"PenetrationPower"
+			{
+				"100"					"400"
+				"600"					"200"
+			}
+
+			"PenetrationDamage"
+			{
+				"0"						"1.0"
+				"800"					"0.2"
+			}		
+		}
+	}
+}
