@@ -1,0 +1,13 @@
+"kruppstahl"
+{
+	material	overviews/kruppstahl			// texture file
+	pos_x		-5169					// X coordinate
+	pos_y		5351					// Y coordinate
+	scale		10 					// scale used when taking the screenshot
+	rotate		0					// map was rotated by 90 degrees in image editor
+	zoom		1					// optimal zoom factor if map is shown in full size
+	grid_divisions 10       				// number grid rows and columns
+	grid_dark	1 					// use dark grid
+}
+
+//setpos_exact 3933.015381 231.055450 9004.240234;setang_exact 0.000000 90.169220 0.00000
