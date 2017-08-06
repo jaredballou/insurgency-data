@@ -1,0 +1,14 @@
+---
+name: Lets Kill Bots Custom Theaters
+desc: Custom stuff
+author: DeltaMike
+steamid: 
+url: http://letskillbots.online
+email: 
+# List of workshop files that should be used to extract game files
+workshop:
+  files:
+    - 944677573
+  collections:
+# List of maps that are affiliated with this mod
+maps:
