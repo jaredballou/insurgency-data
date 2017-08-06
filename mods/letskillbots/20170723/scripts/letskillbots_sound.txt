@@ -1,0 +1,887 @@
+// --------------------------
+// PPSh-41
+// --------------------------
+
+"weapon_tokarev.Single"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_94dB "
+	"rndwave"
+	{
+		"wave"	        "weapons/nam/tokarev/tokarev_tp.wav"	
+	}	
+	"soundentry_version" 	"2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{		
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start3"			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_M9.SingleDistant"
+			}
+		}		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			"volume_accumulate"
+			{
+				"input3" "0.7"
+			}
+
+		}
+	}
+}
+
+"Weapon_tokarev.SingleLocal"
+{
+	"channel"	    "CHAN_WEAPON"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"		    "weapons/nam/tokarev/tokarev_FP.wav"	
+}
+
+// --------------------------
+// Sterling SMG
+// --------------------------
+
+"Weapon_Sterling.Magrelease"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/Sterling/handling/Sterling_magrelease.wav"
+}
+
+"Weapon_Sterling.Magin"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/Sterling/handling/Sterling_magin.wav"
+}
+
+"Weapon_Sterling.Maghit"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/Sterling/handling/Sterling_maghit.wav"
+}
+
+"Weapon_Sterling.Magout"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/Sterling/handling/Sterling_magout.wav"
+}
+
+"Weapon_Sterling.Empty"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/Sterling/handling/Sterling_empty.wav" 
+}
+
+"Weapon_Sterling.Boltlock"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/Sterling/handling/Sterling_boltlock.wav" 
+}
+
+"Weapon_Sterling.Boltunlock"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/Sterling/handling/Sterling_boltunlock.wav" 
+}
+
+"Weapon_Sterling.Boltback"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.25"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/Sterling/handling/Sterling_boltback.wav" 
+}
+
+
+
+// --------------------------
+// M14 
+// --------------------------
+
+"Weapon_M14.ROF"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/M14/handling/m14_fireselect.wav"  
+}
+
+// --------------------------
+// GALIL
+// --------------------------
+
+"Weapon_Galil.DrumMagin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/galil/handling/galil_drum_magin.wav" 
+}
+
+"Weapon_Galil.DrumMagout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/galil/handling/galil_drum_magout.wav" 
+}
+
+"Weapon_Galil.DrumMagoutRattle"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/galil/handling/galil_drum_magout_rattle.wav" 
+}
+
+"Weapon_Galil.DrumMagFetch"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.3"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/galil/handling/galil_drum_mag_fetch.wav" 
+}
+
+"Weapon_Galil.DrumMagHit"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.4"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/galil/handling/galil_drum_maghit.wav" 
+}
+
+// --------------------------
+// MOSIN
+// --------------------------
+
+
+"Weapon_mosin.Single"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB "
+	"rndwave"
+	{
+	"wave"		    ")weapons/mosin/mosin_TP.wav"	
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start3"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_mosin.SingleDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			                        "volume_accumulate"
+                        {
+                               "input3" "0.7"
+                        }
+
+		}
+	}
+
+}
+
+"Weapon_mosin.SingleDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"			")weapons/mosin/mosin_dist.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_limit_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "ins_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "DistWeapons"
+			}
+}
+} 
+}
+
+"Weapon_Mosin.SingleLocal"
+{
+	"channel"	    "CHAN_WEAPON"
+	"volume"	    "1.0"
+	"pitch"			"PITCH_NORM"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+    "wave"	"weapons/mosin/mosin_fp.wav"
+}
+
+"Weapon_mosin.SingleSilenced"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_90dB"
+	"rndwave"
+	{
+	"wave"	        ")weapons/mosin/mosin_suppressed_tp.wav"	
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_mosin.SingleSilencedDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			                        "volume_accumulate"
+                        {
+                               "input3" "0.7"
+                        }
+
+		}
+	}
+
+}
+
+"Weapon_mosin.SingleSilencedDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_limit_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "DistWeapons"
+			}
+}
+} 
+}
+
+"Weapon_Mosin.SingleSilencedLocal"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"			"weapons/mosin/mosin_suppressed_fp.wav"	
+}
+
+// MOSIN HANDLING
+
+"Weapon_Mosin.Empty"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/mosin/handling/mosin_empty.wav" 
+}
+
+"Weapon_Mosin.BoltRelease"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/mosin/handling/mosin_boltrelease.wav" 
+}
+
+"Weapon_Mosin.BoltLatch"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/mosin/handling/mosin_boltlatch.wav" 
+}
+
+"Weapon_Mosin.Boltback"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/mosin/handling/mosin_boltback.wav" 
+}
+
+"Weapon_Mosin.Boltforward"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/mosin/handling/mosin_boltforward.wav" 
+}
+
+"Weapon_Mosin.Roundin"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"rndwave"
+	{
+	"wave"	   "weapons/mosin/handling/mosin_bulletin_1.wav" 
+	"wave"	   "weapons/mosin/handling/mosin_bulletin_2.wav" 
+	"wave"	   "weapons/mosin/handling/mosin_bulletin_3.wav" 
+	"wave"	   "weapons/mosin/handling/mosin_bulletin_4.wav" 
+	}
+}
+
+// --------------------------
+// Makarov
+// --------------------------
+
+
+// MAKAROV HANDLING
+
+"Weapon_makarov.Magrelease"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/makarov/handling/Makarov_safety.wav" 
+}
+
+"Weapon_makarov.Magin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/makarov/handling/Makarov_magin.wav" 
+}
+
+"Weapon_makarov.Magout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/makarov/handling/Makarov_magout.wav" 
+
+}
+
+"Weapon_makarov.MagHit"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/makarov/handling/Makarov_maghit.wav" 
+}
+
+"Weapon_makarov.Boltback"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.4"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/makarov/handling/Makarov_boltback.wav" 
+}
+
+"Weapon_makarov.Boltrelease"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.4"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/makarov/handling/Makarov_boltrelease.wav" 
+}
+
+"Weapon_makarov.safety"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/makarov/handling/Makarov_safety.wav" 
+}
+
+"Weapon_makarov.Empty"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"			"weapons/makarov/handling/Makarov_empty.wav"  
+}
+
+// --------------------------
+// SKS
+// --------------------------
+
+
+"Weapon_SKS.Single"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_94dB "
+	"rndwave"
+	{
+	"wave"		    ")weapons/SKS/SKS_TP.wav"	
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start3"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_SKS.SingleDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			                        "volume_accumulate"
+                        {
+                               "input3" "0.7"
+                        }
+
+		}
+	}
+
+}
+
+"Weapon_SKS.SingleDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+    "pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"			")weapons/SKS/SKS_dist.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_limit_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "ins_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "DistWeapons"
+			}
+}
+} 
+}
+
+"Weapon_SKS.SingleLocal"
+{
+	"channel"	    "CHAN_WEAPON"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"	"weapons/SKS/SKS_fp.wav"
+}
+
+"Weapon_SKS.SingleSilenced"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_90dB"
+	"rndwave"
+	{
+	"wave"	        ")weapons/SKS/SKS_suppressed_tp.wav"	
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_SKS.SingleSilencedDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+		"volume_xfade_start_dist"
+		{
+			"input2" "100"
+		}	
+		"volume_xfade_end_dist"
+		{
+			"input2" "1200"
+		}	
+
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			                        "volume_accumulate"
+                        {
+                               "input3" "0.7"
+                        }
+
+		}
+	}
+
+}
+
+"Weapon_SKS.SingleSilencedDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_94dB"
+	"wave"			"weapons/universal/null.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_limit_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "DistWeapons"
+			}
+}
+} 
+}
+
+"Weapon_SKS.SingleSilencedLocal"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+    "pitch"			"100,105"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"			"weapons/SKS/SKS_suppressed_fp.wav"	
+}
+
+// SKS HANDLING
+
+"Weapon_SKS.Magrelease"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/SKS/handling/SKS_magrelease.wav" 
+}
+
+"Weapon_SKS.Magin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/SKS/handling/SKS_magin.wav" 
+}
+
+"Weapon_SKS.Magout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/SKS/handling/SKS_magout.wav" 
+}
+
+"Weapon_SKS.Boltback"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.3"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/SKS/handling/SKS_boltback.wav" 
+}
+
+"Weapon_SKS.Boltrelease"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.3"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/SKS/handling/SKS_boltrelease.wav"  
+}
+
+"Weapon_SKS.Empty"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.2"
+    "pitch"			"PITCH_NORM"
+	"wave"			"weapons/SKS/handling/SKS_empty.wav"  
+}
+
+// --------------------------
+// M1912 Shotgun
+// --------------------------
+
+
+"Weapon_M1912.Single"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_94dB "
+	"rndwave"
+	{
+	"wave"		    ")weapons/m1912/m1912_TP.wav"	
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start3"
+			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_M1912.SingleDistant"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			                        "volume_accumulate"
+                        {
+                               "input3" "0.7"
+                        }
+
+		}
+	}
+
+}
+
+"Weapon_M1912.SingleDistant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+    "pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"			")weapons/m1912/m1912_dist.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "INS_limit_start"
+		}
+
+		"update_stack"
+		{
+			"import_stack" "ins_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "DistWeapons"
+			}
+}
+} 
+}
+
+"Weapon_M1912.SingleLocal"
+{
+	"channel"	    "CHAN_WEAPON"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+    "wave"	"weapons/m1912/m1912_FP.wav"
+}
+
+
+// M1912 HANDLING
+
+"Weapon_M1912.Empty"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"			"0.2"
+    "pitch"				"PITCH_NORM"
+	"wave"				"weapons/m1912/handling/m1912_empty.wav" 
+}
+
+"Weapon_M1912.BoltBack"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.35"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/m1912/handling/m1912_pumpback.wav" 
+}
+
+"Weapon_M1912.BoltRelease"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.35"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/m1912/handling/m1912_pumpforward.wav"
+}
+
+"Weapon_M1912.ShellInsert"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"rndwave"
+	{
+	"wave"				"weapons/m1912/handling/m1912_shell_insert_1.wav" 
+	"wave"				"weapons/m1912/handling/m1912_shell_insert_2.wav" 
+	"wave"				"weapons/m1912/handling/m1912_shell_insert_3.wav" 
+	}
+}
+
+"Weapon_M1912.ShellInsertSingle"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"rndwave"
+	{
+	"wave"				"weapons/m1912/handling/m1912_single_shell_insert_1.wav" 
+	"wave"				"weapons/m1912/handling/m1912_single_shell_insert_2.wav" 
+	"wave"				"weapons/m1912/handling/m1912_single_shell_insert_3.wav" 
+	}
+}

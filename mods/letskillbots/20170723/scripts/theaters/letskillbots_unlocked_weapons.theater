@@ -1,0 +1,642 @@
+"#base" "letskillbots_base_weapon.theater"
+"#base" "letskillbots_base_explosives.theater"
+"#base" "letskillbots_base_common_ammo.theater"
+"#base" "letskillbots_ammo.theater"
+
+"theater"
+{
+	"weapons"
+	{		
+		"weapon_brassknuckles"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_brassknuckles"
+			"print_desc"				"#weapon_brassknuckles_desc"
+			"view_model"				"models/weapons/v_brassknuckles.mdl"
+			"world_model"				"models/weapons/w_brassknuckles.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"none"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"unlock"					"0"
+			
+			"ammo_clip"
+			{
+				"ammo_type"				"invalid"
+				"clip_max_rounds"		"-1"	// no clips
+				"clip_default"			"0"
+			}
+			
+			"fov"
+			{
+				"fov_wpn_default"			"60"
+			}
+			
+			"sounds"
+			{
+				"shot_single"			"Weapon_BrassKnuckles.Melee"
+				"melee_hit"				"Weapon_BrassKnuckles.HitFlesh"
+				"melee_hit_world"		"Weapon_BrassKnuckles.HitWorld"
+			}
+			
+			"melee"
+			{
+				"MeleeRange"				"75"
+				"MeleeDamage"				"60"
+				"MeleeDamageBehindBonus"	"200"
+				"MeleeDamageType"			"DMG_SLASH"
+				"MeleeWeaponIdleTime"		"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"				"ACT_VM_HITCENTER"
+						"PlayerAtivity"			"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"	"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"				"0.1"
+						"EndTime"				"0.34"
+						"Duration"				"0.6"
+						"StartDirection"		"E"
+						"EndDirection"			"W"
+						"ForceDirection"		"15 -40 0"
+					}
+				}
+			}
+			
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}
+			
+			"recoil"
+			{
+				"recoil_rest_rate"			"5"
+				"recoil_rest_delay"			"0.1"
+			}
+			
+			"kitui_offset"
+			{
+				"position"					"12 0 0"
+			}
+			
+			"team_access"					"americans"
+		}
+		
+		"weapon_etool_us"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_etool"
+			"print_desc"				"#weapon_etool_desc"
+			"view_model"				"models/weapons/v_etool_us.mdl"
+			"world_model"				"models/weapons/w_etool_us.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"etool"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"unlock"					"0"
+			
+			"ammo_clip"
+			{
+				"ammo_type"				"invalid"
+				"clip_max_rounds"		"-1"	// no clips
+				"clip_default"			"0"
+			}
+			
+			"sounds"
+			{
+				"shot_single"			"Weapon_enttool.Hit"
+				"melee_hit"				"Weapon_enttool.Hit"
+				"melee_hit_world"		"Weapon_enttool.Hit"
+			}
+			
+			"melee"
+			{
+				"MeleeRange"				"75"
+				"MeleeDamage"				"60"
+				"MeleeDamageBehindBonus"	"200"
+				"MeleeDamageType"			"DMG_SLASH"
+				"MeleeWeaponIdleTime"		"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"				"ACT_VM_HITCENTER"
+						"PlayerAtivity"			"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"	"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"				"0.1"
+						"EndTime"				"0.34"
+						"Duration"				"0.9"
+						"StartDirection"		"E"
+						"EndDirection"			"W"
+						"ForceDirection"		"15 -40 0"
+					}
+				}
+			}
+			
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}	
+
+			"kitui_offset"
+			{
+				"position"				"14 0 0"
+			}
+		
+			"team_access"					"americans"
+		}
+		
+		"weapon_etool_brit"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_etool"
+			"print_desc"				"#weapon_etool_desc"
+			"view_model"				"models/weapons/v_etool_brit.mdl"
+			"world_model"				"models/weapons/w_etool_brit.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"etool"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"unlock"					"0"
+			
+			"fov"
+			{
+				"fov_wpn_default"		"60"
+			}
+			
+			"ammo_clip"
+			{
+				"ammo_type"				"invalid"
+				"clip_max_rounds"		"-1"	// no clips
+				"clip_default"			"0"
+			}
+			
+			"sounds"
+			{
+				"shot_single"			"Weapon_enttool.Hit"
+				"melee_hit"				"Weapon_enttool.Hit"
+				"melee_hit_world"		"Weapon_enttool.Hit"
+			}
+			
+			"melee"
+			{
+				"MeleeRange"				"75"
+				"MeleeDamage"				"60"
+				"MeleeDamageBehindBonus"	"200"
+				"MeleeDamageType"			"DMG_CLUB"
+				"MeleeWeaponIdleTime"		"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"				"ACT_VM_HITCENTER"
+						"PlayerAtivity"			"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"	"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"				"0.1"
+						"EndTime"				"0.34"
+						"Duration"				"0.9"
+						"StartDirection"		"E"
+						"EndDirection"			"W"
+						"ForceDirection"		"15 -40 0"
+					}
+				}
+			}
+			
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}		
+
+			"kitui_offset"
+			{
+				"position"				"14 0 0"
+			}
+		
+			"team_access"					"commonwealth"
+		}
+		
+		"weapon_fairbairn"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_fairbairn"
+			"print_desc"				"#weapon_fairbairn_desc"
+			"view_model"				"models/weapons/v_fairbairn.mdl"
+			"world_model"				"models/weapons/w_fairbairn.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"knife"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"unlock"					"0"
+			
+			"ammo_clip"
+			{
+				"ammo_type"				"invalid"
+				"clip_max_rounds"		"-1"	// no clips
+				"clip_default"			"0"
+			}
+			
+			"sounds"
+			{
+				"shot_single"			"Weapon_Knife.Single"
+				"melee_hit"				"Weapon_Knife.Melee_Hit"
+				"melee_hit_world"		"Weapon_Knife.Melee_HitWorld"
+			}
+			
+			"fov"
+			{
+				"fov_wpn_default"			"60"
+			}
+			
+			"melee"
+			{
+				"MeleeRange"				"75"
+				"MeleeDamage"				"60"
+				"MeleeDamageBehindBonus"	"200"
+				"MeleeDamageType"			"DMG_SLASH"
+				"MeleeWeaponIdleTime"		"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"				"ACT_VM_HITCENTER"
+						"PlayerAtivity"			"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"	"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"				"0.1"
+						"EndTime"				"0.34"
+						"Duration"				"0.9"
+						"StartDirection"		"W"
+						"EndDirection"			"E"
+						"ForceDirection"		"15 -40 0"
+					}
+				}
+			}
+			
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}
+			
+			"recoil"
+			{
+				"recoil_rest_rate"			"5"
+				"recoil_rest_delay"			"0.1"
+			}
+			
+			"kitui_offset"
+			{
+				"position"				"11 0 0"
+			}
+			
+			"team_access"					"commonwealth"
+		}
+		
+		"weapon_hatchet"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_hatchet"
+			"print_desc"				"#weapon_hatchet_desc"
+			"view_model"				"models/weapons/v_hatchet.mdl"
+			"world_model"				"models/weapons/w_hatchet.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"etool"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"unlock"					"0"
+			
+			"fov"
+			{
+				"fov_wpn_default"		"60"
+			}
+			
+			"ammo_clip"
+			{
+				"ammo_type"				"invalid"
+				"clip_max_rounds"		"-1"	// no clips
+				"clip_default"			"0"
+			}
+			
+			"sounds"
+			{
+				"shot_single"			"Weapon_Hatchet.HitFlesh"
+				"melee_hit"				"Weapon_Hatchet.HitFlesh"
+				"melee_hit_world"		"Weapon_Hatchet.HitWorld"
+			}
+			
+			"melee"
+			{
+				"MeleeRange"				"75"
+				"MeleeDamage"				"60"
+				"MeleeDamageBehindBonus"	"200"
+				"MeleeDamageType"			"DMG_CLUB"
+				"MeleeWeaponIdleTime"		"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"				"ACT_VM_HITCENTER"
+						"PlayerAtivity"			"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"	"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"				"0.1"
+						"EndTime"				"0.64"
+						"Duration"				"0.9"
+						"StartDirection"		"N"
+						"EndDirection"			"S"
+						"ForceDirection"		"15 -40 0"
+					}
+				}
+			}
+			
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}	
+
+			"kitui_offset"
+			{
+				"position"				"14 0 0"
+			}		
+		
+			"team_access"					"commonwealth"
+		}
+		
+		"weapon_etool"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_etool"
+			"print_desc"				"#weapon_etool_desc"
+			"view_model"				"models/weapons/v_etool_ger.mdl"
+			"world_model"				"models/weapons/w_etool_ger.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"etool"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"unlock"					"0"
+			
+			"ammo_clip"
+			{
+				"ammo_type"				"invalid"
+				"clip_max_rounds"		"-1"	// no clips
+				"clip_default"			"0"
+			}
+			
+			"sounds"
+			{
+				"shot_single"			"Weapon_enttool.Hit"
+				"melee_hit"				"Weapon_enttool.Hit"
+				"melee_hit_world"		"Weapon_enttool.Hit"
+			}
+			
+			"melee"
+			{
+				"MeleeRange"				"75"
+				"MeleeDamage"				"60"
+				"MeleeDamageBehindBonus"	"200"
+				"MeleeDamageType"			"DMG_CLUB"
+				"MeleeWeaponIdleTime"		"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"				"ACT_VM_HITCENTER"
+						"PlayerAtivity"			"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"	"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"				"0.1"
+						"EndTime"				"0.34"
+						"Duration"				"0.9"
+						"StartDirection"		"E"
+						"EndDirection"			"W"
+						"ForceDirection"		"15 -40 0"
+					}
+				}
+			}
+			
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}		
+
+			"kitui_offset"
+			{
+				"position"				"14 0 0"
+			}	
+		
+			"team_access"					"axis"
+		}
+		
+		"weapon_gravityknife"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_gravityknife"
+			"print_desc"				"#weapon_gravityknife_desc"
+			"view_model"				"models/weapons/v_gravityknife.mdl"
+			"world_model"				"models/weapons/w_gravityknife.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"knife_singlehand"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"unlock"					"0"
+			
+			"ammo_clip"
+			{
+				"ammo_type"				"invalid"
+				"clip_max_rounds"		"-1"	// no clips
+				"clip_default"			"0"
+			}
+			
+			"sounds"
+			{
+				"shot_single"			"Weapon_Knife.Single"
+				"melee_hit"				"Weapon_Knife.Melee_Hit"
+				"melee_hit_world"		"Weapon_Knife.Melee_HitWorld"
+			}
+			
+			"fov"
+			{
+				"fov_wpn_default"			"60"
+			}
+			
+			"melee"
+			{
+				"MeleeRange"				"75"
+				"MeleeDamage"				"60"
+				"MeleeDamageBehindBonus"	"200"
+				"MeleeDamageType"			"DMG_SLASH"
+				"MeleeWeaponIdleTime"		"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"				"ACT_VM_HITCENTER"
+						"PlayerAtivity"			"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"	"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"				"0.1"
+						"EndTime"				"0.34"
+						"Duration"				"0.9"
+						"StartDirection"		"W"
+						"EndDirection"			"E"
+						"ForceDirection"		"15 -40 0"
+					}
+				}
+			}
+			
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}
+			
+			"kitui_offset"
+			{
+				"position"				"11 0 0"
+			}
+			
+			"recoil"
+			{
+				"recoil_rest_rate"			"5"
+				"recoil_rest_delay"			"0.1"
+			}
+			
+			"team_access"					"axis"
+		}
+		
+		"weapon_stiletto"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_stiletto"
+			"print_desc"				"#weapon_stiletto_desc"
+			"view_model"				"models/weapons/v_stiletto.mdl"
+			"world_model"				"models/weapons/w_stiletto.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"knife"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"unlock"					"0"
+			
+			"ammo_clip"
+			{
+				"ammo_type"				"invalid"
+				"clip_max_rounds"		"-1"	// no clips
+				"clip_default"			"0"
+			}
+			
+			"sounds"
+			{
+				"shot_single"			"Weapon_Knife.Single"
+				"melee_hit"				"Weapon_Knife.Melee_Hit"
+				"melee_hit_world"		"Weapon_Knife.Melee_HitWorld"
+			}
+			
+			"fov"
+			{
+				"fov_wpn_default"			"60"
+			}
+			
+			"melee"
+			{
+				"MeleeRange"				"75"
+				"MeleeDamage"				"60"
+				"MeleeDamageBehindBonus"	"200"
+				"MeleeDamageType"			"DMG_SLASH"
+				"MeleeWeaponIdleTime"		"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"				"ACT_VM_HITCENTER"
+						"PlayerAtivity"			"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"	"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"				"0.1"
+						"EndTime"				"0.34"
+						"Duration"				"0.9"
+						"StartDirection"		"W"
+						"EndDirection"			"E"
+						"ForceDirection"		"15 -40 0"
+					}
+				}
+			}
+			
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}
+			
+			"recoil"
+			{
+				"recoil_rest_rate"			"5"
+				"recoil_rest_delay"			"0.1"
+			}
+			
+			"kitui_offset"
+			{
+				"position"				"11 0 0"
+			}
+			
+			"team_access"					"americans, commonwealth"
+		}
+		
+
+	}
+}

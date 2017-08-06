@@ -1,0 +1,899 @@
+"theater"
+{
+	"unlocks"
+	{		
+		//American Army Default
+		"unit_american_usarmy"
+		{
+			"printname"				"#unit_default_americans"
+			"print_description" 	"#unit_default_americans_desc"
+
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"american01"
+				"model"					"models/characters/american/player_american_01.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet.mdl"
+					
+				"bodygroups"
+				{
+					"decals"	"0"
+					"helmet"	"0"
+				}
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/american/player_american_07.mdl"
+						
+						"helmet"		"models/characters/american/american_officer_helmet.mdl"
+					}
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/american/player_american_06.mdl"
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/american/player_american_01.mdl"
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/american/player_american_04.mdl"
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/american/player_american_09.mdl"
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/american/player_american_08.mdl"
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/american/player_american_02.mdl"
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/american/player_american_05.mdl"
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/american/player_american_03.mdl"
+					}
+				}
+			}
+		}
+		
+		//Rangers
+		"unit_american_ranger"
+		{
+			"printname"		"#unit_american_rangers"
+			"print_description" "#unit_american_rangers_desc"
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"american02"
+				"model"					"models/characters/american/player_american_02.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_us_glove.mdl"
+				
+				"helmet"				"models/characters/american/american_ranger_hat.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"1"
+					"helmet"	"0"
+				}
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/american/player_american_02.mdl"
+					}
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/american/player_american_03.mdl"
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/american/player_american_01.mdl"
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/american/player_american_04.mdl"
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/american/player_american_09.mdl"
+					}
+				
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/american/player_american_06.mdl"
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/american/player_american_08.mdl"
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/american/player_american_05.mdl"
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/american/player_american_07.mdl"
+					}
+				}
+			}
+		}
+		
+		//US 101st Airborne
+		"unit_american_101stairborne"
+		{
+			"printname"		"#unit_american_101stairborne"
+			"print_description" "#unit_american_101stairborne_desc"
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"			"american02"
+				"model"			"models/characters/american/player_american_airborne_01.mdl"
+				
+				"viewmodel_hands"	"models\weapons\v_hands_us_glove_airborne.mdl"
+				"viewmodel_gloves"	"models\weapons\v_hands_us_glove_airborne.mdl"
+				
+				"helmet"		"models/characters/american/american_airborne_helmet_net.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"1"
+					"decals"	"10"
+					"helmet"	"0"
+				}
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/american/player_american_airborne_07.mdl"
+						
+						"helmet"		"models/characters/american/american_airborne_officer_helmet_net.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"2"
+						}
+					}
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/american/player_american_airborne_05.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"1"
+						}
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/american/player_american_airborne_01.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"2"
+						}
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/american/player_american_airborne_04.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"2"
+						}
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/american/player_american_airborne_08.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"1"
+						}
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/american/player_american_airborne_06.mdl"
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/american/player_american_airborne_02.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"1"
+						}
+
+						"?has_m1para_access"
+						{
+							"buy_order"
+							{
+								"weapon"				"weapon_garand_bayonet"
+								"weapon"				"weapon_m1paratrooper"
+								"weapon"				"weapon_m1911"
+								"weapon"				"weapon_smoke"
+								"gear"					"american_light_kit"
+								"gear"					"gear_radio"
+							}
+						}
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/american/player_american_airborne_09.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"2"
+						}
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/american/player_american_airborne_03.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"1"
+						}
+					}
+				}
+			}			
+		}
+		
+		//US 82nd Airborne
+		"unit_american_82ndairborne"
+		{
+			"printname"		"#unit_american_82ndairborne"
+			"print_description" "#unit_american_82ndairborne_desc"
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"			"american02"
+				"model"			"models/characters/american/player_american_airborne_07.mdl"
+				
+				"viewmodel_hands"	"models\weapons\v_hands_us_glove_airborne.mdl"
+				"viewmodel_gloves"	"models\weapons\v_hands_us_glove_airborne.mdl"
+				
+				"helmet"		"models/characters/american/american_airborne_helmet_net.mdl"
+				
+				"uniform"				"models/player/american/american_clothes_airborne_02"
+				
+				"bodygroups"
+				{
+					"patch"		"2"
+					"decals"	"8"
+					"helmet"	"0"
+				}
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/american/player_american_airborne_07.mdl"
+						
+						"helmet"		"models/characters/american/american_airborne_officer_helmet_camo.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"2"
+						}
+					}					
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/american/player_american_airborne_05.mdl"
+						
+						"helmet"		"models/characters/american/american_airborne_helmet_camo.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"1"
+						}
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/american/player_american_airborne_01.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"2"
+						}
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/american/player_american_airborne_04.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"2"
+						}
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/american/player_american_airborne_08.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"1"
+						}
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/american/player_american_airborne_06.mdl"
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/american/player_american_airborne_02.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"1"
+						}
+
+						"?has_m1para_access"
+						{
+							"buy_order"
+							{
+								"weapon"				"weapon_garand_bayonet"
+								"weapon"				"weapon_m1paratrooper"
+								"weapon"				"weapon_m1911"
+								"weapon"				"weapon_smoke"
+								"gear"					"american_light_kit"
+								"gear"					"gear_radio"
+							}
+						}
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/american/player_american_airborne_09.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"2"
+						}
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/american/player_american_airborne_03.mdl"
+						
+						"helmet"		"models/characters/american/american_airborne_helmet_camo.mdl"
+						
+						"bodygroups"
+						{
+							"pouches"	"1"
+						}
+					}
+				}
+			}			
+		}
+		
+		//US 1st infantry
+		"unit_american_1stinfantry"
+		{			
+			"printname"				"#unit_american_1stinfantry"
+			"print_description" 	"#unit_american_1stinfantry_desc"
+			"team_access"			"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"american01"
+				"model"					"models/characters/american/player_american_01.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"3"
+					"helmet"	"0"
+					"decals"	"1"
+				}
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/american/player_american_02.mdl"
+						
+						"helmet"		"models/characters/american/american_officer_helmet_net.mdl"
+						
+						"bodygroups"
+						{
+							"decals"	"2"
+						}
+					}
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/american/player_american_06.mdl"
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/american/player_american_01.mdl"
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/american/player_american_04.mdl"
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/american/player_american_08.mdl"
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/american/player_american_07.mdl"
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/american/player_american_09.mdl"
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/american/player_american_05.mdl"
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/american/player_american_03.mdl"
+					}
+				}
+			}
+		}
+		
+		//US 28th division
+		"unit_american_28thdivision"
+		{			
+			"printname"				"#unit_american_28thdivision"
+			"print_description" 	"#unit_american_28thdivision_desc"
+			"team_access"			"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"american01"
+				"model"					"models/characters/american/player_american_01.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet_28th.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"5"
+					"helmet"	"0"
+					//"decals"	"9"
+				}
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/american/player_american_04.mdl"
+					}
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/american/player_american_06.mdl"
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/american/player_american_01.mdl"
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/american/player_american_02.mdl"
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/american/player_american_08.mdl"
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/american/player_american_07.mdl"
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/american/player_american_09.mdl"
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/american/player_american_05.mdl"
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/american/player_american_03.mdl"
+					}
+				}
+			}
+		}
+
+		//Bufallo soldier
+		"unit_american_92ndinfantry"
+		{
+			"printname"		"#unit_american_92ndinfantry"
+			"print_description" "#unit_american_92ndinfantry_desc"
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"			"africanamerican"
+				"model"			"models/characters/american/units/player_american_buffalo.mdl"
+
+				"viewmodel_hands"		"models\weapons\v_hands_us_buffalo.mdl"		
+				"viewmodel_gloves"		"models\weapons\v_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet.mdl"
+		
+				"bodygroups"
+				{
+					"patch"		"1"
+					"decals"	"1"
+					"helmet"	"0"
+				}		
+				
+				"class_replacements"
+				{				
+					"template_american_officer"
+					{
+						"helmet"	"models/characters/american/american_officer_helmet.mdl"
+					}
+				}
+			}
+		}
+		
+		//2nd Ranger Battalion
+		"unit_american_2ndrangers"
+		{
+			"printname"		"#unit_american_2ndrangers"
+			"print_description" "#unit_american_2ndrangers_desc"
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"american02"
+				"model"					"models/characters/american/player_american_01.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet.mdl"
+
+				"bodygroups"
+				{
+					"patch"		"2"
+					"decals"	"3"
+					"helmet"	"0"
+				}	
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/american/player_american_01.mdl"
+						
+						"bodygroups"
+						{
+							"decals"	"5"
+						}
+					}
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/american/player_american_04.mdl"
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/american/player_american_02.mdl"
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/american/player_american_06.mdl"
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/american/player_american_07.mdl"
+					}
+				
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/american/player_american_09.mdl"
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/american/player_american_03.mdl"
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/american/player_american_05.mdl"
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/american/player_american_08.mdl"
+					}
+				}	
+			}
+		}
+		
+		//US 3rd division
+		"unit_american_3rddivision"
+		{			
+			"printname"				"#unit_american_3rddivision"
+			"print_description" 	"#unit_american_3rddivision_desc"
+			"team_access"			"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"american01"
+				"model"					"models/characters/american/player_american_01.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet_3rdinfantry.mdl"
+				
+				"bodygroups"
+				{
+					"patch"		"4"
+					"decals"	"7"
+					"helmet"	"0"
+				}
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/american/player_american_01.mdl"
+						"helmet"		"models/characters/american/american_officer_helmet.mdl"
+						
+						"bodygroups"
+						{
+							"decals"	"7"
+						}
+					}
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/american/player_american_06.mdl"
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/american/player_american_09.mdl"
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/american/player_american_04.mdl"
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/american/player_american_07.mdl"
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/american/player_american_08.mdl"
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/american/player_american_02.mdl"
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/american/player_american_05.mdl"
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/american/player_american_03.mdl"
+					}
+				}
+			}
+		}
+		
+		//US 29th Infantry
+		"unit_american_29thinfantry"
+		{
+			"printname"				"#unit_american_29thinfantry"
+			"print_description" 	"#unit_american_29thinfantry_desc"
+
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"					"american01"
+				"model"					"models/characters/american/player_american_01.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_us.mdl"
+				"viewmodel_gloves"		"models/weapons/v_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet.mdl"
+					
+				"bodygroups"
+				{
+					"decals"	"15"
+					"patch"		"6"
+					"helmet"	"0"
+					"m7bag"		"1"
+				}
+				
+				"class_replacements"
+				{
+					"template_american_officer"
+					{
+						"model"			"models/characters/american/player_american_07.mdl"
+						
+						"helmet"		"models/characters/american/american_officer_helmet.mdl"
+					}
+					
+					"template_american_rifleman"
+					{
+						"model"			"models/characters/american/player_american_06.mdl"
+					}
+					
+					"template_american_assault"
+					{
+						"model"			"models/characters/american/player_american_01.mdl"
+					}
+					
+					"template_american_support"
+					{
+						"model"			"models/characters/american/player_american_04.mdl"
+					}
+					
+					"template_american_engineer"
+					{
+						"model"			"models/characters/american/player_american_09.mdl"
+					}
+									
+					"template_american_flamethrower"
+					{
+						"model"			"models/characters/american/player_american_08.mdl"
+					}
+					
+					"template_american_communications"
+					{
+						"model"			"models/characters/american/player_american_02.mdl"
+					}
+					
+					"template_american_machinegunner"
+					{
+						"model"			"models/characters/american/player_american_05.mdl"
+					}
+					
+					"template_american_sniper"
+					{
+						"model"			"models/characters/american/player_american_03.mdl"
+					}
+				}
+			}
+		}
+		
+		//US 761st Tanker
+		"unit_american_761blackpanther"
+		{
+			"printname"				"#unit_american_761blackpanther"
+			"print_description" 	"#unit_american_761blackpanther_desc"
+
+			"team_access"	"americans"
+			
+			"ItemDefId"		"900"
+							
+			"default"		"1"
+			
+			"Character"
+			{
+				"voice"			"africanamerican"
+				"model"			"models/characters/american/units/player_american_panther.mdl"
+
+				"viewmodel_hands"		"models\weapons\v_hands_us_buffalo.mdl"		
+				"viewmodel_gloves"		"models\weapons\v_hands_us_glove.mdl"
+				"helmet"				"models/characters/american/american_helmet_tanker.mdl"
+		
+				"bodygroups"
+				{
+					"helmet"	"0"
+					"patch"		"2"
+				}
+			}
+		}
+	}
+}

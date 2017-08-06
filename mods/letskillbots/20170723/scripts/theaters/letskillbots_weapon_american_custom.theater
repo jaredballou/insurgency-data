@@ -1,0 +1,99 @@
+"#base" "letskillbots_base_weapon.theater"
+"#base" "letskillbots_base_explosives.theater"
+"#base" "letskillbots_base_common_ammo.theater"
+"#base" "letskillbots_ammo.theater"
+
+"theater"
+{
+	"weapons"
+	{	
+		// ========================================
+		// SHOTGUNS
+		// ========================================
+
+
+		"weapon_lkb_m1912"
+		{
+			"import"					"ballistic_base"
+			"weapon_class"				"shotgun"
+			"weapon_cost"				"0"
+			"print_name"				"#weapon_m1912"
+			"print_desc"				"#weapon_m1912_desc"
+			"view_model"				"models/weapons/v_m1912.mdl"
+			"world_model"				"models/weapons/w_m1912.mdl"
+			"weapon_slot"				"primary"
+			"act_table"					"shot"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"110"	// (2.5kg[weapon] + (0.3kg[ammo] * (1+10)[mags]) )*10[kg->hg for int]  +24[encumbrance]
+			"barrel_length"				"18"
+			"fire_cycle"				"0.2"
+			
+			"fov"
+			{
+				"fov_wpn_scope"				"0"
+				"fov_plr_ironsight"			"-25"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"54"
+				"fov_wpn_ironsight"			"74"
+				"fov_wpn_focus"				"79"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_m1912.Single"
+				"shot_single_local"			"Weapon_m1912.SingleLocal"
+				"empty"						"Weapon_m1912.Empty"
+				"boltback"					"Weapon_m1912.BoltBack"
+				"boltrelease"				"Weapon_m1912.BoltRelease"
+				
+				"thirdperson_prefix"		"Weapon_m1912"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_ithica_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_ithica_3p"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-1.0 1.25"
+				"recoil_vertical_range"			"9.75 10.5"
+				"recoil_aim_punch"			"0.8 1.1"
+				"recoil_rest_rate"			"24"
+				"recoil_rest_delay"			"0.15"
+				"recoil_roll_range"			"-1.50 -1.50"
+				"recoil_roll_rest_rate"			"150"
+				"recoil_freeaim_frac"			"0.1"
+				
+				"recoil_additional_rest_per_shot"	"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time"		"0.3"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots"			"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor"		"0.85"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"				"2.0 2.0 0.0"
+				"FireModes"				"pump"
+				"maxrange"				"3000"
+				"singleReload"				"1"
+				"tacticalreload"		"1"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"buckshot"
+				"clip_max"				"48"
+				"clip_max_rounds"			"8"
+				"clip_default"				"24"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"primary"
+			}
+			"kitui_offset"
+			{
+				"position"				"32 0 3"
+			}
+			"team_access"				"americans"
+		}
+		
+		
+	}
+}

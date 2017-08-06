@@ -1,0 +1,529 @@
+"#base" "letskillbots_base_weapon_upgrades.theater"
+
+"theater"
+{
+	"weapon_upgrades"
+	{
+		// ========================================
+		// QUICK RELOAD
+		// ========================================		
+
+		"perk_quick_reload"
+		{
+			"print_name"				"#perk_quick_reload"
+			"print_desc"				"#perk_quick_reload_desc"
+			"upgrade_cost"				"1"
+			"upgrade_slot"				"aesthetic"
+			"reload_speed"				"1.5"
+			"class_restricted"			"0"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_sw1917"
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_m1carbine"
+				"weapon"				"weapon_m1paratrooper"
+				"weapon"				"weapon_m3greasegun"
+				"weapon"				"weapon_thompson_m1a1"
+				"weapon"				"weapon_bar"
+				"weapon"				"weapon_m1919"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_welrod"
+				"weapon"				"weapon_ithaca"
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_owen"
+				"weapon"				"weapon_sten_mk2"
+				"weapon"				"weapon_thompson_m1928a1"
+				"weapon"				"weapon_sten_mk5"
+				"weapon"				"weapon_bren_mk2"
+				"weapon"				"weapon_lewis"
+				"weapon"				"weapon_vickers"
+				"weapon"				"weapon_c96"
+				"weapon"				"weapon_ppk"
+				"weapon"				"weapon_luger"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_stg44"
+				"weapon"				"weapon_fg42"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_c96carbine"
+				"weapon"				"weapon_mg42"
+				"weapon"				"weapon_mg34"
+				"weapon"				"weapon_lkb_ppsh41"
+				"weapon"				"weapon_lkb_mosin"
+				"weapon"				"weapon_lkb_tokarev"
+				"weapon"				"weapon_lkb_svt40"
+				"weapon"				"weapon_lkb_m1912"
+			}
+			
+			"team_access"				"americans, commonwealth, axis"
+		}	
+		
+		// ========================================
+		// PPSH-41 DRUM MAGAZINE
+		// ========================================		
+		
+		"magazine_extended_ppsh41"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"2"
+			"team_access"				"americans, commonwealth, axis"
+			
+			"print_name"				"#magazine_extended_ppsh41"
+			"print_desc"				"#magazine_extended_ppsh41_desc"
+
+			"magsize_override"			"71"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_lkb_ppsh41"
+			}
+
+			"viewmodel_attachments"
+			{
+				"magazine_ppsh41_drum"
+				{
+				    "ActSuffix"			"_MAG1"
+					"model"				"models/weapons/upgrades/v_ppshdrum.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_lkb_ppsh41"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"magazine_drum"
+				{
+					"model"				"models/weapons/upgrades/w_ppshdrum.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_lkb_ppsh41"
+					}
+				}
+			}	
+		}	
+		
+		// ========================================
+		// GREASED BOLT
+		// ========================================		
+						
+		"perk_barrel_greased_bolt"
+		{
+			"upgrade_slot"				"barrel"
+			"upgrade_cost"				"0"
+			"team_access"				"axis, americans, commonwealth"
+			
+			"print_name"				"#weapon_upgrade_greased_bolt"
+			"print_desc"				"#weapon_upgrade_greased_bolt_desc"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_lkb_mosin"
+			}
+			
+			"bolt_speed"			"1.2"
+		}	
+		
+		// ========================================
+		// Slings
+		// ========================================
+		
+		"perk_default_sling"
+		{
+			"import"					"base_stock"
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"stock"
+			"print_name"				"#weapon_upgrade_sling"
+			"print_desc"				"#weapon_upgrade_sling_desc"
+			
+			"class_restricted"			"0"
+			"team_access"				"axis, americans, commonwealth"
+			
+			"draw_speed"				"1.3"
+			"holster_speed"				"1.6"
+			"draw_speed_next_weapon"	"1.2"
+			"holster_speed_prev_weapon"	"1.3"
+			
+			//"excluded_upgrades"
+			//{
+			//	"default_bayonet"		"default_bayonet"
+			//}
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_lkb_ppsh41"
+				"weapon"				"weapon_lkb_mosin"	
+				"weapon"				"weapon_lkb_svt40"	
+			}
+			"viewmodel_attachments"
+			{
+				"ppsh41_sling"
+				{
+					"model"				"models/weapons/upgrades/v_ppshsling.mdl"
+					
+					"weapons"
+					{
+						"weapon"		"weapon_lkb_ppsh41"
+					}
+				}				
+				
+			}
+		}	
+		
+		// ========================================
+		// Bipod
+		// ========================================		
+		
+		"underbarrel_bipod_mosin"
+		{
+			"import"				"base_bipod"
+			"upgrade_cost"				"1"
+			"class_restricted"			"0"
+			
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_lkb_mosin"
+				"weapon"				"weapon_lkb_svt40"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"Bipod_Mosin"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_mosin.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_lkb_mosin"
+					}
+				}
+				
+				"Bipod_SVT40"
+				{
+					"model"					"models/weapons/upgrades/a_bipod_sks.mdl"
+					
+					"weapons"
+					{
+						"weapon"				"weapon_lkb_svt40"
+					}
+				}				
+			}
+			"world_attachments"
+			{
+				"underbarrel_bipod_mosin"
+				{
+					"model"					"models/weapons/upgrades/w_bipod_mosin.mdl"
+
+					"weapons"
+					{
+						"weapon"				"weapon_lkb_mosin"
+						"weapon"				"weapon_lkb_svt40"
+					}
+				}
+			}
+		}		
+		
+		
+		// ========================================
+		// Cosmetics
+		// ========================================
+		"cosmetic_m1garand_worn"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"skin"
+			"print_name"				"#cosmetic_m1garand_veteran"
+			"print_desc"				"#cosmetic_m1garand_veteran_desc"
+
+			"unlock"					"0"
+			"skin"						"1"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1garand"
+			}
+		}
+		
+		"cosmetic_springfield_worn"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"skin"
+			"print_name"				"#cosmetic_springfield_veteran"
+			"print_desc"				"#cosmetic_springfield_veteran_desc"
+
+			"unlock"					"0"
+			"skin"						"1"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_springfield"
+			}
+		}
+		
+		"cosmetic_g43_worn"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"skin"
+			"print_name"				"#cosmetic_g43_veteran"
+			"print_desc"				"#cosmetic_g43_veteran_desc"
+
+			"unlock"					"0"
+			"skin"						"1"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_g43"
+			}
+		}
+		
+		"cosmetic_k98_veteran"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"skin"
+			"print_name"				"#cosmetic_k98_veteran"
+			"print_desc"				"#cosmetic_k98_veteran_desc"
+
+			"unlock"					"0"
+			"skin"						"1"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_k98"
+			}
+		}
+		
+		"cosmetic_enfield_veteran"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"skin"
+			"print_name"				"#cosmetic_enfield_veteran"
+			"print_desc"				"#cosmetic_enfield_veteran_desc"
+
+			"unlock"					"0"
+			"skin"						"1"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_enfield"
+			}
+		}
+		
+		// ========================================
+		// Cloth Wraps
+		// ========================================
+		"clothwrap_m1garand"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"aesthetic"
+			"print_name"				"#clothwrap"
+			"print_desc"				"#clothwrap_desc"
+
+			"unlock"					"0"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_m1garand"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/a_clothwrap_garand.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_m1garand"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/w_clothwrap_garand.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_m1garand"
+					}
+				}
+			}
+		}
+		
+		"clothwrap_springfield"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"aesthetic"
+			"print_name"				"#clothwrap"
+			"print_desc"				"#clothwrap_desc"
+
+			"unlock"					"0"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_springfield"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/a_clothwrap_springfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_springfield"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/w_clothwrap_springfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_springfield"
+					}
+				}
+			}
+		}
+		
+		"clothwrap_g43"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"aesthetic"
+			"print_name"				"#clothwrap"
+			"print_desc"				"#clothwrap_desc"
+
+			"unlock"					"0"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_g43"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/a_clothwrap_g43.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_g43"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/w_clothwrap_g43.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_g43"
+					}
+				}
+			}
+		}
+		
+		"clothwrap_k98"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"aesthetic"
+			"print_name"				"#clothwrap"
+			"print_desc"				"#clothwrap_desc"
+
+			"unlock"					"0"
+						
+			"allowed_weapons"
+
+			{
+				"weapon"				"weapon_k98"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/a_clothwrap_kar98k.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_k98"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/w_clothwrap_kar98k.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_k98"
+					}
+				}
+			}
+		}		
+		
+		"clothwrap_enfield"
+		{
+			"upgrade_cost"				"0"
+			"upgrade_slot"				"aesthetic"
+			"print_name"				"#clothwrap"
+			"print_desc"				"#clothwrap_desc"
+
+			"unlock"					"0"
+						
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_enfield"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/a_clothwrap_enfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_enfield"
+					}
+				}
+			}
+			
+			"world_attachments"
+			{
+				"clothwrap"
+				{
+					"model"				"models/weapons/upgrades/w_clothwrap_enfield.mdl"
+					
+					"weapons"
+					{
+						"weapon"			"weapon_enfield"
+					}
+				}
+			}
+		}		
+		
+
+	}
+}

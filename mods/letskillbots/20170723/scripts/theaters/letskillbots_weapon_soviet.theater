@@ -1,0 +1,404 @@
+"#base" "letskillbots_base_weapon.theater"
+"#base" "letskillbots_base_explosives.theater"
+"#base" "letskillbots_base_common_ammo.theater"
+"#base" "letskillbots_ammo.theater"
+
+"theater"
+{
+	"weapons"
+	{		
+		// =============================
+		// SUB-MACHINE GUNS
+		// =============================
+
+		"weapon_lkb_ppsh41"
+		{
+			"import"				"ballistic_base"
+			"weapon_class"				"smg"
+			"print_name"				"#weapon_ppsh41"
+			"print_desc"				"#weapon_ppsh41_desc"
+			"view_model"				"models/weapons/v_ppsh.mdl"
+			"world_model"				"models/weapons/w_ppsh.mdl"
+			"rounds_per_minute"			"1000"
+			"weapon_slot"				"primary"
+			"act_table"					"smg_magheld"
+			"closed_bolt"				"0"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"90"	
+			"weapon_cost"				"2"
+			"barrel_length"				"30"
+			"class_restricted"			"1"
+			
+			"viewmodel_attachments"
+			{
+				"magazine"
+				{
+					"model"					"models/weapons/upgrades/v_ppshmag.mdl"
+					"fallback_for_slot"			"magazine"
+				}
+				
+			}
+			
+			"world_attachments"
+			{
+				"magazine"
+				{
+					"model"						"models/weapons/upgrades/w_ppshmag.mdl"
+					"fallback_for_slot"			"magazine"
+				}
+			}
+			
+			
+			"fov"
+			{
+				"fov_plr_ironsight"			"-25"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"62"
+				"fov_wpn_ironsight"			"80"
+				"fov_wpn_focus"				"85"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_mp40_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_mp40_3p"
+				"particle_tracer"				"weapon_tracers"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-1.40 2.15"
+				"recoil_vertical_range"			"1.95 2.99"
+				"recoil_aim_punch"			"0.3 0.5"
+				"recoil_rest_rate"			"5"
+				"recoil_rest_delay"			"0.14"
+				"recoil_roll_range"			"-1.25 -1.25"
+				"recoil_roll_rest_rate"			"150"
+				"recoil_freeaim_frac"			"0.25"
+				
+				"recoil_additional_rest_per_shot"	"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time"		"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots"			"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor"		"0.82"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}		
+			"ballistics"
+			{
+				"spread"				"0.60 0.60 0.60"
+				"FireModes"				"semi, full"
+				"bulletcount"				"1"
+				"maxrange"				"8000"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"7.62×25"	
+				"clip_max"				"12"
+				"clip_max_rounds"			"35"
+				"clip_default"				"4"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_tokarev.Single"
+				"shot_single_local"			"Weapon_tokarev.SingleLocal"
+				"shot_silent"				"Weapon_Galil.SingleSilenced"
+				"shot_silent_local"			"Weapon_Galil.SingleSilencedLocal"
+				"empty"					    "Weapon_Galil.Empty"
+				"clipin"				    "Weapon_Galil.Magin"
+				"clipout"				    "Weapon_Galil.Magout"
+				"boltback"				    "Weapon_Galil.Boltback"
+				"boltrelease"				"Weapon_Galil.Boltrelease"
+				"rofdown"				    "Weapon_Galil.ROF"
+				"rofup"					    "Weapon_Galil.ROF"		
+			}			
+			"attachments"
+			{
+				"attachment_addon"			"Primary"
+			}
+			"kitui_offset"
+			{
+				"position"				"25 0 0"
+			}
+			"team_access"				"americans, commonwealth, axis"
+		}	
+		
+		// ============================
+		// BOLT-ACTION RIFLES
+		// ============================
+		
+		"weapon_lkb_mosin"
+		{
+			"import"					"ballistic_base"
+			"weapon_class"				"sniper_rifle"
+			"weapon_cost"				"1"
+			"print_name"				"#weapon_mosin"
+			"print_desc"				"#weapon_mosin_desc"
+			"view_model"				"models/weapons/v_mosin.mdl"
+			"world_model"				"models/weapons/w_mosin.mdl"
+			"fire_cycle"				"0.2"
+			"weapon_slot"				"primary"
+			"act_table"					"bolt"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"100"	// (4.0kg[weapon] + (0.2kg[ammo] * (1+16)[mags]) )*10[kg->hg for int]  +32[encumbrance]
+			"barrel_length"				"38"
+			"class_restricted"			"1"
+			
+			"fov"
+			{
+				"fov_plr_ironsight"			"-10"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"56"
+				"fov_wpn_ironsight"			"60"
+				"fov_wpn_focus"				"58"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_Mosin.Single"
+				"shot_single_local"			"Weapon_Mosin.SingleLocal"
+				"shot_silent"				"Weapon_Mosin.SingleSilenced"
+				"shot_silent_local"			"Weapon_Mosin.SingleSilencedLocal"
+				"empty"						"Weapon_Mosin.Empty"
+				"clipin"					"Weapon_Mosin.Clipin"
+				"clipout"					"Weapon_Mosin.Clipout"
+				"boltback"					"Weapon_Mosin.Boltback"
+				"boltforward"				"Weapon_Mosin.Boltforward"
+				"hit"						"Weapon_Mosin.Hit"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"	"muzzleflash_k98_1p"
+				"particle_muzzleflash_3rd"	"muzzleflash_k98_3p"
+				"particle_tracer"			"weapon_tracers_green"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-2.2 3.4"
+				"recoil_vertical_range"			"5.5 6.4"
+				"recoil_aim_punch"			"0.8 0.95"
+				"recoil_rest_rate"			"12"
+				"recoil_rest_delay"			"0.05"
+				"recoil_roll_range"			"-5 -5"
+				"recoil_roll_rest_rate"			"70"
+			}
+			"ballistics"
+			{
+				"spread"				"0.08 0.08 0.08"
+				"FireModes"				"bolt"
+				"bulletcount"				"1"
+				"maxrange"				"20000"
+				"singleReload"				"1"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"762x54mm"
+				"clip_max"				"60"
+				"clip_max_rounds"			"5"
+				"clip_default"				"15"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"primary2"
+			}
+			"kitui_offset"
+			{
+				"position"				"38 -4 2.5"
+			}
+			"team_access"				"americans, commonwealth, axis"
+		}
+
+		// ========================================
+		// SEMI-AUTO RIFLES
+		// ========================================
+		
+		"weapon_lkb_svt40"
+		{
+			"import"				"ballistic_base"
+			"weapon_class"				"rifle_controlled_fire"
+			"print_name"				"#weapon_svt40"
+			"print_desc"				"#weapon_svt40_desc"
+			"view_model"				"models/weapons/v_svt.mdl"
+			"world_model"				"models/weapons/w_svt.mdl"
+			"rounds_per_minute"			"600"
+			"weapon_slot"				"primary"
+			"act_table"					"rifle_ak2"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"120"	// (3.9kg[weapon] + (0.8kg[ammo] * (1+4)[mags]) )*10[kg->hg for int]  +24[encumbrance]
+			"weapon_cost"				"1"
+			"barrel_length"				"22"
+			
+			"fov"
+			{
+				"fov_plr_ironsight"			"-25"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"68"
+				"fov_wpn_ironsight"			"76"
+				"fov_wpn_focus"				"81"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_SKS.Single"
+				"shot_single_local"			"Weapon_SKS.SingleLocal"
+				"shot_silent"				"Weapon_SKS.SingleSilenced"
+				"shot_silent_local"			"Weapon_SKS.SingleSilencedLocal"
+				"empty"					"Weapon_SKS.Empty"
+				"clipin"				"Weapon_SKS.Clipin"
+				"clipout"				"Weapon_SKS.Clipout"
+				"boltback"				"Weapon_SKS.Boltback"
+				"boltforward"				"Weapon_SKS.Boltforward"
+				"hit"					"Weapon_SKS.Hit"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_garand_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_garand_3p"
+				"particle_tracer"				"weapon_tracers"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-0.35 0.65"
+				"recoil_vertical_range"			"3.15 3.45"
+				"recoil_aim_punch"			"0.5 0.8"
+				"recoil_rest_rate"			"7"
+				"recoil_rest_delay"			"0.12"
+				"recoil_roll_range"			"-1.8 -1.8"
+				"recoil_roll_rest_rate"			"150"
+				
+				"recoil_additional_rest_per_shot"	"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time"		"0.5"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots"			"6"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor"		"0.92"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"				"0.16 0.16 0.16"
+				"FireModes"				"semi"
+				"bulletcount"				"1"
+				"maxrange"				"12000"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"792x57_clip"
+				"clip_max"				"12"
+				"clip_max_rounds"			"10"
+				"clip_default"				"5"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"primary2"
+			}
+			"kitui_offset"
+			{
+				"position"				"28 -6 2.5"
+			}
+			"team_access"				"americans, commonwealth, axis"
+		}		
+		
+		// ========================================
+		// PISTOLS
+		// ========================================
+		
+		"weapon_lkb_tokarev"
+		{
+			"import"						"pistol_base"
+			"weapon_class"					"pistol"
+			"print_name"					"#weapon_tokarev"
+			"print_desc"					"#weapon_tokarev_desc"
+			"view_model"					"models/weapons/v_nam_tokarev.mdl"
+			"world_model"					"models/weapons/w_nam_tokarev.mdl"
+			"rounds_per_minute"				"350"
+			"weapon_slot"					"secondary"
+			"act_table"						"pistol"
+			"weapon_abilities"				"ironsight"
+			"weapon_weight"					"15"
+			"weapon_cost"					"2"
+			"class_restricted"				"0"
+			"barrel_length"					"15"
+			
+			"fov"
+			{
+				"fov_plr_ironsight"			"-10"
+				"fov_plr_focus"				"-10"
+				"fov_wpn_default"			"74"
+				"fov_wpn_ironsight"			"74"
+				"fov_wpn_focus"				"79"
+			}
+			
+			"viewmodel_attachments"
+			{
+				"standard_magazine"
+				{
+					"model"						"models/weapons/upgrades/a_nam_magazine_makarov_8.mdl"
+					"fallback_for_slot"			"magazine"
+				}
+			}
+			
+		
+			
+			"viewmodel_offsets"
+			{
+				// x back, y left, z down
+				"VMOffsetStand"					"0.15 0.75 0.75"
+			}
+			
+			"sounds"
+			{
+				"shot_single"				"Weapon_tokarev.Single"
+				"shot_single_local"			"Weapon_tokarev.SingleLocal"
+				"shot_silent"						"Weapon_M1911.SingleSilenced"
+				"shot_silent_local"					"Weapon_M1911.SingleSilencedLocal"
+				"empty"								"Weapon_M1911.Empty"
+				"magin"								"Weapon_M1911.Clipin"
+				"magout"							"Weapon_M1911.Clipout"
+				"slide_back"						"Weapon_M1911.slideback"
+				"slide_forward"						"Weapon_M1911.slideforward"
+				"safety"							"Weapon_M1911.safety"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"			"muzzleflash_1911_1p"
+				"particle_muzzleflash_3rd"			"muzzleflash_sten_3p"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"				"-1.75 1.75"
+				"recoil_vertical_range"				"2.55 3.6"
+				"recoil_aim_punch"					"0.7 0.75"
+				"recoil_rest_rate"					"18"
+				"recoil_rest_delay"					"0.12"
+				"recoil_roll_range"					"-1.35 -1.35"
+				"recoil_roll_rest_rate"				"150"
+				"recoil_shot_reset_time" 			"0.75"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_punch_additive_factor" 		"0.9"	// How much of the view punch from the previous shot(s) get added to any additional shot fired (default 1.0)
+				"recoil_additional_rest_per_shot"	"5"
+				"recoil_freeaim_frac"			"0.9"
+				"recoil_ironsight_frac"			"0.6"
+				
+				"RecoilBaseFracByWeight"
+				{
+					"0"						"1.30"
+				}
+			}
+			"ballistics"
+			{
+				"spread"					"0.6 0.6 0.6"
+				"FireModes"					"semi"
+				"bulletcount"				"1"
+				"maxrange"					"6000"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"					"7.62×25pistol"
+				"clip_max"					"10"
+				"clip_max_rounds"			"8"
+				"clip_default"				"2"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"pistol"
+			}
+			"kitui_offset"
+			{
+				"position"				"12 -3 0"
+			}
+			"team_access"	"americans, commonwealth, axis"
+		}
+		
+
+	}
+}
