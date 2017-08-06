@@ -5,6 +5,8 @@ name:
 desc: 
 # Author name
 author: Unknown
+# Base mod for includes
+base: 
 # Author Steam ID
 steamid: 
 # Author or project URL
