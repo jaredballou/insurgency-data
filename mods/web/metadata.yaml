@@ -1,0 +1,15 @@
+---
+name: WeB Coop Theaters
+desc: Custom theaters
+author: ChrisTX
+base: doi
+steamid: 
+url: http://www.webclan.co.uk
+email: 
+# List of workshop files that should be used to extract game files
+workshop:
+  files:
+    - 940265048
+  collections:
+# List of maps that are affiliated with this mod
+maps:

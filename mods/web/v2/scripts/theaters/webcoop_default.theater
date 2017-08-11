@@ -1,0 +1,2228 @@
+"#base" "default_player.theater"
+"#base" "default_gear.theater"
+"#base" "default_weapon_american.theater"
+"#base" "default_weapon_german.theater"
+"#base" "default_weapon_commonwealth.theater"
+"#base" "default_weapon_upgrades.theater"
+"#base"	"default_firesupport.theater"
+"#base"	"default_unlocks_americans.theater"
+"#base"	"default_unlocks_axis.theater"
+"#base"	"default_unlocks_commonwealth.theater"
+"#base"	"default_unlocks_weapons.theater"
+"#base"	"webcoop_default_coop_classes.theater"
+
+
+"theater"
+{
+	"core"
+	{
+		"precache"
+		{
+			// default audio
+			"sounds"			"scripts/ins_sounds_weapons.txt"		
+			
+			// HQ SUPPORT
+			"sounds"			"scripts/audio/doi_sounds_hq_american_support.txt"		
+			"sounds"			"scripts/audio/doi_sounds_hq_commonwealth_support.txt"	
+			"sounds"			"scripts/audio/doi_sounds_hq_german_support.txt"				
+			
+			// Co-op
+			"sounds"			"scripts/audio/doi_sounds_voice_coop.txt"	
+
+			// Units		
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_canadian.txt"		
+			"sounds"         	"scripts/audio/doi_sounds_unit_responses_canadian.txt"		
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_canadian.txt"
+			
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_africanamerican.txt"		
+			"sounds"        	"scripts/audio/doi_sounds_unit_responses_africanamerican.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_africanamerican.txt"	
+			
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_indian.txt"		
+			"sounds"       		"scripts/audio/doi_sounds_unit_responses_indian.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_indian.txt"	
+			
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_german_01.txt"		
+			"sounds"        	"scripts/audio/doi_sounds_unit_responses_german_01.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_german_01.txt"	
+			
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_german_02.txt"		
+			"sounds"        	"scripts/audio/doi_sounds_unit_responses_german_02.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_german_02.txt"
+
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_scottish.txt"		
+			"sounds"        	"scripts/audio/doi_sounds_unit_responses_scottish.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_scottish.txt"		
+
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_english.txt"		
+			"sounds"         	"scripts/audio/doi_sounds_unit_responses_english.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_english.txt"		
+
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_american_01.txt"		
+			"sounds"        	"scripts/audio/doi_sounds_unit_responses_american_01.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_american_01.txt"	
+
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_american_02.txt"		
+			"sounds"         	"scripts/audio/doi_sounds_unit_responses_american_02.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_american_02.txt"			
+			
+			"sounds"			"scripts/audio/doi_sounds_unit_radial_australian.txt"		
+			"sounds"       		"scripts/audio/doi_sounds_unit_responses_australian.txt"	
+			"sounds"			"scripts/audio/doi_sounds_unit_hq_australian.txt"	
+			
+			// custom audio
+            "sounds"			"scripts/audio/doi_sounds_weapons.txt"
+            "sounds"			"scripts/audio/doi_sounds_world.txt"	
+            "sounds"			"scripts/audio/doi_sounds_cues.txt"							
+			
+			
+			// localization
+			"localize"       	"resource/doi_%language%.txt"
+			"localize"       	"resource/doi_menu_%language%.txt"
+			
+			// custom particles
+			"particles"			"particles/doi_weapon_fx.pcf"
+		}
+	}
+	
+	"teams"
+	{		
+		"axis"
+		{
+			"name"					"#faction_german_army"
+			"logo"					"gameui/faction_german_army"
+
+			"music"
+			{
+				"round_victory"		"Music.WonRound_Germans"
+				"round_defeat"		"Music.LostRound_Germans"
+				"game_victory"		"Music.WonGame_Germans"
+				"game_defeat"		"Music.LostGame_Germans"
+			}
+			
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+				}
+			}
+		}
+		
+		"americans"
+		{
+			"name"					"#faction_americans"
+			"logo"					"gameui/faction_american_army"
+
+			"music"
+			{
+				"round_victory"		"Music.WonRound_Americans"
+				"round_defeat"		"Music.LostRound_Americans"
+				"game_victory"		"Music.WonGame_Americans"
+				"game_defeat"		"Music.LostGame_Americans"
+			}
+		
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+				}
+			}
+		}
+		
+		"commonwealth"
+		{
+			"name"					"#faction_commonwealth"
+			"logo"					"gameui/faction_commonwealth_army"
+
+			"music"
+			{
+				"round_victory"		"Music.WonRound_Commonwealth"
+				"round_defeat"		"Music.LostRound_Commonwealth"
+				"game_victory"		"Music.WonGame_Commonwealth"
+				"game_defeat"		"Music.LostGame_Commonwealth"
+			}
+		
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+				}
+			}
+		}
+	}
+	
+	"player_templates"
+	{		
+		"template_american_officer"
+		{
+			"print_name"				"#class_american_officer"
+			"print_attribute"			"#class_officer_attribute"
+			"print_description"			"#class_officer_description"
+			"response_rules_key"		"american01"
+			"squad_leader"				"1"
+			"icon"						"officer_americans"
+			
+			"models"
+			{
+				"player"				"models/characters/american/player_american_07.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_garand_bayonet"
+				"weapon"				"weapon_thompson_m1a1"
+				"weapon"				"weapon_m1911"
+				"gear"					"american_light_kit"
+				"weapon"				"weapon_binoculars_american"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_m1carbine"
+				
+				"?has_m1para_access"
+				{
+					"weapon"			"weapon_m1paratrooper"
+				}
+				
+				"weapon"				"weapon_thompson_m1a1"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_sw1917"				
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_binoculars_american"
+				
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_optics"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_clips_sw1917"
+				"weapon_upgrade"		"barrel_greased_bolt"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_m1garand"		"0"
+					"weapon_m1carbine"		"0"
+					"weapon_m1paratrooper"	"0"
+					"weapon_thompson_m1a1"	"0"
+					"weapon_m1911"			"0"
+					"weapon_sw1917"			"0"					
+					"weapon_mk2" 			"0"
+				}
+				
+				"weapon_upgrade"
+				{
+					"default_optics"		"0"
+					"default_sling"			"0"
+					"default_bayonet"		"0"
+					"magazine_clips_sw1917"	"0"
+					"barrel_greased_bolt"			"0"
+				}
+
+				"gear"
+				{
+					"american_light_kit"	"0"
+					"american_heavy_kit"	"0"
+				}
+			}
+		}
+			
+		"template_british_officer"
+		{
+			"print_name"				"#class_british_officer"
+			"print_attribute"			"#class_officer_attribute"
+			"print_description"			"#class_officer_description"
+			"response_rules_key"		"english"
+			"squad_leader"				"1"
+			"icon"						"officer_commonwealth"
+			
+			"models"
+			{
+				"player"				"models/characters/british/player_british_02.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_enfield_bayonet"
+				"weapon"				"weapon_sten_mk5"
+				"weapon"				"weapon_webley"
+				"weapon_upgrade"		"magazine_speedloader_webley"
+				"gear"					"commonwealth_light_kit"
+				"weapon"				"weapon_binoculars_british"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_sten_mk5"
+				"weapon"				"weapon_thompson_m1928a1"
+				"?has_owen_access"
+				{
+					"weapon"				"weapon_owen"
+				}
+				"weapon"				"weapon_welrod"
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no36"
+				"weapon"				"weapon_binoculars_british"
+				"weapon_upgrade"		"barrel_greased_bolt"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_stripper_clips"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_enfield"			"0"
+					"weapon_sten_mk5"			"0"
+					"weapon_owen"				"0"
+					"weapon_thompson_m1928a1"	"0"
+					"weapon_welrod"				"0"
+					"weapon_webley"				"0"
+					"weapon_browninghp"			"0"
+					"weapon_no36" 				"0"
+				}
+
+				"weapon_upgrade"
+				{
+					"default_sling"						"0"
+					"magazine_extended_thompson_30rd"	"0"
+					"default_bayonet"					"0"
+					"underbarrel_foregrip"				"0"
+					"magazine_speedloader_webley"		"0"
+					"magazine_stripper_clips"			"0"
+					"barrel_greased_bolt"			"0"
+				}
+
+				"gear"
+				{
+					"commonwealth_light_kit"	"0"
+					"commonwealth_heavy_kit"	"0"
+				}
+			}
+		}
+			
+		"template_german_officer"
+		{
+			"print_name"			"#class_german_officer"
+			"print_attribute"		"#class_officer_attribute"
+			"print_description"		"#class_officer_description"
+			"response_rules_key"	"german01"
+			"squad_leader"			"1"
+			"icon"					"officer_germans"
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_07.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}	
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_luger"
+				"gear"					"german_light_kit"
+				"weapon"				"weapon_binoculars_german"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_luger"
+				"weapon"				"weapon_c96"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_splintering"
+				"weapon"				"weapon_binoculars_german"
+				"weapon_upgrade"		"barrel_greased_bolt"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_stripper_clips"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_k98"					"0"
+					"weapon_mp40"					"0"
+					"weapon_g43"					"0"
+					"weapon_luger"					"0"
+					"weapon_c96"					"0"
+					"weapon_stielhandgranate" 		"0"
+					"weapon_splintering" 			"0"
+				}
+				
+				"weapon_upgrade"
+				{
+					"default_sling"						"0"
+					"magazine_stripper_clips"			"0"
+					"barrel_greased_bolt"			"0"
+				}
+
+				"gear"
+				{
+					"german_light_kit"	"0"
+					"german_heavy_kit"	"0"
+				}
+			}
+		}
+		
+		"template_american_communications"
+		{
+			"print_name"				"#class_american_communications"
+			"print_attribute"			"#class_communications_attribute"
+			"print_description"			"#class_communications_description"
+			"response_rules_key"		"american01"
+			"icon"						"communications"
+			
+			"models"
+			{
+				"player"				"models/characters/american/player_american_03.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_garand_bayonet"
+				"weapon"				"weapon_m1carbine"
+				"weapon"				"weapon_m1911"
+				"gear"					"american_light_kit"
+				"gear"					"gear_radio"
+			}
+			"locked_gear_slots"			"backpack"
+			"allowed_items"
+			{
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_m1carbine"	
+				
+				"?has_m1para_access"
+				{
+					"weapon"			"weapon_m1paratrooper"
+				}
+				
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_binoculars_american"		
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"barrel_greased_bolt"
+				"gear"					"gear_radio"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_m1garand"				"0"
+					"weapon_m1carbine"				"0"
+					"weapon_m1paratrooper"			"0"
+					"weapon_m3greasegun"			"0"
+					"weapon_m1911"					"0"
+					"weapon_mk2"					"0"
+					"weapon_binoculars_american"	"0"
+				}
+				
+				"weapon_upgrade"
+				{
+					"magazine_stripper_clips"		"0"
+					"barrel_greased_bolt"			"0"
+					"default_sling"					"0"
+					"default_bayonet"				"0"
+				}
+
+				"gear"
+				{
+					"american_light_kit"	"0"
+					"american_heavy_kit"	"0"
+					"gear_radio"			"0"
+				}
+			}
+		}
+
+		"template_british_communications"
+		{
+			"print_name"				"#class_british_communications"
+			"print_attribute"			"#class_communications_attribute"
+			"print_description"			"#class_communications_description"
+			"response_rules_key"		"english"
+			"icon"						"communications"
+			
+			"models"
+			{
+				"player"				"models/characters/british/player_british_07.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_enfield_bayonet"
+				"weapon"				"weapon_ithaca"
+				"weapon"				"weapon_browninghp"
+				"gear"					"commonwealth_light_kit"
+				"gear"					"gear_radio_commonwealth"
+			}
+			"locked_gear_slots"			"backpack"
+			"allowed_items"
+			{
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_ithaca"
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no77"
+				"weapon"				"weapon_no36"
+				"weapon"				"weapon_binoculars_british"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"barrel_greased_bolt"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"magazine_speedloader_webley"
+				"gear"					"gear_radio_commonwealth"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_enfield" 			"0"
+					"weapon_ithaca" 			"0"
+					"weapon_sten_mk5"			"0"
+					"weapon_webley" 			"0"
+					"weapon_browninghp" 		"0"
+					"weapon_no77" 				"0"
+					"weapon_no36" 				"0"
+					"weapon_binoculars_british"	"0"
+				}
+
+				"weapon_upgrade"
+				{
+					"default_sling"					"0"
+					"magazine_stripper_clips"		"0"
+					"default_bayonet"				"0"
+					"magazine_speedloader_webley"	"0"
+					"barrel_greased_bolt"			"0"
+				}
+				
+				"gear"
+				{
+					"commonwealth_light_kit"	"0"
+					"commonwealth_heavy_kit"	"0"
+					"gear_radio_commonwealth"	"0"
+				}
+			}
+		}
+
+		"template_german_communications"
+		{
+			"print_name"			"#class_german_communications"
+			"print_attribute"		"#class_communications_attribute"
+			"print_description"		"#class_communications_description"
+			"response_rules_key"	"german01"
+			"icon"					"communications"
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_06.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}	
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_g43"
+				"gear"					"german_light_kit"
+				"gear"					"gear_radio_german"
+			}
+			"locked_gear_slots"			"backpack"
+			"allowed_items"
+			{
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_ppk"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_binoculars_german"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"barrel_greased_bolt"
+				"gear"					"gear_radio_german"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_k98"					"0"
+					"weapon_mp40"					"0"
+					"weapon_g43"					"0"
+					"weapon_p38"					"0"
+					"weapon_ppk"					"0"
+					"weapon_stielhandgranate" 		"0"
+					"weapon_binoculars_german"		"0"
+				}
+				
+				"weapon_upgrade"
+				{
+					"magazine_stripper_clips"		"0"
+					"barrel_greased_bolt"			"0"
+					"default_sling"					"0"
+				}
+
+				"gear"
+				{
+					"german_light_kit"	"0"
+					"german_heavy_kit"	"0"
+					"gear_radio_german"	"0"
+				}
+			}
+		}
+		
+		"template_american_rifleman"
+		{
+			"print_name"				"#class_american_rifleman"
+			"print_attribute"			"#class_rifleman_attribute"
+			"print_description"			"#class_rifleman_description"
+			"response_rules_key"		"american01"
+			"icon"						"rifleman"
+			
+			"models"
+			{
+				"player"				"models/characters/american/player_american_03.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_garand_bayonet"
+				"weapon"				"weapon_m1garand"
+				"weapon_upgrade"		"default_sling"
+				"weapon"				"weapon_mk2"
+				"gear"					"american_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_m1garand"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_sw1917"					
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_binoculars_american"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"barrel_greased_bolt"
+                "weapon_upgrade"        "underbarrel_rifle_grenade_springfield"
+				"gear"					"gear_radio"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_springfield"			"0"
+					"weapon_m1garand"				"0"
+					"weapon_m1carbine"				"0"
+					"weapon_m1911"					"0"
+					"weapon_sw1917"					"0"
+					"weapon_mk2"					"0"
+					"weapon_binoculars_american"	"0"
+				}
+				
+				"weapon_upgrade"
+				{
+					"default_sling"							"0"
+					"default_bayonet"						"0"
+					"magazine_stripper_clips"				"0"
+					"barrel_greased_bolt"					"0"
+					"underbarrel_rifle_grenade_springfield"	"0"
+					"magazine_clips_sw1917"					"0"
+				}
+
+				"gear"
+				{
+					"american_light_kit"	"0"
+					"american_heavy_kit"	"0"
+					"gear_radio"			"0"
+				}
+			}
+
+			"player_settings_mods"
+			{
+				"stamina"
+				{
+					"StaminaMaxByWeight"
+					{
+						"30"					"140"
+						"300"					"60"
+					}
+
+					"stamina_regain"				"2.75"
+					"stamina_regain_crouched"		"5.50"
+					"stamina_regain_prone"			"8.00"
+				}
+			}
+		}
+		
+		"template_british_rifleman"
+		{
+			"print_name"				"#class_british_rifleman"
+			"print_attribute"			"#class_rifleman_attribute"
+			"print_description"			"#class_rifleman_description"
+			"response_rules_key"		"english"
+			"icon"						"rifleman"
+			
+			"models"
+			{
+				"player"				"models/characters/british/player_british_05.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_enfield_bayonet"
+				"weapon"				"weapon_enfield"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon"				"weapon_no36"
+				"weapon"				"weapon_no69"
+				"gear"					"commonwealth_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no69"
+				"weapon"				"weapon_no36"
+				"weapon"                "weapon_binoculars_british"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"default_bayonet_spike"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"barrel_greased_bolt"
+				"weapon_upgrade"		"underbarrel_rifle_grenade"
+				"gear"					"gear_radio_commonwealth"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_enfield"			"0"
+					"weapon_webley"				"0"
+					"weapon_browninghp"			"0"
+					"weapon_no69"				"0"
+					"weapon_no36"				"0"
+					"weapon_binoculars_british"	"0"
+				}
+				
+				"weapon_upgrade"
+				{
+					"default_sling"					"0"
+					"default_bayonet"				"0"
+					"default_bayonet_spike"			"0"
+					"magazine_stripper_clips"		"0"
+					"barrel_greased_bolt"			"0"
+					"underbarrel_rifle_grenade"		"0"
+					"magazine_speedloader_webley"	"0"
+				}
+
+				"gear"
+				{
+					"commonwealth_light_kit"	"0"
+					"commonwealth_heavy_kit"	"0"
+					"gear_radio_commonwealth"	"0"
+				}
+			}
+
+			"player_settings_mods"
+			{
+				"stamina"
+				{
+					"StaminaMaxByWeight"
+					{
+						"30"					"140"
+						"300"					"60"
+					}
+
+					"stamina_regain"				"2.75"
+					"stamina_regain_crouched"		"5.50"
+					"stamina_regain_prone"			"8.00"
+				}
+			}
+		}
+		
+		"template_german_rifleman"
+		{
+			"print_name"			"#class_german_rifleman"
+			"print_attribute"		"#class_rifleman_attribute"
+			"print_description"		"#class_rifleman_description"
+			"response_rules_key"	"german01"
+			"icon"					"rifleman"
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_01.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}			
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_k98"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_stielhandgranate"
+				"gear"					"german_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_splintering"
+				"weapon"				"weapon_binoculars_german"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"barrel_greased_bolt"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"underbarrel_rifle_grenade_k98"
+				"gear"					"gear_radio_german"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_k98"				"0"
+					"weapon_g43"				"0"
+					"weapon_p38"				"0"
+					"weapon_stielhandgranate"	"0"
+					"weapon_splintering"		"0"
+					"weapon_binoculars_german"	"0"
+				}
+				
+				"weapon_upgrade"
+				{
+					"default_sling"					"0"
+					"default_bayonet"				"0"
+					"magazine_stripper_clips"		"0"
+					"barrel_greased_bolt"			"0"
+					"underbarrel_rifle_grenade_k98"	"0"
+				}
+
+				"gear"
+				{
+					"german_light_kit"	"0"
+					"german_heavy_kit"	"0"
+					"gear_radio_german"	"0"
+				}
+			}
+
+			"player_settings_mods"
+			{
+				"stamina"
+				{
+					"StaminaMaxByWeight"
+					{
+						"30"					"140"
+						"300"					"60"
+					}
+
+					"stamina_regain"				"2.75"
+					"stamina_regain_crouched"		"5.50"
+					"stamina_regain_prone"			"8.00"
+				}
+			}
+		}
+		
+		"template_american_assault"
+		{
+			"print_name"				"#class_american_assault"
+			"print_attribute"			"#class_assault_attribute"
+			"print_description"			"#class_assault_description"
+			"response_rules_key"		"american01"
+			"icon"						"assault"
+			
+			"models"
+			{
+				"player"				"models/characters/american/player_american_01.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_garand_bayonet"
+				"weapon"				"weapon_m3greasegun"
+				"weapon_upgrade"		"default_sling"
+				"weapon"				"weapon_mk2"
+				"gear"					"american_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m3greasegun"
+				"weapon"				"weapon_thompson_m1a1"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_sw1917"
+				"weapon"				"weapon_mk2"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_clips_sw1917"
+				"gear"					"gear_radio"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_m3greasegun" 	"0"
+					"weapon_thompson_m1a1" 	"0"
+					"weapon_m1911"			"0"
+					"weapon_sw1917"			"0"
+					"weapon_mk2"			"0"
+				}
+				"weapon_upgrade"
+				{
+					"default_sling"			"0"
+					"magazine_clips_sw1917"	"0"
+				}
+				"gear"
+				{
+					"american_light_kit"	"0"
+					"american_heavy_kit"	"0"
+					"gear_radio"			"0"
+				}
+			}
+
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					"frac_side_move"			"0.75"
+					"frac_side_step"			"0.75"
+					"speed_crouch_run"			"120"
+					"speed_run"					"185"
+					"speed_sprint"				"300"
+				}
+			}
+		}
+		
+		"template_british_assault"
+		{
+			"print_name"				"#class_british_assault"
+			"print_attribute"			"#class_assault_attribute"
+			"print_description"			"#class_assault_description"
+			"response_rules_key"		"english"
+			"icon"						"assault"
+			
+			"models"
+			{
+				"player"				"models/characters/british/player_british_04.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_enfield_bayonet"
+				"weapon"				"weapon_sten_mk2"
+				"weapon_upgrade"		"default_sling"
+				"weapon"				"weapon_no69"
+				"gear"					"commonwealth_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_ithaca"
+				"weapon"				"weapon_sten_mk2"
+			
+				"?has_owen_access"
+				{
+					"weapon"				"weapon_owen"
+				}
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no69"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_speedloader_webley"
+				"gear"					"gear_radio_commonwealth"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_ithaca"		"0"
+					"weapon_sten_mk2"	"0"
+					"weapon_owen"		"0"
+					"weapon_thompson_m1928a1" "0"
+					"weapon_webley"		"0"
+					"weapon_browninghp"	"0"
+					"weapon_no69"		"0"
+				}
+
+				"weapon_upgrade"
+				{
+					"default_sling"					"0"
+					"magazine_speedloader_webley"	"0"
+					"magazine_extended_thompson_50rd" 	"0"
+					"magazine_extended_thompson_30rd" 	"0"
+					"underbarrel_foregrip" 				"0"
+					"barrel_silencer"				"0"
+				}
+
+				"gear"
+				{
+					"commonwealth_light_kit"	"0"
+					"commonwealth_heavy_kit"	"0"
+					"gear_radio_commonwealth"	"0"
+				}
+			}
+
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					"frac_side_move"			"0.75"
+					"frac_side_step"			"0.75"
+					"speed_crouch_run"			"120"
+					"speed_run"					"185"
+					"speed_sprint"				"300"
+				}
+			}
+		}
+		
+		"template_german_assault"
+		{
+			"print_name"			"#class_german_assault"
+			"print_attribute"		"#class_assault_attribute"
+			"print_description"		"#class_assault_description"
+			"response_rules_key"	"german01"
+			"icon"						"assault"
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_02.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}							
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_mp40"
+				"weapon_upgrade"		"default_sling"
+				"weapon"				"weapon_stielhandgranate"
+				"gear"					"german_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_c96carbine"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_ppk"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_splintering"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_extended_c96"
+				"gear"					"gear_radio_german"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_mp40"				"0"
+					"weapon_c96carbine"			"0"
+					"weapon_p38"				"0"
+					"weapon_ppk"				"0"
+					"weapon_stielhandgranate"	"0"
+					"weapon_splintering"		"0"
+					"weapon_binoculars_german"	"0"
+				}
+				
+				"weapon_upgrade"
+				{
+					"default_sling"				"0"
+					"magazine_extended_c96"		"0"
+				}
+
+				"gear"
+				{
+					"german_light_kit"	"0"
+					"german_heavy_kit"	"0"
+					"gear_radio_german"	"0"
+				}
+			}
+
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					"frac_side_move"			"0.75"
+					"frac_side_step"			"0.75"
+					"speed_crouch_run"			"120"
+					"speed_run"					"185"
+					"speed_sprint"				"300"
+				}
+			}
+		}
+		
+		"template_american_support"
+		{
+			"print_name"				"#class_american_support"
+			"print_attribute"			"#class_support_attribute"
+			"print_description"			"#class_support_description"
+			"response_rules_key"		"american01"
+			"icon"						"support"
+			
+			"models"
+			{
+				"player"				"models/characters/american/player_american_04.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_garand_bayonet"
+				"weapon"				"weapon_bar"
+				"gear"					"american_heavy_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_bar"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_binoculars_american"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"underbarrel_bipod"
+				"weapon_upgrade"		"magazine_clips_sw1917"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_bar" 					"0"
+					"weapon_m1911" 					"0"
+					"weapon_mk2" 					"0"
+					"weapon_binoculars_american" 	"0"
+				}
+				"weapon_upgrade"
+				{
+					"default_sling"					"0"
+					"underbarrel_bipod"				"0"
+					"magazine_clips_sw1917"			"0"
+				}
+				"gear"
+				{
+					"american_light_kit"			"0"
+					"american_heavy_kit"			"0"
+				}
+			}		
+		}
+		
+		"template_british_support"
+		{
+			"print_name"				"#class_british_support"
+			"print_attribute"			"#class_support_attribute"
+			"print_description"			"#class_support_description"
+			"response_rules_key"		"english"
+			"icon"						"support"
+			
+			"models"
+			{
+				"player"				"models/characters/british/player_british_07.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_enfield_bayonet"
+				"weapon"				"weapon_bren_mk2"
+				"gear"					"commonwealth_heavy_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_bren_mk2"
+				"weapon"				"weapon_lewis"
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no36"
+				"weapon"				"weapon_binoculars_british"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_speedloader_webley"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_bren_mk2" 			"0"
+					"weapon_lewis" 				"0"
+					"weapon_webley" 			"0"
+					"weapon_browninghp" 		"0"
+					"weapon_no36" 				"0"
+					"weapon_binoculars_british"	"0"
+				}
+
+				"weapon_upgrade"
+				{
+					"default_sling"					"0"
+					"magazine_speedloader_webley"	"0"
+				}
+				
+				"gear"
+				{
+					"commonwealth_light_kit"	"0"
+					"commonwealth_heavy_kit"	"0"
+				}
+			}		
+		}
+		
+		"template_german_support"
+		{
+			"print_name"				"#class_german_support"
+			"print_attribute"			"#class_support_attribute"
+			"print_description"			"#class_support_description"
+			"response_rules_key"		"german01"
+			"icon"						"support"
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_03.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_mg34"
+				"weapon"				"weapon_stg44"
+				"gear"					"german_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mg34"
+				"weapon"				"weapon_stg44"				
+		
+				"?has_stg44_access"
+				{
+					"weapon"				"weapon_stg44"
+				}
+				
+				"?has_fg42_access"
+				{
+					"weapon"				"weapon_fg42"	
+				}
+				
+				"weapon"				"weapon_ppk"		
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_splintering"			
+				"weapon"				"weapon_binoculars_german"
+				
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"optic_scope_4x"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_mg34"				"0"
+					"weapon_fg42"				"0"	
+					"weapon_stg44"				"0"				
+					"weapon_p38"				"0"
+					"weapon_ppk"				"0"
+					"weapon_splintering" 		"0"
+					"weapon_binoculars_german" 	"0"
+				}
+				
+				"weapon_upgrade"
+				{
+					"default_sling"				"0"
+					"optic_scope_4x"			"0"
+				}
+				
+				"gear"
+				{
+					"german_light_kit"		"0"
+					"german_heavy_kit"		"0"
+				}
+			}			
+		}
+		
+		"template_american_machinegunner"
+		{
+			"print_name"				"#class_american_machinegunner"
+			"print_attribute"			"#class_machinegunner_attribute"
+			"print_description"			"#class_machinegunner_description"
+			"response_rules_key"		"american01"
+			"icon"						"machinegunner"
+			
+			"models"
+			{
+				"player"				"models/characters/american/player_american_05.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_garand_bayonet"
+				"weapon"				"weapon_m1919"
+				"gear"					"american_light_kit"
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_m1919"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_mk2"
+				"weapon"                "weapon_binoculars_american"
+				"weapon_upgrade"		"magazine_clips_sw1917"
+			}
+			"cost_modifiers"
+			{				
+				"weapon"
+				{
+					"weapon_m1919"					"0"
+					"weapon_m1911"					"0"
+					"weapon_mk2"					"0"
+					"weapon_binoculars_american"	"0"
+				}				
+				
+				"weapon_upgrade"
+				{
+					"magazine_clips_sw1917"			"0"
+				}
+				
+				"gear"
+				{
+					"american_light_kit"			"0"
+					"american_heavy_kit"			"0"
+				}
+			}
+						
+			"player_settings_mods"
+			{				
+				"suppression"
+				{
+					"suppression_resistance"		"0.35"
+					"suppression_recovery_rate"		"40"
+				}
+			}
+		}
+		
+		"template_british_machinegunner"
+		{
+			"print_name"				"#class_british_machinegunner"
+			"print_attribute"			"#class_machinegunner_attribute"
+			"print_description"			"#class_machinegunner_description"
+			"response_rules_key"		"english"
+			"icon"						"machinegunner"
+			
+			"models"
+			{
+				"player"				"models/characters/british/player_british_06.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_enfield_bayonet"
+				"weapon"				"weapon_vickers"
+				"weapon"				"weapon_browninghp"
+				"gear"					"commonwealth_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_vickers"
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no36"
+				"weapon"				"weapon_binoculars_british"
+				"weapon_upgrade"		"magazine_speedloader_webley"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_vickers"	"0"
+					"weapon_webley"		"0"
+					"weapon_browninghp"	"0"
+					"weapon_no36"		"0"
+					"weapon_binoculars_british"	"0"
+				}
+
+				"weapon_upgrade"
+				{
+					"magazine_speedloader_webley"	"0"
+				}
+				
+				"gear"
+				{
+					"commonwealth_light_kit"		"0"
+					"commonwealth_heavy_kit"		"0"
+				}
+			}
+			
+			"player_settings_mods"
+			{				
+				"suppression"
+				{
+					"suppression_resistance"		"0.35"
+					"suppression_recovery_rate"		"40"
+				}
+			}
+		}
+		
+		"template_german_machinegunner"
+		{
+			"print_name"			"#class_german_machinegunner"
+			"print_attribute"		"#class_machinegunner_attribute"
+			"print_description"		"#class_machinegunner_description"
+			"response_rules_key"	"german01"
+			"icon"					"machinegunner"
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_04.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_mg42"
+				"weapon"				"weapon_p38"
+				"gear"					"german_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mg42"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_luger"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_binoculars_german"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_mg42"				"0"
+					"weapon_p38"				"0"
+					"weapon_luger"				"0"
+					"weapon_stielhandgranate"	"0"
+					"weapon_binoculars_german"	"0"
+				}
+				
+				"gear"
+				{
+					"german_light_kit"		"0"
+					"german_heavy_kit"		"0"
+				}
+			}
+			
+			"player_settings_mods"
+			{				
+				"suppression"
+				{
+					"suppression_resistance"		"0.35"
+					"suppression_recovery_rate"		"40"
+				}
+			}
+		}
+		
+		"template_american_sniper"
+		{
+			"print_name"				"#class_american_sniper"
+			"print_attribute"			"#class_sniper_attribute"
+			"print_description"			"#class_sniper_description"
+			"response_rules_key"		"american01"
+			"icon"						"sniper"
+			
+			"models"
+			{
+				"player"				"models/characters/american/player_american_02.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_garand_bayonet"
+				"weapon"				"weapon_springfield"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_mk2"
+				"gear"					"american_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_sw1917"
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_binoculars_american"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon_upgrade"		"optic_scope_4x"
+				"weapon_upgrade"		"barrel_greased_bolt"
+				
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_springfield"			"0"
+					"weapon_m1garand"				"0"
+					"weapon_m1911"					"0"
+					"weapon_sw1917"					"0"
+					"weapon_mk2"					"0"
+					"weapon_binoculars_american"	"0"
+				}
+				"weapon_upgrade"
+				{
+					"default_sling"					"0"
+					"optic_scope_7x"				"0"
+					"optic_scope_4x"				"0"
+					"barrel_greased_bolt"			"0"
+				}
+				"gear"
+				{
+					"american_light_kit"			"0"
+					"american_heavy_kit"			"0"
+				}
+			}
+
+			"player_settings_mods"
+			{
+				"focus"
+				{
+					"FocusTimeStamina"
+					{
+						"0"					"3.0"
+						"100"				"7.0"
+					}
+				}
+			}
+		}
+		
+		"template_british_sniper"
+		{
+			"print_name"				"#class_british_sniper"
+			"print_attribute"			"#class_sniper_attribute"
+			"print_description"			"#class_sniper_description"
+			"response_rules_key"		"english"
+			"icon"						"sniper"
+			
+			"models"
+			{
+				"player"				"models/characters/british/player_british_01.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_enfield_bayonet"
+				"weapon"				"weapon_enfield"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon"				"weapon_welrod"
+				"weapon"				"weapon_no36"
+				"gear"					"commonwealth_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_welrod"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no36"
+				"weapon"				"weapon_binoculars_british"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon_upgrade"		"optic_scope_4x"
+				"weapon_upgrade"		"barrel_greased_bolt"	
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_enfield" 			"0"
+					"weapon_welrod" 			"0"
+					"weapon_no36" 				"0"
+					"weapon_browninghp" 		"0"
+					"weapon_binoculars_british" "0"
+				}
+				"weapon_upgrade"
+				{
+					"default_sling"				"0"
+					"optic_scope_7x"			"0"
+					"optic_scope_4x"			"0"
+					"barrel_greased_bolt"		"0"
+				}
+				"gear"
+				{
+					"commonwealth_light_kit"	"0"
+					"commonwealth_heavy_kit"	"0"
+				}
+			}
+
+			"player_settings_mods"
+			{
+				"focus"
+				{
+					"FocusTimeStamina"
+					{
+						"0"					"3.0"
+						"100"				"7.0"
+					}
+				}
+			}
+		}
+		
+		"template_german_sniper"
+		{
+			"print_name"			"#class_german_sniper"
+			"print_attribute"		"#class_sniper_attribute"
+			"print_description"		"#class_sniper_description"
+			"response_rules_key"	"german01"
+			"icon"					"sniper"
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_06.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_k98"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon"				"weapon_ppk"
+				"weapon"				"weapon_stielhandgranate"
+				"gear"					"german_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_g43"
+				"weapon"				"weapon_ppk"
+				"weapon"				"weapon_stielhandgranate"
+				"weapon"				"weapon_binoculars_german"
+				"weapon_upgrade"		"optic_scope_7x"
+				"weapon_upgrade"		"optic_scope_4x"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"barrel_greased_bolt"	
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_k98"				"0"
+					"weapon_g43"				"0"
+					"weapon_ppk"				"0"
+					"weapon_stielhandgranate"	"0"
+					"weapon_binoculars_german" 	"0"
+				}
+
+				"weapon_upgrade"
+				{
+					"default_sling"				"0"
+					"magazine_stripper_clips"	"0"
+					"optic_scope_7x"			"0"
+					"optic_scope_4x"			"0"
+					"barrel_greased_bolt"		"0"
+				}
+				
+				"gear"
+				{
+					"german_light_kit"		"0"
+					"german_heavy_kit"		"0"
+				}
+			}
+
+			"player_settings_mods"
+			{
+				"focus"
+				{
+					"FocusTimeStamina"
+					{
+						"0"					"3.0"
+						"100"				"7.0"
+					}
+				}
+			}
+		}
+		
+		"template_american_engineer"
+		{
+			"print_name"				"#class_american_engineer"
+			"print_attribute"			"#class_engineer_attribute"
+			"print_description"			"#class_engineer_description"
+			"response_rules_key"		"american01"
+			"icon"						"engineer"
+			
+			"models"
+			{
+				"player"				"models/characters/american/player_american_06.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_garand_bayonet"
+				"weapon"				"weapon_springfield"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"default_sling"
+				"weapon"				"weapon_tnt"
+				"gear"					"american_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_springfield"
+				"weapon"				"weapon_m3greasegun"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_sw1917"				
+				"weapon"				"weapon_mk2"
+				"weapon"				"weapon_tnt"
+				"weapon"				"weapon_bazooka"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"barrel_greased_bolt"	
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"magazine_bazooka_wp"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_springfield"		"0"
+					"weapon_m3greasegun"		"0"
+					"weapon_m1911"				"0"
+					"weapon_sw1917"				"0"					
+					"weapon_mk2"				"0"
+					"weapon_tnt"				"0"
+					"weapon_bazooka"			"0"
+				}
+				"weapon_upgrade"
+				{
+					"default_sling"				"0"
+					"magazine_stripper_clips"	"0"
+					"default_bayonet"			"0"
+					"magazine_bazooka_wp"		"0"
+					"barrel_greased_bolt"			"0"
+				}
+				"gear"
+				{
+					"american_light_kit"		"0"
+					"american_heavy_kit"		"0"
+				}
+			}
+			"player_settings_mods"
+			{
+				"weight"
+				{
+					"min_weight"				"60"
+					"max_weight"				"720"
+				}
+			}
+		}
+		
+		"template_british_engineer"
+		{
+			"print_name"				"#class_british_engineer"
+			"print_attribute"			"#class_engineer_attribute"
+			"print_description"			"#class_engineer_description"
+			"response_rules_key"		"english"
+			"icon"						"engineer"
+			
+			"models"
+			{
+				"player"				"models/characters/british/player_british_03.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_enfield_bayonet"
+				"weapon"				"weapon_enfield"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_tnt"
+				"gear"					"commonwealth_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_enfield"
+				"weapon"				"weapon_sten_mk2"
+				"weapon"				"weapon_browninghp"
+				"weapon"				"weapon_no77"
+				"weapon"				"weapon_no69"
+				"weapon"				"weapon_tnt"
+				"weapon"				"weapon_piat"
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"barrel_greased_bolt"	
+				"weapon_upgrade"		"default_bayonet"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_enfield"			"0"
+					"weapon_sten_mk2"			"0"
+					"weapon_browninghp"			"0"
+					"weapon_no77"				"0"
+					"weapon_no69"				"0"
+					"weapon_tnt"				"0"
+					"weapon_piat"				"0"
+				}
+				"weapon_upgrade"
+				{
+					"default_sling"				"0"
+					"magazine_stripper_clips"	"0"
+					"default_bayonet"			"0"
+					"barrel_greased_bolt"			"0"
+				}
+				"gear"
+				{
+					"commonwealth_light_kit"	"0"
+					"commonwealth_heavy_kit"	"0"
+				}
+			}
+			"player_settings_mods"
+			{
+				"weight"
+				{
+					"min_weight"				"60"
+					"max_weight"				"720"
+				}
+			}
+		}
+		
+		"template_german_engineer"
+		{
+			"print_name"				"#class_german_engineer"
+			"print_attribute"			"#class_engineer_attribute"
+			"print_description"			"#class_engineer_description"
+			"response_rules_key"		"german01"
+			"icon"						"engineer"
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_05.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_k98"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_sprengbuchse"
+				"gear"					"german_light_kit"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_k98"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_ppk"
+				"weapon"				"weapon_splintering"
+				"weapon"				"weapon_panzerfaust"
+				"weapon"				"weapon_sprengbuchse"
+				"weapon"         		"weapon_panzerschreck"
+				"weapon"				"weapon_flamethrower_eintoss46_german"						
+				"weapon_upgrade"		"default_sling"
+				"weapon_upgrade"		"magazine_stripper_clips"
+				"weapon_upgrade"		"barrel_greased_bolt"	
+				"weapon_upgrade"		"default_bayonet"
+				"weapon_upgrade"		"magazine_extended_c96"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_k98"			"0"
+					"weapon_mp40"			"0"
+					"weapon_p38" 			"0"
+					"weapon_ppk" 			"0"
+					"weapon_splintering"	"0"
+					"weapon_panzerfaust"	"0"
+					"weapon_sprengbuchse"	"0"
+					"weapon_panzerschreck"	"0"
+					"weapon_flamethrower_eintoss46_german" "4"
+				}
+
+				"weapon_upgrade"
+				{
+					"default_sling"				"0"
+					"magazine_stripper_clips"	"0"
+					"default_bayonet"			"0"
+					"magazine_extended_c96"		"0"
+					"barrel_greased_bolt"			"0"
+				}
+				
+				"gear"
+				{
+					"german_light_kit"		"0"
+					"german_heavy_kit"		"0"
+				}
+			}
+			"player_settings_mods"
+			{
+				"weight"
+				{
+					"min_weight"				"60"
+					"max_weight"				"720"
+				}
+			}
+		}
+		
+		"template_american_flamethrower"
+		{
+			"print_name"				"#class_american_flamethrower"
+			"print_attribute"			"#class_flamethrower_attribute"
+			"print_description"			"#class_flamethrower_description"
+			"response_rules_key"		"american01"
+			"icon"						"flamethrower"
+			
+			"models"
+			{
+				"player"				"models/characters/american/player_american_06.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_garand_bayonet"
+				"weapon"				"weapon_flamethrower_american"
+				"weapon"				"weapon_m1911"
+				"gear"					"gear_fuel_tank_american"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_flamethrower_american"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_sw1917"			
+				"weapon_upgrade"		"magazine_clips_sw1917"
+				"gear"					"gear_fuel_tank_american"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_flamethrower_american"	"0"
+					"weapon_m1911"					"0"
+					"weapon_sw1917"					"0"				
+				}
+				
+				"weapon_upgrade"
+				{
+					"magazine_clips_sw1917"			"0"
+				}
+				
+				"gear"
+				{
+					"american_light_kit"			"0"
+					"american_heavy_kit"			"0"
+				}
+			}
+			
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					"frac_side_move"			"0.75"
+					"frac_side_step"			"0.75"
+					"speed_crouch_run"			"110"
+					"speed_run"					"170"
+					"speed_sprint"				"230"
+				}
+			}
+		}
+
+		"template_british_flamethrower"
+		{
+			"print_name"				"#class_british_flamethrower"
+			"print_attribute"			"#class_flamethrower_attribute"
+			"print_description"			"#class_flamethrower_description"
+			"response_rules_key"		"english"
+			"icon"						"flamethrower"
+			
+			"models"
+			{
+				"player"				"models/characters/british/player_british_03.mdl"
+				
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}				
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_enfield_bayonet"
+				"weapon"				"weapon_flamethrower_british"
+				"weapon"				"weapon_browninghp"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_flamethrower_british"
+				"weapon"				"weapon_webley"
+				"weapon"				"weapon_browninghp"			
+				"weapon_upgrade"		"magazine_speedloader_webley"
+				"gear"					"gear_fuel_tank"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_flamethrower_british"	"0"
+					"weapon_webley"					"0"
+					"weapon_browninghp"				"0"
+				}
+				"weapon_upgrade"
+				{
+					"magazine_speedloader_webley"	"0"
+				}
+				"gear"
+				{
+					"commonwealth_light_kit"		"0"
+					"commonwealth_heavy_kit"		"0"
+				}
+			}
+			
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					"frac_side_move"			"0.75"
+					"frac_side_step"			"0.75"
+					"speed_crouch_run"			"110"
+					"speed_run"					"170"
+					"speed_sprint"				"230"
+				}
+			}
+		}
+
+		"template_german_flamethrower"
+		{
+			"print_name"				"#class_german_flamethrower"
+			"print_attribute"			"#class_flamethrower_attribute"
+			"print_description"			"#class_flamethrower_description"
+			"response_rules_key"		"german01"
+			"icon"						"flamethrower"
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_04.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_flamethrower_german"
+				"weapon"				"weapon_c96"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_flamethrower_german"
+				"weapon"				"weapon_p38"
+				"weapon"				"weapon_c96"
+				"gear"					"gear_fuel_tank_german"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_flamethrower_german" 	"0"
+					"weapon_p38" 					"0"
+					"weapon_c96" 					"0"
+				}
+				
+				"gear"
+				{
+					"german_light_kit"		"0"
+					"german_heavy_kit"		"0"
+				}
+			}
+			
+			"player_settings_mods"
+			{
+				"speed"
+				{
+					"frac_side_move"			"0.75"
+					"frac_side_step"			"0.75"
+					"speed_crouch_run"			"110"
+					"speed_run"					"170"
+					"speed_sprint"				"230"
+				}
+			}
+		}		
+		
+		"template_german_general"
+		{
+			"print_name"			"#class_german_officer"
+			"response_rules_key"	"german01"
+			"squad_leader"			"1"
+			"icon"					"officer_germans"	
+			
+			"models"
+			{
+				"player"				"models/characters/german/player_german_07.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}	
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_k98bayonet"
+				"weapon"				"weapon_luger"
+				"weapon"				"weapon_binoculars_german"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_luger"
+				"weapon"				"weapon_c96"
+				"weapon"				"weapon_binoculars_german"
+			}
+			"cost_modifiers"
+			{
+				"weapon"
+				{
+					"weapon_luger"					"0"
+					"weapon_c96"					"0"
+				}
+
+				"gear"
+				{
+					"german_light_kit"	"0"
+					"german_heavy_kit"	"0"
+				}
+			}
+		}
+	}
+}
