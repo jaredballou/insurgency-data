@@ -1,0 +1,575 @@
+"cpsetup.txt"
+{
+	"nightlighting"		"0"
+	
+	"theater_conditions"
+	{
+		"?has_m1para_access"	"1"
+	}
+	
+	"allowed_units"
+	{
+		"unit"		"unit_american_usarmy"
+		"unit"		"unit_american_1stinfantry"
+				
+		"unit"		"unit_commonwealth_british"
+		"unit"		"unit_commonwealth_grenadier"
+		"unit"		"unit_commonwealth_highlander"
+		"unit"		"unit_commonwealth_fusilier"
+		"unit"		"unit_commonwealth_blackwatch"
+
+		"unit"		"unit_german_wehrmacht"
+		"unit"		"unit_german_1stinfantry"
+		"unit"		"unit_german_fallschirmjager"
+		"unit"		"unit_german_352infanterie"
+	}
+	
+	"coop_elite_units"
+	{	
+		"unit"		"unit_american_1stinfantry"
+		
+		"unit"		"unit_commonwealth_grenadier"
+		"unit"		"unit_commonwealth_highlander"
+		"unit"		"unit_commonwealth_blackwatch"
+
+		"unit"		"unit_german_fallschirmjager"
+		"unit"		"unit_german_1stinfantry"
+		"unit"		"unit_german_352infanterie"
+	}	
+	
+	"coop_base_units"
+	{	
+		"unit"		"unit_american_usarmy"
+		
+		"unit"		"unit_commonwealth_grenadier"
+		"unit"		"unit_commonwealth_fusilier"
+		"unit"		"unit_commonwealth_blackwatch"
+				
+		"unit"		"unit_german_fallschirmjager"
+		"unit"		"unit_german_1stinfantry"
+		"unit"		"unit_german_352infanterie"
+	}
+	
+	"offensive"
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+
+		"AttackingTeam"		"TEAM_TWO"
+		"controlpoint"		"cafe"
+		"controlpoint"		"hotel"
+		"controlpoint"		"plane_crash"
+		"controlpoint"		"radiopoint_final"
+		"controlpoint"		"regroup_cap"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "sz_offensive_a"
+			"1"  "sz_offensive_b"
+			"2"  "sz_offensive_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"240 -5512 -136"
+				"angles"		"0 90 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"240 -5512 -64"
+				"angles"		"0 270 0"
+				"targetname"	"radiopoint_final"
+				"printname"		"#CP_AlliedRadio"
+			}		
+		}
+	}
+
+	"invasion"
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+
+		"AttackingTeam"		"TEAM_TWO"
+		"controlpoint"		"cafe"
+		"controlpoint"		"hotel"
+		"controlpoint"		"plane_crash"
+		"controlpoint"		"radiopoint_final"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "sz_offensive_a"
+			"1"  "sz_offensive_b"
+			"2"  "sz_offensive_c"
+		}
+		
+		"entities"
+		{
+			// Radio point
+			"obj_destructible"
+			{
+				"origin"		"271 -5487 -135"
+				"angles"		"0 90 0"
+				"targetname"	"radio_final"
+				"teamnumber"	"2"
+				"ControlPoint"	"radiopoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"271 -5487 -235"
+				"angles"		"0 270 0"
+				"targetname"	"radiopoint_final"
+				"printname"		"#CP_AlliedRadio"
+			}		
+		}
+	}
+
+	"liberation"	
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+		"controlpoint"		"plane_crash"
+		"controlpoint"		"hotel"
+		"controlpoint"		"cafe"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "sz_liberation"
+		}
+	}
+	
+	"entrenchment"	
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+		"AttackingTeam"		"TEAM_TWO"
+		
+		"controlpoint"		"cafe"
+		"controlpoint"		"hotel"
+		"controlpoint"		"plane_crash"
+		"controlpoint"		"regroup_cap"
+	
+		"entities"
+		{
+			"obj_ammo_crate"
+			{
+				"origin"			"1074 2089 104"
+				"angles"			"0 90 0"
+				"targetname"		"ammocrate_01_allies"
+				"teamnumber"		"2"
+				"ResupplyProximity"	"500"
+			}
+
+			"obj_ammo_crate"
+			{
+				"origin"			"-223 -980 190"
+				"angles"			"0 0 0"
+				"targetname"		"ammocrate_02_allies"
+				"teamnumber"		"2"
+				"ResupplyProximity"	"500"
+			}
+
+			"obj_ammo_crate"
+			{
+				"origin"			"579 -3976 -42"
+				"angles"			"0 45 0"
+				"targetname"		"ammocrate_03_allies"
+				"teamnumber"		"2"
+				"ResupplyProximity"	"500"
+			}
+		}
+		
+		"blockzones"
+		{
+			"blockzone"			"bz_entrenchment"
+		}
+
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"ai"
+		{
+			"allied_count_minimum_players_base"	"7"
+			"enemy_count_minimum_players_base"	"16"
+			
+			"allied_count_maximum_players_base"	"0"
+			"enemy_count_maximum_players_base"	"22"
+			
+			"friendly_count_solo_base"			"9"
+			"enemy_count_solo_base"				"16"
+			
+			"objectives"
+			{
+				"objective_index"		"0"
+				
+				"flank_points"
+				{
+					"location"						"-1137 2764 173"	
+				}
+			}
+			
+			"objectives"
+			{
+				"objective_index"		"1"
+				
+				"flank_points"
+				{
+					"location"					"1967 476 173"	
+				}
+			}
+			
+			"objectives"
+			{
+				"objective_index"		"2"
+				
+				"flank_points"
+				{
+					"location"						"-1788 -2455 -30"	
+					"location"						"2125 -2429 55"
+				}
+			}
+		}
+
+		"navspawns"
+		{
+	
+			"start_spawns"
+			{
+				"location_allies"					"-628 2463 175" 
+				"location_axis"						"-1464 6239 173"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+
+				"location_allies"					"-506 -747 185"
+				"location_axis"						"-1464 6239 173"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+
+				"location_allies"					"-506 -747 185"
+				"location_axis"						"39 4123 173"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+
+				"location_allies"					"351 -3302 43"
+				"location_axis"						"-826 2255 169"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+
+				"location_allies"					"365 -5863 -125"
+				"location_axis"						"237 1096 178"
+			}
+
+			"fallback_spawns"
+			{
+				"location_allies"					"365 -5863 -125"
+				"location_axis"						"-1464 6239 173"
+			}
+		}
+	}
+	
+	"stronghold"	
+	{
+		"TeamOne"            "commonwealth"
+        "TeamTwo"            "axis"
+		
+		"AttackingTeam"		"TEAM_TWO"
+		
+		"controlpoint"		"home"					// 0 
+		"controlpoint"		"cafe"					// 1
+		"controlpoint"		"cp_bofors"				// 2
+		"controlpoint"		"bakery"				// 3
+		"controlpoint"		"hotel"					// 4
+		"controlpoint"		"plane_crash"			// 5
+		"controlpoint"		"cp_fuel_dump_1"		// 6
+		"controlpoint"		"cp_fuel_dump_2"		// 7
+		"controlpoint"		"officerpoint_final"	// 8
+	
+		"entities"
+		{
+			"obj_ammo_crate"
+			{
+				"origin"			"-2151 5378 104"
+				"angles"			"0 90 0"
+				"targetname"		"ammocrate_01_axis"
+				"teamnumber"		"3"
+				"ResupplyProximity"	"500"
+			}
+
+			// Bofors
+			"obj_discoverable_target"
+			{
+				"origin"		"612 2541 96"
+				"angles"		"0 -135 0"
+				"targetname"	"bofors"
+				"teamnumber"	"2"
+				"ControlPoint"	"cp_bofors"
+				"TakeDamageBullets" "0"
+			}				
+			"point_controlpoint"
+			{
+				"origin"		"612 2541 200"
+				"targetname"	"cp_bofors"
+			}
+
+			// Fuel Dump 1
+			"obj_fuel_dump"
+			{
+				"origin"				"1844 -3764 -90"
+				"angles"				"0 270 0"
+				"targetname"			"fuel_dump_1"
+				"teamnumber"			"2"
+				"ControlPoint"			"cp_fuel_dump_1"
+			}				
+			"point_controlpoint"
+			{
+				"origin"				"1844 -3764 60"
+				"angles"				"0 270 0"
+				"targetname"			"cp_fuel_dump_1"
+			}
+
+			// Fuel Dump 2
+			"obj_fuel_dump"
+			{
+				"origin"				"-976 -4700 -100"
+				"angles"				"0 270 0"
+				"targetname"			"fuel_dump_2"
+				"teamnumber"			"2"
+				"ControlPoint"			"cp_fuel_dump_2"
+			}				
+			"point_controlpoint"
+			{
+				"origin"				"-952 -4649 -25"
+				"angles"				"0 270 0"
+				"targetname"			"cp_fuel_dump_2"
+			}
+
+			// Officer quarters
+			"obj_officer_quarters"
+			{
+				"origin"		"105 -5658 -220"
+				"angles"		"0 90 0"
+				"targetname"	"officer_final"
+				"teamnumber"	"2"
+				"ControlPoint"	"officerpoint_final"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"105 -5658 -160"
+				"angles"		"0 270 0"
+				"targetname"	"officerpoint_final"
+				"printname"		"#CP_Officer"
+			}	
+		}
+		
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		}
+		
+		"ai"
+		{
+			"allied_count_minimum_players_base"	"7"
+			"enemy_count_minimum_players_base"	"14"
+			
+			"allied_count_maximum_players_base"	"0"
+			"enemy_count_maximum_players_base"	"18"
+			
+			"friendly_count_solo_base"			"9"
+			"enemy_count_solo_base"				"14"
+			
+			"objectives"
+			{
+				"objective_index"				"0"
+				
+				"fortify_radius"				"1200"
+			}
+	
+			"objectives"
+			{
+				"objective_index"				"1"
+				
+				"fortify_radius"				"1200"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"2"
+				
+				"required_objectives"			"0,1"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"3"
+				
+				"required_objectives"			"0,1"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"4"
+				
+				//"team_bot_firesupport"			"firesupport_artillery_he_allies"
+				
+				"required_objectives"			"2,3"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"5"
+				
+				"required_objectives"			"4"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"6"
+				
+				"team_player_firesupport"		"firesupport_stuka"
+				
+				"required_objectives"			"5"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"7"
+				
+				"team_player_firesupport"		"firesupport_stuka"
+				
+				"required_objectives"			"5"
+			}
+			
+			"objectives"
+			{
+				"objective_index"				"8"
+				
+				"required_objectives"			"6,7"
+			}
+		}
+
+		"navspawns"
+		{
+			"start_spawns"
+			{
+				"location_allies"					"-826 2255 169" 
+				"location_axis"						"-2298 6136 173"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"0"
+				
+				"location_allies"					"-295 -218 307"
+				"location_axis"						"-2298 6136 173"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"1"
+				
+				"location_allies"					"-295 -218 307"
+				"location_axis"						"-2298 6136 173"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"2"
+				
+				"location_allies"					"370 -4326 15"
+				"location_axis"						"39 4123 173"
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"3"
+				
+				"location_allies"					"370 -4326 15"
+				"location_axis"						"39 4123 173"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"4"
+
+				"location_allies"					"370 -4326 15"
+				"location_axis"						"39 4123 173"
+
+				"flank_points"
+				{
+					"location"					"1967 476 173"	
+				}
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"5"
+
+				"location_allies"					"365 -5863 -125"
+				"location_axis"						"284 2178 200"
+
+				"flank_points"
+				{
+					"location"						"-1788 -2455 -30"	
+					"location"						"2125 -2429 55"
+				}
+			}
+			
+			"objective_based_spawns"
+			{
+				"objective_index"					"6"
+
+				"location_allies"					"365 -5863 -125"
+				"location_axis"						"284 2178 200"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"7"
+
+				"location_allies"					"365 -5863 -125"
+				"location_axis"						"284 2178 200"
+			}
+
+			"objective_based_spawns"
+			{
+				"objective_index"					"8"
+
+				"location_allies"					"365 -5863 -125"
+				"location_axis"						"284 2178 200"
+			}
+
+			"fallback_spawns"
+			{
+				"location_allies"					"365 -5863 -125"
+				"location_axis"						"-2298 6136 173"
+			}
+		}
+	}
+}	
+	
+	

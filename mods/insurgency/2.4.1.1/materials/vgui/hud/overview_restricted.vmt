@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$translucent" 1
+	"$basetexture" "vgui/hud/overview_restricted"
+	"$basetexturetransform" "center .5 .5 scale 50 50 rotate 0 translate 0 0"
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+}

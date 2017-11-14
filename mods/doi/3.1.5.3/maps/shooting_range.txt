@@ -1,0 +1,101 @@
+"cpsetup.txt"
+{
+	"nightlighting"		"0"
+
+	"theater_conditions"
+	{
+		"?has_stg44_access"		"1"
+		"?has_fg42_access"		"1"
+		"?has_m1para_access"	"1"
+	}
+
+	"allowed_units"
+	{
+		// American
+		"unit"		"unit_american_usarmy"
+		"unit"		"unit_american_ranger"
+		"unit"		"unit_american_82ndairborne"
+		"unit"		"unit_american_92ndinfantry"
+		"unit"		"unit_american_1stinfantry"
+		"unit"		"unit_american_3rddivision"
+		"unit"		"unit_american_101stairborne"
+		"unit"		"unit_american_28thdivision"
+		"unit"		"unit_american_2ndrangers"
+		"unit"		"unit_american_29thinfantry"
+		
+		// Commonwealth  
+		"unit"		"unit_commonwealth_british"
+		"unit"		"unit_commonwealth_canada"
+		"unit"		"unit_commonwealth_no2commando"
+		"unit"		"unit_commonwealth_princess_patricia"
+		"unit"		"unit_commonwealth_highlander"
+		"unit"		"unit_commonwealth_12thfrontier"
+		"unit"		"unit_commonwealth_argyll"
+		"unit"		"unit_commonwealth_unit_commonwealth_seaforth"
+		"unit"		"unit_commonwealth_royal_hamilton"
+		"unit"		"unit_commonwealth_grenadier"
+		"unit"		"unit_commonwealth_fusilier"
+		
+		// German
+		"unit"		"unit_german_wehrmacht"
+		"unit"		"unit_german_1stinfantry"
+		"unit"		"unit_german_15thpanzer"
+		"unit"		"unit_german_panzerss"
+		"unit"		"unit_german_fallschirmjager"
+		"unit"		"unit_german_3rdfallschirmjager"
+		"unit"		"unit_german_3rdpanzer"
+		"unit"		"unit_german_17thpanzerss"
+		"unit"		"unit_german_352infanterie"
+		"unit"		"unit_german_29thpanzer"
+	}
+
+	"coop_base_units"
+	{	
+		"unit"	"unit_american_29thinfantry"
+		"unit"	"unit_commonwealth_british"
+		"unit"	"unit_commonwealth_highlander"
+		"unit"	"unit_german_1stinfantry"
+		"unit"	"unit_german_wehrmacht"
+	}
+
+	"coop_elite_units"
+	{	
+		"unit"	"unit_american_2ndrangers"
+		"unit"	"unit_commonwealth_highlander"
+		"unit"	"unit_german_15thpanzer"
+	}
+
+	"sandbox"
+	{
+		"TeamOne"           "commonwealth"
+		"TeamTwo"           "americans"
+		
+		"AttackingTeam"		"TEAM_ONE"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+		
+		}
+		
+		"entities"
+		{
+			
+		}
+		
+		"ai"
+		{
+			
+		}
+		
+		"navspawns"
+		{
+			
+		}
+		
+		"cvars"
+		{
+			
+		}
+	}
+}

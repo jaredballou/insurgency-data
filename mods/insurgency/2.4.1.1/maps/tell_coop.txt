@@ -1,0 +1,136 @@
+"cpsetup.txt"
+{	
+	"checkpoint"
+	{
+		"AttackingTeam"		"security"
+		"controlpoint"		"cp_a"
+		"controlpoint"		"cp_b"
+		"controlpoint"		"cp_c"
+		"controlpoint"		"cp_d"
+		"controlpoint"		"cp_e"
+		"controlpoint"		"cp_f"
+		"controlpoint"		"cp_g"
+		"controlpoint"		"cp_h"
+		"controlpoint"		"cp_i"
+		"controlpoint"		"cp_j"
+		"controlpoint"		"cp_k"
+		"controlpoint"		"cp_l"
+		"controlpoint"		"cp_m"
+		
+		"spawnzones"
+		{
+			"disablespawns" "1"
+			"0"  "sz_a"
+			"1"  "sz_b"
+			"2"  "sz_c"
+			"3"  "sz_d"
+			"4"  "sz_e"
+			"5"  "sz_f"
+			"6"  "sz_g"
+			"7"  "sz_h"
+			"8"  "sz_i"
+			"9"  "sz_j"
+			"10"  "sz_k"
+			"11"  "sz_l"
+			"12"  "sz_m"
+		}
+
+		"entities"
+		{
+			"obj_weapon_cache"
+			{
+				"origin"		"1738 -4797 -76.75"
+				"angles"		"-5.91417 0 0"
+				"targetname"	"cache_a"
+				"teamnumber"	"3"
+				"ControlPoint"	"cp_a"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"1738 -4797 0"
+				"angles"		"0 0 0"
+				"targetname"	"cp_a"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-1336 -3752 435"
+				"angles"		"0 359.074 1.59908"
+				"targetname"	"cache_c"
+				"teamnumber"	"3"
+				"ControlPoint"	"cp_c"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-1336 -3752 507"
+				"angles"		"0 359.074 1.59908"
+				"targetname"	"cp_c"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-2797.5 -4335 386"
+				"angles"		"0 0 0"
+				"targetname"	"cache_d"
+				"teamnumber"	"3"
+				"ControlPoint"	"cp_d"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-2797.5 -4335 420"
+				"angles"		"0 0 0"
+				"targetname"	"cp_d"
+			}
+			"obj_weapon_cache"
+			{
+				"origin"		"-6311 -2366 828"
+				"angles"		"0 45 0"
+				"targetname"	"cache_f"
+				"teamnumber"	"3"
+				"ControlPoint"	"cp_f"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-6311 -2366 868"
+				"angles"		"0 0 0"
+				"targetname"	"cp_f"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-4017.75 1615.3 1183"
+				"angles"		"0 45 0"
+				"targetname"	"cache_h"
+				"teamnumber"	"3"
+				"ControlPoint"	"cp_h"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-4017.75 1615.3 1248"
+				"angles"		"0 0 0"
+				"targetname"	"cp_h"
+			}
+
+			"obj_weapon_cache"
+			{
+				"origin"		"-3798 -3028 672"
+				"angles"		"0 270 0"
+				"targetname"	"cache_i"
+				"teamnumber"	"3"
+				"ControlPoint"	"cp_i"
+				"TakeDamageBullets" "0"
+			}
+			"point_controlpoint"
+			{
+				"origin"		"-3798 -3028 720"
+				"angles"		"0 35 0"
+				"targetname"	"cp_i"
+			}
+		}
+	}
+} 

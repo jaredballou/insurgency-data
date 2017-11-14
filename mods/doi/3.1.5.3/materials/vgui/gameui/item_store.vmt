@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/gameui/item_store"
+	"$translucent" 1
+}

@@ -1,0 +1,240 @@
+"#base" "revolt.txt"
+
+"cpsetup.txt"
+{
+	"theater_conditions"
+	{
+		"?nightmap"		"1"
+	}
+
+	"navfile"   		"revolt"
+	"nightlighting"		"1"
+
+	"entities"
+	{
+		"?halloween"
+		{
+			"prop_pumpkin"
+			{
+					"origin"		"-5401 -3027 -166"
+					"angles"		"0 15 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-5691 -2822-215"
+					"angles"		"0 345 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-5807 -2283 -215"
+					"angles"		"0 315 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-2384 -2416 85"
+					"angles"		"0 150 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1174 -2004 51"
+					"angles"		"0 210 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-794 -2516 94"
+					"angles"		"0 150 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1047 -1872 93"
+					"angles"		"0 300 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-366 -1501 103"
+					"angles"		"0 330 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"389 -2095 125"
+					"angles"		"0 30 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"1180 -2322 123"
+					"angles"		"0 30 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"849 -1636 349"
+					"angles"		"0 315 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"2336 -2486 137"
+					"angles"		"0 45 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"3071 -2515 138"
+					"angles"		"0 120 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"3781 -771 512"
+					"angles"		"0 120 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"3194 773 512"
+					"angles"		"0 315 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"3850 1005 558"
+					"angles"		"0 300 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"4032 323 557"
+					"angles"		"0 135 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"3280 647 349"
+					"angles"		"0 330 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"2226 -352 395"
+					"angles"		"0 105 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"2688 452 157"
+					"angles"		"0 150 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"2702 1382 159"
+					"angles"		"0 150 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"3897 1856 178"
+					"angles"		"0 210 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-190 2413 110"
+					"angles"		"0 345 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-216 1424 72"
+					"angles"		"0 90 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1188 153 -96"
+					"angles"		"0 0 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-579 -975 -111"
+					"angles"		"0 255 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-676 -498 99"
+					"angles"		"0 225 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-1039 -385 480"
+					"angles"		"0 75 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-624 -390 311"
+					"angles"		"0 90 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"931 -471 349"
+					"angles"		"0 135 0"
+					"randomizeappearance"		"1"
+			}
+			
+			"prop_pumpkin"
+			{
+					"origin"		"-2176 -247 117"
+					"angles"		"0 165 0"
+					"randomizeappearance"		"1"
+			}
+			
+					
+		}
+	
+	}
+}
+
+

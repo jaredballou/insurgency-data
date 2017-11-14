@@ -3,6 +3,7 @@ name: Insurgency
 desc: Base game
 author: New World Interactive
 steamid: 
+game: insurgency
 url: http://www.newworldinteractive.com
 email: 
 # List of workshop files that should be used to extract game files

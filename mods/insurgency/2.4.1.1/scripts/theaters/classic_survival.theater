@@ -1,0 +1,1044 @@
+"#base" "default.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"insurgents"
+		{
+			"squads"
+			{
+				"#Cell_Alpha"
+				{
+					"#Squad_Cell_Leader_Militant"		"template_survival_militant_insurgent"
+					"#Squad_Cell_Specialist"		"template_survival_specialist_insurgent"
+					"#Squad_Cell_Scout"			"template_survival_scout_insurgent"
+					"#Squad_Cell_Fighter"			"template_survival_fighter_insurgent"
+					"#Squad_Cell_Sapper"			"template_survival_sapper_insurgent"
+					"#Squad_Cell_Sharpshooter"		"template_survival_sharpshooter_insurgent"
+					"#Squad_Cell_MachineGunner"		"template_survival_machinegunner_insurgent"
+					"#Squad_Cell_Bomber"			"template_survival_bomber_insurgent"
+				}
+			}
+		}
+		
+		"security"
+		{
+			"squads"
+			{
+				"#Fireteam_Alpha"
+				{
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+				}
+				"#Fireteam_Bravo"
+				{
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+				}
+				"#Fireteam_Charlie"
+				{
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+				}
+				"#Fireteam_Delta"
+				{
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security"
+				}
+			}
+		}
+	}
+	
+	"player_templates"
+	{
+		"template_survival_militant_insurgent"
+		{
+			"team"					"insurgents"
+			"print_name"				"#Squad_Cell_Militant"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon_upgrade"			"siderail_flashlight_pistol"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_p2a1"
+				
+				"weapon_upgrade"			"underbarrel_gp25_smoke"
+				"weapon_upgrade"			"underbarrel_m203_smoke"
+				"weapon_upgrade"			"underbarrel_foregrip_sec1"
+				"weapon_upgrade"			"underbarrel_foregrip_sec2"
+				"weapon_upgrade"			"underbarrel_foregrip_ins1"
+				"weapon_upgrade"			"underbarrel_foregrip_ins2"
+			}
+		}
+		
+		"template_survival_specialist_insurgent"
+		{
+			"team"					"insurgents"
+			"print_name"				"#Squad_Cell_Specialist"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon_upgrade"			"siderail_flashlight_pistol"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_molotov"
+				"?nightmap"
+				{
+					"weapon"				"weapon_p2a1"
+				}
+				"weapon_upgrade"			"barrel_silencer_ins1"
+				"weapon_upgrade"			"barrel_silencer_pistol"
+				"weapon_upgrade"			"underbarrel_gp25_smoke"
+				"weapon_upgrade"			"underbarrel_m203_smoke"
+				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"barrel_silencer_heavy"
+				"weapon_upgrade"			"barrel_silencer_heavy"
+				"weapon_upgrade"			"barrel_silencer_pistol"
+				"weapon_upgrade"			"barrel_silencer_sec1"
+				"weapon_upgrade"			"barrel_silencer_sec2"
+				"weapon_upgrade"			"underbarrel_foregrip_sec1"
+				"weapon_upgrade"			"underbarrel_foregrip_sec2"
+				"weapon_upgrade"			"underbarrel_foregrip_ins1"
+				"weapon_upgrade"			"underbarrel_foregrip_ins2"
+			}
+			
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+					"barrel_silencer_sec1"				"-1"
+					"barrel_silencer_sec2"				"-1"
+					"barrel_silencer_ins1"				"-1"
+					"barrel_silencer_heavy"			"-1"
+					"barrel_silencer_heavy"			"-1"
+					"barrel_silencer_pistol"			"-1"
+					"barrel_silencer_pistol"			"-1"
+				}
+			}
+		}
+		
+		"template_survival_scout_insurgent"
+		{
+			"team"					"insurgents"
+			"print_name"				"#Squad_Cell_Scout"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_makarov"
+				"weapon_upgrade"			"siderail_flashlight_pistol"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_aks74u"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_mini14"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_p2a1"
+				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"barrel_silencer_ins1"
+				"weapon_upgrade"			"barrel_silencer_sec1"
+				"weapon_upgrade"			"barrel_silencer_sec2"
+				"weapon_upgrade"			"barrel_silencer_pistol"
+				"weapon_upgrade"			"barrel_silencer_pistol"
+				"weapon_upgrade"			"barrel_silencer_heavy"
+				"weapon_upgrade"			"barrel_silencer_heavy"
+				"weapon_upgrade"			"underbarrel_gp25_smoke"
+			}
+			
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+					"barrel_silencer_sec1"				"-1"
+					"barrel_silencer_sec2"				"-1"
+					"barrel_silencer_ins1"				"-1"
+					"barrel_silencer_heavy"			"-1"
+					"barrel_silencer_heavy"			"-1"
+					"barrel_silencer_pistol"			"-1"
+					"barrel_silencer_pistol"			"-1"
+				}
+			}
+		}
+		
+		"template_survival_fighter_insurgent"
+		{
+			"team"					"insurgents"
+			"print_name"				"#Squad_Cell_Fighter"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_makarov"
+				"weapon_upgrade"			"siderail_flashlight_pistol"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_ak74"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_m84"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_p2a1"
+			}
+		}
+		
+		"template_survival_sapper_insurgent"
+		{
+			"team"					"insurgents"
+			"print_name"				"#Squad_Cell_Sapper"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon_upgrade"			"siderail_flashlight_pistol"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_m590"
+				"weapon"				"weapon_c4_ied"
+				"weapon"				"weapon_molotov"
+				"weapon_upgrade"			"barrel_silencer_ins1"
+				"weapon_upgrade"			"barrel_silencer_pistol"
+				"weapon_upgrade"			"barrel_silencer_pistol"
+			}
+		}
+		
+		"template_survival_sharpshooter_insurgent"
+		{
+			"team"					"insurgents"
+			"print_name"				"#Squad_Cell_Sharpshooter"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_makarov"
+				"weapon_upgrade"			"siderail_flashlight_pistol"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_sks"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_m40a1"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_p2a1"
+				"weapon_upgrade"			"optic_scope_7x"
+				"weapon_upgrade"			"optic_scope_mk4"
+				"weapon_upgrade"			"barrel_silencer_ins1"
+				"weapon_upgrade"			"barrel_silencer_pistol"
+				"weapon_upgrade"			"barrel_silencer_sec1"
+				"weapon_upgrade"			"barrel_silencer_sec2"
+				"weapon_upgrade"			"barrel_silencer_pistol"
+				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"underbarrel_bipod"
+			}
+		}
+		
+		"template_survival_machinegunner_insurgent"
+		{
+			"team"					"insurgents"
+			"print_name"				"#Squad_Cell_Machinegunner"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_heavy.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_makarov"
+				"weapon_upgrade"			"siderail_flashlight_pistol"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_rpk"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_fal"
+				"weapon"				"weapon_m1a1"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_p2a1"
+				"weapon_upgrade"			"underbarrel_bipod"
+				"weapon_upgrade"			"underbarrel_bipod"
+			}
+			"cost_modifiers"
+			{
+				"weapon_upgrade"
+				{
+					"underbarrel_foregrip_ins1"				"-1"
+					"underbarrel_foregrip_ins2"				"-1"
+					"underbarrel_woodgrip"				"-1"
+					"ins_woodgrip2"				"-1"
+				}
+			}
+		}
+		
+		"template_survival_bomber_insurgent"
+		{
+			"team"					"insurgents"
+			"print_name"				"#Squad_Cell_Bomber"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_makarov"
+				"weapon_upgrade"			"siderail_flashlight_pistol"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_akm"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_mp40"
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_mosin"
+				"weapon"				"weapon_c4_ied"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_p2a1"
+				"weapon_upgrade"			"underbarrel_gp25_he"
+				"weapon_upgrade"			"underbarrel_gp25_smoke"
+			}
+		}
+		
+		// BOTS
+		"template_survival_base_01_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Force 01 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_rig"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon_upgrade"			"siderail_flashlight_pistol"
+				"weapon"				"weapon_m84"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m84"
+			}
+		}
+		
+		"template_survival_officer_01_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Officer 01 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_light_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_m18"
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_m18"
+			}
+		}
+		
+		"template_survival_base_02_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Force 02 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_light_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_mp5"
+				"weapon_upgrade"			"sec_flashlight"
+				"weapon"				"weapon_m84"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_mp5"
+				"weapon"				"weapon_m84"
+			}
+		}
+		
+		"template_survival_officer_02_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Officer 02 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/civilian_vip_insurgent.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_vip.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+					"glasses"				"1"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_light_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_ump45"
+				"weapon_upgrade"			"siderail_lasersight_band"
+				"weapon_upgrade"			"ammo_ap_ump45"
+				"weapon"				"weapon_m18"
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_m18"
+			}
+		}
+		
+		"template_survival_base_03_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Force 03 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_heavy_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m16a4"
+				"weapon_upgrade"			"sec_flashlight"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m16a4"
+				"weapon"				"weapon_m67"
+			}
+		}
+		
+		"template_survival_officer_03_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Officer 03 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/civilian_vip_insurgent.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_vip.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+					"glasses"				"1"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_light_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"			"barrel_silencer_sec1"
+				"weapon_upgrade"			"siderail_lasersight_band"
+				"weapon"				"weapon_m67"
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m67"
+			}
+		}
+		
+		"template_survival_base_04_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Force 04 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_carrier"
+				"gear"					"sec_heavy_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"			"barrel_silencer_sec1"
+				"weapon_upgrade"			"siderail_lasersight_band"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m67"
+			}
+		}
+		
+		"template_survival_officer_04_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Officer 04 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/civilian_vip_security.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_vip.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+					"glasses"				"1"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_light_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"			"barrel_silencer_sec1"
+				"weapon_upgrade"			"siderail_lasersight_band"
+				"weapon"				"weapon_m67"
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_ump45"
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m67"
+			}
+		}
+		
+		"template_survival_base_05_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Force 05 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_carrier"
+				"gear"					"sec_heavy_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"			"barrel_silencer_sec1"
+				"weapon_upgrade"			"ammo_ap_m4"
+				"weapon"				"weapon_m67"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m67"
+			}
+		}
+		
+		"template_survival_officer_05_security"
+		{
+			"team"					"security"
+			"print_name"				"Security Officer 05 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/civilian_vip_security.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_vip.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+					"glasses"				"1"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_rig"
+				"gear"					"sec_heavy_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m4a1"
+				"weapon_upgrade"			"barrel_silencer_sec1"
+				"weapon_upgrade"			"ammo_ap_m4"
+				"weapon"				"weapon_m67"
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_m4a1"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_m67"
+			}
+		}
+		
+		"template_survival_m249_security"
+		{
+			"team"					"security"
+			"print_name"				"Security M249 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_carrier"
+				"gear"					"sec_light_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_m67"
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_m249"
+				"weapon"				"weapon_m67"
+			}
+		}
+		
+		"template_survival_at4_security"
+		{
+			"team"					"security"
+			"print_name"				"Security AT4 Class"
+			
+			"models"
+			{
+				"player"				"models/characters/security_light.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+			
+				"bodygroups"
+				{
+					"kit"					"0"
+					"backpack"				"0"
+				}
+			}
+			
+			"buy_order"
+			{
+				"gear"					"sec_chest_carrier"
+				"gear"					"sec_light_armor"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_m9"
+				"weapon"				"weapon_at4"
+			}
+			
+			"allowed_items"
+			{
+				"weapon"				"weapon_at4"
+			}
+		}
+	}
+	
+	"player_gear"
+	{
+		"ins_light_armor"
+		{
+			"gear_cost"				"1"
+		}
+		"ins_heavy_armor"
+		{
+			"gear_cost"				"5"
+		}
+		"ins_chest_rig"
+		{
+			"gear_cost"				"2"
+		}
+		"ins_chest_carrier"
+		{
+			"gear_cost"				"6"
+		}
+		"ins_nightvision"
+		{
+			"gear_cost"				"2"
+		}
+	}
+	
+	"weapons"
+	{
+		"weapon_makarov"
+		{
+			"weapon_cost"				"0"
+		}
+		"weapon_m9"
+		{
+			"weapon_cost"				"0"
+			"team_access"				"security, insurgent"
+		}
+		"weapon_m1911"
+		{
+			"weapon_cost"				"0"
+		}
+		"weapon_mosin"
+		{
+			"weapon_cost"				"1"
+		}
+		"weapon_m1a1"
+		{
+			"weapon_cost"				"3"
+		}
+		"weapon_toz"
+		{
+			"weapon_cost"				"2"
+		}
+		"weapon_sks"
+		{
+			"weapon_cost"				"2"
+		}
+		"weapon_mp40"
+		{
+			"weapon_cost"				"3"
+		}
+		"weapon_akm"
+		{
+			"weapon_cost"				"5"
+		}
+		"weapon_aks74u"
+		{
+			"weapon_cost"				"3"
+		}
+		"weapon_ak74"
+		{
+			"weapon_cost"				"5"
+		}
+		"weapon_fal"
+		{
+			"weapon_cost"				"6"
+		}
+		"weapon_rpk"
+		{
+			"weapon_cost"				"8"
+		}
+		"weapon_m16a4"
+		{
+			"weapon_cost"				"8"
+		}
+		"weapon_m590"
+		{
+			"weapon_cost"				"6"
+		}
+		"weapon_m4a1"
+		{
+			"weapon_cost"				"10"
+		}
+		"weapon_ump45"
+		{
+			"weapon_cost"				"8"
+		}
+		"weapon_mini14"
+		{
+			"weapon_cost"				"8"
+		}
+		"weapon_m249"
+		{
+			"weapon_cost"				"14"
+		}
+		"weapon_m40a1"
+		{
+			"weapon_cost"				"8"
+		}
+		"weapon_m18"
+		{
+			"weapon_cost"				"1"
+		}
+		"weapon_m84"
+		{
+			"weapon_cost"				"1"
+		}
+		"weapon_molotov"
+		{
+			"weapon_cost"				"3"
+		}
+		"weapon_f1"
+		{
+			"weapon_cost"				"3"
+		}
+		"weapon_c4_ied"
+		{
+			"weapon_cost"				"4"
+		}
+		"weapon_rpg7"
+		{
+			"weapon_cost"				"8"
+		}
+	}
+	
+	"weapon_upgrades"
+	{
+		"barrel_silencer_pistol"
+		{
+			"upgrade_cost"				"2"
+		}
+		
+		"barrel_silencer_pistol"
+		{
+			"upgrade_cost"				"2"
+		}
+		
+		"barrel_silencer_ins1"
+		{
+			"upgrade_cost"				"4"
+		}
+		
+		"barrel_silencer_sec1"
+		{
+			"upgrade_cost"				"4"
+		}
+		
+		"barrel_silencer_sec2"
+		{
+			"upgrade_cost"				"4"
+		}
+		
+		"barrel_silencer_heavy"
+		{
+			"upgrade_cost"				"4"
+		}
+	}
+}
