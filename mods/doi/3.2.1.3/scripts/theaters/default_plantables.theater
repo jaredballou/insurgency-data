@@ -1,0 +1,175 @@
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Plantable Objects
+// 
+// Data structure
+// 		"printname"			- On-screen name of the plantable
+// 		"print_description"	- On-screen name of the plantable
+//
+// 		"icon"				- HUD icon that represents the plantable
+// 
+// 		"health"			- Health of the planted object (-1 = invincible )
+// 		"quantity"			- Maximum amount of plantables available in your inventory
+// 		"uses"				- Maximum amount of times the plantable can be interacted with
+// 
+// 		"cycling"			- Sub-key that contains cycling related information
+//			|
+// 			+- "sound"		- Sound that is played when this plantable is selected
+// 
+//		"planning"			- Sub-key that contains planning related information
+//			|
+// 			+- "model"				- 3D model that is displayed while planting the object
+// 			+- "solid_to_players"	- When set to 1 this object will collide with players
+// 
+// 		"action"			- Sub-key that contains actions that should be executed 
+//			|				  when performing the planting action
+// 			+- "plant"		- Plants the entity on the floor
+// 			+- "spawn"		- Spawns the entity that corresponds with the specified entity name
+// 			+- "command"	- Specifies a client command that should be executed
+// 			+- "sound"		- Sound that is played when performing the action
+// 
+// 		"interaction"		- Sub-key that contains interactions
+//			|
+// 			+- "command"	- Specifies a client command that should be executed
+// 			+- "sound"		- Sound that is played when interacting with the plantable
+// 			+- "give"		- Gives items to the player
+//							  Format: "give" "ammo <number>"
+//							  Format: "give" "fuel <number>"
+//							  Format: "give" "item <weapon/upgrade name>"
+//							  Format: "give" "health <number>" (negative numbers do silent oof owie)
+// 
+
+"theater"
+{
+	"plantables"
+	{	
+		"ammo_pouch_allied"
+		{
+			"printname"				"#Plantable_AmmoPouch_Title"
+			"print_description" 	"#Plantable_AmmoPouch_Description"
+			"icon"					"hud_doi/plantable_ammopouch"
+			
+			"health"				"500"
+			
+			"quantity"				"3"
+			"uses"					"1"
+			
+			"cycling"
+			{
+				"sound"				"Deployable.CycleInventory"
+			}
+			
+			"planning"
+			{
+				"model"				"models/player/ammopouch_allied.mdl"
+				"solid_to_players"	"0"
+			}
+			
+			"actions"
+			{
+				"plant"				"ammo_pouch_allied"
+				"sound"				"Deployable_AmmoPouch.Plant"
+			}
+			
+			"interactions"
+			{
+				"give"				"ammo 10"
+				"sound"				"Deployable_AmmoPouch.Use"
+			}
+		}
+		
+		"ammo_pouch_axis"
+		{
+			"printname"				"#Plantable_AmmoPouch_Title"
+			"print_description" 	"#Plantable_AmmoPouch_Description"
+			"icon"					"hud_doi/plantable_ammopouch"
+			
+			"health"				"500"
+			
+			"quantity"				"3"
+			"uses"					"1"
+			
+			"cycling"
+			{
+				"sound"				"Deployable.CycleInventory"
+			}
+			
+			"planning"
+			{
+				"model"				"models/player/ammopouch_axis.mdl"
+				"solid_to_players"	"0"
+			}
+			
+			"actions"
+			{
+				"plant"				"ammo_pouch_axis"
+				"sound"				"Deployable_AmmoPouch.Plant"
+			}
+			
+			"interactions"
+			{
+				"give"				"ammo 10"
+				"sound"				"Deployable_AmmoPouch.Use"
+			}
+		}
+		
+		"firesupport_stuka"
+		{
+			"printname"				"Stuka"
+			"print_description" 	"This doesn't actually work properly"
+			"icon"					"gameui/icon_info_off"
+			
+			"quantity"				"-1"
+			"uses"					"-1"
+			
+			"cycling"
+			{
+				"sound"				"Stuka.BombDoors"
+			}
+			
+			"planning"
+			{
+				
+			}
+			
+			"actions"
+			{
+				"command"			"InsRadial request_firesupport firesupport_stuka"
+			}
+			
+			"interactions"
+			{
+				
+			}
+		}
+		
+		"firesupport_strafe"
+		{
+			"printname"				"Strafe"
+			"print_description" 	"Air support is overrated"
+			"icon"					"gameui/icon_info_off"
+			
+			"quantity"				"-1"
+			"uses"					"-1"
+			
+			"cycling"
+			{
+				"sound"				"Mustang.GunImpacts"
+			}
+			
+			"planning"
+			{
+				
+			}
+			
+			"actions"
+			{
+				"command"			"InsRadial request_firesupport firesupport_strafe"
+			}
+			
+			"interactions"
+			{
+				
+			}
+		}
+	}
+}

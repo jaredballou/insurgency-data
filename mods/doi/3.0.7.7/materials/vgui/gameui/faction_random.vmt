@@ -1,6 +1,0 @@
-"UnlitGeneric"
-{
-	"$basetexture" "vgui/gameui/faction_random"
-	"$translucent" 1
-	"$vertexalpha" 1
-}
