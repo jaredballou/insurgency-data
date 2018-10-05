@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/siege_small"
+	"$vertexalpha" 1
+	"$translucent" 1
+}

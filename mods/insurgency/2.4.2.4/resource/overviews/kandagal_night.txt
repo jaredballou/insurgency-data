@@ -1,0 +1,9 @@
+"kandagal_night"
+{
+	material	overviews/kandagal_night    	// texture file
+	pos_x		-6194			// X coordinate
+	pos_y		7425			// Y coordinate
+	scale		11.0 			// scale used when taking the screenshot
+	rotate		0			// map was rotated by 90 degrees in image editor
+	zoom		1			// optimal zoom factor if map is shown in full size
+}

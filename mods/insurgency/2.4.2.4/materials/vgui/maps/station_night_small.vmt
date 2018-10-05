@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/maps/station_night_small"
+	"$vertexalpha" 1
+	"$translucent" 1
+}
